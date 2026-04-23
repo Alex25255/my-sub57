@@ -5,8 +5,6 @@ vless://eaed03d2-0b2e-4804-af79-25c6b7c6a3db@rat.chocolatemango.live:443?flow=xt
 vless://eaed03d2-0b2e-4804-af79-25c6b7c6a3db@rat.chocolatemango.live:5444?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=max.ru&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc#%F0%9F%87%AA%F0%9F%87%BA%F0%9F%8D%8B%20%D0%92%D1%81%D0%B5%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B%20%E2%AD%90
 
 
-vless://eaed03d2-0b2e-4804-af79-25c6b7c6a3db@hamster.chocolatemango.live:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=max.ru&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc#%F0%9F%87%B7%F0%9F%87%BA%F0%9F%8D%81%20%D0%92%D1%81%D0%B5%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B%20%E2%AD%90
-
 
 vless://eaed03d2-0b2e-4804-af79-25c6b7c6a3db@hamster.chocolatemango.live:5444?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=max.ru&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sid=6ba85179e30d4fc2#%F0%9F%87%AA%F0%9F%87%BA%F0%9F%8D%81%20%D0%92%D1%81%D0%B5%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B%20%E2%AD%90
 
