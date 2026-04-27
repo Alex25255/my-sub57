@@ -42,7 +42,10 @@ vless://688404bc-3e68-4f6a-8c59-f77fd4f84ff6@84.201.175.245:6003?type=xhttp&host
 
 trojan://b3a25ff8-7c46-46fa-b90f-851b62f87d3a@84.201.175.245:6004?type=tcp&headerType=none&security=tls&sni=res-sg.rheonth.ru&alpn=h2,http/1.1&fp=chrome&allowInsecure=0#%F0%9F%87%B8%F0%9F%87%AC%7C%20SG%20Trojan%20TLS
 
-
+vless://688404bc-3e68-4f6a-8c59-f77fd4f84ff6@raw.rheonth.ru:5001?type=grpc&mode=gun&serviceName=grpc-ru&security=reality&fp=edge&sni=sun6-21.userapi.com&pbk=kp2YzNVrzlFG76yHb_PyKC6fEywmL7AlqPIQzzMl4Ao&sid=a9725715bf4c62ff&spx=/#%F0%9F%87%B7%F0%9F%87%BA%7C%20RU-2%20gRPC%20Reality%20%D0%9C%D0%A2%D0%A1,%20%D0%91%D0%B8%D0%BB%D0%B0%D0%B9%D0%BD,%20%D0%99%D0%BE%D1%82%D0%B0
+trojan://913bb78c549d6e914b298f9d96fb3aee@raw.rheonth.ru:5003?type=tcp&headerType=none&security=tls&sni=raw.rheonth.ru&alpn=h2,http/1.1&fp=chrome&allowInsecure=0#%F0%9F%87%B7%F0%9F%87%BA%7C%20RU-4%20Trojan%20TLS%20Megafon
+vless://688404bc-3e68-4f6a-8c59-f77fd4f84ff6@84.201.175.245:5001?type=grpc&mode=gun&serviceName=grpc-ru&security=reality&fp=edge&sni=sun6-21.userapi.com&pbk=Dy2GanHX-qQ3Yyo0hVP_u9QmGz9cTcBSayrWZL5Qqmw&sid=a9725715bf4c62ff&spx=/#%F0%9F%87%B7%F0%9F%87%BA%7C%20RU-10%20gRPC%20Reality
+vless://688404bc-3e68-4f6a-8c59-f77fd4f84ff6@84.201.175.245:5002?type=xhttp&host=&path=/xhttp-ru&mode=auto&security=reality&fp=edge&sni=ads.x5.ru&pbk=Dy2GanHX-qQ3Yyo0hVP_u9QmGz9cTcBSayrWZL5Qqmw&sid=a9725715bf4c62ff&spx=/#%F0%9F%87%B7%F0%9F%87%BA%7C%20RU-11%20XHTTP%20Reality
 
 
 
