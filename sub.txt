@@ -28,9 +28,9 @@ vless://688404bc-3e68-4f6a-8c59-f77fd4f84ff6@res-fi.rheonth.ru:6006?type=grpc&mo
 
 
 
-vless://688404bc-3e68-4f6a-8c59-f77fd4f84ff6@raw.rheonth.ru:6002?type=grpc&mode=gun&serviceName=grpc-proxy&security=reality&fp=edge&sni=ads.x5.ru&pbk=kp2YzNVrzlFG76yHb_PyKC6fEywmL7AlqPIQzzMl4Ao&sid=a9725715bf4c62ff&spx=/#%F0%9F%87%B3%F0%9F%87%B1%7C%20NL%20gRPC%20Reality%20Megafon
 
-vless://688404bc-3e68-4f6a-8c59-f77fd4f84ff6@raw.rheonth.ru:6003?type=xhttp&host=&path=/xhttp-proxy&mode=auto&security=reality&fp=edge&sni=ads.x5.ru&pbk=kp2YzNVrzlFG76yHb_PyKC6fEywmL7AlqPIQzzMl4Ao&sid=a9725715bf4c62ff&spx=/#%F0%9F%87%B3%F0%9F%87%B1%7C%20NL%20XHTTP%20Reality%20Megafon
+
+
 
 trojan://d1826bafaed3f0283efa35b27deb7201@raw.rheonth.ru:6004?type=tcp&headerType=none&security=tls&sni=raw.rheonth.ru&alpn=h2,http/1.1&fp=chrome&allowInsecure=0#%F0%9F%87%B3%F0%9F%87%B1%7C%20NL%20Trojan%20TLS
 
