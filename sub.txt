@@ -12,7 +12,7 @@
 
 
 
-vless://688404bc-3e68-4f6a-8c59-f77fd4f84ff6@res-fi.rheonth.ru:6001?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=eh.vk.com&pbk=cFHihWC7GfoUybcAgt0nXaYxnZC8UP2-eWUCZKjObkM&sid=a9725715bf4c62ff&spx=/#%F0%9F%87%AC%F0%9F%87%A7%7C%20UK%20VLESS%20Reality
+
 
 vless://688404bc-3e68-4f6a-8c59-f77fd4f84ff6@res-fi.rheonth.ru:6002?type=grpc&mode=gun&serviceName=grpc-proxy&security=reality&fp=edge&sni=ads.x5.ru&pbk=cFHihWC7GfoUybcAgt0nXaYxnZC8UP2-eWUCZKjObkM&sid=a9725715bf4c62ff&spx=/#%F0%9F%87%AC%F0%9F%87%A7%7C%20UK%20gRPC%20Reality
 
