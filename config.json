@@ -1017,3 +1017,259 @@
     ]
   }
 }
+
+
+
+
+
+
+
+
+
+
+{
+  "burstObservatory" : {
+    "pingConfig" : {
+      "connectivity" : "http:\/\/connectivitycheck.platform.hicloud.com\/generate_204",
+      "destination" : "https:\/\/www.google.com\/generate_204",
+      "interval" : "5s",
+      "sampling" : 2,
+      "timeout" : "5s"
+    },
+    "subjectSelector" : [
+      "proxy-14",
+      "proxy-89",
+      "proxy-90",
+      "proxy-99"
+    ]
+  },
+  "dns" : {
+    "disableCache" : false,
+    "disableFallback" : false,
+    "disableFallbackIfMatch" : false,
+    "id" : "C5276C4E-D0E6-4062-83F1-23D74937F0B6",
+    "queryStrategy" : "UseIPv4",
+    "servers" : [
+      "https:\/\/1.1.1.1\/dns-query",
+      "https:\/\/8.8.8.8\/dns-query"
+    ]
+  },
+  "id" : "5CC29474-9C3E-4416-A969-3631347D05D7",
+  "inbounds" : [
+    {
+      "listen" : "127.0.0.1",
+      "port" : 10808,
+      "protocol" : "socks",
+      "settings" : {
+        "auth" : "noauth",
+        "udp" : true
+      },
+      "sniffing" : {
+        "destOverride" : [
+          "http",
+          "tls",
+          "quic"
+        ],
+        "enabled" : true,
+        "routeOnly" : false
+      },
+      "tag" : "socks"
+    },
+    {
+      "listen" : "127.0.0.1",
+      "port" : 10809,
+      "protocol" : "http",
+      "settings" : {
+        "allowTransparent" : false
+      },
+      "sniffing" : {
+        "destOverride" : [
+          "http",
+          "tls",
+          "quic"
+        ],
+        "enabled" : true,
+        "routeOnly" : false
+      },
+      "tag" : "http"
+    }
+  ],
+  "log" : {
+    "access" : "\/private\/var\/mobile\/Containers\/Shared\/AppGroup\/0782FD52-97A0-49D1-8263-8BC708856136\/Library\/Application Support\/Xray\/logs\/access.log",
+    "dnsLog" : true,
+    "loglevel" : "Info"
+  },
+  "meta" : {
+    "serverDescription" : "При блокировках 3G-4G"
+  },
+  "outbounds" : [
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "84.201.136.5",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "a040dac9-dde8-48bd-a4e8-c58fdbbb83a4"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "chrome",
+          "publicKey" : "wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI",
+          "serverName" : "cdp.x5.ru",
+          "shortId" : "8ec792bfd725be8a",
+          "show" : false
+        },
+        "security" : "reality"
+      },
+      "tag" : "proxy-14"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "158.160.51.70",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "a040dac9-dde8-48bd-a4e8-c58fdbbb83a4"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "chrome",
+          "publicKey" : "wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI",
+          "serverName" : "cdp.x5.ru",
+          "shortId" : "8ec792bfd725be8a",
+          "show" : false
+        },
+        "security" : "reality"
+      },
+      "tag" : "proxy-89"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "158.160.57.73",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "a040dac9-dde8-48bd-a4e8-c58fdbbb83a4"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "chrome",
+          "publicKey" : "wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI",
+          "serverName" : "cdp.x5.ru",
+          "shortId" : "8ec792bfd725be8a",
+          "show" : false
+        },
+        "security" : "reality"
+      },
+      "tag" : "proxy-90"
+    },
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "158.160.57.73",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "a040dac9-dde8-48bd-a4e8-c58fdbbb83a4"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "chrome",
+          "publicKey" : "wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI",
+          "serverName" : "cdp.x5.ru",
+          "shortId" : "8ec792bfd725be8a",
+          "show" : false
+        },
+        "security" : "reality"
+      },
+      "tag" : "proxy-99"
+    },
+    {
+      "protocol" : "freedom",
+      "tag" : "direct"
+    },
+    {
+      "protocol" : "blackhole",
+      "tag" : "block"
+    }
+  ],
+  "policy" : {
+    "system" : {
+      "statsInboundDownlink" : true,
+      "statsInboundUplink" : true,
+      "statsOutboundDownlink" : true,
+      "statsOutboundUplink" : true
+    }
+  },
+  "remarks" : "🇷🇺 БЕЛЫЙ СПИСОК 3 LTE (x5)",
+  "routing" : {
+    "balancers" : [
+      {
+        "__name__" : "BS3 Pool",
+        "selector" : [
+          "proxy-14",
+          "proxy-89",
+          "proxy-90",
+          "proxy-99"
+        ],
+        "strategy" : {
+          "type" : "Leastping"
+        },
+        "tag" : "proxy_balancer_priority"
+      }
+    ],
+    "domainMatcher" : "hybrid",
+    "domainStrategy" : "IPIfNonMatch",
+    "id" : "726E0EE0-322B-4B29-B00A-D6DE81AF1ABC",
+    "rules" : [
+      {
+        "balancerTag" : "proxy_balancer_priority",
+        "id" : "9E1EE06D-0613-4C87-8F57-74A6D467D768",
+        "inboundTag" : [
+          "http",
+          "socks"
+        ],
+        "type" : "field"
+      }
+    ]
+  }
+}
