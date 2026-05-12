@@ -1,49 +1,59 @@
-"route": {
-  "rules": [
+{
+  "dns": {
+    "servers": [
+      {
+        "tag": "google",
+        "address": "https://8.8.8.8/dns-query"
+      }
+    ]
+  },
+
+  "outbounds": [
     {
-      "ip_cidr": [
-        "10.0.0.0/8",
-        "100.64.0.0/10",
-        "172.16.0.0/12",
-        "192.168.0.0/16",
-        "169.254.0.0/16",
-        "224.0.0.0/4"
-      ],
-      "outbound": "direct"
+      "type": "direct",
+      "tag": "direct"
     },
+
     {
-      "domain_suffix": [
-        "vy.com",
-        "yandex.ru",
-        "yandex.com",
-        "ya.ru",
-        "yandex.net",
-        "vk.com",
-        "vk.ru",
-        "vk.me",
-        "userapi.com",
-        "vkuseraudio.net",
-        "vkuserphoto.net",
-        "vk-cdn.net",
-        "max.ru",
-        "ok.ru",
-        "mail.ru",
-        "gosuslugi.ru",
-        "gu-st.ru",
-        "nalog.gov.ru",
-        "alfabank.ru",
-        "vtb.ru",
-        "ozon.ru",
-        "wildberries.ru",
-        "wildberries.com",
-        "wb.ru",
-        "wbbasket.ru",
-        "wbstatic.net",
-        "yastatic.net",
-        "yandexcloud.net"
-      ],
-      "outbound": "direct"
+      "type": "selector",
+      "tag": "proxy",
+      "outbounds": [
+        "remote-sub"
+      ]
+    },
+
+    {
+      "type": "remote",
+      "tag": "remote-sub",
+      "path": "https://raw.githubusercontent.com/Alex25255/my-sub57/main/sub.txt"
     }
   ],
-  "final": "proxy"
+
+  "route": {
+    "rules": [
+      {
+        "ip_cidr": [
+          "10.0.0.0/8",
+          "100.64.0.0/10",
+          "172.16.0.0/12",
+          "192.168.0.0/16"
+        ],
+        "outbound": "direct"
+      },
+
+      {
+        "domain_suffix": [
+          "yandex.ru",
+          "vk.com",
+          "mail.ru",
+          "ok.ru",
+          "wildberries.ru",
+          "ozon.ru"
+        ],
+        "outbound": "direct"
+      }
+    ],
+
+    "final": "proxy"
+  }
 }
