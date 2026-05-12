@@ -1,19 +1,5 @@
 {
-  "dns": {
-    "servers": [
-      {
-        "tag": "google",
-        "address": "https://8.8.8.8/dns-query"
-      }
-    ]
-  },
-
   "outbounds": [
-    {
-      "type": "direct",
-      "tag": "direct"
-    },
-
     {
       "type": "selector",
       "tag": "proxy",
@@ -21,11 +7,14 @@
         "remote-sub"
       ]
     },
-
     {
       "type": "remote",
       "tag": "remote-sub",
       "path": "https://raw.githubusercontent.com/Alex25255/my-sub57/main/sub.txt"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
     }
   ],
 
@@ -40,7 +29,6 @@
         ],
         "outbound": "direct"
       },
-
       {
         "domain_suffix": [
           "yandex.ru",
