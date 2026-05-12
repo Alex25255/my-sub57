@@ -7,13 +7,11 @@
       }
     ]
   },
-
   "outbounds": [
     {
       "type": "direct",
       "tag": "direct"
     },
-
     {
       "type": "selector",
       "tag": "proxy",
@@ -21,14 +19,12 @@
         "remote-sub"
       ]
     },
-
     {
       "type": "remote",
       "tag": "remote-sub",
       "path": "https://raw.githubusercontent.com/Alex25255/my-sub57/main/sub.txt"
     }
   ],
-
   "route": {
     "rules": [
       {
@@ -40,7 +36,6 @@
         ],
         "outbound": "direct"
       },
-
       {
         "domain_suffix": [
           "yandex.ru",
@@ -53,7 +48,6 @@
         "outbound": "direct"
       }
     ],
-
     "final": "proxy"
   }
 }
