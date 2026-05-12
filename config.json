@@ -1,0 +1,59 @@
+{
+  "dns": {
+    "servers": [
+      {
+        "tag": "google",
+        "address": "https://8.8.8.8/dns-query"
+      }
+    ]
+  },
+
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+
+    {
+      "type": "selector",
+      "tag": "proxy",
+      "outbounds": [
+        "remote-sub"
+      ]
+    },
+
+    {
+      "type": "remote",
+      "tag": "remote-sub",
+      "path": "https://raw.githubusercontent.com/Alex25255/my-sub57/main/sub.txt"
+    }
+  ],
+
+  "route": {
+    "rules": [
+      {
+        "ip_cidr": [
+          "10.0.0.0/8",
+          "100.64.0.0/10",
+          "172.16.0.0/12",
+          "192.168.0.0/16"
+        ],
+        "outbound": "direct"
+      },
+
+      {
+        "domain_suffix": [
+          "yandex.ru",
+          "vk.com",
+          "mail.ru",
+          "ok.ru",
+          "wildberries.ru",
+          "ozon.ru"
+        ],
+        "outbound": "direct"
+      }
+    ],
+
+    "final": "proxy"
+  }
+}
