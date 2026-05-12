@@ -1,4 +1,4 @@
-vless://c7f8a1d2-9b44-4d7b-a3f1-6e8c9d2f5a77@104.21.32.1:443?encryption=none&security=tls&type=ws&host=cdn.cloudflare.com&path=%2Fvless#Обход#белые%20списки👇
+vless://c7f8a1d2-9b44-4d7b-a3f1-6e8c9d2f5a77@104.21.32.1:443?encryption=none&security=tls&type=ws&host=cdn.cloudflare.com&path=%2Fvless#ОБЗОД БЕЛЫЕ%20СПИСКИ👇
 
 
 vless://222ddebe-5d71-45c4-8608-52fd7af59a47@188.68.218.106:443?encryption=none&type=grpc&mode=gun&serviceName=&security=reality&fp=chrome&sni=api-maps.yandex.ru&pbk=iN5cZSyJnwnhvsTT5Rc2wdLRQEi7d40rxNDEDN3sRkg&sid=3f3053322d5ac570#%F0%9F%87%AB%F0%9F%87%B2%20%D0%9E%D0%B1%D1%85%D0%BE%D0%B4%20%D0%B3%D0%BB%D1%83%D1%88%D0%B8%D0%BB%D0%BE%D0%BA%201
@@ -31,7 +31,7 @@ vless://7439d2c3-8710-4aa5-acc5-856c13f4c86d@go-tr.rheonth.ru:443?flow=xtls-rprx
 
 
 
-vless://91b3d6a4-2e5f-4f2a-8c61-1d9e7b4c8a22@172.67.155.9:443?encryption=none&security=tls&type=ws&host=www.cloudflare.com&path=%2Fvpn#Обычный%20VPN👇
+vless://91b3d6a4-2e5f-4f2a-8c61-1d9e7b4c8a22@172.67.155.9:443?encryption=none&security=tls&type=ws&host=www.cloudflare.com&path=%2Fvpn#ОБЫЧНЫЙ%20VPN👇
 
 
 
