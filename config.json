@@ -1,1 +1,49 @@
-
+"route": {
+  "rules": [
+    {
+      "ip_cidr": [
+        "10.0.0.0/8",
+        "100.64.0.0/10",
+        "172.16.0.0/12",
+        "192.168.0.0/16",
+        "169.254.0.0/16",
+        "224.0.0.0/4"
+      ],
+      "outbound": "direct"
+    },
+    {
+      "domain_suffix": [
+        "vy.com",
+        "yandex.ru",
+        "yandex.com",
+        "ya.ru",
+        "yandex.net",
+        "vk.com",
+        "vk.ru",
+        "vk.me",
+        "userapi.com",
+        "vkuseraudio.net",
+        "vkuserphoto.net",
+        "vk-cdn.net",
+        "max.ru",
+        "ok.ru",
+        "mail.ru",
+        "gosuslugi.ru",
+        "gu-st.ru",
+        "nalog.gov.ru",
+        "alfabank.ru",
+        "vtb.ru",
+        "ozon.ru",
+        "wildberries.ru",
+        "wildberries.com",
+        "wb.ru",
+        "wbbasket.ru",
+        "wbstatic.net",
+        "yastatic.net",
+        "yandexcloud.net"
+      ],
+      "outbound": "direct"
+    }
+  ],
+  "final": "proxy"
+}
