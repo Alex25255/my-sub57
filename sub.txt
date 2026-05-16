@@ -1,5 +1,5 @@
 vless://c7f8a1d2-9b44-4d7b-a3f1-6e8c9d2f5a77@104.21.32.1:443?encryption=none&security=tls&type=ws&host=cdn.cloudflare.com&path=%2Fvless#ОБХОД БЕЛЫХ%20СПИСКОВ👇
-vless://34b05921-5e61-4025-8a9b-57afdf325f03@pl2.cyphervpn.pro:443?encryption=none&flow=&type=ws&path=/ws&security=tls&fp=chrome&sni=pl2.cyphervpn.pro#%E2%9C%88%EF%B8%8F%20%D0%90%D0%B2%D1%82%D0%BE-%D0%B2%D1%8B%D0%B1%D0%BE%D1%80
+
 
 
 
