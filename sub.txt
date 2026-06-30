@@ -1,5 +1,5 @@
 vmess://eyJwYXRoIjoiXC9hcGlcL3YxXC9ncHUtc3RyZWFtXC9zb2NrZXQiLCJ0bHMiOiJ0bHMiLCJwcyI6IvCfh7Pwn4exIE5MINC70YPRh9GI0LjQuSAxLjAiLCJ0eXBlIjoibm9uZSIsInNuaSI6InJlbmRlcmVyLXN0cmVhbS0xLTQxNi5taXJyYS5ub3ciLCJ2IjoiMiIsImFkZCI6InJlbmRlcmVyLXN0cmVhbS0xLTQxNi5taXJyYS5ub3ciLCJob3N0IjoicmVuZGVyZXItc3RyZWFtLTEtNDE2Lm1pcnJhLm5vdyIsInNjeSI6ImF1dG8iLCJwb3J0Ijo0NDMsImFscG4iOiJoMiIsIm5ldCI6IndzIiwiaWQiOiJiOGE4ZDg0YS01NmQwLTRiZDAtYThhNS1iNmQ2NzQyMTY3MTkiLCJhaWQiOjAsImZwIjoiZmlyZWZveCJ9
-
+vless://38efbe4a-92da-492e-a289-97b5b6e202f4@ru6.actualvpn.ru:8443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=site.ru6.actualvpn.ru&pbk=Rnq_NKWEdUJdWjzAMEMsoRe0_jwmQk4Xp40PgJ69DwY&sid=7a&spx=/7DJRJ2eqoKORkGR#LTE%20(white%20list)
 
 
 vless://f6ffd4cc-1324-419a-b5c4-da3d4ec7136f@176.108.245.184:25565?flow=xtls-rprx-vision&type=tcp&security=reality&fp=chrome&sni=gp.x5.ru&pbk=4i3aVyDqVM-6wbiUQnfaXfBwQkNXxQp5YQZ4SRVbL2I&spx=/#%F0%9F%87%B7%F0%9F%87%BA%20%D0%91%D0%B5%D0%BB%D1%8B%D0%B9%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82%20%231%20%7C%20%D0%92%D1%81%D0%B5%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B
