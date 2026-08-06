@@ -1,6 +1,6 @@
 vmess://eyJwb3J0Ijo0NDMsImZwIjoiZmlyZWZveCIsImFpZCI6MCwiYWxwbiI6ImgyIiwibmV0Ijoid3MiLCJzY3kiOiJhdXRvIiwidiI6IjIiLCJ0bHMiOiJ0bHMiLCJwcyI6IvCfh7Pwn4exIE5MIOKAlCDQntCx0YXQvtC0INCz0LvRg9GI0LjQu9C+0LogTFRFIiwiaWQiOiJiOGE4ZDg0YS01NmQwLTRiZDAtYThhNS1iNmQ2NzQyMTY3MTkiLCJob3N0IjoicmVuZGVyZXItc3RyZWFtLTEtNTA1Lm1pcnJhY2xvdWQuaW8iLCJ0eXBlIjoibm9uZSIsImFkZCI6InJlbmRlcmVyLXN0cmVhbS0xLTUwNS5taXJyYWNsb3VkLmlvIiwic25pIjoicmVuZGVyZXItc3RyZWFtLTEtNTA1Lm1pcnJhY2xvdWQuaW8iLCJwYXRoIjoiXC9hcGlcL3YxXC9ncHUtc3RyZWFtXC9zb2NrZXQifQ==
 vless://b8a8d84a-56d0-4bd0-a8a5-b6d674216719@renderer-bridge-1-505.mirracloud.io:443?type=grpc&security=tls&fp=firefox&sni=renderer-bridge-1-505.mirracloud.io&path=VideoRendererBridge&serviceName=VideoRendererBridge&alpn=h2#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%E2%80%94%20Wi-Fi%20(%D0%B2%D1%8B%D1%88%D0%B5%20%D1%81%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D1%8C)
-vless://7812294f-cf13-494a-aa08-ca696360e126@78.159.245.84:23550?flow=xtls-rprx-vision&type=tcp&security=reality&fp=chrome&sni=iv.kommersant.ru&pbk=0aGfyA8DTQJOnq-C4CuE-4HjeCpxcTTw-dqe04il5FI&sid=f5081f3a&spx=/#%D0%98%D0%B3%D1%80%D0%BE%D0%B2%D0%BE%D0%B9
+vless://7812294f-cf13-494a-aa08-ca696360e126@78.159.245.84:23550?flow=xtls-rprx-vision&type=tcp&security=reality&fp=chrome&sni=img.perekrestok.ru&pbk=0aGfyA8DTQJOnq-C4CuE-4HjeCpxcTTw-dqe04il5FI&sid=f5081f3a&spx=/#%F0%9F%92%AB%20%D0%98%D0%B3%D1%80%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%B1%D0%B5%D0%BB%D1%8B%D0%B9%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82
 
 
 
