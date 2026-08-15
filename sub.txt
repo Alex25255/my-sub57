@@ -2,7 +2,7 @@ vmess://eyJwb3J0Ijo0NDMsImZwIjoiZmlyZWZveCIsImFpZCI6MCwiYWxwbiI6ImgyIiwibmV0Ijoi
 
 vless://7812294f-cf13-494a-aa08-ca696360e126@78.159.245.84:23550?flow=xtls-rprx-vision&type=tcp&security=reality&fp=chrome&sni=img.perekrestok.ru&pbk=0aGfyA8DTQJOnq-C4CuE-4HjeCpxcTTw-dqe04il5FI&sid=f5081f3a&spx=/#%F0%9F%92%AB%20%D0%98%D0%B3%D1%80%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%B1%D0%B5%D0%BB%D1%8B%D0%B9%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82
 
-hysteria2://777c7615-8d0e-462a-a873-569effb586de@nld0001hy01.packet-drop-society.net:443?sni=nld0001hy01.packet-drop-society.net#%25F0%259F%2587%25B3%25F0%259F%2587%25B1%2520Wi-Fi
+hysteria2://777c7615-8d0e-462a-a873-569effb586de@nld0001hy01.packet-drop-society.net:443?sni=nld0001hy01.packet-drop-society.net#Wi-Fi
 vless://b56a08d1-8eff-44b4-b772-5d775839b903@103.112.71.132:43000?flow=xtls-rprx-vision&type=tcp&security=reality&fp=chrome&sni=103.112.71.132&pbk=xek6vYH669XgeNw_i_F1X5MeRkB6U3Pyj0XO44zWjks&sid=32c023fd&spx=/#%F0%9F%87%B3%F0%9F%87%B1%20Wi-Fi
 
 
