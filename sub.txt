@@ -1,7 +1,7 @@
 vmess://eyJwb3J0Ijo0NDMsImZwIjoiZmlyZWZveCIsImFpZCI6MCwiYWxwbiI6ImgyIiwibmV0Ijoid3MiLCJzY3kiOiJhdXRvIiwidiI6IjIiLCJ0bHMiOiJ0bHMiLCJwcyI6IvCfh7Pwn4exIE5MIOKAlCDQntCx0YXQvtC0INCz0LvRg9GI0LjQu9C+0LogTFRFIiwiaWQiOiJiOGE4ZDg0YS01NmQwLTRiZDAtYThhNS1iNmQ2NzQyMTY3MTkiLCJob3N0IjoicmVuZGVyZXItc3RyZWFtLTEtNTA1Lm1pcnJhY2xvdWQuaW8iLCJ0eXBlIjoibm9uZSIsImFkZCI6InJlbmRlcmVyLXN0cmVhbS0xLTUwNS5taXJyYWNsb3VkLmlvIiwic25pIjoicmVuZGVyZXItc3RyZWFtLTEtNTA1Lm1pcnJhY2xvdWQuaW8iLCJwYXRoIjoiXC9hcGlcL3YxXC9ncHUtc3RyZWFtXC9zb2NrZXQifQ==
 
 vless://7812294f-cf13-494a-aa08-ca696360e126@78.159.245.84:23550?flow=xtls-rprx-vision&type=tcp&security=reality&fp=chrome&sni=img.perekrestok.ru&pbk=0aGfyA8DTQJOnq-C4CuE-4HjeCpxcTTw-dqe04il5FI&sid=f5081f3a&spx=/#%D0%98%D0%B3%D1%80%D0%BE%D0%B2%D0%BE%D0%B9%20(%20%D0%9E%D0%B1%D1%85%D0%BE%D0%B4%20%D0%B3%D0%BB%D1%83%D1%88%D0%B8%D0%BB%D0%BE%D0%BA%20)
-hysteria2://777c7615-8d0e-462a-a873-569effb586de@nld0001hy01.packet-drop-society.net:443?sni=nld0001hy01.packet-drop-society.net#Wi-Fi
+vless://d96c6d52-7737-477c-aa23-bb4c669f44cb@nl-198.southnets.cloud:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=nl-198.southnets.cloud&pbk=0Ynmu1sxBq-fPpc0YO8cl-58a-YHb2Q5E9cw4D93sjg&sid=1de76fa111139f1f&spx=/#%F0%9F%87%B3%F0%9F%87%B1%20Wi-Fi
 
 
 
