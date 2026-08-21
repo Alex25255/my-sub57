@@ -1,8 +1,6 @@
-{
-  "name": "RU Direct",
-  "rules": [
-    {
-      "domain": ["domain:yandex.ru",
+"Name": "RU Direct",
+"DirectSites": [
+        "domain:yandex.ru",
 "domain:yandex.net",
 "domain:yandex.com",
 "domain:ya.ru",
@@ -686,8 +684,8 @@
 "domain:нашдом.рф",
 
 "domain:freeinternet.yota.ru"
-              ],
-      "outbound": "direct"
-    }
-  ]
+          ],
+  "DirectIp": [],
+  "RemoteDNSType": "DoH",
+  "DomainStrategy": "IPIfNonMatch"
 }
