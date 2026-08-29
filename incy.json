@@ -36,6 +36,13 @@
           "outboundTag": "🇳🇱 Обход глушилок LTE"
         },
         {
+          "type": "field",
+          "protocol": [
+            "bittorrent"
+          ],
+          "outboundTag": "direct"
+        },
+        {
           "inboundTag": [
             "wg_bootstrap_dns"
           ],
@@ -282,7 +289,35 @@
             "domain:vk-apps.ru",
             "domain:vkuseraudio.net",
             "domain:vkuseraudio.com",
-            "domain:vkuserlive.net"
+            "domain:vkuserlive.net",
+            "domain:steampowered.com",
+            "domain:steamcommunity.com",
+            "domain:steamstatic.com",
+            "domain:steamcontent.com",
+            "domain:steamserver.net",
+            "domain:steamgames.com",
+            "domain:steam-chat.com",
+            "domain:steamusercontent.com",
+            "domain:steamcdn-a.akamaihd.net",
+            "domain:playstation.com",
+            "domain:playstation.net",
+            "domain:playstationnetwork.com",
+            "domain:sonyentertainmentnetwork.com",
+            "domain:np.community.playstation.net",
+            "domain:psnprofiles.com",
+            "domain:lesta.ru",
+            "domain:lesta.games",
+            "domain:tanki.su",
+            "domain:worldoftanks.ru",
+            "domain:epicgames.com",
+            "domain:epicgames.dev",
+            "domain:unrealengine.com",
+            "domain:epicgamescdn.com",
+            "domain:battle.net",
+            "domain:blizzard.com",
+            "domain:blizzard.net",
+            "domain:blz-contentstack.com",
+            "domain:blzstatic.cn"
           ],
           "outboundTag": "direct"
         }
@@ -686,6 +721,13 @@
           "outboundTag": "🇷🇺 Обход глушилок LTE"
         },
         {
+          "type": "field",
+          "protocol": [
+            "bittorrent"
+          ],
+          "outboundTag": "direct"
+        },
+        {
           "inboundTag": [
             "wg_bootstrap_dns"
           ],
@@ -932,7 +974,35 @@
             "domain:vk-apps.ru",
             "domain:vkuseraudio.net",
             "domain:vkuseraudio.com",
-            "domain:vkuserlive.net"
+            "domain:vkuserlive.net",
+            "domain:steampowered.com",
+            "domain:steamcommunity.com",
+            "domain:steamstatic.com",
+            "domain:steamcontent.com",
+            "domain:steamserver.net",
+            "domain:steamgames.com",
+            "domain:steam-chat.com",
+            "domain:steamusercontent.com",
+            "domain:steamcdn-a.akamaihd.net",
+            "domain:playstation.com",
+            "domain:playstation.net",
+            "domain:playstationnetwork.com",
+            "domain:sonyentertainmentnetwork.com",
+            "domain:np.community.playstation.net",
+            "domain:psnprofiles.com",
+            "domain:lesta.ru",
+            "domain:lesta.games",
+            "domain:tanki.su",
+            "domain:worldoftanks.ru",
+            "domain:epicgames.com",
+            "domain:epicgames.dev",
+            "domain:unrealengine.com",
+            "domain:epicgamescdn.com",
+            "domain:battle.net",
+            "domain:blizzard.com",
+            "domain:blizzard.net",
+            "domain:blz-contentstack.com",
+            "domain:blzstatic.cn"
           ],
           "outboundTag": "direct"
         }
@@ -1358,6 +1428,13 @@
           "outboundTag": "💫 Игровой обход глушилок"
         },
         {
+          "type": "field",
+          "protocol": [
+            "bittorrent"
+          ],
+          "outboundTag": "direct"
+        },
+        {
           "inboundTag": [
             "wg_bootstrap_dns"
           ],
@@ -1604,7 +1681,35 @@
             "domain:vk-apps.ru",
             "domain:vkuseraudio.net",
             "domain:vkuseraudio.com",
-            "domain:vkuserlive.net"
+            "domain:vkuserlive.net",
+            "domain:steampowered.com",
+            "domain:steamcommunity.com",
+            "domain:steamstatic.com",
+            "domain:steamcontent.com",
+            "domain:steamserver.net",
+            "domain:steamgames.com",
+            "domain:steam-chat.com",
+            "domain:steamusercontent.com",
+            "domain:steamcdn-a.akamaihd.net",
+            "domain:playstation.com",
+            "domain:playstation.net",
+            "domain:playstationnetwork.com",
+            "domain:sonyentertainmentnetwork.com",
+            "domain:np.community.playstation.net",
+            "domain:psnprofiles.com",
+            "domain:lesta.ru",
+            "domain:lesta.games",
+            "domain:tanki.su",
+            "domain:worldoftanks.ru",
+            "domain:epicgames.com",
+            "domain:epicgames.dev",
+            "domain:unrealengine.com",
+            "domain:epicgamescdn.com",
+            "domain:battle.net",
+            "domain:blizzard.com",
+            "domain:blizzard.net",
+            "domain:blz-contentstack.com",
+            "domain:blzstatic.cn"
           ],
           "outboundTag": "direct"
         }
