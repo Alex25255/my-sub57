@@ -45,15 +45,6 @@
         {
           "type": "field",
           "domain": [
-            "geosite:win-spy",
-            "geosite:torrent",
-            "geosite:category-ads"
-          ],
-          "outboundTag": "block"
-        },
-        {
-          "type": "field",
-          "domain": [
             "domain:1tv.ru",
             "domain:2gis.com",
             "domain:2gis.ru",
@@ -700,15 +691,6 @@
           ],
           "type": "field",
           "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "geosite:win-spy",
-            "geosite:torrent",
-            "geosite:category-ads"
-          ],
-          "outboundTag": "block"
         },
         {
           "type": "field",
@@ -1381,15 +1363,6 @@
           ],
           "type": "field",
           "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "geosite:win-spy",
-            "geosite:torrent",
-            "geosite:category-ads"
-          ],
-          "outboundTag": "block"
         },
         {
           "type": "field",
