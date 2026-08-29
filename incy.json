@@ -18,7 +18,7 @@
         {
           "type": "field",
           "network": "tcp",
-          "outboundTag": "proxy",
+          "outboundTag": "🇳🇱 Обход глушилок LTE",
           "port": "853"
         },
         {
@@ -33,7 +33,7 @@
           "inboundTag": [
             "remote_dns"
           ],
-          "outboundTag": "proxy"
+          "outboundTag": "🇳🇱 Обход глушилок LTE"
         },
         {
           "inboundTag": [
@@ -322,7 +322,7 @@
             }
           ]
         },
-        "tag": "proxy"
+        "tag": "🇳🇱 Обход глушилок LTE"
       },
       {
         "protocol": "freedom",
@@ -668,7 +668,7 @@
         {
           "type": "field",
           "network": "tcp",
-          "outboundTag": "proxy",
+          "outboundTag": "🇷🇺 Обход глушилок LTE",
           "port": "853"
         },
         {
@@ -683,7 +683,7 @@
           "inboundTag": [
             "remote_dns"
           ],
-          "outboundTag": "proxy"
+          "outboundTag": "🇷🇺 Обход глушилок LTE"
         },
         {
           "inboundTag": [
@@ -941,7 +941,7 @@
     },
     "outbounds": [
       {
-        "tag": "proxy",
+        "tag": "🇷🇺 Обход глушилок LTE",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1340,7 +1340,7 @@
         {
           "type": "field",
           "network": "tcp",
-          "outboundTag": "proxy",
+          "outboundTag": "💫 Игровой обход глушилок",
           "port": "853"
         },
         {
@@ -1355,7 +1355,7 @@
           "inboundTag": [
             "remote_dns"
           ],
-          "outboundTag": "proxy"
+          "outboundTag": "💫 Игровой обход глушилок"
         },
         {
           "inboundTag": [
@@ -1613,7 +1613,7 @@
     },
     "outbounds": [
       {
-        "tag": "proxy",
+        "tag": "💫 Игровой обход глушилок",
         "protocol": "vless",
         "settings": {
           "vnext": [
