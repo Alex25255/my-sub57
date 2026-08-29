@@ -654,9 +654,8 @@
       "loglevel": "none"
     },
     "name": "🇳🇱 Обход глушилок LTE",
-    "remarks": "🇳🇱 Обход глушилок LTE",
     "meta": {
-      "serverDescription": "🇳🇱 Обход глушилок LTE"
+      "serverDescription": "VMess • WS • TLS"
     }
   },
   {
@@ -1336,9 +1335,8 @@
       "loglevel": "none"
     },
     "name": "🇷🇺 Обход глушилок LTE",
-    "remarks": "🇷🇺 Обход глушилок LTE",
     "meta": {
-      "serverDescription": "🇷🇺 Обход глушилок LTE"
+      "serverDescription": "VLESS • XHTTP • TLS"
     }
   },
   {
@@ -1992,9 +1990,8 @@
       "loglevel": "none"
     },
     "name": "💫 Игровой обход глушилок",
-    "remarks": "💫 Игровой обход глушилок",
     "meta": {
-      "serverDescription": "💫 Игровой обход глушилок"
+      "serverDescription": "VLESS • TCP • Reality"
     }
   }
 ]
