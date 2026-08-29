@@ -651,5 +651,7 @@
     "error": "/private/var/mobile/Containers/Shared/AppGroup/B14B4770-0101-4E8C-8876-ED8695DB86C5/logs/xray.log",
     "access": "none",
     "loglevel": "none"
-  }
+  },
+  "name": "🇳🇱 Обход глушилок LTE",
+  "remarks": "🇳🇱 Обход глушилок LTE"
 }
