@@ -248,6 +248,10 @@
             "domain:vkvideo.ru",
             "domain:vprok.ru",
             "domain:vseinstrumenty.ru",
+            "domain:vseinstrumenti.ru",
+            "domain:vseinstrumenty.com",
+            "domain:cdn.vseinstrumenti.ru",
+            "domain:static.vseinstrumenti.ru",
             "domain:vsk.ru",
             "domain:vtb.ru",
             "domain:vybory.gov.ru",
@@ -597,6 +601,10 @@
             "domain:vkvideo.ru",
             "domain:vprok.ru",
             "domain:vseinstrumenty.ru",
+            "domain:vseinstrumenti.ru",
+            "domain:vseinstrumenty.com",
+            "domain:cdn.vseinstrumenti.ru",
+            "domain:static.vseinstrumenti.ru",
             "domain:vsk.ru",
             "domain:vtb.ru",
             "domain:vybory.gov.ru",
@@ -933,6 +941,10 @@
             "domain:vkvideo.ru",
             "domain:vprok.ru",
             "domain:vseinstrumenty.ru",
+            "domain:vseinstrumenti.ru",
+            "domain:vseinstrumenty.com",
+            "domain:cdn.vseinstrumenti.ru",
+            "domain:static.vseinstrumenti.ru",
             "domain:vsk.ru",
             "domain:vtb.ru",
             "domain:vybory.gov.ru",
@@ -1304,6 +1316,10 @@
             "domain:vkvideo.ru",
             "domain:vprok.ru",
             "domain:vseinstrumenty.ru",
+            "domain:vseinstrumenti.ru",
+            "domain:vseinstrumenty.com",
+            "domain:cdn.vseinstrumenti.ru",
+            "domain:static.vseinstrumenti.ru",
             "domain:vsk.ru",
             "domain:vtb.ru",
             "domain:vybory.gov.ru",
@@ -1640,6 +1656,10 @@
             "domain:vkvideo.ru",
             "domain:vprok.ru",
             "domain:vseinstrumenty.ru",
+            "domain:vseinstrumenti.ru",
+            "domain:vseinstrumenty.com",
+            "domain:cdn.vseinstrumenti.ru",
+            "domain:static.vseinstrumenti.ru",
             "domain:vsk.ru",
             "domain:vtb.ru",
             "domain:vybory.gov.ru",
@@ -1985,6 +2005,10 @@
             "domain:vkvideo.ru",
             "domain:vprok.ru",
             "domain:vseinstrumenty.ru",
+            "domain:vseinstrumenti.ru",
+            "domain:vseinstrumenty.com",
+            "domain:cdn.vseinstrumenti.ru",
+            "domain:static.vseinstrumenti.ru",
             "domain:vsk.ru",
             "domain:vtb.ru",
             "domain:vybory.gov.ru",
@@ -2073,116 +2097,3 @@
     }
   }
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
