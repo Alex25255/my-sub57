@@ -1,28 +1,66 @@
 {
   "log": {
-    "loglevel": "warning"
+    "loglevel": "debug"
   },
   "inbounds": [
     {
-      "tag": "mixed-in",
-      "listen": "127.0.0.1",
-      "port": 10808,
-      "protocol": "mixed",
       "settings": {
-        "udp": true
+        "udp": true,
+        "auth": "noauth"
       },
       "sniffing": {
-        "enabled": true,
         "destOverride": [
           "http",
           "tls",
           "quic"
         ],
-        "routeOnly": true
-      }
+        "routeOnly": true,
+        "enabled": true
+      },
+      "listen": "127.0.0.1",
+      "tag": "in-chain",
+      "port": 10808,
+      "protocol": "mixed"
     }
   ],
   "outbounds": [
+    {
+      "tag": "SERVER-2-VMESS",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "renderer-stream-1-505.mirracloud.io",
+            "port": 443,
+            "users": [
+              {
+                "security": "auto",
+                "level": 8,
+                "alterId": 0,
+                "id": "b8a8d84a-56d0-4bd0-a8a5-b6d674216719"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "fingerprint": "firefox",
+          "serverName": "renderer-stream-1-505.mirracloud.io"
+        },
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-1-505.mirracloud.io"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "SERVER-1-VLESS"
+        }
+      }
+    },
     {
       "tag": "SERVER-1-VLESS",
       "protocol": "vless",
@@ -52,63 +90,51 @@
         },
         "xhttpSettings": {
           "host": "cdn4.el-bot.com",
-          "path": "/p"
-        }
-      }
-    },
-    {
-      "tag": "SERVER-2-VMESS",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "renderer-stream-1-505.mirracloud.io",
-            "port": 443,
-            "users": [
-              {
-                "id": "b8a8d84a-56d0-4bd0-a8a5-b6d674216719",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-1-505.mirracloud.io",
-          "fingerprint": "firefox"
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-1-505.mirracloud.io"
+          "path": "/p",
+          "mode": "packet-up",
+          "scMaxEachPostBytes": "262144-786432",
+          "scMinPostsIntervalMs": "0",
+          "seqKey": "offset",
+          "seqPlacement": "query",
+          "sessionIDKey": "sid",
+          "sessionIDPlacement": "query",
+          "sessionKey": "sid",
+          "sessionPlacement": "query",
+          "uplinkHTTPMethod": "GET",
+          "xPaddingBytes": "48-256",
+          "xPaddingKey": "q",
+          "xPaddingMethod": "tokenish",
+          "xPaddingObfsMode": true,
+          "xPaddingPlacement": "query",
+          "xmux": {
+            "cMaxReuseTimes": 0,
+            "hKeepAlivePeriod": 20,
+            "hMaxRequestTimes": "600-900",
+            "hMaxReusableSecs": "120-240",
+            "maxConcurrency": "0",
+            "maxConnections": "16-32"
           }
         }
-      },
-      "proxySettings": {
-        "tag": "SERVER-1-VLESS",
-        "transportLayer": true
       }
     },
     {
       "tag": "direct",
-      "protocol": "freedom"
+      "protocol": "freedom",
+      "settings": {}
     },
     {
       "tag": "block",
-      "protocol": "blackhole"
+      "protocol": "blackhole",
+      "settings": {}
     }
   ],
   "routing": {
-    "domainStrategy": "AsIs",
+    "domainStrategy": "IPIfNonMatch",
     "rules": [
       {
         "type": "field",
         "inboundTag": [
-          "mixed-in"
+          "in-chain"
         ],
         "outboundTag": "SERVER-2-VMESS"
       }
