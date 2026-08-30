@@ -333,7 +333,12 @@
             "domain:proxy.mob.maps.yandex.net",
             "domain:cdn.inappstory.ru",
             "domain:api.inappstory.ru",
-            "domain:observability.x5.ru"
+            "domain:observability.x5.ru",
+            "domain:sba.yandex.net",
+            "domain:image.mm.ru",
+            "domain:fcmtoken.googleapis.com",
+            "domain:mobile-api.mm.ru",
+            "domain:event-stream-api.magnit.ru"
           ],
           "outboundTag": "direct"
         }
@@ -670,7 +675,12 @@
             "domain:proxy.mob.maps.yandex.net",
             "domain:cdn.inappstory.ru",
             "domain:api.inappstory.ru",
-            "domain:observability.x5.ru"
+            "domain:observability.x5.ru",
+            "domain:sba.yandex.net",
+            "domain:image.mm.ru",
+            "domain:fcmtoken.googleapis.com",
+            "domain:mobile-api.mm.ru",
+            "domain:event-stream-api.magnit.ru"
           ],
           "skipFallback": true,
           "tag": "domestic_dns",
@@ -1050,7 +1060,12 @@
             "domain:proxy.mob.maps.yandex.net",
             "domain:cdn.inappstory.ru",
             "domain:api.inappstory.ru",
-            "domain:observability.x5.ru"
+            "domain:observability.x5.ru",
+            "domain:sba.yandex.net",
+            "domain:image.mm.ru",
+            "domain:fcmtoken.googleapis.com",
+            "domain:mobile-api.mm.ru",
+            "domain:event-stream-api.magnit.ru"
           ],
           "outboundTag": "direct"
         }
@@ -1409,7 +1424,12 @@
             "domain:proxy.mob.maps.yandex.net",
             "domain:cdn.inappstory.ru",
             "domain:api.inappstory.ru",
-            "domain:observability.x5.ru"
+            "domain:observability.x5.ru",
+            "domain:sba.yandex.net",
+            "domain:image.mm.ru",
+            "domain:fcmtoken.googleapis.com",
+            "domain:mobile-api.mm.ru",
+            "domain:event-stream-api.magnit.ru"
           ],
           "skipFallback": true,
           "tag": "domestic_dns",
@@ -1789,7 +1809,12 @@
             "domain:proxy.mob.maps.yandex.net",
             "domain:cdn.inappstory.ru",
             "domain:api.inappstory.ru",
-            "domain:observability.x5.ru"
+            "domain:observability.x5.ru",
+            "domain:sba.yandex.net",
+            "domain:image.mm.ru",
+            "domain:fcmtoken.googleapis.com",
+            "domain:mobile-api.mm.ru",
+            "domain:event-stream-api.magnit.ru"
           ],
           "outboundTag": "direct"
         }
@@ -2122,7 +2147,12 @@
             "domain:proxy.mob.maps.yandex.net",
             "domain:cdn.inappstory.ru",
             "domain:api.inappstory.ru",
-            "domain:observability.x5.ru"
+            "domain:observability.x5.ru",
+            "domain:sba.yandex.net",
+            "domain:image.mm.ru",
+            "domain:fcmtoken.googleapis.com",
+            "domain:mobile-api.mm.ru",
+            "domain:event-stream-api.magnit.ru"
           ],
           "skipFallback": true,
           "tag": "domestic_dns",
