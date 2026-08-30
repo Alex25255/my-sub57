@@ -24,41 +24,7 @@
   ],
   "outbounds": [
     {
-      "tag": "SERVER-1-VMESS",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "renderer-stream-1-505.mirracloud.io",
-            "port": 443,
-            "users": [
-              {
-                "id": "b8a8d84a-56d0-4bd0-a8a5-b6d674216719",
-                "alterId": 0,
-                "security": "auto",
-                "level": 0
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-1-505.mirracloud.io",
-          "fingerprint": "firefox"
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-1-505.mirracloud.io"
-          }
-        }
-      }
-    },
-    {
-      "tag": "SERVER-2-VLESS",
+      "tag": "SERVER-1-VLESS",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -88,9 +54,42 @@
           "host": "cdn4.el-bot.com",
           "path": "/p"
         }
+      }
+    },
+    {
+      "tag": "SERVER-2-VMESS",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "renderer-stream-1-505.mirracloud.io",
+            "port": 443,
+            "users": [
+              {
+                "id": "b8a8d84a-56d0-4bd0-a8a5-b6d674216719",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "renderer-stream-1-505.mirracloud.io",
+          "fingerprint": "firefox"
+        },
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-1-505.mirracloud.io"
+          }
+        }
       },
       "proxySettings": {
-        "tag": "SERVER-1-VMESS",
+        "tag": "SERVER-1-VLESS",
         "transportLayer": true
       }
     },
@@ -111,7 +110,7 @@
         "inboundTag": [
           "mixed-in"
         ],
-        "outboundTag": "SERVER-2-VLESS"
+        "outboundTag": "SERVER-2-VMESS"
       }
     ]
   }
