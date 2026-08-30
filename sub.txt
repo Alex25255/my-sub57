@@ -330,7 +330,8 @@
             "domain:5d.5ka.ru",
             "domain:proxy.mob.maps.yandex.net",
             "domain:cdn.inappstory.ru",
-            "domain:api.inappstory.ru"
+            "domain:api.inappstory.ru",
+            "domain:observability.x5.ru"
           ],
           "outboundTag": "direct"
         }
@@ -664,7 +665,8 @@
             "domain:5d.5ka.ru",
             "domain:proxy.mob.maps.yandex.net",
             "domain:cdn.inappstory.ru",
-            "domain:api.inappstory.ru"
+            "domain:api.inappstory.ru",
+            "domain:observability.x5.ru"
           ],
           "skipFallback": true,
           "tag": "domestic_dns",
@@ -1041,7 +1043,8 @@
             "domain:5d.5ka.ru",
             "domain:proxy.mob.maps.yandex.net",
             "domain:cdn.inappstory.ru",
-            "domain:api.inappstory.ru"
+            "domain:api.inappstory.ru",
+            "domain:observability.x5.ru"
           ],
           "outboundTag": "direct"
         }
@@ -1397,7 +1400,8 @@
             "domain:5d.5ka.ru",
             "domain:proxy.mob.maps.yandex.net",
             "domain:cdn.inappstory.ru",
-            "domain:api.inappstory.ru"
+            "domain:api.inappstory.ru",
+            "domain:observability.x5.ru"
           ],
           "skipFallback": true,
           "tag": "domestic_dns",
@@ -1774,7 +1778,8 @@
             "domain:5d.5ka.ru",
             "domain:proxy.mob.maps.yandex.net",
             "domain:cdn.inappstory.ru",
-            "domain:api.inappstory.ru"
+            "domain:api.inappstory.ru",
+            "domain:observability.x5.ru"
           ],
           "outboundTag": "direct"
         }
@@ -2104,7 +2109,8 @@
             "domain:5d.5ka.ru",
             "domain:proxy.mob.maps.yandex.net",
             "domain:cdn.inappstory.ru",
-            "domain:api.inappstory.ru"
+            "domain:api.inappstory.ru",
+            "domain:observability.x5.ru"
           ],
           "skipFallback": true,
           "tag": "domestic_dns",
