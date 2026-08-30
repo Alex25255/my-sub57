@@ -321,7 +321,16 @@
             "domain:blizzard.com",
             "domain:blizzard.net",
             "domain:blz-contentstack.com",
-            "domain:blzstatic.cn"
+            "domain:blzstatic.cn",
+            "domain:gw-fl5.x5.ru",
+            "domain:ecom-cdn.x5media.ru",
+            "domain:gw-fb5.x5.ru",
+            "domain:x5m.x5.ru",
+            "domain:api.x5.ru",
+            "domain:5d.5ka.ru",
+            "domain:proxy.mob.maps.yandex.net",
+            "domain:cdn.inappstory.ru",
+            "domain:api.inappstory.ru"
           ],
           "outboundTag": "direct"
         }
@@ -646,7 +655,16 @@
             "domain:vk-apps.ru",
             "domain:vkuseraudio.net",
             "domain:vkuseraudio.com",
-            "domain:vkuserlive.net"
+            "domain:vkuserlive.net",
+            "domain:gw-fl5.x5.ru",
+            "domain:ecom-cdn.x5media.ru",
+            "domain:gw-fb5.x5.ru",
+            "domain:x5m.x5.ru",
+            "domain:api.x5.ru",
+            "domain:5d.5ka.ru",
+            "domain:proxy.mob.maps.yandex.net",
+            "domain:cdn.inappstory.ru",
+            "domain:api.inappstory.ru"
           ],
           "skipFallback": true,
           "tag": "domestic_dns",
@@ -1014,7 +1032,16 @@
             "domain:blizzard.com",
             "domain:blizzard.net",
             "domain:blz-contentstack.com",
-            "domain:blzstatic.cn"
+            "domain:blzstatic.cn",
+            "domain:gw-fl5.x5.ru",
+            "domain:ecom-cdn.x5media.ru",
+            "domain:gw-fb5.x5.ru",
+            "domain:x5m.x5.ru",
+            "domain:api.x5.ru",
+            "domain:5d.5ka.ru",
+            "domain:proxy.mob.maps.yandex.net",
+            "domain:cdn.inappstory.ru",
+            "domain:api.inappstory.ru"
           ],
           "outboundTag": "direct"
         }
@@ -1361,7 +1388,16 @@
             "domain:vk-apps.ru",
             "domain:vkuseraudio.net",
             "domain:vkuseraudio.com",
-            "domain:vkuserlive.net"
+            "domain:vkuserlive.net",
+            "domain:gw-fl5.x5.ru",
+            "domain:ecom-cdn.x5media.ru",
+            "domain:gw-fb5.x5.ru",
+            "domain:x5m.x5.ru",
+            "domain:api.x5.ru",
+            "domain:5d.5ka.ru",
+            "domain:proxy.mob.maps.yandex.net",
+            "domain:cdn.inappstory.ru",
+            "domain:api.inappstory.ru"
           ],
           "skipFallback": true,
           "tag": "domestic_dns",
@@ -1729,7 +1765,16 @@
             "domain:blizzard.com",
             "domain:blizzard.net",
             "domain:blz-contentstack.com",
-            "domain:blzstatic.cn"
+            "domain:blzstatic.cn",
+            "domain:gw-fl5.x5.ru",
+            "domain:ecom-cdn.x5media.ru",
+            "domain:gw-fb5.x5.ru",
+            "domain:x5m.x5.ru",
+            "domain:api.x5.ru",
+            "domain:5d.5ka.ru",
+            "domain:proxy.mob.maps.yandex.net",
+            "domain:cdn.inappstory.ru",
+            "domain:api.inappstory.ru"
           ],
           "outboundTag": "direct"
         }
@@ -2050,7 +2095,16 @@
             "domain:vk-apps.ru",
             "domain:vkuseraudio.net",
             "domain:vkuseraudio.com",
-            "domain:vkuserlive.net"
+            "domain:vkuserlive.net",
+            "domain:gw-fl5.x5.ru",
+            "domain:ecom-cdn.x5media.ru",
+            "domain:gw-fb5.x5.ru",
+            "domain:x5m.x5.ru",
+            "domain:api.x5.ru",
+            "domain:5d.5ka.ru",
+            "domain:proxy.mob.maps.yandex.net",
+            "domain:cdn.inappstory.ru",
+            "domain:api.inappstory.ru"
           ],
           "skipFallback": true,
           "tag": "domestic_dns",
