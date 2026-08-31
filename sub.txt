@@ -11,6 +11,10 @@
             "domain:yoomoney.ru",
             "domain:yoomoney.com",
             "domain:yoomoney.net"
+            "domain:api.yoomoney.ru",
+            "domain:static.yoomoney.ru",
+            "domain:checkout.yoomoney.ru",
+            "domain:pay.mironline.ru"
           ],
           "outboundTag": "direct"
         },
