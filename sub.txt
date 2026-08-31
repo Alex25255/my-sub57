@@ -3,6 +3,18 @@
     "routing": {
       "rules": [
         {
+          "type": "field",
+          "domain": [
+            "domain:mir-pay.ru",
+            "domain:mironline.ru",
+            "domain:nspk.ru",
+            "domain:yoomoney.ru",
+            "domain:yoomoney.com",
+            "domain:yoomoney.net"
+          ],
+          "outboundTag": "direct"
+        },
+        {
           "port": "53",
           "type": "field",
           "outboundTag": "dns-out"
@@ -729,6 +741,18 @@
   {
     "routing": {
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:mir-pay.ru",
+            "domain:mironline.ru",
+            "domain:nspk.ru",
+            "domain:yoomoney.ru",
+            "domain:yoomoney.com",
+            "domain:yoomoney.net"
+          ],
+          "outboundTag": "direct"
+        },
         {
           "port": "53",
           "type": "field",
@@ -1478,6 +1502,18 @@
   {
     "routing": {
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:mir-pay.ru",
+            "domain:mironline.ru",
+            "domain:nspk.ru",
+            "domain:yoomoney.ru",
+            "domain:yoomoney.com",
+            "domain:yoomoney.net"
+          ],
+          "outboundTag": "direct"
+        },
         {
           "port": "53",
           "type": "field",
