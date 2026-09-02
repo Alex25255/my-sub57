@@ -1971,7 +1971,7 @@
     },
     "outbounds": [
       {
-        "tag": "proxy",
+        "tag": "🇷🇺 Обход глушилок LTE",
         "streamSettings": {
           "network": "xhttp",
           "xhttpSettings": {
