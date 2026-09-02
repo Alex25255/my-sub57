@@ -10,7 +10,15 @@
             "domain:nspk.ru",
             "domain:yoomoney.ru",
             "domain:yoomoney.com",
-            "domain:yoomoney.net"
+            "domain:yoomoney.net",
+            "domain:tbank.ru",
+            "domain:www.tbank.ru",
+            "domain:tinkoff.ru",
+            "domain:www.tinkoff.ru",
+            "domain:api.tbank.ru",
+            "domain:static.tbank.ru",
+            "domain:cdn.tbank.ru",
+            "domain:tbankid.ru"
           ],
           "outboundTag": "direct"
         },
@@ -749,7 +757,15 @@
             "domain:nspk.ru",
             "domain:yoomoney.ru",
             "domain:yoomoney.com",
-            "domain:yoomoney.net"
+            "domain:yoomoney.net",
+            "domain:tbank.ru",
+            "domain:www.tbank.ru",
+            "domain:tinkoff.ru",
+            "domain:www.tinkoff.ru",
+            "domain:api.tbank.ru",
+            "domain:static.tbank.ru",
+            "domain:cdn.tbank.ru",
+            "domain:tbankid.ru"
           ],
           "outboundTag": "direct"
         },
@@ -1518,7 +1534,15 @@
             "domain:mirconnect.ru",
             "domain:yoomoney.ru",
             "domain:yoomoney.com",
-            "domain:yoomoney.net"
+            "domain:yoomoney.net",
+            "domain:tbank.ru",
+            "domain:www.tbank.ru",
+            "domain:tinkoff.ru",
+            "domain:www.tinkoff.ru",
+            "domain:api.tbank.ru",
+            "domain:static.tbank.ru",
+            "domain:cdn.tbank.ru",
+            "domain:tbankid.ru"
           ],
           "outboundTag": "direct"
         },
