@@ -1,4 +1,5 @@
-{
+[
+  {
     "routing": {
       "rules": [
         {
@@ -377,7 +378,7 @@
       "domainStrategy": "IPIfNonMatch",
       "balancers": [
         {
-          "tag": "AUTO",
+          "tag": "🚀 AUTO",
           "selector": [
             "🇳🇱 Обход глушилок LTE",
             "💫 Игровой обход глушилок",
@@ -882,7 +883,7 @@
       "access": "none",
       "loglevel": "none"
     },
-    "name": "🚀 AUTO + 3 сервера",
+    "name": "🚀 AUTO + 3 сервера (Insy)",
     "meta": {
       "serverDescription": "VMess • WS • TLS"
     }
