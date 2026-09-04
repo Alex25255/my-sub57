@@ -375,22 +375,18 @@
           "outboundTag": "direct"
         }
       ],
-      "domainStrategy": "IPIfNonMatch",
-      "balancers": [
-        {
-          "tag": "🚀 AUTO",
-          "selector": [
-            "🇳🇱 Обход глушилок LTE",
-            "💫 Игровой обход глушилок",
-            "🇷🇺 Обход глушилок LTE"
-          ],
-          "strategy": {
-            "type": "leastPing"
-          }
-        }
-      ]
+      "domainStrategy": "IPIfNonMatch"
     },
     "outbounds": [
+      {
+        "tag": "🚀 AUTO",
+        "protocol": "selector",
+        "outbounds": [
+          "🇳🇱 Обход глушилок LTE",
+          "💫 Игровой обход глушилок",
+          "🇷🇺 Обход глушилок LTE"
+        ]
+      },
       {
         "protocol": "vmess",
         "streamSettings": {
@@ -883,7 +879,7 @@
       "access": "none",
       "loglevel": "none"
     },
-    "name": "🚀 AUTO + 3 сервера (Insy)",
+    "name": "🚀 AUTO + 3 сервера",
     "meta": {
       "serverDescription": "VMess • WS • TLS"
     }
