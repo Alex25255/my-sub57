@@ -390,6 +390,17 @@
         "strategy": {
           "type": "leastPing"
         }
+      },
+      {
+        "tag": "Авто",
+        "selector": [
+          "server-1",
+          "server-2",
+          "server-3"
+        ],
+        "strategy": {
+          "type": "leastPing"
+        }
       }
     ]
   },
