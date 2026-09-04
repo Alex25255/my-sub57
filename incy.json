@@ -1,5 +1,4 @@
-[
-  {
+{
     "routing": {
       "rules": [
         {
@@ -49,10 +48,23 @@
         },
         {
           "type": "field",
+          "network": "tcp",
+          "outboundTag": "🇳🇱 Обход глушилок LTE",
+          "port": "853"
+        },
+        {
+          "type": "field",
           "inboundTag": [
             "domestic_dns"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "inboundTag": [
+            "remote_dns"
+          ],
+          "outboundTag": "🇳🇱 Обход глушилок LTE"
         },
         {
           "type": "field",
@@ -360,11 +372,6 @@
             "domain:zvuk.com"
           ],
           "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "balancerTag": "AUTO"
         }
       ],
       "domainStrategy": "IPIfNonMatch",
@@ -875,7 +882,7 @@
       "access": "none",
       "loglevel": "none"
     },
-    "name": "🚀 AUTO - лучший сервер",
+    "name": "🚀 AUTO + 3 сервера",
     "meta": {
       "serverDescription": "VMess • WS • TLS"
     }
