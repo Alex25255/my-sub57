@@ -1174,18 +1174,17 @@
     },
     "outbounds": [
       {
-        "tag": "💫 Игровой обход глушилок",
         "protocol": "vless",
         "settings": {
           "vnext": [
             {
-              "address": "78.159.245.84",
+              "address": "37.18.15.209",
               "port": 23550,
               "users": [
                 {
-                  "id": "7812294f-cf13-494a-aa08-ca696360e126",
                   "encryption": "none",
-                  "flow": "xtls-rprx-vision"
+                  "flow": "xtls-rprx-vision",
+                  "id": "7812294f-cf13-494a-aa08-ca696360e126"
                 }
               ]
             }
@@ -1193,15 +1192,16 @@
         },
         "streamSettings": {
           "network": "tcp",
-          "security": "reality",
           "realitySettings": {
-            "serverName": "img.perekrestok.ru",
             "fingerprint": "chrome",
             "publicKey": "0aGfyA8DTQJOnq-C4CuE-4HjeCpxcTTw-dqe04il5FI",
+            "serverName": "img.perekrestok.ru",
             "shortId": "f5081f3a",
             "spiderX": "/"
-          }
-        }
+          },
+          "security": "reality"
+        },
+        "tag": "💫 Игровой обход глушилок"
       },
       {
         "protocol": "freedom",
