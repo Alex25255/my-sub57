@@ -379,8 +379,8 @@
       {
         "tag": "AUTO_3",
         "selector": [
-          "🇳🇱 NL — VMess TLS",
-          "🇩🇪 Reality — Game",
+          "🇳🇱 Обход глушилок LTE",
+          "💫 Игровой обход глушилок",
           "🇷🇺 Обход глушилок LTE"
         ]
       }
@@ -419,10 +419,10 @@
           }
         ]
       },
-      "tag": "🇳🇱 NL — VMess TLS"
+      "tag": "🇳🇱 Обход глушилок LTE"
     },
     {
-      "tag": "🇩🇪 Reality — Game",
+      "tag": "💫 Игровой обход глушилок",
       "protocol": "vless",
       "settings": {
         "vnext": [
