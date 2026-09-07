@@ -379,8 +379,8 @@
       {
         "tag": "AUTO_3",
         "selector": [
-          "🇳🇱 Обход глушилок LTE",
-          "💫 Игровой обход глушилок",
+          "🇳🇱 NL — VMess TLS",
+          "🇩🇪 Reality — Game",
           "🇷🇺 Обход глушилок LTE"
         ]
       }
@@ -419,10 +419,10 @@
           }
         ]
       },
-      "tag": "🇳🇱 Обход глушилок LTE"
+      "tag": "🇳🇱 NL — VMess TLS"
     },
     {
-      "tag": "💫 Игровой обход глушилок",
+      "tag": "🇩🇪 Reality — Game",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -877,7 +877,7 @@
     "access": "none",
     "loglevel": "none"
   },
-  "name": "⚖️ BALANCER 3 SERVERS",
+  "name": "⚖️ AUTO 3 СЕРВЕРА",
   "meta": {
     "serverDescription": "VMess • WS • TLS"
   }
