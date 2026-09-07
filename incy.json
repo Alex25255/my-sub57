@@ -49,8 +49,8 @@
       {
         "type": "field",
         "network": "tcp",
-        "port": "853",
-        "balancerTag": "AUTO"
+        "outboundTag": "🇳🇱 Обход глушилок LTE",
+        "port": "853"
       },
       {
         "type": "field",
@@ -64,7 +64,7 @@
         "inboundTag": [
           "remote_dns"
         ],
-        "balancerTag": "AUTO"
+        "outboundTag": "🇳🇱 Обход глушилок LTE"
       },
       {
         "type": "field",
@@ -374,20 +374,7 @@
         "outboundTag": "direct"
       }
     ],
-    "domainStrategy": "IPIfNonMatch",
-    "balancers": [
-      {
-        "tag": "AUTO",
-        "selector": [
-          "🇳🇱 Обход глушилок LTE",
-          "💫 Игровой обход глушилок",
-          "🇷🇺 Обход глушилок LTE"
-        ],
-        "strategy": {
-          "type": "leastPing"
-        }
-      }
-    ]
+    "domainStrategy": "IPIfNonMatch"
   },
   "outbounds": [
     {
@@ -515,9 +502,7 @@
     },
     {
       "protocol": "freedom",
-      "settings": {
-        "domainStrategy": "AsIs"
-      },
+      "settings": {},
       "tag": "direct"
     },
     {
@@ -882,7 +867,7 @@
     "access": "none",
     "loglevel": "none"
   },
-  "name": "🚀 AUTO Smart Ping (NL + Reality)",
+  "name": "AUTO Compatible (Xray iOS)",
   "meta": {
     "serverDescription": "VMess • WS • TLS"
   }
