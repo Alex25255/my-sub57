@@ -1,5 +1,3 @@
-vless://fd0b008b-87a4-4e2b-8136-5f16854668b7@flaxikor-nudana.harborstudio.me:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=flaxikor-nudana.harborstudio.me&pbk=w0t-Xn_pioBxx7syoMmN6ScobHIWxNT7SrGKv1rfUiU&sid=4db59a5933f7a3ce#%D0%90%D0%B2%D1%82%D0%BE
-
 [
   {
     "routing": {
