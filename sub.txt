@@ -1180,35 +1180,47 @@
     },
     "outbounds": [
       {
-        "tag": "🇷🇺 Обход глушилок LTE",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "cdn5.actualpromo.ru",
+              "port": 443,
+              "users": [
+                {
+                  "level": 8,
+                  "id": "9c8be6d4-ea6d-45e1-a6e3-13546b018fa0",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
         "streamSettings": {
           "network": "xhttp",
           "xhttpSettings": {
             "mode": "packet-up",
-            "extra": {
-              "scMinPostsIntervalMs": "0",
-              "xmux": {
-                "maxConnections": "16-32",
-                "hMaxReusableSecs": "120-240",
-                "cMaxReuseTimes": 0,
-                "maxConcurrency": "0",
-                "hMaxRequestTimes": "600-900",
-                "hKeepAlivePeriod": 20
-              },
-              "uplinkHTTPMethod": "GET",
-              "scMaxEachPostBytes": "262144-786432",
-              "xPaddingObfsMode": true,
-              "xPaddingKey": "q",
-              "mode": "packet-up",
-              "sessionIDKey": "sid",
-              "SessionIDKey": "sid",
-              "sessionIDPlacement": "query",
-              "seqPlacement": "query",
-              "xPaddingPlacement": "query",
-              "xPaddingBytes": "48-256",
-              "SessionIDPlacement": "query",
-              "seqKey": "offset",
-              "xPaddingMethod": "tokenish"
+            "scMaxEachPostBytes": "262144-786432",
+            "scMinPostsIntervalMs": "0",
+            "seqKey": "offset",
+            "seqPlacement": "query",
+            "sessionIDKey": "sid",
+            "sessionIDPlacement": "query",
+            "sessionKey": "sid",
+            "sessionPlacement": "query",
+            "uplinkHTTPMethod": "GET",
+            "xPaddingBytes": "48-256",
+            "xPaddingKey": "q",
+            "xPaddingMethod": "tokenish",
+            "xPaddingObfsMode": true,
+            "xPaddingPlacement": "query",
+            "xmux": {
+              "cMaxReuseTimes": 0,
+              "hKeepAlivePeriod": 20,
+              "hMaxRequestTimes": "600-900",
+              "hMaxReusableSecs": "120-240",
+              "maxConcurrency": "0",
+              "maxConnections": "16-32"
             },
             "path": "/p"
           },
@@ -1217,26 +1229,11 @@
               "h2"
             ],
             "fingerprint": "firefox",
-            "serverName": "cdn4.el-bot.com"
+            "serverName": "cdn5.actualpromo.ru"
           },
           "security": "tls"
         },
-        "settings": {
-          "vnext": [
-            {
-              "port": 443,
-              "users": [
-                {
-                  "level": 8,
-                  "id": "9c8be6d4-ea6d-45e1-a6e3-13546b018fa0",
-                  "encryption": "none"
-                }
-              ],
-              "address": "cdn4.el-bot.com"
-            }
-          ]
-        },
-        "protocol": "vless"
+        "tag": "🇷🇺 White List"
       },
       {
         "settings": {
@@ -1274,7 +1271,7 @@
         }
       }
     },
-    "name": "🇷🇺 Обход глушилок LTE"
+    "name": "🇷🇺 White List"
   },
   {
     "routing": {
