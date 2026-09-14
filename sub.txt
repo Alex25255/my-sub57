@@ -1233,7 +1233,7 @@
           },
           "security": "tls"
         },
-        "tag": "🇷🇺 White List"
+        "tag": "🇷🇺 Обход глушилок LTE"
       },
       {
         "settings": {
@@ -1271,7 +1271,7 @@
         }
       }
     },
-    "name": "🇷🇺 White List"
+    "name": "🇷🇺 Обход глушилок LTE"
   },
   {
     "routing": {
