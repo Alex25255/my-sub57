@@ -785,7 +785,7 @@
     "meta": {
       "serverDescription": "VMess • WS • TLS"
     },
-    "remarks": "Сервер 1"
+    "remarks": "🇳🇱 Обход глушилок LTE"
   },
   {
     "routing": {
@@ -1273,7 +1273,7 @@
       }
     },
     "name": "🇷🇺 Обход глушилок LTE",
-    "remarks": "Сервер 2"
+    "remarks": "🇷🇺 Обход глушилок LTE"
   },
   {
     "routing": {
@@ -2065,7 +2065,7 @@
     "meta": {
       "serverDescription": "VLESS • TCP • Reality"
     },
-    "remarks": "Сервер 3"
+    "remarks": "🎮 Игровой обход глушилок"
   },
   {
     "burstObservatory": {
@@ -2318,7 +2318,7 @@
         "tag": "loop-to-whitelist"
       }
     ],
-    "remarks": "⚡ Авто Wi-Fi",
+    "remarks": "⚡ Авто (лучший сервер)",
     "routing": {
       "balancers": [
         {
