@@ -218,7 +218,7 @@
             "bridge-backup3"
           ],
           "strategy": {
-            "type": "leastPing"
+            "type": "roundRobin"
           },
           "tag": "Balancer"
         },
