@@ -1,18 +1,5 @@
 [
   {
-    "burstObservatory": {
-      "pingConfig": {
-        "destination": "http://www.gstatic.com/generate_204",
-        "httpMethod": "HEAD",
-        "interval": "5m",
-        "sampling": 1,
-        "timeout": "5s"
-      },
-      "subjectSelector": [
-        "bridge",
-        "whitelist"
-      ]
-    },
     "dns": {
       "queryStrategy": "UseIPv4",
       "servers": [
@@ -116,7 +103,7 @@
             }
           ]
         },
-        "tag": "bridge"
+        "tag": "bridge-primary"
       },
       {
         "protocol": "vless",
@@ -172,7 +159,7 @@
           },
           "security": "tls"
         },
-        "tag": "bridge-2"
+        "tag": "bridge-backup2"
       },
       {
         "protocol": "vless",
@@ -202,7 +189,7 @@
           },
           "security": "reality"
         },
-        "tag": "bridge-3"
+        "tag": "bridge-backup3"
       },
       {
         "protocol": "freedom",
@@ -226,19 +213,12 @@
         {
           "fallbackTag": "loop-to-whitelist",
           "selector": [
-            "bridge",
-            "bridge-2",
-            "bridge-3"
+            "bridge-primary",
+            "bridge-backup2",
+            "bridge-backup3"
           ],
           "strategy": {
-            "settings": {
-              "baselines": [
-                "1s"
-              ],
-              "expected": 1,
-              "tolerance": 0.5
-            },
-            "type": "leastLoad"
+            "type": "leastPing"
           },
           "tag": "Balancer"
         },
@@ -600,7 +580,17 @@
         }
       ]
     },
-    "name": "⚡ Авто обход LTE тест"
+    "name": "⚡ Авто обход LTE тест",
+    "observatory": {
+      "subjectSelector": [
+        "bridge-primary",
+        "bridge-backup2",
+        "bridge-backup3"
+      ],
+      "probeUrl": "http://www.gstatic.com/generate_204",
+      "probeInterval": "5m",
+      "enableConcurrency": true
+    }
   },
   {
     "routing": {
