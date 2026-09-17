@@ -45,7 +45,7 @@
             "tls",
             "quic"
           ],
-          "enabled": true,
+          "enabled": false,
           "routeOnly": false
         },
         "tag": "socks"
@@ -63,7 +63,7 @@
             "tls",
             "quic"
           ],
-          "enabled": true,
+          "enabled": false,
           "routeOnly": false
         },
         "tag": "http"
@@ -155,11 +155,11 @@
             "xPaddingPlacement": "query",
             "xmux": {
               "cMaxReuseTimes": 0,
-              "hKeepAlivePeriod": 20,
+              "hKeepAlivePeriod": 0,
               "hMaxRequestTimes": "600-900",
               "hMaxReusableSecs": "120-240",
               "maxConcurrency": "0",
-              "maxConnections": "16-32"
+              "maxConnections": "3"
             },
             "path": "/p"
           },
@@ -1057,7 +1057,7 @@
       "levels": {
         "8": {
           "uplinkOnly": 2,
-          "connIdle": 300,
+          "connIdle": 120,
           "downlinkOnly": 4,
           "statsUserDownlink": false,
           "handshake": 3,
@@ -1508,11 +1508,11 @@
             "xPaddingPlacement": "query",
             "xmux": {
               "cMaxReuseTimes": 0,
-              "hKeepAlivePeriod": 20,
+              "hKeepAlivePeriod": 0,
               "hMaxRequestTimes": "600-900",
               "hMaxReusableSecs": "120-240",
               "maxConcurrency": "0",
-              "maxConnections": "16-32"
+              "maxConnections": "3"
             },
             "path": "/p"
           },
@@ -1557,7 +1557,7 @@
           "statsUserUplink": false,
           "statsUserOnline": false,
           "bufferSize": 3,
-          "connIdle": 300,
+          "connIdle": 120,
           "statsUserDownlink": false,
           "uplinkOnly": 2
         }
@@ -2337,7 +2337,7 @@
       "levels": {
         "8": {
           "uplinkOnly": 2,
-          "connIdle": 300,
+          "connIdle": 120,
           "downlinkOnly": 4,
           "statsUserDownlink": false,
           "handshake": 3,
@@ -2404,7 +2404,7 @@
             "tls",
             "quic"
           ],
-          "enabled": true,
+          "enabled": false,
           "routeOnly": false
         },
         "tag": "socks"
@@ -2422,7 +2422,7 @@
             "tls",
             "quic"
           ],
-          "enabled": true,
+          "enabled": false,
           "routeOnly": false
         },
         "tag": "http"
