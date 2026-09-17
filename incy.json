@@ -220,7 +220,7 @@
         "tag": "loop-to-whitelist"
       }
     ],
-    "remarks": "⚡ Авто обход 5 мин + VK direct",
+    "remarks": "⚡ Авто обход LTE тест",
     "routing": {
       "balancers": [
         {
@@ -600,7 +600,7 @@
         }
       ]
     },
-    "name": "⚡ Авто обход 5 мин + VK direct"
+    "name": "⚡ Авто обход LTE тест"
   },
   {
     "routing": {
