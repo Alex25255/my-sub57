@@ -253,6 +253,20 @@
         {
           "type": "field",
           "domain": [
+            "domain:tbank.ru",
+            "domain:www.tbank.ru",
+            "domain:tinkoff.ru",
+            "domain:www.tinkoff.ru",
+            "domain:api.tbank.ru",
+            "domain:static.tbank.ru",
+            "domain:cdn.tbank.ru",
+            "domain:tbankid.ru"
+          ],
+          "outboundTag": "bridge-backup3"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -280,14 +294,6 @@
             "domain:yoomoney.ru",
             "domain:yoomoney.com",
             "domain:yoomoney.net",
-            "domain:tbank.ru",
-            "domain:www.tbank.ru",
-            "domain:tinkoff.ru",
-            "domain:www.tinkoff.ru",
-            "domain:api.tbank.ru",
-            "domain:static.tbank.ru",
-            "domain:cdn.tbank.ru",
-            "domain:tbankid.ru",
             "domain:1tv.ru",
             "domain:2gis.com",
             "domain:2gis.ru",
@@ -590,6 +596,324 @@
       "probeUrl": "http://www.gstatic.com/generate_204",
       "probeInterval": "1m",
       "enableConcurrency": true
+    }
+  },
+  {
+    "burstObservatory": {
+      "pingConfig": {
+        "destination": "http://www.gstatic.com/generate_204",
+        "httpMethod": "HEAD",
+        "interval": "1m",
+        "sampling": 2,
+        "timeout": "5s"
+      },
+      "subjectSelector": [
+        "bridge",
+        "whitelist"
+      ]
+    },
+    "dns": {
+      "queryStrategy": "UseIPv4",
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "skipFallback": false
+        },
+        {
+          "address": "https://9.9.9.9/dns-query",
+          "skipFallback": false
+        },
+        {
+          "address": "https://1.1.1.1/dns-query",
+          "skipFallback": false
+        }
+      ]
+    },
+    "inbounds": [
+      {
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ],
+          "enabled": false,
+          "routeOnly": false
+        },
+        "tag": "socks"
+      },
+      {
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http",
+        "settings": {
+          "allowTransparent": false
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ],
+          "enabled": false,
+          "routeOnly": false
+        },
+        "tag": "http"
+      },
+      {
+        "listen": "127.0.0.1",
+        "port": 10803,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "127.0.0.1",
+          "network": "tcp,udp",
+          "port": 0
+        },
+        "tag": "entry-whitelist-fallback"
+      }
+    ],
+    "log": {
+      "loglevel": "warning"
+    },
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "thimbleremarryoozy.birchgarth.art",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision",
+                  "id": "7ffedab3-5ae6-44ac-8066-1857db1e8898"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "realitySettings": {
+            "fingerprint": "firefox",
+            "publicKey": "c9FNVDSx_oUTDFW0JewGq511wlGweUkQGgPPY9vsCVM",
+            "serverName": "thimbleremarryoozy.birchgarth.art",
+            "shortId": "08804e078e1257c8"
+          },
+          "security": "reality",
+          "tcpSettings": {}
+        },
+        "tag": "bridge"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "charredrelatedfoam.falloworchard.com",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision",
+                  "id": "7ffedab3-5ae6-44ac-8066-1857db1e8898"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "realitySettings": {
+            "fingerprint": "firefox",
+            "publicKey": "jp5PkSh099NYT4PM8-tPErUja-u1S1PFSqYoxhQgZmo",
+            "serverName": "charredrelatedfoam.falloworchard.com",
+            "shortId": "d97ed991ca4d52df"
+          },
+          "security": "reality",
+          "tcpSettings": {}
+        },
+        "tag": "bridge-2"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "ricephantompebbly.orbitgazette.art",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision",
+                  "id": "7ffedab3-5ae6-44ac-8066-1857db1e8898"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "realitySettings": {
+            "fingerprint": "firefox",
+            "publicKey": "pU7eWw1B4phNfOaRY9-r4kDHqoQe_lRp5id6XDsWgyA",
+            "serverName": "ricephantompebbly.orbitgazette.art",
+            "shortId": "17cb877eb6914141"
+          },
+          "security": "reality",
+          "tcpSettings": {}
+        },
+        "tag": "bridge-3"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "dorixa-spunolen.tealbutton.one",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision",
+                  "id": "7ffedab3-5ae6-44ac-8066-1857db1e8898"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "realitySettings": {
+            "fingerprint": "firefox",
+            "publicKey": "VE90NqtKCg1Kqc8XCYjLIFmcpOnQDtbMIjtBHbtfHwQ",
+            "serverName": "dorixa-spunolen.tealbutton.one",
+            "shortId": "9c4a1ec4ae97eb29"
+          },
+          "security": "reality",
+          "tcpSettings": {}
+        },
+        "tag": "bridge-4"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "blamearmlessemcee.cerisesilk.one",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision",
+                  "id": "7ffedab3-5ae6-44ac-8066-1857db1e8898"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "realitySettings": {
+            "fingerprint": "firefox",
+            "publicKey": "33Xvg2G3OCbZ8D_psMttGfEhBad9z2LPJpaH_fB51WA",
+            "serverName": "blamearmlessemcee.cerisesilk.one",
+            "shortId": "2e9688b0d26f1142"
+          },
+          "security": "reality",
+          "tcpSettings": {}
+        },
+        "tag": "bridge-5"
+      },
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      },
+      {
+        "protocol": "loopback",
+        "settings": {
+          "inboundTag": "entry-whitelist-fallback"
+        },
+        "tag": "loop-to-whitelist"
+      }
+    ],
+    "remarks": "⚡ Авто Wi-Fi 🛜 тест",
+    "routing": {
+      "balancers": [
+        {
+          "fallbackTag": "loop-to-whitelist",
+          "selector": [
+            "bridge"
+          ],
+          "strategy": {
+            "settings": {
+              "baselines": [
+                "1s"
+              ],
+              "expected": 6,
+              "tolerance": 0.5
+            },
+            "type": "leastLoad"
+          },
+          "tag": "Balancer"
+        },
+        {
+          "fallbackTag": "direct",
+          "selector": [
+            "whitelist"
+          ],
+          "strategy": {
+            "settings": {
+              "baselines": [
+                "1s"
+              ],
+              "expected": 3,
+              "tolerance": 0.5
+            },
+            "type": "leastLoad"
+          },
+          "tag": "WhitelistBalancer"
+        }
+      ],
+      "domainMatcher": "hybrid",
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "outboundTag": "direct",
+          "protocol": [
+            "bittorrent"
+          ],
+          "type": "field"
+        },
+        {
+          "balancerTag": "Balancer",
+          "inboundTag": [
+            "socks",
+            "http"
+          ],
+          "network": "tcp,udp",
+          "type": "field"
+        },
+        {
+          "balancerTag": "WhitelistBalancer",
+          "inboundTag": [
+            "entry-whitelist-fallback"
+          ],
+          "type": "field"
+        }
+      ]
     }
   },
   {
@@ -2659,323 +2983,5 @@
       "serverDescription": "VLESS • TCP • Reality"
     },
     "remarks": "🎮 Игровой обход глушилок"
-  },
-  {
-    "burstObservatory": {
-      "pingConfig": {
-        "destination": "http://www.gstatic.com/generate_204",
-        "httpMethod": "HEAD",
-        "interval": "1m",
-        "sampling": 2,
-        "timeout": "5s"
-      },
-      "subjectSelector": [
-        "bridge",
-        "whitelist"
-      ]
-    },
-    "dns": {
-      "queryStrategy": "UseIPv4",
-      "servers": [
-        {
-          "address": "https://8.8.8.8/dns-query",
-          "skipFallback": false
-        },
-        {
-          "address": "https://9.9.9.9/dns-query",
-          "skipFallback": false
-        },
-        {
-          "address": "https://1.1.1.1/dns-query",
-          "skipFallback": false
-        }
-      ]
-    },
-    "inbounds": [
-      {
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "auth": "noauth",
-          "udp": true
-        },
-        "sniffing": {
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ],
-          "enabled": false,
-          "routeOnly": false
-        },
-        "tag": "socks"
-      },
-      {
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http",
-        "settings": {
-          "allowTransparent": false
-        },
-        "sniffing": {
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ],
-          "enabled": false,
-          "routeOnly": false
-        },
-        "tag": "http"
-      },
-      {
-        "listen": "127.0.0.1",
-        "port": 10803,
-        "protocol": "dokodemo-door",
-        "settings": {
-          "address": "127.0.0.1",
-          "network": "tcp,udp",
-          "port": 0
-        },
-        "tag": "entry-whitelist-fallback"
-      }
-    ],
-    "log": {
-      "loglevel": "warning"
-    },
-    "outbounds": [
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "thimbleremarryoozy.birchgarth.art",
-              "port": 443,
-              "users": [
-                {
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision",
-                  "id": "7ffedab3-5ae6-44ac-8066-1857db1e8898"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "realitySettings": {
-            "fingerprint": "firefox",
-            "publicKey": "c9FNVDSx_oUTDFW0JewGq511wlGweUkQGgPPY9vsCVM",
-            "serverName": "thimbleremarryoozy.birchgarth.art",
-            "shortId": "08804e078e1257c8"
-          },
-          "security": "reality",
-          "tcpSettings": {}
-        },
-        "tag": "bridge"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "charredrelatedfoam.falloworchard.com",
-              "port": 443,
-              "users": [
-                {
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision",
-                  "id": "7ffedab3-5ae6-44ac-8066-1857db1e8898"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "realitySettings": {
-            "fingerprint": "firefox",
-            "publicKey": "jp5PkSh099NYT4PM8-tPErUja-u1S1PFSqYoxhQgZmo",
-            "serverName": "charredrelatedfoam.falloworchard.com",
-            "shortId": "d97ed991ca4d52df"
-          },
-          "security": "reality",
-          "tcpSettings": {}
-        },
-        "tag": "bridge-2"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "ricephantompebbly.orbitgazette.art",
-              "port": 443,
-              "users": [
-                {
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision",
-                  "id": "7ffedab3-5ae6-44ac-8066-1857db1e8898"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "realitySettings": {
-            "fingerprint": "firefox",
-            "publicKey": "pU7eWw1B4phNfOaRY9-r4kDHqoQe_lRp5id6XDsWgyA",
-            "serverName": "ricephantompebbly.orbitgazette.art",
-            "shortId": "17cb877eb6914141"
-          },
-          "security": "reality",
-          "tcpSettings": {}
-        },
-        "tag": "bridge-3"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "dorixa-spunolen.tealbutton.one",
-              "port": 443,
-              "users": [
-                {
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision",
-                  "id": "7ffedab3-5ae6-44ac-8066-1857db1e8898"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "realitySettings": {
-            "fingerprint": "firefox",
-            "publicKey": "VE90NqtKCg1Kqc8XCYjLIFmcpOnQDtbMIjtBHbtfHwQ",
-            "serverName": "dorixa-spunolen.tealbutton.one",
-            "shortId": "9c4a1ec4ae97eb29"
-          },
-          "security": "reality",
-          "tcpSettings": {}
-        },
-        "tag": "bridge-4"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "blamearmlessemcee.cerisesilk.one",
-              "port": 443,
-              "users": [
-                {
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision",
-                  "id": "7ffedab3-5ae6-44ac-8066-1857db1e8898"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "realitySettings": {
-            "fingerprint": "firefox",
-            "publicKey": "33Xvg2G3OCbZ8D_psMttGfEhBad9z2LPJpaH_fB51WA",
-            "serverName": "blamearmlessemcee.cerisesilk.one",
-            "shortId": "2e9688b0d26f1142"
-          },
-          "security": "reality",
-          "tcpSettings": {}
-        },
-        "tag": "bridge-5"
-      },
-      {
-        "protocol": "freedom",
-        "tag": "direct"
-      },
-      {
-        "protocol": "blackhole",
-        "tag": "block"
-      },
-      {
-        "protocol": "loopback",
-        "settings": {
-          "inboundTag": "entry-whitelist-fallback"
-        },
-        "tag": "loop-to-whitelist"
-      }
-    ],
-    "remarks": "⚡ Авто Wi-Fi 🛜 тест",
-    "routing": {
-      "balancers": [
-        {
-          "fallbackTag": "loop-to-whitelist",
-          "selector": [
-            "bridge"
-          ],
-          "strategy": {
-            "settings": {
-              "baselines": [
-                "1s"
-              ],
-              "expected": 6,
-              "tolerance": 0.5
-            },
-            "type": "leastLoad"
-          },
-          "tag": "Balancer"
-        },
-        {
-          "fallbackTag": "direct",
-          "selector": [
-            "whitelist"
-          ],
-          "strategy": {
-            "settings": {
-              "baselines": [
-                "1s"
-              ],
-              "expected": 3,
-              "tolerance": 0.5
-            },
-            "type": "leastLoad"
-          },
-          "tag": "WhitelistBalancer"
-        }
-      ],
-      "domainMatcher": "hybrid",
-      "domainStrategy": "IPIfNonMatch",
-      "rules": [
-        {
-          "outboundTag": "direct",
-          "protocol": [
-            "bittorrent"
-          ],
-          "type": "field"
-        },
-        {
-          "balancerTag": "Balancer",
-          "inboundTag": [
-            "socks",
-            "http"
-          ],
-          "network": "tcp,udp",
-          "type": "field"
-        },
-        {
-          "balancerTag": "WhitelistBalancer",
-          "inboundTag": [
-            "entry-whitelist-fallback"
-          ],
-          "type": "field"
-        }
-      ]
-    }
   }
 ]
