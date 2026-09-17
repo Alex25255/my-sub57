@@ -2318,7 +2318,7 @@
         "tag": "loop-to-whitelist"
       }
     ],
-    "remarks": "⚡ Авто (лучший сервер)",
+    "remarks": "⚡ Авто Wi-Fi 🛜 тест",
     "routing": {
       "balancers": [
         {
