@@ -588,7 +588,7 @@
         "bridge-backup3"
       ],
       "probeUrl": "http://www.gstatic.com/generate_204",
-      "probeInterval": "5m",
+      "probeInterval": "1m",
       "enableConcurrency": true
     }
   },
