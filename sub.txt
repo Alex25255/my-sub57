@@ -583,7 +583,7 @@
         "tag": "block"
       }
     ],
-    "remarks": "⚡ Авто обход LTE тест",
+    "remarks": "⚡ Авто обход LTE",
     "routing": {
       "balancers": [
         {
@@ -950,7 +950,7 @@
         }
       ]
     },
-    "name": "⚡ Авто обход LTE тест",
+    "name": "⚡ Авто обход LTE",
     "observatory": {
       "subjectSelector": [
         "ext-white-internet-0",
@@ -3361,3 +3361,4 @@
     "remarks": "🎮 Игровой обход глушилок"
   }
 ]
+
