@@ -32,6 +32,868 @@
             "tls",
             "quic"
           ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks"
+      },
+      {
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http",
+        "settings": {
+          "allowTransparent": false
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "http"
+      },
+      {
+        "listen": "127.0.0.1",
+        "port": 10803,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "127.0.0.1",
+          "network": "tcp,udp",
+          "port": 0
+        },
+        "tag": "entry-whitelist-fallback"
+      }
+    ],
+    "log": {
+      "loglevel": "warning"
+    },
+    "outbounds": [
+      {
+        "protocol": "loopback",
+        "settings": {
+          "inboundTag": "entry-whitelist-fallback"
+        },
+        "tag": "loop-to-whitelist"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "176.108.253.116",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-0"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "78.159.245.15",
+              "port": 1111,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "realitySettings": {
+            "fingerprint": "chrome",
+            "publicKey": "YuhNgtj_Tf8WNLiSB2bNJKPvfwmqa6PNRpbP8TvNkzA",
+            "serverName": "api-maps.yandex.ru",
+            "spiderX": "/"
+          },
+          "security": "reality"
+        },
+        "tag": "ext-white-internet-1"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "176.108.240.57",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-2"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "176.108.243.168",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-3"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "78.159.245.182",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-4"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "78.159.245.25",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-5"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "78.159.245.230",
+              "port": 1111,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "realitySettings": {
+            "fingerprint": "chrome",
+            "publicKey": "YuhNgtj_Tf8WNLiSB2bNJKPvfwmqa6PNRpbP8TvNkzA",
+            "serverName": "api-maps.yandex.ru",
+            "spiderX": "/"
+          },
+          "security": "reality"
+        },
+        "tag": "ext-white-internet-8"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "78.159.245.201",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-9"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "78.159.245.44",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-10"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "176.108.253.78",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-11"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "217.19.122.20",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-12"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "217.19.122.142",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-13"
+      },
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      }
+    ],
+    "remarks": "⚡ Авто обход LTE тест",
+    "routing": {
+      "balancers": [
+        {
+          "selector": [
+            "ext-white-internet-0",
+            "ext-white-internet-1",
+            "ext-white-internet-2",
+            "ext-white-internet-3",
+            "ext-white-internet-4",
+            "ext-white-internet-5",
+            "ext-white-internet-8",
+            "ext-white-internet-9",
+            "ext-white-internet-10",
+            "ext-white-internet-11",
+            "ext-white-internet-12",
+            "ext-white-internet-13"
+          ],
+          "strategy": {
+            "type": "leastPing"
+          },
+          "tag": "auto-best"
+        }
+      ],
+      "domainMatcher": "hybrid",
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "outboundTag": "direct",
+          "protocol": [
+            "bittorrent"
+          ],
+          "type": "field"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:vk.com",
+            "domain:vk.ru",
+            "domain:vkontakte.ru",
+            "domain:vk.me",
+            "domain:vk.cc",
+            "domain:vk.link",
+            "domain:vk-apps.com",
+            "domain:vk-apps.ru",
+            "domain:vk-cdn.me",
+            "domain:vk-cdn.net",
+            "domain:vk-portal.net",
+            "domain:vkcache.com",
+            "domain:vkvideo.ru",
+            "domain:vkuser.net",
+            "domain:vkuseraudio.com",
+            "domain:vkuseraudio.net",
+            "domain:vkusercdn.ru",
+            "domain:vkuserlive.net",
+            "domain:vkuserphoto.ru",
+            "domain:userapi.com",
+            "domain:cdn-vk.ru",
+            "domain:mir-pay.ru",
+            "domain:mironline.ru",
+            "domain:nspk.ru",
+            "domain:yoomoney.ru",
+            "domain:yoomoney.com",
+            "domain:yoomoney.net",
+            "domain:tbank.ru",
+            "domain:www.tbank.ru",
+            "domain:tinkoff.ru",
+            "domain:www.tinkoff.ru",
+            "domain:api.tbank.ru",
+            "domain:static.tbank.ru",
+            "domain:cdn.tbank.ru",
+            "domain:tbankid.ru",
+            "domain:1tv.ru",
+            "domain:2gis.com",
+            "domain:2gis.ru",
+            "domain:5d.5ka.ru",
+            "domain:5ka.ru",
+            "domain:aeroflot.ru",
+            "domain:aif.ru",
+            "domain:akbars.ru",
+            "domain:alfa.me",
+            "domain:alfabank.ru",
+            "domain:alfastrah.ru",
+            "domain:api.inappstory.ru",
+            "domain:api.x5.ru",
+            "domain:apteka.ru",
+            "domain:auchan.ru",
+            "domain:auth-nsdi.ru",
+            "domain:auto.ru",
+            "domain:av.ru",
+            "domain:aviasales.ru",
+            "domain:avito.ru",
+            "domain:avito.st",
+            "domain:banki.ru",
+            "domain:battle.net",
+            "domain:beeline.ru",
+            "domain:belkacar.ru",
+            "domain:blizzard.com",
+            "domain:blizzard.net",
+            "domain:blz-contentstack.com",
+            "domain:blzstatic.cn",
+            "domain:boxberry.ru",
+            "domain:bristol.ru",
+            "domain:burgerking.ru",
+            "domain:cbr.ru",
+            "domain:cdek.ru",
+            "domain:cdn.inappstory.ru",
+            "domain:cdn.vseinstrumenti.ru",
+            "domain:chestnyznak.ru",
+            "domain:chibbis.ru",
+            "domain:cian.ru",
+            "domain:citilink.ru",
+            "domain:citydrive.ru",
+            "domain:council.gov.ru",
+            "domain:crpt.ru",
+            "domain:dash.cloudflare.com",
+            "domain:delimobil.ru",
+            "domain:delivery-club.ru",
+            "domain:dellin.ru",
+            "domain:detmir.ru",
+            "domain:dixy.ru",
+            "domain:dnevnik.ru",
+            "domain:dns-shop.ru",
+            "domain:dodopizza.ru",
+            "domain:dom.ru",
+            "domain:dom.ufanet.ru",
+            "domain:domclick.ru",
+            "domain:dpd.ru",
+            "domain:drive2.ru",
+            "domain:drom.ru",
+            "domain:duma.gov.ru",
+            "domain:dzen.ru",
+            "domain:eapteka.ru",
+            "domain:ecom-cdn.x5media.ru",
+            "domain:eldorado.ru",
+            "domain:emias.info",
+            "domain:epicgames.com",
+            "domain:epicgames.dev",
+            "domain:epicgamescdn.com",
+            "domain:epp.genproc.gov.ru",
+            "domain:ertelecom.ru",
+            "domain:event-stream-api.magnit.ru",
+            "domain:fcmtoken.googleapis.com",
+            "domain:fivepost.ru",
+            "domain:fix-price.com",
+            "domain:flysmartavia.com",
+            "domain:gazeta.ru",
+            "domain:gazprombank.ru",
+            "domain:gismeteo.ru",
+            "domain:gloria-jeans.ru",
+            "domain:goldapple.ru",
+            "domain:gorzdrav.org",
+            "domain:goskey.ru",
+            "domain:gosuslugi.ru",
+            "domain:government.ru",
+            "domain:grandtrain.ru",
+            "domain:gw-fb5.x5.ru",
+            "domain:gw-fl5.x5.ru",
+            "domain:help.ufanet.ru",
+            "domain:hh.ru",
+            "domain:hoff.ru",
+            "domain:image.mm.ru",
+            "domain:ingos.ru",
+            "domain:ivi.ru",
+            "domain:iz.ru",
+            "domain:izbirkom.ru",
+            "domain:justletswork.com",
+            "domain:kari.com",
+            "domain:kazanexpress.ru",
+            "domain:kinopoisk.ru",
+            "domain:kion.ru",
+            "domain:kommersant.ru",
+            "domain:kp.ru",
+            "domain:krasnoeibeloe.ru",
+            "domain:kremlin.ru",
+            "domain:kuper.ru",
+            "domain:lamoda.ru",
+            "domain:lamoda.tech",
+            "domain:lemanapro.ru",
+            "domain:lenta.com",
+            "domain:lenta.ru",
+            "domain:lesta.games",
+            "domain:lesta.ru",
+            "domain:letu.ru",
+            "domain:litres.ru",
+            "domain:lmru.tech",
+            "domain:m2.ru",
+            "domain:magnit.com",
+            "domain:magnit.ru",
+            "domain:mail.ru",
+            "domain:matchtv.ru",
+            "domain:max.ru",
+            "domain:mchs.gov.ru",
+            "domain:megafon.ru",
+            "domain:megamarket.ru",
+            "domain:metro-cc.ru",
+            "domain:mfc.ru",
+            "domain:mgnt.ru",
+            "domain:mk.ru",
+            "domain:mm.ru",
+            "domain:mobile-api.mm.ru",
+            "domain:moex.com",
+            "domain:mos.ru",
+            "domain:mosmetro.ru",
+            "domain:motivtelecom.ru",
+            "domain:mradx.net",
+            "domain:mts.ru",
+            "domain:mtsbank.ru",
+            "domain:mvd.ru",
+            "domain:mvideo.ru",
+            "domain:my-documents.ru",
+            "domain:my.ufanet.ru",
+            "domain:mybook.ru",
+            "domain:mycdn.me",
+            "domain:myspar.ru",
+            "domain:nalog.gov.ru",
+            "domain:nordwindairlines.ru",
+            "domain:np.community.playstation.net",
+            "domain:ntv.ru",
+            "domain:observability.x5.ru",
+            "domain:ok.ru",
+            "domain:okcdn.ru",
+            "domain:okko.ru",
+            "domain:okko.tv",
+            "domain:okmarket.ru",
+            "domain:oneme.ru",
+            "domain:orgp.spb.ru",
+            "domain:ostrovok.ru",
+            "domain:ozon.ru",
+            "domain:ozone.ru",
+            "domain:perekrestok.ru",
+            "domain:petrovich.ru",
+            "domain:planetazdorovo.ru",
+            "domain:playstation.com",
+            "domain:playstation.net",
+            "domain:playstationnetwork.com",
+            "domain:pobeda.aero",
+            "domain:pochta.ru",
+            "domain:premier.one",
+            "domain:profi.ru",
+            "domain:proxy.mob.maps.yandex.net",
+            "domain:psbank.ru",
+            "domain:psnprofiles.com",
+            "domain:rabota.ru",
+            "domain:rambler.ru",
+            "domain:rbc.ru",
+            "domain:res-nsdi.ru",
+            "domain:reso.ru",
+            "domain:rg.ru",
+            "domain:rgs.ru",
+            "domain:ria.ru",
+            "domain:rigla.ru",
+            "domain:rivegauche.ru",
+            "domain:rosseti.ru",
+            "domain:rostelecom.ru",
+            "domain:rostics.ru",
+            "domain:rsv.ru",
+            "domain:rt.com",
+            "domain:rt.ru",
+            "domain:rustore.ru",
+            "domain:rutube.ru",
+            "domain:rutubelist.ru",
+            "domain:rzd.ru",
+            "domain:s7.ru",
+            "domain:samokat.ru",
+            "domain:sba.yandex.net",
+            "domain:sberdevices.ru",
+            "domain:sberhealth.ru",
+            "domain:sferum.ru",
+            "domain:smotreshka.tv",
+            "domain:smotrim.ru",
+            "domain:sochi.ru",
+            "domain:sogaz.ru",
+            "domain:sonyentertainmentnetwork.com",
+            "domain:sportmaster.ru",
+            "domain:sravni.ru",
+            "domain:start.ru",
+            "domain:static.vseinstrumenti.ru",
+            "domain:steam-chat.com",
+            "domain:steamcdn-a.akamaihd.net",
+            "domain:steamcommunity.com",
+            "domain:steamcontent.com",
+            "domain:steamgames.com",
+            "domain:steampowered.com",
+            "domain:steamserver.net",
+            "domain:steamstatic.com",
+            "domain:steamusercontent.com",
+            "domain:superjob.ru",
+            "domain:sutochno.ru",
+            "domain:t2.ru",
+            "domain:tanki.su",
+            "domain:tanuki.ru",
+            "domain:tass.ru",
+            "domain:taximaxim.ru",
+            "domain:tele2.ru",
+            "domain:trudvsem.ru",
+            "domain:tutu.ru",
+            "domain:uchi.ru",
+            "domain:ufanet.ru",
+            "domain:unrealengine.com",
+            "domain:uralairlines.ru",
+            "domain:urent.ru",
+            "domain:utair.ru",
+            "domain:vgtrk.ru",
+            "domain:vkusnoitochka.ru",
+            "domain:vkusvill.ru",
+            "domain:vprok.ru",
+            "domain:vseinstrumenti.ru",
+            "domain:vseinstrumenty.com",
+            "domain:vseinstrumenty.ru",
+            "domain:vsk.ru",
+            "domain:vtb.ru",
+            "domain:vybory.gov.ru",
+            "domain:wb.ru",
+            "domain:whoosh.bike",
+            "domain:wifire.ru",
+            "domain:wildberries.ru",
+            "domain:wink.ru",
+            "domain:worldoftanks.ru",
+            "domain:x5m.x5.ru",
+            "domain:xn--80ajghhoc2aj1c8b.xn--p1ai",
+            "domain:xn--80aqf2ac.xn--p1ai",
+            "domain:xn--90acagbhgpca7c8c7f.xn--p1ai",
+            "domain:xn--90aivcdt6dxbc.xn--p1ai",
+            "domain:xn--b1aew.xn--p1ai",
+            "domain:ya.ru",
+            "domain:yandex.com",
+            "domain:yandex.net",
+            "domain:yandex.ru",
+            "domain:yastatic.net",
+            "domain:yota.ru",
+            "domain:youla.io",
+            "domain:youla.ru",
+            "domain:zarplata.ru",
+            "domain:zvuk.com",
+            "domain:pay.yoomoney.ru",
+            "domain:client.yoomoney.ru",
+            "domain:static.yoomoney.ru",
+            "domain:money.yandex.ru",
+            "domain:qr.nspk.ru",
+            "domain:sbp.nspk.ru",
+            "domain:mironline.tech",
+            "domain:mirconnect.ru"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "balancerTag": "auto-best",
+          "inboundTag": [
+            "socks",
+            "http"
+          ],
+          "network": "tcp,udp",
+          "type": "field"
+        },
+        {
+          "balancerTag": "auto-best",
+          "inboundTag": [
+            "entry-whitelist-fallback"
+          ],
+          "type": "field"
+        }
+      ]
+    },
+    "name": "⚡ Авто обход LTE тест",
+    "observatory": {
+      "subjectSelector": [
+        "ext-white-internet-0",
+        "ext-white-internet-1",
+        "ext-white-internet-2",
+        "ext-white-internet-3",
+        "ext-white-internet-4",
+        "ext-white-internet-5",
+        "ext-white-internet-8",
+        "ext-white-internet-9",
+        "ext-white-internet-10",
+        "ext-white-internet-11",
+        "ext-white-internet-12",
+        "ext-white-internet-13"
+      ],
+      "probeUrl": "http://www.gstatic.com/generate_204",
+      "probeInterval": "60m",
+      "enableConcurrency": true
+    }
+  },
+  {
+    "burstObservatory": {
+      "pingConfig": {
+        "destination": "http://www.gstatic.com/generate_204",
+        "httpMethod": "HEAD",
+        "interval": "1m",
+        "sampling": 2,
+        "timeout": "5s"
+      },
+      "subjectSelector": [
+        "bridge",
+        "whitelist"
+      ]
+    },
+    "dns": {
+      "queryStrategy": "UseIPv4",
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "skipFallback": false
+        },
+        {
+          "address": "https://9.9.9.9/dns-query",
+          "skipFallback": false
+        },
+        {
+          "address": "https://1.1.1.1/dns-query",
+          "skipFallback": false
+        }
+      ]
+    },
+    "inbounds": [
+      {
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ],
           "enabled": false,
           "routeOnly": false
         },
@@ -71,126 +933,6 @@
       "loglevel": "warning"
     },
     "outbounds": [
-      {
-        "protocol": "vmess",
-        "streamSettings": {
-          "tlsSettings": {
-            "fingerprint": "firefox",
-            "serverName": "renderer-stream-1-505.mirracloud.io"
-          },
-          "network": "ws",
-          "security": "tls",
-          "wsSettings": {
-            "path": "/api/v1/gpu-stream/socket",
-            "headers": {
-              "Host": "renderer-stream-1-505.mirracloud.io"
-            }
-          }
-        },
-        "settings": {
-          "vnext": [
-            {
-              "address": "renderer-stream-1-505.mirracloud.io",
-              "port": 443,
-              "users": [
-                {
-                  "security": "auto",
-                  "level": 8,
-                  "alterId": 0,
-                  "id": "b8a8d84a-56d0-4bd0-a8a5-b6d674216719"
-                }
-              ]
-            }
-          ]
-        },
-        "tag": "bridge-primary"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "cdn5.actualpromo.ru",
-              "port": 443,
-              "users": [
-                {
-                  "level": 8,
-                  "id": "9c8be6d4-ea6d-45e1-a6e3-13546b018fa0",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "xhttp",
-          "xhttpSettings": {
-            "mode": "packet-up",
-            "scMaxEachPostBytes": "262144-786432",
-            "scMinPostsIntervalMs": "0",
-            "seqKey": "offset",
-            "seqPlacement": "query",
-            "sessionIDKey": "sid",
-            "sessionIDPlacement": "query",
-            "sessionKey": "sid",
-            "sessionPlacement": "query",
-            "uplinkHTTPMethod": "GET",
-            "xPaddingBytes": "48-256",
-            "xPaddingKey": "q",
-            "xPaddingMethod": "tokenish",
-            "xPaddingObfsMode": true,
-            "xPaddingPlacement": "query",
-            "xmux": {
-              "cMaxReuseTimes": 0,
-              "hKeepAlivePeriod": 0,
-              "hMaxRequestTimes": "600-900",
-              "hMaxReusableSecs": "120-240",
-              "maxConcurrency": "0",
-              "maxConnections": "3"
-            },
-            "path": "/p"
-          },
-          "tlsSettings": {
-            "alpn": [
-              "h2"
-            ],
-            "fingerprint": "firefox",
-            "serverName": "cdn5.actualpromo.ru"
-          },
-          "security": "tls"
-        },
-        "tag": "bridge-backup2"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "37.18.15.209",
-              "port": 23550,
-              "users": [
-                {
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision",
-                  "id": "7812294f-cf13-494a-aa08-ca696360e126"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "realitySettings": {
-            "fingerprint": "chrome",
-            "publicKey": "0aGfyA8DTQJOnq-C4CuE-4HjeCpxcTTw-dqe04il5FI",
-            "serverName": "img.perekrestok.ru",
-            "shortId": "f5081f3a",
-            "spiderX": "/"
-          },
-          "security": "reality"
-        },
-        "tag": "bridge-backup3"
-      },
       {
         "protocol": "vless",
         "settings": {
@@ -357,23 +1099,23 @@
         "tag": "loop-to-whitelist"
       }
     ],
-    "remarks": "⚡ Авто LTE + Wi-Fi — 8 серверов RoundRobin",
+    "remarks": "⚡ Авто Wi-Fi 🛜 тест",
     "routing": {
       "balancers": [
         {
           "fallbackTag": "loop-to-whitelist",
           "selector": [
-            "bridge-primary",
-            "bridge-backup2",
-            "bridge-backup3",
-            "bridge",
-            "bridge-2",
-            "bridge-3",
-            "bridge-4",
-            "bridge-5"
+            "bridge"
           ],
           "strategy": {
-            "type": "roundRobin"
+            "settings": {
+              "baselines": [
+                "1s"
+              ],
+              "expected": 6,
+              "tolerance": 0.5
+            },
+            "type": "leastLoad"
           },
           "tag": "Balancer"
         },
@@ -422,23 +1164,7 @@
           "type": "field"
         }
       ]
-    },
-    "observatory": {
-      "subjectSelector": [
-        "bridge-primary",
-        "bridge-backup2",
-        "bridge-backup3",
-        "bridge",
-        "bridge-2",
-        "bridge-3",
-        "bridge-4",
-        "bridge-5"
-      ],
-      "probeUrl": "http://www.gstatic.com/generate_204",
-      "probeInterval": "10s",
-      "enableConcurrency": true
-    },
-    "name": "⚡ Авто LTE + Wi-Fi — 8 серверов RoundRobin"
+    }
   },
   {
     "routing": {
