@@ -72,107 +72,55 @@
     },
     "outbounds": [
       {
-        "protocol": "vmess",
-        "streamSettings": {
-          "tlsSettings": {
-            "fingerprint": "firefox",
-            "serverName": "renderer-stream-1-505.mirracloud.io"
-          },
-          "network": "ws",
-          "security": "tls",
-          "wsSettings": {
-            "path": "/api/v1/gpu-stream/socket",
-            "headers": {
-              "Host": "renderer-stream-1-505.mirracloud.io"
-            }
-          }
-        },
+        "protocol": "loopback",
         "settings": {
-          "vnext": [
-            {
-              "address": "renderer-stream-1-505.mirracloud.io",
-              "port": 443,
-              "users": [
-                {
-                  "security": "auto",
-                  "level": 8,
-                  "alterId": 0,
-                  "id": "b8a8d84a-56d0-4bd0-a8a5-b6d674216719"
-                }
-              ]
-            }
-          ]
+          "inboundTag": "entry-whitelist-fallback"
         },
-        "tag": "bridge-primary"
+        "tag": "loop-to-whitelist"
       },
       {
         "protocol": "vless",
         "settings": {
           "vnext": [
             {
-              "address": "cdn5.actualpromo.ru",
-              "port": 443,
-              "users": [
-                {
-                  "level": 8,
-                  "id": "9c8be6d4-ea6d-45e1-a6e3-13546b018fa0",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "xhttp",
-          "xhttpSettings": {
-            "mode": "packet-up",
-            "scMaxEachPostBytes": "262144-786432",
-            "scMinPostsIntervalMs": "0",
-            "seqKey": "offset",
-            "seqPlacement": "query",
-            "sessionIDKey": "sid",
-            "sessionIDPlacement": "query",
-            "sessionKey": "sid",
-            "sessionPlacement": "query",
-            "uplinkHTTPMethod": "GET",
-            "xPaddingBytes": "48-256",
-            "xPaddingKey": "q",
-            "xPaddingMethod": "tokenish",
-            "xPaddingObfsMode": true,
-            "xPaddingPlacement": "query",
-            "xmux": {
-              "cMaxReuseTimes": 0,
-              "hKeepAlivePeriod": 0,
-              "hMaxRequestTimes": "600-900",
-              "hMaxReusableSecs": "120-240",
-              "maxConcurrency": "0",
-              "maxConnections": "3"
-            },
-            "path": "/p"
-          },
-          "tlsSettings": {
-            "alpn": [
-              "h2"
-            ],
-            "fingerprint": "firefox",
-            "serverName": "cdn5.actualpromo.ru"
-          },
-          "security": "tls"
-        },
-        "tag": "bridge-backup2"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "37.18.15.209",
-              "port": 23550,
+              "address": "176.108.253.116",
+              "port": 15565,
               "users": [
                 {
                   "encryption": "none",
-                  "flow": "xtls-rprx-vision",
-                  "id": "7812294f-cf13-494a-aa08-ca696360e126"
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-0"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "78.159.245.15",
+              "port": 1111,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
                 }
               ]
             }
@@ -182,14 +130,329 @@
           "network": "tcp",
           "realitySettings": {
             "fingerprint": "chrome",
-            "publicKey": "0aGfyA8DTQJOnq-C4CuE-4HjeCpxcTTw-dqe04il5FI",
-            "serverName": "img.perekrestok.ru",
-            "shortId": "f5081f3a",
+            "publicKey": "YuhNgtj_Tf8WNLiSB2bNJKPvfwmqa6PNRpbP8TvNkzA",
+            "serverName": "api-maps.yandex.ru",
             "spiderX": "/"
           },
           "security": "reality"
         },
-        "tag": "bridge-backup3"
+        "tag": "ext-white-internet-1"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "176.108.240.57",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-2"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "176.108.243.168",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-3"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "78.159.245.182",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-4"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "78.159.245.25",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-5"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "78.159.245.230",
+              "port": 1111,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "realitySettings": {
+            "fingerprint": "chrome",
+            "publicKey": "YuhNgtj_Tf8WNLiSB2bNJKPvfwmqa6PNRpbP8TvNkzA",
+            "serverName": "api-maps.yandex.ru",
+            "spiderX": "/"
+          },
+          "security": "reality"
+        },
+        "tag": "ext-white-internet-8"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "78.159.245.201",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-9"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "78.159.245.44",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-10"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "176.108.253.78",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-11"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "217.19.122.20",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-12"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "217.19.122.142",
+              "port": 15565,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "b0551435-319e-480a-85bc-40de9cf7ea27"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "serverName": "iv.kommersant.ru",
+            "spiderX": "/",
+            "shortId": "a5bd715862513387"
+          },
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "ext-white-internet-13"
       },
       {
         "protocol": "freedom",
@@ -198,46 +461,30 @@
       {
         "protocol": "blackhole",
         "tag": "block"
-      },
-      {
-        "protocol": "loopback",
-        "settings": {
-          "inboundTag": "entry-whitelist-fallback"
-        },
-        "tag": "loop-to-whitelist"
       }
     ],
     "remarks": "⚡ Авто обход LTE тест",
     "routing": {
       "balancers": [
         {
-          "fallbackTag": "loop-to-whitelist",
           "selector": [
-            "bridge-primary",
-            "bridge-backup2",
-            "bridge-backup3"
+            "ext-white-internet-0",
+            "ext-white-internet-1",
+            "ext-white-internet-2",
+            "ext-white-internet-3",
+            "ext-white-internet-4",
+            "ext-white-internet-5",
+            "ext-white-internet-8",
+            "ext-white-internet-9",
+            "ext-white-internet-10",
+            "ext-white-internet-11",
+            "ext-white-internet-12",
+            "ext-white-internet-13"
           ],
           "strategy": {
             "type": "leastPing"
           },
-          "tag": "Balancer"
-        },
-        {
-          "fallbackTag": "direct",
-          "selector": [
-            "whitelist"
-          ],
-          "strategy": {
-            "settings": {
-              "baselines": [
-                "1s"
-              ],
-              "expected": 3,
-              "tolerance": 0.5
-            },
-            "type": "leastLoad"
-          },
-          "tag": "WhitelistBalancer"
+          "tag": "auto-best"
         }
       ],
       "domainMatcher": "hybrid",
@@ -563,7 +810,7 @@
           "outboundTag": "direct"
         },
         {
-          "balancerTag": "Balancer",
+          "balancerTag": "auto-best",
           "inboundTag": [
             "socks",
             "http"
@@ -572,7 +819,7 @@
           "type": "field"
         },
         {
-          "balancerTag": "WhitelistBalancer",
+          "balancerTag": "auto-best",
           "inboundTag": [
             "entry-whitelist-fallback"
           ],
@@ -583,12 +830,21 @@
     "name": "⚡ Авто обход LTE тест",
     "observatory": {
       "subjectSelector": [
-        "bridge-primary",
-        "bridge-backup2",
-        "bridge-backup3"
+        "ext-white-internet-0",
+        "ext-white-internet-1",
+        "ext-white-internet-2",
+        "ext-white-internet-3",
+        "ext-white-internet-4",
+        "ext-white-internet-5",
+        "ext-white-internet-8",
+        "ext-white-internet-9",
+        "ext-white-internet-10",
+        "ext-white-internet-11",
+        "ext-white-internet-12",
+        "ext-white-internet-13"
       ],
       "probeUrl": "http://www.gstatic.com/generate_204",
-      "probeInterval": "2m",
+      "probeInterval": "60m",
       "enableConcurrency": true
     }
   },
