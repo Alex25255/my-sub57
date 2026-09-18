@@ -583,7 +583,7 @@
         "tag": "block"
       }
     ],
-    "remarks": "⚡ Авто обход LTE 📶",
+    "remarks": "⚡ Авто обход LTE",
     "routing": {
       "balancers": [
         {
@@ -950,7 +950,7 @@
         }
       ]
     },
-    "name": "⚡ Авто обход LTE 📶",
+    "name": "⚡ Авто обход LTE",
     "observatory": {
       "subjectSelector": [
         "ext-white-internet-0",
@@ -1225,7 +1225,7 @@
         "tag": "loop-to-whitelist"
       }
     ],
-    "remarks": "⚡ Авто Wi-Fi 🛜 тест",
+    "remarks": "⚡ Авто Wi-Fi 🛜",
     "routing": {
       "balancers": [
         {
@@ -1234,14 +1234,7 @@
             "bridge"
           ],
           "strategy": {
-            "settings": {
-              "baselines": [
-                "1s"
-              ],
-              "expected": 6,
-              "tolerance": 0.5
-            },
-            "type": "leastLoad"
+            "type": "roundRobin"
           },
           "tag": "Balancer"
         },
@@ -1290,7 +1283,8 @@
           "type": "field"
         }
       ]
-    }
+    },
+    "name": "⚡ Авто Wi-Fi 🛜"
   },
   {
     "routing": {
@@ -3361,4 +3355,3 @@
     "remarks": "🎮 Игровой обход глушилок"
   }
 ]
-
