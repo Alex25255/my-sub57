@@ -192,6 +192,97 @@
         "tag": "bridge-backup3"
       },
       {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "cdn1.actualpromo.ru",
+              "port": 443,
+              "users": [
+                {
+                  "id": "9c8be6d4-ea6d-45e1-a6e3-13546b018fa0",
+                  "encryption": "none",
+                  "level": 8
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "tls",
+          "tlsSettings": {
+            "alpn": [
+              "h2"
+            ],
+            "serverName": "cdn1.actualpromo.ru",
+            "fingerprint": "firefox"
+          },
+          "xhttpSettings": {
+            "mode": "packet-up",
+            "path": "/p",
+            "extra": {
+              "xPaddingBytes": "48-256",
+              "xPaddingObfsMode": true,
+              "xPaddingPlacement": "query",
+              "xPaddingKey": "q",
+              "scMinPostsIntervalMs": "0",
+              "SessionIDKey": "sid",
+              "SessionIDPlacement": "query",
+              "sessionIDKey": "sid",
+              "sessionIDPlacement": "query",
+              "seqPlacement": "query",
+              "uplinkHTTPMethod": "GET",
+              "scMaxEachPostBytes": "262144-786432",
+              "seqKey": "offset",
+              "xPaddingMethod": "tokenish",
+              "mode": "packet-up",
+              "xmux": {
+                "hMaxReusableSecs": "120-240",
+                "maxConnections": "16-32",
+                "cMaxReuseTimes": 0,
+                "hKeepAlivePeriod": 20,
+                "maxConcurrency": "0",
+                "hMaxRequestTimes": "600-900"
+              }
+            }
+          }
+        },
+        "tag": "bridge-backup4"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "ru5.actualvpn.ru",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision",
+                  "id": "9c8be6d4-ea6d-45e1-a6e3-13546b018fa0",
+                  "level": 8
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "spiderX": "/LghsWeveP3y6IwD",
+            "shortId": "92d85c",
+            "serverName": "site.ru5.actualvpn.ru",
+            "show": false,
+            "fingerprint": "firefox",
+            "publicKey": "2BCFKNZYJhmVRjCG83mh2FEy_qLubQnvC5R0APV8SlM"
+          }
+        },
+        "tag": "bridge-backup5"
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -215,7 +306,9 @@
           "selector": [
             "bridge-primary",
             "bridge-backup2",
-            "bridge-backup3"
+            "bridge-backup3",
+            "bridge-backup4",
+            "bridge-backup5"
           ],
           "strategy": {
             "type": "random"
@@ -585,7 +678,9 @@
       "subjectSelector": [
         "bridge-primary",
         "bridge-backup2",
-        "bridge-backup3"
+        "bridge-backup3",
+        "bridge-backup4",
+        "bridge-backup5"
       ],
       "probeUrl": "http://www.gstatic.com/generate_204",
       "probeInterval": "2s",
