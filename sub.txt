@@ -683,7 +683,7 @@
         "bridge-backup5"
       ],
       "probeUrl": "http://www.gstatic.com/generate_204",
-      "probeInterval": "2s",
+      "probeInterval": "10s",
       "enableConcurrency": true
     }
   },
