@@ -588,6 +588,9 @@
       "balancers": [
         {
           "selector": [
+            "bridge-primary",
+            "bridge-backup2",
+            "bridge-backup3",
             "ext-white-internet-0",
             "ext-white-internet-1",
             "ext-white-internet-2",
@@ -599,10 +602,7 @@
             "ext-white-internet-10",
             "ext-white-internet-11",
             "ext-white-internet-12",
-            "ext-white-internet-13",
-            "bridge-primary",
-            "bridge-backup2",
-            "bridge-backup3"
+            "ext-white-internet-13"
           ],
           "strategy": {
             "type": "roundRobin"
