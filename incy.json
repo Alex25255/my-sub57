@@ -254,13 +254,12 @@
           "type": "field",
           "domain": [
             "domain:tbank.ru",
-            "domain:www.tbank.ru",
             "domain:tinkoff.ru",
-            "domain:www.tinkoff.ru",
-            "domain:api.tbank.ru",
-            "domain:static.tbank.ru",
-            "domain:cdn.tbank.ru",
-            "domain:tbankid.ru"
+            "domain:tcsbank.ru",
+            "domain:t-static.ru",
+            "domain:nspk.ru",
+            "domain:qr.nspk.ru",
+            "domain:sbp.nspk.ru"
           ],
           "outboundTag": "bridge-backup3"
         },
@@ -290,7 +289,6 @@
             "domain:cdn-vk.ru",
             "domain:mir-pay.ru",
             "domain:mironline.ru",
-            "domain:nspk.ru",
             "domain:yoomoney.ru",
             "domain:yoomoney.com",
             "domain:yoomoney.net",
@@ -561,8 +559,6 @@
             "domain:client.yoomoney.ru",
             "domain:static.yoomoney.ru",
             "domain:money.yandex.ru",
-            "domain:qr.nspk.ru",
-            "domain:sbp.nspk.ru",
             "domain:mironline.tech",
             "domain:mirconnect.ru"
           ],
@@ -2984,4 +2980,3 @@
     },
     "remarks": "🎮 Игровой обход глушилок"
   }
-]
