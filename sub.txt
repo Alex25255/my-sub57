@@ -218,7 +218,14 @@
             "bridge-backup3"
           ],
           "strategy": {
-            "type": "roundRobin"
+            "settings": {
+              "baselines": [
+                "1s"
+              ],
+              "expected": 6,
+              "tolerance": 0.5
+            },
+            "type": "leastLoad"
           },
           "tag": "Balancer"
         },
@@ -253,6 +260,13 @@
         {
           "type": "field",
           "domain": [
+            "domain:tbank.ru",
+            "domain:tinkoff.ru",
+            "domain:tcsbank.ru",
+            "domain:t-static.ru",
+            "domain:nspk.ru",
+            "domain:qr.nspk.ru",
+            "domain:sbp.nspk.ru",
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -276,18 +290,9 @@
             "domain:cdn-vk.ru",
             "domain:mir-pay.ru",
             "domain:mironline.ru",
-            "domain:nspk.ru",
             "domain:yoomoney.ru",
             "domain:yoomoney.com",
             "domain:yoomoney.net",
-            "domain:tbank.ru",
-            "domain:www.tbank.ru",
-            "domain:tinkoff.ru",
-            "domain:www.tinkoff.ru",
-            "domain:api.tbank.ru",
-            "domain:static.tbank.ru",
-            "domain:cdn.tbank.ru",
-            "domain:tbankid.ru",
             "domain:1tv.ru",
             "domain:2gis.com",
             "domain:2gis.ru",
@@ -555,10 +560,14 @@
             "domain:client.yoomoney.ru",
             "domain:static.yoomoney.ru",
             "domain:money.yandex.ru",
-            "domain:qr.nspk.ru",
-            "domain:sbp.nspk.ru",
             "domain:mironline.tech",
-            "domain:mirconnect.ru"
+            "domain:mirconnect.ru",
+            "domain:www.tbank.ru",
+            "domain:www.tinkoff.ru",
+            "domain:api.tbank.ru",
+            "domain:static.tbank.ru",
+            "domain:cdn.tbank.ru",
+            "domain:tbankid.ru"
           ],
           "outboundTag": "direct"
         },
@@ -581,15 +590,18 @@
       ]
     },
     "name": "⚡ Авто обход LTE тест",
-    "observatory": {
+    "burstObservatory": {
+      "pingConfig": {
+        "destination": "http://www.gstatic.com/generate_204",
+        "httpMethod": "HEAD",
+        "interval": "1m",
+        "sampling": 2,
+        "timeout": "5s"
+      },
       "subjectSelector": [
-        "bridge-primary",
-        "bridge-backup2",
-        "bridge-backup3"
-      ],
-      "probeUrl": "http://www.gstatic.com/generate_204",
-      "probeInterval": "1m",
-      "enableConcurrency": true
+        "bridge",
+        "whitelist"
+      ]
     }
   },
   {
