@@ -1225,7 +1225,7 @@
         "tag": "loop-to-whitelist"
       }
     ],
-    "remarks": "⚡ Авто Wi-Fi 🛜 тест",
+    "remarks": "⚡ Авто Wi-Fi 🛜",
     "routing": {
       "balancers": [
         {
