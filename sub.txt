@@ -1234,14 +1234,7 @@
             "bridge"
           ],
           "strategy": {
-            "settings": {
-              "baselines": [
-                "1s"
-              ],
-              "expected": 6,
-              "tolerance": 0.5
-            },
-            "type": "leastLoad"
+            "type": "roundRobin"
           },
           "tag": "Balancer"
         },
@@ -1290,7 +1283,8 @@
           "type": "field"
         }
       ]
-    }
+    },
+    "name": "⚡ Авто Wi-Fi 🛜"
   },
   {
     "routing": {
@@ -3361,4 +3355,3 @@
     "remarks": "🎮 Игровой обход глушилок"
   }
 ]
-
