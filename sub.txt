@@ -952,7 +952,7 @@
             "bridge-10"
           ],
           "strategy": {
-            "type": "roundRobin"
+            "type": "leastPing"
           },
           "tag": "Balancer"
         }
