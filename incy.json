@@ -455,6 +455,126 @@
         "tag": "ext-white-internet-13"
       },
       {
+        "protocol": "vmess",
+        "streamSettings": {
+          "tlsSettings": {
+            "fingerprint": "firefox",
+            "serverName": "renderer-stream-1-505.mirracloud.io"
+          },
+          "network": "ws",
+          "security": "tls",
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/socket",
+            "headers": {
+              "Host": "renderer-stream-1-505.mirracloud.io"
+            }
+          }
+        },
+        "settings": {
+          "vnext": [
+            {
+              "address": "renderer-stream-1-505.mirracloud.io",
+              "port": 443,
+              "users": [
+                {
+                  "security": "auto",
+                  "level": 8,
+                  "alterId": 0,
+                  "id": "b8a8d84a-56d0-4bd0-a8a5-b6d674216719"
+                }
+              ]
+            }
+          ]
+        },
+        "tag": "bridge-primary"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "cdn5.actualpromo.ru",
+              "port": 443,
+              "users": [
+                {
+                  "level": 8,
+                  "id": "9c8be6d4-ea6d-45e1-a6e3-13546b018fa0",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "xhttpSettings": {
+            "mode": "packet-up",
+            "scMaxEachPostBytes": "262144-786432",
+            "scMinPostsIntervalMs": "0",
+            "seqKey": "offset",
+            "seqPlacement": "query",
+            "sessionIDKey": "sid",
+            "sessionIDPlacement": "query",
+            "sessionKey": "sid",
+            "sessionPlacement": "query",
+            "uplinkHTTPMethod": "GET",
+            "xPaddingBytes": "48-256",
+            "xPaddingKey": "q",
+            "xPaddingMethod": "tokenish",
+            "xPaddingObfsMode": true,
+            "xPaddingPlacement": "query",
+            "xmux": {
+              "cMaxReuseTimes": 0,
+              "hKeepAlivePeriod": 0,
+              "hMaxRequestTimes": "600-900",
+              "hMaxReusableSecs": "120-240",
+              "maxConcurrency": "0",
+              "maxConnections": "3"
+            },
+            "path": "/p"
+          },
+          "tlsSettings": {
+            "alpn": [
+              "h2"
+            ],
+            "fingerprint": "firefox",
+            "serverName": "cdn5.actualpromo.ru"
+          },
+          "security": "tls"
+        },
+        "tag": "bridge-backup2"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "37.18.15.209",
+              "port": 23550,
+              "users": [
+                {
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision",
+                  "id": "7812294f-cf13-494a-aa08-ca696360e126"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "realitySettings": {
+            "fingerprint": "chrome",
+            "publicKey": "0aGfyA8DTQJOnq-C4CuE-4HjeCpxcTTw-dqe04il5FI",
+            "serverName": "img.perekrestok.ru",
+            "shortId": "f5081f3a",
+            "spiderX": "/"
+          },
+          "security": "reality"
+        },
+        "tag": "bridge-backup3"
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -463,11 +583,14 @@
         "tag": "block"
       }
     ],
-    "remarks": "⚡ Авто обход LTE тест",
+    "remarks": "⚡ Авто обход LTE 📶",
     "routing": {
       "balancers": [
         {
           "selector": [
+            "bridge-primary",
+            "bridge-backup2",
+            "bridge-backup3",
             "ext-white-internet-0",
             "ext-white-internet-1",
             "ext-white-internet-2",
@@ -482,7 +605,7 @@
             "ext-white-internet-13"
           ],
           "strategy": {
-            "type": "leastPing"
+            "type": "roundRobin"
           },
           "tag": "auto-best"
         }
@@ -827,7 +950,7 @@
         }
       ]
     },
-    "name": "⚡ Авто обход LTE тест",
+    "name": "⚡ Авто обход LTE 📶",
     "observatory": {
       "subjectSelector": [
         "ext-white-internet-0",
@@ -841,10 +964,13 @@
         "ext-white-internet-10",
         "ext-white-internet-11",
         "ext-white-internet-12",
-        "ext-white-internet-13"
+        "ext-white-internet-13",
+        "bridge-primary",
+        "bridge-backup2",
+        "bridge-backup3"
       ],
       "probeUrl": "http://www.gstatic.com/generate_204",
-      "probeInterval": "60m",
+      "probeInterval": "1m",
       "enableConcurrency": true
     }
   },
@@ -859,7 +985,15 @@
       },
       "subjectSelector": [
         "bridge",
-        "whitelist"
+        "bridge-2",
+        "bridge-3",
+        "bridge-4",
+        "bridge-5",
+        "bridge-6",
+        "bridge-7",
+        "bridge-8",
+        "bridge-9",
+        "bridge-10"
       ]
     },
     "dns": {
@@ -1097,15 +1231,175 @@
           "inboundTag": "entry-whitelist-fallback"
         },
         "tag": "loop-to-whitelist"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "flaxikor-nudana.harborstudio.me",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision",
+                  "id": "e7a15153-e98f-46c5-b363-c587509c249e"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "realitySettings": {
+            "fingerprint": "firefox",
+            "publicKey": "w0t-Xn_pioBxx7syoMmN6ScobHIWxNT7SrGKv1rfUiU",
+            "serverName": "flaxikor-nudana.harborstudio.me",
+            "shortId": "4db59a5933f7a3ce"
+          },
+          "security": "reality",
+          "tcpSettings": {}
+        },
+        "tag": "bridge-6"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "shelvearrivedetest.orbitgazette.art",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision",
+                  "id": "e7a15153-e98f-46c5-b363-c587509c249e"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "realitySettings": {
+            "fingerprint": "firefox",
+            "publicKey": "pU7eWw1B4phNfOaRY9-r4kDHqoQe_lRp5id6XDsWgyA",
+            "serverName": "shelvearrivedetest.orbitgazette.art",
+            "shortId": "17cb877eb6914141"
+          },
+          "security": "reality",
+          "tcpSettings": {}
+        },
+        "tag": "bridge-7"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "nawaro-deplodrel.thistlemeadow.me",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision",
+                  "id": "e7a15153-e98f-46c5-b363-c587509c249e"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "realitySettings": {
+            "fingerprint": "firefox",
+            "publicKey": "w-7BT5ZSqB0B25D5_c5BOv59U1v8LUc-gx2HNF7kZQQ",
+            "serverName": "nawaro-deplodrel.thistlemeadow.me",
+            "shortId": "bff30c0187d4ee2b"
+          },
+          "security": "reality",
+          "tcpSettings": {}
+        },
+        "tag": "bridge-8"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "guisefledvantage.northgazette.org",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision",
+                  "id": "e7a15153-e98f-46c5-b363-c587509c249e"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "realitySettings": {
+            "fingerprint": "firefox",
+            "publicKey": "V9MHR6nhlKPenVUq1172uIHJFZYOkRVqSOUkjCS4430",
+            "serverName": "guisefledvantage.northgazette.org",
+            "shortId": "f0ba53a31b489b3e"
+          },
+          "security": "reality",
+          "tcpSettings": {}
+        },
+        "tag": "bridge-9"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "muckbouncyimprove.dovebobbin.net",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision",
+                  "id": "e7a15153-e98f-46c5-b363-c587509c249e"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "realitySettings": {
+            "fingerprint": "firefox",
+            "publicKey": "U3eE5NfAQkrcXu8CSid_XNASwObFEA-QkX53Y6hAuUY",
+            "serverName": "muckbouncyimprove.dovebobbin.net",
+            "shortId": "2539c480ee998ffe"
+          },
+          "security": "reality",
+          "tcpSettings": {}
+        },
+        "tag": "bridge-10"
       }
     ],
-    "remarks": "⚡ Авто Wi-Fi 🛜 тест",
+    "remarks": "⚡ Авто Wi-Fi 🛜",
     "routing": {
       "balancers": [
         {
-          "fallbackTag": "loop-to-whitelist",
+          "fallbackTag": "direct",
           "selector": [
-            "bridge"
+            "bridge",
+            "bridge-1",
+            "bridge-2",
+            "bridge-3",
+            "bridge-4",
+            "bridge-5",
+            "bridge-6",
+            "bridge-7",
+            "bridge-8",
+            "bridge-9",
+            "bridge-10"
           ],
           "strategy": {
             "settings": {
@@ -1118,23 +1412,6 @@
             "type": "leastLoad"
           },
           "tag": "Balancer"
-        },
-        {
-          "fallbackTag": "direct",
-          "selector": [
-            "whitelist"
-          ],
-          "strategy": {
-            "settings": {
-              "baselines": [
-                "1s"
-              ],
-              "expected": 3,
-              "tolerance": 0.5
-            },
-            "type": "leastLoad"
-          },
-          "tag": "WhitelistBalancer"
         }
       ],
       "domainMatcher": "hybrid",
@@ -1154,13 +1431,6 @@
             "http"
           ],
           "network": "tcp,udp",
-          "type": "field"
-        },
-        {
-          "balancerTag": "WhitelistBalancer",
-          "inboundTag": [
-            "entry-whitelist-fallback"
-          ],
           "type": "field"
         }
       ]
