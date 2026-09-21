@@ -3239,7 +3239,7 @@
       "access": "none",
       "loglevel": "none"
     },
-    "name": "💫 Игровой обход глушилок",
+    "name": "💫  Игровой обход глушилок",
     "meta": {
       "serverDescription": "VLESS • TCP • Reality"
     },
