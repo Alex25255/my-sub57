@@ -2512,7 +2512,7 @@
         {
           "type": "field",
           "network": "tcp",
-          "outboundTag": "💫 Игровой обход глушилок",
+          "outboundTag": "💫 Игровой белый интернет",
           "port": "853"
         },
         {
@@ -2527,7 +2527,7 @@
           "inboundTag": [
             "remote_dns"
           ],
-          "outboundTag": "💫 Игровой обход глушилок"
+          "outboundTag": "💫 Игровой белый интернет"
         },
         {
           "type": "field",
@@ -2868,7 +2868,7 @@
           },
           "security": "reality"
         },
-        "tag": "💫 Игровой обход глушилок"
+        "tag": "💫 Игровой белый интернет"
       },
       {
         "protocol": "freedom",
@@ -3239,10 +3239,10 @@
       "access": "none",
       "loglevel": "none"
     },
-    "name": "💫  Игровой обход глушилок",
+    "name": "💫 Игровой белый интернет",
     "meta": {
       "serverDescription": "VLESS • TCP • Reality"
     },
-    "remarks": "🎮 Игровой обход глушилок"
+    "remarks": "💫 Игровой белый интернет"
   }
 ]
