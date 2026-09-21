@@ -2080,7 +2080,7 @@
         {
           "type": "field",
           "network": "tcp",
-          "outboundTag": "💫 Игровой белый интернет 2",
+          "outboundTag": "💫 Умная локация от StealthSurf VPN",
           "port": "853"
         },
         {
@@ -2095,7 +2095,7 @@
           "inboundTag": [
             "remote_dns"
           ],
-          "outboundTag": "💫 Игровой белый интернет 2"
+          "outboundTag": "💫 Умная локация от StealthSurf VPN"
         },
         {
           "type": "field",
@@ -2436,7 +2436,7 @@
           },
           "security": "reality"
         },
-        "tag": "💫 Игровой белый интернет 2"
+        "tag": "💫 Умная локация от StealthSurf VPN"
       },
       {
         "protocol": "freedom",
@@ -2807,10 +2807,10 @@
       "access": "none",
       "loglevel": "none"
     },
-    "name": "💫 Игровой белый интернет 2",
+    "name": "💫 Умная локация от StealthSurf VPN",
     "meta": {
       "serverDescription": "VLESS • TCP • Reality"
     },
-    "remarks": "💫 Игровой белый интернет 2"
+    "remarks": "💫 Умная локация от StealthSurf VPN"
   }
 ]
