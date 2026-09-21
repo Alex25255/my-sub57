@@ -27,7 +27,6 @@
         "ext-white-internet-12",
         "ext-white-internet-13",
         "bridge-primary",
-        "bridge-backup2",
         "bridge-backup3",
         "bridge-6",
         "bridge-7",
@@ -672,62 +671,6 @@
         "settings": {
           "vnext": [
             {
-              "address": "cdn5.actualpromo.ru",
-              "port": 443,
-              "users": [
-                {
-                  "level": 8,
-                  "id": "9c8be6d4-ea6d-45e1-a6e3-13546b018fa0",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "xhttp",
-          "xhttpSettings": {
-            "mode": "packet-up",
-            "scMaxEachPostBytes": "262144-786432",
-            "scMinPostsIntervalMs": "0",
-            "seqKey": "offset",
-            "seqPlacement": "query",
-            "sessionIDKey": "sid",
-            "sessionIDPlacement": "query",
-            "sessionKey": "sid",
-            "sessionPlacement": "query",
-            "uplinkHTTPMethod": "GET",
-            "xPaddingBytes": "48-256",
-            "xPaddingKey": "q",
-            "xPaddingMethod": "tokenish",
-            "xPaddingObfsMode": true,
-            "xPaddingPlacement": "query",
-            "xmux": {
-              "cMaxReuseTimes": 0,
-              "hKeepAlivePeriod": 0,
-              "hMaxRequestTimes": "600-900",
-              "hMaxReusableSecs": "120-240",
-              "maxConcurrency": "0",
-              "maxConnections": "3"
-            },
-            "path": "/p"
-          },
-          "tlsSettings": {
-            "alpn": [
-              "h2"
-            ],
-            "fingerprint": "firefox",
-            "serverName": "cdn5.actualpromo.ru"
-          },
-          "security": "tls"
-        },
-        "tag": "bridge-backup2"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
               "address": "37.18.15.209",
               "port": 23550,
               "users": [
@@ -943,7 +886,6 @@
             "ext-white-internet-12",
             "ext-white-internet-13",
             "bridge-primary",
-            "bridge-backup2",
             "bridge-backup3",
             "bridge-6",
             "bridge-7",
@@ -2473,62 +2415,6 @@
     },
     "outbounds": [
       {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "cdn5.actualpromo.ru",
-              "port": 443,
-              "users": [
-                {
-                  "level": 8,
-                  "id": "9c8be6d4-ea6d-45e1-a6e3-13546b018fa0",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "xhttp",
-          "xhttpSettings": {
-            "mode": "packet-up",
-            "scMaxEachPostBytes": "262144-786432",
-            "scMinPostsIntervalMs": "0",
-            "seqKey": "offset",
-            "seqPlacement": "query",
-            "sessionIDKey": "sid",
-            "sessionIDPlacement": "query",
-            "sessionKey": "sid",
-            "sessionPlacement": "query",
-            "uplinkHTTPMethod": "GET",
-            "xPaddingBytes": "48-256",
-            "xPaddingKey": "q",
-            "xPaddingMethod": "tokenish",
-            "xPaddingObfsMode": true,
-            "xPaddingPlacement": "query",
-            "xmux": {
-              "cMaxReuseTimes": 0,
-              "hKeepAlivePeriod": 0,
-              "hMaxRequestTimes": "600-900",
-              "hMaxReusableSecs": "120-240",
-              "maxConcurrency": "0",
-              "maxConnections": "3"
-            },
-            "path": "/p"
-          },
-          "tlsSettings": {
-            "alpn": [
-              "h2"
-            ],
-            "fingerprint": "firefox",
-            "serverName": "cdn5.actualpromo.ru"
-          },
-          "security": "tls"
-        },
-        "tag": "🇷🇺 Обход глушилок LTE"
-      },
-      {
         "settings": {
           "ipsBlocked": []
         },
@@ -2626,7 +2512,7 @@
         {
           "type": "field",
           "network": "tcp",
-          "outboundTag": "💫 Игровой обход глушилок",
+          "outboundTag": "💫 Игровой белый интернет",
           "port": "853"
         },
         {
@@ -2641,7 +2527,7 @@
           "inboundTag": [
             "remote_dns"
           ],
-          "outboundTag": "💫 Игровой обход глушилок"
+          "outboundTag": "💫 Игровой белый интернет"
         },
         {
           "type": "field",
@@ -2982,7 +2868,7 @@
           },
           "security": "reality"
         },
-        "tag": "💫 Игровой обход глушилок"
+        "tag": "💫 Игровой белый интернет"
       },
       {
         "protocol": "freedom",
@@ -3353,10 +3239,10 @@
       "access": "none",
       "loglevel": "none"
     },
-    "name": "💫 Игровой обход глушилок",
+    "name": "💫 Игровой белый интернет",
     "meta": {
       "serverDescription": "VLESS • TCP • Reality"
     },
-    "remarks": "🎮 Игровой обход глушилок"
+    "remarks": "💫 Игровой белый интернет"
   }
 ]
