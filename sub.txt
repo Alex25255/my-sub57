@@ -2080,7 +2080,7 @@
         {
           "type": "field",
           "network": "tcp",
-          "outboundTag": "💫 Игровой белый интернет",
+          "outboundTag": "💫 Игровой белый интернет 2",
           "port": "853"
         },
         {
@@ -2095,7 +2095,7 @@
           "inboundTag": [
             "remote_dns"
           ],
-          "outboundTag": "💫 Игровой белый интернет"
+          "outboundTag": "💫 Игровой белый интернет 2"
         },
         {
           "type": "field",
@@ -2436,7 +2436,7 @@
           },
           "security": "reality"
         },
-        "tag": "💫 Игровой белый интернет"
+        "tag": "💫 Игровой белый интернет 2"
       },
       {
         "protocol": "freedom",
@@ -2807,10 +2807,10 @@
       "access": "none",
       "loglevel": "none"
     },
-    "name": "💫 Игровой белый интернет",
+    "name": "💫 Игровой белый интернет 2",
     "meta": {
       "serverDescription": "VLESS • TCP • Reality"
     },
-    "remarks": "💫 Игровой белый интернет"
+    "remarks": "💫 Игровой белый интернет 2"
   }
 ]
