@@ -1,1 +1,106 @@
-{"dns":{"servers":["https:\/\/dns.google\/dns-query"],"tag":"dns-in"},"inbounds":[{"listen":"127.0.0.1","port":10808,"protocol":"socks","settings":{"udp":true},"sniffing":{"destOverride":["http","tls","quic"],"enabled":true},"tag":"socks"},{"listen":"127.0.0.1","port":10809,"protocol":"http","sniffing":{"destOverride":["http","tls","quic"],"enabled":true},"tag":"http"}],"outbounds":[{"protocol":"vless","settings":{"vnext":[{"address":"0.0.0.0","port":1,"users":[{"encryption":"none","flow":"","id":"00000000-0000-0000-0000-000000000000"}]}]},"streamSettings":{"network":"tcp","security":"none","tcpSettings":{}},"tag":"proxy"},{"protocol":"freedom","tag":"direct"},{"protocol":"dns","tag":"dns-out"},{"protocol":"blackhole","tag":"block"}],"remarks":"⌛ Подписка истекла","routing":{"domainStrategy":"IPIfNonMatch","rules":[{"inboundTag":["dns-in"],"outboundTag":"direct","type":"field"},{"outboundTag":"dns-out","port":53,"type":"field"},{"outboundTag":"direct","protocol":["bittorrent"],"type":"field"}]}}
+{
+  "dns" : {
+    "servers" : [
+      "https:\/\/dns.google\/dns-query"
+    ],
+    "tag" : "dns-in"
+  },
+  "inbounds" : [
+    {
+      "listen" : "127.0.0.1",
+      "port" : 10808,
+      "protocol" : "socks",
+      "settings" : {
+        "udp" : true
+      },
+      "sniffing" : {
+        "destOverride" : [
+          "http",
+          "tls",
+          "quic"
+        ],
+        "enabled" : true
+      },
+      "tag" : "socks"
+    },
+    {
+      "listen" : "127.0.0.1",
+      "port" : 10809,
+      "protocol" : "http",
+      "sniffing" : {
+        "destOverride" : [
+          "http",
+          "tls",
+          "quic"
+        ],
+        "enabled" : true
+      },
+      "tag" : "http"
+    }
+  ],
+  "outbounds" : [
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "0.0.0.0",
+            "port" : 1,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "",
+                "id" : "00000000-0000-0000-0000-000000000000"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "security" : "none",
+        "tcpSettings" : {
+
+        }
+      },
+      "tag" : "proxy"
+    },
+    {
+      "protocol" : "freedom",
+      "tag" : "direct"
+    },
+    {
+      "protocol" : "dns",
+      "tag" : "dns-out"
+    },
+    {
+      "protocol" : "blackhole",
+      "tag" : "block"
+    }
+  ],
+  "remarks" : "⌛ Подписка истекла",
+  "routing" : {
+    "domainStrategy" : "IPIfNonMatch",
+    "rules" : [
+      {
+        "inboundTag" : [
+          "dns-in"
+        ],
+        "outboundTag" : "direct",
+        "type" : "field"
+      },
+      {
+        "outboundTag" : "dns-out",
+        "port" : 53,
+        "type" : "field"
+      },
+      {
+        "outboundTag" : "direct",
+        "protocol" : [
+          "bittorrent"
+        ],
+        "type" : "field"
+      }
+    ]
+  }
+}
