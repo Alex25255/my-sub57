@@ -1297,34 +1297,68 @@
         "streamSettings": {
           "tlsSettings": {
             "fingerprint": "firefox",
-            "serverName": "renderer-stream-1-505.mirracloud.io"
+            "serverName": "renderer-stream-2-86.mirra.systems"
           },
           "network": "ws",
           "security": "tls",
           "wsSettings": {
             "path": "/api/v1/gpu-stream/socket",
             "headers": {
-              "Host": "renderer-stream-1-505.mirracloud.io"
+              "Host": "renderer-stream-2-86.mirra.systems"
             }
           }
         },
         "settings": {
           "vnext": [
             {
-              "address": "renderer-stream-1-505.mirracloud.io",
+              "address": "renderer-stream-2-86.mirra.systems",
               "port": 443,
               "users": [
                 {
                   "security": "auto",
                   "level": 8,
                   "alterId": 0,
-                  "id": "b8a8d84a-56d0-4bd0-a8a5-b6d674216719"
+                  "id": "89432e7b-13bc-464b-bc6b-d52c34f15b03"
                 }
               ]
             }
           ]
         },
         "tag": "🇳🇱 Обход глушилок LTE"
+      },
+      {
+        "protocol": "vmess",
+        "streamSettings": {
+          "tlsSettings": {
+            "fingerprint": "firefox",
+            "serverName": "renderer-stream-2-86.mirra.systems"
+          },
+          "network": "ws",
+          "security": "tls",
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/socket",
+            "headers": {
+              "Host": "renderer-stream-2-86.mirra.systems"
+            }
+          }
+        },
+        "settings": {
+          "vnext": [
+            {
+              "address": "renderer-stream-2-86.mirra.systems",
+              "port": 443,
+              "users": [
+                {
+                  "security": "auto",
+                  "level": 8,
+                  "alterId": 0,
+                  "id": "89432e7b-13bc-464b-bc6b-d52c34f15b03"
+                }
+              ]
+            }
+          ]
+        },
+        "tag": "🇩🇪 Обход глушилок LTE"
       },
       {
         "protocol": "freedom",
@@ -2110,16 +2144,13 @@
           "security": "reality",
           "realitySettings": {
             "fingerprint": "chrome",
-            "serverName": "adaptation.sfera.x5.ru",
             "publicKey": "xX9_ayMKXUA_OruphqyzPicioVqxic5Dn85dqPowXSc",
+            "serverName": "adaptation.sfera.x5.ru",
             "shortId": "8b8e067b",
             "spiderX": "/"
           }
         },
-        "tag": "💫 Игровой белый интернет",
-        "remark": "💫 Игровой белый интернет 1",
-        "remarks": "💫 Игровой белый интернет 1",
-        "name": "💫 Игровой белый интернет 1"
+        "tag": "💫 Игровой белый интернет"
       },
       {
         "protocol": "freedom",
@@ -2537,62 +2568,29 @@
         "settings": {
           "vnext": [
             {
-              "port": 443,
               "address": "cdn5.actualpromo.ru",
+              "port": 443,
               "users": [
                 {
-                  "id": "9c8be6d4-ea6d-45e1-a6e3-13546b018fa0",
                   "encryption": "none",
-                  "level": 8
+                  "id": "9c8be6d4-ea6d-45e1-a6e3-13546b018fa0"
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "tlsSettings": {
-            "fingerprint": "firefox",
-            "alpn": [
-              "h2"
-            ],
-            "serverName": "cdn5.actualpromo.ru"
-          },
           "network": "xhttp",
-          "xhttpSettings": {
-            "path": "/p",
-            "mode": "packet-up",
-            "extra": {
-              "mode": "packet-up",
-              "seqKey": "offset",
-              "xPaddingMethod": "tokenish",
-              "xPaddingObfsMode": true,
-              "xPaddingKey": "q",
-              "scMaxEachPostBytes": "262144-786432",
-              "xPaddingPlacement": "query",
-              "uplinkHTTPMethod": "GET",
-              "sessionIDKey": "sid",
-              "scMinPostsIntervalMs": "0",
-              "SessionIDPlacement": "query",
-              "SessionIDKey": "sid",
-              "xPaddingBytes": "48-256",
-              "xmux": {
-                "maxConnections": "16-32",
-                "maxConcurrency": "0",
-                "cMaxReuseTimes": 0,
-                "hMaxReusableSecs": "120-240",
-                "hKeepAlivePeriod": 20,
-                "hMaxRequestTimes": "600-900"
-              },
-              "sessionIDPlacement": "query",
-              "seqPlacement": "query"
-            }
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "cdn5.actualpromo.ru",
+            "fingerprint": "firefox"
           },
-          "security": "tls"
+          "xhttpSettings": {
+            "path": "/p"
+          }
         },
-        "tag": "proxy",
-        "remark": "Обход глушилок LTE",
-        "remarks": "Обход глушилок LTE",
-        "name": "Обход глушилок LTE"
+        "tag": "White List"
       },
       {
         "settings": {
