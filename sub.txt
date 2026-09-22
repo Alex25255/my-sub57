@@ -3096,7 +3096,8 @@
           "tcpSettings": {}
         },
         "tag": "main",
-        "server_domains": []
+        "server_domains": [],
+        "server_domain": "1tv.ru 2gis.com 2gis.ru 5d.5ka.ru 5ka.ru aeroflot.ru aif.ru akbars.ru alfa.me alfabank.ru alfastrah.ru api.inappstory.ru api.x5.ru apteka.ru auchan.ru auth-nsdi.ru auto.ru av.ru aviasales.ru avito.ru "
       }
     ]
   }
