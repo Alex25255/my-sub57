@@ -3031,5 +3031,40 @@
       "domainStrategy": "AsIs"
     },
     "remarks": "Обход глушилок LTE"
+  },
+  {
+    "remarks": "Wi-Fi",
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "84.23.52.204",
+              "port": 11765,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "715fca0b-ed31-4672-ba23-42607710557c",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "fingerprint": "chrome",
+            "publicKey": "6Je65zwf4KZCgxf1xGhvm-N0_ysCfb9ANaoz_Yflgy4",
+            "shortId": "879594f9",
+            "spiderX": "/"
+          },
+          "tcpSettings": {}
+        },
+        "tag": "main"
+      }
+    ]
   }
 ]
