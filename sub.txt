@@ -2080,7 +2080,7 @@
         {
           "type": "field",
           "network": "tcp",
-          "outboundTag": "💫 Умная локация от StealthSurf VPN",
+          "outboundTag": "💫 Игровой обход LTE",
           "port": "853"
         },
         {
@@ -2095,7 +2095,7 @@
           "inboundTag": [
             "remote_dns"
           ],
-          "outboundTag": "💫 Умная локация от StealthSurf VPN"
+          "outboundTag": "💫 Игровой обход LTE"
         },
         {
           "type": "field",
@@ -2436,7 +2436,7 @@
           },
           "security": "reality"
         },
-        "tag": "💫 Умная локация от StealthSurf VPN"
+        "tag": "💫 Игровой обход LTE"
       },
       {
         "protocol": "freedom",
@@ -2807,10 +2807,10 @@
       "access": "none",
       "loglevel": "none"
     },
-    "name": "💫 Умная локация от StealthSurf VPN",
+    "name": "💫 Игровой обход LTE",
     "meta": {
       "serverDescription": "VLESS • TCP • Reality"
     },
-    "remarks": "💫 Умная локация от StealthSurf VPN"
+    "remarks": "💫 Игровой обход LTE"
   }
 ]
