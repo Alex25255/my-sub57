@@ -2911,7 +2911,8 @@
         },
         "tag": "proxy",
         "remark": "Обход глушилок LTE",
-        "remarks": "Обход глушилок LTE"
+        "remarks": "Обход глушилок LTE",
+        "name": "Обход глушилок LTE"
       },
       {
         "settings": {
@@ -2992,6 +2993,7 @@
         }
       ],
       "domainStrategy": "AsIs"
-    }
+    },
+    "remarks": "Обход глушилок LTE"
   }
 ]
