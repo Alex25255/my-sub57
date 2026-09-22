@@ -2906,7 +2906,9 @@
           },
           "security": "tls"
         },
-        "tag": "proxy"
+        "tag": "proxy",
+        "remark": "Обход глушилок LTE",
+        "remarks": "Обход глушилок LTE"
       },
       {
         "settings": {
