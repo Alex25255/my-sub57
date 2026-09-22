@@ -3062,5 +3062,42 @@
         "tag": "main"
       }
     ]
+  },
+  {
+    "remarks": "и",
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "ru9.actualpromo.ru",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "9c8be6d4-ea6d-45e1-a6e3-13546b018fa0",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "site.ru9.actualpromo.ru",
+            "fingerprint": "firefox",
+            "publicKey": "l0fvqSooaPfz8qOmMKa0WwW_O-ow_8FB3nq_CSAR9WQ",
+            "shortId": "c40e",
+            "spiderX": "/NuX6If760HXbqjY"
+          },
+          "tcpSettings": {}
+        },
+        "tag": "main",
+        "server_domains": []
+      }
+    ]
   }
 ]
