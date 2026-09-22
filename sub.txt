@@ -672,12 +672,12 @@
           "vnext": [
             {
               "address": "37.18.15.209",
-              "port": 43000,
+              "port": 61253,
               "users": [
                 {
                   "encryption": "none",
                   "flow": "xtls-rprx-vision",
-                  "id": "d532f641-fed6-487c-b9e9-5aac1dc080f4"
+                  "id": "47afc382-f905-441f-9f2a-a6fcc1a17f24"
                 }
               ]
             }
@@ -687,9 +687,9 @@
           "network": "tcp",
           "realitySettings": {
             "fingerprint": "chrome",
-            "publicKey": "nzW4IdZWQ-ybjses1_RZpeLYO39uQIoEZy8SgGm7b1g",
+            "publicKey": "b-znoDbgeCJ6Gbo6NRvfYeIFMEtUstI7r9eNdhPAy3k",
             "serverName": "iv.kommersant.ru",
-            "shortId": "da9ba85e",
+            "shortId": "c420582c",
             "spiderX": "/"
           },
           "security": "reality"
@@ -2414,12 +2414,12 @@
           "vnext": [
             {
               "address": "37.18.15.209",
-              "port": 43000,
+              "port": 61253,
               "users": [
                 {
                   "encryption": "none",
                   "flow": "xtls-rprx-vision",
-                  "id": "d532f641-fed6-487c-b9e9-5aac1dc080f4"
+                  "id": "47afc382-f905-441f-9f2a-a6fcc1a17f24"
                 }
               ]
             }
@@ -2429,9 +2429,9 @@
           "network": "tcp",
           "realitySettings": {
             "fingerprint": "chrome",
-            "publicKey": "nzW4IdZWQ-ybjses1_RZpeLYO39uQIoEZy8SgGm7b1g",
+            "publicKey": "b-znoDbgeCJ6Gbo6NRvfYeIFMEtUstI7r9eNdhPAy3k",
             "serverName": "iv.kommersant.ru",
-            "shortId": "da9ba85e",
+            "shortId": "c420582c",
             "spiderX": "/"
           },
           "security": "reality"
@@ -2814,4 +2814,5 @@
     "remarks": "💫 Игровой обход LTE"
   }
 ]
+
 
