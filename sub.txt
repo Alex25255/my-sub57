@@ -2812,7 +2812,39 @@
       "serverDescription": "VLESS • TCP • Reality"
     },
     "remarks": "💫 Игровой обход LTE"
+  },
+  {
+    "remarks": "мв",
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "cdn5.actualpromo.ru",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "9c8be6d4-ea6d-45e1-a6e3-13546b018fa0"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "cdn5.actualpromo.ru",
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
+          }
+        },
+        "tag": "main"
+      }
+    ]
   }
 ]
-
-
