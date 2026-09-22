@@ -672,7 +672,7 @@
           "vnext": [
             {
               "address": "37.18.15.209",
-              "port": 61253,
+              "port": 443,
               "users": [
                 {
                   "encryption": "none",
@@ -2419,7 +2419,7 @@
                 {
                   "encryption": "none",
                   "flow": "xtls-rprx-vision",
-                  "id": "5c28776d-1ada-46f0-9b4e-b335190fabd4"
+                  "id": "cc156338-8c40-495b-89d2-2bd665f6ac6d"
                 }
               ]
             }
