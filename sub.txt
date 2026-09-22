@@ -3062,43 +3062,5 @@
         "tag": "main"
       }
     ]
-  },
-  {
-    "remarks": "и",
-    "outbounds": [
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "ru9.actualpromo.ru",
-              "port": 443,
-              "users": [
-                {
-                  "encryption": "none",
-                  "id": "9c8be6d4-ea6d-45e1-a6e3-13546b018fa0",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "site.ru9.actualpromo.ru",
-            "fingerprint": "firefox",
-            "publicKey": "l0fvqSooaPfz8qOmMKa0WwW_O-ow_8FB3nq_CSAR9WQ",
-            "shortId": "c40e",
-            "spiderX": "/NuX6If760HXbqjY"
-          },
-          "tcpSettings": {}
-        },
-        "tag": "main",
-        "server_domains": [],
-        "server_domain": "1tv.ru\n2gis.com\n2gis.ru\n5d.5ka.ru\n5ka.ru\naeroflot.ru\naif.ru\nakbars.ru\nalfa.me\nalfabank.ru\nalfastrah.ru\napi.inappstory.ru\napi.x5.ru\napteka.ru\nauchan.ru\nauth-nsdi.ru\nauto.ru\nav.ru\naviasales.ru\navito.ru\navito.st\nbanki.ru\nbattle.net\nbeeline.ru\nbelkacar.ru\nblizzard.com\nblizzard.net\nblz-contentstack.com\nblzstatic.cn\nboxberry.ru\nbristol.ru\nburgerking.ru\ncbr.ru\ncdek.ru\ncdn-vk.ru\ncdn.inappstory.ru\ncdn.vseinstrumenti.ru\nchestnyznak.ru\nchibbis.ru\ncian.ru\ncitilink.ru\ncitydrive.ru\ncouncil.gov.ru\ncrpt.ru\ndash.cloudflare.com\ndelimobil.ru\ndelivery-club.ru\ndellin.ru\ndetmir.ru\ndixy.ru\ndnevnik.ru\ndns-shop.ru\ndodopizza.ru\ndom.ru\ndom.ufanet.ru\ndomclick.ru\ndpd.ru\ndrive2.ru\ndrom.ru\nduma.gov.ru\ndzen.ru\neapteka.ru\necom-cdn.x5media.ru\neldorado.ru\nemias.info\nepicgames.com\nepicgames.dev\nepicgamescdn.com\nepp.genproc.gov.ru\nertelecom.ru\nevent-stream-api.magnit.ru\nfcmtoken.googleapis.com\nfivepost.ru\nfix-price.com\nflysmartavia.com\ngazeta.ru\ngazprombank.ru\ngismeteo.ru\ngloria-jeans.ru\ngoldapple.ru\ngorzdrav.org\ngoskey.ru\ngosuslugi.ru\ngovernment.ru\ngrandtrain.ru\ngw-fb5.x5.ru\ngw-fl5.x5.ru\nhelp.ufanet.ru\nhh.ru\nhoff.ru\nimage.mm.ru\ningos.ru\nivi.ru\niz.ru\nizbirkom.ru\njustletswork.com\nkari.com\nkazanexpress.ru\nkinopoisk.ru\nkion.ru\nkommersant.ru\nkp.ru\nkrasnoeibeloe.ru\nkremlin.ru\nkuper.ru\nlamoda.ru\nlamoda.tech\nlemanapro.ru\nlenta.com\nlenta.ru\nlesta.games\nlesta.ru\nletu.ru\nlitres.ru\nlmru.tech\nm2.ru\nmagnit.com\nmagnit.ru\nmail.ru\nmatchtv.ru\nmax.ru\nmchs.gov.ru\nmegafon.ru\nmegamarket.ru\nmetro-cc.ru\nmfc.ru\nmgnt.ru\nmir-pay.ru\nmironline.ru\nmk.ru\nmm.ru\nmobile-api.mm.ru\nmoex.com\nmos.ru\nmosmetro.ru\nmotivtelecom.ru\nmradx.net\nmts.ru\nmtsbank.ru\nmvd.ru\nmvideo.ru\nmy-documents.ru\nmy.ufanet.ru\nmybook.ru\nmycdn.me\nmyspar.ru\nnalog.gov.ru\nnordwindairlines.ru\nnp.community.playstation.net\nnspk.ru\nntv.ru\nobservability.x5.ru\nok.ru\nokcdn.ru\nokko.ru\nokko.tv\nokmarket.ru\noneme.ru\norgp.spb.ru\nostrovok.ru\nozon.ru\nozone.ru\nperekrestok.ru\npetrovich.ru\nplanetazdorovo.ru\nplaystation.com\nplaystation.net\nplaystationnetwork.com\npobeda.aero\npochta.ru\npremier.one\nprofi.ru\nproxy.mob.maps.yandex.net\npsbank.ru\npsnprofiles.com\nrabota.ru\nrambler.ru\nrbc.ru\nres-nsdi.ru\nreso.ru\nrg.ru\nrgs.ru\nria.ru\nrigla.ru\nrivegauche.ru\nrosseti.ru\nrostelecom.ru\nrostics.ru\nrsv.ru\nrt.com\nrt.ru\nrustore.ru\nrutube.ru\nrutubelist.ru\nrzd.ru\ns7.ru\nsamokat.ru\nsba.yandex.net\nsberdevices.ru\nsberhealth.ru\nsferum.ru\nsmotreshka.tv\nsmotrim.ru\nsochi.ru\nsogaz.ru\nsonyentertainmentnetwork.com\nsportmaster.ru\nsravni.ru\nstart.ru\nstatic.vseinstrumenti.ru\nsteam-chat.com\nsteamcdn-a.akamaihd.net\nsteamcommunity.com\nsteamcontent.com\nsteamgames.com\nsteampowered.com\nsteamserver.net\nsteamstatic.com\nsteamusercontent.com\nsuperjob.ru\nsutochno.ru\nt2.ru\ntanki.su\ntanuki.ru\ntass.ru\ntaximaxim.ru\ntele2.ru\ntrudvsem.ru\ntutu.ru\nuchi.ru\nufanet.ru\nunrealengine.com\nuralairlines.ru\nurent.ru\nuserapi.com\nutair.ru\nvgtrk.ru\nvk-apps.com\nvk-apps.ru\nvk-cdn.me\nvk-cdn.net\nvk-portal.net\nvk.cc\nvk.com\nvk.link\nvk.me\nvk.ru\nvkcache.com\nvkontakte.ru\nvkuser.net\nvkuseraudio.com\nvkuseraudio.net\nvkusercdn.ru\nvkuserlive.net\nvkuserphoto.ru\nvkusnoitochka.ru\nvkusvill.ru\nvkvideo.ru\nvprok.ru\nvseinstrumenti.ru\nvseinstrumenty.com\nvseinstrumenty.ru\nvsk.ru\nvtb.ru\nvybory.gov.ru\nwb.ru\nwhoosh.bike\nwifire.ru\nwildberries.ru\nwink.ru\nworldoftanks.ru\nx5m.x5.ru\nxn--80ajghhoc2aj1c8b.xn--p1ai\nxn--80aqf2ac.xn--p1ai\nxn--90acagbhgpca7c8c7f.xn--p1ai\nxn--90aivcdt6dxbc.xn--p1ai\nxn--b1aew.xn--p1ai\nya.ru\nyandex.com\nyandex.net\nyandex.ru\nyastatic.net\nyota.ru\nyoula.io\nyoula.ru\nzarplata.ru\nzvuk.com"
-      }
-    ]
   }
 ]
