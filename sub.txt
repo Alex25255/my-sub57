@@ -3027,41 +3027,5 @@
       "domainStrategy": "AsIs"
     },
     "remarks": "Обход глушилок LTE"
-  },
-  {
-    "remarks": "Wi-Fi",
-    "outbounds": [
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "84.23.52.204",
-              "port": 11765,
-              "users": [
-                {
-                  "encryption": "none",
-                  "id": "715fca0b-ed31-4672-ba23-42607710557c",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "fingerprint": "chrome",
-            "publicKey": "6Je65zwf4KZCgxf1xGhvm-N0_ysCfb9ANaoz_Yflgy4",
-            "shortId": "879594f9",
-            "spiderX": "/"
-          },
-          "tcpSettings": {}
-        },
-        "tag": "main",
-        "server_domain": "1tv.ru 2gis.com 2gis.ru 5d.5ka.ru 5ka.ru aeroflot.ru aif.ru akbars.ru alfa.me alfabank.ru alfastrah.ru api.inappstory.ru api.x5.ru apteka.ru auchan.ru auth-nsdi.ru auto.ru av.ru aviasales.ru avito.ru"
-      }
-    ]
   }
 ]
