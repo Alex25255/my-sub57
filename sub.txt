@@ -2812,39 +2812,181 @@
       "serverDescription": "VLESS • TCP • Reality"
     },
     "remarks": "💫 Игровой обход LTE"
+  },{
+  "log" : {
+    "access" : "none",
+    "loglevel" : "none",
+    "error" : "\/private\/var\/mobile\/Containers\/Shared\/AppGroup\/B14B4770-0101-4E8C-8876-ED8695DB86C5\/logs\/xray.log"
   },
-  {
-    "remarks": "Обход глушилок LTE",
-    "outbounds": [
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "cdn5.actualpromo.ru",
-              "port": 443,
-              "users": [
-                {
-                  "encryption": "none",
-                  "id": "9c8be6d4-ea6d-45e1-a6e3-13546b018fa0"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "serverName": "cdn5.actualpromo.ru",
-            "fingerprint": "firefox",
-            "alpn": [
-              "h2"
+  "inbounds" : [
+    {
+      "protocol" : "mixed",
+      "listen" : "127.0.0.1",
+      "port" : 10808,
+      "settings" : {
+        "auth" : "noauth",
+        "udp" : true
+      },
+      "sniffing" : {
+        "routeOnly" : true,
+        "enabled" : true,
+        "destOverride" : [
+          "http",
+          "tls",
+          "quic"
+        ]
+      },
+      "tag" : "in-5avvzp"
+    }
+  ],
+  "dns" : {
+    "queryStrategy" : "UseIPv4",
+    "servers" : [
+      "1.1.1.1",
+      "8.8.8.8"
+    ],
+    "tag" : "dns"
+  },
+  "outbounds" : [
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "port" : 443,
+            "address" : "cdn5.actualpromo.ru",
+            "users" : [
+              {
+                "id" : "9c8be6d4-ea6d-45e1-a6e3-13546b018fa0",
+                "encryption" : "none",
+                "level" : 8
+              }
             ]
           }
+        ]
+      },
+      "streamSettings" : {
+        "tlsSettings" : {
+          "fingerprint" : "firefox",
+          "alpn" : [
+            "h2"
+          ],
+          "serverName" : "cdn5.actualpromo.ru"
         },
-        "tag": "main"
+        "network" : "xhttp",
+        "xhttpSettings" : {
+          "path" : "\/p",
+          "mode" : "packet-up",
+          "extra" : {
+            "mode" : "packet-up",
+            "seqKey" : "offset",
+            "xPaddingMethod" : "tokenish",
+            "xPaddingObfsMode" : true,
+            "xPaddingKey" : "q",
+            "scMaxEachPostBytes" : "262144-786432",
+            "xPaddingPlacement" : "query",
+            "uplinkHTTPMethod" : "GET",
+            "sessionIDKey" : "sid",
+            "scMinPostsIntervalMs" : "0",
+            "SessionIDPlacement" : "query",
+            "SessionIDKey" : "sid",
+            "xPaddingBytes" : "48-256",
+            "xmux" : {
+              "maxConnections" : "16-32",
+              "maxConcurrency" : "0",
+              "cMaxReuseTimes" : 0,
+              "hMaxReusableSecs" : "120-240",
+              "hKeepAlivePeriod" : 20,
+              "hMaxRequestTimes" : "600-900"
+            },
+            "sessionIDPlacement" : "query",
+            "seqPlacement" : "query"
+          }
+        },
+        "security" : "tls"
+      },
+      "tag" : "proxy"
+    },
+    {
+      "settings" : {
+        "ipsBlocked" : [
+
+        ]
+      },
+      "tag" : "direct",
+      "protocol" : "freedom"
+    },
+    {
+      "tag" : "block",
+      "protocol" : "blackhole"
+    },
+    {
+      "tag" : "dns-out",
+      "protocol" : "dns"
+    }
+  ],
+  "policy" : {
+    "levels" : {
+      "8" : {
+        "downlinkOnly" : 4,
+        "uplinkOnly" : 2,
+        "bufferSize" : 3,
+        "statsUserUplink" : false,
+        "statsUserDownlink" : false,
+        "handshake" : 3,
+        "connIdle" : 300,
+        "statsUserOnline" : false
       }
-    ]
+    },
+    "system" : {
+      "statsInboundUplink" : false,
+      "statsInboundDownlink" : false,
+      "statsOutboundDownlink" : false,
+      "statsOutboundUplink" : false
+    }
+  },
+  "routing" : {
+    "rules" : [
+      {
+        "inboundTag" : [
+          "wg_bootstrap_dns"
+        ],
+        "type" : "field",
+        "outboundTag" : "direct"
+      },
+      {
+        "inboundTag" : [
+          "dns-premium"
+        ],
+        "outboundTag" : "direct",
+        "type" : "field"
+      },
+      {
+        "type" : "field",
+        "inboundTag" : [
+          "domestic_dns"
+        ],
+        "outboundTag" : "direct"
+      },
+      {
+        "type" : "field",
+        "outboundTag" : "proxy",
+        "inboundTag" : [
+          "dns"
+        ]
+      },
+      {
+        "port" : "53",
+        "type" : "field",
+        "outboundTag" : "dns-out"
+      },
+      {
+        "network" : "tcp",
+        "port" : "853",
+        "type" : "field",
+        "outboundTag" : "proxy"
+      }
+    ],
+    "domainStrategy" : "AsIs"
   }
-]
+}
