@@ -2812,7 +2812,8 @@
       "serverDescription": "VLESS • TCP • Reality"
     },
     "remarks": "💫 Игровой обход LTE"
-  },{
+  },
+{
   "log" : {
     "access" : "none",
     "loglevel" : "none",
