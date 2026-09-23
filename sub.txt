@@ -79,7 +79,7 @@
       "tag" : "block"
     }
   ],
-  "remarks" : "⌛ доступ закрыт!",
+  "remarks" : "⌛ доступ закрыт!писать в лс",
   "routing" : {
     "domainStrategy" : "IPIfNonMatch",
     "rules" : [
