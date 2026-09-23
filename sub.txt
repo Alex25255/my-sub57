@@ -586,7 +586,7 @@
         "tag": "loop-to-whitelist"
       }
     ],
-    "remarks": "⚡️Авто Обход глушилок LTE",
+    "remarks": "⚡️Авто обход глушилок LTE",
     "routing": {
       "balancers": [
         {
