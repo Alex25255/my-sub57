@@ -679,6 +679,22 @@
         {
           "type": "field",
           "domain": [
+            "domain:t.me",
+            "domain:tdesktop.com",
+            "domain:telegra.ph",
+            "domain:telegram.dog",
+            "domain:telegram.me",
+            "domain:telegram.org"
+          ],
+          "ip": [
+            "149.154.160.0/20",
+            "91.108.0.0/16"
+          ],
+          "balancerTag": "Balancer-Telegram"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -994,22 +1010,6 @@
             "bittorrent"
           ],
           "type": "field"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:t.me",
-            "domain:tdesktop.com",
-            "domain:telegra.ph",
-            "domain:telegram.dog",
-            "domain:telegram.me",
-            "domain:telegram.org"
-          ],
-          "ip": [
-            "149.154.160.0/20",
-            "91.108.0.0/16"
-          ],
-          "balancerTag": "Balancer-Telegram"
         },
         {
           "balancerTag": "Balancer",
