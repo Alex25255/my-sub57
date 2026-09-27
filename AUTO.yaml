@@ -11,6 +11,9 @@
       "subjectSelector": [
         "bridge",
         "bridge-2",
+        "bridge-6",
+        "bridge-7",
+        "bridge-8",
         "bridge-3",
         "bridge-4",
         "bridge-5",
@@ -151,6 +154,152 @@
           "security": "tls"
         },
         "tag": "bridge-2"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "cdn1.actualpromo.ru",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "9c8be6d4-ea6d-45e1-a6e3-13546b018fa0"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "tlsSettings": {
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ],
+            "serverName": "cdn1.actualpromo.ru"
+          },
+          "network": "xhttp",
+          "xhttpSettings": {
+            "path": "/p",
+            "mode": "packet-up",
+            "extra": {
+              "mode": "packet-up",
+              "scMaxEachPostBytes": "262144-786432",
+              "scMinPostsIntervalMs": "0",
+              "seqKey": "offset",
+              "seqPlacement": "query",
+              "sessionIDKey": "sid",
+              "sessionIDPlacement": "query",
+              "sessionKey": "sid",
+              "sessionPlacement": "query",
+              "uplinkHTTPMethod": "GET",
+              "xPaddingBytes": "48-256",
+              "xPaddingKey": "q",
+              "xPaddingMethod": "tokenish",
+              "xPaddingObfsMode": true,
+              "xPaddingPlacement": "query",
+              "xmux": {
+                "cMaxReuseTimes": 0,
+                "hKeepAlivePeriod": 20,
+                "hMaxRequestTimes": "600-900",
+                "hMaxReusableSecs": "120-240",
+                "maxConcurrency": "0",
+                "maxConnections": "16-32"
+              }
+            }
+          },
+          "security": "tls"
+        },
+        "tag": "bridge-6"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "wl1-pl3.actualvpn.ru",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "9c8be6d4-ea6d-45e1-a6e3-13546b018fa0"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "tlsSettings": {
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ],
+            "serverName": "wl1-pl3.actualvpn.ru"
+          },
+          "network": "xhttp",
+          "xhttpSettings": {
+            "path": "/p",
+            "mode": "packet-up",
+            "extra": {
+              "mode": "packet-up",
+              "scMaxEachPostBytes": "262144-786432",
+              "scMinPostsIntervalMs": "0",
+              "seqKey": "offset",
+              "seqPlacement": "query",
+              "sessionIDKey": "sid",
+              "sessionIDPlacement": "query",
+              "sessionKey": "sid",
+              "sessionPlacement": "query",
+              "uplinkHTTPMethod": "GET",
+              "xPaddingBytes": "48-256",
+              "xPaddingKey": "q",
+              "xPaddingMethod": "tokenish",
+              "xPaddingObfsMode": true,
+              "xPaddingPlacement": "query",
+              "xmux": {
+                "cMaxReuseTimes": 0,
+                "hKeepAlivePeriod": 20,
+                "hMaxRequestTimes": "600-900",
+                "hMaxReusableSecs": "120-240",
+                "maxConcurrency": "0",
+                "maxConnections": "16-32"
+              }
+            }
+          },
+          "security": "tls"
+        },
+        "tag": "bridge-7"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "185.154.192.234",
+              "port": 11764,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "63f7d561-c209-4135-9daf-e7d41993edc5",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "fingerprint": "chrome",
+            "publicKey": "hbjSsuI2SGT8yo14HL5p9B5uWEYN5htkluo1W2Kommg",
+            "serverName": "",
+            "shortId": "01301e0e",
+            "spiderX": "/"
+          }
+        },
+        "tag": "bridge-8"
       },
       {
         "protocol": "vless",
@@ -571,40 +720,6 @@
         "tag": "lte-bypass-3"
       },
       {
-        "protocol": "vmess",
-        "streamSettings": {
-          "tlsSettings": {
-            "fingerprint": "firefox",
-            "serverName": "renderer-stream-5-13.mirra.now"
-          },
-          "network": "ws",
-          "security": "tls",
-          "wsSettings": {
-            "path": "/api/v1/gpu-stream/socket",
-            "headers": {
-              "Host": "renderer-stream-5-13.mirra.now"
-            }
-          }
-        },
-        "settings": {
-          "vnext": [
-            {
-              "address": "renderer-stream-5-13.mirra.now",
-              "port": 443,
-              "users": [
-                {
-                  "security": "auto",
-                  "level": 8,
-                  "alterId": 0,
-                  "id": "f1eb3949-dca4-49ea-b125-a0947e6b6ff5"
-                }
-              ]
-            }
-          ]
-        },
-        "tag": "bridge-6"
-      },
-      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -628,31 +743,9 @@
           "selector": [
             "bridge",
             "bridge-2",
-            "bridge-3",
-            "bridge-4",
-            "bridge-5",
-            "ext-white-internet-0",
-            "ext-white-internet-1",
-            "ext-white-internet-2",
-            "ext-white-internet-3",
-            "ext-white-internet-4",
-            "ext-white-internet-5",
-            "ext-white-internet-8",
-            "ext-white-internet-9",
-            "ext-white-internet-10",
-            "lte-bypass-3",
-            "bridge-6"
-          ],
-          "strategy": {
-            "type": "leastPing"
-          },
-          "tag": "Balancer"
-        },
-        {
-          "fallbackTag": "direct",
-          "selector": [
-            "bridge",
-            "bridge-2",
+            "bridge-6",
+            "bridge-7",
+            "bridge-8",
             "bridge-3",
             "bridge-4",
             "bridge-5",
@@ -670,42 +763,12 @@
           "strategy": {
             "type": "leastPing"
           },
-          "tag": "Balancer-Telegram"
+          "tag": "Balancer"
         }
       ],
       "domainMatcher": "hybrid",
       "domainStrategy": "IPIfNonMatch",
       "rules": [
-        {
-          "type": "field",
-          "domain": [
-            "domain:t.me",
-            "domain:tdesktop.com",
-            "domain:telegra.ph",
-            "domain:telegram.dog",
-            "domain:telegram.me",
-            "domain:telegram.org"
-          ],
-          "ip": [
-            "91.105.192.0/23",
-            "91.108.4.0/22",
-            "91.108.8.0/22",
-            "91.108.12.0/22",
-            "91.108.16.0/22",
-            "91.108.20.0/22",
-            "91.108.56.0/22",
-            "91.108.58.0/23",
-            "95.161.64.0/20",
-            "149.154.160.0/20",
-            "149.154.162.0/23",
-            "149.154.164.0/23",
-            "149.154.166.0/23",
-            "149.154.168.0/22",
-            "149.154.172.0/22",
-            "185.76.151.0/24"
-          ],
-          "balancerTag": "Balancer-Telegram"
-        },
         {
           "type": "field",
           "domain": [
@@ -3422,14 +3485,6 @@
             "domain:mir-pay.ru",
             "domain:mironline.ru",
             "domain:nspk.ru",
-            "domain:pay.yoomoney.ru",
-            "domain:client.yoomoney.ru",
-            "domain:static.yoomoney.ru",
-            "domain:money.yandex.ru",
-            "domain:qr.nspk.ru",
-            "domain:sbp.nspk.ru",
-            "domain:mironline.tech",
-            "domain:mirconnect.ru",
             "domain:yoomoney.ru",
             "domain:yoomoney.com",
             "domain:yoomoney.net",
@@ -3460,7 +3515,7 @@
         {
           "type": "field",
           "network": "tcp",
-          "outboundTag": "💫 Игровой белый интернет",
+          "outboundTag": "🇷🇺 Обход глушилок LTE (тг не раб)",
           "port": "853"
         },
         {
@@ -3475,7 +3530,7 @@
           "inboundTag": [
             "remote_dns"
           ],
-          "outboundTag": "💫 Игровой белый интернет"
+          "outboundTag": "🇷🇺 Обход глушилок LTE (тг не раб)"
         },
         {
           "type": "field",
@@ -3780,7 +3835,15 @@
             "domain:youla.io",
             "domain:youla.ru",
             "domain:zarplata.ru",
-            "domain:zvuk.com"
+            "domain:zvuk.com",
+            "domain:pay.yoomoney.ru",
+            "domain:client.yoomoney.ru",
+            "domain:static.yoomoney.ru",
+            "domain:money.yandex.ru",
+            "domain:qr.nspk.ru",
+            "domain:sbp.nspk.ru",
+            "domain:mironline.tech",
+            "domain:mirconnect.ru"
           ],
           "outboundTag": "direct"
         }
@@ -3789,37 +3852,41 @@
     },
     "outbounds": [
       {
-        "protocol": "vless",
+        "protocol": "vmess",
+        "streamSettings": {
+          "tlsSettings": {
+            "fingerprint": "firefox",
+            "serverName": "renderer-stream-5-13.mirra.now",
+            "alpn": [
+              "h2"
+            ]
+          },
+          "network": "ws",
+          "security": "tls",
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/socket",
+            "headers": {
+              "Host": "renderer-stream-5-13.mirra.now"
+            }
+          }
+        },
         "settings": {
           "vnext": [
             {
-              "address": "37.18.15.209",
+              "address": "renderer-stream-5-13.mirra.now",
               "port": 443,
               "users": [
                 {
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision",
-                  "id": "cc156338-8c40-495b-89d2-2bd665f6ac6d"
+                  "security": "auto",
+                  "level": 8,
+                  "alterId": 0,
+                  "id": "f1eb3949-dca4-49ea-b125-a0947e6b6ff5"
                 }
               ]
             }
           ]
         },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "fingerprint": "chrome",
-            "serverName": "adaptation.sfera.x5.ru",
-            "publicKey": "xX9_ayMKXUA_OruphqyzPicioVqxic5Dn85dqPowXSc",
-            "shortId": "8b8e067b",
-            "spiderX": "/"
-          }
-        },
-        "tag": "💫 Игровой белый интернет",
-        "remark": "💫 Игровой белый интернет (Не работает!)",
-        "remarks": "💫 Игровой белый интернет (Не работает!)",
-        "name": "💫 Игровой белый интернет 1"
+        "tag": "🇷🇺 Обход глушилок LTE (тг не раб)"
       },
       {
         "protocol": "freedom",
@@ -4190,11 +4257,11 @@
       "access": "none",
       "loglevel": "none"
     },
-    "name": "💫 Игровой белый интернет 1",
+    "name": "🇷🇺 Обход глушилок LTE (тг не раб)",
     "meta": {
-      "serverDescription": "VLESS • TCP • Reality"
+      "serverDescription": "VMess • WS • TLS"
     },
-    "remarks": "💫 Игровой белый интернет"
+    "remarks": "🇷🇺 Обход глушилок LTE (тг не раб)"
   },
   {
     "log": {
@@ -4778,7 +4845,7 @@
         "tag": "block"
       }
     ],
-    "remarks": "⚡️Авто WI-Fi ПК/TV33",
+    "remarks": "⚡️Авто WI-Fi ПК/TV",
     "routing": {
       "balancers": [
         {
