@@ -1,4 +1,4 @@
- [
+[
   {
     "burstObservatory": {
       "pingConfig": {
@@ -544,7 +544,12 @@
             "domain:qr.nspk.ru",
             "domain:sbp.nspk.ru",
             "domain:mironline.tech",
-            "domain:mirconnect.ru"
+            "domain:mirconnect.ru",
+            "domain:vkuseraudio.ru",
+            "domain:vkapps.ru",
+            "domain:api.vk.com",
+            "domain:static.vk.com",
+            "domain:ads.vk.com"
           ],
           "outboundTag": "direct"
         },
@@ -598,7 +603,15 @@
             "domain:api.tbank.ru",
             "domain:static.tbank.ru",
             "domain:cdn.tbank.ru",
-            "domain:tbankid.ru"
+            "domain:tbankid.ru",
+            "domain:vkuseraudio.ru",
+            "domain:vkusercdn.ru",
+            "domain:vkuserlive.net",
+            "domain:vkuserphoto.ru",
+            "domain:vkapps.ru",
+            "domain:api.vk.com",
+            "domain:static.vk.com",
+            "domain:ads.vk.com"
           ],
           "outboundTag": "direct"
         },
@@ -938,7 +951,12 @@
             "domain:youla.io",
             "domain:youla.ru",
             "domain:zarplata.ru",
-            "domain:zvuk.com"
+            "domain:zvuk.com",
+            "domain:vkuseraudio.ru",
+            "domain:vkapps.ru",
+            "domain:api.vk.com",
+            "domain:static.vk.com",
+            "domain:ads.vk.com"
           ],
           "outboundTag": "direct"
         }
@@ -1386,7 +1404,15 @@
             "domain:api.tbank.ru",
             "domain:static.tbank.ru",
             "domain:cdn.tbank.ru",
-            "domain:tbankid.ru"
+            "domain:tbankid.ru",
+            "domain:vkuseraudio.ru",
+            "domain:vkusercdn.ru",
+            "domain:vkuserlive.net",
+            "domain:vkuserphoto.ru",
+            "domain:vkapps.ru",
+            "domain:api.vk.com",
+            "domain:static.vk.com",
+            "domain:ads.vk.com"
           ],
           "outboundTag": "direct"
         },
@@ -1726,7 +1752,12 @@
             "domain:youla.io",
             "domain:youla.ru",
             "domain:zarplata.ru",
-            "domain:zvuk.com"
+            "domain:zvuk.com",
+            "domain:vkuseraudio.ru",
+            "domain:vkapps.ru",
+            "domain:api.vk.com",
+            "domain:static.vk.com",
+            "domain:ads.vk.com"
           ],
           "outboundTag": "direct"
         }
@@ -2174,7 +2205,15 @@
             "domain:api.tbank.ru",
             "domain:static.tbank.ru",
             "domain:cdn.tbank.ru",
-            "domain:tbankid.ru"
+            "domain:tbankid.ru",
+            "domain:vkuseraudio.ru",
+            "domain:vkusercdn.ru",
+            "domain:vkuserlive.net",
+            "domain:vkuserphoto.ru",
+            "domain:vkapps.ru",
+            "domain:api.vk.com",
+            "domain:static.vk.com",
+            "domain:ads.vk.com"
           ],
           "outboundTag": "direct"
         },
@@ -2514,7 +2553,12 @@
             "domain:youla.io",
             "domain:youla.ru",
             "domain:zarplata.ru",
-            "domain:zvuk.com"
+            "domain:zvuk.com",
+            "domain:vkuseraudio.ru",
+            "domain:vkapps.ru",
+            "domain:api.vk.com",
+            "domain:static.vk.com",
+            "domain:ads.vk.com"
           ],
           "outboundTag": "direct"
         }
@@ -2962,7 +3006,15 @@
             "domain:api.tbank.ru",
             "domain:static.tbank.ru",
             "domain:cdn.tbank.ru",
-            "domain:tbankid.ru"
+            "domain:tbankid.ru",
+            "domain:vkuseraudio.ru",
+            "domain:vkusercdn.ru",
+            "domain:vkuserlive.net",
+            "domain:vkuserphoto.ru",
+            "domain:vkapps.ru",
+            "domain:api.vk.com",
+            "domain:static.vk.com",
+            "domain:ads.vk.com"
           ],
           "outboundTag": "direct"
         },
@@ -3310,7 +3362,12 @@
             "domain:qr.nspk.ru",
             "domain:sbp.nspk.ru",
             "domain:mironline.tech",
-            "domain:mirconnect.ru"
+            "domain:mirconnect.ru",
+            "domain:vkuseraudio.ru",
+            "domain:vkapps.ru",
+            "domain:api.vk.com",
+            "domain:static.vk.com",
+            "domain:ads.vk.com"
           ],
           "outboundTag": "direct"
         }
@@ -4646,7 +4703,12 @@
             "domain:qr.nspk.ru",
             "domain:sbp.nspk.ru",
             "domain:mironline.tech",
-            "domain:mirconnect.ru"
+            "domain:mirconnect.ru",
+            "domain:vkuseraudio.ru",
+            "domain:vkapps.ru",
+            "domain:api.vk.com",
+            "domain:static.vk.com",
+            "domain:ads.vk.com"
           ],
           "outboundTag": "direct"
         },
