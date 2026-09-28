@@ -239,6 +239,16 @@
         {
           "type": "field",
           "domain": [
+            "geosite:CATEGORY-RU"
+          ],
+          "ip": [
+            "geoip:RU"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
