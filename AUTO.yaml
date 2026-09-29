@@ -1,47 +1,112 @@
 {
-  "remarks": "AUTO Balanced 3 Servers",
-  "log": {
-    "loglevel": "warning"
+  "burstObservatory": {
+    "pingConfig": {
+      "destination": "http://www.gstatic.com/generate_204",
+      "httpMethod": "HEAD",
+      "interval": "1m",
+      "sampling": 2,
+      "timeout": "5s"
+    },
+    "subjectSelector": [
+      "Нидерланды",
+      "White list",
+      "White list 1",
+      "LTE",
+      "ВПН от роутера",
+      "bridge-3",
+      "Германия",
+      "bridge-5",
+      "ext-white-internet-0",
+      "ext-white-internet-1",
+      "ext-white-internet-2",
+      "ext-white-internet-3",
+      "ext-white-internet-4",
+      "ext-white-internet-5",
+      "ext-white-internet-8",
+      "ext-white-internet-9",
+      "ext-white-internet-10"
+    ]
+  },
+  "dns": {
+    "queryStrategy": "UseIPv4",
+    "servers": [
+      {
+        "address": "https://8.8.8.8/dns-query",
+        "skipFallback": false
+      },
+      {
+        "address": "https://9.9.9.9/dns-query",
+        "skipFallback": false
+      },
+      {
+        "address": "https://1.1.1.1/dns-query",
+        "skipFallback": false
+      }
+    ]
   },
   "inbounds": [
     {
       "listen": "127.0.0.1",
       "port": 10808,
-      "protocol": "mixed",
+      "protocol": "socks",
       "settings": {
+        "auth": "noauth",
         "udp": true
       },
-      "tag": "mixed"
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ],
+        "enabled": false,
+        "routeOnly": false
+      },
+      "tag": "socks"
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": 10809,
+      "protocol": "http",
+      "settings": {
+        "allowTransparent": false
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ],
+        "enabled": false,
+        "routeOnly": false
+      },
+      "tag": "http"
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": 10803,
+      "protocol": "dokodemo-door",
+      "settings": {
+        "address": "127.0.0.1",
+        "network": "tcp,udp",
+        "port": 0
+      },
+      "tag": "entry-whitelist-fallback"
     }
   ],
+  "log": {
+    "loglevel": "warning"
+  },
   "outbounds": [
     {
       "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "renderer-stream-1-794.mirra.now",
-            "port": 443,
-            "users": [
-              {
-                "id": "b8a8d84a-56d0-4bd0-a8a5-b6d674216719",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
       "streamSettings": {
+        "tlsSettings": {
+          "fingerprint": "firefox",
+          "serverName": "renderer-stream-1-794.mirra.now"
+        },
         "network": "ws",
         "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-1-794.mirra.now",
-          "fingerprint": "firefox",
-          "alpn": [
-            "h2"
-          ]
-        },
         "wsSettings": {
           "path": "/api/v1/gpu-stream/socket",
           "headers": {
@@ -49,35 +114,33 @@
           }
         }
       },
-      "tag": "NL"
-    },
-    {
-      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "renderer-stream-2-86.mirra.systems",
+            "address": "renderer-stream-1-794.mirra.now",
             "port": 443,
             "users": [
               {
-                "id": "89432e7b-13bc-464b-bc6b-d52c34f15b03",
+                "security": "auto",
+                "level": 8,
                 "alterId": 0,
-                "security": "auto"
+                "id": "b8a8d84a-56d0-4bd0-a8a5-b6d674216719"
               }
             ]
           }
         ]
       },
+      "tag": "Нидерланды"
+    },
+    {
+      "protocol": "vmess",
       "streamSettings": {
+        "tlsSettings": {
+          "fingerprint": "firefox",
+          "serverName": "renderer-stream-2-86.mirra.systems"
+        },
         "network": "ws",
         "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-2-86.mirra.systems",
-          "fingerprint": "firefox",
-          "alpn": [
-            "h2"
-          ]
-        },
         "wsSettings": {
           "path": "/api/v1/gpu-stream/socket",
           "headers": {
@@ -85,35 +148,33 @@
           }
         }
       },
-      "tag": "DE"
-    },
-    {
-      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "renderer-stream-3-28.mirra.systems",
+            "address": "renderer-stream-2-86.mirra.systems",
             "port": 443,
             "users": [
               {
-                "id": "2ff61516-31a0-4b00-98fc-813e35ced3ce",
+                "security": "auto",
+                "level": 8,
                 "alterId": 0,
-                "security": "auto"
+                "id": "89432e7b-13bc-464b-bc6b-d52c34f15b03"
               }
             ]
           }
         ]
       },
+      "tag": "Германия"
+    },
+    {
+      "protocol": "vmess",
       "streamSettings": {
+        "tlsSettings": {
+          "fingerprint": "firefox",
+          "serverName": "renderer-stream-3-28.mirra.systems"
+        },
         "network": "ws",
         "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-3-28.mirra.systems",
-          "fingerprint": "firefox",
-          "alpn": [
-            "h2"
-          ]
-        },
         "wsSettings": {
           "path": "/api/v1/gpu-stream/socket",
           "headers": {
@@ -121,7 +182,23 @@
           }
         }
       },
-      "tag": "US"
+      "settings": {
+        "vnext": [
+          {
+            "address": "renderer-stream-3-28.mirra.systems",
+            "port": 443,
+            "users": [
+              {
+                "security": "auto",
+                "level": 8,
+                "alterId": 0,
+                "id": "2ff61516-31a0-4b00-98fc-813e35ced3ce"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "Америка"
     },
     {
       "protocol": "freedom",
@@ -130,30 +207,42 @@
     {
       "protocol": "blackhole",
       "tag": "block"
+    },
+    {
+      "protocol": "loopback",
+      "settings": {
+        "inboundTag": "entry-whitelist-fallback"
+      },
+      "tag": "loop-to-whitelist"
     }
   ],
+  "remarks": "⚡️Авто обход глушилок LTE",
   "routing": {
-    "domainStrategy": "IPIfNonMatch",
     "balancers": [
       {
-        "tag": "AUTO",
+        "fallbackTag": "direct",
         "selector": [
-          "NL",
-          "DE",
-          "US"
+          "Нидерланды",
+          "Америка",
+          "Германия"
         ],
         "strategy": {
           "type": "leastPing"
-        }
+        },
+        "tag": "Balancer"
       }
     ],
+    "domainMatcher": "hybrid",
+    "domainStrategy": "IPIfNonMatch",
     "rules": [
       {
-        "type": "field",
+        "balancerTag": "Balancer",
         "inboundTag": [
-          "mixed"
+          "socks",
+          "http"
         ],
-        "balancerTag": "AUTO"
+        "network": "tcp,udp",
+        "type": "field"
       }
     ]
   }
