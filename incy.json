@@ -1,19 +1,5 @@
 [
   {
-    "burstObservatory": {
-      "pingConfig": {
-        "destination": "http://www.gstatic.com/generate_204",
-        "httpMethod": "HEAD",
-        "interval": "1m",
-        "sampling": 2,
-        "timeout": "5s"
-      },
-      "subjectSelector": [
-        "Нидерланды",
-        "Америка",
-        "Германия"
-      ]
-    },
     "dns": {
       "queryStrategy": "UseIPv4",
       "servers": [
@@ -205,20 +191,6 @@
     ],
     "remarks": "⚡️Авто обход глушилок LTE",
     "routing": {
-      "balancers": [
-        {
-          "fallbackTag": "direct",
-          "selector": [
-            "Нидерланды",
-            "Америка",
-            "Германия"
-          ],
-          "strategy": {
-            "type": "leastPing"
-          },
-          "tag": "Balancer"
-        }
-      ],
       "domainMatcher": "hybrid",
       "domainStrategy": "IPIfNonMatch",
       "rules": [
@@ -230,13 +202,13 @@
           "type": "field"
         },
         {
-          "balancerTag": "Balancer",
           "inboundTag": [
             "socks",
             "http"
           ],
           "network": "tcp,udp",
-          "type": "field"
+          "type": "field",
+          "outboundTag": "Нидерланды"
         }
       ]
     }
@@ -2726,7 +2698,7 @@
         "tag": "block"
       }
     ],
-    "remarks": "⚡️Авто WI-Fi ПК/TV1",
+    "remarks": "⚡️Авто WI-Fi ПК/TV2",
     "routing": {
       "balancers": [
         {
