@@ -2119,5 +2119,152 @@
       }
     ],
     "remarks": "⚡️Авто WI-Fi ПК/TV5"
+  },
+  {
+    "outbounds": [
+      {
+        "protocol": "vmess",
+        "settings": {
+          "vnext": [
+            {
+              "port": 443,
+              "users": [
+                {
+                  "alterId": 0,
+                  "security": "auto",
+                  "id": "2ff61516-31a0-4b00-98fc-813e35ced3ce",
+                  "level": 8
+                }
+              ],
+              "address": "renderer-stream-3-28.mirra.systems"
+            }
+          ]
+        },
+        "tag": "proxy",
+        "streamSettings": {
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/socket",
+            "headers": {
+              "Host": "renderer-stream-3-28.mirra.systems"
+            }
+          },
+          "tlsSettings": {
+            "serverName": "renderer-stream-3-28.mirra.systems",
+            "fingerprint": "firefox"
+          },
+          "security": "tls",
+          "network": "ws"
+        }
+      },
+      {
+        "protocol": "freedom",
+        "settings": {
+          "ipsBlocked": []
+        },
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      },
+      {
+        "protocol": "dns",
+        "tag": "dns-out"
+      }
+    ],
+    "inbounds": [
+      {
+        "tag": "in-mks83r",
+        "protocol": "mixed",
+        "settings": {
+          "udp": true,
+          "auth": "noauth"
+        },
+        "sniffing": {
+          "routeOnly": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ],
+          "enabled": true,
+          "metadataOnly": false
+        },
+        "port": 10808,
+        "listen": "127.0.0.1"
+      }
+    ],
+    "dns": {
+      "tag": "dns",
+      "queryStrategy": "UseIPv4",
+      "servers": [
+        "1.1.1.1",
+        "8.8.8.8"
+      ]
+    },
+    "routing": {
+      "rules": [
+        {
+          "inboundTag": [
+            "wg_bootstrap_dns"
+          ],
+          "type": "field",
+          "outboundTag": "direct"
+        },
+        {
+          "outboundTag": "direct",
+          "type": "field",
+          "inboundTag": [
+            "dns-premium"
+          ]
+        },
+        {
+          "inboundTag": [
+            "domestic_dns"
+          ],
+          "type": "field",
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "outboundTag": "proxy",
+          "inboundTag": [
+            "dns"
+          ]
+        },
+        {
+          "type": "field",
+          "port": "53",
+          "outboundTag": "dns-out"
+        },
+        {
+          "port": "853",
+          "outboundTag": "proxy",
+          "type": "field",
+          "network": "tcp"
+        }
+      ],
+      "domainStrategy": "AsIs"
+    },
+    "policy": {
+      "levels": {
+        "8": {
+          "downlinkOnly": 4,
+          "handshake": 3,
+          "uplinkOnly": 2,
+          "statsUserDownlink": false,
+          "statsUserOnline": false,
+          "connIdle": 300,
+          "statsUserUplink": false,
+          "bufferSize": 3
+        }
+      }
+    },
+    "log": {
+      "access": "none",
+      "loglevel": "none"
+    },
+    "name": "Тестовый Америка (из конфига)",
+    "remarks": "Тестовый сервер"
   }
 ]
