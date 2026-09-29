@@ -4,9 +4,9 @@
       "pingConfig": {
         "destination": "http://www.gstatic.com/generate_204",
         "httpMethod": "HEAD",
-        "interval": "1m",
-        "sampling": 2,
-        "timeout": "5s"
+        "interval": "30s",
+        "sampling": 3,
+        "timeout": "3s"
       },
       "subjectSelector": [
         "Нидерланды",
@@ -206,7 +206,7 @@
         "tag": "block"
       }
     ],
-    "remarks": "⚡️ Авто 3 сервера VK fix",
+    "remarks": "⚡️Авто обход глушилок LTE",
     "routing": {
       "balancers": [
         {
@@ -3957,9 +3957,9 @@
       "pingConfig": {
         "destination": "http://www.gstatic.com/generate_204",
         "httpMethod": "HEAD",
-        "interval": "1m",
-        "sampling": 2,
-        "timeout": "5s"
+        "interval": "30s",
+        "sampling": 3,
+        "timeout": "3s"
       },
       "subjectSelector": [
         "🇦🇹 Австрия",
@@ -4360,16 +4360,9 @@
         {
           "fallbackTag": "direct",
           "selector": [
-            "🇦🇹 Австрия",
-            "🇵🇱 Польша",
-            "🇫🇷 Франция",
-            "🇬🇧 Великобритания",
-            "🇺🇸 США",
-            "🇩🇪 Германия",
-            "🇳🇱 Нидерланды",
-            "🇫🇮 Финляндия",
-            "🇸🇪 Швеция",
-            "🇮🇹 Италия"
+            "Нидерланды",
+            "Германия",
+            "Америка"
           ],
           "strategy": {
             "type": "leastPing"
