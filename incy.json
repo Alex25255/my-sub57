@@ -221,7 +221,6 @@
     "routing": {
       "balancers": [
         {
-          "fallbackTag": "direct",
           "selector": [
             "Нидерланды",
             "Америка",
