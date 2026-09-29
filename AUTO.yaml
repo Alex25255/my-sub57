@@ -1,20 +1,19 @@
 {
-  "name": "⚡️Авто тест 3 сервера VMess",
+  "name": "AUTO_clean_3_VMess_servers",
   "outbounds": [
     {
       "protocol": "vmess",
-      "tag": "🇩🇪 Германия",
+      "tag": "🇺🇸 US",
       "settings": {
         "vnext": [
           {
-            "address": "renderer-stream-2-86.mirra.systems",
+            "address": "renderer-stream-3-28.mirra.systems",
             "port": 443,
             "users": [
               {
-                "id": "89432e7b-13bc-464b-bc6b-d52c34f15b03",
+                "id": "2ff61516-31a0-4b00-98fc-813e35ced3ce",
                 "alterId": 0,
-                "security": "auto",
-                "level": 8
+                "security": "auto"
               }
             ]
           }
@@ -24,20 +23,20 @@
         "network": "ws",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "renderer-stream-2-86.mirra.systems",
+          "serverName": "renderer-stream-3-28.mirra.systems",
           "fingerprint": "firefox"
         },
         "wsSettings": {
           "path": "/api/v1/gpu-stream/socket",
           "headers": {
-            "Host": "renderer-stream-2-86.mirra.systems"
+            "Host": "renderer-stream-3-28.mirra.systems"
           }
         }
       }
     },
     {
       "protocol": "vmess",
-      "tag": "🇳🇱 Нидерланды",
+      "tag": "🇳🇱 NL",
       "settings": {
         "vnext": [
           {
@@ -47,8 +46,7 @@
               {
                 "id": "b8a8d84a-56d0-4bd0-a8a5-b6d674216719",
                 "alterId": 0,
-                "security": "auto",
-                "level": 8
+                "security": "auto"
               }
             ]
           }
@@ -71,18 +69,17 @@
     },
     {
       "protocol": "vmess",
-      "tag": "🇺🇸 Америка",
+      "tag": "🇩🇪 DE",
       "settings": {
         "vnext": [
           {
-            "address": "renderer-stream-3-28.mirra.systems",
+            "address": "renderer-stream-2-86.mirra.systems",
             "port": 443,
             "users": [
               {
-                "id": "2ff61516-31a0-4b00-98fc-813e35ced3ce",
+                "id": "89432e7b-13bc-464b-bc6b-d52c34f15b03",
                 "alterId": 0,
-                "security": "auto",
-                "level": 8
+                "security": "auto"
               }
             ]
           }
@@ -92,13 +89,13 @@
         "network": "ws",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "renderer-stream-3-28.mirra.systems",
+          "serverName": "renderer-stream-2-86.mirra.systems",
           "fingerprint": "firefox"
         },
         "wsSettings": {
           "path": "/api/v1/gpu-stream/socket",
           "headers": {
-            "Host": "renderer-stream-3-28.mirra.systems"
+            "Host": "renderer-stream-2-86.mirra.systems"
           }
         }
       }
@@ -110,20 +107,17 @@
     {
       "protocol": "blackhole",
       "tag": "block"
-    },
-    {
-      "protocol": "dns",
-      "tag": "dns-out"
     }
   ],
   "routing": {
-    "domainStrategy": "AsIs",
     "rules": []
   },
-  "dns": {
-    "servers": [
-      "1.1.1.1",
-      "8.8.8.8"
+  "balancer": {
+    "tag": "auto",
+    "selector": [
+      "🇺🇸 US",
+      "🇳🇱 NL",
+      "🇩🇪 DE"
     ]
   }
 }
