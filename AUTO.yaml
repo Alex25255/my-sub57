@@ -1902,7 +1902,7 @@
     tag: direct
   - protocol: blackhole
     tag: block
-  remarks: ⚡️Авто WI-Fi ПК/TV5
+  remarks: ⚡️Авто WI-Fi ПК/TV55
   routing:
     balancers:
     - fallbackTag: direct
