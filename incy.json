@@ -32,15 +32,11 @@
       "queryStrategy": "UseIPv4",
       "servers": [
         {
-          "address": "https://8.8.8.8/dns-query",
-          "skipFallback": false
-        },
-        {
-          "address": "https://9.9.9.9/dns-query",
-          "skipFallback": false
-        },
-        {
           "address": "https://1.1.1.1/dns-query",
+          "skipFallback": false
+        },
+        {
+          "address": "https://8.8.8.8/dns-query",
           "skipFallback": false
         }
       ]
@@ -57,11 +53,11 @@
         "sniffing": {
           "destOverride": [
             "http",
-            "tls",
-            "quic"
+            "tls"
           ],
-          "enabled": false,
-          "routeOnly": false
+          "enabled": true,
+          "routeOnly": true,
+          "metadataOnly": false
         },
         "tag": "socks"
       },
@@ -75,11 +71,11 @@
         "sniffing": {
           "destOverride": [
             "http",
-            "tls",
-            "quic"
+            "tls"
           ],
-          "enabled": false,
-          "routeOnly": false
+          "enabled": true,
+          "routeOnly": true,
+          "metadataOnly": false
         },
         "tag": "http"
       },
@@ -208,47 +204,29 @@
       {
         "protocol": "blackhole",
         "tag": "block"
-      },
-      {
-        "protocol": "loopback",
-        "settings": {
-          "inboundTag": "entry-whitelist-fallback"
-        },
-        "tag": "loop-to-whitelist"
       }
     ],
-    "remarks": "⚡️Авто обход глушилок LTE",
+    "remarks": "⚡️ Авто 3 сервера VK fix",
     "routing": {
       "balancers": [
         {
-          "fallbackTag": "direct",
           "selector": [
             "Нидерланды",
-            "Америка",
-            "Германия"
+            "Германия",
+            "Америка"
           ],
           "strategy": {
             "type": "leastPing"
           },
-          "tag": "Balancer"
+          "tag": "auto-best"
         }
       ],
       "domainMatcher": "hybrid",
-      "domainStrategy": "IPIfNonMatch",
+      "domainStrategy": "AsIs",
       "rules": [
         {
-          "type": "field",
           "domain": [
-            "geosite:CATEGORY-RU"
-          ],
-          "ip": [
-            "geoip:RU"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
+            "geosite:CATEGORY-RU",
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -561,21 +539,18 @@
             "domain:static.vk.com",
             "domain:ads.vk.com"
           ],
-          "outboundTag": "direct"
-        },
-        {
           "outboundTag": "direct",
-          "protocol": [
-            "bittorrent"
-          ],
           "type": "field"
         },
         {
-          "balancerTag": "Balancer",
-          "inboundTag": [
-            "socks",
-            "http"
+          "ip": [
+            "geoip:RU"
           ],
+          "outboundTag": "direct",
+          "type": "field"
+        },
+        {
+          "balancerTag": "auto-best",
           "network": "tcp,udp",
           "type": "field"
         }
