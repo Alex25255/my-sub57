@@ -1,123 +1,18 @@
-{
-  "name": "AUTO_clean_3_VMess_servers",
-  "outbounds": [
-    {
-      "protocol": "vmess",
-      "tag": "🇺🇸 US",
-      "settings": {
-        "vnext": [
-          {
-            "address": "renderer-stream-3-28.mirra.systems",
-            "port": 443,
-            "users": [
-              {
-                "id": "2ff61516-31a0-4b00-98fc-813e35ced3ce",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-3-28.mirra.systems",
-          "fingerprint": "firefox"
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-3-28.mirra.systems"
-          }
-        }
-      }
-    },
-    {
-      "protocol": "vmess",
-      "tag": "🇳🇱 NL",
-      "settings": {
-        "vnext": [
-          {
-            "address": "renderer-stream-1-794.mirra.now",
-            "port": 443,
-            "users": [
-              {
-                "id": "b8a8d84a-56d0-4bd0-a8a5-b6d674216719",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-1-794.mirra.now",
-          "fingerprint": "firefox"
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-1-794.mirra.now"
-          }
-        }
-      }
-    },
-    {
-      "protocol": "vmess",
-      "tag": "🇩🇪 DE",
-      "settings": {
-        "vnext": [
-          {
-            "address": "renderer-stream-2-86.mirra.systems",
-            "port": 443,
-            "users": [
-              {
-                "id": "89432e7b-13bc-464b-bc6b-d52c34f15b03",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-2-86.mirra.systems",
-          "fingerprint": "firefox"
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-2-86.mirra.systems"
-          }
-        }
-      }
-    },
-    {
-      "protocol": "freedom",
-      "tag": "direct"
-    },
-    {
-      "protocol": "blackhole",
-      "tag": "block"
-    }
-  ],
-  "routing": {
-    "rules": []
-  },
-  "balancer": {
-    "tag": "auto",
-    "selector": [
-      "🇺🇸 US",
-      "🇳🇱 NL",
-      "🇩🇪 DE"
-    ]
-  }
-}
+proxies:
+- name: "🇺🇸 US-1 South Networks Pro" type: vmess server: renderer-stream-3-28.mirra.systems port: 443 uuid: 2ff61516-31a0-4b00-98fc-813e35ced3ce alterId: 0 cipher: auto udp: true network: ws tls: true servername: renderer-stream-3-28.mirra.systems alpn:
+- h2 fingerprint: firefox ws-opts: path: /api/v1/gpu-stream/socket headers: Host: renderer-stream-3-28.mirra.systems
+- name: "🇺🇸 US-2 South Networks Pro" type: vmess server: renderer-stream-1-794.mirra.now port: 443 uuid: b8a8d84a-56d0-4bd0-a8a5-b6d674216719 alterId: 0 cipher: auto udp: true network: ws tls: true servername: renderer-stream-1-794.mirra.now alpn:
+- h2 fingerprint: firefox ws-opts: path: /api/v1/gpu-stream/socket headers: Host: renderer-stream-1-794.mirra.now
+- name: "🇺🇸 US-3 South Networks Pro" type: vmess server: renderer-stream-2-86.mirra.systems port: 443 uuid: 89432e7b-13bc-464b-bc6b-d52c34f15b03 alterId: 0 cipher: auto udp: true network: ws tls: true servername: renderer-stream-2-86.mirra.systems alpn:
+- h2 fingerprint: firefox ws-opts: path: /api/v1/gpu-stream/socket headers: Host: renderer-stream-2-86.mirra.systems
+proxy-groups:
+- name: "🚀 AUTO" type: url-test proxies:
+- "🇺🇸 US-1 South Networks Pro"
+- "🇺🇸 US-2 South Networks Pro"
+- "🇺🇸 US-3 South Networks Pro" url: https://www.gstatic.com/generate_204 interval: 300
+- name: "🎯 SELECT" type: select proxies:
+- "🚀 AUTO"
+- "🇺🇸 US-1 South Networks Pro"
+- "🇺🇸 US-2 South Networks Pro"
+- "🇺🇸 US-3 South Networks Pro"
+- DIRECT
