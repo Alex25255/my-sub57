@@ -206,7 +206,7 @@
         "tag": "block"
       }
     ],
-    "remarks": "⚡️ Авто 3 сервера",
+    "remarks": "⚡️Авто обход глушилок LTE",
     "routing": {
       "balancers": [
         {
