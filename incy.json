@@ -106,21 +106,6 @@
         "tag": "🇳🇱 Обход глушилок LTE"
       },
       {
-        "protocol": "freedom",
-        "settings": {
-          "ipsBlocked": []
-        },
-        "tag": "direct"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      },
-      {
-        "protocol": "dns",
-        "tag": "dns-out"
-      },
-      {
         "protocol": "vmess",
         "streamSettings": {
           "tlsSettings": {
@@ -153,21 +138,6 @@
           ]
         },
         "tag": "🇺🇸 Обход глушилок LTE"
-      },
-      {
-        "protocol": "freedom",
-        "settings": {
-          "ipsBlocked": []
-        },
-        "tag": "direct"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      },
-      {
-        "protocol": "dns",
-        "tag": "dns-out"
       },
       {
         "protocol": "vmess",
@@ -2728,7 +2698,7 @@
         "tag": "block"
       }
     ],
-    "remarks": "⚡️Авто WI-Fi ПК/TV3",
+    "remarks": "⚡️Авто WI-Fi ПК/TV",
     "routing": {
       "balancers": [
         {
