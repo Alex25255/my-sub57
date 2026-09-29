@@ -73,88 +73,6 @@
     "outbounds": [
       {
         "protocol": "vmess",
-        "streamSettings": {
-          "tlsSettings": {
-            "fingerprint": "firefox",
-            "serverName": "renderer-stream-1-794.mirra.now"
-          },
-          "network": "ws",
-          "security": "tls",
-          "wsSettings": {
-            "path": "/api/v1/gpu-stream/socket",
-            "headers": {
-              "Host": "renderer-stream-1-794.mirra.now"
-            }
-          }
-        },
-        "settings": {
-          "vnext": [
-            {
-              "address": "renderer-stream-1-794.mirra.now",
-              "port": 443,
-              "users": [
-                {
-                  "security": "auto",
-                  "level": 8,
-                  "alterId": 0,
-                  "id": "b8a8d84a-56d0-4bd0-a8a5-b6d674216719"
-                }
-              ]
-            }
-          ]
-        },
-        "tag": "Нидерланды"
-      },
-      {
-        "protocol": "vmess",
-        "streamSettings": {
-          "tlsSettings": {
-            "fingerprint": "firefox",
-            "serverName": "renderer-stream-2-86.mirra.systems"
-          },
-          "network": "ws",
-          "security": "tls",
-          "wsSettings": {
-            "path": "/api/v1/gpu-stream/socket",
-            "headers": {
-              "Host": "renderer-stream-2-86.mirra.systems"
-            }
-          }
-        },
-        "settings": {
-          "vnext": [
-            {
-              "address": "renderer-stream-2-86.mirra.systems",
-              "port": 443,
-              "users": [
-                {
-                  "security": "auto",
-                  "level": 8,
-                  "alterId": 0,
-                  "id": "89432e7b-13bc-464b-bc6b-d52c34f15b03"
-                }
-              ]
-            }
-          ]
-        },
-        "tag": "Германия"
-      },
-      {
-        "protocol": "vmess",
-        "streamSettings": {
-          "tlsSettings": {
-            "fingerprint": "firefox",
-            "serverName": "renderer-stream-3-28.mirra.systems"
-          },
-          "network": "ws",
-          "security": "tls",
-          "wsSettings": {
-            "path": "/api/v1/gpu-stream/socket",
-            "headers": {
-              "Host": "renderer-stream-3-28.mirra.systems"
-            }
-          }
-        },
         "settings": {
           "vnext": [
             {
@@ -162,16 +80,98 @@
               "port": 443,
               "users": [
                 {
-                  "security": "auto",
-                  "level": 8,
+                  "id": "2ff61516-31a0-4b00-98fc-813e35ced3ce",
                   "alterId": 0,
-                  "id": "2ff61516-31a0-4b00-98fc-813e35ced3ce"
+                  "security": "auto",
+                  "level": 8
                 }
               ]
             }
           ]
         },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "renderer-stream-3-28.mirra.systems",
+            "fingerprint": "firefox"
+          },
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/socket",
+            "headers": {
+              "Host": "renderer-stream-3-28.mirra.systems"
+            }
+          }
+        },
         "tag": "Америка"
+      },
+      {
+        "protocol": "vmess",
+        "settings": {
+          "vnext": [
+            {
+              "address": "renderer-stream-1-794.mirra.now",
+              "port": 443,
+              "users": [
+                {
+                  "id": "b8a8d84a-56d0-4bd0-a8a5-b6d674216719",
+                  "alterId": 0,
+                  "security": "auto",
+                  "level": 8
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "renderer-stream-1-794.mirra.now",
+            "fingerprint": "firefox"
+          },
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/socket",
+            "headers": {
+              "Host": "renderer-stream-1-794.mirra.now"
+            }
+          }
+        },
+        "tag": "Нидерланды"
+      },
+      {
+        "protocol": "vmess",
+        "settings": {
+          "vnext": [
+            {
+              "address": "renderer-stream-2-86.mirra.systems",
+              "port": 443,
+              "users": [
+                {
+                  "id": "89432e7b-13bc-464b-bc6b-d52c34f15b03",
+                  "alterId": 0,
+                  "security": "auto",
+                  "level": 8
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "renderer-stream-2-86.mirra.systems",
+            "fingerprint": "firefox"
+          },
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/socket",
+            "headers": {
+              "Host": "renderer-stream-2-86.mirra.systems"
+            }
+          }
+        },
+        "tag": "Германия"
       },
       {
         "protocol": "freedom",
@@ -195,19 +195,19 @@
       "domainStrategy": "IPIfNonMatch",
       "rules": [
         {
-          "outboundTag": "direct",
+          "type": "field",
           "protocol": [
             "bittorrent"
           ],
-          "type": "field"
+          "outboundTag": "direct"
         },
         {
+          "type": "field",
           "inboundTag": [
             "socks",
             "http"
           ],
           "network": "tcp,udp",
-          "type": "field",
           "outboundTag": "Нидерланды"
         }
       ]
@@ -2698,7 +2698,7 @@
         "tag": "block"
       }
     ],
-    "remarks": "⚡️Авто WI-Fi ПК/TV2",
+    "remarks": "⚡️Авто WI-Fi ПК/TV",
     "routing": {
       "balancers": [
         {
