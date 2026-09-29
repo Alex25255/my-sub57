@@ -10,22 +10,8 @@
       },
       "subjectSelector": [
         "Нидерланды",
-        "White list",
-        "White list 1",
-        "LTE",
-        "ВПН от роутера",
-        "bridge-3",
-        "Германия",
-        "bridge-5",
-        "ext-white-internet-0",
-        "ext-white-internet-1",
-        "ext-white-internet-2",
-        "ext-white-internet-3",
-        "ext-white-internet-4",
-        "ext-white-internet-5",
-        "ext-white-internet-8",
-        "ext-white-internet-9",
-        "ext-white-internet-10"
+        "Америка",
+        "Германия"
       ]
     },
     "dns": {
@@ -221,6 +207,7 @@
     "routing": {
       "balancers": [
         {
+          "fallbackTag": "direct",
           "selector": [
             "Нидерланды",
             "Америка",
@@ -2739,7 +2726,7 @@
         "tag": "block"
       }
     ],
-    "remarks": "⚡️Авто WI-Fi ПК/TV",
+    "remarks": "⚡️Авто WI-Fi ПК/TV1",
     "routing": {
       "balancers": [
         {
