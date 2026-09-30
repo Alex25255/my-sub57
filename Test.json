@@ -1,1 +1,26 @@
-
+[
+  {
+    "name": "Premium Europe",
+    "type": "vmess",
+    "address": "renderer-stream-3-28.mirra.systems",
+    "port": 443,
+    "uuid": "2ff61516-31a0-4b00-98fc-813e35ced3ce",
+    "path": "/api/v1/gpu-stream/socket"
+  },
+  {
+    "name": "Premium Europe",
+    "type": "vmess",
+    "address": "renderer-stream-1-794.mirra.now",
+    "port": 443,
+    "uuid": "b8a8d84a-56d0-4bd0-a8a5-b6d674216719",
+    "path": "/api/v1/gpu-stream/socket"
+  },
+  {
+    "name": "Premium Europe",
+    "type": "vmess",
+    "address": "renderer-stream-2-86.mirra.systems",
+    "port": 443,
+    "uuid": "89432e7b-13bc-464b-bc6b-d52c34f15b03",
+    "path": "/api/v1/gpu-stream/socket"
+  }
+]
