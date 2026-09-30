@@ -7118,8 +7118,6 @@
             "domain:s7.ru",
             "domain:samokat.ru",
             "domain:sba.yandex.net",
-            null,
-            null,
             "domain:sferum.ru",
             "domain:smotreshka.tv",
             "domain:smotrim.ru",
@@ -8562,7 +8560,7 @@
         "tag": "block"
       }
     ],
-    "remarks": "⚡️Авто WI-Fi ПК/TV344",
+    "remarks": "⚡️Авто WI-Fi ПК/TV",
     "routing": {
       "balancers": [
         {
