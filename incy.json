@@ -6263,7 +6263,7 @@
         {
           "type": "field",
           "network": "tcp",
-          "outboundTag": "🇷🇺 Обход глушилок LTE (тг не раб)",
+          "outboundTag": "🇷🇺 Обход РЕЗЕРВ LTE (тг не раб)",
           "port": "853"
         },
         {
@@ -6278,7 +6278,7 @@
           "inboundTag": [
             "remote_dns"
           ],
-          "outboundTag": "🇷🇺 Обход глушилок LTE (тг не раб)"
+          "outboundTag": "🇷🇺 Обход РЕЗЕРВ LTE (тг не раб)"
         },
         {
           "type": "field",
