@@ -7433,11 +7433,11 @@
       "access": "none",
       "loglevel": "none"
     },
-    "name": "🇷🇺 Обход глушилок LTE (тг не раб)",
+    "name": "🇷🇺 Обход РЕЗЕРВ LTE (тг не раб)",
     "meta": {
       "serverDescription": "VMess • WS • TLS"
     },
-    "remarks": "🇷🇺 Обход глушилок LTE (тг не раб)"
+    "remarks": "🇷🇺 Обход РЕЗЕРВ LTE (тг не раб)"
   },
   {
     "log": {
