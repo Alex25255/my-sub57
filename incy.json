@@ -641,28 +641,31 @@
         "streamSettings": {
           "tlsSettings": {
             "fingerprint": "firefox",
-            "serverName": "renderer-stream-2-86.mirra.systems"
+            "serverName": "renderer-stream-2-112.mirra.now",
+            "alpn": [
+              "h2"
+            ]
           },
           "network": "ws",
           "security": "tls",
           "wsSettings": {
             "path": "/api/v1/gpu-stream/socket",
             "headers": {
-              "Host": "renderer-stream-2-86.mirra.systems"
+              "Host": "renderer-stream-2-112.mirra.now"
             }
           }
         },
         "settings": {
           "vnext": [
             {
-              "address": "renderer-stream-2-86.mirra.systems",
+              "address": "renderer-stream-2-112.mirra.now",
               "port": 443,
               "users": [
                 {
                   "security": "auto",
                   "level": 8,
                   "alterId": 0,
-                  "id": "89432e7b-13bc-464b-bc6b-d52c34f15b03"
+                  "id": "d8e507c7-b5b8-4987-8cc9-4cffc3c4250e"
                 }
               ]
             }
@@ -5573,28 +5576,31 @@
         "streamSettings": {
           "tlsSettings": {
             "fingerprint": "firefox",
-            "serverName": "renderer-stream-2-86.mirra.systems"
+            "serverName": "renderer-stream-2-112.mirra.now",
+            "alpn": [
+              "h2"
+            ]
           },
           "network": "ws",
           "security": "tls",
           "wsSettings": {
             "path": "/api/v1/gpu-stream/socket",
             "headers": {
-              "Host": "renderer-stream-2-86.mirra.systems"
+              "Host": "renderer-stream-2-112.mirra.now"
             }
           }
         },
         "settings": {
           "vnext": [
             {
-              "address": "renderer-stream-2-86.mirra.systems",
+              "address": "renderer-stream-2-112.mirra.now",
               "port": 443,
               "users": [
                 {
                   "security": "auto",
                   "level": 8,
                   "alterId": 0,
-                  "id": "89432e7b-13bc-464b-bc6b-d52c34f15b03"
+                  "id": "d8e507c7-b5b8-4987-8cc9-4cffc3c4250e"
                 }
               ]
             }
