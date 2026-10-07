@@ -12,7 +12,12 @@
         "Нидерланды",
         "Германия",
         "Америка",
-        "Германия 2"
+        "Германия 2",
+        "🇷🇺 1. Антиглушилка LTE",
+        "🇷🇺 2. Антиглушилка 📶LTE",
+        "🇷🇺 6. Антиглушилка 📶LTE",
+        "🇷🇺 7. Антиглушилка 📶LTE 🌐1",
+        "🇷🇺 7. Антиглушилка 📶LTE 🌐2"
       ]
     },
     "dns": {
@@ -747,21 +752,6 @@
       },
       {
         "protocol": "vless",
-        "streamSettings": {
-          "network": "grpc",
-          "security": "reality",
-          "tlsSettings": {
-            "serverName": "ads.x5.ru",
-            "fingerprint": "firefox"
-          },
-          "realitySettings": {
-            "publicKey": "ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM",
-            "shortId": "9e15546f267baa64"
-          },
-          "grpcSettings": {
-            "serviceName": "grpc-reality"
-          }
-        },
         "settings": {
           "vnext": [
             {
@@ -771,30 +761,44 @@
                 {
                   "id": "1cb5126d-8623-42cf-a40d-ad02ab4dbdf9",
                   "encryption": "none",
-                  "security": "auto",
                   "level": 8
                 }
               ]
             }
           ]
         },
-        "tag": "🇷🇺 1. Антиглушилка 📶LTE"
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "fingerprint": "firefox",
+            "serverName": "ads.x5.ru",
+            "publicKey": "ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM",
+            "shortId": "9e15546f267baa64",
+            "show": false
+          },
+          "grpcSettings": {
+            "serviceName": "grpc-reality",
+            "multiMode": false
+          }
+        },
+        "tag": "🇷🇺 1. Антиглушилка LTE"
       },
       {
         "protocol": "vless",
         "streamSettings": {
           "network": "grpc",
           "security": "reality",
-          "tlsSettings": {
-            "serverName": "ads.x5.ru",
-            "fingerprint": "firefox"
-          },
           "realitySettings": {
+            "fingerprint": "firefox",
+            "serverName": "ads.x5.ru",
             "publicKey": "ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM",
-            "shortId": "9e15546f267baa64"
+            "shortId": "9e15546f267baa64",
+            "show": false
           },
           "grpcSettings": {
-            "serviceName": "grpc-reality"
+            "serviceName": "grpc-reality",
+            "multiMode": false
           }
         },
         "settings": {
@@ -806,7 +810,6 @@
                 {
                   "id": "1cb5126d-8623-42cf-a40d-ad02ab4dbdf9",
                   "encryption": "none",
-                  "security": "auto",
                   "level": 8
                 }
               ]
@@ -818,18 +821,17 @@
       {
         "protocol": "vless",
         "streamSettings": {
-          "network": "grpc",
-          "security": "reality",
-          "tlsSettings": {
-            "serverName": "images.cdnedgex.com",
-            "fingerprint": "firefox"
-          },
           "realitySettings": {
+            "fingerprint": "firefox",
+            "serverName": "images.cdnedgex.com",
             "publicKey": "ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM",
             "shortId": "9e15546f267baa64"
           },
+          "network": "grpc",
+          "security": "reality",
           "grpcSettings": {
-            "serviceName": "grpc-reality"
+            "serviceName": "grpc-reality",
+            "multiMode": true
           }
         },
         "settings": {
@@ -841,7 +843,6 @@
                 {
                   "id": "1cb5126d-8623-42cf-a40d-ad02ab4dbdf9",
                   "encryption": "none",
-                  "security": "auto",
                   "level": 8
                 }
               ]
@@ -853,53 +854,16 @@
       {
         "protocol": "vless",
         "streamSettings": {
-          "network": "grpc",
-          "security": "reality",
-          "tlsSettings": {
-            "serverName": "clover.connectiux.com",
-            "fingerprint": "firefox"
-          },
           "realitySettings": {
-            "publicKey": "ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM",
-            "shortId": "9e15546f267baa64"
-          },
-          "grpcSettings": {
-            "serviceName": "grpc-reality"
-          }
-        },
-        "settings": {
-          "vnext": [
-            {
-              "address": "31.77.28.176",
-              "port": 8444,
-              "users": [
-                {
-                  "id": "1cb5126d-8623-42cf-a40d-ad02ab4dbdf9",
-                  "encryption": "none",
-                  "security": "auto",
-                  "level": 8
-                }
-              ]
-            }
-          ]
-        },
-        "tag": "🇷🇺 7. Антиглушилка 📶LTE 🌐1"
-      },
-      {
-        "protocol": "vless",
-        "streamSettings": {
-          "network": "grpc",
-          "security": "reality",
-          "tlsSettings": {
+            "fingerprint": "firefox",
             "serverName": "driftpipe.sh",
-            "fingerprint": "firefox"
-          },
-          "realitySettings": {
             "publicKey": "FfZptJgxYiyEemH_mO7I8BKHF9Nc5ZGEG_sYC1dWjEw",
             "shortId": "78b8ebdb7007ecec"
           },
+          "network": "grpc",
+          "security": "reality",
           "grpcSettings": {
-            "serviceName": "grpc-reality"
+            "serviceName": ""
           }
         },
         "settings": {
@@ -911,7 +875,6 @@
                 {
                   "id": "1cb5126d-8623-42cf-a40d-ad02ab4dbdf9",
                   "encryption": "none",
-                  "security": "auto",
                   "level": 8
                 }
               ]
@@ -919,6 +882,40 @@
           ]
         },
         "tag": "🇷🇺 7. Антиглушилка 📶LTE 🌐2"
+      },
+      {
+        "protocol": "vless",
+        "streamSettings": {
+          "realitySettings": {
+            "fingerprint": "firefox",
+            "serverName": "images.cdnedgex.com",
+            "publicKey": "ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM",
+            "shortId": "9e15546f267baa64",
+            "spiderX": ""
+          },
+          "network": "grpc",
+          "security": "reality",
+          "grpcSettings": {
+            "serviceName": "grpc-reality",
+            "multiMode": false
+          }
+        },
+        "settings": {
+          "vnext": [
+            {
+              "address": "31.59.209.107",
+              "port": 8444,
+              "users": [
+                {
+                  "id": "1cb5126d-8623-42cf-a40d-ad02ab4dbdf9",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "tag": "🇷🇺 7. Антиглушилка 📶LTE 🌐1"
       },
       {
         "protocol": "freedom",
@@ -938,11 +935,11 @@
             "Германия",
             "Америка",
             "Германия 2",
-            "🇷🇺 1. Антиглушилка 📶LTE",
+            "🇷🇺 1. Антиглушилка LTE",
             "🇷🇺 2. Антиглушилка 📶LTE",
             "🇷🇺 6. Антиглушилка 📶LTE",
-            "🇷🇺 7. Антиглушилка 📶LTE 🌐1",
-            "🇷🇺 7. Антиглушилка 📶LTE 🌐2"
+            "🇷🇺 7. Антиглушилка 📶LTE 🌐2",
+            "🇷🇺 7. Антиглушилка 📶LTE 🌐1"
           ],
           "strategy": {
             "type": "leastPing"
