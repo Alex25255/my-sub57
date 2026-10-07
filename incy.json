@@ -17,7 +17,8 @@
         "🇷🇺 2. Антиглушилка 📶LTE",
         "🇷🇺 6. Антиглушилка 📶LTE",
         "🇷🇺 7. Антиглушилка 📶LTE 🌐1",
-        "🇷🇺 7. Антиглушилка 📶LTE 🌐2"
+        "🇷🇺 7. Антиглушилка 📶LTE 🌐2",
+        "🇩🇪 Антиглушилка #1"
       ]
     },
     "dns": {
@@ -918,6 +919,40 @@
         "tag": "🇷🇺 7. Антиглушилка 📶LTE 🌐1"
       },
       {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "vde.skcdn.ru",
+              "port": 443,
+              "users": [
+                {
+                  "id": "017141e9-c2a7-48d1-93ef-aa9a6429ae2c",
+                  "encryption": "none",
+                  "level": 8
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "firefox",
+            "serverName": "vde.skcdn.ru",
+            "alpn": [
+              "h2"
+            ]
+          },
+          "xhttpSettings": {
+            "path": "/content/v1/frames/",
+            "host": "vde.skcdn.ru"
+          }
+        },
+        "tag": "🇩🇪 Антиглушилка #1"
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -939,7 +974,8 @@
             "🇷🇺 2. Антиглушилка 📶LTE",
             "🇷🇺 6. Антиглушилка 📶LTE",
             "🇷🇺 7. Антиглушилка 📶LTE 🌐2",
-            "🇷🇺 7. Антиглушилка 📶LTE 🌐1"
+            "🇷🇺 7. Антиглушилка 📶LTE 🌐1",
+            "🇩🇪 Антиглушилка #1"
           ],
           "strategy": {
             "type": "leastPing"
