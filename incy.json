@@ -13,7 +13,6 @@
         "Германия",
         "Америка",
         "Германия 2",
-        "🇩🇪Антиглушилка #1",
         "🇷🇺 2. Антиглушилка 📶LTE",
         "🇷🇺 1. Антиглушилка 📶LTE",
         "🇷🇺 6. Антиглушилка 📶LTE 🌐2"
@@ -751,40 +750,6 @@
       },
       {
         "protocol": "vless",
-        "streamSettings": {
-          "tlsSettings": {
-            "fingerprint": "firefox",
-            "serverName": "vde.skcdn.ru",
-            "alpn": [
-              "h2"
-            ]
-          },
-          "network": "xhttp",
-          "security": "tls",
-          "xhttpSettings": {
-            "path": "/content/v1/frames/",
-            "host": "vde.skcdn.ru"
-          }
-        },
-        "settings": {
-          "vnext": [
-            {
-              "address": "vde.skcdn.ru",
-              "port": 443,
-              "users": [
-                {
-                  "id": "017141e9-c2a7-48d1-93ef-aa9a6429ae2c",
-                  "encryption": "none",
-                  "level": 8
-                }
-              ]
-            }
-          ]
-        },
-        "tag": "🇩🇪Антиглушилка #1"
-      },
-      {
-        "protocol": "vless",
         "settings": {
           "vnext": [
             {
@@ -903,7 +868,6 @@
             "Германия",
             "Америка",
             "Германия 2",
-            "🇩🇪Антиглушилка #1",
             "🇷🇺 2. Антиглушилка 📶LTE",
             "🇷🇺 1. Антиглушилка 📶LTE",
             "🇷🇺 6. Антиглушилка 📶LTE 🌐2"
