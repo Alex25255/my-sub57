@@ -21,8 +21,10 @@
     "dns": {
       "servers": [
         {
-          "address": "77.88.8.8",
-          "domain": [
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "google_dns",
+          "queryStrategy": "UseIPv4",
+          "domains": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -540,12 +542,13 @@
             "domain:okkoapi.tv",
             "domain:onelya.ru"
           ],
-          "skipFallback": true,
-          "tag": "domestic_dns",
-          "queryStrategy": "UseIPv4"
+          "skipFallback": true
         },
-        "1.1.1.1",
-        "8.8.8.8"
+        {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        }
       ],
       "queryStrategy": "UseIPv4",
       "tag": "dns",
@@ -892,7 +895,6 @@
         {
           "type": "field",
           "ip": [
-            "77.88.8.8",
             "1.1.1.1",
             "8.8.8.8"
           ],
@@ -2100,7 +2102,9 @@
     "dns": {
       "servers": [
         {
-          "address": "https://77.88.8.8/dns-query",
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "google_dns",
+          "queryStrategy": "UseIPv4",
           "domains": [
             "domain:mir-pay.ru",
             "domain:mironline.ru",
@@ -2619,13 +2623,11 @@
             "domain:okkoapi.tv",
             "domain:onelya.ru"
           ],
-          "skipFallback": true,
-          "tag": "domestic_dns",
-          "queryStrategy": "UseIPv4"
+          "skipFallback": true
         },
         {
-          "address": "https://8.8.8.8/dns-query",
-          "tag": "remote_dns",
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         }
       ],
@@ -3332,7 +3334,9 @@
     "dns": {
       "servers": [
         {
-          "address": "77.88.8.8",
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "google_dns",
+          "queryStrategy": "UseIPv4",
           "domains": [
             "domain:1tv.ru",
             "domain:2gis.com",
@@ -3851,12 +3855,13 @@
             "domain:static.vk.com",
             "domain:ads.vk.com"
           ],
-          "skipFallback": true,
-          "tag": "domestic_dns",
-          "queryStrategy": "UseIPv4"
+          "skipFallback": true
         },
-        "1.1.1.1",
-        "8.8.8.8"
+        {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        }
       ],
       "queryStrategy": "UseIPv4",
       "tag": "dns",
@@ -4562,7 +4567,9 @@
     "dns": {
       "servers": [
         {
-          "address": "77.88.8.8",
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "google_dns",
+          "queryStrategy": "UseIPv4",
           "domains": [
             "domain:1tv.ru",
             "domain:2gis.com",
@@ -5081,12 +5088,13 @@
             "domain:static.vk.com",
             "domain:ads.vk.com"
           ],
-          "skipFallback": true,
-          "tag": "domestic_dns",
-          "queryStrategy": "UseIPv4"
+          "skipFallback": true
         },
-        "1.1.1.1",
-        "8.8.8.8"
+        {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        }
       ],
       "queryStrategy": "UseIPv4",
       "tag": "dns",
@@ -5795,7 +5803,9 @@
     "dns": {
       "servers": [
         {
-          "address": "77.88.8.8",
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "google_dns",
+          "queryStrategy": "UseIPv4",
           "domains": [
             "domain:1tv.ru",
             "domain:2gis.com",
@@ -6314,12 +6324,13 @@
             "domain:static.vk.com",
             "domain:ads.vk.com"
           ],
-          "skipFallback": true,
-          "tag": "domestic_dns",
-          "queryStrategy": "UseIPv4"
+          "skipFallback": true
         },
-        "1.1.1.1",
-        "8.8.8.8"
+        {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        }
       ],
       "queryStrategy": "UseIPv4",
       "tag": "dns",
@@ -7028,7 +7039,9 @@
     "dns": {
       "servers": [
         {
-          "address": "77.88.8.8",
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "google_dns",
+          "queryStrategy": "UseIPv4",
           "domains": [
             "domain:1tv.ru",
             "domain:2gis.com",
@@ -7547,12 +7560,13 @@
             "domain:static.vk.com",
             "domain:ads.vk.com"
           ],
-          "skipFallback": true,
-          "tag": "domestic_dns",
-          "queryStrategy": "UseIPv4"
+          "skipFallback": true
         },
-        "1.1.1.1",
-        "8.8.8.8"
+        {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        }
       ],
       "queryStrategy": "UseIPv4",
       "tag": "dns",
@@ -8261,7 +8275,9 @@
     "dns": {
       "servers": [
         {
-          "address": "77.88.8.8",
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "google_dns",
+          "queryStrategy": "UseIPv4",
           "domains": [
             "domain:mir-pay.ru",
             "domain:mironline.ru",
@@ -8780,13 +8796,11 @@
             "domain:okkoapi.tv",
             "domain:onelya.ru"
           ],
-          "skipFallback": true,
-          "tag": "domestic_dns",
-          "queryStrategy": "UseIPv4"
+          "skipFallback": true
         },
         {
-          "address": "https://8.8.8.8/dns-query",
-          "tag": "remote_dns",
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         }
       ],
@@ -8855,10 +8869,20 @@
     "dns": {
       "queryStrategy": "UseIPv4",
       "servers": [
-        "1.1.1.1",
-        "8.8.8.8"
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "google_dns",
+          "queryStrategy": "UseIPv4"
+        },
+        {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        }
       ],
-      "tag": "dns"
+      "tag": "dns",
+      "disableFallbackIfMatch": true,
+      "useSystemHosts": false
     },
     "outbounds": [
       {
@@ -9032,17 +9056,17 @@
       "servers": [
         {
           "address": "https://8.8.8.8/dns-query",
-          "skipFallback": false
-        },
-        {
-          "address": "https://9.9.9.9/dns-query",
-          "skipFallback": false
+          "tag": "google_dns",
+          "queryStrategy": "UseIPv4"
         },
         {
           "address": "https://1.1.1.1/dns-query",
-          "skipFallback": false
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
         }
-      ]
+      ],
+      "disableFallbackIfMatch": true,
+      "useSystemHosts": false
     },
     "inbounds": [
       {
@@ -10001,17 +10025,17 @@
       "servers": [
         {
           "address": "https://8.8.8.8/dns-query",
-          "skipFallback": false
-        },
-        {
-          "address": "https://9.9.9.9/dns-query",
-          "skipFallback": false
+          "tag": "google_dns",
+          "queryStrategy": "UseIPv4"
         },
         {
           "address": "https://1.1.1.1/dns-query",
-          "skipFallback": false
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
         }
-      ]
+      ],
+      "disableFallbackIfMatch": true,
+      "useSystemHosts": false
     },
     "inbounds": [
       {
