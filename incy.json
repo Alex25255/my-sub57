@@ -887,19 +887,6 @@
       "rules": [
         {
           "type": "field",
-          "domain": [
-            "domain:instagram.com",
-            "domain:www.instagram.com",
-            "domain:cdninstagram.com",
-            "domain:fbcdn.net",
-            "domain:facebook.com",
-            "domain:facebook.net",
-            "domain:messenger.com"
-          ],
-          "balancerTag": "auto-best"
-        },
-        {
-          "type": "field",
           "inboundTag": [
             "domestic_dns"
           ],
@@ -1453,19 +1440,6 @@
   {
     "routing": {
       "rules": [
-        {
-          "type": "field",
-          "domain": [
-            "domain:instagram.com",
-            "domain:www.instagram.com",
-            "domain:cdninstagram.com",
-            "domain:fbcdn.net",
-            "domain:facebook.com",
-            "domain:facebook.net",
-            "domain:messenger.com"
-          ],
-          "outboundTag": "💫 Игровой белый интернет"
-        },
         {
           "type": "field",
           "ip": [
@@ -2695,19 +2669,6 @@
   {
     "routing": {
       "rules": [
-        {
-          "type": "field",
-          "domain": [
-            "domain:instagram.com",
-            "domain:www.instagram.com",
-            "domain:cdninstagram.com",
-            "domain:fbcdn.net",
-            "domain:facebook.com",
-            "domain:facebook.net",
-            "domain:messenger.com"
-          ],
-          "outboundTag": "🇳🇱 Обход глушилок LTE"
-        },
         {
           "type": "field",
           "ip": [
@@ -3943,19 +3904,6 @@
       "rules": [
         {
           "type": "field",
-          "domain": [
-            "domain:instagram.com",
-            "domain:www.instagram.com",
-            "domain:cdninstagram.com",
-            "domain:fbcdn.net",
-            "domain:facebook.com",
-            "domain:facebook.net",
-            "domain:messenger.com"
-          ],
-          "outboundTag": "🇺🇸 Обход глушилок LTE"
-        },
-        {
-          "type": "field",
           "ip": [
             "10.0.0.0/8",
             "172.16.0.0/12",
@@ -5187,19 +5135,6 @@
   {
     "routing": {
       "rules": [
-        {
-          "type": "field",
-          "domain": [
-            "domain:instagram.com",
-            "domain:www.instagram.com",
-            "domain:cdninstagram.com",
-            "domain:fbcdn.net",
-            "domain:facebook.com",
-            "domain:facebook.net",
-            "domain:messenger.com"
-          ],
-          "outboundTag": "🇩🇪 Обход глушилок LTE"
-        },
         {
           "type": "field",
           "ip": [
@@ -6438,19 +6373,6 @@
       "rules": [
         {
           "type": "field",
-          "domain": [
-            "domain:instagram.com",
-            "domain:www.instagram.com",
-            "domain:cdninstagram.com",
-            "domain:fbcdn.net",
-            "domain:facebook.com",
-            "domain:facebook.net",
-            "domain:messenger.com"
-          ],
-          "outboundTag": "🇩🇪 Обход глушилок LTE 2"
-        },
-        {
-          "type": "field",
           "ip": [
             "10.0.0.0/8",
             "172.16.0.0/12",
@@ -7685,19 +7607,6 @@
   {
     "routing": {
       "rules": [
-        {
-          "type": "field",
-          "domain": [
-            "domain:instagram.com",
-            "domain:www.instagram.com",
-            "domain:cdninstagram.com",
-            "domain:fbcdn.net",
-            "domain:facebook.com",
-            "domain:facebook.net",
-            "domain:messenger.com"
-          ],
-          "outboundTag": "🇷🇺 Обход РЕЗЕРВ LTE (тг не раб)"
-        },
         {
           "type": "field",
           "ip": [
@@ -9077,19 +8986,6 @@
     "routing": {
       "rules": [
         {
-          "type": "field",
-          "domain": [
-            "domain:instagram.com",
-            "domain:www.instagram.com",
-            "domain:cdninstagram.com",
-            "domain:fbcdn.net",
-            "domain:facebook.com",
-            "domain:facebook.net",
-            "domain:messenger.com"
-          ],
-          "outboundTag": "proxy"
-        },
-        {
           "inboundTag": [
             "wg_bootstrap_dns"
           ],
@@ -9561,19 +9457,6 @@
       "domainMatcher": "hybrid",
       "domainStrategy": "IPIfNonMatch",
       "rules": [
-        {
-          "type": "field",
-          "domain": [
-            "domain:instagram.com",
-            "domain:www.instagram.com",
-            "domain:cdninstagram.com",
-            "domain:fbcdn.net",
-            "domain:facebook.com",
-            "domain:facebook.net",
-            "domain:messenger.com"
-          ],
-          "balancerTag": "Balancer"
-        },
         {
           "type": "field",
           "domain": [
@@ -10272,19 +10155,6 @@
       "domainMatcher": "hybrid",
       "domainStrategy": "IPIfNonMatch",
       "rules": [
-        {
-          "type": "field",
-          "domain": [
-            "domain:instagram.com",
-            "domain:www.instagram.com",
-            "domain:cdninstagram.com",
-            "domain:fbcdn.net",
-            "domain:facebook.com",
-            "domain:facebook.net",
-            "domain:messenger.com"
-          ],
-          "balancerTag": "Balancer"
-        },
         {
           "type": "field",
           "domain": [
