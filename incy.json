@@ -15,7 +15,8 @@
         "Германия 2",
         "🇷🇺 2. Антиглушилка 📶LTE",
         "🇷🇺 1. Антиглушилка 📶LTE",
-        "🇷🇺 6. Антиглушилка 📶LTE 🌐2"
+        "🇷🇺 6. Антиглушилка 📶LTE 🌐2",
+        "💫 Игровой белый интернет"
       ]
     },
     "dns": {
@@ -854,6 +855,37 @@
         "tag": "🇷🇺 6. Антиглушилка 📶LTE 🌐2"
       },
       {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "37.18.15.187",
+              "port": 64902,
+              "users": [
+                {
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision",
+                  "id": "f6c5384d-7cbf-4a78-a784-543d4b56babd",
+                  "level": 8
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "fingerprint": "chrome",
+            "serverName": "iv.kommersant.ru",
+            "publicKey": "0YqjF-5_cNDwPnXs4tDbQejAx-xajzlS2pCwFM-ZqDM",
+            "shortId": "0b56ad2c",
+            "spiderX": "/"
+          }
+        },
+        "tag": "💫 Игровой белый интернет"
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -873,7 +905,8 @@
             "Германия 2",
             "🇷🇺 2. Антиглушилка 📶LTE",
             "🇷🇺 1. Антиглушилка 📶LTE",
-            "🇷🇺 6. Антиглушилка 📶LTE 🌐2"
+            "🇷🇺 6. Антиглушилка 📶LTE 🌐2",
+            "💫 Игровой белый интернет"
           ],
           "strategy": {
             "type": "leastPing"
