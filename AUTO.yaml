@@ -5,8 +5,8 @@
         "destination": "http://www.gstatic.com/generate_204",
         "httpMethod": "HEAD",
         "interval": "1m",
-        "sampling": 2,
-        "timeout": "5s"
+        "sampling": 3,
+        "timeout": "10s"
       },
       "subjectSelector": [
         "Нидерланды",
@@ -22,7 +22,16 @@
     "dns": {
       "servers": [
         {
-          "address": "https://8.8.8.8/dns-query",
+          "tag": "proxy_hosts_dns",
+          "address": "localhost",
+          "domains": [
+            "domain:mirra.now",
+            "domain:mirra.systems"
+          ],
+          "skipFallback": true
+        },
+        {
+          "address": "localhost",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4",
           "domains": [
@@ -593,17 +602,6 @@
           "metadataOnly": false
         },
         "tag": "http"
-      },
-      {
-        "listen": "127.0.0.1",
-        "port": 10803,
-        "protocol": "dokodemo-door",
-        "settings": {
-          "address": "127.0.0.1",
-          "network": "tcp,udp",
-          "port": 0
-        },
-        "tag": "entry-whitelist-fallback"
       }
     ],
     "log": {
@@ -651,7 +649,7 @@
             "fingerprint": "firefox",
             "serverName": "renderer-stream-2-112.mirra.now",
             "alpn": [
-              "h2"
+              "http/1.1"
             ]
           },
           "network": "ws",
@@ -722,7 +720,7 @@
             "fingerprint": "firefox",
             "serverName": "renderer-stream-2-86.mirra.systems",
             "alpn": [
-              "h2"
+              "http/1.1"
             ]
           },
           "network": "ws",
@@ -892,6 +890,10 @@
       {
         "protocol": "blackhole",
         "tag": "block"
+      },
+      {
+        "protocol": "dns",
+        "tag": "dns-out"
       }
     ],
     "remarks": "⚡️Авто обход глушилок LTE",
@@ -921,24 +923,31 @@
         {
           "type": "field",
           "inboundTag": [
-            "domestic_dns"
+            "dns"
+          ],
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "port": "53",
+          "outboundTag": "dns-out"
+        },
+        {
+          "type": "field",
+          "protocol": [
+            "bittorrent"
           ],
           "outboundTag": "direct"
         },
         {
           "type": "field",
           "ip": [
-            "1.1.1.1",
-            "8.8.8.8"
+            "10.0.0.0/8",
+            "172.16.0.0/12",
+            "192.168.0.0/16",
+            "169.254.0.0/16"
           ],
           "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "inboundTag": [
-            "dns"
-          ],
-          "balancerTag": "auto-best"
         },
         {
           "domain": [
@@ -1476,11 +1485,10 @@
         "destination": "http://www.gstatic.com/generate_204",
         "httpMethod": "HEAD",
         "interval": "1m",
-        "sampling": 2,
-        "timeout": "5s"
+        "sampling": 3,
+        "timeout": "10s"
       },
       "subjectSelector": [
-        "🇷🇺LTE #1 | Все операторы",
         "🇷🇺LTE #2 | Все операторы",
         "🇷🇺LTE #3 | Все операторы",
         "🇷🇺 LTE #4 | Все операторы",
@@ -1495,7 +1503,18 @@
     "dns": {
       "servers": [
         {
-          "address": "https://8.8.8.8/dns-query",
+          "tag": "proxy_hosts_dns",
+          "address": "localhost",
+          "domains": [
+            "domain:userapie.site",
+            "domain:vkapi.site",
+            "domain:n7node.site",
+            "domain:selcdn.net"
+          ],
+          "skipFallback": true
+        },
+        {
+          "address": "localhost",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4",
           "domains": [
@@ -2066,87 +2085,12 @@
           "metadataOnly": false
         },
         "tag": "http"
-      },
-      {
-        "listen": "127.0.0.1",
-        "port": 10803,
-        "protocol": "dokodemo-door",
-        "settings": {
-          "address": "127.0.0.1",
-          "network": "tcp,udp",
-          "port": 0
-        },
-        "tag": "entry-whitelist-fallback"
       }
     ],
     "log": {
       "loglevel": "warning"
     },
     "outbounds": [
-      {
-        "protocol": "vmess",
-        "streamSettings": {
-          "tlsSettings": {
-            "fingerprint": "firefox",
-            "serverName": "renderer-stream-1-794.mirra.now"
-          },
-          "network": "ws",
-          "security": "tls",
-          "wsSettings": {
-            "path": "/api/v1/gpu-stream/socket",
-            "headers": {
-              "Host": "renderer-stream-1-794.mirra.now"
-            }
-          }
-        },
-        "settings": {
-          "vnext": [
-            {
-              "address": "renderer-stream-1-794.mirra.now",
-              "port": 443,
-              "users": [
-                {
-                  "security": "auto",
-                  "level": 8,
-                  "alterId": 0,
-                  "id": "b8a8d84a-56d0-4bd0-a8a5-b6d674216719"
-                }
-              ]
-            }
-          ]
-        },
-        "tag": "Нидерланды"
-      },
-      {
-        "tag": "🇷🇺LTE #1 | Все операторы",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "78.159.246.108",
-              "port": 43000,
-              "users": [
-                {
-                  "id": "63b4b60b-1fa7-4d38-9641-455955a24699",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "fingerprint": "chrome",
-            "serverName": "iv.kommersant.ru",
-            "publicKey": "BAcGc4cb6T_WR8FjRfA4T2H6OK17oSuyFXX4y6cFr24",
-            "shortId": "20b665f8",
-            "spiderX": "/"
-          }
-        }
-      },
       {
         "tag": "🇷🇺LTE #2 | Все операторы",
         "protocol": "vless",
@@ -2460,6 +2404,10 @@
       {
         "protocol": "blackhole",
         "tag": "block"
+      },
+      {
+        "protocol": "dns",
+        "tag": "dns-out"
       }
     ],
     "remarks": "⚡️⚡️Авто LTE ТЕСТ",
@@ -2467,7 +2415,6 @@
       "balancers": [
         {
           "selector": [
-            "🇷🇺LTE #1 | Все операторы",
             "🇷🇺LTE #2 | Все операторы",
             "🇷🇺LTE #3 | Все операторы",
             "🇷🇺 LTE #4 | Все операторы",
@@ -2482,7 +2429,7 @@
             "type": "leastPing"
           },
           "tag": "auto-best-test",
-          "fallbackTag": "Нидерланды"
+          "fallbackTag": "🇷🇺LTE #2 | Все операторы"
         }
       ],
       "domainMatcher": "hybrid",
@@ -2491,24 +2438,31 @@
         {
           "type": "field",
           "inboundTag": [
-            "domestic_dns"
+            "dns"
+          ],
+          "balancerTag": "auto-best-test"
+        },
+        {
+          "type": "field",
+          "port": "53",
+          "outboundTag": "dns-out"
+        },
+        {
+          "type": "field",
+          "protocol": [
+            "bittorrent"
           ],
           "outboundTag": "direct"
         },
         {
           "type": "field",
           "ip": [
-            "1.1.1.1",
-            "8.8.8.8"
+            "10.0.0.0/8",
+            "172.16.0.0/12",
+            "192.168.0.0/16",
+            "169.254.0.0/16"
           ],
           "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "inboundTag": [
-            "dns"
-          ],
-          "balancerTag": "auto-best-test"
         },
         {
           "domain": [
@@ -3044,6 +2998,14 @@
     "routing": {
       "rules": [
         {
+          "ip": [
+            "198.18.0.2",
+            "10.0.0.2"
+          ],
+          "type": "field",
+          "outboundTag": "dns-out"
+        },
+        {
           "type": "field",
           "ip": [
             "10.0.0.0/8",
@@ -3089,14 +3051,6 @@
           "outboundTag": "dns-out"
         },
         {
-          "ip": [
-            "198.18.0.2",
-            "10.0.0.2"
-          ],
-          "type": "field",
-          "outboundTag": "dns-out"
-        },
-        {
           "type": "field",
           "network": "tcp",
           "outboundTag": "💫 Игровой белый интернет",
@@ -3105,14 +3059,7 @@
         {
           "type": "field",
           "inboundTag": [
-            "domestic_dns"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "inboundTag": [
-            "remote_dns"
+            "dns"
           ],
           "outboundTag": "💫 Игровой белый интернет"
         },
@@ -3121,13 +3068,6 @@
           "protocol": [
             "bittorrent"
           ],
-          "outboundTag": "direct"
-        },
-        {
-          "inboundTag": [
-            "wg_bootstrap_dns"
-          ],
-          "type": "field",
           "outboundTag": "direct"
         },
         {
@@ -4236,7 +4176,8 @@
       ],
       "queryStrategy": "UseIPv4",
       "disableFallbackIfMatch": true,
-      "useSystemHosts": false
+      "useSystemHosts": false,
+      "tag": "dns"
     },
     "policy": {
       "system": {
@@ -4272,6 +4213,14 @@
   {
     "routing": {
       "rules": [
+        {
+          "ip": [
+            "198.18.0.2",
+            "10.0.0.2"
+          ],
+          "type": "field",
+          "outboundTag": "dns-out"
+        },
         {
           "type": "field",
           "ip": [
@@ -4318,25 +4267,10 @@
           "outboundTag": "dns-out"
         },
         {
-          "ip": [
-            "198.18.0.2",
-            "10.0.0.2"
-          ],
-          "type": "field",
-          "outboundTag": "dns-out"
-        },
-        {
           "type": "field",
           "network": "tcp",
           "outboundTag": "🇳🇱 Обход глушилок LTE",
           "port": "853"
-        },
-        {
-          "type": "field",
-          "inboundTag": [
-            "domestic_dns"
-          ],
-          "outboundTag": "direct"
         },
         {
           "type": "field",
@@ -4350,13 +4284,6 @@
           "protocol": [
             "bittorrent"
           ],
-          "outboundTag": "direct"
-        },
-        {
-          "inboundTag": [
-            "wg_bootstrap_dns"
-          ],
-          "type": "field",
           "outboundTag": "direct"
         },
         {
@@ -5506,6 +5433,14 @@
     "routing": {
       "rules": [
         {
+          "ip": [
+            "198.18.0.2",
+            "10.0.0.2"
+          ],
+          "type": "field",
+          "outboundTag": "dns-out"
+        },
+        {
           "type": "field",
           "ip": [
             "10.0.0.0/8",
@@ -5551,25 +5486,10 @@
           "outboundTag": "dns-out"
         },
         {
-          "ip": [
-            "198.18.0.2",
-            "10.0.0.2"
-          ],
-          "type": "field",
-          "outboundTag": "dns-out"
-        },
-        {
           "type": "field",
           "network": "tcp",
           "outboundTag": "🇺🇸 Обход глушилок LTE",
           "port": "853"
-        },
-        {
-          "type": "field",
-          "inboundTag": [
-            "domestic_dns"
-          ],
-          "outboundTag": "direct"
         },
         {
           "type": "field",
@@ -5583,13 +5503,6 @@
           "protocol": [
             "bittorrent"
           ],
-          "outboundTag": "direct"
-        },
-        {
-          "inboundTag": [
-            "wg_bootstrap_dns"
-          ],
-          "type": "field",
           "outboundTag": "direct"
         },
         {
@@ -6739,6 +6652,14 @@
     "routing": {
       "rules": [
         {
+          "ip": [
+            "198.18.0.2",
+            "10.0.0.2"
+          ],
+          "type": "field",
+          "outboundTag": "dns-out"
+        },
+        {
           "type": "field",
           "ip": [
             "10.0.0.0/8",
@@ -6784,25 +6705,10 @@
           "outboundTag": "dns-out"
         },
         {
-          "ip": [
-            "198.18.0.2",
-            "10.0.0.2"
-          ],
-          "type": "field",
-          "outboundTag": "dns-out"
-        },
-        {
           "type": "field",
           "network": "tcp",
           "outboundTag": "🇩🇪 Обход глушилок LTE",
           "port": "853"
-        },
-        {
-          "type": "field",
-          "inboundTag": [
-            "domestic_dns"
-          ],
-          "outboundTag": "direct"
         },
         {
           "type": "field",
@@ -6816,13 +6722,6 @@
           "protocol": [
             "bittorrent"
           ],
-          "outboundTag": "direct"
-        },
-        {
-          "inboundTag": [
-            "wg_bootstrap_dns"
-          ],
-          "type": "field",
           "outboundTag": "direct"
         },
         {
@@ -7336,7 +7235,7 @@
             "fingerprint": "firefox",
             "serverName": "renderer-stream-2-112.mirra.now",
             "alpn": [
-              "h2"
+              "http/1.1"
             ]
           },
           "network": "ws",
@@ -7975,6 +7874,14 @@
     "routing": {
       "rules": [
         {
+          "ip": [
+            "198.18.0.2",
+            "10.0.0.2"
+          ],
+          "type": "field",
+          "outboundTag": "dns-out"
+        },
+        {
           "type": "field",
           "ip": [
             "10.0.0.0/8",
@@ -8020,25 +7927,10 @@
           "outboundTag": "dns-out"
         },
         {
-          "ip": [
-            "198.18.0.2",
-            "10.0.0.2"
-          ],
-          "type": "field",
-          "outboundTag": "dns-out"
-        },
-        {
           "type": "field",
           "network": "tcp",
           "outboundTag": "🇩🇪 Обход глушилок LTE 2",
           "port": "853"
-        },
-        {
-          "type": "field",
-          "inboundTag": [
-            "domestic_dns"
-          ],
-          "outboundTag": "direct"
         },
         {
           "type": "field",
@@ -8052,13 +7944,6 @@
           "protocol": [
             "bittorrent"
           ],
-          "outboundTag": "direct"
-        },
-        {
-          "inboundTag": [
-            "wg_bootstrap_dns"
-          ],
-          "type": "field",
           "outboundTag": "direct"
         },
         {
@@ -8572,7 +8457,7 @@
             "fingerprint": "firefox",
             "serverName": "renderer-stream-2-86.mirra.systems",
             "alpn": [
-              "h2"
+              "http/1.1"
             ]
           },
           "network": "ws",
@@ -9211,6 +9096,14 @@
     "routing": {
       "rules": [
         {
+          "ip": [
+            "198.18.0.2",
+            "10.0.0.2"
+          ],
+          "type": "field",
+          "outboundTag": "dns-out"
+        },
+        {
           "type": "field",
           "ip": [
             "10.0.0.0/8",
@@ -9256,14 +9149,6 @@
           "outboundTag": "dns-out"
         },
         {
-          "ip": [
-            "198.18.0.2",
-            "10.0.0.2"
-          ],
-          "type": "field",
-          "outboundTag": "dns-out"
-        },
-        {
           "type": "field",
           "network": "tcp",
           "outboundTag": "🇷🇺 Обход РЕЗЕРВ LTE (тг не раб)",
@@ -9272,14 +9157,7 @@
         {
           "type": "field",
           "inboundTag": [
-            "domestic_dns"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "inboundTag": [
-            "remote_dns"
+            "dns"
           ],
           "outboundTag": "🇷🇺 Обход РЕЗЕРВ LTE (тг не раб)"
         },
@@ -9288,13 +9166,6 @@
           "protocol": [
             "bittorrent"
           ],
-          "outboundTag": "direct"
-        },
-        {
-          "inboundTag": [
-            "wg_bootstrap_dns"
-          ],
-          "type": "field",
           "outboundTag": "direct"
         },
         {
@@ -9808,7 +9679,7 @@
             "fingerprint": "firefox",
             "serverName": "renderer-stream-5-13.mirra.now",
             "alpn": [
-              "h2"
+              "http/1.1"
             ]
           },
           "network": "ws",
@@ -10409,7 +10280,8 @@
       ],
       "queryStrategy": "UseIPv4",
       "disableFallbackIfMatch": true,
-      "useSystemHosts": false
+      "useSystemHosts": false,
+      "tag": "dns"
     },
     "policy": {
       "system": {
@@ -10528,8 +10400,6 @@
               "uplinkHTTPMethod": "GET",
               "sessionIDKey": "sid",
               "scMinPostsIntervalMs": "0",
-              "SessionIDPlacement": "query",
-              "SessionIDKey": "sid",
               "xPaddingBytes": "48-256",
               "xmux": {
                 "maxConnections": "16-32",
@@ -10589,27 +10459,6 @@
     "routing": {
       "rules": [
         {
-          "inboundTag": [
-            "wg_bootstrap_dns"
-          ],
-          "type": "field",
-          "outboundTag": "direct"
-        },
-        {
-          "inboundTag": [
-            "dns-premium"
-          ],
-          "outboundTag": "direct",
-          "type": "field"
-        },
-        {
-          "type": "field",
-          "inboundTag": [
-            "domestic_dns"
-          ],
-          "outboundTag": "direct"
-        },
-        {
           "type": "field",
           "outboundTag": "proxy",
           "inboundTag": [
@@ -10620,6 +10469,23 @@
           "port": "53",
           "type": "field",
           "outboundTag": "dns-out"
+        },
+        {
+          "type": "field",
+          "protocol": [
+            "bittorrent"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "10.0.0.0/8",
+            "172.16.0.0/12",
+            "192.168.0.0/16",
+            "169.254.0.0/16"
+          ],
+          "outboundTag": "direct"
         },
         {
           "network": "tcp",
@@ -10638,8 +10504,8 @@
         "destination": "http://www.gstatic.com/generate_204",
         "httpMethod": "HEAD",
         "interval": "1m",
-        "sampling": 2,
-        "timeout": "5s"
+        "sampling": 3,
+        "timeout": "10s"
       },
       "subjectSelector": [
         "🇦🇹 Австрия",
@@ -10658,6 +10524,18 @@
       "queryStrategy": "UseIPv4",
       "servers": [
         {
+          "tag": "proxy_hosts_dns",
+          "address": "localhost",
+          "domains": [
+            "domain:harborstudio.me",
+            "domain:orbitgazette.art",
+            "domain:thistlemeadow.me",
+            "domain:northgazette.org",
+            "domain:dovebobbin.net"
+          ],
+          "skipFallback": true
+        },
+        {
           "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
@@ -10669,7 +10547,8 @@
         }
       ],
       "disableFallbackIfMatch": true,
-      "useSystemHosts": false
+      "useSystemHosts": false,
+      "tag": "dns"
     },
     "inbounds": [
       {
@@ -10681,13 +10560,13 @@
           "udp": true
         },
         "sniffing": {
+          "enabled": true,
+          "routeOnly": true,
           "destOverride": [
             "http",
             "tls",
             "quic"
-          ],
-          "enabled": false,
-          "routeOnly": false
+          ]
         },
         "tag": "socks"
       },
@@ -10699,26 +10578,15 @@
           "allowTransparent": false
         },
         "sniffing": {
+          "enabled": true,
+          "routeOnly": true,
           "destOverride": [
             "http",
             "tls",
             "quic"
-          ],
-          "enabled": false,
-          "routeOnly": false
+          ]
         },
         "tag": "http"
-      },
-      {
-        "listen": "127.0.0.1",
-        "port": 10803,
-        "protocol": "dokodemo-door",
-        "settings": {
-          "address": "127.0.0.1",
-          "network": "tcp,udp",
-          "port": 0
-        },
-        "tag": "entry-whitelist-fallback"
       }
     ],
     "log": {
@@ -11032,13 +10900,17 @@
       {
         "protocol": "blackhole",
         "tag": "block"
+      },
+      {
+        "protocol": "dns",
+        "tag": "dns-out"
       }
     ],
-    "remarks": "⚡️Авто WI-Fi ПК/TV35",
+    "remarks": "⚡️Авто WI-Fi ПК/TV23332",
     "routing": {
       "balancers": [
         {
-          "fallbackTag": "direct",
+          "fallbackTag": "🇦🇹 Австрия",
           "selector": [
             "🇦🇹 Австрия",
             "🇵🇱 Польша",
@@ -11060,6 +10932,28 @@
       "domainMatcher": "hybrid",
       "domainStrategy": "IPIfNonMatch",
       "rules": [
+        {
+          "type": "field",
+          "inboundTag": [
+            "dns"
+          ],
+          "balancerTag": "Balancer"
+        },
+        {
+          "type": "field",
+          "port": "53",
+          "outboundTag": "dns-out"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "10.0.0.0/8",
+            "172.16.0.0/12",
+            "192.168.0.0/16",
+            "169.254.0.0/16"
+          ],
+          "outboundTag": "direct"
+        },
         {
           "type": "field",
           "domain": [
@@ -11602,27 +11496,6 @@
     }
   },
   {
-    "burstObservatory": {
-      "pingConfig": {
-        "destination": "http://www.gstatic.com/generate_204",
-        "httpMethod": "HEAD",
-        "interval": "1m",
-        "sampling": 2,
-        "timeout": "5s"
-      },
-      "subjectSelector": [
-        "🇦🇹 Австрия",
-        "🇵🇱 Польша",
-        "🇫🇷 Франция",
-        "🇬🇧 Великобритания",
-        "🇺🇸 США",
-        "🇩🇪 Германия",
-        "🇳🇱 Нидерланды",
-        "🇫🇮 Финляндия",
-        "🇸🇪 Швеция",
-        "🇮🇹 Италия"
-      ]
-    },
     "dns": {
       "queryStrategy": "UseIPv4",
       "servers": [
@@ -11638,7 +11511,8 @@
         }
       ],
       "disableFallbackIfMatch": true,
-      "useSystemHosts": false
+      "useSystemHosts": false,
+      "tag": "dns"
     },
     "inbounds": [
       {
@@ -11650,13 +11524,13 @@
           "udp": true
         },
         "sniffing": {
+          "enabled": true,
+          "routeOnly": true,
           "destOverride": [
             "http",
             "tls",
             "quic"
-          ],
-          "enabled": false,
-          "routeOnly": false
+          ]
         },
         "tag": "socks"
       },
@@ -11668,26 +11542,15 @@
           "allowTransparent": false
         },
         "sniffing": {
+          "enabled": true,
+          "routeOnly": true,
           "destOverride": [
             "http",
             "tls",
             "quic"
-          ],
-          "enabled": false,
-          "routeOnly": false
+          ]
         },
         "tag": "http"
-      },
-      {
-        "listen": "127.0.0.1",
-        "port": 10803,
-        "protocol": "dokodemo-door",
-        "settings": {
-          "address": "127.0.0.1",
-          "network": "tcp,udp",
-          "port": 0
-        },
-        "tag": "entry-whitelist-fallback"
       }
     ],
     "log": {
@@ -11730,34 +11593,39 @@
       {
         "protocol": "blackhole",
         "tag": "block"
+      },
+      {
+        "protocol": "dns",
+        "tag": "dns-out"
       }
     ],
     "remarks": "Лучший Wi-Fi",
     "routing": {
-      "balancers": [
-        {
-          "fallbackTag": "direct",
-          "selector": [
-            "🇦🇹 Австрия",
-            "🇵🇱 Польша",
-            "🇫🇷 Франция",
-            "🇬🇧 Великобритания",
-            "🇺🇸 США",
-            "🇩🇪 Германия",
-            "🇳🇱 Нидерланды",
-            "🇫🇮 Финляндия",
-            "🇸🇪 Швеция",
-            "🇮🇹 Италия"
-          ],
-          "strategy": {
-            "type": "leastPing"
-          },
-          "tag": "Balancer"
-        }
-      ],
       "domainMatcher": "hybrid",
       "domainStrategy": "IPIfNonMatch",
       "rules": [
+        {
+          "type": "field",
+          "inboundTag": [
+            "dns"
+          ],
+          "outboundTag": "Лучший Wi-Fi"
+        },
+        {
+          "type": "field",
+          "port": "53",
+          "outboundTag": "dns-out"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "10.0.0.0/8",
+            "172.16.0.0/12",
+            "192.168.0.0/16",
+            "169.254.0.0/16"
+          ],
+          "outboundTag": "direct"
+        },
         {
           "type": "field",
           "domain": [
@@ -12278,7 +12146,7 @@
             "domain:okkoapi.tv",
             "domain:onelya.ru"
           ],
-          "outboundTag": "Лучший Wi-Fi"
+          "outboundTag": "direct"
         },
         {
           "outboundTag": "direct",
