@@ -1556,7 +1556,6 @@
         "timeout": "10s"
       },
       "subjectSelector": [
-        "🇷🇺LTE #1 | Все операторы",
         "🇷🇺LTE #2 | Все операторы",
         "🇷🇺LTE #3 | Все операторы",
         "🇷🇺 LTE #4 | Все операторы",
@@ -1616,36 +1615,6 @@
       "loglevel": "warning"
     },
     "outbounds": [
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "78.159.246.108",
-              "port": 43000,
-              "users": [
-                {
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision",
-                  "id": "63b4b60b-1fa7-4d38-9641-455955a24699"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "fingerprint": "chrome",
-            "publicKey": "BAcGc4cb6T_WR8FjRfA4T2H6OK17oSuyFXX4y6cFr24",
-            "serverName": "iv.kommersant.ru",
-            "shortId": "20b665f8",
-            "spiderX": "/"
-          }
-        },
-        "tag": "🇷🇺LTE #1 | Все операторы"
-      },
       {
         "protocol": "vless",
         "settings": {
@@ -2095,7 +2064,6 @@
       "balancers": [
         {
           "selector": [
-            "🇷🇺LTE #1 | Все операторы",
             "🇷🇺LTE #2 | Все операторы",
             "🇷🇺LTE #3 | Все операторы",
             "🇷🇺 LTE #4 | Все операторы",
@@ -2108,7 +2076,7 @@
             "type": "leastPing"
           },
           "tag": "auto-best",
-          "fallbackTag": "🇷🇺LTE #1 | Все операторы"
+          "fallbackTag": "🇷🇺LTE #2 | Все операторы"
         }
       ],
       "domainMatcher": "hybrid",
