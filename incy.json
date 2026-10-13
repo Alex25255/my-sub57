@@ -5,8 +5,8 @@
         "destination": "http://www.gstatic.com/generate_204",
         "httpMethod": "HEAD",
         "interval": "1m",
-        "sampling": 2,
-        "timeout": "5s"
+        "sampling": 3,
+        "timeout": "10s"
       },
       "subjectSelector": [
         "Нидерланды",
@@ -22,7 +22,16 @@
     "dns": {
       "servers": [
         {
-          "address": "https://8.8.8.8/dns-query",
+          "tag": "proxy_hosts_dns",
+          "address": "localhost",
+          "domains": [
+            "domain:mirra.now",
+            "domain:mirra.systems"
+          ],
+          "skipFallback": true
+        },
+        {
+          "address": "localhost",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4",
           "domains": [
@@ -892,6 +901,10 @@
       {
         "protocol": "blackhole",
         "tag": "block"
+      },
+      {
+        "protocol": "dns",
+        "tag": "dns-out"
       }
     ],
     "remarks": "⚡️Авто обход глушилок LTE",
@@ -921,24 +934,21 @@
         {
           "type": "field",
           "inboundTag": [
-            "domestic_dns"
+            "dns"
           ],
-          "outboundTag": "direct"
+          "balancerTag": "auto-best"
         },
         {
           "type": "field",
-          "ip": [
-            "1.1.1.1",
-            "8.8.8.8"
-          ],
-          "outboundTag": "direct"
+          "port": "53",
+          "outboundTag": "dns-out"
         },
         {
           "type": "field",
           "inboundTag": [
-            "dns"
+            "domestic_dns"
           ],
-          "balancerTag": "auto-best"
+          "outboundTag": "direct"
         },
         {
           "domain": [
@@ -1476,8 +1486,8 @@
         "destination": "http://www.gstatic.com/generate_204",
         "httpMethod": "HEAD",
         "interval": "1m",
-        "sampling": 2,
-        "timeout": "5s"
+        "sampling": 3,
+        "timeout": "10s"
       },
       "subjectSelector": [
         "🇷🇺LTE #2 | Все операторы",
@@ -1494,7 +1504,18 @@
     "dns": {
       "servers": [
         {
-          "address": "https://8.8.8.8/dns-query",
+          "tag": "proxy_hosts_dns",
+          "address": "localhost",
+          "domains": [
+            "domain:userapie.site",
+            "domain:vkapi.site",
+            "domain:n7node.site",
+            "domain:selcdn.net"
+          ],
+          "skipFallback": true
+        },
+        {
+          "address": "localhost",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4",
           "domains": [
@@ -2395,6 +2416,10 @@
       {
         "protocol": "blackhole",
         "tag": "block"
+      },
+      {
+        "protocol": "dns",
+        "tag": "dns-out"
       }
     ],
     "remarks": "⚡️⚡️Авто LTE ТЕСТ",
@@ -2425,24 +2450,21 @@
         {
           "type": "field",
           "inboundTag": [
-            "domestic_dns"
+            "dns"
           ],
-          "outboundTag": "direct"
+          "balancerTag": "auto-best-test"
         },
         {
           "type": "field",
-          "ip": [
-            "1.1.1.1",
-            "8.8.8.8"
-          ],
-          "outboundTag": "direct"
+          "port": "53",
+          "outboundTag": "dns-out"
         },
         {
           "type": "field",
           "inboundTag": [
-            "dns"
+            "domestic_dns"
           ],
-          "balancerTag": "auto-best-test"
+          "outboundTag": "direct"
         },
         {
           "domain": [
@@ -10572,8 +10594,8 @@
         "destination": "http://www.gstatic.com/generate_204",
         "httpMethod": "HEAD",
         "interval": "1m",
-        "sampling": 2,
-        "timeout": "5s"
+        "sampling": 3,
+        "timeout": "10s"
       },
       "subjectSelector": [
         "🇦🇹 Австрия",
@@ -10592,6 +10614,18 @@
       "queryStrategy": "UseIPv4",
       "servers": [
         {
+          "tag": "proxy_hosts_dns",
+          "address": "localhost",
+          "domains": [
+            "domain:harborstudio.me",
+            "domain:orbitgazette.art",
+            "domain:thistlemeadow.me",
+            "domain:northgazette.org",
+            "domain:dovebobbin.net"
+          ],
+          "skipFallback": true
+        },
+        {
           "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
@@ -10603,7 +10637,8 @@
         }
       ],
       "disableFallbackIfMatch": true,
-      "useSystemHosts": false
+      "useSystemHosts": false,
+      "tag": "dns"
     },
     "inbounds": [
       {
@@ -10966,6 +11001,10 @@
       {
         "protocol": "blackhole",
         "tag": "block"
+      },
+      {
+        "protocol": "dns",
+        "tag": "dns-out"
       }
     ],
     "remarks": "⚡️Авто WI-Fi ПК/TV",
@@ -10994,6 +11033,18 @@
       "domainMatcher": "hybrid",
       "domainStrategy": "IPIfNonMatch",
       "rules": [
+        {
+          "type": "field",
+          "inboundTag": [
+            "dns"
+          ],
+          "balancerTag": "Balancer"
+        },
+        {
+          "type": "field",
+          "port": "53",
+          "outboundTag": "dns-out"
+        },
         {
           "type": "field",
           "domain": [
@@ -11541,8 +11592,8 @@
         "destination": "http://www.gstatic.com/generate_204",
         "httpMethod": "HEAD",
         "interval": "1m",
-        "sampling": 2,
-        "timeout": "5s"
+        "sampling": 3,
+        "timeout": "10s"
       },
       "subjectSelector": [
         "🇦🇹 Австрия",
@@ -11572,7 +11623,8 @@
         }
       ],
       "disableFallbackIfMatch": true,
-      "useSystemHosts": false
+      "useSystemHosts": false,
+      "tag": "dns"
     },
     "inbounds": [
       {
@@ -11664,6 +11716,10 @@
       {
         "protocol": "blackhole",
         "tag": "block"
+      },
+      {
+        "protocol": "dns",
+        "tag": "dns-out"
       }
     ],
     "remarks": "Лучший Wi-Fi",
@@ -11692,6 +11748,18 @@
       "domainMatcher": "hybrid",
       "domainStrategy": "IPIfNonMatch",
       "rules": [
+        {
+          "type": "field",
+          "inboundTag": [
+            "dns"
+          ],
+          "balancerTag": "Balancer"
+        },
+        {
+          "type": "field",
+          "port": "53",
+          "outboundTag": "dns-out"
+        },
         {
           "type": "field",
           "domain": [
