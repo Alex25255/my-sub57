@@ -2447,8 +2447,7 @@
           "strategy": {
             "type": "leastPing"
           },
-          "tag": "auto-best-test",
-          "fallbackTag": "🇷🇺LTE #1 | Все операторы"
+          "tag": "auto-best-test"
         }
       ],
       "domainMatcher": "hybrid",
