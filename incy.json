@@ -10906,7 +10906,7 @@
         "tag": "dns-out"
       }
     ],
-    "remarks": "⚡️Авто WI-Fi ПК/TV",
+    "remarks": "⚡️Авто WI-Fi ПК/TV23332",
     "routing": {
       "balancers": [
         {
@@ -11609,7 +11609,7 @@
           "inboundTag": [
             "dns"
           ],
-          "outboundTag": "Лучший Wi-Fi333"
+          "outboundTag": "Лучший Wi-Fi"
         },
         {
           "type": "field",
