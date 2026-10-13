@@ -1,5 +1,5 @@
 {
-  "remarks": "⚡️ LTE Авто | Все операторы",
+  "remarks": "⚡️ LTE Авто ТЕСТ",
   "log": {
     "loglevel": "warning"
   },
@@ -433,7 +433,7 @@
         "strategy": {
           "type": "leastPing"
         },
-        "fallbackTag": "LTE-03"
+        "fallbackTag": "LTE-08"
       }
     ],
     "rules": [
