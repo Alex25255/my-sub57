@@ -20,7 +20,7 @@
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
-          "domains": [
+          "domain": [
             "domain:mirra.now",
             "domain:mirra.systems"
           ],
@@ -30,7 +30,7 @@
           "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
-          "domains": [
+          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -779,7 +779,7 @@
         }
       ],
       "domainMatcher": "hybrid",
-      "domainStrategy": "AsIs",
+      "domaintrategy": "AsIs",
       "rules": [
         {
           "type": "field",
@@ -1373,7 +1373,7 @@
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
-          "domains": [
+          "domain": [
             "domain:userapie.site",
             "domain:vkapi.site",
             "domain:n7node.site",
@@ -1385,7 +1385,7 @@
           "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
-          "domains": [
+          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -2444,7 +2444,7 @@
         }
       ],
       "domainMatcher": "hybrid",
-      "domainStrategy": "AsIs",
+      "domaintrategy": "AsIs",
       "rules": [
         {
           "type": "field",
@@ -3084,7 +3084,7 @@
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
-          "domains": [
+          "domain": [
             "domain:mirra.systems"
           ],
           "skipFallback": true
@@ -3093,7 +3093,7 @@
           "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
-          "domains": [
+          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -3676,7 +3676,7 @@
     "remarks": "🇩🇪 Обход LTE",
     "routing": {
       "domainMatcher": "hybrid",
-      "domainStrategy": "AsIs",
+      "domaintrategy": "AsIs",
       "rules": [
         {
           "type": "field",
@@ -4268,7 +4268,7 @@
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
-          "domains": [
+          "domain": [
             "domain:mirra.systems"
           ],
           "skipFallback": true
@@ -4277,7 +4277,7 @@
           "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
-          "domains": [
+          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -4857,7 +4857,7 @@
     "remarks": "🇳🇱 Обход LTE",
     "routing": {
       "domainMatcher": "hybrid",
-      "domainStrategy": "AsIs",
+      "domaintrategy": "AsIs",
       "rules": [
         {
           "type": "field",
@@ -5449,7 +5449,7 @@
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
-          "domains": [
+          "domain": [
             "domain:mirra.systems"
           ],
           "skipFallback": true
@@ -5458,7 +5458,7 @@
           "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
-          "domains": [
+          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -6038,7 +6038,7 @@
     "remarks": "🇺🇸 Обход LTE",
     "routing": {
       "domainMatcher": "hybrid",
-      "domainStrategy": "AsIs",
+      "domaintrategy": "AsIs",
       "rules": [
         {
           "type": "field",
@@ -6630,7 +6630,7 @@
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
-          "domains": [
+          "domain": [
             "domain:mirra.systems"
           ],
           "skipFallback": true
@@ -6639,7 +6639,7 @@
           "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
-          "domains": [
+          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -7219,7 +7219,7 @@
     "remarks": "🇷🇺 Обход РЕЗЕРВ LTE",
     "routing": {
       "domainMatcher": "hybrid",
-      "domainStrategy": "AsIs",
+      "domaintrategy": "AsIs",
       "rules": [
         {
           "type": "field",
@@ -7811,7 +7811,7 @@
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
-          "domains": [
+          "domain": [
             "domain:mirra.systems"
           ],
           "skipFallback": true
@@ -7820,7 +7820,7 @@
           "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
-          "domains": [
+          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -8396,7 +8396,7 @@
     "remarks": "🚀 Wi-Fi лучший",
     "routing": {
       "domainMatcher": "hybrid",
-      "domainStrategy": "AsIs",
+      "domaintrategy": "AsIs",
       "rules": [
         {
           "type": "field",
