@@ -551,6 +551,11 @@
           "skipFallback": true
         },
         {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        },
+        {
           "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
@@ -788,6 +793,16 @@
             "77.88.8.1"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "balancerTag": "auto-best"
         },
         {
           "type": "field",
@@ -1906,6 +1921,11 @@
           "skipFallback": true
         },
         {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        },
+        {
           "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
@@ -2453,6 +2473,16 @@
             "77.88.8.1"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "balancerTag": "auto-best"
         },
         {
           "type": "field",
@@ -3614,6 +3644,11 @@
           "skipFallback": true
         },
         {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        },
+        {
           "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
@@ -3829,6 +3864,16 @@
             "77.88.8.1"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "balancerTag": "auto-best"
         },
         {
           "type": "field",
@@ -4998,6 +5043,11 @@
           "skipFallback": true
         },
         {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        },
+        {
           "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
@@ -5069,6 +5119,16 @@
             "77.88.8.1"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "outboundTag": "🇩🇪 Обход LTE"
         },
         {
           "type": "field",
@@ -6182,6 +6242,11 @@
           "skipFallback": true
         },
         {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        },
+        {
           "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
@@ -6250,6 +6315,16 @@
             "77.88.8.1"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "outboundTag": "🇳🇱 Обход LTE"
         },
         {
           "type": "field",
@@ -7363,6 +7438,11 @@
           "skipFallback": true
         },
         {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        },
+        {
           "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
@@ -7431,6 +7511,16 @@
             "77.88.8.1"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "outboundTag": "🇺🇸 Обход LTE"
         },
         {
           "type": "field",
@@ -8544,6 +8634,11 @@
           "skipFallback": true
         },
         {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        },
+        {
           "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
@@ -8612,6 +8707,16 @@
             "77.88.8.1"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "outboundTag": "🇷🇺 Обход РЕЗЕРВ LTE"
         },
         {
           "type": "field",
@@ -9725,6 +9830,11 @@
           "skipFallback": true
         },
         {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        },
+        {
           "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
@@ -9789,6 +9899,16 @@
             "77.88.8.1"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "outboundTag": "🚀 Wi-Fi лучший"
         },
         {
           "type": "field",
