@@ -551,6 +551,11 @@
           "skipFallback": true
         },
         {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        },
+        {
           "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
@@ -788,6 +793,16 @@
             "77.88.8.1"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "balancerTag": "auto-best"
         },
         {
           "type": "field",
@@ -1343,6 +1358,488 @@
         {
           "balancerTag": "auto-best",
           "network": "tcp,udp",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "dns": {
+      "queryStrategy": "UseIPv4",
+      "servers": [
+        "https://dns.stealthsurflabs.com/dns-query",
+        "https://8.8.8.8/dns-query",
+        "https://1.1.1.1/dns-query"
+      ]
+    },
+    "inbounds": [
+      {
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "metadataOnly": false,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http",
+        "tag": "http-in"
+      }
+    ],
+    "log": {
+      "loglevel": "warning"
+    },
+    "outbounds": [
+      {
+        "protocol": "shadowsocks",
+        "settings": {
+          "servers": [
+            {
+              "address": "37.18.15.209",
+              "method": "2022-blake3-aes-128-gcm",
+              "password": "i05as93CfW/R+0KCrZbkAQ==:S7lI2MFBH622RDkCu+1D2Q==",
+              "port": 62176
+            }
+          ]
+        },
+        "tag": "proxy"
+      },
+      {
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "UseIPv4"
+        },
+        "streamSettings": {
+          "sockopt": {
+            "tcpNoDelay": true
+          }
+        },
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "settings": {
+          "response": {
+            "type": "http"
+          }
+        },
+        "tag": "block"
+      },
+      {
+        "protocol": "dns",
+        "settings": {},
+        "tag": "dns-out"
+      }
+    ],
+    "remarks": "🔋Обход LTE",
+    "routing": {
+      "domainMatcher": "hybrid",
+      "domainStrategy": "AsIs",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-inbound"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "domain": [
+            "domain:yandex.net"
+          ],
+          "outboundTag": "direct",
+          "type": "field"
+        },
+        {
+          "domain": [
+            "domain:yandex.com"
+          ],
+          "outboundTag": "direct",
+          "type": "field"
+        },
+        {
+          "domain": [
+            "domain:ya.ru"
+          ],
+          "outboundTag": "direct",
+          "type": "field"
+        },
+        {
+          "domain": [
+            "domain:yastatic.net"
+          ],
+          "outboundTag": "direct",
+          "type": "field"
+        },
+        {
+          "domain": [
+            "domain:yandexcloud.net"
+          ],
+          "outboundTag": "direct",
+          "type": "field"
+        },
+        {
+          "domain": [
+            "domain:yandexadservices.com"
+          ],
+          "outboundTag": "direct",
+          "type": "field"
+        },
+        {
+          "domain": [
+            "domain:kinopoisk.ru"
+          ],
+          "outboundTag": "direct",
+          "type": "field"
+        },
+        {
+          "outboundTag": "direct",
+          "protocol": [
+            "bittorrent"
+          ],
+          "type": "field"
+        },
+        {
+          "network": "udp",
+          "outboundTag": "block",
+          "port": "443",
+          "type": "field"
+        },
+        {
+          "domain": [
+            "domain:gosuslugi.ru",
+            "domain:government.ru",
+            "domain:kremlin.ru",
+            "domain:duma.gov.ru",
+            "domain:council.gov.ru",
+            "domain:vybory.gov.ru",
+            "domain:nalog.gov.ru",
+            "domain:nalog.ru",
+            "domain:sfr.gov.ru",
+            "domain:pfr.gov.ru",
+            "domain:mvd.ru",
+            "domain:gibdd.ru",
+            "domain:mchs.gov.ru",
+            "domain:genproc.gov.ru",
+            "domain:rosreestr.gov.ru",
+            "domain:fssp.gov.ru",
+            "domain:fssprus.ru",
+            "domain:sudrf.ru",
+            "domain:mos-gorsud.ru",
+            "domain:vsrf.ru",
+            "domain:arbitr.ru",
+            "domain:pravo.gov.ru",
+            "domain:roskazna.gov.ru",
+            "domain:minfin.gov.ru",
+            "domain:minzdrav.gov.ru",
+            "domain:digital.gov.ru",
+            "domain:rkn.gov.ru",
+            "domain:roskachestvo.gov.ru",
+            "domain:edu.gov.ru",
+            "domain:obrnadzor.gov.ru",
+            "domain:bus.gov.ru",
+            "domain:ofd.gov.ru",
+            "domain:crpt.ru",
+            "domain:honestsign.ru",
+            "domain:dvizhenie1.ru",
+            "domain:moskva-putinu.ru",
+            "domain:rsv.ru",
+            "domain:myrosmol.ru",
+            "domain:tvoyhod.online",
+            "domain:dobro.ru",
+            "domain:onf.ru",
+            "domain:znanierussia.ru",
+            "domain:liza-alert.org",
+            "domain:sreda.gov.ru",
+            "domain:gossluzhba.gov.ru",
+            "domain:glonass.ru",
+            "domain:rosatom.ru",
+            "domain:rosseti.ru",
+            "domain:rosagroleasing.ru",
+            "domain:rosneft.ru",
+            "domain:mos.ru",
+            "domain:emias.info",
+            "domain:mosreg.ru",
+            "domain:gov.spb.ru",
+            "domain:gu.spb.ru",
+            "domain:gorzdrav.spb.ru",
+            "domain:parking.spb.ru",
+            "domain:domclick.ru",
+            "domain:vtb.ru",
+            "domain:vtbreg.ru",
+            "domain:vtb-mobile.ru",
+            "domain:tinkoff.ru",
+            "domain:t-bank.ru",
+            "domain:tbank.ru",
+            "domain:tbank-online.com",
+            "domain:cdn-tinkoff.ru",
+            "domain:alfabank.ru",
+            "domain:alfa.ru",
+            "domain:gazprombank.ru",
+            "domain:gpb.ru",
+            "domain:psbank.ru",
+            "domain:mtsbank.ru",
+            "domain:raiffeisen.ru",
+            "domain:sovcombank.ru",
+            "domain:halvacard.ru",
+            "domain:rshb.ru",
+            "domain:pochtabank.ru",
+            "domain:mkb.ru",
+            "domain:otkritie.ru",
+            "domain:ozonbank.ru",
+            "domain:yandex-bank.net",
+            "domain:yandex-bank.ru",
+            "domain:nspk.ru",
+            "domain:mironline.ru",
+            "domain:mirpay.ru",
+            "domain:privetmir.ru",
+            "domain:yoomoney.ru",
+            "domain:qiwi.com",
+            "domain:qiwi.ru",
+            "domain:cbr.ru",
+            "domain:moex.com",
+            "domain:finuslugi.ru",
+            "domain:mts.ru",
+            "domain:mymts.ru",
+            "domain:mts-link.ru",
+            "domain:beeline.ru",
+            "domain:megafon.ru",
+            "domain:t2.ru",
+            "domain:yota.ru",
+            "domain:rt.ru",
+            "domain:ertelecom.ru",
+            "domain:dom.ru",
+            "domain:motiv.ru",
+            "domain:motivtelecom.ru",
+            "domain:t-mobile.ru",
+            "domain:nextmobile.ru",
+            "domain:pochta.ru",
+            "domain:max.ru",
+            "domain:max.online",
+            "domain:max.app",
+            "domain:oneme.ru",
+            "domain:tamtam.chat",
+            "domain:tt.me",
+            "domain:vk.com",
+            "domain:vk.ru",
+            "domain:vk.me",
+            "domain:vk.video",
+            "domain:vkvideo.ru",
+            "domain:vkplay.ru",
+            "domain:userapi.com",
+            "domain:vkuser.net",
+            "domain:vkuseraudio.net",
+            "domain:vkuservideo.net",
+            "domain:vk-portal.net",
+            "domain:ok.ru",
+            "domain:okcdn.ru",
+            "domain:odnoklassniki.ru",
+            "domain:ok.me",
+            "domain:mail.ru",
+            "domain:imgsmail.ru",
+            "domain:rustore.ru",
+            "domain:dzen.ru",
+            "domain:dzeninfra.ru",
+            "domain:rutube.ru",
+            "domain:rutubelist.ru",
+            "domain:yappy.media",
+            "domain:ruwiki.ru",
+            "domain:pikabu.ru",
+            "domain:livejournal.com",
+            "domain:yandex.ru",
+            "domain:yandex.net",
+            "domain:yandex.com",
+            "domain:ya.ru",
+            "domain:yango.com",
+            "domain:edadeal.ru",
+            "domain:kinopoisk.ru",
+            "domain:yastatic.net",
+            "domain:mradx.net",
+            "domain:ozon.ru",
+            "domain:ozone.ru",
+            "domain:ozonusercontent.com",
+            "domain:wildberries.ru",
+            "domain:wb.ru",
+            "domain:wbbasket.ru",
+            "domain:aliexpress.ru",
+            "domain:lamoda.ru",
+            "domain:lmcdn.ru",
+            "domain:dns-shop.ru",
+            "domain:mvideo.ru",
+            "domain:eldorado.ru",
+            "domain:citilink.ru",
+            "domain:leroymerlin.ru",
+            "domain:lemanapro.ru",
+            "domain:vseinstrumenti.ru",
+            "domain:avito.ru",
+            "domain:autoteka.ru",
+            "domain:youla.ru",
+            "domain:cian.ru",
+            "domain:hh.ru",
+            "domain:hhcdn.ru",
+            "domain:superjob.ru",
+            "domain:rabota.ru",
+            "domain:hrlink.ru",
+            "domain:magnit.ru",
+            "domain:5ka.ru",
+            "domain:pyaterochka.ru",
+            "domain:perekrestok.ru",
+            "domain:chizhik.club",
+            "domain:chizhik.ru",
+            "domain:vprok.ru",
+            "domain:5post.ru",
+            "domain:av.ru",
+            "domain:azbukavkusa.ru",
+            "domain:dixy.ru",
+            "domain:auchan.ru",
+            "domain:spar.ru",
+            "domain:metro-cc.ru",
+            "domain:petrovich.ru",
+            "domain:detmir.ru",
+            "domain:vkusvill.ru",
+            "domain:food.ru",
+            "domain:samokat.ru",
+            "domain:mnogolososya.ru",
+            "domain:vkusnoitochka.ru",
+            "domain:burgerkingrus.ru",
+            "domain:dodopizza.ru",
+            "domain:dodopizza.io",
+            "domain:lentaonline.ru",
+            "domain:lenta.com",
+            "domain:okmarket.ru",
+            "domain:okeydostavka.ru",
+            "domain:slata.ru",
+            "domain:krasyar.ru",
+            "domain:my-victoria.ru",
+            "domain:cdek.ru",
+            "domain:delivery-club.ru",
+            "domain:dostavista.ru",
+            "domain:dellin.ru",
+            "domain:businesslines.ru",
+            "domain:topdelivery.ru",
+            "domain:rzd.ru",
+            "domain:rzd-bonus.ru",
+            "domain:grandtrains.ru",
+            "domain:grandtrain.ru",
+            "domain:aeroflot.ru",
+            "domain:s7.ru",
+            "domain:pobeda.aero",
+            "domain:utair.ru",
+            "domain:rossiya-airlines.com",
+            "domain:uralairlines.ru",
+            "domain:ural-airlines.ru",
+            "domain:redwings.aero",
+            "domain:azimuth.aero",
+            "domain:nordwindairlines.ru",
+            "domain:tutu.ru",
+            "domain:travel2moscow.com",
+            "domain:travelrussia.ru",
+            "domain:otello.ru",
+            "domain:taximaxim.ru",
+            "domain:taxi-maxim.ru",
+            "domain:delimobil.ru",
+            "domain:citydrive.ru",
+            "domain:youdrive.ru",
+            "domain:belkacar.ru",
+            "domain:urentbike.ru",
+            "domain:mosgortrans.ru",
+            "domain:mosmetro.ru",
+            "domain:mosmetro.com",
+            "domain:metro.spb.ru",
+            "domain:spbtransport.info",
+            "domain:2gis.ru",
+            "domain:2gis.com",
+            "domain:gismeteo.ru",
+            "domain:uchi.ru",
+            "domain:dnevnik.ru",
+            "domain:foxford.ru",
+            "domain:skyeng.ru",
+            "domain:resh.edu.ru",
+            "domain:1c.ru",
+            "domain:rg.ru",
+            "domain:ria.ru",
+            "domain:tass.ru",
+            "domain:1tv.ru",
+            "domain:vesti.ru",
+            "domain:smotrim.ru",
+            "domain:ntv.ru",
+            "domain:tnt-online.ru",
+            "domain:ctc.ru",
+            "domain:tv3.ru",
+            "domain:friday.ru",
+            "domain:otr-online.ru",
+            "domain:5-tv.ru",
+            "domain:domashniy.ru",
+            "domain:domashny.ru",
+            "domain:muz-tv.ru",
+            "domain:ren.tv",
+            "domain:spastv.ru",
+            "domain:tvc.ru",
+            "domain:mir24.tv",
+            "domain:matchtv.ru",
+            "domain:vmeste-rf.tv",
+            "domain:tvzvezda.ru",
+            "domain:zvezdaweekly.ru",
+            "domain:vgtrk.ru",
+            "domain:vitrina.tv",
+            "domain:360tv.ru",
+            "domain:dumatv.ru",
+            "domain:solovievlive.ru",
+            "domain:sport24.ru",
+            "domain:radioplayer.ru",
+            "domain:kp.ru",
+            "domain:rbc.ru",
+            "domain:lenta.ru",
+            "domain:gazeta.ru",
+            "domain:kommersant.ru",
+            "domain:vedomosti.ru",
+            "domain:mk.ru",
+            "domain:aif.ru",
+            "domain:iz.ru",
+            "domain:izvestia.ru",
+            "domain:rt.com",
+            "domain:pnp.ru",
+            "domain:rambler.ru",
+            "domain:championat.com",
+            "domain:kion.ru",
+            "domain:ticketland.ru",
+            "domain:okko.tv",
+            "domain:ivi.ru",
+            "domain:ivi.tv",
+            "domain:premier.one",
+            "domain:more.tv",
+            "domain:wink.ru",
+            "domain:litres.ru",
+            "domain:mybook.ru",
+            "domain:medsi.ru",
+            "domain:mamadeti.ru",
+            "domain:cmd-online.ru",
+            "domain:zdrav.expert",
+            "domain:freestylelibre.ru",
+            "domain:medtrum.com",
+            "domain:yuwell.com",
+            "domain:csat.ru",
+            "domain:evotor.ru",
+            "domain:tensor.ru",
+            "domain:kontur.ru",
+            "domain:trueconf.ru",
+            "domain:elta-r.ru",
+            "domain:khl.ru",
+            "domain:s82079.cdn.ngenix.net"
+          ],
+          "outboundTag": "direct",
           "type": "field"
         }
       ]
@@ -1906,6 +2403,11 @@
           "skipFallback": true
         },
         {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        },
+        {
           "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
@@ -2453,6 +2955,16 @@
             "77.88.8.1"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "balancerTag": "auto-best"
         },
         {
           "type": "field",
@@ -3614,6 +4126,11 @@
           "skipFallback": true
         },
         {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        },
+        {
           "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
@@ -3829,6 +4346,16 @@
             "77.88.8.1"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "balancerTag": "auto-best"
         },
         {
           "type": "field",
@@ -4998,6 +5525,11 @@
           "skipFallback": true
         },
         {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        },
+        {
           "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
@@ -5069,6 +5601,16 @@
             "77.88.8.1"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "outboundTag": "🇩🇪 Обход LTE"
         },
         {
           "type": "field",
@@ -6182,6 +6724,11 @@
           "skipFallback": true
         },
         {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        },
+        {
           "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
@@ -6250,6 +6797,16 @@
             "77.88.8.1"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "outboundTag": "🇳🇱 Обход LTE"
         },
         {
           "type": "field",
@@ -7363,6 +7920,11 @@
           "skipFallback": true
         },
         {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        },
+        {
           "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
@@ -7431,6 +7993,16 @@
             "77.88.8.1"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "outboundTag": "🇺🇸 Обход LTE"
         },
         {
           "type": "field",
@@ -8544,6 +9116,11 @@
           "skipFallback": true
         },
         {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        },
+        {
           "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
@@ -8612,6 +9189,16 @@
             "77.88.8.1"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "outboundTag": "🇷🇺 Обход РЕЗЕРВ LTE"
         },
         {
           "type": "field",
@@ -9725,6 +10312,11 @@
           "skipFallback": true
         },
         {
+          "address": "https://1.1.1.1/dns-query",
+          "tag": "cloudflare_dns",
+          "queryStrategy": "UseIPv4"
+        },
+        {
           "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
@@ -9789,6 +10381,16 @@
             "77.88.8.1"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "outboundTag": "🚀 Wi-Fi лучший"
         },
         {
           "type": "field",
