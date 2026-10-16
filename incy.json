@@ -1364,35 +1364,14 @@
     }
   },
   {
-    "burstObservatory": {
-      "pingConfig": {
-        "destination": "http://www.gstatic.com/generate_204",
-        "httpMethod": "HEAD",
-        "interval": "1m",
-        "sampling": 3,
-        "timeout": "10s"
-      },
-      "subjectSelector": [
-        "🇷🇺LTE #2 | Все операторы",
-        "🇷🇺LTE #3 | Все операторы",
-        "🇷🇺 LTE #4 | Все операторы",
-        "🇷🇺LTE #5 | Все операторы",
-        "🇷🇺LTE #6 | Все операторы",
-        "🇷🇺LTE #7 | Все операторы",
-        "🇷🇺LTE #8 | Все операторы",
-        "🇷🇺LTE #9 | Все операторы"
-      ]
-    },
     "dns": {
       "servers": [
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
           "domain": [
-            "domain:userapie.site",
-            "domain:vkapi.site",
-            "domain:n7node.site",
-            "domain:selcdn.net"
+            "domain:mirra.now",
+            "domain:mirra.systems"
           ],
           "skipFallback": true
         },
@@ -1936,535 +1915,81 @@
       "disableFallbackIfMatch": true,
       "useSystemHosts": false
     },
+    "inbounds": [
+      {
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "metadataOnly": false,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http",
+        "tag": "http-in"
+      }
+    ],
+    "log": {
+      "loglevel": "warning"
+    },
     "outbounds": [
       {
-        "protocol": "vless",
+        "protocol": "shadowsocks",
         "settings": {
-          "vnext": [
+          "servers": [
             {
-              "address": "bigxw39o.userapie.site",
-              "port": 443,
-              "users": [
-                {
-                  "encryption": "mlkem768x25519plus.native.0rtt.d-2M9F3353v_6k-Fh9WwV6fE6_k4vY7x9Q8w2E1rT3y",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
-                }
-              ]
+              "address": "37.18.15.209",
+              "method": "2022-blake3-aes-128-gcm",
+              "password": "i05as93CfW/R+0KCrZbkAQ==:S7lI2MFBH622RDkCu+1D2Q==",
+              "port": 62176
             }
           ]
         },
-        "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "bigxw39o.userapie.site"
-          },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "noGRPCHeader": true,
-              "path": "/assets/vendor.a1b2c3d4.js",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "seqKey": "t",
-              "seqPlacement": "query",
-              "sessionIDKey": "v",
-              "sessionIDLength": 16,
-              "sessionIDPlacement": "query",
-              "sessionIDTable": "0123456789abcdef",
-              "sessionKey": "v",
-              "sessionPlacement": "query",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingKey": "_dc",
-              "xPaddingMethod": "tokenish",
-              "xPaddingObfsMode": true,
-              "xPaddingPlacement": "query"
-            },
-            "host": "bigxw39o.userapie.site",
-            "mode": "packet-up",
-            "path": "/assets/vendor.a1b2c3d4.js"
-          }
-        },
-        "tag": "🇷🇺LTE #2 | Все операторы"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "z45jqc0bund0.userapie.site",
-              "port": 443,
-              "users": [
-                {
-                  "encryption": "none",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "z45jqc0bund0.userapie.site"
-          },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "path": "/api/v1/30038/sync/",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "uplinkChunkSize": 16384,
-              "uplinkDataPlacement": "header",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingHeader": "X-Cache",
-              "xPaddingKey": "_dc",
-              "xPaddingMethod": "tokenish",
-              "xPaddingObfsMode": true,
-              "xPaddingPlacement": "queryInHeader"
-            },
-            "host": "z45jqc0bund0.userapie.site",
-            "mode": "packet-up",
-            "path": "/api/v1/30038/sync/"
-          }
-        },
-        "tag": "🇷🇺LTE #3 | Все операторы"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "eltu78f.vkapi.site",
-              "port": 443,
-              "users": [
-                {
-                  "encryption": "mlkem768x25519plus.native.0rtt.tXgY8Cwd9ED6tJi_p4Xpv-E9iakyWEtJFelWoNycvE4",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "eltu78f.vkapi.site"
-          },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "noGRPCHeader": true,
-              "path": "/api/v2/events/",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "uplinkChunkSize": 16384,
-              "uplinkDataPlacement": "header",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              }
-            },
-            "host": "eltu78f.vkapi.site",
-            "mode": "packet-up",
-            "path": "/api/v2/events/"
-          }
-        },
-        "tag": "🇷🇺 LTE #4 | Все операторы"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "mz18oc95.n7node.site",
-              "port": 443,
-              "users": [
-                {
-                  "encryption": "mlkem768x25519plus.native.0rtt.pMPTQ1Xw0K0F-Bot62sbEtc1W84Ylxp3Lg8QgogWxko",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "mz18oc95.n7node.site"
-          },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "noGRPCHeader": true,
-              "path": "/assets/vendor.4d65bd00.js",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "seqKey": "t",
-              "seqPlacement": "query",
-              "sessionIDKey": "v",
-              "sessionIDLength": 16,
-              "sessionIDPlacement": "query",
-              "sessionIDTable": "0123456789abcdef",
-              "sessionKey": "v",
-              "sessionPlacement": "query",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingKey": "_dc",
-              "xPaddingMethod": "tokenish",
-              "xPaddingObfsMode": true,
-              "xPaddingPlacement": "query"
-            },
-            "host": "mz18oc95.n7node.site",
-            "mode": "packet-up",
-            "path": "/assets/vendor.4d65bd00.js"
-          }
-        },
-        "tag": "🇷🇺LTE #5 | Все операторы"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "736330a2-9418-4a5b-8c7a-31ec9c9539ed.selcdn.net",
-              "port": 443,
-              "users": [
-                {
-                  "encryption": "mlkem768x25519plus.native.0rtt.Gy5bNe93LLz_DADzoXcKmY6jvyWDGYsESycenoqTlko",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "736330a2-9418-4a5b-8c7a-31ec9c9539ed.selcdn.net"
-          },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "noGRPCHeader": true,
-              "path": "/assets/vendor.648b94a0.js",
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "seqKey": "t",
-              "seqPlacement": "query",
-              "sessionIDKey": "v",
-              "sessionIDLength": 16,
-              "sessionIDPlacement": "query",
-              "sessionIDTable": "0123456789abcdef",
-              "uplinkHTTPMethod": "DELETE",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingKey": "_dc",
-              "xPaddingMethod": "tokenish",
-              "xPaddingObfsMode": true,
-              "xPaddingPlacement": "query"
-            },
-            "host": "736330a2-9418-4a5b-8c7a-31ec9c9539ed.selcdn.net",
-            "mode": "packet-up",
-            "path": "/assets/vendor.648b94a0.js"
-          }
-        },
-        "tag": "🇷🇺LTE #6 | Все операторы"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "502e6327-0dc9-4b27-a8ec-db3f43a88fcc.selcdn.net",
-              "port": 443,
-              "users": [
-                {
-                  "encryption": "mlkem768x25519plus.native.0rtt.FfRdc1MGnEdOt5776FnDEA4aWG0PinvvnuHeVWbQ4Ag",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "502e6327-0dc9-4b27-a8ec-db3f43a88fcc.selcdn.net"
-          },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "noGRPCHeader": true,
-              "path": "/assets/vendor.e6577978.js",
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "seqKey": "t",
-              "seqPlacement": "query",
-              "sessionIDKey": "v",
-              "sessionIDLength": 16,
-              "sessionIDPlacement": "query",
-              "sessionIDTable": "0123456789abcdef",
-              "uplinkHTTPMethod": "DELETE",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingKey": "_dc",
-              "xPaddingMethod": "tokenish",
-              "xPaddingObfsMode": true,
-              "xPaddingPlacement": "query"
-            },
-            "host": "502e6327-0dc9-4b27-a8ec-db3f43a88fcc.selcdn.net",
-            "mode": "packet-up",
-            "path": "/assets/vendor.e6577978.js"
-          }
-        },
-        "tag": "🇷🇺LTE #7 | Все операторы"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "exubh5.userapie.site",
-              "port": 443,
-              "users": [
-                {
-                  "encryption": "none",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "exubh5.userapie.site"
-          },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "path": "/api/v1/30039/sync/",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "uplinkChunkSize": 16384,
-              "uplinkDataPlacement": "header",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingHeader": "X-Cache",
-              "xPaddingKey": "_dc",
-              "xPaddingMethod": "tokenish",
-              "xPaddingObfsMode": true,
-              "xPaddingPlacement": "queryInHeader"
-            },
-            "host": "exubh5.userapie.site",
-            "mode": "packet-up",
-            "path": "/api/v1/30039/sync/"
-          }
-        },
-        "tag": "🇷🇺LTE #8 | Все операторы"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "ommhqu.n7node.site",
-              "port": 443,
-              "users": [
-                {
-                  "encryption": "mlkem768x25519plus.native.0rtt.ucw3OhlqnqOGPFU8zyo5WYRxXa2k_l0-nwEydUBYVXc",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "ommhqu.n7node.site"
-          },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "noGRPCHeader": true,
-              "path": "/assets/vendor.c1a1c341.js",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "seqKey": "t",
-              "seqPlacement": "query",
-              "sessionIDKey": "v",
-              "sessionIDLength": 16,
-              "sessionIDPlacement": "query",
-              "sessionIDTable": "0123456789abcdef",
-              "sessionKey": "v",
-              "sessionPlacement": "query",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingKey": "_dc",
-              "xPaddingMethod": "tokenish",
-              "xPaddingObfsMode": true,
-              "xPaddingPlacement": "query"
-            },
-            "host": "ommhqu.n7node.site",
-            "mode": "packet-up",
-            "path": "/assets/vendor.c1a1c341.js"
-          }
-        },
-        "tag": "🇷🇺LTE #9 | Все операторы"
+        "tag": "proxy"
       },
       {
         "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "UseIPv4"
+        },
+        "streamSettings": {
+          "sockopt": {
+            "tcpNoDelay": true
+          }
+        },
         "tag": "direct"
       },
       {
         "protocol": "blackhole",
+        "settings": {
+          "response": {
+            "type": "http"
+          }
+        },
         "tag": "block"
       },
       {
         "protocol": "dns",
+        "settings": {},
         "tag": "dns-out"
       }
     ],
-    "remarks": "⚡️⚡️Авто LTE ТЕСТ",
+    "remarks": "🔋Обход LTE",
     "routing": {
-      "balancers": [
-        {
-          "selector": [
-            "🇷🇺LTE #2 | Все операторы",
-            "🇷🇺LTE #3 | Все операторы",
-            "🇷🇺 LTE #4 | Все операторы",
-            "🇷🇺LTE #5 | Все операторы",
-            "🇷🇺LTE #6 | Все операторы",
-            "🇷🇺LTE #7 | Все операторы",
-            "🇷🇺LTE #8 | Все операторы",
-            "🇷🇺LTE #9 | Все операторы"
-          ],
-          "strategy": {
-            "type": "leastPing"
-          },
-          "tag": "auto-best",
-          "fallbackTag": "🇷🇺LTE #2 | Все операторы"
-        }
-      ],
       "domainMatcher": "hybrid",
-      "domaintrategy": "AsIs",
+      "domainStrategy": "AsIs",
       "rules": [
         {
           "type": "field",
@@ -2482,7 +2007,14 @@
           ],
           "port": "443",
           "network": "tcp",
-          "balancerTag": "auto-best"
+          "outboundTag": "proxy"
+        },
+        {
+          "inboundTag": [
+            "dns-inbound"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
         },
         {
           "type": "field",
@@ -3007,82 +2539,25 @@
           "outboundTag": "direct"
         },
         {
-          "type": "field",
-          "inboundTag": [
-            "dns"
-          ],
-          "balancerTag": "auto-best"
-        },
-        {
-          "type": "field",
-          "port": "53",
-          "outboundTag": "dns-out"
-        },
-        {
-          "type": "field",
+          "outboundTag": "direct",
           "protocol": [
             "bittorrent"
           ],
-          "outboundTag": "direct"
+          "type": "field"
+        },
+        {
+          "network": "udp",
+          "outboundTag": "block",
+          "port": "443",
+          "type": "field"
         },
         {
           "type": "field",
-          "ip": [
-            "10.0.0.0/8",
-            "172.16.0.0/12",
-            "192.168.0.0/16",
-            "169.254.0.0/16"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "balancerTag": "auto-best",
-          "network": "tcp,udp"
+          "network": "tcp,udp",
+          "outboundTag": "proxy"
         }
       ]
-    },
-    "inbounds": [
-      {
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "auth": "noauth",
-          "udp": true
-        },
-        "sniffing": {
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ],
-          "enabled": true,
-          "routeOnly": true,
-          "metadataOnly": false
-        },
-        "tag": "socks"
-      },
-      {
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http",
-        "settings": {
-          "allowTransparent": false
-        },
-        "sniffing": {
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ],
-          "enabled": true,
-          "routeOnly": true,
-          "metadataOnly": false
-        },
-        "tag": "http"
-      }
-    ]
+    }
   },
   {
     "burstObservatory": {
@@ -3836,7 +3311,7 @@
         "tag": "dns-out"
       }
     ],
-    "remarks": "⚡️⚡️⚡️Авто LTE ТЕСТ",
+    "remarks": "⚡️⚡️Авто LTE",
     "routing": {
       "balancers": [
         {
