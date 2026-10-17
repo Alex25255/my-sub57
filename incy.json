@@ -1407,10 +1407,10 @@
         "settings": {
           "servers": [
             {
-              "address": "37.18.15.209",
+              "address": "78.159.246.119",
               "method": "2022-blake3-aes-128-gcm",
-              "password": "i05as93CfW/R+0KCrZbkAQ==:S7lI2MFBH622RDkCu+1D2Q==",
-              "port": 62176
+              "password": "A8aKBymEIA4J/1192pEekg==:9h0W/6vuWst+/Y10CSMXjg==",
+              "port": 11326
             }
           ]
         },
