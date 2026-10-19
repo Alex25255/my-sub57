@@ -12,7 +12,8 @@
         "🇩🇪 DE — South Networks Pro (only Mobile)",
         "🇳🇱 NL — South Networks Pro (only Mobile)",
         "🇺🇸 US — South Networks Pro (only Mobile)",
-        "🇩🇪 DE — South Networks Pro (only Mobile) 2"
+        "🇩🇪 DE — South Networks Pro (only Mobile) 2",
+        "💫 Премиум-конфиг1"
       ]
     },
     "dns": {
@@ -749,6 +750,36 @@
         "tag": "🇩🇪 DE — South Networks Pro (only Mobile) 2"
       },
       {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "46.229.212.99",
+              "port": 17698,
+              "users": [
+                {
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision",
+                  "id": "865556e0-0ac8-4a54-906d-2cf5f2d99eee"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "fingerprint": "chrome",
+            "publicKey": "cFYiMKtE0L3i0UXhFyz5DHG1V-SKg952zAh2FgwuhlQ",
+            "shortId": "d6d73950",
+            "serverName": "",
+            "spiderX": "/"
+          }
+        },
+        "tag": "💫 Премиум-конфиг1"
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -769,7 +800,8 @@
             "🇩🇪 DE — South Networks Pro (only Mobile)",
             "🇳🇱 NL — South Networks Pro (only Mobile)",
             "🇺🇸 US — South Networks Pro (only Mobile)",
-            "🇩🇪 DE — South Networks Pro (only Mobile) 2"
+            "🇩🇪 DE — South Networks Pro (only Mobile) 2",
+            "💫 Премиум-конфиг1"
           ],
           "strategy": {
             "type": "leastPing"
