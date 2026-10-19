@@ -8585,8 +8585,8 @@
               "users": [
                 {
                   "encryption": "none",
-                  "flow": "xtls-rprx-vision",
-                  "id": "865556e0-0ac8-4a54-906d-2cf5f2d99eee"
+                  "id": "865556e0-0ac8-4a54-906d-2cf5f2d99eee",
+                  "flow": "xtls-rprx-vision"
                 }
               ]
             }
@@ -8599,9 +8599,9 @@
             "fingerprint": "chrome",
             "publicKey": "cFYiMKtE0L3i0UXhFyz5DHG1V-SKg952zAh2FgwuhlQ",
             "shortId": "d6d73950",
-            "serverName": "",
             "spiderX": "/"
-          }
+          },
+          "tcpSettings": {}
         },
         "tag": "🚀 Wi-Fi лучший"
       },
