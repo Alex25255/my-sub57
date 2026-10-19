@@ -13,7 +13,8 @@
         "🇳🇱 NL — South Networks Pro (only Mobile)",
         "🇺🇸 US — South Networks Pro (only Mobile)",
         "🇩🇪 DE — South Networks Pro (only Mobile) 2",
-        "💫 Премиум-конфиг1"
+        "💫 Премиум-конфиг1",
+        "bridge-1"
       ]
     },
     "dns": {
@@ -782,6 +783,43 @@
         "tag": "💫 Премиум-конфиг1"
       },
       {
+        "protocol": "vmess",
+        "settings": {
+          "vnext": [
+            {
+              "address": "renderer-stream-5-13.mirra.now",
+              "port": 443,
+              "users": [
+                {
+                  "id": "f1eb3949-dca4-49ea-b125-a0947e6b6ff5",
+                  "alterId": 0,
+                  "security": "auto"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "renderer-stream-5-13.mirra.now",
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
+          },
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/socket",
+            "headers": {
+              "Host": "renderer-stream-5-13.mirra.now"
+            }
+          }
+        },
+        "tag": "bridge-1",
+        "server_domains": []
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -803,7 +841,8 @@
             "🇳🇱 NL — South Networks Pro (only Mobile)",
             "🇺🇸 US — South Networks Pro (only Mobile)",
             "🇩🇪 DE — South Networks Pro (only Mobile) 2",
-            "💫 Премиум-конфиг1"
+            "💫 Премиум-конфиг1",
+            "bridge-1"
           ],
           "strategy": {
             "type": "leastPing"
