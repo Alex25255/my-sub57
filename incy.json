@@ -6203,12 +6203,15 @@
       {
         "protocol": "vmess",
         "streamSettings": {
-          "tlsSettings": {
-            "fingerprint": "firefox",
-            "serverName": "renderer-stream-3-28.mirra.systems"
-          },
           "network": "ws",
           "security": "tls",
+          "tlsSettings": {
+            "serverName": "renderer-stream-3-28.mirra.systems",
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
+          },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/socket",
             "headers": {
@@ -6223,10 +6226,9 @@
               "port": 443,
               "users": [
                 {
-                  "security": "auto",
-                  "level": 8,
+                  "id": "2ff61516-31a0-4b00-98fc-813e35ced3ce",
                   "alterId": 0,
-                  "id": "2ff61516-31a0-4b00-98fc-813e35ced3ce"
+                  "security": "auto"
                 }
               ]
             }
