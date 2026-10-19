@@ -1478,9 +1478,9 @@
           ]
         },
         "tag": "proxy",
-        "admin_display_name": "🔋Обход LTE1111",
-        "remark": "🔋Обход LTE1111",
-        "remarks": "🔋Обход LTE1111"
+        "admin_display_name": "🔋Обход LTE",
+        "remark": "🔋Обход LTE",
+        "remarks": "🔋Обход LTE"
       },
       {
         "protocol": "freedom",
@@ -1908,7 +1908,7 @@
         }
       ]
     },
-    "admin_display_name": "🔋Обход LTE1111"
+    "admin_display_name": "🔋Обход LTE"
   },
   {
     "burstObservatory": {
