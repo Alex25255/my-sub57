@@ -1882,7 +1882,6 @@
       },
       "subjectSelector": [
         "🇷🇺 4. Антиглушилка 📶LTE",
-        "🇷🇺 5. Антиглушилка 📶LTE",
         "🇷🇺 6. Антиглушилка 📶LTE",
         "🇷🇺 7. Антиглушилка 📶LTE"
       ]
@@ -2478,39 +2477,6 @@
         "settings": {
           "vnext": [
             {
-              "address": "31.59.209.126",
-              "port": 8444,
-              "users": [
-                {
-                  "id": "1cb5126d-8623-42cf-a40d-ad02ab4dbdf9",
-                  "encryption": "none",
-                  "flow": ""
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "grpc",
-          "security": "reality",
-          "realitySettings": {
-            "fingerprint": "firefox",
-            "serverName": "release.clouderiux.com",
-            "publicKey": "ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM",
-            "shortId": "9e15546f267baa64"
-          },
-          "grpcSettings": {
-            "multiMode": false,
-            "serviceName": "grpc-reality"
-          }
-        },
-        "tag": "🇷🇺 5. Антиглушилка 📶LTE"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
               "address": "31.59.209.107",
               "port": 8444,
               "users": [
@@ -2587,7 +2553,6 @@
         {
           "selector": [
             "🇷🇺 4. Антиглушилка 📶LTE",
-            "🇷🇺 5. Антиглушилка 📶LTE",
             "🇷🇺 6. Антиглушилка 📶LTE",
             "🇷🇺 7. Антиглушилка 📶LTE"
           ],
