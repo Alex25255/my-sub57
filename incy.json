@@ -1882,8 +1882,7 @@
       },
       "subjectSelector": [
         "🇷🇺 4. Антиглушилка 📶LTE",
-        "🇷🇺 6. Антиглушилка 📶LTE",
-        "🇷🇺 7. Антиглушилка 📶LTE"
+        "🇷🇺 6. Антиглушилка 📶LTE"
       ]
     },
     "dns": {
@@ -2504,37 +2503,6 @@
         "tag": "🇷🇺 6. Антиглушилка 📶LTE"
       },
       {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "31.77.28.176",
-              "port": 8444,
-              "users": [
-                {
-                  "encryption": "none",
-                  "id": "1cb5126d-8623-42cf-a40d-ad02ab4dbdf9"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "grpc",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "clover.connectiux.com",
-            "fingerprint": "firefox",
-            "publicKey": "ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM",
-            "shortId": "9e15546f267baa64"
-          },
-          "grpcSettings": {
-            "serviceName": "grpc-reality"
-          }
-        },
-        "tag": "🇷🇺 7. Антиглушилка 📶LTE"
-      },
-      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -2553,8 +2521,7 @@
         {
           "selector": [
             "🇷🇺 4. Антиглушилка 📶LTE",
-            "🇷🇺 6. Антиглушилка 📶LTE",
-            "🇷🇺 7. Антиглушилка 📶LTE"
+            "🇷🇺 6. Антиглушилка 📶LTE"
           ],
           "strategy": {
             "type": "leastPing"
