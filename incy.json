@@ -2548,9 +2548,8 @@
               "port": 8444,
               "users": [
                 {
-                  "id": "1cb5126d-8623-42cf-a40d-ad02ab4dbdf9",
                   "encryption": "none",
-                  "flow": ""
+                  "id": "1cb5126d-8623-42cf-a40d-ad02ab4dbdf9"
                 }
               ]
             }
@@ -2560,13 +2559,12 @@
           "network": "grpc",
           "security": "reality",
           "realitySettings": {
-            "fingerprint": "firefox",
             "serverName": "images.cdnedgex.com",
+            "fingerprint": "firefox",
             "publicKey": "ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM",
             "shortId": "9e15546f267baa64"
           },
           "grpcSettings": {
-            "multiMode": false,
             "serviceName": "grpc-reality"
           }
         },
