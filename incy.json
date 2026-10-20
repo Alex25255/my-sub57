@@ -2472,7 +2472,10 @@
             "multiMode": false
           }
         },
-        "tag": "🇷🇺 3. Антиглушилка 📶LTE"
+        "tag": "🇷🇺 3. Антиглушилка 📶LTE",
+        "admin_display_name": "🇷🇺 2",
+        "remark": "🇷🇺 2",
+        "remarks": "🇷🇺 2"
       },
       {
         "protocol": "vless",
