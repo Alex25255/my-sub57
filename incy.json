@@ -2482,13 +2482,12 @@
         "settings": {
           "vnext": [
             {
-              "address": "ix-edge-500-1.whitenw.net",
+              "address": "ix-edge-500-2.whitenw.net",
               "port": 9470,
               "users": [
                 {
-                  "id": "1cb5126d-8623-42cf-a40d-ad02ab4dbdf9",
                   "encryption": "none",
-                  "flow": ""
+                  "id": "1cb5126d-8623-42cf-a40d-ad02ab4dbdf9"
                 }
               ]
             }
@@ -2498,14 +2497,12 @@
           "network": "grpc",
           "security": "reality",
           "realitySettings": {
-            "fingerprint": "firefox",
             "serverName": "passport.yandex.ru",
+            "fingerprint": "firefox",
             "publicKey": "FfZptJgxYiyEemH_mO7I8BKHF9Nc5ZGEG_sYC1dWjEw",
             "shortId": "78b8ebdb7007ecec"
           },
-          "grpcSettings": {
-            "multiMode": false
-          }
+          "grpcSettings": {}
         },
         "tag": "🇷🇺 4. Антиглушилка 📶LTE",
         "admin_display_name": "🇷🇺 3",
