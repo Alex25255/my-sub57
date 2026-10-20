@@ -1881,7 +1881,6 @@
         "timeout": "10s"
       },
       "subjectSelector": [
-        "🇷🇺 3. Антиглушилка 📶LTE",
         "🇷🇺 4. Антиглушилка 📶LTE",
         "🇷🇺 5. Антиглушилка 📶LTE",
         "🇷🇺 6. Антиглушилка 📶LTE",
@@ -2451,41 +2450,6 @@
               "port": 9470,
               "users": [
                 {
-                  "id": "1cb5126d-8623-42cf-a40d-ad02ab4dbdf9",
-                  "encryption": "none",
-                  "flow": ""
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "grpc",
-          "security": "reality",
-          "realitySettings": {
-            "fingerprint": "firefox",
-            "serverName": "passport.yandex.ru",
-            "publicKey": "FfZptJgxYiyEemH_mO7I8BKHF9Nc5ZGEG_sYC1dWjEw",
-            "shortId": "78b8ebdb7007ecec"
-          },
-          "grpcSettings": {
-            "multiMode": false
-          }
-        },
-        "tag": "🇷🇺 3. Антиглушилка 📶LTE",
-        "admin_display_name": "🇷🇺 2",
-        "remark": "🇷🇺 2",
-        "remarks": "🇷🇺 2"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "ix-edge-500-2.whitenw.net",
-              "port": 9470,
-              "users": [
-                {
                   "encryption": "none",
                   "id": "1cb5126d-8623-42cf-a40d-ad02ab4dbdf9"
                 }
@@ -2622,7 +2586,6 @@
       "balancers": [
         {
           "selector": [
-            "🇷🇺 3. Антиглушилка 📶LTE",
             "🇷🇺 4. Антиглушилка 📶LTE",
             "🇷🇺 5. Антиглушилка 📶LTE",
             "🇷🇺 6. Антиглушилка 📶LTE",
