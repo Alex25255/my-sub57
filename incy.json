@@ -2507,7 +2507,10 @@
             "multiMode": false
           }
         },
-        "tag": "🇷🇺 4. Антиглушилка 📶LTE"
+        "tag": "🇷🇺 4. Антиглушилка 📶LTE",
+        "admin_display_name": "🇷🇺 3",
+        "remark": "🇷🇺 3",
+        "remarks": "🇷🇺 3"
       },
       {
         "protocol": "vless",
