@@ -848,7 +848,7 @@
             "type": "leastPing"
           },
           "tag": "auto-best",
-          "fallbackTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
+          "fallbackTag": "bridge-1"
         }
       ],
       "domainMatcher": "hybrid",
