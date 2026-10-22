@@ -3213,7 +3213,8 @@
         "bridge-6",
         "bridge-7",
         "bridge-8",
-        "bridge-9"
+        "bridge-9",
+        "bridge-10"
       ]
     },
     "dns": {
@@ -4377,6 +4378,37 @@
         "server_domains": []
       },
       {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "46.229.212.99",
+              "port": 17698,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "865556e0-0ac8-4a54-906d-2cf5f2d99eee",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "fingerprint": "chrome",
+            "publicKey": "cFYiMKtE0L3i0UXhFyz5DHG1V-SKg952zAh2FgwuhlQ",
+            "shortId": "d6d73950",
+            "spiderX": "/"
+          },
+          "tcpSettings": {}
+        },
+        "tag": "bridge-10",
+        "server_domains": []
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -4402,7 +4434,8 @@
             "bridge-6",
             "bridge-7",
             "bridge-8",
-            "bridge-9"
+            "bridge-9",
+            "bridge-10"
           ],
           "strategy": {
             "type": "leastPing"
