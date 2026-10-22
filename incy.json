@@ -11585,5 +11585,171 @@
         }
       ]
     }
+  },
+  {
+    "remarks": "🇩🇪 Обход LTE 2",
+    "log": {
+      "loglevel": "warning"
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "routeOnly": true
+        }
+      },
+      {
+        "tag": "http",
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http",
+        "settings": {}
+      }
+    ],
+    "outbounds": [
+      {
+        "protocol": "vmess",
+        "settings": {
+          "vnext": [
+            {
+              "address": "renderer-stream-2-112.mirra.now",
+              "port": 443,
+              "users": [
+                {
+                  "id": "d8e507c7-b5b8-4987-8cc9-4cffc3c4250e",
+                  "alterId": 0,
+                  "security": "auto"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "renderer-stream-2-112.mirra.now",
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
+          },
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/socket",
+            "headers": {
+              "Host": "renderer-stream-2-112.mirra.now"
+            }
+          }
+        },
+        "tag": "main",
+        "server_domains": []
+      },
+      {
+        "tag": "direct",
+        "protocol": "freedom"
+      },
+      {
+        "tag": "block",
+        "protocol": "blackhole"
+      },
+      {
+        "tag": "dns-out",
+        "protocol": "dns"
+      }
+    ],
+    "dns": {
+      "queryStrategy": "UseIPv4",
+      "disableFallbackIfMatch": true,
+      "tag": "standalone-dns",
+      "servers": [
+        {
+          "address": "77.88.8.8",
+          "port": 53,
+          "tag": "standalone-yandex-direct",
+          "queryStrategy": "UseIPv4",
+          "domains": [
+            "domain:renderer-stream-2-112.mirra.now"
+          ],
+          "skipFallback": true
+        },
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "standalone-google-vpn",
+          "queryStrategy": "UseIPv4"
+        }
+      ]
+    },
+    "routing": {
+      "domainStrategy": "AsIs",
+      "domainMatcher": "hybrid",
+      "rules": [
+        {
+          "type": "field",
+          "inboundTag": [
+            "standalone-yandex-direct"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "inboundTag": [
+            "standalone-google-vpn"
+          ],
+          "outboundTag": "main"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "77.88.8.8",
+            "77.88.8.1"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "8.8.8.8",
+            "8.8.4.4"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "outboundTag": "main"
+        },
+        {
+          "type": "field",
+          "port": "53",
+          "outboundTag": "dns-out"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "10.0.0.0/8",
+            "172.16.0.0/12",
+            "192.168.0.0/16",
+            "169.254.0.0/16"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "network": "tcp,udp",
+          "outboundTag": "main"
+        }
+      ]
+    },
+    "admin_scoped_direct_domains": [],
+    "admin_scoped_dns_enabled": true
   }
 ]
