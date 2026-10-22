@@ -4320,9 +4320,11 @@
             "path": "/assets/vendor.c1a1c341.js"
           }
         },
-        "admin_display_name": "proxy",
+        "admin_display_name": "Только LTE #9",
         "tag": "bridge-8",
-        "server_domains": []
+        "server_domains": [],
+        "remark": "Только LTE #9",
+        "remarks": "Только LTE #9"
       },
       {
         "protocol": "vless",
