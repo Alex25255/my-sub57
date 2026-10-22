@@ -4090,7 +4090,6 @@
               "users": [
                 {
                   "encryption": "mlkem768x25519plus.native.0rtt.Gy5bNe93LLz_DADzoXcKmY6jvyWDGYsESycenoqTlko",
-                  "flow": "",
                   "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
                 }
               ]
@@ -4101,46 +4100,38 @@
           "network": "xhttp",
           "security": "tls",
           "tlsSettings": {
+            "serverName": "vc364t.vkapi.site",
+            "fingerprint": "chrome",
             "alpn": [
               "h2",
               "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "vc364t.vkapi.site"
+            ]
           },
           "xhttpSettings": {
+            "path": "/assets/vendor.648b94a0.js",
+            "mode": "packet-up",
+            "host": "vc364t.vkapi.site",
             "extra": {
               "mode": "packet-up",
-              "noGRPCHeader": true,
               "path": "/assets/vendor.648b94a0.js",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
               "seqKey": "t",
+              "sessionKey": "v",
+              "xPaddingKey": "_dc",
+              "noGRPCHeader": true,
               "seqPlacement": "query",
               "sessionIDKey": "v",
-              "sessionIDLength": 16,
-              "sessionIDPlacement": "query",
               "sessionIDTable": "0123456789abcdef",
-              "sessionKey": "v",
+              "xPaddingMethod": "tokenish",
+              "sessionIDLength": 16,
               "sessionPlacement": "query",
               "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingKey": "_dc",
-              "xPaddingMethod": "tokenish",
               "xPaddingObfsMode": true,
-              "xPaddingPlacement": "query"
-            },
-            "host": "vc364t.vkapi.site",
-            "mode": "packet-up",
-            "path": "/assets/vendor.648b94a0.js"
+              "xPaddingPlacement": "query",
+              "scMaxEachPostBytes": 524288,
+              "sessionIDPlacement": "query",
+              "scMaxConcurrentPosts": 1,
+              "scMinPostsIntervalMs": 10
+            }
           }
         },
         "admin_display_name": "Только LTE #6",
