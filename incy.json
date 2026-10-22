@@ -9133,27 +9133,27 @@
           "network": "ws",
           "security": "tls",
           "tlsSettings": {
-            "serverName": "renderer-stream-2-126.mirra.now",
+            "serverName": "renderer-stream-1-871.mirra.now",
             "fingerprint": "firefox",
             "alpn": [
               "h2"
             ]
           },
           "wsSettings": {
-            "path": "/api/v1/gpu-stream/socket",
+            "path": "/api/v1/gpu-stream/pt2ucn2abijq/socket",
             "headers": {
-              "Host": "renderer-stream-2-126.mirra.now"
+              "Host": "renderer-stream-1-871.mirra.now"
             }
           }
         },
         "settings": {
           "vnext": [
             {
-              "address": "renderer-stream-2-126.mirra.now",
+              "address": "renderer-stream-1-871.mirra.now",
               "port": 443,
               "users": [
                 {
-                  "id": "2ff61516-31a0-4b00-98fc-813e35ced3ce",
+                  "id": "d96c6d52-7737-477c-aa23-bb4c669f44cb",
                   "alterId": 0,
                   "security": "auto"
                 }
