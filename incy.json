@@ -4406,7 +4406,10 @@
           "tcpSettings": {}
         },
         "tag": "bridge-10",
-        "server_domains": []
+        "server_domains": [],
+        "admin_display_name": "вифи лучший",
+        "remark": "вифи лучший",
+        "remarks": "вифи лучший"
       },
       {
         "protocol": "freedom",
