@@ -4251,9 +4251,11 @@
             "path": "/api/v1/30039/sync/"
           }
         },
-        "admin_display_name": "proxy",
+        "admin_display_name": "Только LTE #8",
         "tag": "bridge-7",
-        "server_domains": []
+        "server_domains": [],
+        "remark": "Только LTE #8",
+        "remarks": "Только LTE #8"
       },
       {
         "protocol": "vless",
