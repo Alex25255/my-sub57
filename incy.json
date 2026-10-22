@@ -7969,7 +7969,10 @@
             }
           ]
         },
-        "tag": "🇳🇱 Обход LTE"
+        "tag": "🇳🇱 Обход LTE",
+        "admin_display_name": "🇩🇪 Обход LTE 3",
+        "remark": "🇩🇪 Обход LTE 3",
+        "remarks": "🇩🇪 Обход LTE 3"
       },
       {
         "protocol": "freedom",
@@ -8552,7 +8555,8 @@
           "outboundTag": "🇳🇱 Обход LTE"
         }
       ]
-    }
+    },
+    "admin_display_name": "🇩🇪 Обход LTE 3"
   },
   {
     "inbounds": [
