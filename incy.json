@@ -10967,7 +10967,10 @@
           }
         },
         "tag": "main",
-        "server_domains": []
+        "server_domains": [],
+        "admin_display_name": "🇳🇱 Обход LTE 3",
+        "remark": "🇳🇱 Обход LTE 3",
+        "remarks": "🇳🇱 Обход LTE 3"
       },
       {
         "tag": "direct",
@@ -11580,6 +11583,7 @@
       ]
     },
     "admin_scoped_direct_domains": [],
-    "admin_scoped_dns_enabled": true
+    "admin_scoped_dns_enabled": true,
+    "admin_display_name": "🇳🇱 Обход LTE 3"
   }
 ]
