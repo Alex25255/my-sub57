@@ -5,8 +5,8 @@
         "destination": "http://www.gstatic.com/generate_204",
         "httpMethod": "HEAD",
         "interval": "1m",
-        "sampling": 3,
-        "timeout": "10s"
+        "sampling": 2,
+        "timeout": "5s"
       },
       "subjectSelector": [
         "🇩🇪 DE — South Networks Pro (only Mobile)",
@@ -1917,8 +1917,8 @@
         "destination": "http://www.gstatic.com/generate_204",
         "httpMethod": "HEAD",
         "interval": "1m",
-        "sampling": 3,
-        "timeout": "10s"
+        "sampling": 2,
+        "timeout": "5s"
       },
       "subjectSelector": [
         "🇷🇺 4. Антиглушилка 📶LTE",
@@ -3201,8 +3201,8 @@
         "destination": "http://www.gstatic.com/generate_204",
         "httpMethod": "HEAD",
         "interval": "1m",
-        "sampling": 3,
-        "timeout": "10s"
+        "sampling": 2,
+        "timeout": "5s"
       },
       "subjectSelector": [
         "bridge-1",
