@@ -3865,9 +3865,11 @@
             "path": "/api/v1/30040/sync/"
           }
         },
-        "admin_display_name": "proxy",
+        "admin_display_name": "Только LTE #1",
         "tag": "bridge-1",
-        "server_domains": []
+        "server_domains": [],
+        "remark": "Только LTE #1",
+        "remarks": "Только LTE #1"
       },
       {
         "protocol": "vless",
