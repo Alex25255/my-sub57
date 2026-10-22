@@ -4050,9 +4050,11 @@
             "path": "/api/v2/events/"
           }
         },
-        "admin_display_name": "proxy",
+        "admin_display_name": "Только LTE #4",
         "tag": "bridge-4",
-        "server_domains": []
+        "server_domains": [],
+        "remark": "Только LTE #4",
+        "remarks": "Только LTE #4"
       },
       {
         "protocol": "vless",
