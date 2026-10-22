@@ -3212,7 +3212,8 @@
         "bridge-5",
         "bridge-6",
         "bridge-7",
-        "bridge-8"
+        "bridge-8",
+        "bridge-9"
       ]
     },
     "dns": {
@@ -4309,6 +4310,73 @@
         "server_domains": []
       },
       {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "gv3zn9pk.n7node.site",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "mlkem768x25519plus.native.0rtt.2Vaz61q44JwnLRtrIOu0J0NLMFxPwdg0Sp9k3K0PDHs",
+                  "flow": "",
+                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "tls",
+          "tlsSettings": {
+            "alpn": [
+              "h2",
+              "http/1.1"
+            ],
+            "enableSessionResumption": false,
+            "fingerprint": "chrome",
+            "serverName": "gv3zn9pk.n7node.site"
+          },
+          "xhttpSettings": {
+            "extra": {
+              "mode": "packet-up",
+              "noGRPCHeader": true,
+              "path": "/assets/vendor.27e5a70b.js",
+              "scMaxConcurrentPosts": 1,
+              "scMaxEachPostBytes": "200000-500000",
+              "scMinPostsIntervalMs": 50,
+              "seqKey": "t",
+              "seqPlacement": "query",
+              "sessionIDKey": "v",
+              "sessionIDLength": 16,
+              "sessionIDPlacement": "query",
+              "sessionIDTable": "0123456789abcdef",
+              "sessionKey": "v",
+              "sessionPlacement": "query",
+              "uplinkHTTPMethod": "GET",
+              "xmux": {
+                "cMaxReuseTimes": "200-400",
+                "hKeepAlivePeriod": 30,
+                "hMaxRequestTimes": 0,
+                "hMaxReusableSecs": "1800-3000",
+                "maxConnections": 2
+              },
+              "xPaddingKey": "_dc",
+              "xPaddingMethod": "tokenish",
+              "xPaddingObfsMode": true,
+              "xPaddingPlacement": "query"
+            },
+            "host": "gv3zn9pk.n7node.site",
+            "mode": "packet-up",
+            "path": "/assets/vendor.27e5a70b.js"
+          }
+        },
+        "admin_display_name": "proxy",
+        "tag": "bridge-9",
+        "server_domains": []
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -4333,7 +4401,8 @@
             "bridge-5",
             "bridge-6",
             "bridge-7",
-            "bridge-8"
+            "bridge-8",
+            "bridge-9"
           ],
           "strategy": {
             "type": "leastPing"
