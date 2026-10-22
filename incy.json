@@ -7940,7 +7940,10 @@
             }
           ]
         },
-        "tag": "🇺🇸 Обход LTE"
+        "tag": "🇺🇸 Обход LTE",
+        "admin_display_name": "Обход LTE 2",
+        "remark": "Обход LTE 2",
+        "remarks": "Обход LTE 2"
       },
       {
         "protocol": "freedom",
@@ -8523,7 +8526,8 @@
           "outboundTag": "🇺🇸 Обход LTE"
         }
       ]
-    }
+    },
+    "admin_display_name": "Обход LTE 2"
   },
   {
     "inbounds": [
