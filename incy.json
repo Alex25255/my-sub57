@@ -3926,7 +3926,6 @@
               "users": [
                 {
                   "encryption": "none",
-                  "flow": "",
                   "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
                 }
               ]
@@ -3937,40 +3936,32 @@
           "network": "xhttp",
           "security": "tls",
           "tlsSettings": {
+            "serverName": "z45jqc0bund0.userapie.site",
+            "fingerprint": "chrome",
             "alpn": [
               "h2",
               "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "z45jqc0bund0.userapie.site"
+            ]
           },
           "xhttpSettings": {
+            "path": "/api/v1/30038/sync/",
+            "mode": "packet-up",
+            "host": "z45jqc0bund0.userapie.site",
             "extra": {
               "mode": "packet-up",
               "path": "/api/v1/30038/sync/",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "uplinkChunkSize": 16384,
-              "uplinkDataPlacement": "header",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingHeader": "X-Cache",
               "xPaddingKey": "_dc",
+              "xPaddingHeader": "X-Cache",
               "xPaddingMethod": "tokenish",
+              "uplinkChunkSize": 16384,
+              "uplinkHTTPMethod": "GET",
               "xPaddingObfsMode": true,
-              "xPaddingPlacement": "queryInHeader"
-            },
-            "host": "z45jqc0bund0.userapie.site",
-            "mode": "packet-up",
-            "path": "/api/v1/30038/sync/"
+              "xPaddingPlacement": "queryInHeader",
+              "scMaxEachPostBytes": 32768,
+              "uplinkDataPlacement": "header",
+              "scMaxConcurrentPosts": 1,
+              "scMinPostsIntervalMs": 10
+            }
           }
         },
         "admin_display_name": "Только LTE #3",
