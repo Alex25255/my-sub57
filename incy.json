@@ -2567,7 +2567,7 @@
             "type": "leastPing"
           },
           "tag": "auto-best",
-          "fallbackTag": "🇷🇺 3. Антиглушилка 📶LTE"
+          "fallbackTag": "🇷🇺 4. Антиглушилка 📶LTE"
         }
       ],
       "domainMatcher": "hybrid",
