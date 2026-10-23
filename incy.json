@@ -4025,7 +4025,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "mz18oc95.n7node.site",
+              "address": "358yon.filecaches.site",
               "port": 443,
               "users": [
                 {
@@ -4040,7 +4040,7 @@
           "network": "xhttp",
           "security": "tls",
           "tlsSettings": {
-            "serverName": "mz18oc95.n7node.site",
+            "serverName": "358yon.filecaches.site",
             "fingerprint": "chrome",
             "alpn": [
               "h2",
@@ -4050,7 +4050,7 @@
           "xhttpSettings": {
             "path": "/assets/vendor.4d65bd00.js",
             "mode": "packet-up",
-            "host": "mz18oc95.n7node.site",
+            "host": "358yon.filecaches.site",
             "extra": {
               "mode": "packet-up",
               "path": "/assets/vendor.4d65bd00.js",
