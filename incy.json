@@ -4259,7 +4259,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "gv3zn9pk.n7node.site",
+              "address": "m7twec.filecaches.site",
               "port": 443,
               "users": [
                 {
@@ -4274,7 +4274,7 @@
           "network": "xhttp",
           "security": "tls",
           "tlsSettings": {
-            "serverName": "gv3zn9pk.n7node.site",
+            "serverName": "m7twec.filecaches.site",
             "fingerprint": "chrome",
             "alpn": [
               "h2",
@@ -4284,7 +4284,7 @@
           "xhttpSettings": {
             "path": "/assets/vendor.27e5a70b.js",
             "mode": "packet-up",
-            "host": "gv3zn9pk.n7node.site",
+            "host": "m7twec.filecaches.site",
             "extra": {
               "mode": "packet-up",
               "path": "/assets/vendor.27e5a70b.js",
