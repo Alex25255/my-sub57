@@ -4085,7 +4085,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "vc364t.vkapi.site",
+              "address": "0hz1z2.filecaches.site",
               "port": 443,
               "users": [
                 {
@@ -4100,7 +4100,7 @@
           "network": "xhttp",
           "security": "tls",
           "tlsSettings": {
-            "serverName": "vc364t.vkapi.site",
+            "serverName": "0hz1z2.filecaches.site",
             "fingerprint": "chrome",
             "alpn": [
               "h2",
@@ -4110,7 +4110,7 @@
           "xhttpSettings": {
             "path": "/assets/vendor.648b94a0.js",
             "mode": "packet-up",
-            "host": "vc364t.vkapi.site",
+            "host": "0hz1z2.filecaches.site",
             "extra": {
               "mode": "packet-up",
               "path": "/assets/vendor.648b94a0.js",
