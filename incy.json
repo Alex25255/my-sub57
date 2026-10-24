@@ -4048,13 +4048,25 @@
             ]
           },
           "xhttpSettings": {
-            "path": "/api/v2/chunks/",
+            "path": "/api/v2/buckets/4d88010c/blocks/",
             "mode": "packet-up",
             "host": "3hlbd0rx.rmtstorage.site",
             "extra": {
               "mode": "packet-up",
-              "path": "/api/v2/chunks/",
+              "path": "/api/v2/buckets/4d88010c/blocks/",
               "seqKey": "offset",
+              "headers": {
+                "Accept": "application/json, text/plain, */*",
+                "Referer": "https://3hlbd0rx.rmtstorage.site/",
+                "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not/A)Brand\";v=\"8\"",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
+                "Sec-Fetch-Dest": "empty",
+                "Sec-Fetch-Mode": "cors",
+                "Sec-Fetch-Site": "same-origin",
+                "Accept-Language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+                "sec-ch-ua-mobile": "?1",
+                "sec-ch-ua-platform": "\"Android\""
+              },
               "sessionKey": "sid",
               "xPaddingKey": "cb",
               "noGRPCHeader": true,
