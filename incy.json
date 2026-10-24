@@ -4120,13 +4120,25 @@
             ]
           },
           "xhttpSettings": {
-            "path": "/api/v2/blocks/",
+            "path": "/api/v2/buckets/528ad0d5/chunks/",
             "mode": "packet-up",
             "host": "9256xpve.rmtstorage.site",
             "extra": {
               "mode": "packet-up",
-              "path": "/api/v2/blocks/",
+              "path": "/api/v2/buckets/528ad0d5/chunks/",
               "seqKey": "part",
+              "headers": {
+                "Accept": "application/json, text/plain, */*",
+                "Referer": "https://9256xpve.rmtstorage.site/",
+                "sec-ch-ua": "\"Not/A)Brand\";v=\"24\", \"Google Chrome\";v=\"148\", \"Chromium\";v=\"148\"",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36",
+                "Sec-Fetch-Dest": "empty",
+                "Sec-Fetch-Mode": "cors",
+                "Sec-Fetch-Site": "same-origin",
+                "Accept-Language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+                "sec-ch-ua-mobile": "?1",
+                "sec-ch-ua-platform": "\"Android\""
+              },
               "sessionKey": "token",
               "xPaddingKey": "sig",
               "noGRPCHeader": true,
