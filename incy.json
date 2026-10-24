@@ -12199,12 +12199,12 @@
         "settings": {
           "vnext": [
             {
-              "address": "46.229.212.99",
-              "port": 17698,
+              "address": "212.233.88.58",
+              "port": 10854,
               "users": [
                 {
                   "encryption": "none",
-                  "id": "865556e0-0ac8-4a54-906d-2cf5f2d99eee",
+                  "id": "a07c73c6-379e-4306-98db-eba03e80fbd3",
                   "flow": "xtls-rprx-vision"
                 }
               ]
@@ -12216,8 +12216,8 @@
           "security": "reality",
           "realitySettings": {
             "fingerprint": "chrome",
-            "publicKey": "cFYiMKtE0L3i0UXhFyz5DHG1V-SKg952zAh2FgwuhlQ",
-            "shortId": "d6d73950",
+            "publicKey": "RqTfJkMrVrbGOcRX3Ifhq3gHHZYDWx-rA8wp3xVBpX8",
+            "shortId": "4195b711",
             "spiderX": "/"
           },
           "tcpSettings": {}
