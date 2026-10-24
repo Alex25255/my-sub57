@@ -4025,7 +4025,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "358yon.filecaches.site",
+              "address": "3hlbd0rx.rmtstorage.site",
               "port": 443,
               "users": [
                 {
@@ -4040,7 +4040,7 @@
           "network": "xhttp",
           "security": "tls",
           "tlsSettings": {
-            "serverName": "358yon.filecaches.site",
+            "serverName": "3hlbd0rx.rmtstorage.site",
             "fingerprint": "chrome",
             "alpn": [
               "h2",
@@ -4048,18 +4048,18 @@
             ]
           },
           "xhttpSettings": {
-            "path": "/assets/vendor.4d65bd00.js",
+            "path": "/api/v2/chunks/",
             "mode": "packet-up",
-            "host": "358yon.filecaches.site",
+            "host": "3hlbd0rx.rmtstorage.site",
             "extra": {
               "mode": "packet-up",
-              "path": "/assets/vendor.4d65bd00.js",
-              "seqKey": "t",
-              "sessionKey": "v",
-              "xPaddingKey": "_dc",
+              "path": "/api/v2/chunks/",
+              "seqKey": "offset",
+              "sessionKey": "sid",
+              "xPaddingKey": "cb",
               "noGRPCHeader": true,
               "seqPlacement": "query",
-              "sessionIDKey": "v",
+              "sessionIDKey": "sid",
               "sessionIDTable": "0123456789abcdef",
               "xPaddingMethod": "tokenish",
               "sessionIDLength": 16,
