@@ -12251,8 +12251,8 @@
               "port": 10854,
               "users": [
                 {
-                  "id": "a07c73c6-379e-4306-98db-eba03e80fbd3",
                   "encryption": "none",
+                  "id": "a07c73c6-379e-4306-98db-eba03e80fbd3",
                   "flow": "xtls-rprx-vision"
                 }
               ]
@@ -12265,7 +12265,8 @@
           "realitySettings": {
             "fingerprint": "chrome",
             "publicKey": "RqTfJkMrVrbGOcRX3Ifhq3gHHZYDWx-rA8wp3xVBpX8",
-            "shortId": "4195b711"
+            "shortId": "4195b711",
+            "spiderX": "/"
           },
           "tcpSettings": {}
         },
