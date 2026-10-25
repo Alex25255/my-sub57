@@ -4048,12 +4048,12 @@
             ]
           },
           "xhttpSettings": {
-            "path": "/api/v2/buckets/c0400329/parts/",
+            "path": "/api/v2/buckets/f0f35765/chunks/",
             "mode": "packet-up",
             "host": "3hlbd0rx.rmtstorage.site",
             "extra": {
               "mode": "packet-up",
-              "path": "/api/v2/buckets/c0400329/parts/",
+              "path": "/api/v2/buckets/f0f35765/chunks/",
               "seqKey": "offset",
               "headers": {
                 "Accept": "application/json, text/plain, */*",
