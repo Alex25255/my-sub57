@@ -4120,18 +4120,18 @@
             ]
           },
           "xhttpSettings": {
-            "path": "/api/v2/buckets/224b6439/parts/",
+            "path": "/api/v2/buckets/34000f87/parts/",
             "mode": "packet-up",
             "host": "9256xpve.rmtstorage.site",
             "extra": {
               "mode": "packet-up",
-              "path": "/api/v2/buckets/224b6439/parts/",
+              "path": "/api/v2/buckets/34000f87/parts/",
               "seqKey": "part",
               "headers": {
                 "Accept": "application/json, text/plain, */*",
                 "Referer": "https://9256xpve.rmtstorage.site/",
-                "sec-ch-ua": "\"Chromium\";v=\"149\", \"Google Chrome\";v=\"149\", \"Not=A?Brand\";v=\"99\"",
-                "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
+                "sec-ch-ua": "\"Not_A Brand\";v=\"24\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36",
                 "Sec-Fetch-Dest": "empty",
                 "Sec-Fetch-Mode": "cors",
                 "Sec-Fetch-Site": "same-origin",
