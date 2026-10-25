@@ -4120,17 +4120,17 @@
             ]
           },
           "xhttpSettings": {
-            "path": "/api/v2/buckets/62c86b08/blocks/",
+            "path": "/api/v2/buckets/2ffd2f8e/chunks/",
             "mode": "packet-up",
             "host": "9256xpve.rmtstorage.site",
             "extra": {
               "mode": "packet-up",
-              "path": "/api/v2/buckets/62c86b08/blocks/",
+              "path": "/api/v2/buckets/2ffd2f8e/chunks/",
               "seqKey": "part",
               "headers": {
                 "Accept": "application/json, text/plain, */*",
                 "Referer": "https://9256xpve.rmtstorage.site/",
-                "sec-ch-ua": "\"Chromium\";v=\"149\", \"Google Chrome\";v=\"149\", \"Not/A)Brand\";v=\"8\"",
+                "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not(A:Brand\";v=\"99\"",
                 "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
                 "Sec-Fetch-Dest": "empty",
                 "Sec-Fetch-Mode": "cors",
