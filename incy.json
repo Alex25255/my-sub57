@@ -4048,17 +4048,17 @@
             ]
           },
           "xhttpSettings": {
-            "path": "/api/v2/buckets/b4236d11/blocks/",
+            "path": "/api/v2/buckets/b8f9e22a/blocks/",
             "mode": "packet-up",
             "host": "3hlbd0rx.rmtstorage.site",
             "extra": {
               "mode": "packet-up",
-              "path": "/api/v2/buckets/b4236d11/blocks/",
+              "path": "/api/v2/buckets/b8f9e22a/blocks/",
               "seqKey": "offset",
               "headers": {
                 "Accept": "application/json, text/plain, */*",
                 "Referer": "https://3hlbd0rx.rmtstorage.site/",
-                "sec-ch-ua": "\"Chromium\";v=\"151\", \"Not_A Brand\";v=\"99\", \"Google Chrome\";v=\"151\"",
+                "sec-ch-ua": "\"Chromium\";v=\"151\", \"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"151\"",
                 "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
                 "Sec-Fetch-Dest": "empty",
                 "Sec-Fetch-Mode": "cors",
