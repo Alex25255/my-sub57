@@ -4025,7 +4025,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "3hlbd0rx.rmtstorage.site",
+              "address": "content.banemsllc.com",
               "port": 443,
               "users": [
                 {
@@ -4040,7 +4040,7 @@
           "network": "xhttp",
           "security": "tls",
           "tlsSettings": {
-            "serverName": "3hlbd0rx.rmtstorage.site",
+            "serverName": "content.banemsllc.com",
             "fingerprint": "chrome",
             "alpn": [
               "h2",
@@ -4048,39 +4048,21 @@
             ]
           },
           "xhttpSettings": {
-            "path": "/api/v2/buckets/560fb299/chunks/",
+            "path": "/api/v1/30035/sync/",
             "mode": "packet-up",
-            "host": "3hlbd0rx.rmtstorage.site",
+            "host": "content.banemsllc.com",
             "extra": {
               "mode": "packet-up",
-              "path": "/api/v2/buckets/560fb299/chunks/",
-              "seqKey": "offset",
-              "headers": {
-                "Accept": "application/json, text/plain, */*",
-                "Referer": "https://3hlbd0rx.rmtstorage.site/",
-                "sec-ch-ua": "\"Chromium\";v=\"150\", \"Not;A=Brand\";v=\"99\", \"Google Chrome\";v=\"150\"",
-                "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36",
-                "Sec-Fetch-Dest": "empty",
-                "Sec-Fetch-Mode": "cors",
-                "Sec-Fetch-Site": "same-origin",
-                "Accept-Language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
-                "sec-ch-ua-mobile": "?1",
-                "sec-ch-ua-platform": "\"Android\""
-              },
-              "sessionKey": "sid",
-              "xPaddingKey": "cb",
-              "noGRPCHeader": true,
-              "seqPlacement": "query",
-              "sessionIDKey": "sid",
-              "sessionIDTable": "0123456789abcdef",
+              "path": "/api/v1/30035/sync/",
+              "xPaddingKey": "_dc",
+              "xPaddingHeader": "X-Cache",
               "xPaddingMethod": "tokenish",
-              "sessionIDLength": 16,
-              "sessionPlacement": "query",
+              "uplinkChunkSize": 16384,
               "uplinkHTTPMethod": "GET",
               "xPaddingObfsMode": true,
-              "xPaddingPlacement": "query",
-              "scMaxEachPostBytes": 524288,
-              "sessionIDPlacement": "query",
+              "xPaddingPlacement": "queryInHeader",
+              "scMaxEachPostBytes": 32768,
+              "uplinkDataPlacement": "header",
               "scMaxConcurrentPosts": 1,
               "scMinPostsIntervalMs": 10
             }
