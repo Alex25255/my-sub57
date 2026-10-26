@@ -4048,18 +4048,18 @@
             ]
           },
           "xhttpSettings": {
-            "path": "/api/v2/buckets/335903c0/chunks/",
+            "path": "/api/v2/buckets/2ad5a0c0/chunks/",
             "mode": "packet-up",
             "host": "3hlbd0rx.rmtstorage.site",
             "extra": {
               "mode": "packet-up",
-              "path": "/api/v2/buckets/335903c0/chunks/",
+              "path": "/api/v2/buckets/2ad5a0c0/chunks/",
               "seqKey": "offset",
               "headers": {
                 "Accept": "application/json, text/plain, */*",
                 "Referer": "https://3hlbd0rx.rmtstorage.site/",
-                "sec-ch-ua": "\"Chromium\";v=\"148\", \"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"148\"",
-                "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36",
+                "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Google Chrome\";v=\"151\", \"Chromium\";v=\"151\"",
+                "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
                 "Sec-Fetch-Dest": "empty",
                 "Sec-Fetch-Mode": "cors",
                 "Sec-Fetch-Site": "same-origin",
