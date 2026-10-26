@@ -4079,7 +4079,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "9256xpve.rmtstorage.site",
+              "address": "mcgrory.filecaches.site",
               "port": 443,
               "users": [
                 {
@@ -4094,7 +4094,7 @@
           "network": "xhttp",
           "security": "tls",
           "tlsSettings": {
-            "serverName": "9256xpve.rmtstorage.site",
+            "serverName": "mcgrory.filecaches.site",
             "fingerprint": "chrome",
             "alpn": [
               "h2",
@@ -4102,39 +4102,21 @@
             ]
           },
           "xhttpSettings": {
-            "path": "/api/v2/buckets/dc7fae24/chunks/",
+            "path": "/api/v1/30032/sync/",
             "mode": "packet-up",
-            "host": "9256xpve.rmtstorage.site",
+            "host": "mcgrory.filecaches.site",
             "extra": {
               "mode": "packet-up",
-              "path": "/api/v2/buckets/dc7fae24/chunks/",
-              "seqKey": "part",
-              "headers": {
-                "Accept": "application/json, text/plain, */*",
-                "Referer": "https://9256xpve.rmtstorage.site/",
-                "sec-ch-ua": "\"Not=A?Brand\";v=\"99\", \"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\"",
-                "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
-                "Sec-Fetch-Dest": "empty",
-                "Sec-Fetch-Mode": "cors",
-                "Sec-Fetch-Site": "same-origin",
-                "Accept-Language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
-                "sec-ch-ua-mobile": "?1",
-                "sec-ch-ua-platform": "\"Android\""
-              },
-              "sessionKey": "token",
-              "xPaddingKey": "sig",
-              "noGRPCHeader": true,
-              "seqPlacement": "query",
-              "sessionIDKey": "token",
-              "sessionIDTable": "0123456789abcdef",
+              "path": "/api/v1/30032/sync/",
+              "xPaddingKey": "_dc",
+              "xPaddingHeader": "X-Cache",
               "xPaddingMethod": "tokenish",
-              "sessionIDLength": 16,
-              "sessionPlacement": "query",
+              "uplinkChunkSize": 16384,
               "uplinkHTTPMethod": "GET",
               "xPaddingObfsMode": true,
-              "xPaddingPlacement": "query",
-              "scMaxEachPostBytes": 524288,
-              "sessionIDPlacement": "query",
+              "xPaddingPlacement": "queryInHeader",
+              "scMaxEachPostBytes": 32768,
+              "uplinkDataPlacement": "header",
               "scMaxConcurrentPosts": 1,
               "scMinPostsIntervalMs": 10
             }
