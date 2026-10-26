@@ -4318,17 +4318,17 @@
             ]
           },
           "xhttpSettings": {
-            "path": "/api/v2/buckets/840cf813/parts/",
+            "path": "/api/v2/buckets/bd299857/blocks/",
             "mode": "packet-up",
             "host": "nt8m6b8v.rmtstorage.site",
             "extra": {
               "mode": "packet-up",
-              "path": "/api/v2/buckets/840cf813/parts/",
+              "path": "/api/v2/buckets/bd299857/blocks/",
               "seqKey": "block",
               "headers": {
                 "Accept": "application/json, text/plain, */*",
                 "Referer": "https://nt8m6b8v.rmtstorage.site/",
-                "sec-ch-ua": "\"Not/A)Brand\";v=\"24\", \"Google Chrome\";v=\"150\", \"Chromium\";v=\"150\"",
+                "sec-ch-ua": "\"Google Chrome\";v=\"150\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"150\"",
                 "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36",
                 "Sec-Fetch-Dest": "empty",
                 "Sec-Fetch-Mode": "cors",
