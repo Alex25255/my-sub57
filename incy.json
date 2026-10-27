@@ -10401,12 +10401,12 @@
         "settings": {
           "vnext": [
             {
-              "address": "212.233.88.58",
-              "port": 10854,
+              "address": "31.77.232.115",
+              "port": 15356,
               "users": [
                 {
                   "encryption": "none",
-                  "id": "a07c73c6-379e-4306-98db-eba03e80fbd3",
+                  "id": "bee15237-a7f5-41eb-b190-24cd06b1223e",
                   "flow": "xtls-rprx-vision"
                 }
               ]
@@ -10418,8 +10418,8 @@
           "security": "reality",
           "realitySettings": {
             "fingerprint": "chrome",
-            "publicKey": "RqTfJkMrVrbGOcRX3Ifhq3gHHZYDWx-rA8wp3xVBpX8",
-            "shortId": "4195b711",
+            "publicKey": "T2dJ3qSBmkW72ReFHl4lYWy7RcSbcFYYT6rbFjMCRwI",
+            "shortId": "956537a0",
             "spiderX": "/"
           },
           "tcpSettings": {}
