@@ -10402,11 +10402,11 @@
           "vnext": [
             {
               "address": "201.34.133.241",
-              "port": 10745,
+              "port": 61316,
               "users": [
                 {
                   "encryption": "none",
-                  "id": "5ec40712-5092-423e-8bc6-ed213212df44",
+                  "id": "b1c185a9-7fc8-45c4-b28a-5d60c51c5a7b",
                   "flow": "xtls-rprx-vision"
                 }
               ]
@@ -10418,8 +10418,8 @@
           "security": "reality",
           "realitySettings": {
             "fingerprint": "chrome",
-            "publicKey": "vufMyjvoBeAOTk_hqhe_nRlUIHnEOF2oTOKd0WQv6wg",
-            "shortId": "d79c8181",
+            "publicKey": "TmU_YPw--Afjx5JsYoqvfR3JnkWgZWDc4tamq8BpOWc",
+            "shortId": "5aa6a77d",
             "spiderX": "/"
           },
           "tcpSettings": {}
