@@ -2101,7 +2101,7 @@
         "tag": "dns-out"
       }
     ],
-    "remarks": "⚡️Авто обход глушилок Wi-Fi",
+    "remarks": "⚡️Авто Wi-Fi",
     "routing": {
       "balancers": [
         {
@@ -2690,7 +2690,7 @@
         }
       ]
     },
-    "admin_display_name": "⚡️Авто обход глушилок Wi-Fi",
+    "admin_display_name": "⚡️Авто Wi-Fi",
     "admin_auto_profile": true
   },
   {
