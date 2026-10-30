@@ -2704,7 +2704,8 @@
       "subjectSelector": [
         "bridge-1",
         "bridge-2",
-        "bridge-3"
+        "bridge-3",
+        "bridge-4"
       ]
     },
     "dns": {
@@ -3481,6 +3482,63 @@
         "server_domains": []
       },
       {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "eltu78f.vkapi.site",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "mlkem768x25519plus.native.0rtt.tXgY8Cwd9ED6tJi_p4Xpv-E9iakyWEtJFelWoNycvE4",
+                  "flow": "",
+                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "tls",
+          "tlsSettings": {
+            "alpn": [
+              "h2",
+              "http/1.1"
+            ],
+            "enableSessionResumption": false,
+            "fingerprint": "chrome",
+            "serverName": "eltu78f.vkapi.site"
+          },
+          "xhttpSettings": {
+            "extra": {
+              "mode": "packet-up",
+              "noGRPCHeader": true,
+              "path": "/api/v2/events/",
+              "scMaxConcurrentPosts": 1,
+              "scMaxEachPostBytes": "200000-500000",
+              "scMinPostsIntervalMs": 50,
+              "uplinkChunkSize": 16384,
+              "uplinkDataPlacement": "header",
+              "uplinkHTTPMethod": "GET",
+              "xmux": {
+                "cMaxReuseTimes": "200-400",
+                "hKeepAlivePeriod": 30,
+                "hMaxRequestTimes": 0,
+                "hMaxReusableSecs": "1800-3000",
+                "maxConnections": 2
+              }
+            },
+            "host": "eltu78f.vkapi.site",
+            "mode": "packet-up",
+            "path": "/api/v2/events/"
+          }
+        },
+        "admin_display_name": "proxy",
+        "tag": "bridge-4",
+        "server_domains": []
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -3500,7 +3558,8 @@
           "selector": [
             "bridge-1",
             "bridge-2",
-            "bridge-3"
+            "bridge-3",
+            "bridge-4"
           ],
           "strategy": {
             "type": "random"
