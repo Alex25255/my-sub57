@@ -1403,7 +1403,8 @@
       },
       "subjectSelector": [
         "💫 Умная локация (Москва, #2) от StealthSurf VPN",
-        "🇩🇪 Германия от StealthSurf VPN"
+        "🇩🇪 Германия от StealthSurf VPN",
+        "bridge-1"
       ]
     },
     "dns": {
@@ -2057,6 +2058,37 @@
         "tag": "🇩🇪 Германия от StealthSurf VPN"
       },
       {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "168.113.128.230",
+              "port": 18211,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "fb5bb508-103d-4e1b-be31-4a30bf1ddc75",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "fingerprint": "chrome",
+            "publicKey": "JiY-q1MqIZkYQz7hhkashnFwaIr_N9Bh8_2yibZSZWA",
+            "shortId": "00e6da97",
+            "spiderX": "/"
+          },
+          "tcpSettings": {}
+        },
+        "tag": "bridge-1",
+        "server_domains": []
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -2075,7 +2107,8 @@
         {
           "selector": [
             "💫 Умная локация (Москва, #2) от StealthSurf VPN",
-            "🇩🇪 Германия от StealthSurf VPN"
+            "🇩🇪 Германия от StealthSurf VPN",
+            "bridge-1"
           ],
           "strategy": {
             "type": "random"
