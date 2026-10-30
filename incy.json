@@ -1402,7 +1402,6 @@
         "timeout": "5s"
       },
       "subjectSelector": [
-        "🚀 Wi-Fi лучший",
         "💫 Умная локация (Москва, #2) от StealthSurf VPN",
         "🇩🇪 Германия от StealthSurf VPN"
       ]
@@ -2002,36 +2001,6 @@
         "settings": {
           "vnext": [
             {
-              "address": "144.48.10.60",
-              "port": 17989,
-              "users": [
-                {
-                  "encryption": "none",
-                  "id": "d3936df2-b097-4f3d-ae30-e4e2d76f6253",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "fingerprint": "chrome",
-            "publicKey": "yB6VnNjAjtOKvq4Or-_rWYkl67SfeC-oTRVCfoXTrj0",
-            "shortId": "b775afad",
-            "spiderX": "/"
-          },
-          "tcpSettings": {}
-        },
-        "tag": "🚀 Wi-Fi лучший"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
               "address": "201.34.133.241",
               "port": 43000,
               "users": [
@@ -2105,7 +2074,6 @@
       "balancers": [
         {
           "selector": [
-            "🚀 Wi-Fi лучший",
             "💫 Умная локация (Москва, #2) от StealthSurf VPN",
             "🇩🇪 Германия от StealthSurf VPN"
           ],
