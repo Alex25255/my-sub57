@@ -1409,7 +1409,8 @@
         "bridge-5",
         "bridge-6",
         "bridge-7",
-        "bridge-8"
+        "bridge-8",
+        "bridge-9"
       ]
     },
     "dns": {
@@ -2487,6 +2488,67 @@
         "server_domains": []
       },
       {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "front.cloudfoxe.site",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "mlkem768x25519plus.native.0rtt.2Vaz61q44JwnLRtrIOu0J0NLMFxPwdg0Sp9k3K0PDHs",
+                  "flow": "",
+                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "tls",
+          "tlsSettings": {
+            "alpn": [
+              "h2",
+              "http/1.1"
+            ],
+            "enableSessionResumption": false,
+            "fingerprint": "chrome",
+            "serverName": "front.cloudfoxe.site"
+          },
+          "xhttpSettings": {
+            "extra": {
+              "mode": "packet-up",
+              "path": "/api/v1/30034/sync/",
+              "scMaxConcurrentPosts": 1,
+              "scMaxEachPostBytes": "200000-500000",
+              "scMinPostsIntervalMs": 50,
+              "uplinkChunkSize": 16384,
+              "uplinkDataPlacement": "header",
+              "uplinkHTTPMethod": "GET",
+              "xmux": {
+                "cMaxReuseTimes": "200-400",
+                "hKeepAlivePeriod": 30,
+                "hMaxRequestTimes": 0,
+                "hMaxReusableSecs": "1800-3000",
+                "maxConnections": 2
+              },
+              "xPaddingHeader": "X-Cache",
+              "xPaddingKey": "_dc",
+              "xPaddingMethod": "tokenish",
+              "xPaddingObfsMode": true,
+              "xPaddingPlacement": "queryInHeader"
+            },
+            "host": "front.cloudfoxe.site",
+            "mode": "packet-up",
+            "path": "/api/v1/30034/sync/"
+          }
+        },
+        "admin_display_name": "proxy",
+        "tag": "bridge-9",
+        "server_domains": []
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -2511,7 +2573,8 @@
             "bridge-5",
             "bridge-6",
             "bridge-7",
-            "bridge-8"
+            "bridge-8",
+            "bridge-9"
           ],
           "strategy": {
             "type": "random"
