@@ -3768,12 +3768,12 @@
         "settings": {
           "vnext": [
             {
-              "address": "201.34.133.241",
+              "address": "45.139.84.54",
               "port": 43000,
               "users": [
                 {
                   "encryption": "none",
-                  "id": "8ed131cc-33ed-499b-b352-d62b54599279",
+                  "id": "b1c87d9a-475a-4137-a70a-aa48ec9dd767",
                   "flow": "xtls-rprx-vision"
                 }
               ]
@@ -3785,8 +3785,8 @@
           "security": "reality",
           "realitySettings": {
             "fingerprint": "chrome",
-            "publicKey": "qQZITalHZ-Gef5WRq5ehLnXzzzyigaBGPFru6eb0iHw",
-            "shortId": "506b8c8c",
+            "publicKey": "5qbTokHn-v590JeD9CVKafSnrgoR-5M3wsT7zN9Nki4",
+            "shortId": "b632e4df",
             "spiderX": "/"
           },
           "tcpSettings": {}
