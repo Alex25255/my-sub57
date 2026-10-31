@@ -4510,9 +4510,9 @@
           ]
         },
         "tag": "proxy",
-        "admin_display_name": "🔋Обход LTE",
-        "remark": "🔋Обход LTE",
-        "remarks": "🔋Обход LTE"
+        "admin_display_name": "Игровой обход",
+        "remark": "Игровой обход",
+        "remarks": "Игровой обход"
       },
       {
         "protocol": "freedom",
@@ -4940,7 +4940,7 @@
         }
       ]
     },
-    "admin_display_name": "🔋Обход LTE"
+    "admin_display_name": "Игровой обход"
   },
   {
     "inbounds": [
