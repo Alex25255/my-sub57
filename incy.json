@@ -3829,11 +3829,11 @@
           "vnext": [
             {
               "address": "168.113.128.230",
-              "port": 18211,
+              "port": 62642,
               "users": [
                 {
                   "encryption": "none",
-                  "id": "fb5bb508-103d-4e1b-be31-4a30bf1ddc75",
+                  "id": "818c421a-fdfc-4d2b-8c7c-e350db96c338",
                   "flow": "xtls-rprx-vision"
                 }
               ]
@@ -3845,8 +3845,8 @@
           "security": "reality",
           "realitySettings": {
             "fingerprint": "chrome",
-            "publicKey": "JiY-q1MqIZkYQz7hhkashnFwaIr_N9Bh8_2yibZSZWA",
-            "shortId": "00e6da97",
+            "publicKey": "-jbbL3oNcbeX9DxEzhcsWfZoyRNi9qpLubDl4RefmmI",
+            "shortId": "2e6eeafe",
             "spiderX": "/"
           },
           "tcpSettings": {}
