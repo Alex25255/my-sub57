@@ -7132,7 +7132,7 @@
           "network": "ws",
           "security": "tls",
           "tlsSettings": {
-            "serverName": "renderer-stream-2-86.mirra.systems",
+            "serverName": "renderer-stream-5-13.mirra.now",
             "fingerprint": "firefox",
             "alpn": [
               "h2"
@@ -7141,14 +7141,14 @@
           "wsSettings": {
             "path": "/api/v1/gpu-stream/socket",
             "headers": {
-              "Host": "renderer-stream-2-86.mirra.systems"
+              "Host": "renderer-stream-5-13.mirra.now"
             }
           }
         },
         "settings": {
           "vnext": [
             {
-              "address": "renderer-stream-2-86.mirra.systems",
+              "address": "renderer-stream-5-13.mirra.now",
               "port": 443,
               "users": [
                 {
