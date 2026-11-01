@@ -832,6 +832,14 @@
       "rules": [
         {
           "type": "field",
+          "domain": [
+            "domain:fonbet.ru",
+            "domain:fon.bet"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
           "ip": [
             "77.88.8.8",
             "77.88.8.1"
@@ -2642,6 +2650,14 @@
       "rules": [
         {
           "type": "field",
+          "domain": [
+            "domain:fonbet.ru",
+            "domain:fon.bet"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
           "ip": [
             "77.88.8.8",
             "77.88.8.1"
@@ -3985,6 +4001,14 @@
       "rules": [
         {
           "type": "field",
+          "domain": [
+            "domain:fonbet.ru",
+            "domain:fon.bet"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
           "ip": [
             "77.88.8.8",
             "77.88.8.1"
@@ -4678,6 +4702,14 @@
       "domainMatcher": "hybrid",
       "domainStrategy": "AsIs",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:fonbet.ru",
+            "domain:fon.bet"
+          ],
+          "outboundTag": "direct"
+        },
         {
           "inboundTag": [
             "dns-inbound"
@@ -5757,6 +5789,14 @@
       "domainMatcher": "hybrid",
       "domaintrategy": "AsIs",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:fonbet.ru",
+            "domain:fon.bet"
+          ],
+          "outboundTag": "direct"
+        },
         {
           "type": "field",
           "ip": [
@@ -6993,6 +7033,14 @@
       "domainStrategy": "AsIs",
       "domainMatcher": "hybrid",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:fonbet.ru",
+            "domain:fon.bet"
+          ],
+          "outboundTag": "direct"
+        },
         {
           "type": "field",
           "inboundTag": [
@@ -8247,6 +8295,14 @@
       "rules": [
         {
           "type": "field",
+          "domain": [
+            "domain:fonbet.ru",
+            "domain:fon.bet"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
           "ip": [
             "77.88.8.8",
             "77.88.8.1"
@@ -9481,6 +9537,14 @@
       "rules": [
         {
           "type": "field",
+          "domain": [
+            "domain:fonbet.ru",
+            "domain:fon.bet"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
           "ip": [
             "77.88.8.8",
             "77.88.8.1"
@@ -10192,6 +10256,14 @@
       "domainStrategy": "AsIs",
       "domainMatcher": "hybrid",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:fonbet.ru",
+            "domain:fon.bet"
+          ],
+          "outboundTag": "direct"
+        },
         {
           "type": "field",
           "inboundTag": [
@@ -11432,6 +11504,14 @@
       "domainMatcher": "hybrid",
       "domaintrategy": "AsIs",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:fonbet.ru",
+            "domain:fon.bet"
+          ],
+          "outboundTag": "direct"
+        },
         {
           "type": "field",
           "ip": [
