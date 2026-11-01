@@ -541,7 +541,11 @@
             "domain:ok.me",
             "domain:okko.sport",
             "domain:okkoapi.tv",
-            "domain:onelya.ru"
+            "domain:onelya.ru",
+            "domain:starline.ru",
+            "domain:starline.online",
+            "domain:starline-online.ru",
+            "domain:starline.bz"
           ],
           "skipFallback": true
         },
@@ -1379,7 +1383,11 @@
             "domain:ok.me",
             "domain:okko.sport",
             "domain:okkoapi.tv",
-            "domain:onelya.ru"
+            "domain:onelya.ru",
+            "domain:starline.ru",
+            "domain:starline.online",
+            "domain:starline-online.ru",
+            "domain:starline.bz"
           ],
           "outboundTag": "direct"
         },
@@ -1938,7 +1946,11 @@
             "domain:ok.me",
             "domain:okko.sport",
             "domain:okkoapi.tv",
-            "domain:onelya.ru"
+            "domain:onelya.ru",
+            "domain:starline.ru",
+            "domain:starline.online",
+            "domain:starline-online.ru",
+            "domain:starline.bz"
           ],
           "skipFallback": true
         },
@@ -3145,7 +3157,11 @@
             "domain:ok.me",
             "domain:okko.sport",
             "domain:okkoapi.tv",
-            "domain:onelya.ru"
+            "domain:onelya.ru",
+            "domain:starline.ru",
+            "domain:starline.online",
+            "domain:starline-online.ru",
+            "domain:starline.bz"
           ],
           "outboundTag": "direct"
         },
@@ -3698,7 +3714,11 @@
             "domain:ok.me",
             "domain:okko.sport",
             "domain:okkoapi.tv",
-            "domain:onelya.ru"
+            "domain:onelya.ru",
+            "domain:starline.ru",
+            "domain:starline.online",
+            "domain:starline-online.ru",
+            "domain:starline.bz"
           ],
           "skipFallback": true
         },
@@ -4444,7 +4464,11 @@
             "domain:ok.me",
             "domain:okko.sport",
             "domain:okkoapi.tv",
-            "domain:onelya.ru"
+            "domain:onelya.ru",
+            "domain:starline.ru",
+            "domain:starline.online",
+            "domain:starline-online.ru",
+            "domain:starline.bz"
           ],
           "outboundTag": "direct"
         },
@@ -4933,7 +4957,11 @@
             "domain:trueconf.ru",
             "domain:elta-r.ru",
             "domain:khl.ru",
-            "domain:s82079.cdn.ngenix.net"
+            "domain:s82079.cdn.ngenix.net",
+            "domain:starline.ru",
+            "domain:starline.online",
+            "domain:starline-online.ru",
+            "domain:starline.bz"
           ],
           "outboundTag": "direct",
           "type": "field"
@@ -5491,7 +5519,11 @@
             "domain:ok.me",
             "domain:okko.sport",
             "domain:okkoapi.tv",
-            "domain:onelya.ru"
+            "domain:onelya.ru",
+            "domain:starline.ru",
+            "domain:starline.online",
+            "domain:starline-online.ru",
+            "domain:starline.bz"
           ],
           "skipFallback": true
         },
@@ -6116,7 +6148,11 @@
             "domain:ok.me",
             "domain:okko.sport",
             "domain:okkoapi.tv",
-            "domain:onelya.ru"
+            "domain:onelya.ru",
+            "domain:starline.ru",
+            "domain:starline.online",
+            "domain:starline-online.ru",
+            "domain:starline.bz"
           ],
           "outboundTag": "direct"
         },
@@ -7329,7 +7365,11 @@
             "domain:ok.me",
             "domain:okko.sport",
             "domain:okkoapi.tv",
-            "domain:onelya.ru"
+            "domain:onelya.ru",
+            "domain:starline.ru",
+            "domain:starline.online",
+            "domain:starline-online.ru",
+            "domain:starline.bz"
           ],
           "outboundTag": "direct"
         },
@@ -7892,7 +7932,11 @@
             "domain:ok.me",
             "domain:okko.sport",
             "domain:okkoapi.tv",
-            "domain:onelya.ru"
+            "domain:onelya.ru",
+            "domain:starline.ru",
+            "domain:starline.online",
+            "domain:starline-online.ru",
+            "domain:starline.bz"
           ],
           "skipFallback": true
         },
@@ -8520,7 +8564,11 @@
             "domain:ok.me",
             "domain:okko.sport",
             "domain:okkoapi.tv",
-            "domain:onelya.ru"
+            "domain:onelya.ru",
+            "domain:starline.ru",
+            "domain:starline.online",
+            "domain:starline-online.ru",
+            "domain:starline.bz"
           ],
           "outboundTag": "direct"
         },
@@ -9082,7 +9130,11 @@
             "domain:ok.me",
             "domain:okko.sport",
             "domain:okkoapi.tv",
-            "domain:onelya.ru"
+            "domain:onelya.ru",
+            "domain:starline.ru",
+            "domain:starline.online",
+            "domain:starline-online.ru",
+            "domain:starline.bz"
           ],
           "skipFallback": true
         },
@@ -9710,7 +9762,11 @@
             "domain:ok.me",
             "domain:okko.sport",
             "domain:okkoapi.tv",
-            "domain:onelya.ru"
+            "domain:onelya.ru",
+            "domain:starline.ru",
+            "domain:starline.online",
+            "domain:starline-online.ru",
+            "domain:starline.bz"
           ],
           "outboundTag": "direct"
         },
@@ -10394,7 +10450,11 @@
             "domain:ok.me",
             "domain:okko.sport",
             "domain:okkoapi.tv",
-            "domain:onelya.ru"
+            "domain:onelya.ru",
+            "domain:starline.ru",
+            "domain:starline.online",
+            "domain:starline-online.ru",
+            "domain:starline.bz"
           ],
           "outboundTag": "direct"
         },
@@ -10958,7 +11018,11 @@
             "domain:ok.me",
             "domain:okko.sport",
             "domain:okkoapi.tv",
-            "domain:onelya.ru"
+            "domain:onelya.ru",
+            "domain:starline.ru",
+            "domain:starline.online",
+            "domain:starline-online.ru",
+            "domain:starline.bz"
           ],
           "skipFallback": true
         },
@@ -11583,7 +11647,11 @@
             "domain:ok.me",
             "domain:okko.sport",
             "domain:okkoapi.tv",
-            "domain:onelya.ru"
+            "domain:onelya.ru",
+            "domain:starline.ru",
+            "domain:starline.online",
+            "domain:starline-online.ru",
+            "domain:starline.bz"
           ],
           "outboundTag": "direct"
         },
@@ -11596,3 +11664,4 @@
     }
   }
 ]
+
