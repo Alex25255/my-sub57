@@ -880,17 +880,26 @@
         {
           "type": "field",
           "domain": [
+            "full:ucams.ufanet.ru"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
+            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
+            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
           ],
           "network": "tcp,udp",
-          "balancerTag": "auto-best"
+          "outboundTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
           "port": "554,8554",
           "network": "tcp",
-          "balancerTag": "auto-best"
+          "outboundTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -2681,17 +2690,26 @@
         {
           "type": "field",
           "domain": [
+            "full:ucams.ufanet.ru"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
+            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
+            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
           ],
           "network": "tcp,udp",
-          "balancerTag": "auto-best"
+          "outboundTag": "bridge-1"
         },
         {
           "type": "field",
           "port": "554,8554",
           "network": "tcp",
-          "balancerTag": "auto-best"
+          "outboundTag": "bridge-1"
         },
         {
           "type": "field",
@@ -4015,17 +4033,26 @@
         {
           "type": "field",
           "domain": [
+            "full:ucams.ufanet.ru"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
+            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
+            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
           ],
           "network": "tcp,udp",
-          "balancerTag": "auto-best"
+          "outboundTag": "💫 Умная локация (Москва, #2) от StealthSurf VPN"
         },
         {
           "type": "field",
           "port": "554,8554",
           "network": "tcp",
-          "balancerTag": "auto-best"
+          "outboundTag": "💫 Умная локация (Москва, #2) от StealthSurf VPN"
         },
         {
           "type": "field",
@@ -4727,8 +4754,17 @@
         {
           "type": "field",
           "domain": [
+            "full:ucams.ufanet.ru"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
+            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
+            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
           ],
           "network": "tcp,udp",
           "outboundTag": "proxy"
@@ -5764,8 +5800,17 @@
         {
           "type": "field",
           "domain": [
+            "full:ucams.ufanet.ru"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
+            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
+            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
           ],
           "network": "tcp,udp",
           "outboundTag": "🇩🇪 Обход LTE"
@@ -7008,8 +7053,17 @@
         {
           "type": "field",
           "domain": [
+            "full:ucams.ufanet.ru"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
+            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
+            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
           ],
           "network": "tcp,udp",
           "outboundTag": "main"
@@ -8234,8 +8288,17 @@
         {
           "type": "field",
           "domain": [
+            "full:ucams.ufanet.ru"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
+            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
+            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
           ],
           "network": "tcp,udp",
           "outboundTag": "🇳🇱 Обход LTE"
@@ -9459,8 +9522,17 @@
         {
           "type": "field",
           "domain": [
+            "full:ucams.ufanet.ru"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
+            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
+            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
           ],
           "network": "tcp,udp",
           "outboundTag": "🇺🇸 Обход LTE"
@@ -10170,8 +10242,17 @@
         {
           "type": "field",
           "domain": [
+            "full:ucams.ufanet.ru"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
+            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
+            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
           ],
           "network": "tcp,udp",
           "outboundTag": "main"
@@ -11394,8 +11475,17 @@
         {
           "type": "field",
           "domain": [
+            "full:ucams.ufanet.ru"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
+            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
+            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
           ],
           "network": "tcp,udp",
           "outboundTag": "🇷🇺 Обход РЕЗЕРВ LTE"
