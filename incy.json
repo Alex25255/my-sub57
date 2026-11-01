@@ -880,6 +880,21 @@
         {
           "type": "field",
           "domain": [
+            "domain:avucams.com",
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+          ],
+          "network": "tcp,udp",
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "port": "554,8554",
+          "network": "tcp",
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -2666,6 +2681,21 @@
         {
           "type": "field",
           "domain": [
+            "domain:avucams.com",
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+          ],
+          "network": "tcp,udp",
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "port": "554,8554",
+          "network": "tcp",
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -3985,6 +4015,21 @@
         {
           "type": "field",
           "domain": [
+            "domain:avucams.com",
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+          ],
+          "network": "tcp,udp",
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "port": "554,8554",
+          "network": "tcp",
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -4668,6 +4713,38 @@
             "bittorrent"
           ],
           "type": "field"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "10.0.0.0/8",
+            "172.16.0.0/12",
+            "192.168.0.0/16",
+            "169.254.0.0/16"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:avucams.com",
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+          ],
+          "network": "tcp,udp",
+          "outboundTag": "proxy"
+        },
+        {
+          "type": "field",
+          "port": "554,8554",
+          "network": "tcp",
+          "outboundTag": "proxy"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:ufanet.ru"
+          ],
+          "outboundTag": "direct"
         },
         {
           "network": "udp",
@@ -5683,6 +5760,21 @@
             "169.254.0.0/16"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:avucams.com",
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+          ],
+          "network": "tcp,udp",
+          "outboundTag": "🇩🇪 Обход LTE"
+        },
+        {
+          "type": "field",
+          "port": "554,8554",
+          "network": "tcp",
+          "outboundTag": "🇩🇪 Обход LTE"
         },
         {
           "type": "field",
@@ -6916,6 +7008,21 @@
         {
           "type": "field",
           "domain": [
+            "domain:avucams.com",
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+          ],
+          "network": "tcp,udp",
+          "outboundTag": "main"
+        },
+        {
+          "type": "field",
+          "port": "554,8554",
+          "network": "tcp",
+          "outboundTag": "main"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -8123,6 +8230,21 @@
             "169.254.0.0/16"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:avucams.com",
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+          ],
+          "network": "tcp,udp",
+          "outboundTag": "🇳🇱 Обход LTE"
+        },
+        {
+          "type": "field",
+          "port": "554,8554",
+          "network": "tcp",
+          "outboundTag": "🇳🇱 Обход LTE"
         },
         {
           "type": "field",
@@ -9337,6 +9459,21 @@
         {
           "type": "field",
           "domain": [
+            "domain:avucams.com",
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+          ],
+          "network": "tcp,udp",
+          "outboundTag": "🇺🇸 Обход LTE"
+        },
+        {
+          "type": "field",
+          "port": "554,8554",
+          "network": "tcp",
+          "outboundTag": "🇺🇸 Обход LTE"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -10029,6 +10166,21 @@
             "169.254.0.0/16"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:avucams.com",
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+          ],
+          "network": "tcp,udp",
+          "outboundTag": "main"
+        },
+        {
+          "type": "field",
+          "port": "554,8554",
+          "network": "tcp",
+          "outboundTag": "main"
         },
         {
           "type": "field",
@@ -11242,6 +11394,21 @@
         {
           "type": "field",
           "domain": [
+            "domain:avucams.com",
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$"
+          ],
+          "network": "tcp,udp",
+          "outboundTag": "🇷🇺 Обход РЕЗЕРВ LTE"
+        },
+        {
+          "type": "field",
+          "port": "554,8554",
+          "network": "tcp",
+          "outboundTag": "🇷🇺 Обход РЕЗЕРВ LTE"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -11774,5 +11941,4 @@
     }
   }
 ]
-
 
