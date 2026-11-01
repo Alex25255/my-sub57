@@ -21,17 +21,18 @@
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
-          "domain": [
+          "skipFallback": true,
+          "domains": [
             "domain:mirra.now",
             "domain:mirra.systems"
-          ],
-          "skipFallback": true
+          ]
         },
         {
           "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
-          "domain": [
+          "skipFallback": true,
+          "domains": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -545,9 +546,14 @@
             "domain:starline.ru",
             "domain:starline.online",
             "domain:starline-online.ru",
-            "domain:starline.bz"
-          ],
-          "skipFallback": true
+            "domain:starline.bz",
+            "domain:uma.media",
+            "domain:sportbox.ru",
+            "domain:pass.media",
+            "domain:matchpremier.ru",
+            "domain:sberbank.ru",
+            "domain:sber.ru"
+          ]
         },
         {
           "address": "https://1.1.1.1/dns-query",
@@ -1387,7 +1393,13 @@
             "domain:starline.ru",
             "domain:starline.online",
             "domain:starline-online.ru",
-            "domain:starline.bz"
+            "domain:starline.bz",
+            "domain:uma.media",
+            "domain:sportbox.ru",
+            "domain:pass.media",
+            "domain:matchpremier.ru",
+            "domain:sberbank.ru",
+            "domain:sber.ru"
           ],
           "outboundTag": "direct"
         },
@@ -1426,17 +1438,18 @@
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
-          "domain": [
+          "skipFallback": true,
+          "domains": [
             "domain:mirra.now",
             "domain:mirra.systems"
-          ],
-          "skipFallback": true
+          ]
         },
         {
           "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
-          "domain": [
+          "skipFallback": true,
+          "domains": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -1950,9 +1963,14 @@
             "domain:starline.ru",
             "domain:starline.online",
             "domain:starline-online.ru",
-            "domain:starline.bz"
-          ],
-          "skipFallback": true
+            "domain:starline.bz",
+            "domain:uma.media",
+            "domain:sportbox.ru",
+            "domain:pass.media",
+            "domain:matchpremier.ru",
+            "domain:sberbank.ru",
+            "domain:sber.ru"
+          ]
         },
         {
           "address": "https://1.1.1.1/dns-query",
@@ -3161,7 +3179,13 @@
             "domain:starline.ru",
             "domain:starline.online",
             "domain:starline-online.ru",
-            "domain:starline.bz"
+            "domain:starline.bz",
+            "domain:uma.media",
+            "domain:sportbox.ru",
+            "domain:pass.media",
+            "domain:matchpremier.ru",
+            "domain:sberbank.ru",
+            "domain:sber.ru"
           ],
           "outboundTag": "direct"
         },
@@ -3194,17 +3218,18 @@
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
-          "domain": [
+          "skipFallback": true,
+          "domains": [
             "domain:mirra.now",
             "domain:mirra.systems"
-          ],
-          "skipFallback": true
+          ]
         },
         {
           "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
-          "domain": [
+          "skipFallback": true,
+          "domains": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -3718,9 +3743,14 @@
             "domain:starline.ru",
             "domain:starline.online",
             "domain:starline-online.ru",
-            "domain:starline.bz"
-          ],
-          "skipFallback": true
+            "domain:starline.bz",
+            "domain:uma.media",
+            "domain:sportbox.ru",
+            "domain:pass.media",
+            "domain:matchpremier.ru",
+            "domain:sberbank.ru",
+            "domain:sber.ru"
+          ]
         },
         {
           "address": "https://1.1.1.1/dns-query",
@@ -4468,7 +4498,13 @@
             "domain:starline.ru",
             "domain:starline.online",
             "domain:starline-online.ru",
-            "domain:starline.bz"
+            "domain:starline.bz",
+            "domain:uma.media",
+            "domain:sportbox.ru",
+            "domain:pass.media",
+            "domain:matchpremier.ru",
+            "domain:sberbank.ru",
+            "domain:sber.ru"
           ],
           "outboundTag": "direct"
         },
@@ -4961,7 +4997,13 @@
             "domain:starline.ru",
             "domain:starline.online",
             "domain:starline-online.ru",
-            "domain:starline.bz"
+            "domain:starline.bz",
+            "domain:uma.media",
+            "domain:sportbox.ru",
+            "domain:pass.media",
+            "domain:matchpremier.ru",
+            "domain:sberbank.ru",
+            "domain:sber.ru"
           ],
           "outboundTag": "direct",
           "type": "field"
@@ -5000,16 +5042,17 @@
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
-          "domain": [
+          "skipFallback": true,
+          "domains": [
             "domain:mirra.systems"
-          ],
-          "skipFallback": true
+          ]
         },
         {
           "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
-          "domain": [
+          "skipFallback": true,
+          "domains": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -5523,9 +5566,14 @@
             "domain:starline.ru",
             "domain:starline.online",
             "domain:starline-online.ru",
-            "domain:starline.bz"
-          ],
-          "skipFallback": true
+            "domain:starline.bz",
+            "domain:uma.media",
+            "domain:sportbox.ru",
+            "domain:pass.media",
+            "domain:matchpremier.ru",
+            "domain:sberbank.ru",
+            "domain:sber.ru"
+          ]
         },
         {
           "address": "https://1.1.1.1/dns-query",
@@ -6152,7 +6200,13 @@
             "domain:starline.ru",
             "domain:starline.online",
             "domain:starline-online.ru",
-            "domain:starline.bz"
+            "domain:starline.bz",
+            "domain:uma.media",
+            "domain:sportbox.ru",
+            "domain:pass.media",
+            "domain:matchpremier.ru",
+            "domain:sberbank.ru",
+            "domain:sber.ru"
           ],
           "outboundTag": "direct"
         },
@@ -6773,7 +6827,13 @@
             "domain:ok.me",
             "domain:okko.sport",
             "domain:okkoapi.tv",
-            "domain:onelya.ru"
+            "domain:onelya.ru",
+            "domain:sberbank.ru",
+            "domain:sber.ru",
+            "domain:uma.media",
+            "domain:pass.media",
+            "domain:sportbox.ru",
+            "domain:matchpremier.ru"
           ]
         },
         {
@@ -7369,7 +7429,13 @@
             "domain:starline.ru",
             "domain:starline.online",
             "domain:starline-online.ru",
-            "domain:starline.bz"
+            "domain:starline.bz",
+            "domain:uma.media",
+            "domain:sportbox.ru",
+            "domain:pass.media",
+            "domain:matchpremier.ru",
+            "domain:sberbank.ru",
+            "domain:sber.ru"
           ],
           "outboundTag": "direct"
         },
@@ -7413,16 +7479,17 @@
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
-          "domain": [
+          "skipFallback": true,
+          "domains": [
             "domain:mirra.systems"
-          ],
-          "skipFallback": true
+          ]
         },
         {
           "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
-          "domain": [
+          "skipFallback": true,
+          "domains": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -7936,9 +8003,14 @@
             "domain:starline.ru",
             "domain:starline.online",
             "domain:starline-online.ru",
-            "domain:starline.bz"
-          ],
-          "skipFallback": true
+            "domain:starline.bz",
+            "domain:uma.media",
+            "domain:sportbox.ru",
+            "domain:pass.media",
+            "domain:matchpremier.ru",
+            "domain:sberbank.ru",
+            "domain:sber.ru"
+          ]
         },
         {
           "address": "https://1.1.1.1/dns-query",
@@ -8568,7 +8640,13 @@
             "domain:starline.ru",
             "domain:starline.online",
             "domain:starline-online.ru",
-            "domain:starline.bz"
+            "domain:starline.bz",
+            "domain:uma.media",
+            "domain:sportbox.ru",
+            "domain:pass.media",
+            "domain:matchpremier.ru",
+            "domain:sberbank.ru",
+            "domain:sber.ru"
           ],
           "outboundTag": "direct"
         },
@@ -8611,16 +8689,17 @@
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
-          "domain": [
+          "skipFallback": true,
+          "domains": [
             "domain:mirra.systems"
-          ],
-          "skipFallback": true
+          ]
         },
         {
           "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
-          "domain": [
+          "skipFallback": true,
+          "domains": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -9134,9 +9213,14 @@
             "domain:starline.ru",
             "domain:starline.online",
             "domain:starline-online.ru",
-            "domain:starline.bz"
-          ],
-          "skipFallback": true
+            "domain:starline.bz",
+            "domain:uma.media",
+            "domain:sportbox.ru",
+            "domain:pass.media",
+            "domain:matchpremier.ru",
+            "domain:sberbank.ru",
+            "domain:sber.ru"
+          ]
         },
         {
           "address": "https://1.1.1.1/dns-query",
@@ -9766,7 +9850,13 @@
             "domain:starline.ru",
             "domain:starline.online",
             "domain:starline-online.ru",
-            "domain:starline.bz"
+            "domain:starline.bz",
+            "domain:uma.media",
+            "domain:sportbox.ru",
+            "domain:pass.media",
+            "domain:matchpremier.ru",
+            "domain:sberbank.ru",
+            "domain:sber.ru"
           ],
           "outboundTag": "direct"
         },
@@ -9876,7 +9966,9 @@
           "tag": "standalone-yandex-direct",
           "queryStrategy": "UseIPv4",
           "domains": [
-            "domain:renderer-stream-1-871.mirra.now"
+            "domain:renderer-stream-1-871.mirra.now",
+            "domain:sberbank.ru",
+            "domain:sber.ru"
           ],
           "skipFallback": true
         },
@@ -10454,7 +10546,13 @@
             "domain:starline.ru",
             "domain:starline.online",
             "domain:starline-online.ru",
-            "domain:starline.bz"
+            "domain:starline.bz",
+            "domain:uma.media",
+            "domain:sportbox.ru",
+            "domain:pass.media",
+            "domain:matchpremier.ru",
+            "domain:sberbank.ru",
+            "domain:sber.ru"
           ],
           "outboundTag": "direct"
         },
@@ -10499,16 +10597,17 @@
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
-          "domain": [
+          "skipFallback": true,
+          "domains": [
             "domain:mirra.systems"
-          ],
-          "skipFallback": true
+          ]
         },
         {
           "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
-          "domain": [
+          "skipFallback": true,
+          "domains": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -11022,9 +11121,14 @@
             "domain:starline.ru",
             "domain:starline.online",
             "domain:starline-online.ru",
-            "domain:starline.bz"
-          ],
-          "skipFallback": true
+            "domain:starline.bz",
+            "domain:uma.media",
+            "domain:sportbox.ru",
+            "domain:pass.media",
+            "domain:matchpremier.ru",
+            "domain:sberbank.ru",
+            "domain:sber.ru"
+          ]
         },
         {
           "address": "https://1.1.1.1/dns-query",
@@ -11651,7 +11755,13 @@
             "domain:starline.ru",
             "domain:starline.online",
             "domain:starline-online.ru",
-            "domain:starline.bz"
+            "domain:starline.bz",
+            "domain:uma.media",
+            "domain:sportbox.ru",
+            "domain:pass.media",
+            "domain:matchpremier.ru",
+            "domain:sberbank.ru",
+            "domain:sber.ru"
           ],
           "outboundTag": "direct"
         },
@@ -11664,4 +11774,5 @@
     }
   }
 ]
+
 
