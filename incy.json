@@ -891,6 +891,24 @@
         {
           "type": "field",
           "domain": [
+            "domain:mapi.yota.ru",
+            "domain:appmetrica.yandex.net",
+            "domain:mc.yandex.ru",
+            "domain:proxy.mob.maps.yandex.net",
+            "domain:tracker-api.vk-analytics.ru",
+            "domain:ts.tracker-api.vk-analytics.ru",
+            "domain:ip4.tracker-api.vk-analytics.ru",
+            "domain:uaas.yandex.ru",
+            "domain:webmode.yota.ru",
+            "domain:adstat.yandex.ru",
+            "domain:i.megafon.ru",
+            "domain:ocsps.ssl.com"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:fonbet.ru",
             "domain:fon.bet"
           ],
@@ -2906,6 +2924,24 @@
         {
           "type": "field",
           "domain": [
+            "domain:mapi.yota.ru",
+            "domain:appmetrica.yandex.net",
+            "domain:mc.yandex.ru",
+            "domain:proxy.mob.maps.yandex.net",
+            "domain:tracker-api.vk-analytics.ru",
+            "domain:ts.tracker-api.vk-analytics.ru",
+            "domain:ip4.tracker-api.vk-analytics.ru",
+            "domain:uaas.yandex.ru",
+            "domain:webmode.yota.ru",
+            "domain:adstat.yandex.ru",
+            "domain:i.megafon.ru",
+            "domain:ocsps.ssl.com"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:fonbet.ru",
             "domain:fon.bet"
           ],
@@ -4424,6 +4460,24 @@
         {
           "type": "field",
           "domain": [
+            "domain:mapi.yota.ru",
+            "domain:appmetrica.yandex.net",
+            "domain:mc.yandex.ru",
+            "domain:proxy.mob.maps.yandex.net",
+            "domain:tracker-api.vk-analytics.ru",
+            "domain:ts.tracker-api.vk-analytics.ru",
+            "domain:ip4.tracker-api.vk-analytics.ru",
+            "domain:uaas.yandex.ru",
+            "domain:webmode.yota.ru",
+            "domain:adstat.yandex.ru",
+            "domain:i.megafon.ru",
+            "domain:ocsps.ssl.com"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:fonbet.ru",
             "domain:fon.bet"
           ],
@@ -5735,6 +5789,24 @@
       "domainMatcher": "hybrid",
       "domainStrategy": "AsIs",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:mapi.yota.ru",
+            "domain:appmetrica.yandex.net",
+            "domain:mc.yandex.ru",
+            "domain:proxy.mob.maps.yandex.net",
+            "domain:tracker-api.vk-analytics.ru",
+            "domain:ts.tracker-api.vk-analytics.ru",
+            "domain:ip4.tracker-api.vk-analytics.ru",
+            "domain:uaas.yandex.ru",
+            "domain:webmode.yota.ru",
+            "domain:adstat.yandex.ru",
+            "domain:i.megafon.ru",
+            "domain:ocsps.ssl.com"
+          ],
+          "outboundTag": "direct"
+        },
         {
           "type": "field",
           "domain": [
@@ -7108,6 +7180,24 @@
       "domainMatcher": "hybrid",
       "domaintrategy": "AsIs",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:mapi.yota.ru",
+            "domain:appmetrica.yandex.net",
+            "domain:mc.yandex.ru",
+            "domain:proxy.mob.maps.yandex.net",
+            "domain:tracker-api.vk-analytics.ru",
+            "domain:ts.tracker-api.vk-analytics.ru",
+            "domain:ip4.tracker-api.vk-analytics.ru",
+            "domain:uaas.yandex.ru",
+            "domain:webmode.yota.ru",
+            "domain:adstat.yandex.ru",
+            "domain:i.megafon.ru",
+            "domain:ocsps.ssl.com"
+          ],
+          "outboundTag": "direct"
+        },
         {
           "type": "field",
           "domain": [
@@ -8557,6 +8647,24 @@
       "domainStrategy": "AsIs",
       "domainMatcher": "hybrid",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:mapi.yota.ru",
+            "domain:appmetrica.yandex.net",
+            "domain:mc.yandex.ru",
+            "domain:proxy.mob.maps.yandex.net",
+            "domain:tracker-api.vk-analytics.ru",
+            "domain:ts.tracker-api.vk-analytics.ru",
+            "domain:ip4.tracker-api.vk-analytics.ru",
+            "domain:uaas.yandex.ru",
+            "domain:webmode.yota.ru",
+            "domain:adstat.yandex.ru",
+            "domain:i.megafon.ru",
+            "domain:ocsps.ssl.com"
+          ],
+          "outboundTag": "direct"
+        },
         {
           "type": "field",
           "domain": [
@@ -10021,6 +10129,24 @@
         {
           "type": "field",
           "domain": [
+            "domain:mapi.yota.ru",
+            "domain:appmetrica.yandex.net",
+            "domain:mc.yandex.ru",
+            "domain:proxy.mob.maps.yandex.net",
+            "domain:tracker-api.vk-analytics.ru",
+            "domain:ts.tracker-api.vk-analytics.ru",
+            "domain:ip4.tracker-api.vk-analytics.ru",
+            "domain:uaas.yandex.ru",
+            "domain:webmode.yota.ru",
+            "domain:adstat.yandex.ru",
+            "domain:i.megafon.ru",
+            "domain:ocsps.ssl.com"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:fonbet.ru",
             "domain:fon.bet"
           ],
@@ -11464,6 +11590,24 @@
         {
           "type": "field",
           "domain": [
+            "domain:mapi.yota.ru",
+            "domain:appmetrica.yandex.net",
+            "domain:mc.yandex.ru",
+            "domain:proxy.mob.maps.yandex.net",
+            "domain:tracker-api.vk-analytics.ru",
+            "domain:ts.tracker-api.vk-analytics.ru",
+            "domain:ip4.tracker-api.vk-analytics.ru",
+            "domain:uaas.yandex.ru",
+            "domain:webmode.yota.ru",
+            "domain:adstat.yandex.ru",
+            "domain:i.megafon.ru",
+            "domain:ocsps.ssl.com"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:fonbet.ru",
             "domain:fon.bet"
           ],
@@ -12901,6 +13045,24 @@
       "domainStrategy": "AsIs",
       "domainMatcher": "hybrid",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:mapi.yota.ru",
+            "domain:appmetrica.yandex.net",
+            "domain:mc.yandex.ru",
+            "domain:proxy.mob.maps.yandex.net",
+            "domain:tracker-api.vk-analytics.ru",
+            "domain:ts.tracker-api.vk-analytics.ru",
+            "domain:ip4.tracker-api.vk-analytics.ru",
+            "domain:uaas.yandex.ru",
+            "domain:webmode.yota.ru",
+            "domain:adstat.yandex.ru",
+            "domain:i.megafon.ru",
+            "domain:ocsps.ssl.com"
+          ],
+          "outboundTag": "direct"
+        },
         {
           "type": "field",
           "domain": [
@@ -14350,6 +14512,24 @@
       "domainMatcher": "hybrid",
       "domaintrategy": "AsIs",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:mapi.yota.ru",
+            "domain:appmetrica.yandex.net",
+            "domain:mc.yandex.ru",
+            "domain:proxy.mob.maps.yandex.net",
+            "domain:tracker-api.vk-analytics.ru",
+            "domain:ts.tracker-api.vk-analytics.ru",
+            "domain:ip4.tracker-api.vk-analytics.ru",
+            "domain:uaas.yandex.ru",
+            "domain:webmode.yota.ru",
+            "domain:adstat.yandex.ru",
+            "domain:i.megafon.ru",
+            "domain:ocsps.ssl.com"
+          ],
+          "outboundTag": "direct"
+        },
         {
           "type": "field",
           "domain": [
