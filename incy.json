@@ -930,6 +930,45 @@
         {
           "type": "field",
           "domain": [
+            "domain:telegram.org",
+            "domain:telegram.me",
+            "domain:telegram.dog",
+            "domain:t.me",
+            "domain:telegra.ph",
+            "domain:telesco.pe",
+            "domain:tdesktop.com",
+            "domain:telegram-cdn.org",
+            "domain:telegramusercontent.com",
+            "domain:tg.dev"
+          ],
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "91.108.56.0/22",
+            "91.108.4.0/22",
+            "91.108.8.0/22",
+            "91.108.16.0/22",
+            "91.108.12.0/22",
+            "149.154.160.0/20",
+            "91.105.192.0/23",
+            "91.108.20.0/22",
+            "185.76.151.0/24",
+            "2001:b28:f23d::/48",
+            "2001:b28:f23f::/48",
+            "2001:67c:4e8::/48",
+            "2001:b28:f23c::/48",
+            "2a0a:f280::/32",
+            "5.28.128.0/17",
+            "95.161.64.0/20",
+            "109.239.140.0/24"
+          ],
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:mapi.yota.ru",
             "domain:appmetrica.yandex.net",
             "domain:mc.yandex.ru",
@@ -2964,6 +3003,45 @@
         {
           "type": "field",
           "domain": [
+            "domain:telegram.org",
+            "domain:telegram.me",
+            "domain:telegram.dog",
+            "domain:t.me",
+            "domain:telegra.ph",
+            "domain:telesco.pe",
+            "domain:tdesktop.com",
+            "domain:telegram-cdn.org",
+            "domain:telegramusercontent.com",
+            "domain:tg.dev"
+          ],
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "91.108.56.0/22",
+            "91.108.4.0/22",
+            "91.108.8.0/22",
+            "91.108.16.0/22",
+            "91.108.12.0/22",
+            "149.154.160.0/20",
+            "91.105.192.0/23",
+            "91.108.20.0/22",
+            "185.76.151.0/24",
+            "2001:b28:f23d::/48",
+            "2001:b28:f23f::/48",
+            "2001:67c:4e8::/48",
+            "2001:b28:f23c::/48",
+            "2a0a:f280::/32",
+            "5.28.128.0/17",
+            "95.161.64.0/20",
+            "109.239.140.0/24"
+          ],
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:mapi.yota.ru",
             "domain:appmetrica.yandex.net",
             "domain:mc.yandex.ru",
@@ -4533,6 +4611,29 @@
       "rules": [
         {
           "type": "field",
+          "ip": [
+            "91.108.56.0/22",
+            "91.108.4.0/22",
+            "91.108.8.0/22",
+            "91.108.16.0/22",
+            "91.108.12.0/22",
+            "149.154.160.0/20",
+            "91.105.192.0/23",
+            "91.108.20.0/22",
+            "185.76.151.0/24",
+            "2001:b28:f23d::/48",
+            "2001:b28:f23f::/48",
+            "2001:67c:4e8::/48",
+            "2001:b28:f23c::/48",
+            "2a0a:f280::/32",
+            "5.28.128.0/17",
+            "95.161.64.0/20",
+            "109.239.140.0/24"
+          ],
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
           "domain": [
             "domain:mapi.yota.ru",
             "domain:appmetrica.yandex.net",
@@ -5863,6 +5964,45 @@
       "domainMatcher": "hybrid",
       "domainStrategy": "AsIs",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:telegram.org",
+            "domain:telegram.me",
+            "domain:telegram.dog",
+            "domain:t.me",
+            "domain:telegra.ph",
+            "domain:telesco.pe",
+            "domain:tdesktop.com",
+            "domain:telegram-cdn.org",
+            "domain:telegramusercontent.com",
+            "domain:tg.dev"
+          ],
+          "outboundTag": "proxy"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "91.108.56.0/22",
+            "91.108.4.0/22",
+            "91.108.8.0/22",
+            "91.108.16.0/22",
+            "91.108.12.0/22",
+            "149.154.160.0/20",
+            "91.105.192.0/23",
+            "91.108.20.0/22",
+            "185.76.151.0/24",
+            "2001:b28:f23d::/48",
+            "2001:b28:f23f::/48",
+            "2001:67c:4e8::/48",
+            "2001:b28:f23c::/48",
+            "2a0a:f280::/32",
+            "5.28.128.0/17",
+            "95.161.64.0/20",
+            "109.239.140.0/24"
+          ],
+          "outboundTag": "proxy"
+        },
         {
           "type": "field",
           "domain": [
@@ -7254,6 +7394,45 @@
       "domainMatcher": "hybrid",
       "domaintrategy": "AsIs",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:telegram.org",
+            "domain:telegram.me",
+            "domain:telegram.dog",
+            "domain:t.me",
+            "domain:telegra.ph",
+            "domain:telesco.pe",
+            "domain:tdesktop.com",
+            "domain:telegram-cdn.org",
+            "domain:telegramusercontent.com",
+            "domain:tg.dev"
+          ],
+          "outboundTag": "🇩🇪 Обход LTE"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "91.108.56.0/22",
+            "91.108.4.0/22",
+            "91.108.8.0/22",
+            "91.108.16.0/22",
+            "91.108.12.0/22",
+            "149.154.160.0/20",
+            "91.105.192.0/23",
+            "91.108.20.0/22",
+            "185.76.151.0/24",
+            "2001:b28:f23d::/48",
+            "2001:b28:f23f::/48",
+            "2001:67c:4e8::/48",
+            "2001:b28:f23c::/48",
+            "2a0a:f280::/32",
+            "5.28.128.0/17",
+            "95.161.64.0/20",
+            "109.239.140.0/24"
+          ],
+          "outboundTag": "🇩🇪 Обход LTE"
+        },
         {
           "type": "field",
           "domain": [
@@ -8721,6 +8900,45 @@
       "domainStrategy": "AsIs",
       "domainMatcher": "hybrid",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:telegram.org",
+            "domain:telegram.me",
+            "domain:telegram.dog",
+            "domain:t.me",
+            "domain:telegra.ph",
+            "domain:telesco.pe",
+            "domain:tdesktop.com",
+            "domain:telegram-cdn.org",
+            "domain:telegramusercontent.com",
+            "domain:tg.dev"
+          ],
+          "outboundTag": "main"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "91.108.56.0/22",
+            "91.108.4.0/22",
+            "91.108.8.0/22",
+            "91.108.16.0/22",
+            "91.108.12.0/22",
+            "149.154.160.0/20",
+            "91.105.192.0/23",
+            "91.108.20.0/22",
+            "185.76.151.0/24",
+            "2001:b28:f23d::/48",
+            "2001:b28:f23f::/48",
+            "2001:67c:4e8::/48",
+            "2001:b28:f23c::/48",
+            "2a0a:f280::/32",
+            "5.28.128.0/17",
+            "95.161.64.0/20",
+            "109.239.140.0/24"
+          ],
+          "outboundTag": "main"
+        },
         {
           "type": "field",
           "domain": [
@@ -10203,6 +10421,45 @@
         {
           "type": "field",
           "domain": [
+            "domain:telegram.org",
+            "domain:telegram.me",
+            "domain:telegram.dog",
+            "domain:t.me",
+            "domain:telegra.ph",
+            "domain:telesco.pe",
+            "domain:tdesktop.com",
+            "domain:telegram-cdn.org",
+            "domain:telegramusercontent.com",
+            "domain:tg.dev"
+          ],
+          "outboundTag": "🇳🇱 Обход LTE"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "91.108.56.0/22",
+            "91.108.4.0/22",
+            "91.108.8.0/22",
+            "91.108.16.0/22",
+            "91.108.12.0/22",
+            "149.154.160.0/20",
+            "91.105.192.0/23",
+            "91.108.20.0/22",
+            "185.76.151.0/24",
+            "2001:b28:f23d::/48",
+            "2001:b28:f23f::/48",
+            "2001:67c:4e8::/48",
+            "2001:b28:f23c::/48",
+            "2a0a:f280::/32",
+            "5.28.128.0/17",
+            "95.161.64.0/20",
+            "109.239.140.0/24"
+          ],
+          "outboundTag": "🇳🇱 Обход LTE"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:mapi.yota.ru",
             "domain:appmetrica.yandex.net",
             "domain:mc.yandex.ru",
@@ -11664,6 +11921,45 @@
         {
           "type": "field",
           "domain": [
+            "domain:telegram.org",
+            "domain:telegram.me",
+            "domain:telegram.dog",
+            "domain:t.me",
+            "domain:telegra.ph",
+            "domain:telesco.pe",
+            "domain:tdesktop.com",
+            "domain:telegram-cdn.org",
+            "domain:telegramusercontent.com",
+            "domain:tg.dev"
+          ],
+          "outboundTag": "🇺🇸 Обход LTE"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "91.108.56.0/22",
+            "91.108.4.0/22",
+            "91.108.8.0/22",
+            "91.108.16.0/22",
+            "91.108.12.0/22",
+            "149.154.160.0/20",
+            "91.105.192.0/23",
+            "91.108.20.0/22",
+            "185.76.151.0/24",
+            "2001:b28:f23d::/48",
+            "2001:b28:f23f::/48",
+            "2001:67c:4e8::/48",
+            "2001:b28:f23c::/48",
+            "2a0a:f280::/32",
+            "5.28.128.0/17",
+            "95.161.64.0/20",
+            "109.239.140.0/24"
+          ],
+          "outboundTag": "🇺🇸 Обход LTE"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:mapi.yota.ru",
             "domain:appmetrica.yandex.net",
             "domain:mc.yandex.ru",
@@ -13119,6 +13415,45 @@
       "domainStrategy": "AsIs",
       "domainMatcher": "hybrid",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:telegram.org",
+            "domain:telegram.me",
+            "domain:telegram.dog",
+            "domain:t.me",
+            "domain:telegra.ph",
+            "domain:telesco.pe",
+            "domain:tdesktop.com",
+            "domain:telegram-cdn.org",
+            "domain:telegramusercontent.com",
+            "domain:tg.dev"
+          ],
+          "outboundTag": "main"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "91.108.56.0/22",
+            "91.108.4.0/22",
+            "91.108.8.0/22",
+            "91.108.16.0/22",
+            "91.108.12.0/22",
+            "149.154.160.0/20",
+            "91.105.192.0/23",
+            "91.108.20.0/22",
+            "185.76.151.0/24",
+            "2001:b28:f23d::/48",
+            "2001:b28:f23f::/48",
+            "2001:67c:4e8::/48",
+            "2001:b28:f23c::/48",
+            "2a0a:f280::/32",
+            "5.28.128.0/17",
+            "95.161.64.0/20",
+            "109.239.140.0/24"
+          ],
+          "outboundTag": "main"
+        },
         {
           "type": "field",
           "domain": [
@@ -14586,6 +14921,45 @@
       "domainMatcher": "hybrid",
       "domaintrategy": "AsIs",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:telegram.org",
+            "domain:telegram.me",
+            "domain:telegram.dog",
+            "domain:t.me",
+            "domain:telegra.ph",
+            "domain:telesco.pe",
+            "domain:tdesktop.com",
+            "domain:telegram-cdn.org",
+            "domain:telegramusercontent.com",
+            "domain:tg.dev"
+          ],
+          "outboundTag": "🇷🇺 Обход РЕЗЕРВ LTE"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "91.108.56.0/22",
+            "91.108.4.0/22",
+            "91.108.8.0/22",
+            "91.108.16.0/22",
+            "91.108.12.0/22",
+            "149.154.160.0/20",
+            "91.105.192.0/23",
+            "91.108.20.0/22",
+            "185.76.151.0/24",
+            "2001:b28:f23d::/48",
+            "2001:b28:f23f::/48",
+            "2001:67c:4e8::/48",
+            "2001:b28:f23c::/48",
+            "2a0a:f280::/32",
+            "5.28.128.0/17",
+            "95.161.64.0/20",
+            "109.239.140.0/24"
+          ],
+          "outboundTag": "🇷🇺 Обход РЕЗЕРВ LTE"
+        },
         {
           "type": "field",
           "domain": [
