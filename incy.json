@@ -919,13 +919,13 @@
             "bridge-1"
           ],
           "strategy": {
-            "type": "random"
+            "type": "leastLoad"
           },
-          "tag": "auto-best"
+          "tag": "auto-best",
+          "fallbackTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
         }
       ],
       "domainMatcher": "hybrid",
-      "domaintrategy": "AsIs",
       "rules": [
         {
           "type": "field",
@@ -1658,7 +1658,8 @@
           "network": "tcp,udp",
           "type": "field"
         }
-      ]
+      ],
+      "domainStrategy": "AsIs"
     },
     "admin_display_name": "⚡️Авто обход  LTE"
   },
@@ -2952,13 +2953,13 @@
             "bridge-9"
           ],
           "strategy": {
-            "type": "random"
+            "type": "leastLoad"
           },
-          "tag": "auto-best"
+          "tag": "auto-best",
+          "fallbackTag": "bridge-2"
         }
       ],
       "domainMatcher": "hybrid",
-      "domaintrategy": "AsIs",
       "rules": [
         {
           "type": "field",
@@ -3691,7 +3692,8 @@
           "network": "tcp,udp",
           "type": "field"
         }
-      ]
+      ],
+      "domainStrategy": "AsIs"
     },
     "admin_auto_profile": true
   },
