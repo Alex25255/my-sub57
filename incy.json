@@ -720,10 +720,7 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox",
-            "alpn": [
-              "h2"
-            ]
+            "fingerprint": "firefox"
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
@@ -756,10 +753,7 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox",
-            "alpn": [
-              "h2"
-            ]
+            "fingerprint": "firefox"
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/o36ecpsebyjq/socket",
@@ -792,10 +786,7 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox",
-            "alpn": [
-              "h2"
-            ]
+            "fingerprint": "firefox"
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
@@ -828,10 +819,7 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox",
-            "alpn": [
-              "h2"
-            ]
+            "fingerprint": "firefox"
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
@@ -879,10 +867,7 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox",
-            "alpn": [
-              "h2"
-            ]
+            "fingerprint": "firefox"
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/o36ecpsebyjq/socket",
@@ -4791,7 +4776,6 @@
         }
       ],
       "domainMatcher": "hybrid",
-      "domaintrategy": "AsIs",
       "rules": [
         {
           "type": "field",
@@ -5547,7 +5531,8 @@
           "network": "tcp,udp",
           "type": "field"
         }
-      ]
+      ],
+      "domainStrategy": "AsIs"
     },
     "admin_display_name": "⚡️Авто Wi-Fi",
     "admin_auto_profile": true
@@ -7623,10 +7608,7 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox",
-            "alpn": [
-              "h2"
-            ]
+            "fingerprint": "firefox"
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
@@ -7668,7 +7650,6 @@
     "remarks": "🇩🇪 Обход LTE",
     "routing": {
       "domainMatcher": "hybrid",
-      "domaintrategy": "AsIs",
       "rules": [
         {
           "type": "field",
@@ -8525,7 +8506,8 @@
           "network": "tcp,udp",
           "outboundTag": "🇩🇪 Обход LTE"
         }
-      ]
+      ],
+      "domainStrategy": "AsIs"
     }
   },
   {
@@ -8584,10 +8566,7 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox",
-            "alpn": [
-              "h2"
-            ]
+            "fingerprint": "firefox"
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
@@ -10828,10 +10807,7 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox",
-            "alpn": [
-              "h2"
-            ]
+            "fingerprint": "firefox"
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
@@ -10876,7 +10852,6 @@
     "remarks": "🇳🇱 Обход LTE",
     "routing": {
       "domainMatcher": "hybrid",
-      "domaintrategy": "AsIs",
       "rules": [
         {
           "type": "field",
@@ -11733,9 +11708,10 @@
           "network": "tcp,udp",
           "outboundTag": "🇳🇱 Обход LTE"
         }
-      ]
+      ],
+      "domainStrategy": "AsIs"
     },
-    "admin_display_name": "🇩🇪 Обход LTE 3"
+    "admin_display_name": "🇳🇱 Обход LTE"
   },
   {
     "inbounds": [
@@ -12420,10 +12396,7 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox",
-            "alpn": [
-              "h2"
-            ]
+            "fingerprint": "firefox"
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/o36ecpsebyjq/socket",
@@ -12468,7 +12441,6 @@
     "remarks": "🇺🇸 Обход LTE",
     "routing": {
       "domainMatcher": "hybrid",
-      "domaintrategy": "AsIs",
       "rules": [
         {
           "type": "field",
@@ -13325,9 +13297,10 @@
           "network": "tcp,udp",
           "outboundTag": "🇺🇸 Обход LTE"
         }
-      ]
+      ],
+      "domainStrategy": "AsIs"
     },
-    "admin_display_name": "🇳🇱 Обход LTE"
+    "admin_display_name": "🇺🇸 Обход LTE"
   },
   {
     "remarks": "🇳🇱 Обход LTE 2",
@@ -13385,10 +13358,7 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox",
-            "alpn": [
-              "h2"
-            ]
+            "fingerprint": "firefox"
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/o36ecpsebyjq/socket",
@@ -15610,10 +15580,7 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-5-13.mirra.now",
-            "fingerprint": "firefox",
-            "alpn": [
-              "h2"
-            ]
+            "fingerprint": "firefox"
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/socket",
@@ -15655,7 +15622,6 @@
     "remarks": "🇷🇺 Обход РЕЗЕРВ LTE",
     "routing": {
       "domainMatcher": "hybrid",
-      "domaintrategy": "AsIs",
       "rules": [
         {
           "type": "field",
@@ -16512,7 +16478,8 @@
           "network": "tcp,udp",
           "outboundTag": "🇷🇺 Обход РЕЗЕРВ LTE"
         }
-      ]
+      ],
+      "domainStrategy": "AsIs"
     }
   }
 ]
