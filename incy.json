@@ -7608,7 +7608,10 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox"
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
