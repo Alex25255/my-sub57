@@ -4053,7 +4053,7 @@
       },
       "subjectSelector": [
         "🇵🇱 Премиум-конфиг (ранний доступ)",
-        "🇩🇪 Германия от StealthSurf VPN",
+        "🇩🇪 Германия",
         "bridge-1"
       ]
     },
@@ -4812,7 +4812,7 @@
           },
           "tcpSettings": {}
         },
-        "tag": "🇩🇪 Германия от StealthSurf VPN"
+        "tag": "🇩🇪 Германия"
       },
       {
         "protocol": "vless",
@@ -4864,7 +4864,7 @@
         {
           "selector": [
             "🇵🇱 Премиум-конфиг (ранний доступ)",
-            "🇩🇪 Германия от StealthSurf VPN",
+            "🇩🇪 Германия",
             "bridge-1"
           ],
           "strategy": {
