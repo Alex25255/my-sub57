@@ -10930,9 +10930,9 @@
           ]
         },
         "tag": "🇳🇱 Обход LTE",
-        "admin_display_name": "🇩🇪 Обход LTE 3",
-        "remark": "🇩🇪 Обход LTE 3",
-        "remarks": "🇩🇪 Обход LTE 3"
+        "admin_display_name": "US Обход LTE",
+        "remark": "US Обход LTE",
+        "remarks": "US Обход LTE"
       },
       {
         "protocol": "freedom",
@@ -11809,7 +11809,7 @@
       ],
       "domainStrategy": "AsIs"
     },
-    "admin_display_name": "🇳🇱 Обход LTE"
+    "admin_display_name": "US Обход LTE"
   },
   {
     "inbounds": [
