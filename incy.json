@@ -1104,6 +1104,16 @@
           "strategy": {
             "type": "random"
           }
+        },
+        {
+          "tag": "service-keenetic-ru",
+          "selector": [
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
         }
       ],
       "domainMatcher": "hybrid",
@@ -1821,6 +1831,14 @@
         },
         {
           "type": "field",
+          "ip": [
+            "224.0.0.0/4",
+            "255.255.255.255/32"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
           "inboundTag": [
             "service-fallback-random"
           ],
@@ -1929,6 +1947,20 @@
             "full:api.facebook.com"
           ],
           "balancerTag": "service-instagram-ru"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:netcraze.cloud"
+          ],
+          "balancerTag": "service-keenetic-ru"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "95.213.181.252/32"
+          ],
+          "balancerTag": "service-keenetic-ru"
         },
         {
           "type": "field",
