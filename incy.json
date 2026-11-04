@@ -15,7 +15,8 @@
         "🇺🇸 US — South Networks Pro (only Mobile)",
         "🇩🇪 DE — South Networks Pro (only Mobile)",
         "🇯🇵 JP — South Networks Pro (only Mobile)",
-        "🇰🇿 KZ — South Networks Pro (only Mobile)"
+        "🇰🇿 KZ — South Networks Pro (only Mobile)",
+        "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
       ]
     },
     "dns": {
@@ -1009,6 +1010,13 @@
       {
         "protocol": "dns",
         "tag": "dns-out"
+      },
+      {
+        "tag": "service-fallback-random-loopback",
+        "protocol": "loopback",
+        "settings": {
+          "inboundTag": "service-fallback-random"
+        }
       }
     ],
     "remarks": "⚡️Авто обход глушилок LTE",
@@ -1029,10 +1037,74 @@
           },
           "tag": "auto-best",
           "fallbackTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
+        },
+        {
+          "tag": "service-fallback-random-pool",
+          "selector": [
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
+            "🇺🇸 US — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇯🇵 JP — South Networks Pro (only Mobile)",
+            "🇰🇿 KZ — South Networks Pro (only Mobile)"
+          ],
+          "fallbackTag": "🇰🇿 KZ — South Networks Pro (only Mobile)",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-youtube-nl",
+          "selector": [
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-telegram-kz",
+          "selector": [
+            "🇰🇿 KZ — South Networks Pro (only Mobile)"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-gemini-us",
+          "selector": [
+            "🇺🇸 US — South Networks Pro (only Mobile)"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-russia-ru",
+          "selector": [
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
         }
       ],
       "domainMatcher": "hybrid",
       "rules": [
+        {
+          "type": "field",
+          "inboundTag": [
+            "service-fallback-random"
+          ],
+          "balancerTag": "service-fallback-random-pool"
+        },
         {
           "type": "field",
           "domain": [
@@ -1058,7 +1130,7 @@
             "domain:tx.me",
             "domain:usercontent.dev"
           ],
-          "outboundTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
+          "balancerTag": "service-telegram-kz"
         },
         {
           "type": "field",
@@ -1081,7 +1153,7 @@
             "95.161.64.0/20",
             "109.239.140.0/24"
           ],
-          "outboundTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
+          "balancerTag": "service-telegram-kz"
         },
         {
           "type": "field",
@@ -1099,7 +1171,7 @@
             "domain:yt3.ggpht.com",
             "domain:yt.be"
           ],
-          "outboundTag": "🇳🇱 NL — South Networks Pro (only Mobile)"
+          "balancerTag": "service-youtube-nl"
         },
         {
           "type": "field",
@@ -1116,7 +1188,13 @@
             "domain:alkalimakersuite-pa.clients6.google.com",
             "domain:robinfrontend-pa.googleapis.com",
             "domain:proactivebackend-pa.googleapis.com",
-            "domain:notebooklm-pa.googleapis.com",
+            "domain:notebooklm-pa.googleapis.com"
+          ],
+          "balancerTag": "service-gemini-us"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:animelib.org",
             "domain:anilib.me",
             "domain:cdnlibs.org",
@@ -1211,7 +1289,7 @@
             "domain:fonbet.ru",
             "domain:fon.bet"
           ],
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          "balancerTag": "service-russia-ru"
         },
         {
           "type": "field",
@@ -1224,7 +1302,7 @@
             "domain:restream.ru",
             "domain:restream-media.net"
           ],
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          "balancerTag": "service-russia-ru"
         },
         {
           "type": "field",
@@ -1877,7 +1955,7 @@
             "domain:express.ms",
             "domain:vi.ru"
           ],
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          "balancerTag": "service-russia-ru"
         },
         {
           "type": "field",
@@ -1885,7 +1963,7 @@
             "domain:ru",
             "domain:xn--p1ai"
           ],
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          "balancerTag": "service-russia-ru"
         },
         {
           "type": "field",
@@ -1923,7 +2001,7 @@
           "ip": [
             "geoip:ru"
           ],
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          "balancerTag": "service-russia-ru"
         },
         {
           "balancerTag": "auto-best",
