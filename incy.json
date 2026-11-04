@@ -8668,9 +8668,9 @@
         },
         "tag": "main",
         "server_domains": [],
-        "admin_display_name": "NL Обход LTE 2",
-        "remark": "NL Обход LTE 2",
-        "remarks": "NL Обход LTE 2"
+        "admin_display_name": "🇳🇱 Обход LTE 2",
+        "remark": "🇳🇱 Обход LTE 2",
+        "remarks": "🇳🇱 Обход LTE 2"
       },
       {
         "tag": "direct",
@@ -10217,7 +10217,7 @@
     },
     "admin_scoped_direct_domains": [],
     "admin_scoped_dns_enabled": true,
-    "admin_display_name": "NL Обход LTE 2"
+    "admin_display_name": "🇳🇱 Обход LTE 2"
   },
   {
     "inbounds": [
