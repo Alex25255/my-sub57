@@ -12522,9 +12522,9 @@
           ]
         },
         "tag": "🇺🇸 Обход LTE",
-        "admin_display_name": "🇳🇱 Обход LTE",
-        "remark": "🇳🇱 Обход LTE",
-        "remarks": "🇳🇱 Обход LTE"
+        "admin_display_name": "DE Обход LTE",
+        "remark": "DE Обход LTE",
+        "remarks": "DE Обход LTE"
       },
       {
         "protocol": "freedom",
@@ -13401,7 +13401,7 @@
       ],
       "domainStrategy": "AsIs"
     },
-    "admin_display_name": "🇺🇸 Обход LTE"
+    "admin_display_name": "DE Обход LTE"
   },
   {
     "remarks": "🇳🇱 Обход LTE 2",
