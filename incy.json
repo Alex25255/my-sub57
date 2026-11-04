@@ -7716,7 +7716,10 @@
             }
           ]
         },
-        "tag": "🇩🇪 Обход LTE"
+        "tag": "🇩🇪 Обход LTE",
+        "admin_display_name": "NL Обход LTE",
+        "remark": "NL Обход LTE",
+        "remarks": "NL Обход LTE"
       },
       {
         "protocol": "freedom",
@@ -8592,7 +8595,8 @@
         }
       ],
       "domainStrategy": "AsIs"
-    }
+    },
+    "admin_display_name": "NL Обход LTE"
   },
   {
     "remarks": "🇩🇪 Обход LTE 2",
