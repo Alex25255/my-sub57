@@ -1167,13 +1167,6 @@
         {
           "type": "field",
           "domain": [
-            "full:ucams.ufanet.ru"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
             "domain:battle.net",
             "domain:blizzard.com",
             "domain:blizzard.net",
@@ -1488,7 +1481,6 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
             "domain:uralairlines.ru",
             "domain:urent.ru",
             "domain:utair.ru",
@@ -1998,6 +1990,25 @@
         },
         {
           "type": "field",
+          "domain": [
+            "domain:avucams.com",
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
+            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
+            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$",
+            "domain:ucams.ufanet.ru",
+            "domain:cams.ufanet.ru"
+          ],
+          "network": "tcp,udp",
+          "balancerTag": "service-russia-ru"
+        },
+        {
+          "type": "field",
+          "port": "554,8554",
+          "network": "tcp",
+          "balancerTag": "service-russia-ru"
+        },
+        {
+          "type": "field",
           "inboundTag": [
             "dns"
           ],
@@ -2090,23 +2101,6 @@
           "port": "443",
           "network": "tcp",
           "balancerTag": "auto-best"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
-            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
-            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
-          ],
-          "network": "tcp,udp",
-          "outboundTag": "🇳🇱 NL — South Networks Pro (only Mobile)"
-        },
-        {
-          "type": "field",
-          "port": "554,8554",
-          "network": "tcp",
-          "outboundTag": "🇳🇱 NL — South Networks Pro (only Mobile)"
         },
         {
           "balancerTag": "auto-best",
