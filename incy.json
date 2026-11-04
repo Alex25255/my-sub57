@@ -10,7 +10,7 @@
       },
       "subjectSelector": [
         "🇩🇪 DE — South Networks Pro (only Mobile)",
-        "🇳🇱 NL — South Networks Pro (only Mobile)",
+        "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
         "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
         "🇩🇪 DE — South Networks Pro (only Mobile) 2",
         "bridge-1",
@@ -776,7 +776,7 @@
             }
           ]
         },
-        "tag": "🇳🇱 NL — South Networks Pro (only Mobile)"
+        "tag": "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]"
       },
       {
         "protocol": "vmess",
@@ -980,7 +980,7 @@
         {
           "selector": [
             "🇩🇪 DE — South Networks Pro (only Mobile)",
-            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
             "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
             "🇩🇪 DE — South Networks Pro (only Mobile) 2",
             "bridge-1",
