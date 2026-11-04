@@ -1114,6 +1114,16 @@
           "strategy": {
             "type": "random"
           }
+        },
+        {
+          "tag": "service-subscription-ru",
+          "selector": [
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
         }
       ],
       "domainMatcher": "hybrid",
@@ -1961,6 +1971,14 @@
             "95.213.181.252/32"
           ],
           "balancerTag": "service-keenetic-ru"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:workers.dev",
+            "full:raw.githubusercontent.com"
+          ],
+          "balancerTag": "service-subscription-ru"
         },
         {
           "type": "field",
