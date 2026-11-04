@@ -962,6 +962,43 @@
         "server_domains": []
       },
       {
+        "protocol": "vmess",
+        "settings": {
+          "vnext": [
+            {
+              "address": "renderer-stream-5-13.mirra.now",
+              "port": 443,
+              "users": [
+                {
+                  "id": "f1eb3949-dca4-49ea-b125-a0947e6b6ff5",
+                  "alterId": 0,
+                  "security": "auto"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "renderer-stream-5-13.mirra.now",
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
+          },
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/socket",
+            "headers": {
+              "Host": "renderer-stream-5-13.mirra.now"
+            }
+          }
+        },
+        "tag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
+        "server_domains": []
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -1174,7 +1211,7 @@
             "domain:fonbet.ru",
             "domain:fon.bet"
           ],
-          "outboundTag": "direct"
+          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
         },
         {
           "type": "field",
@@ -1187,7 +1224,7 @@
             "domain:restream.ru",
             "domain:restream-media.net"
           ],
-          "outboundTag": "direct"
+          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
         },
         {
           "type": "field",
@@ -1320,13 +1357,8 @@
             "domain:avito.ru",
             "domain:avito.st",
             "domain:banki.ru",
-            "domain:battle.net",
             "domain:beeline.ru",
             "domain:belkacar.ru",
-            "domain:blizzard.com",
-            "domain:blizzard.net",
-            "domain:blz-contentstack.com",
-            "domain:blzstatic.cn",
             "domain:boxberry.ru",
             "domain:burgerking.ru",
             "domain:cbr.ru",
@@ -1339,7 +1371,6 @@
             "domain:citydrive.ru",
             "domain:council.gov.ru",
             "domain:crpt.ru",
-            "domain:dash.cloudflare.com",
             "domain:delimobil.ru",
             "domain:delivery-club.ru",
             "domain:dellin.ru",
@@ -1360,13 +1391,9 @@
             "domain:ecom-cdn.x5media.ru",
             "domain:eldorado.ru",
             "domain:emias.info",
-            "domain:epicgames.com",
-            "domain:epicgames.dev",
-            "domain:epicgamescdn.com",
             "domain:epp.genproc.gov.ru",
             "domain:ertelecom.ru",
             "domain:event-stream-api.magnit.ru",
-            "domain:fcmtoken.googleapis.com",
             "domain:fivepost.ru",
             "domain:fix-price.com",
             "domain:flysmartavia.com",
@@ -1390,7 +1417,6 @@
             "domain:ivi.ru",
             "domain:iz.ru",
             "domain:izbirkom.ru",
-            "domain:justletswork.com",
             "domain:kari.com",
             "domain:kazanexpress.ru",
             "domain:kinopoisk.ru",
@@ -1439,7 +1465,6 @@
             "domain:myspar.ru",
             "domain:nalog.gov.ru",
             "domain:nordwindairlines.ru",
-            "domain:np.community.playstation.net",
             "domain:ntv.ru",
             "domain:observability.x5.ru",
             "domain:ok.ru",
@@ -1455,16 +1480,12 @@
             "domain:perekrestok.ru",
             "domain:petrovich.ru",
             "domain:planetazdorovo.ru",
-            "domain:playstation.com",
-            "domain:playstation.net",
-            "domain:playstationnetwork.com",
             "domain:pobeda.aero",
             "domain:pochta.ru",
             "domain:premier.one",
             "domain:profi.ru",
             "domain:proxy.mob.maps.yandex.net",
             "domain:psbank.ru",
-            "domain:psnprofiles.com",
             "domain:rabota.ru",
             "domain:rambler.ru",
             "domain:rbc.ru",
@@ -1493,7 +1514,6 @@
             "domain:smotrim.ru",
             "domain:sochi.ru",
             "domain:sogaz.ru",
-            "domain:sonyentertainmentnetwork.com",
             "domain:sravni.ru",
             "domain:start.ru",
             "domain:static.vseinstrumenti.ru",
@@ -1509,7 +1529,6 @@
             "domain:tutu.ru",
             "domain:uchi.ru",
             "domain:ufanet.ru",
-            "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
             "domain:utair.ru",
@@ -1583,7 +1602,6 @@
             "domain:rwb.ru",
             "domain:rzd-bonus.ru",
             "domain:scartel.ru",
-            "domain:showip.net",
             "domain:sirius.online",
             "domain:smailru.net",
             "domain:sochisirius.ru",
@@ -1685,7 +1703,6 @@
             "domain:cdn-vk.net",
             "domain:cdnmail.ru",
             "domain:cdnvideo.ru",
-            "domain:checkip.amazonaws.com",
             "domain:chizhik.club",
             "domain:cian.site",
             "domain:cikrf.ru",
@@ -1717,14 +1734,9 @@
             "domain:hhcdn.ru",
             "domain:homecredit.ru",
             "domain:hrlink.ru",
-            "domain:ifconfig.me",
             "domain:imgsmail.ru",
             "domain:inbox.ru",
             "domain:internet.ru",
-            "domain:ip.sb",
-            "domain:ipapi.is",
-            "domain:ipify.org",
-            "domain:iplocate.io",
             "domain:ivicdn.tv",
             "domain:kinescopecdn.net",
             "domain:lenta.tech",
@@ -1865,7 +1877,53 @@
             "domain:express.ms",
             "domain:vi.ru"
           ],
+          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:ru",
+            "domain:xn--p1ai"
+          ],
+          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:battle.net",
+            "domain:blizzard.com",
+            "domain:blizzard.net",
+            "domain:blz-contentstack.com",
+            "domain:blzstatic.cn",
+            "domain:dash.cloudflare.com",
+            "domain:epicgames.com",
+            "domain:epicgames.dev",
+            "domain:epicgamescdn.com",
+            "domain:fcmtoken.googleapis.com",
+            "domain:justletswork.com",
+            "domain:np.community.playstation.net",
+            "domain:playstation.com",
+            "domain:playstation.net",
+            "domain:playstationnetwork.com",
+            "domain:psnprofiles.com",
+            "domain:sonyentertainmentnetwork.com",
+            "domain:unrealengine.com",
+            "domain:showip.net",
+            "domain:checkip.amazonaws.com",
+            "domain:ifconfig.me",
+            "domain:ip.sb",
+            "domain:ipapi.is",
+            "domain:ipify.org",
+            "domain:iplocate.io"
+          ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "geoip:ru"
+          ],
+          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
         },
         {
           "balancerTag": "auto-best",
