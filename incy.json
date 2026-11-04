@@ -15,7 +15,8 @@
         "🇺🇸 US — South Networks Pro (only Mobile)",
         "🇩🇪 DE — South Networks Pro (only Mobile)",
         "🇯🇵 JP — South Networks Pro (only Mobile)",
-        "🇰🇿 KZ — South Networks Pro (only Mobile)"
+        "🇰🇿 KZ — South Networks Pro (only Mobile)",
+        "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
       ]
     },
     "dns": {
@@ -962,6 +963,42 @@
         "server_domains": []
       },
       {
+        "protocol": "vmess",
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "renderer-stream-5-13.mirra.now",
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
+          },
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/socket",
+            "headers": {
+              "Host": "renderer-stream-5-13.mirra.now"
+            }
+          }
+        },
+        "settings": {
+          "vnext": [
+            {
+              "address": "renderer-stream-5-13.mirra.now",
+              "port": 443,
+              "users": [
+                {
+                  "id": "f1eb3949-dca4-49ea-b125-a0947e6b6ff5",
+                  "alterId": 0,
+                  "security": "auto"
+                }
+              ]
+            }
+          ]
+        },
+        "tag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -1017,8 +1054,9 @@
           }
         },
         {
-          "tag": "service-youtube-nl",
+          "tag": "service-youtube-ru",
           "selector": [
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
             "🇳🇱 NL — South Networks Pro (only Mobile)",
             "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]"
           ],
@@ -1041,6 +1079,26 @@
           "tag": "service-gemini-de",
           "selector": [
             "🇩🇪 DE — South Networks Pro (only Mobile)"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-russia-ru",
+          "selector": [
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-instagram-ru",
+          "selector": [
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -1835,7 +1893,7 @@
             "domain:yt3.ggpht.com",
             "domain:yt.be"
           ],
-          "balancerTag": "service-youtube-nl"
+          "balancerTag": "service-youtube-ru"
         },
         {
           "type": "field",
@@ -1855,6 +1913,38 @@
             "domain:notebooklm-pa.googleapis.com"
           ],
           "balancerTag": "service-gemini-de"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:instagram.com",
+            "domain:cdninstagram.com",
+            "domain:fbcdn.net",
+            "domain:fbsbx.com",
+            "domain:ig.me",
+            "full:graph.facebook.com",
+            "full:gateway.facebook.com",
+            "full:edge-mqtt.facebook.com",
+            "full:edge-mqtt-fallback.facebook.com",
+            "full:api.facebook.com"
+          ],
+          "balancerTag": "service-instagram-ru"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:ru",
+            "domain:xn--p1ai",
+            "domain:su"
+          ],
+          "balancerTag": "service-russia-ru"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "geoip:ru"
+          ],
+          "balancerTag": "service-russia-ru"
         },
         {
           "type": "field",
