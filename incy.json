@@ -15,7 +15,7 @@
         "🇺🇸 US — South Networks Pro (only Mobile)",
         "bridge-1",
         "bridge-2",
-        "bridge-3"
+        "🇰🇿 KZ — South Networks Pro (only Mobile)"
       ]
     },
     "dns": {
@@ -958,7 +958,7 @@
             }
           }
         },
-        "tag": "bridge-3",
+        "tag": "🇰🇿 KZ — South Networks Pro (only Mobile)",
         "server_domains": []
       },
       {
@@ -985,13 +985,13 @@
             "🇺🇸 US — South Networks Pro (only Mobile)",
             "bridge-1",
             "bridge-2",
-            "bridge-3"
+            "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
           "strategy": {
             "type": "random"
           },
           "tag": "auto-best",
-          "fallbackTag": "bridge-3"
+          "fallbackTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
         }
       ],
       "domainMatcher": "hybrid",
@@ -1021,7 +1021,7 @@
             "domain:tx.me",
             "domain:usercontent.dev"
           ],
-          "outboundTag": "bridge-3"
+          "outboundTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -1044,7 +1044,7 @@
             "95.161.64.0/20",
             "109.239.140.0/24"
           ],
-          "outboundTag": "bridge-3"
+          "outboundTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
