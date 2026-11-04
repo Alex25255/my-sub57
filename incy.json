@@ -4052,7 +4052,7 @@
         "timeout": "5s"
       },
       "subjectSelector": [
-        "💫 Умная локация (Москва, #2) от StealthSurf VPN",
+        "🇵🇱 Премиум-конфиг (ранний доступ)",
         "🇩🇪 Германия от StealthSurf VPN",
         "bridge-1"
       ]
@@ -4782,7 +4782,7 @@
           },
           "tcpSettings": {}
         },
-        "tag": "💫 Умная локация (Москва, #2) от StealthSurf VPN"
+        "tag": "🇵🇱 Премиум-конфиг (ранний доступ)"
       },
       {
         "protocol": "vless",
@@ -4863,7 +4863,7 @@
       "balancers": [
         {
           "selector": [
-            "💫 Умная локация (Москва, #2) от StealthSurf VPN",
+            "🇵🇱 Премиум-конфиг (ранний доступ)",
             "🇩🇪 Германия от StealthSurf VPN",
             "bridge-1"
           ],
@@ -4993,13 +4993,13 @@
             "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
           ],
           "network": "tcp,udp",
-          "outboundTag": "💫 Умная локация (Москва, #2) от StealthSurf VPN"
+          "outboundTag": "🇵🇱 Премиум-конфиг (ранний доступ)"
         },
         {
           "type": "field",
           "port": "554,8554",
           "network": "tcp",
-          "outboundTag": "💫 Умная локация (Москва, #2) от StealthSurf VPN"
+          "outboundTag": "🇵🇱 Премиум-конфиг (ранний доступ)"
         },
         {
           "type": "field",
