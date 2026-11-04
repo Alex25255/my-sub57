@@ -11,7 +11,7 @@
       "subjectSelector": [
         "🇩🇪 DE — South Networks Pro (only Mobile)",
         "🇳🇱 NL — South Networks Pro (only Mobile)",
-        "🇺🇸 US — South Networks Pro (only Mobile)",
+        "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
         "🇩🇪 DE — South Networks Pro (only Mobile) 2",
         "bridge-1",
         "bridge-2",
@@ -812,7 +812,7 @@
             }
           ]
         },
-        "tag": "🇺🇸 US — South Networks Pro (only Mobile)"
+        "tag": "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]"
       },
       {
         "protocol": "vmess",
@@ -981,7 +981,7 @@
           "selector": [
             "🇩🇪 DE — South Networks Pro (only Mobile)",
             "🇳🇱 NL — South Networks Pro (only Mobile)",
-            "🇺🇸 US — South Networks Pro (only Mobile)",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
             "🇩🇪 DE — South Networks Pro (only Mobile) 2",
             "bridge-1",
             "bridge-2",
@@ -1062,7 +1062,7 @@
             "domain:yt3.ggpht.com",
             "domain:yt.be"
           ],
-          "outboundTag": "🇳🇱 NL — South Networks Pro (only Mobile)"
+          "outboundTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
