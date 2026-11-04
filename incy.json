@@ -1049,6 +1049,24 @@
         {
           "type": "field",
           "domain": [
+            "domain:youtube.com",
+            "domain:youtu.be",
+            "domain:googlevideo.com",
+            "domain:ytimg.com",
+            "domain:youtubei.googleapis.com",
+            "domain:youtube-nocookie.com",
+            "domain:youtube.googleapis.com",
+            "domain:youtubeembeddedplayer.googleapis.com",
+            "domain:youtubeeducation.com",
+            "domain:youtubekids.com",
+            "domain:yt3.ggpht.com",
+            "domain:yt.be"
+          ],
+          "outboundTag": "🇳🇱 NL — South Networks Pro (only Mobile)"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:labs.google",
             "domain:labs.google.com",
             "domain:aistudio.google.com",
@@ -1128,13 +1146,7 @@
             "domain:ahrefs.com",
             "domain:stripe.com",
             "domain:twitch.tv",
-            "domain:xvideos.com",
-            "domain:youtube.com",
-            "domain:youtu.be",
-            "domain:googlevideo.com",
-            "domain:ytimg.com",
-            "domain:youtubei.googleapis.com",
-            "domain:youtube-nocookie.com"
+            "domain:xvideos.com"
           ],
           "balancerTag": "auto-best"
         },
