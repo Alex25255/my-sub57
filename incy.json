@@ -14,7 +14,7 @@
         "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
         "🇺🇸 US — South Networks Pro (only Mobile)",
         "bridge-1",
-        "bridge-2",
+        "🇯🇵 JP — South Networks Pro (only Mobile)",
         "🇰🇿 KZ — South Networks Pro (only Mobile)"
       ]
     },
@@ -921,7 +921,7 @@
             }
           }
         },
-        "tag": "bridge-2",
+        "tag": "🇯🇵 JP — South Networks Pro (only Mobile)",
         "server_domains": []
       },
       {
@@ -984,7 +984,7 @@
             "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
             "🇺🇸 US — South Networks Pro (only Mobile)",
             "bridge-1",
-            "bridge-2",
+            "🇯🇵 JP — South Networks Pro (only Mobile)",
             "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
           "strategy": {
