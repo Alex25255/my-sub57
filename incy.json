@@ -988,10 +988,10 @@
             "bridge-3"
           ],
           "strategy": {
-            "type": "leastLoad"
+            "type": "random"
           },
           "tag": "auto-best",
-          "fallbackTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
+          "fallbackTag": "block"
         }
       ],
       "domainMatcher": "hybrid",
@@ -3144,10 +3144,10 @@
             "bridge-9"
           ],
           "strategy": {
-            "type": "leastLoad"
+            "type": "random"
           },
           "tag": "auto-best",
-          "fallbackTag": "bridge-2"
+          "fallbackTag": "block"
         }
       ],
       "domainMatcher": "hybrid",
@@ -4847,7 +4847,8 @@
           "strategy": {
             "type": "random"
           },
-          "tag": "auto-best"
+          "tag": "auto-best",
+          "fallbackTag": "block"
         }
       ],
       "domainMatcher": "hybrid",
