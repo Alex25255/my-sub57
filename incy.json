@@ -9,7 +9,7 @@
         "timeout": "5s"
       },
       "subjectSelector": [
-        "🇩🇪 DE — South Networks Pro (only Mobile)",
+        "🇳🇱 NL — South Networks Pro (only Mobile)",
         "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
         "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
         "🇺🇸 US — South Networks Pro (only Mobile)",
@@ -740,7 +740,7 @@
             }
           ]
         },
-        "tag": "🇩🇪 DE — South Networks Pro (only Mobile)"
+        "tag": "🇳🇱 NL — South Networks Pro (only Mobile)"
       },
       {
         "protocol": "vmess",
@@ -979,7 +979,7 @@
       "balancers": [
         {
           "selector": [
-            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
             "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
             "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
             "🇺🇸 US — South Networks Pro (only Mobile)",
@@ -1062,7 +1062,7 @@
             "domain:yt3.ggpht.com",
             "domain:yt.be"
           ],
-          "outboundTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
+          "outboundTag": "🇳🇱 NL — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -1252,13 +1252,13 @@
             "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
           ],
           "network": "tcp,udp",
-          "outboundTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
+          "outboundTag": "🇳🇱 NL — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
           "port": "554,8554",
           "network": "tcp",
-          "outboundTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
+          "outboundTag": "🇳🇱 NL — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
