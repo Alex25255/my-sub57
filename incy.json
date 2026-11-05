@@ -1028,7 +1028,7 @@
             "type": "random"
           },
           "tag": "auto-best",
-          "fallbackTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
+          "fallbackTag": "service-fallback-random-loopback"
         },
         {
           "tag": "service-fallback-random-pool",
