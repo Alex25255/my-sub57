@@ -1069,6 +1069,16 @@
           }
         },
         {
+          "tag": "service-spotify-kz",
+          "selector": [
+            "🇰🇿 KZ — South Networks Pro (only Mobile)"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
           "tag": "service-gemini-de",
           "selector": [
             "🇩🇪 DE — South Networks Pro (only Mobile)"
@@ -1136,6 +1146,16 @@
           "selector": [
             "🇳🇱 NL — South Networks Pro (only Mobile)",
             "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-discord-kz",
+          "selector": [
+            "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -1872,6 +1892,31 @@
         {
           "type": "field",
           "domain": [
+            "domain:discord.com",
+            "domain:discord.gg",
+            "domain:discordapp.com",
+            "domain:discordapp.net",
+            "domain:discord.media",
+            "domain:discordcdn.com",
+            "domain:dis.gd",
+            "domain:discordstatus.com",
+            "domain:discord.gift",
+            "domain:discord.new",
+            "domain:discord.co",
+            "domain:discord.dev",
+            "domain:discord.store",
+            "domain:discordactivities.com",
+            "domain:discord-activities.com",
+            "domain:discordquests.com",
+            "domain:discordpartygames.com",
+            "domain:discordsays.com",
+            "domain:discordsez.com"
+          ],
+          "balancerTag": "service-discord-kz"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:twitch.tv",
             "domain:ttvnw.net",
             "domain:jtvnw.net",
@@ -1923,7 +1968,9 @@
             "domain:supercellgames.com",
             "domain:supercellstore.com",
             "domain:seeurlpcl.com",
-            "domain:supercellcreators.com"
+            "domain:supercellcreators.com",
+            "full:supercell.zendesk.com",
+            "full:api.quago.io"
           ],
           "balancerTag": "service-supercell-de-nl"
         },
@@ -1956,9 +2003,58 @@
             "54.226.68.190/32",
             "54.145.229.230/32",
             "54.221.185.85/32",
-            "44.202.230.228/32"
+            "44.202.230.228/32",
+            "3.230.8.66/32",
+            "18.213.71.20/32",
+            "34.227.156.134/32",
+            "35.169.231.249/32",
+            "44.208.81.58/32",
+            "52.201.176.96/32",
+            "52.207.19.128/32",
+            "54.146.10.102/32",
+            "65.9.46.74/32",
+            "65.9.46.109/32",
+            "65.9.46.111/32",
+            "65.9.46.114/32",
+            "65.9.62.6/32",
+            "65.9.62.16/32",
+            "65.9.62.47/32",
+            "65.9.62.123/32",
+            "98.95.203.207/32",
+            "216.198.53.11/32",
+            "216.198.54.11/32",
+            "18.239.18.128/32",
+            "18.239.18.110/32",
+            "18.239.18.71/32",
+            "18.239.18.72/32"
           ],
           "balancerTag": "service-supercell-de-nl"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:spotify.com",
+            "domain:spotify.net",
+            "domain:spotifycdn.com",
+            "domain:spotifycdn.net",
+            "domain:scdn.co",
+            "domain:pscdn.co",
+            "domain:spoti.fi",
+            "domain:spotify.link",
+            "domain:spotify-everywhere.com",
+            "domain:byspotify.com",
+            "domain:tospotify.com",
+            "domain:spotilocal.com",
+            "full:audio-ak-spotify-com.akamaized.net",
+            "full:audio4-ak-spotify-com.akamaized.net",
+            "full:heads-ak-spotify-com.akamaized.net",
+            "full:heads4-ak-spotify-com.akamaized.net",
+            "full:spotify.com.edgesuite.net",
+            "full:spotify.map.fastly.net",
+            "full:spotify.map.fastlylb.net",
+            "full:video-akpcw-cdn-spotify-com.akamaized.net"
+          ],
+          "balancerTag": "service-spotify-kz"
         },
         {
           "type": "field",
@@ -2044,7 +2140,11 @@
             "domain:alkalimakersuite-pa.clients6.google.com",
             "domain:robinfrontend-pa.googleapis.com",
             "domain:proactivebackend-pa.googleapis.com",
-            "domain:notebooklm-pa.googleapis.com"
+            "domain:notebooklm-pa.googleapis.com",
+            "full:oauth2.googleapis.com",
+            "full:oauthaccountmanager.googleapis.com",
+            "full:notifications-pa.googleapis.com",
+            "full:signaler-pa.googleapis.com"
           ],
           "balancerTag": "service-gemini-de"
         },
@@ -2109,7 +2209,6 @@
             "domain:deepl.com",
             "domain:elgato.com",
             "domain:ttwstatic.com",
-            "domain:spotify.com",
             "domain:grok.com",
             "domain:4pda.to",
             "domain:githubcopilot.com",
