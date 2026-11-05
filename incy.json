@@ -1,4 +1,4 @@
-[
+
   {
     "burstObservatory": {
       "pingConfig": {
@@ -1028,7 +1028,7 @@
             "type": "random"
           },
           "tag": "auto-best",
-          "fallbackTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
+          "fallbackTag": "service-fallback-random-loopback"
         },
         {
           "tag": "service-fallback-random-pool",
@@ -1047,9 +1047,8 @@
           }
         },
         {
-          "tag": "service-youtube-ru",
+          "tag": "service-youtube-nl",
           "selector": [
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
             "🇳🇱 NL — South Networks Pro (only Mobile)",
             "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]"
           ],
@@ -1059,8 +1058,9 @@
           }
         },
         {
-          "tag": "service-telegram-kz",
+          "tag": "Россия/Казахстан",
           "selector": [
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
             "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
@@ -1102,7 +1102,8 @@
           "tag": "service-instagram-ru",
           "selector": [
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
-            "🇩🇪 DE — South Networks Pro (only Mobile)"
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇺🇸 US — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -1142,10 +1143,9 @@
           }
         },
         {
-          "tag": "service-twitch-nl",
+          "tag": "service-twitch-us",
           "selector": [
-            "🇳🇱 NL — South Networks Pro (only Mobile)",
-            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]"
+            "🇺🇸 US — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -1933,7 +1933,7 @@
             "domain:ds0h3roq6wcgc.cloudfront.net",
             "domain:d2nvs31859zcd8.cloudfront.net"
           ],
-          "balancerTag": "service-twitch-nl"
+          "balancerTag": "service-twitch-us"
         },
         {
           "type": "field",
@@ -2081,7 +2081,7 @@
             "domain:tx.me",
             "domain:usercontent.dev"
           ],
-          "balancerTag": "service-telegram-kz"
+          "balancerTag": "Россия/Казахстан"
         },
         {
           "type": "field",
@@ -2105,7 +2105,7 @@
             "109.239.140.0/24",
             "194.221.250.50/32"
           ],
-          "balancerTag": "service-telegram-kz"
+          "balancerTag": "Россия/Казахстан"
         },
         {
           "type": "field",
@@ -2123,7 +2123,7 @@
             "domain:yt3.ggpht.com",
             "domain:yt.be"
           ],
-          "balancerTag": "service-youtube-ru"
+          "balancerTag": "service-youtube-nl"
         },
         {
           "type": "field",
