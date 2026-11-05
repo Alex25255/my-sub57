@@ -1017,7 +1017,7 @@
         }
       }
     ],
-    "remarks": "⚡️Авто обход глушилок LTE",
+    "remarks": "⚡️Авто обход LTE — ChatGPT через 🇩🇪 DE",
     "routing": {
       "balancers": [
         {
@@ -1087,6 +1087,16 @@
           }
         },
         {
+          "tag": "service-chatgpt-de",
+          "selector": [
+            "🇩🇪 DE — South Networks Pro (only Mobile)"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
           "tag": "service-gemini-de",
           "selector": [
             "🇩🇪 DE — South Networks Pro (only Mobile)"
@@ -1121,16 +1131,6 @@
           "tag": "service-subscription-ru",
           "selector": [
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
-          "tag": "service-chatgpt-de",
-          "selector": [
-            "🇩🇪 DE — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -1179,6 +1179,44 @@
             "service-fallback-random"
           ],
           "balancerTag": "service-fallback-random-pool"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:chatgpt.site",
+            "full:ios.chat.openai.com",
+            "domain:chatgpt.com",
+            "domain:openai.com",
+            "domain:oaistatic.com",
+            "domain:oaiusercontent.com",
+            "domain:oaistatsig.com",
+            "domain:openaimerge.com",
+            "domain:chatgpt.livekit.cloud",
+            "full:forwarder.workos.com",
+            "full:frontend-apps-multi-region.workos.com",
+            "full:cdn.workos.com",
+            "full:setup.workos.com",
+            "full:images.workoscdn.com",
+            "full:humb.apple.com",
+            "full:o207216.ingest.sentry.io",
+            "full:o33249.ingest.sentry.io",
+            "domain:ct.sendgrid.net",
+            "domain:intercom.io",
+            "domain:intercomcdn.com",
+            "full:challenges.cloudflare.com",
+            "full:js.stripe.com",
+            "full:rum.browser-intake-datadoghq.com",
+            "full:workos.imgix.net"
+          ],
+          "balancerTag": "service-chatgpt-de"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "104.18.39.85/32",
+            "172.64.148.171/32"
+          ],
+          "balancerTag": "service-chatgpt-de"
         },
         {
           "type": "field",
@@ -1945,42 +1983,6 @@
         },
         {
           "type": "field",
-          "ip": [
-            "104.18.39.85/32",
-            "172.64.148.171/32"
-          ],
-          "balancerTag": "service-chatgpt-de"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:chatgpt.com",
-            "domain:openai.com",
-            "domain:oaistatic.com",
-            "domain:oaiusercontent.com",
-            "domain:oaistatsig.com",
-            "domain:openaimerge.com",
-            "domain:chatgpt.livekit.cloud",
-            "full:forwarder.workos.com",
-            "full:frontend-apps-multi-region.workos.com",
-            "full:cdn.workos.com",
-            "full:setup.workos.com",
-            "full:images.workoscdn.com",
-            "full:humb.apple.com",
-            "full:o207216.ingest.sentry.io",
-            "full:o33249.ingest.sentry.io",
-            "domain:ct.sendgrid.net",
-            "domain:intercom.io",
-            "domain:intercomcdn.com",
-            "full:challenges.cloudflare.com",
-            "full:js.stripe.com",
-            "full:rum.browser-intake-datadoghq.com",
-            "full:workos.imgix.net"
-          ],
-          "balancerTag": "service-chatgpt-de"
-        },
-        {
-          "type": "field",
           "domain": [
             "domain:brawlstars.com",
             "domain:brawlstarsgame.com",
@@ -2268,9 +2270,6 @@
             "domain:anthropic.com",
             "domain:habr.com",
             "domain:claude.com",
-            "domain:openai.com",
-            "domain:chatgpt.com",
-            "domain:chatgpt.site",
             "domain:ttvnw.net",
             "domain:siftscience.com",
             "domain:canva.com",
@@ -2313,7 +2312,7 @@
       ],
       "domainStrategy": "IPOnDemand"
     },
-    "admin_display_name": "⚡️Авто обход  LTE"
+    "admin_display_name": "⚡️Авто обход LTE | ChatGPT DE"
   },
   {
     "burstObservatory": {
