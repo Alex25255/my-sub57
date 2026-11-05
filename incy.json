@@ -16,8 +16,7 @@
         "🇩🇪 DE — South Networks Pro (only Mobile)",
         "🇯🇵 JP — South Networks Pro (only Mobile)",
         "🇰🇿 KZ — South Networks Pro (only Mobile)",
-        "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
-        "🇩🇪 DE — ChatGPT (рабочий профиль)"
+        "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
       ]
     },
     "dns": {
@@ -927,42 +926,6 @@
       },
       {
         "protocol": "vmess",
-        "streamSettings": {
-          "network": "ws",
-          "security": "tls",
-          "tlsSettings": {
-            "serverName": "renderer-stream-5-13.mirra.now",
-            "fingerprint": "firefox",
-            "alpn": [
-              "h2"
-            ]
-          },
-          "wsSettings": {
-            "path": "/api/v1/gpu-stream/socket",
-            "headers": {
-              "Host": "renderer-stream-5-13.mirra.now"
-            }
-          }
-        },
-        "settings": {
-          "vnext": [
-            {
-              "address": "renderer-stream-5-13.mirra.now",
-              "port": 443,
-              "users": [
-                {
-                  "id": "f1eb3949-dca4-49ea-b125-a0947e6b6ff5",
-                  "alterId": 0,
-                  "security": "auto"
-                }
-              ]
-            }
-          ]
-        },
-        "tag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
-      },
-      {
-        "protocol": "vmess",
         "settings": {
           "vnext": [
             {
@@ -1004,27 +967,27 @@
           "network": "ws",
           "security": "tls",
           "tlsSettings": {
-            "serverName": "renderer-stream-1-871.mirra.now",
+            "serverName": "renderer-stream-5-13.mirra.now",
             "fingerprint": "firefox",
             "alpn": [
               "h2"
             ]
           },
           "wsSettings": {
-            "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
+            "path": "/api/v1/gpu-stream/socket",
             "headers": {
-              "Host": "renderer-stream-1-871.mirra.now"
+              "Host": "renderer-stream-5-13.mirra.now"
             }
           }
         },
         "settings": {
           "vnext": [
             {
-              "address": "renderer-stream-1-871.mirra.now",
+              "address": "renderer-stream-5-13.mirra.now",
               "port": 443,
               "users": [
                 {
-                  "id": "89432e7b-13bc-464b-bc6b-d52c34f15b03",
+                  "id": "f1eb3949-dca4-49ea-b125-a0947e6b6ff5",
                   "alterId": 0,
                   "security": "auto"
                 }
@@ -1032,10 +995,7 @@
             }
           ]
         },
-        "tag": "🇩🇪 DE — ChatGPT (рабочий профиль)",
-        "admin_display_name": "🇳🇱 Обход LTE",
-        "remark": "🇳🇱 Обход LTE",
-        "remarks": "🇳🇱 Обход LTE"
+        "tag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
       },
       {
         "protocol": "freedom",
@@ -1057,25 +1017,18 @@
         }
       }
     ],
-    "remarks": "⚡️ Авто LTE — ChatGPT DE (рабочий сервер)",
+    "remarks": "⚡️Авто обход глушилок LTE",
     "routing": {
       "balancers": [
         {
           "selector": [
-            "🇳🇱 NL — South Networks Pro (only Mobile)",
-            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
-            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
-            "🇺🇸 US — South Networks Pro (only Mobile)",
-            "🇩🇪 DE — South Networks Pro (only Mobile)",
-            "🇯🇵 JP — South Networks Pro (only Mobile)",
-            "🇰🇿 KZ — South Networks Pro (only Mobile)",
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
           ],
           "strategy": {
             "type": "random"
           },
           "tag": "auto-best",
-          "fallbackTag": "block"
+          "fallbackTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
         },
         {
           "tag": "service-fallback-random-pool",
@@ -1106,18 +1059,7 @@
           }
         },
         {
-          "tag": "Россия/Казахстан",
-          "selector": [
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
-            "🇰🇿 KZ — South Networks Pro (only Mobile)"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "roundRobin"
-          }
-        },
-        {
-          "tag": "service-spotify-kz",
+          "tag": "service-telegram-kz",
           "selector": [
             "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
@@ -1127,9 +1069,9 @@
           }
         },
         {
-          "tag": "service-chatgpt-de",
+          "tag": "service-spotify-kz",
           "selector": [
-            "🇩🇪 DE — ChatGPT (рабочий профиль)"
+            "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -1178,6 +1120,16 @@
           }
         },
         {
+          "tag": "service-chatgpt-de",
+          "selector": [
+            "🇩🇪 DE — South Networks Pro (only Mobile)"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
           "tag": "service-supercell-de-nl",
           "selector": [
             "🇩🇪 DE — South Networks Pro (only Mobile)",
@@ -1219,44 +1171,6 @@
             "service-fallback-random"
           ],
           "balancerTag": "service-fallback-random-pool"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:chatgpt.site",
-            "full:ios.chat.openai.com",
-            "domain:chatgpt.com",
-            "domain:openai.com",
-            "domain:oaistatic.com",
-            "domain:oaiusercontent.com",
-            "domain:oaistatsig.com",
-            "domain:openaimerge.com",
-            "domain:chatgpt.livekit.cloud",
-            "full:forwarder.workos.com",
-            "full:frontend-apps-multi-region.workos.com",
-            "full:cdn.workos.com",
-            "full:setup.workos.com",
-            "full:images.workoscdn.com",
-            "full:humb.apple.com",
-            "full:o207216.ingest.sentry.io",
-            "full:o33249.ingest.sentry.io",
-            "domain:ct.sendgrid.net",
-            "domain:intercom.io",
-            "domain:intercomcdn.com",
-            "full:challenges.cloudflare.com",
-            "full:js.stripe.com",
-            "full:rum.browser-intake-datadoghq.com",
-            "full:workos.imgix.net"
-          ],
-          "balancerTag": "service-chatgpt-de"
-        },
-        {
-          "type": "field",
-          "ip": [
-            "104.18.39.85/32",
-            "172.64.148.171/32"
-          ],
-          "balancerTag": "service-chatgpt-de"
         },
         {
           "type": "field",
@@ -2024,6 +1938,27 @@
         {
           "type": "field",
           "domain": [
+            "domain:chatgpt.com",
+            "domain:openai.com",
+            "domain:oaistatic.com",
+            "domain:oaiusercontent.com",
+            "domain:oaistatsig.com",
+            "domain:openaimerge.com",
+            "domain:chatgpt.livekit.cloud",
+            "full:forwarder.workos.com",
+            "full:frontend-apps-multi-region.workos.com",
+            "full:cdn.workos.com",
+            "full:setup.workos.com",
+            "full:images.workoscdn.com",
+            "full:humb.apple.com",
+            "full:o207216.ingest.sentry.io",
+            "full:o33249.ingest.sentry.io"
+          ],
+          "balancerTag": "service-chatgpt-de"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:brawlstars.com",
             "domain:brawlstarsgame.com",
             "domain:hayday.com",
@@ -2146,7 +2081,7 @@
             "domain:tx.me",
             "domain:usercontent.dev"
           ],
-          "balancerTag": "Россия/Казахстан"
+          "balancerTag": "service-telegram-kz"
         },
         {
           "type": "field",
@@ -2170,7 +2105,7 @@
             "109.239.140.0/24",
             "194.221.250.50/32"
           ],
-          "balancerTag": "Россия/Казахстан"
+          "balancerTag": "service-telegram-kz"
         },
         {
           "type": "field",
@@ -2310,6 +2245,9 @@
             "domain:anthropic.com",
             "domain:habr.com",
             "domain:claude.com",
+            "domain:openai.com",
+            "domain:chatgpt.com",
+            "domain:chatgpt.site",
             "domain:ttvnw.net",
             "domain:siftscience.com",
             "domain:canva.com",
@@ -2332,7 +2270,7 @@
             "domain:twitch.tv",
             "domain:xvideos.com"
           ],
-          "balancerTag": "service-russia-ru"
+          "balancerTag": "auto-best"
         },
         {
           "type": "field",
@@ -2342,17 +2280,17 @@
           ],
           "port": "443",
           "network": "tcp",
-          "balancerTag": "service-russia-ru"
+          "balancerTag": "auto-best"
         },
         {
-          "balancerTag": "service-russia-ru",
+          "balancerTag": "auto-best",
           "network": "tcp,udp",
           "type": "field"
         }
       ],
       "domainStrategy": "IPOnDemand"
     },
-    "admin_display_name": "⚡️Авто обход LTE | ChatGPT DE"
+    "admin_display_name": "⚡️Авто обход  LTE"
   },
   {
     "burstObservatory": {
