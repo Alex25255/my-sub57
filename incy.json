@@ -926,6 +926,42 @@
       },
       {
         "protocol": "vmess",
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "renderer-stream-5-13.mirra.now",
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
+          },
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/socket",
+            "headers": {
+              "Host": "renderer-stream-5-13.mirra.now"
+            }
+          }
+        },
+        "settings": {
+          "vnext": [
+            {
+              "address": "renderer-stream-5-13.mirra.now",
+              "port": 443,
+              "users": [
+                {
+                  "id": "f1eb3949-dca4-49ea-b125-a0947e6b6ff5",
+                  "alterId": 0,
+                  "security": "auto"
+                }
+              ]
+            }
+          ]
+        },
+        "tag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+      },
+      {
+        "protocol": "vmess",
         "settings": {
           "vnext": [
             {
@@ -962,42 +998,6 @@
         "server_domains": []
       },
       {
-        "protocol": "vmess",
-        "streamSettings": {
-          "network": "ws",
-          "security": "tls",
-          "tlsSettings": {
-            "serverName": "renderer-stream-5-13.mirra.now",
-            "fingerprint": "firefox",
-            "alpn": [
-              "h2"
-            ]
-          },
-          "wsSettings": {
-            "path": "/api/v1/gpu-stream/socket",
-            "headers": {
-              "Host": "renderer-stream-5-13.mirra.now"
-            }
-          }
-        },
-        "settings": {
-          "vnext": [
-            {
-              "address": "renderer-stream-5-13.mirra.now",
-              "port": 443,
-              "users": [
-                {
-                  "id": "f1eb3949-dca4-49ea-b125-a0947e6b6ff5",
-                  "alterId": 0,
-                  "security": "auto"
-                }
-              ]
-            }
-          ]
-        },
-        "tag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
-      },
-      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -1022,13 +1022,20 @@
       "balancers": [
         {
           "selector": [
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
+            "🇺🇸 US — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇯🇵 JP — South Networks Pro (only Mobile)",
+            "🇰🇿 KZ — South Networks Pro (only Mobile)",
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
           ],
           "strategy": {
             "type": "random"
           },
           "tag": "auto-best",
-          "fallbackTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
+          "fallbackTag": "block"
         },
         {
           "tag": "service-fallback-random-pool",
@@ -1059,13 +1066,14 @@
           }
         },
         {
-          "tag": "service-telegram-kz",
+          "tag": "Россия/Казахстан",
           "selector": [
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
             "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
-            "type": "random"
+            "type": "roundRobin"
           }
         },
         {
@@ -2081,7 +2089,7 @@
             "domain:tx.me",
             "domain:usercontent.dev"
           ],
-          "balancerTag": "service-telegram-kz"
+          "balancerTag": "Россия/Казахстан"
         },
         {
           "type": "field",
@@ -2105,7 +2113,7 @@
             "109.239.140.0/24",
             "194.221.250.50/32"
           ],
-          "balancerTag": "service-telegram-kz"
+          "balancerTag": "Россия/Казахстан"
         },
         {
           "type": "field",
@@ -2270,7 +2278,7 @@
             "domain:twitch.tv",
             "domain:xvideos.com"
           ],
-          "balancerTag": "auto-best"
+          "balancerTag": "service-russia-ru"
         },
         {
           "type": "field",
@@ -2280,10 +2288,10 @@
           ],
           "port": "443",
           "network": "tcp",
-          "balancerTag": "auto-best"
+          "balancerTag": "service-russia-ru"
         },
         {
-          "balancerTag": "auto-best",
+          "balancerTag": "service-russia-ru",
           "network": "tcp,udp",
           "type": "field"
         }
