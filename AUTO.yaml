@@ -9,11 +9,14 @@
         "timeout": "5s"
       },
       "subjectSelector": [
-        "🇩🇪 DE — South Networks Pro (only Mobile)",
         "🇳🇱 NL — South Networks Pro (only Mobile)",
+        "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
+        "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
         "🇺🇸 US — South Networks Pro (only Mobile)",
-        "🇩🇪 DE — South Networks Pro (only Mobile) 2",
-        "bridge-1"
+        "🇩🇪 DE — South Networks Pro (only Mobile)",
+        "🇯🇵 JP — South Networks Pro (only Mobile)",
+        "🇰🇿 KZ — South Networks Pro (only Mobile)",
+        "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
       ]
     },
     "dns": {
@@ -267,15 +270,6 @@
             "domain:sravni.ru",
             "domain:start.ru",
             "domain:static.vseinstrumenti.ru",
-            "domain:steam-chat.com",
-            "domain:steamcdn-a.akamaihd.net",
-            "domain:steamcommunity.com",
-            "domain:steamcontent.com",
-            "domain:steamgames.com",
-            "domain:steampowered.com",
-            "domain:steamserver.net",
-            "domain:steamstatic.com",
-            "domain:steamusercontent.com",
             "domain:superjob.ru",
             "domain:sutochno.ru",
             "domain:t2.ru",
@@ -720,7 +714,10 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox"
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
@@ -744,7 +741,7 @@
             }
           ]
         },
-        "tag": "🇩🇪 DE — South Networks Pro (only Mobile)"
+        "tag": "🇳🇱 NL — South Networks Pro (only Mobile)"
       },
       {
         "protocol": "vmess",
@@ -753,7 +750,10 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox"
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/o36ecpsebyjq/socket",
@@ -777,7 +777,7 @@
             }
           ]
         },
-        "tag": "🇳🇱 NL — South Networks Pro (only Mobile)"
+        "tag": "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]"
       },
       {
         "protocol": "vmess",
@@ -786,7 +786,10 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox"
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
@@ -810,7 +813,7 @@
             }
           ]
         },
-        "tag": "🇺🇸 US — South Networks Pro (only Mobile)"
+        "tag": "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]"
       },
       {
         "protocol": "vmess",
@@ -818,20 +821,23 @@
           "network": "ws",
           "security": "tls",
           "tlsSettings": {
-            "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox"
+            "serverName": "renderer-stream-3-45.mirra.now",
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
           },
           "wsSettings": {
-            "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
+            "path": "/api/v1/gpu-stream/socket",
             "headers": {
-              "Host": "renderer-stream-1-871.mirra.now"
+              "Host": "renderer-stream-3-45.mirra.now"
             }
           }
         },
         "settings": {
           "vnext": [
             {
-              "address": "renderer-stream-1-871.mirra.now",
+              "address": "renderer-stream-3-45.mirra.now",
               "port": 443,
               "users": [
                 {
@@ -843,7 +849,7 @@
             }
           ]
         },
-        "tag": "🇩🇪 DE — South Networks Pro (only Mobile) 2"
+        "tag": "🇺🇸 US — South Networks Pro (only Mobile)"
       },
       {
         "protocol": "vmess",
@@ -867,7 +873,10 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox"
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/o36ecpsebyjq/socket",
@@ -876,8 +885,118 @@
             }
           }
         },
-        "tag": "bridge-1",
+        "tag": "🇩🇪 DE — South Networks Pro (only Mobile)",
         "server_domains": []
+      },
+      {
+        "protocol": "vmess",
+        "settings": {
+          "vnext": [
+            {
+              "address": "renderer-stream-1-871.mirra.now",
+              "port": 443,
+              "users": [
+                {
+                  "id": "9ea0c421-05a9-4546-979f-c35a95ada72e",
+                  "alterId": 0,
+                  "security": "auto"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "renderer-stream-1-871.mirra.now",
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
+          },
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/pduucpqa/socket",
+            "headers": {
+              "Host": "renderer-stream-1-871.mirra.now"
+            }
+          }
+        },
+        "tag": "🇯🇵 JP — South Networks Pro (only Mobile)",
+        "server_domains": []
+      },
+      {
+        "protocol": "vmess",
+        "settings": {
+          "vnext": [
+            {
+              "address": "renderer-stream-1-871.mirra.now",
+              "port": 443,
+              "users": [
+                {
+                  "id": "538fd150-0d72-4006-bac1-c586709b5788",
+                  "alterId": 0,
+                  "security": "auto"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "renderer-stream-1-871.mirra.now",
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
+          },
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/phrucpqa/socket",
+            "headers": {
+              "Host": "renderer-stream-1-871.mirra.now"
+            }
+          }
+        },
+        "tag": "🇰🇿 KZ — South Networks Pro (only Mobile)",
+        "server_domains": []
+      },
+      {
+        "protocol": "vmess",
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "renderer-stream-5-13.mirra.now",
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
+          },
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/socket",
+            "headers": {
+              "Host": "renderer-stream-5-13.mirra.now"
+            }
+          }
+        },
+        "settings": {
+          "vnext": [
+            {
+              "address": "renderer-stream-5-13.mirra.now",
+              "port": 443,
+              "users": [
+                {
+                  "id": "f1eb3949-dca4-49ea-b125-a0947e6b6ff5",
+                  "alterId": 0,
+                  "security": "auto"
+                }
+              ]
+            }
+          ]
+        },
+        "tag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
       },
       {
         "protocol": "freedom",
@@ -890,6 +1009,13 @@
       {
         "protocol": "dns",
         "tag": "dns-out"
+      },
+      {
+        "tag": "service-fallback-random-loopback",
+        "protocol": "loopback",
+        "settings": {
+          "inboundTag": "service-fallback-random"
+        }
       }
     ],
     "remarks": "⚡️Авто обход глушилок LTE",
@@ -897,151 +1023,145 @@
       "balancers": [
         {
           "selector": [
-            "🇩🇪 DE — South Networks Pro (only Mobile)",
-            "🇳🇱 NL — South Networks Pro (only Mobile)",
-            "🇺🇸 US — South Networks Pro (only Mobile)",
-            "🇩🇪 DE — South Networks Pro (only Mobile) 2",
-            "bridge-1"
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
           ],
           "strategy": {
-            "type": "leastLoad"
+            "type": "random"
           },
           "tag": "auto-best",
-          "fallbackTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
+          "fallbackTag": "service-fallback-random-loopback"
+        },
+        {
+          "tag": "service-fallback-random-pool",
+          "selector": [
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
+            "🇺🇸 US — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇯🇵 JP — South Networks Pro (only Mobile)",
+            "🇰🇿 KZ — South Networks Pro (only Mobile)"
+          ],
+          "fallbackTag": "block",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-youtube-ru",
+          "selector": [
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-telegram-kz",
+          "selector": [
+            "🇰🇿 KZ — South Networks Pro (only Mobile)"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-gemini-de",
+          "selector": [
+            "🇩🇪 DE — South Networks Pro (only Mobile)"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-russia-ru",
+          "selector": [
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-instagram-ru",
+          "selector": [
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
+            "🇩🇪 DE — South Networks Pro (only Mobile)"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-keenetic-ru",
+          "selector": [
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-subscription-ru",
+          "selector": [
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-chatgpt-de",
+          "selector": [
+            "🇩🇪 DE — South Networks Pro (only Mobile)"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-supercell-de-nl",
+          "selector": [
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-twitch-nl",
+          "selector": [
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
         }
       ],
       "domainMatcher": "hybrid",
       "rules": [
         {
           "type": "field",
-          "domain": [
-            "domain:labs.google",
-            "domain:labs.google.com",
-            "domain:aistudio.google.com",
-            "domain:gemini.google.com",
-            "domain:clients6.google.com",
-            "domain:notebooklm.google",
-            "domain:notebook.google.com",
-            "domain:notebooklm.google.com",
-            "domain:generativelanguage.googleapis.com",
-            "domain:alkalimakersuite-pa.clients6.google.com",
-            "domain:robinfrontend-pa.googleapis.com",
-            "domain:proactivebackend-pa.googleapis.com",
-            "domain:notebooklm-pa.googleapis.com",
-            "domain:animelib.org",
-            "domain:anilib.me",
-            "domain:cdnlibs.org",
-            "domain:deepl.com",
-            "domain:elgato.com",
-            "domain:ttwstatic.com",
-            "domain:spotify.com",
-            "domain:grok.com",
-            "domain:4pda.to",
-            "domain:githubcopilot.com",
-            "domain:myanimelist.net",
-            "domain:rutor.info",
-            "domain:rutor.is",
-            "domain:bing.com",
-            "domain:mongodb.com",
-            "domain:arc.net",
-            "domain:diabrowser.com",
-            "domain:framer.com",
-            "domain:framerusercontent.com",
-            "domain:manus.im",
-            "domain:sms-activate.io",
-            "domain:qoder.com",
-            "domain:wplace.live",
-            "domain:copilot.microsoft.com",
-            "domain:windsurf.com",
-            "domain:net.ua",
-            "domain:x.ai",
-            "domain:artstation.com",
-            "domain:nvidia.com",
-            "domain:character.ai",
-            "domain:notion.com",
-            "domain:notion.so",
-            "domain:vinted.com",
-            "domain:vinted.pl",
-            "domain:klingai.com",
-            "domain:depop.com",
-            "domain:elevenlabs.io",
-            "domain:claude.ai",
-            "domain:byteoversea.com",
-            "domain:cloudflareinsights.com",
-            "domain:anthropic.com",
-            "domain:habr.com",
-            "domain:claude.com",
-            "domain:openai.com",
-            "domain:chatgpt.com",
-            "domain:chatgpt.site",
-            "domain:ttvnw.net",
-            "domain:siftscience.com",
-            "domain:canva.com",
-            "domain:vestiairecollective.com",
-            "domain:mo.co",
-            "domain:proxywing.com",
-            "domain:adspower.net",
-            "domain:patreon.com",
-            "domain:sentry.io",
-            "domain:deezer.com",
-            "domain:ruads.org",
-            "domain:patreonusercontent.com",
-            "domain:cookielaw.org",
-            "domain:jmp.blue",
-            "domain:dubybot.live",
-            "domain:genspark.ai",
-            "domain:jetbrains.com",
-            "domain:ahrefs.com",
-            "domain:stripe.com",
-            "domain:twitch.tv",
-            "domain:xvideos.com",
-            "domain:youtube.com",
-            "domain:youtu.be",
-            "domain:googlevideo.com",
-            "domain:ytimg.com",
-            "domain:youtubei.googleapis.com",
-            "domain:youtube-nocookie.com"
+          "inboundTag": [
+            "service-fallback-random"
           ],
-          "balancerTag": "auto-best"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:telegram.org",
-            "domain:telegram.me",
-            "domain:telegram.dog",
-            "domain:t.me",
-            "domain:telegra.ph",
-            "domain:telesco.pe",
-            "domain:tdesktop.com",
-            "domain:telegram-cdn.org",
-            "domain:telegramusercontent.com",
-            "domain:tg.dev"
-          ],
-          "balancerTag": "auto-best"
-        },
-        {
-          "type": "field",
-          "ip": [
-            "91.108.56.0/22",
-            "91.108.4.0/22",
-            "91.108.8.0/22",
-            "91.108.16.0/22",
-            "91.108.12.0/22",
-            "149.154.160.0/20",
-            "91.105.192.0/23",
-            "91.108.20.0/22",
-            "185.76.151.0/24",
-            "2001:b28:f23d::/48",
-            "2001:b28:f23f::/48",
-            "2001:67c:4e8::/48",
-            "2001:b28:f23c::/48",
-            "2a0a:f280::/32",
-            "5.28.128.0/17",
-            "95.161.64.0/20",
-            "109.239.140.0/24"
-          ],
-          "balancerTag": "auto-best"
+          "balancerTag": "service-fallback-random-pool"
         },
         {
           "type": "field",
@@ -1058,6 +1178,89 @@
             "domain:adstat.yandex.ru",
             "domain:i.megafon.ru",
             "domain:ocsps.ssl.com"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "77.88.8.8",
+            "77.88.8.1"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "10.0.0.0/8",
+            "172.16.0.0/12",
+            "192.168.0.0/16",
+            "169.254.0.0/16"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:battle.net",
+            "domain:blizzard.com",
+            "domain:blizzard.net",
+            "domain:blz-contentstack.com",
+            "domain:blzstatic.cn",
+            "domain:dash.cloudflare.com",
+            "domain:epicgames.com",
+            "domain:epicgames.dev",
+            "domain:epicgamescdn.com",
+            "domain:fcmtoken.googleapis.com",
+            "domain:justletswork.com",
+            "domain:np.community.playstation.net",
+            "domain:playstation.com",
+            "domain:playstation.net",
+            "domain:playstationnetwork.com",
+            "domain:psnprofiles.com",
+            "domain:sonyentertainmentnetwork.com",
+            "domain:unrealengine.com",
+            "domain:showip.net",
+            "domain:checkip.amazonaws.com",
+            "domain:ifconfig.me",
+            "domain:ip.sb",
+            "domain:ipapi.is",
+            "domain:ipify.org",
+            "domain:iplocate.io"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "protocol": [
+            "bittorrent"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:kinopoisk.ru",
+            "domain:hd-kinopoisk.ru",
+            "domain:hd-kinopoisk.com",
+            "domain:kinopoisk-hd.com",
+            "domain:kinopoisk.sport",
+            "domain:hd.ru",
+            "domain:mykp.ru",
+            "domain:kp.yandex.net",
+            "domain:strm.yandex.net",
+            "domain:strm.yandex.ru",
+            "domain:strm-playlists.kp.yandex.net",
+            "full:strm-ott.akamaized.net",
+            "domain:ott.yandex.ru",
+            "domain:video.yandex.net",
+            "domain:proxy.video.yandex.net",
+            "domain:cdn.yandex.net",
+            "domain:cdn.cloud.yandex.net",
+            "domain:yccdn.cloud.yandex.net",
+            "domain:storage.mds.yandex.net",
+            "domain:mds.yandex.net",
+            "domain:api.plus.kinopoisk.ru"
           ],
           "outboundTag": "direct"
         },
@@ -1081,77 +1284,6 @@
             "domain:restream-media.net"
           ],
           "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "ip": [
-            "77.88.8.8",
-            "77.88.8.1"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "ip": [
-            "1.1.1.1",
-            "8.8.8.8"
-          ],
-          "port": "443",
-          "network": "tcp",
-          "balancerTag": "auto-best"
-        },
-        {
-          "type": "field",
-          "inboundTag": [
-            "dns"
-          ],
-          "balancerTag": "auto-best"
-        },
-        {
-          "type": "field",
-          "port": "53",
-          "outboundTag": "dns-out"
-        },
-        {
-          "type": "field",
-          "protocol": [
-            "bittorrent"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "ip": [
-            "10.0.0.0/8",
-            "172.16.0.0/12",
-            "192.168.0.0/16",
-            "169.254.0.0/16"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "full:ucams.ufanet.ru"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
-            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
-            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
-          ],
-          "network": "tcp,udp",
-          "outboundTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
-        },
-        {
-          "type": "field",
-          "port": "554,8554",
-          "network": "tcp",
-          "outboundTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -1213,13 +1345,8 @@
             "domain:avito.ru",
             "domain:avito.st",
             "domain:banki.ru",
-            "domain:battle.net",
             "domain:beeline.ru",
             "domain:belkacar.ru",
-            "domain:blizzard.com",
-            "domain:blizzard.net",
-            "domain:blz-contentstack.com",
-            "domain:blzstatic.cn",
             "domain:boxberry.ru",
             "domain:burgerking.ru",
             "domain:cbr.ru",
@@ -1232,7 +1359,6 @@
             "domain:citydrive.ru",
             "domain:council.gov.ru",
             "domain:crpt.ru",
-            "domain:dash.cloudflare.com",
             "domain:delimobil.ru",
             "domain:delivery-club.ru",
             "domain:dellin.ru",
@@ -1253,13 +1379,9 @@
             "domain:ecom-cdn.x5media.ru",
             "domain:eldorado.ru",
             "domain:emias.info",
-            "domain:epicgames.com",
-            "domain:epicgames.dev",
-            "domain:epicgamescdn.com",
             "domain:epp.genproc.gov.ru",
             "domain:ertelecom.ru",
             "domain:event-stream-api.magnit.ru",
-            "domain:fcmtoken.googleapis.com",
             "domain:fivepost.ru",
             "domain:fix-price.com",
             "domain:flysmartavia.com",
@@ -1283,7 +1405,6 @@
             "domain:ivi.ru",
             "domain:iz.ru",
             "domain:izbirkom.ru",
-            "domain:justletswork.com",
             "domain:kari.com",
             "domain:kazanexpress.ru",
             "domain:kinopoisk.ru",
@@ -1332,7 +1453,6 @@
             "domain:myspar.ru",
             "domain:nalog.gov.ru",
             "domain:nordwindairlines.ru",
-            "domain:np.community.playstation.net",
             "domain:ntv.ru",
             "domain:observability.x5.ru",
             "domain:ok.ru",
@@ -1348,16 +1468,12 @@
             "domain:perekrestok.ru",
             "domain:petrovich.ru",
             "domain:planetazdorovo.ru",
-            "domain:playstation.com",
-            "domain:playstation.net",
-            "domain:playstationnetwork.com",
             "domain:pobeda.aero",
             "domain:pochta.ru",
             "domain:premier.one",
             "domain:profi.ru",
             "domain:proxy.mob.maps.yandex.net",
             "domain:psbank.ru",
-            "domain:psnprofiles.com",
             "domain:rabota.ru",
             "domain:rambler.ru",
             "domain:rbc.ru",
@@ -1386,19 +1502,9 @@
             "domain:smotrim.ru",
             "domain:sochi.ru",
             "domain:sogaz.ru",
-            "domain:sonyentertainmentnetwork.com",
             "domain:sravni.ru",
             "domain:start.ru",
             "domain:static.vseinstrumenti.ru",
-            "domain:steam-chat.com",
-            "domain:steamcdn-a.akamaihd.net",
-            "domain:steamcommunity.com",
-            "domain:steamcontent.com",
-            "domain:steamgames.com",
-            "domain:steampowered.com",
-            "domain:steamserver.net",
-            "domain:steamstatic.com",
-            "domain:steamusercontent.com",
             "domain:superjob.ru",
             "domain:sutochno.ru",
             "domain:t2.ru",
@@ -1410,8 +1516,6 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
-            "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
             "domain:utair.ru",
@@ -1485,7 +1589,6 @@
             "domain:rwb.ru",
             "domain:rzd-bonus.ru",
             "domain:scartel.ru",
-            "domain:showip.net",
             "domain:sirius.online",
             "domain:smailru.net",
             "domain:sochisirius.ru",
@@ -1587,7 +1690,6 @@
             "domain:cdn-vk.net",
             "domain:cdnmail.ru",
             "domain:cdnvideo.ru",
-            "domain:checkip.amazonaws.com",
             "domain:chizhik.club",
             "domain:cian.site",
             "domain:cikrf.ru",
@@ -1619,14 +1721,9 @@
             "domain:hhcdn.ru",
             "domain:homecredit.ru",
             "domain:hrlink.ru",
-            "domain:ifconfig.me",
             "domain:imgsmail.ru",
             "domain:inbox.ru",
             "domain:internet.ru",
-            "domain:ip.sb",
-            "domain:ipapi.is",
-            "domain:ipify.org",
-            "domain:iplocate.io",
             "domain:ivicdn.tv",
             "domain:kinescopecdn.net",
             "domain:lenta.tech",
@@ -1770,12 +1867,362 @@
           "outboundTag": "direct"
         },
         {
+          "type": "field",
+          "ip": [
+            "224.0.0.0/4",
+            "255.255.255.255/32"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:twitch.tv",
+            "domain:ttvnw.net",
+            "domain:jtvnw.net",
+            "domain:twitchcdn.net",
+            "domain:twitchsvc.net",
+            "domain:ext-twitch.tv",
+            "domain:live-video.net",
+            "domain:ttwstatic.com",
+            "domain:twitch-shadow.net",
+            "domain:twitchcdn-shadow.net",
+            "domain:twitch.a2z.com",
+            "domain:d2e2de1etea730.cloudfront.net",
+            "domain:dqrpb9wgowsf5.cloudfront.net",
+            "domain:ds0h3roq6wcgc.cloudfront.net",
+            "domain:d2nvs31859zcd8.cloudfront.net"
+          ],
+          "balancerTag": "service-twitch-nl"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:chatgpt.com",
+            "domain:openai.com",
+            "domain:oaistatic.com",
+            "domain:oaiusercontent.com",
+            "domain:oaistatsig.com",
+            "domain:openaimerge.com",
+            "domain:chatgpt.livekit.cloud",
+            "full:forwarder.workos.com",
+            "full:frontend-apps-multi-region.workos.com",
+            "full:cdn.workos.com",
+            "full:setup.workos.com",
+            "full:images.workoscdn.com",
+            "full:humb.apple.com",
+            "full:o207216.ingest.sentry.io",
+            "full:o33249.ingest.sentry.io"
+          ],
+          "balancerTag": "service-chatgpt-de"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:brawlstars.com",
+            "domain:brawlstarsgame.com",
+            "domain:hayday.com",
+            "domain:haydaygame.com",
+            "domain:supercell.com",
+            "domain:supercellid.com",
+            "domain:supercellgames.com",
+            "domain:supercellstore.com",
+            "domain:seeurlpcl.com",
+            "domain:supercellcreators.com"
+          ],
+          "balancerTag": "service-supercell-de-nl"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "13.210.25.233/32",
+            "13.212.170.102/32",
+            "13.212.171.212/32",
+            "15.161.130.86/32",
+            "15.254.1.17/32",
+            "162.62.33.45/32",
+            "162.62.33.70/32",
+            "162.62.34.10/32",
+            "18.141.176.65/32",
+            "18.156.137.147/32",
+            "18.231.148.103/32",
+            "3.1.80.68/32",
+            "3.25.190.152/32",
+            "3.82.147.36/32",
+            "34.220.160.16/32",
+            "35.154.64.7/32",
+            "35.72.32.125/32",
+            "52.13.150.128/32",
+            "52.13.42.120/32",
+            "52.50.131.212/32",
+            "54.207.168.84/32",
+            "54.248.64.192/32"
+          ],
+          "balancerTag": "service-supercell-de-nl"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:telegram.org",
+            "domain:telegram.me",
+            "domain:telegram.dog",
+            "domain:t.me",
+            "domain:telegra.ph",
+            "domain:telesco.pe",
+            "domain:tdesktop.com",
+            "domain:telegram-cdn.org",
+            "domain:telegramusercontent.com",
+            "domain:tg.dev",
+            "domain:cdn-telegram.org",
+            "domain:comments.app",
+            "domain:contest.com",
+            "domain:fragment.com",
+            "domain:graph.org",
+            "domain:quiz.directory",
+            "domain:telega.one",
+            "domain:telegram.space",
+            "domain:ton.org",
+            "domain:tx.me",
+            "domain:usercontent.dev"
+          ],
+          "balancerTag": "service-telegram-kz"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "91.108.56.0/22",
+            "91.108.4.0/22",
+            "91.108.8.0/22",
+            "91.108.16.0/22",
+            "91.108.12.0/22",
+            "149.154.160.0/20",
+            "91.105.192.0/23",
+            "91.108.20.0/22",
+            "185.76.151.0/24",
+            "2001:b28:f23d::/48",
+            "2001:b28:f23f::/48",
+            "2001:67c:4e8::/48",
+            "2001:b28:f23c::/48",
+            "2a0a:f280::/32",
+            "5.28.128.0/17",
+            "95.161.64.0/20",
+            "109.239.140.0/24",
+            "194.221.250.50/32"
+          ],
+          "balancerTag": "service-telegram-kz"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:youtube.com",
+            "domain:youtu.be",
+            "domain:googlevideo.com",
+            "domain:ytimg.com",
+            "domain:youtubei.googleapis.com",
+            "domain:youtube-nocookie.com",
+            "domain:youtube.googleapis.com",
+            "domain:youtubeembeddedplayer.googleapis.com",
+            "domain:youtubeeducation.com",
+            "domain:youtubekids.com",
+            "domain:yt3.ggpht.com",
+            "domain:yt.be"
+          ],
+          "balancerTag": "service-youtube-ru"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:labs.google",
+            "domain:labs.google.com",
+            "domain:aistudio.google.com",
+            "domain:gemini.google.com",
+            "domain:clients6.google.com",
+            "domain:notebooklm.google",
+            "domain:notebook.google.com",
+            "domain:notebooklm.google.com",
+            "domain:generativelanguage.googleapis.com",
+            "domain:alkalimakersuite-pa.clients6.google.com",
+            "domain:robinfrontend-pa.googleapis.com",
+            "domain:proactivebackend-pa.googleapis.com",
+            "domain:notebooklm-pa.googleapis.com"
+          ],
+          "balancerTag": "service-gemini-de"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:instagram.com",
+            "domain:cdninstagram.com",
+            "domain:fbcdn.net",
+            "domain:fbsbx.com",
+            "domain:ig.me",
+            "full:graph.facebook.com",
+            "full:gateway.facebook.com",
+            "full:edge-mqtt.facebook.com",
+            "full:edge-mqtt-fallback.facebook.com",
+            "full:api.facebook.com"
+          ],
+          "balancerTag": "service-instagram-ru"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:netcraze.cloud"
+          ],
+          "balancerTag": "service-keenetic-ru"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "95.213.181.252/32"
+          ],
+          "balancerTag": "service-keenetic-ru"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:workers.dev",
+            "full:raw.githubusercontent.com"
+          ],
+          "balancerTag": "service-subscription-ru"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:ru",
+            "domain:xn--p1ai",
+            "domain:su"
+          ],
+          "balancerTag": "service-russia-ru"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "geoip:ru"
+          ],
+          "balancerTag": "service-russia-ru"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:avucams.com",
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
+            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
+            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$",
+            "domain:ucams.ufanet.ru",
+            "domain:cams.ufanet.ru"
+          ],
+          "network": "tcp,udp",
+          "balancerTag": "service-russia-ru"
+        },
+        {
+          "type": "field",
+          "port": "554,8554",
+          "network": "tcp",
+          "balancerTag": "service-russia-ru"
+        },
+        {
+          "type": "field",
+          "inboundTag": [
+            "dns"
+          ],
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "port": "53",
+          "outboundTag": "dns-out"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:animelib.org",
+            "domain:anilib.me",
+            "domain:cdnlibs.org",
+            "domain:deepl.com",
+            "domain:elgato.com",
+            "domain:ttwstatic.com",
+            "domain:spotify.com",
+            "domain:grok.com",
+            "domain:4pda.to",
+            "domain:githubcopilot.com",
+            "domain:myanimelist.net",
+            "domain:rutor.info",
+            "domain:rutor.is",
+            "domain:bing.com",
+            "domain:mongodb.com",
+            "domain:arc.net",
+            "domain:diabrowser.com",
+            "domain:framer.com",
+            "domain:framerusercontent.com",
+            "domain:manus.im",
+            "domain:sms-activate.io",
+            "domain:qoder.com",
+            "domain:wplace.live",
+            "domain:copilot.microsoft.com",
+            "domain:windsurf.com",
+            "domain:net.ua",
+            "domain:x.ai",
+            "domain:artstation.com",
+            "domain:nvidia.com",
+            "domain:character.ai",
+            "domain:notion.com",
+            "domain:notion.so",
+            "domain:vinted.com",
+            "domain:vinted.pl",
+            "domain:klingai.com",
+            "domain:depop.com",
+            "domain:elevenlabs.io",
+            "domain:claude.ai",
+            "domain:byteoversea.com",
+            "domain:cloudflareinsights.com",
+            "domain:anthropic.com",
+            "domain:habr.com",
+            "domain:claude.com",
+            "domain:openai.com",
+            "domain:chatgpt.com",
+            "domain:chatgpt.site",
+            "domain:ttvnw.net",
+            "domain:siftscience.com",
+            "domain:canva.com",
+            "domain:vestiairecollective.com",
+            "domain:mo.co",
+            "domain:proxywing.com",
+            "domain:adspower.net",
+            "domain:patreon.com",
+            "domain:sentry.io",
+            "domain:deezer.com",
+            "domain:ruads.org",
+            "domain:patreonusercontent.com",
+            "domain:cookielaw.org",
+            "domain:jmp.blue",
+            "domain:dubybot.live",
+            "domain:genspark.ai",
+            "domain:jetbrains.com",
+            "domain:ahrefs.com",
+            "domain:stripe.com",
+            "domain:twitch.tv",
+            "domain:xvideos.com"
+          ],
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "balancerTag": "auto-best"
+        },
+        {
           "balancerTag": "auto-best",
           "network": "tcp,udp",
           "type": "field"
         }
       ],
-      "domainStrategy": "AsIs"
+      "domainStrategy": "IPOnDemand"
     },
     "admin_display_name": "⚡️Авто обход  LTE"
   },
@@ -3069,145 +3516,14 @@
             "bridge-9"
           ],
           "strategy": {
-            "type": "leastLoad"
+            "type": "random"
           },
           "tag": "auto-best",
-          "fallbackTag": "bridge-2"
+          "fallbackTag": "block"
         }
       ],
       "domainMatcher": "hybrid",
       "rules": [
-        {
-          "type": "field",
-          "domain": [
-            "domain:labs.google",
-            "domain:labs.google.com",
-            "domain:aistudio.google.com",
-            "domain:gemini.google.com",
-            "domain:clients6.google.com",
-            "domain:notebooklm.google",
-            "domain:notebook.google.com",
-            "domain:notebooklm.google.com",
-            "domain:generativelanguage.googleapis.com",
-            "domain:alkalimakersuite-pa.clients6.google.com",
-            "domain:robinfrontend-pa.googleapis.com",
-            "domain:proactivebackend-pa.googleapis.com",
-            "domain:notebooklm-pa.googleapis.com",
-            "domain:animelib.org",
-            "domain:anilib.me",
-            "domain:cdnlibs.org",
-            "domain:deepl.com",
-            "domain:elgato.com",
-            "domain:ttwstatic.com",
-            "domain:spotify.com",
-            "domain:grok.com",
-            "domain:4pda.to",
-            "domain:githubcopilot.com",
-            "domain:myanimelist.net",
-            "domain:rutor.info",
-            "domain:rutor.is",
-            "domain:bing.com",
-            "domain:mongodb.com",
-            "domain:arc.net",
-            "domain:diabrowser.com",
-            "domain:framer.com",
-            "domain:framerusercontent.com",
-            "domain:manus.im",
-            "domain:sms-activate.io",
-            "domain:qoder.com",
-            "domain:wplace.live",
-            "domain:copilot.microsoft.com",
-            "domain:windsurf.com",
-            "domain:net.ua",
-            "domain:x.ai",
-            "domain:artstation.com",
-            "domain:nvidia.com",
-            "domain:character.ai",
-            "domain:notion.com",
-            "domain:notion.so",
-            "domain:vinted.com",
-            "domain:vinted.pl",
-            "domain:klingai.com",
-            "domain:depop.com",
-            "domain:elevenlabs.io",
-            "domain:claude.ai",
-            "domain:byteoversea.com",
-            "domain:cloudflareinsights.com",
-            "domain:anthropic.com",
-            "domain:habr.com",
-            "domain:claude.com",
-            "domain:openai.com",
-            "domain:chatgpt.com",
-            "domain:chatgpt.site",
-            "domain:ttvnw.net",
-            "domain:siftscience.com",
-            "domain:canva.com",
-            "domain:vestiairecollective.com",
-            "domain:mo.co",
-            "domain:proxywing.com",
-            "domain:adspower.net",
-            "domain:patreon.com",
-            "domain:sentry.io",
-            "domain:deezer.com",
-            "domain:ruads.org",
-            "domain:patreonusercontent.com",
-            "domain:cookielaw.org",
-            "domain:jmp.blue",
-            "domain:dubybot.live",
-            "domain:genspark.ai",
-            "domain:jetbrains.com",
-            "domain:ahrefs.com",
-            "domain:stripe.com",
-            "domain:twitch.tv",
-            "domain:xvideos.com",
-            "domain:youtube.com",
-            "domain:youtu.be",
-            "domain:googlevideo.com",
-            "domain:ytimg.com",
-            "domain:youtubei.googleapis.com",
-            "domain:youtube-nocookie.com"
-          ],
-          "balancerTag": "auto-best"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:telegram.org",
-            "domain:telegram.me",
-            "domain:telegram.dog",
-            "domain:t.me",
-            "domain:telegra.ph",
-            "domain:telesco.pe",
-            "domain:tdesktop.com",
-            "domain:telegram-cdn.org",
-            "domain:telegramusercontent.com",
-            "domain:tg.dev"
-          ],
-          "balancerTag": "auto-best"
-        },
-        {
-          "type": "field",
-          "ip": [
-            "91.108.56.0/22",
-            "91.108.4.0/22",
-            "91.108.8.0/22",
-            "91.108.16.0/22",
-            "91.108.12.0/22",
-            "149.154.160.0/20",
-            "91.105.192.0/23",
-            "91.108.20.0/22",
-            "185.76.151.0/24",
-            "2001:b28:f23d::/48",
-            "2001:b28:f23f::/48",
-            "2001:67c:4e8::/48",
-            "2001:b28:f23c::/48",
-            "2a0a:f280::/32",
-            "5.28.128.0/17",
-            "95.161.64.0/20",
-            "109.239.140.0/24"
-          ],
-          "balancerTag": "auto-best"
-        },
         {
           "type": "field",
           "domain": [
@@ -3257,28 +3573,6 @@
         },
         {
           "type": "field",
-          "ip": [
-            "1.1.1.1",
-            "8.8.8.8"
-          ],
-          "port": "443",
-          "network": "tcp",
-          "balancerTag": "auto-best"
-        },
-        {
-          "type": "field",
-          "inboundTag": [
-            "dns"
-          ],
-          "balancerTag": "auto-best"
-        },
-        {
-          "type": "field",
-          "port": "53",
-          "outboundTag": "dns-out"
-        },
-        {
-          "type": "field",
           "protocol": [
             "bittorrent"
           ],
@@ -3300,23 +3594,6 @@
             "full:ucams.ufanet.ru"
           ],
           "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
-            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
-            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
-          ],
-          "network": "tcp,udp",
-          "outboundTag": "bridge-1"
-        },
-        {
-          "type": "field",
-          "port": "554,8554",
-          "network": "tcp",
-          "outboundTag": "bridge-1"
         },
         {
           "type": "field",
@@ -3935,6 +4212,176 @@
           "outboundTag": "direct"
         },
         {
+          "type": "field",
+          "domain": [
+            "domain:labs.google",
+            "domain:labs.google.com",
+            "domain:aistudio.google.com",
+            "domain:gemini.google.com",
+            "domain:clients6.google.com",
+            "domain:notebooklm.google",
+            "domain:notebook.google.com",
+            "domain:notebooklm.google.com",
+            "domain:generativelanguage.googleapis.com",
+            "domain:alkalimakersuite-pa.clients6.google.com",
+            "domain:robinfrontend-pa.googleapis.com",
+            "domain:proactivebackend-pa.googleapis.com",
+            "domain:notebooklm-pa.googleapis.com",
+            "domain:animelib.org",
+            "domain:anilib.me",
+            "domain:cdnlibs.org",
+            "domain:deepl.com",
+            "domain:elgato.com",
+            "domain:ttwstatic.com",
+            "domain:spotify.com",
+            "domain:grok.com",
+            "domain:4pda.to",
+            "domain:githubcopilot.com",
+            "domain:myanimelist.net",
+            "domain:rutor.info",
+            "domain:rutor.is",
+            "domain:bing.com",
+            "domain:mongodb.com",
+            "domain:arc.net",
+            "domain:diabrowser.com",
+            "domain:framer.com",
+            "domain:framerusercontent.com",
+            "domain:manus.im",
+            "domain:sms-activate.io",
+            "domain:qoder.com",
+            "domain:wplace.live",
+            "domain:copilot.microsoft.com",
+            "domain:windsurf.com",
+            "domain:net.ua",
+            "domain:x.ai",
+            "domain:artstation.com",
+            "domain:nvidia.com",
+            "domain:character.ai",
+            "domain:notion.com",
+            "domain:notion.so",
+            "domain:vinted.com",
+            "domain:vinted.pl",
+            "domain:klingai.com",
+            "domain:depop.com",
+            "domain:elevenlabs.io",
+            "domain:claude.ai",
+            "domain:byteoversea.com",
+            "domain:cloudflareinsights.com",
+            "domain:anthropic.com",
+            "domain:habr.com",
+            "domain:claude.com",
+            "domain:openai.com",
+            "domain:chatgpt.com",
+            "domain:chatgpt.site",
+            "domain:ttvnw.net",
+            "domain:siftscience.com",
+            "domain:canva.com",
+            "domain:vestiairecollective.com",
+            "domain:mo.co",
+            "domain:proxywing.com",
+            "domain:adspower.net",
+            "domain:patreon.com",
+            "domain:sentry.io",
+            "domain:deezer.com",
+            "domain:ruads.org",
+            "domain:patreonusercontent.com",
+            "domain:cookielaw.org",
+            "domain:jmp.blue",
+            "domain:dubybot.live",
+            "domain:genspark.ai",
+            "domain:jetbrains.com",
+            "domain:ahrefs.com",
+            "domain:stripe.com",
+            "domain:twitch.tv",
+            "domain:xvideos.com",
+            "domain:youtube.com",
+            "domain:youtu.be",
+            "domain:googlevideo.com",
+            "domain:ytimg.com",
+            "domain:youtubei.googleapis.com",
+            "domain:youtube-nocookie.com"
+          ],
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:telegram.org",
+            "domain:telegram.me",
+            "domain:telegram.dog",
+            "domain:t.me",
+            "domain:telegra.ph",
+            "domain:telesco.pe",
+            "domain:tdesktop.com",
+            "domain:telegram-cdn.org",
+            "domain:telegramusercontent.com",
+            "domain:tg.dev"
+          ],
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "91.108.56.0/22",
+            "91.108.4.0/22",
+            "91.108.8.0/22",
+            "91.108.16.0/22",
+            "91.108.12.0/22",
+            "149.154.160.0/20",
+            "91.105.192.0/23",
+            "91.108.20.0/22",
+            "185.76.151.0/24",
+            "2001:b28:f23d::/48",
+            "2001:b28:f23f::/48",
+            "2001:67c:4e8::/48",
+            "2001:b28:f23c::/48",
+            "2a0a:f280::/32",
+            "5.28.128.0/17",
+            "95.161.64.0/20",
+            "109.239.140.0/24"
+          ],
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "inboundTag": [
+            "dns"
+          ],
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "port": "53",
+          "outboundTag": "dns-out"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:avucams.com",
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
+            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
+            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
+          ],
+          "network": "tcp,udp",
+          "outboundTag": "bridge-1"
+        },
+        {
+          "type": "field",
+          "port": "554,8554",
+          "network": "tcp",
+          "outboundTag": "bridge-1"
+        },
+        {
           "balancerTag": "auto-best",
           "network": "tcp,udp",
           "type": "field"
@@ -3954,9 +4401,9 @@
         "timeout": "5s"
       },
       "subjectSelector": [
-        "💫 Умная локация (Москва, #2) от StealthSurf VPN",
-        "🇩🇪 Германия от StealthSurf VPN",
-        "bridge-1"
+        "🇵🇱 Премиум-конфиг (ранний доступ)",
+        "🇩🇪 Германия",
+        "💫 Премиум-конфиг1"
       ]
     },
     "dns": {
@@ -4592,7 +5039,10 @@
             "domain:vi.ru",
             "domain:fonbet.ru",
             "domain:fon.bet",
-            "full:ucams.ufanet.ru"
+            "full:ucams.ufanet.ru",
+            "domain:avucams.com",
+            "domain:ucams.ufanet.ru",
+            "domain:cams.ufanet.ru"
           ]
         },
         {
@@ -4684,7 +5134,7 @@
           },
           "tcpSettings": {}
         },
-        "tag": "💫 Умная локация (Москва, #2) от StealthSurf VPN"
+        "tag": "🇵🇱 Премиум-конфиг (ранний доступ)"
       },
       {
         "protocol": "vless",
@@ -4714,7 +5164,7 @@
           },
           "tcpSettings": {}
         },
-        "tag": "🇩🇪 Германия от StealthSurf VPN"
+        "tag": "🇩🇪 Германия"
       },
       {
         "protocol": "vless",
@@ -4744,7 +5194,7 @@
           },
           "tcpSettings": {}
         },
-        "tag": "bridge-1",
+        "tag": "💫 Премиум-конфиг1",
         "server_domains": []
       },
       {
@@ -4765,40 +5215,33 @@
       "balancers": [
         {
           "selector": [
-            "💫 Умная локация (Москва, #2) от StealthSurf VPN",
-            "🇩🇪 Германия от StealthSurf VPN",
-            "bridge-1"
+            "🇵🇱 Премиум-конфиг (ранний доступ)",
+            "🇩🇪 Германия",
+            "💫 Премиум-конфиг1"
           ],
           "strategy": {
             "type": "random"
           },
-          "tag": "auto-best"
+          "tag": "auto-best",
+          "fallbackTag": "block"
         }
       ],
       "domainMatcher": "hybrid",
       "rules": [
         {
           "type": "field",
-          "ip": [
-            "91.108.56.0/22",
-            "91.108.4.0/22",
-            "91.108.8.0/22",
-            "91.108.16.0/22",
-            "91.108.12.0/22",
-            "149.154.160.0/20",
-            "91.105.192.0/23",
-            "91.108.20.0/22",
-            "185.76.151.0/24",
-            "2001:b28:f23d::/48",
-            "2001:b28:f23f::/48",
-            "2001:67c:4e8::/48",
-            "2001:b28:f23c::/48",
-            "2a0a:f280::/32",
-            "5.28.128.0/17",
-            "95.161.64.0/20",
-            "109.239.140.0/24"
+          "domain": [
+            "domain:steam-chat.com",
+            "domain:steamcdn-a.akamaihd.net",
+            "domain:steamcommunity.com",
+            "domain:steamcontent.com",
+            "domain:steamgames.com",
+            "domain:steampowered.com",
+            "domain:steamserver.net",
+            "domain:steamstatic.com",
+            "domain:steamusercontent.com"
           ],
-          "balancerTag": "auto-best"
+          "outboundTag": "direct"
         },
         {
           "type": "field",
@@ -4849,28 +5292,6 @@
         },
         {
           "type": "field",
-          "ip": [
-            "1.1.1.1",
-            "8.8.8.8"
-          ],
-          "port": "443",
-          "network": "tcp",
-          "balancerTag": "auto-best"
-        },
-        {
-          "type": "field",
-          "inboundTag": [
-            "dns"
-          ],
-          "balancerTag": "auto-best"
-        },
-        {
-          "type": "field",
-          "port": "53",
-          "outboundTag": "dns-out"
-        },
-        {
-          "type": "field",
           "protocol": [
             "bittorrent"
           ],
@@ -4892,23 +5313,6 @@
             "full:ucams.ufanet.ru"
           ],
           "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
-            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
-            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
-          ],
-          "network": "tcp,udp",
-          "outboundTag": "💫 Умная локация (Москва, #2) от StealthSurf VPN"
-        },
-        {
-          "type": "field",
-          "port": "554,8554",
-          "network": "tcp",
-          "outboundTag": "💫 Умная локация (Москва, #2) от StealthSurf VPN"
         },
         {
           "type": "field",
@@ -5044,6 +5448,13 @@
             "domain:kari.com",
             "domain:kazanexpress.ru",
             "domain:kinopoisk.ru",
+            "domain:hd-kinopoisk.ru",
+            "domain:hd-kinopoisk.com",
+            "domain:kinopoisk-hd.com",
+            "domain:kinopoisk.sport",
+            "domain:mykp.ru",
+            "domain:hd.ru",
+            "full:strm-ott.akamaized.net",
             "domain:kion.ru",
             "domain:kommersant.ru",
             "domain:kp.ru",
@@ -5147,15 +5558,6 @@
             "domain:sravni.ru",
             "domain:start.ru",
             "domain:static.vseinstrumenti.ru",
-            "domain:steam-chat.com",
-            "domain:steamcdn-a.akamaihd.net",
-            "domain:steamcommunity.com",
-            "domain:steamcontent.com",
-            "domain:steamgames.com",
-            "domain:steampowered.com",
-            "domain:steamserver.net",
-            "domain:steamstatic.com",
-            "domain:steamusercontent.com",
             "domain:superjob.ru",
             "domain:sutochno.ru",
             "domain:t2.ru",
@@ -5524,6 +5926,48 @@
             "domain:express.ms",
             "domain:vi.ru"
           ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1",
+            "8.8.8.8"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "inboundTag": [
+            "dns"
+          ],
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "port": "53",
+          "outboundTag": "dns-out"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:avucams.com",
+            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
+            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
+            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$",
+            "domain:ufanet.ru",
+            "domain:ucams.ufanet.ru",
+            "domain:cams.ufanet.ru"
+          ],
+          "network": "tcp,udp",
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "port": "554,8554",
+          "network": "tcp",
           "outboundTag": "direct"
         },
         {
@@ -7608,7 +8052,10 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox"
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
@@ -7632,7 +8079,10 @@
             }
           ]
         },
-        "tag": "🇩🇪 Обход LTE"
+        "tag": "🇩🇪 Обход LTE",
+        "admin_display_name": "🇳🇱 Обход LTE",
+        "remark": "🇳🇱 Обход LTE",
+        "remarks": "🇳🇱 Обход LTE"
       },
       {
         "protocol": "freedom",
@@ -8508,7 +8958,8 @@
         }
       ],
       "domainStrategy": "AsIs"
-    }
+    },
+    "admin_display_name": "🇳🇱 Обход LTE"
   },
   {
     "remarks": "🇩🇪 Обход LTE 2",
@@ -8566,7 +9017,10 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox"
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
@@ -8576,7 +9030,10 @@
           }
         },
         "tag": "main",
-        "server_domains": []
+        "server_domains": [],
+        "admin_display_name": "🇳🇱 Обход LTE 2",
+        "remark": "🇳🇱 Обход LTE 2",
+        "remarks": "🇳🇱 Обход LTE 2"
       },
       {
         "tag": "direct",
@@ -10122,7 +10579,8 @@
       ]
     },
     "admin_scoped_direct_domains": [],
-    "admin_scoped_dns_enabled": true
+    "admin_scoped_dns_enabled": true,
+    "admin_display_name": "🇳🇱 Обход LTE 2"
   },
   {
     "inbounds": [
@@ -10806,20 +11264,23 @@
           "network": "ws",
           "security": "tls",
           "tlsSettings": {
-            "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox"
+            "serverName": "renderer-stream-3-45.mirra.now",
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
           },
           "wsSettings": {
-            "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
+            "path": "/api/v1/gpu-stream/socket",
             "headers": {
-              "Host": "renderer-stream-1-871.mirra.now"
+              "Host": "renderer-stream-3-45.mirra.now"
             }
           }
         },
         "settings": {
           "vnext": [
             {
-              "address": "renderer-stream-1-871.mirra.now",
+              "address": "renderer-stream-3-45.mirra.now",
               "port": 443,
               "users": [
                 {
@@ -10832,9 +11293,9 @@
           ]
         },
         "tag": "🇳🇱 Обход LTE",
-        "admin_display_name": "🇩🇪 Обход LTE 3",
-        "remark": "🇩🇪 Обход LTE 3",
-        "remarks": "🇩🇪 Обход LTE 3"
+        "admin_display_name": "🇺🇸 Обход LTE",
+        "remark": "🇺🇸 Обход LTE",
+        "remarks": "🇺🇸 Обход LTE"
       },
       {
         "protocol": "freedom",
@@ -11711,7 +12172,7 @@
       ],
       "domainStrategy": "AsIs"
     },
-    "admin_display_name": "🇳🇱 Обход LTE"
+    "admin_display_name": "🇺🇸 Обход LTE"
   },
   {
     "inbounds": [
@@ -12396,7 +12857,10 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox"
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/o36ecpsebyjq/socket",
@@ -12421,9 +12885,9 @@
           ]
         },
         "tag": "🇺🇸 Обход LTE",
-        "admin_display_name": "🇳🇱 Обход LTE",
-        "remark": "🇳🇱 Обход LTE",
-        "remarks": "🇳🇱 Обход LTE"
+        "admin_display_name": "🇩🇪 Обход LTE",
+        "remark": "🇩🇪 Обход LTE",
+        "remarks": "🇩🇪 Обход LTE"
       },
       {
         "protocol": "freedom",
@@ -13300,7 +13764,7 @@
       ],
       "domainStrategy": "AsIs"
     },
-    "admin_display_name": "🇺🇸 Обход LTE"
+    "admin_display_name": "🇩🇪 Обход LTE"
   },
   {
     "remarks": "🇳🇱 Обход LTE 2",
@@ -13358,7 +13822,10 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-1-871.mirra.now",
-            "fingerprint": "firefox"
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/o36ecpsebyjq/socket",
@@ -13369,9 +13836,9 @@
         },
         "tag": "main",
         "server_domains": [],
-        "admin_display_name": "🇳🇱 Обход LTE 2",
-        "remark": "🇳🇱 Обход LTE 2",
-        "remarks": "🇳🇱 Обход LTE 2"
+        "admin_display_name": "🇩🇪 Обход LTE 2",
+        "remark": "🇩🇪 Обход LTE 2",
+        "remarks": "🇩🇪 Обход LTE 2"
       },
       {
         "tag": "direct",
@@ -14895,7 +15362,7 @@
     },
     "admin_scoped_direct_domains": [],
     "admin_scoped_dns_enabled": true,
-    "admin_display_name": "🇳🇱 Обход LTE 2"
+    "admin_display_name": "🇩🇪 Обход LTE 2"
   },
   {
     "inbounds": [
@@ -15580,7 +16047,10 @@
           "security": "tls",
           "tlsSettings": {
             "serverName": "renderer-stream-5-13.mirra.now",
-            "fingerprint": "firefox"
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
           },
           "wsSettings": {
             "path": "/api/v1/gpu-stream/socket",
