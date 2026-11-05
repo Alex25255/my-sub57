@@ -1960,7 +1960,14 @@
             "full:images.workoscdn.com",
             "full:humb.apple.com",
             "full:o207216.ingest.sentry.io",
-            "full:o33249.ingest.sentry.io"
+            "full:o33249.ingest.sentry.io",
+            "domain:ct.sendgrid.net",
+            "domain:intercom.io",
+            "domain:intercomcdn.com",
+            "full:challenges.cloudflare.com",
+            "full:js.stripe.com",
+            "full:rum.browser-intake-datadoghq.com",
+            "full:workos.imgix.net"
           ],
           "balancerTag": "service-chatgpt-de"
         },
