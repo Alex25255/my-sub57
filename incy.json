@@ -16,7 +16,8 @@
         "🇩🇪 DE — South Networks Pro (only Mobile)",
         "🇯🇵 JP — South Networks Pro (only Mobile)",
         "🇰🇿 KZ — South Networks Pro (only Mobile)",
-        "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+        "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
+        "🇩🇪 DE — ChatGPT (рабочий профиль)"
       ]
     },
     "dns": {
@@ -998,6 +999,45 @@
         "server_domains": []
       },
       {
+        "protocol": "vmess",
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "renderer-stream-1-871.mirra.now",
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
+          },
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
+            "headers": {
+              "Host": "renderer-stream-1-871.mirra.now"
+            }
+          }
+        },
+        "settings": {
+          "vnext": [
+            {
+              "address": "renderer-stream-1-871.mirra.now",
+              "port": 443,
+              "users": [
+                {
+                  "id": "89432e7b-13bc-464b-bc6b-d52c34f15b03",
+                  "alterId": 0,
+                  "security": "auto"
+                }
+              ]
+            }
+          ]
+        },
+        "tag": "🇩🇪 DE — ChatGPT (рабочий профиль)",
+        "admin_display_name": "🇳🇱 Обход LTE",
+        "remark": "🇳🇱 Обход LTE",
+        "remarks": "🇳🇱 Обход LTE"
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -1017,7 +1057,7 @@
         }
       }
     ],
-    "remarks": "⚡️Авто обход LTE — ChatGPT через 🇩🇪 DE",
+    "remarks": "⚡️ Авто LTE — ChatGPT DE (рабочий сервер)",
     "routing": {
       "balancers": [
         {
@@ -1089,7 +1129,7 @@
         {
           "tag": "service-chatgpt-de",
           "selector": [
-            "🇩🇪 DE — South Networks Pro (only Mobile)"
+            "🇩🇪 DE — ChatGPT (рабочий профиль)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
