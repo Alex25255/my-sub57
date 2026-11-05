@@ -1,4 +1,4 @@
-
+[
   {
     "burstObservatory": {
       "pingConfig": {
@@ -1161,6 +1161,16 @@
           "strategy": {
             "type": "random"
           }
+        },
+        {
+          "tag": "service-tiktok-jp",
+          "selector": [
+            "🇯🇵 JP — South Networks Pro (only Mobile)"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
         }
       ],
       "domainMatcher": "hybrid",
@@ -1888,6 +1898,28 @@
           "network": "tcp,udp",
           "port": "9339",
           "balancerTag": "service-supercell-de-nl"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:tiktok.com",
+            "domain:tiktokv.com",
+            "domain:tiktokcdn.com",
+            "domain:tiktokcdn-us.com",
+            "domain:tiktokcdn-eu.com",
+            "domain:tiktokv.us",
+            "domain:tiktokv.eu",
+            "domain:tiktokd.net",
+            "domain:tiktokd.org",
+            "domain:musical.ly",
+            "domain:muscdn.com",
+            "domain:byteoversea.com",
+            "domain:ibyteimg.com",
+            "domain:ibytedtos.com",
+            "domain:byteimg.com",
+            "domain:snssdk.com"
+          ],
+          "balancerTag": "service-tiktok-jp"
         },
         {
           "type": "field",
