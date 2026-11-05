@@ -998,6 +998,356 @@
         "tag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
       },
       {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "188.72.103.4",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "mlkem768x25519plus.native.0rtt.-3mvkmMBqRVC80CgNXHd-Q0CrR0kQyFTdK6_H2AWGCw",
+                  "flow": "",
+                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "tls",
+          "tlsSettings": {
+            "alpn": [
+              "h2",
+              "http/1.1"
+            ],
+            "enableSessionResumption": false,
+            "fingerprint": "chrome",
+            "serverName": "twuz27.assh.site"
+          },
+          "xhttpSettings": {
+            "extra": {
+              "mode": "packet-up",
+              "path": "/v2/stream/",
+              "scMaxConcurrentPosts": 1,
+              "scMaxEachPostBytes": "200000-500000",
+              "scMinPostsIntervalMs": 50,
+              "uplinkChunkSize": 16384,
+              "uplinkDataPlacement": "header",
+              "uplinkHTTPMethod": "GET",
+              "xmux": {
+                "cMaxReuseTimes": "200-400",
+                "hKeepAlivePeriod": 30,
+                "hMaxRequestTimes": 0,
+                "hMaxReusableSecs": "1800-3000",
+                "maxConnections": 2
+              },
+              "xPaddingHeader": "X-Cache",
+              "xPaddingKey": "_dc",
+              "xPaddingMethod": "tokenish",
+              "xPaddingObfsMode": true,
+              "xPaddingPlacement": "queryInHeader"
+            },
+            "host": "twuz27.assh.site",
+            "mode": "packet-up",
+            "path": "/v2/stream/"
+          }
+        },
+        "tag": "🇷🇺 RU — Только LTE #1 | Все моб. операторы"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "188.72.103.4",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "flow": "",
+                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "tls",
+          "tlsSettings": {
+            "alpn": [
+              "h2",
+              "http/1.1"
+            ],
+            "enableSessionResumption": false,
+            "fingerprint": "chrome",
+            "serverName": "l3dmat.geodesia.site"
+          },
+          "xhttpSettings": {
+            "extra": {
+              "mode": "packet-up",
+              "path": "/api/v3/sessions/",
+              "scMaxConcurrentPosts": 1,
+              "scMaxEachPostBytes": "200000-500000",
+              "scMinPostsIntervalMs": 50,
+              "uplinkChunkSize": 16384,
+              "uplinkDataPlacement": "header",
+              "uplinkHTTPMethod": "GET",
+              "xmux": {
+                "cMaxReuseTimes": "200-400",
+                "hKeepAlivePeriod": 30,
+                "hMaxRequestTimes": 0,
+                "hMaxReusableSecs": "1800-3000",
+                "maxConnections": 2
+              },
+              "xPaddingHeader": "X-Cache",
+              "xPaddingKey": "_dc",
+              "xPaddingMethod": "tokenish",
+              "xPaddingObfsMode": true,
+              "xPaddingPlacement": "queryInHeader"
+            },
+            "host": "l3dmat.geodesia.site",
+            "mode": "packet-up",
+            "path": "/api/v3/sessions/"
+          }
+        },
+        "tag": "🇷🇺 RU — Только LTE #2 | Все моб. операторы"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "188.72.103.4",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "mlkem768x25519plus.native.0rtt.pMPTQ1Xw0K0F-Bot62sbEtc1W84Ylxp3Lg8QgogWxko",
+                  "flow": "",
+                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "tls",
+          "tlsSettings": {
+            "alpn": [
+              "h2",
+              "http/1.1"
+            ],
+            "enableSessionResumption": false,
+            "fingerprint": "chrome",
+            "serverName": "href.alinkpy.site"
+          },
+          "xhttpSettings": {
+            "extra": {
+              "mode": "packet-up",
+              "path": "/v1/notify/",
+              "scMaxConcurrentPosts": 1,
+              "scMaxEachPostBytes": "200000-500000",
+              "scMinPostsIntervalMs": 50,
+              "uplinkChunkSize": 16384,
+              "uplinkDataPlacement": "header",
+              "uplinkHTTPMethod": "GET",
+              "xmux": {
+                "cMaxReuseTimes": "200-400",
+                "hKeepAlivePeriod": 30,
+                "hMaxRequestTimes": 0,
+                "hMaxReusableSecs": "1800-3000",
+                "maxConnections": 2
+              },
+              "xPaddingHeader": "X-Cache",
+              "xPaddingKey": "_dc",
+              "xPaddingMethod": "tokenish",
+              "xPaddingObfsMode": true,
+              "xPaddingPlacement": "queryInHeader"
+            },
+            "host": "href.alinkpy.site",
+            "mode": "packet-up",
+            "path": "/v1/notify/"
+          }
+        },
+        "tag": "🇷🇺 RU — Только LTE #5 | Все моб. операторы"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "188.72.103.4",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "mlkem768x25519plus.native.0rtt.Gy5bNe93LLz_DADzoXcKmY6jvyWDGYsESycenoqTlko",
+                  "flow": "",
+                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "tls",
+          "tlsSettings": {
+            "alpn": [
+              "h2",
+              "http/1.1"
+            ],
+            "enableSessionResumption": false,
+            "fingerprint": "chrome",
+            "serverName": "gbhd.iincy.site"
+          },
+          "xhttpSettings": {
+            "extra": {
+              "mode": "packet-up",
+              "path": "/api/v3/feed/",
+              "scMaxConcurrentPosts": 1,
+              "scMaxEachPostBytes": "200000-500000",
+              "scMinPostsIntervalMs": 50,
+              "uplinkChunkSize": 16384,
+              "uplinkDataPlacement": "header",
+              "uplinkHTTPMethod": "GET",
+              "xmux": {
+                "cMaxReuseTimes": "200-400",
+                "hKeepAlivePeriod": 30,
+                "hMaxRequestTimes": 0,
+                "hMaxReusableSecs": "1800-3000",
+                "maxConnections": 2
+              },
+              "xPaddingHeader": "X-Cache",
+              "xPaddingKey": "_dc",
+              "xPaddingMethod": "tokenish",
+              "xPaddingObfsMode": true,
+              "xPaddingPlacement": "queryInHeader"
+            },
+            "host": "gbhd.iincy.site",
+            "mode": "packet-up",
+            "path": "/api/v3/feed/"
+          }
+        },
+        "tag": "🇷🇺 RU — Только LTE #6 | Все моб. операторы"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "188.72.103.4",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "mlkem768x25519plus.native.0rtt.tXgY8Cwd9ED6tJi_p4Xpv-E9iakyWEtJFelWoNycvE4",
+                  "flow": "",
+                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "tls",
+          "tlsSettings": {
+            "alpn": [
+              "h2",
+              "http/1.1"
+            ],
+            "enableSessionResumption": false,
+            "fingerprint": "chrome",
+            "serverName": "8aa5b9.maximume.site"
+          },
+          "xhttpSettings": {
+            "extra": {
+              "mode": "packet-up",
+              "noGRPCHeader": true,
+              "path": "/api/v2/events/",
+              "scMaxConcurrentPosts": 1,
+              "scMaxEachPostBytes": "200000-500000",
+              "scMinPostsIntervalMs": 50,
+              "uplinkChunkSize": 16384,
+              "uplinkDataPlacement": "header",
+              "uplinkHTTPMethod": "GET",
+              "xmux": {
+                "cMaxReuseTimes": "200-400",
+                "hKeepAlivePeriod": 30,
+                "hMaxRequestTimes": 0,
+                "hMaxReusableSecs": "1800-3000",
+                "maxConnections": 2
+              }
+            },
+            "host": "8aa5b9.maximume.site",
+            "mode": "packet-up",
+            "path": "/api/v2/events/"
+          }
+        },
+        "tag": "🇷🇺 RU — Только LTE #7 | Все моб. операторы"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "188.72.103.4",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "mlkem768x25519plus.native.0rtt.2Vaz61q44JwnLRtrIOu0J0NLMFxPwdg0Sp9k3K0PDHs",
+                  "flow": "",
+                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "tls",
+          "tlsSettings": {
+            "alpn": [
+              "h2",
+              "http/1.1"
+            ],
+            "enableSessionResumption": false,
+            "fingerprint": "chrome",
+            "serverName": "iop14.iincy.site"
+          },
+          "xhttpSettings": {
+            "extra": {
+              "mode": "packet-up",
+              "path": "/api/v2/feed/",
+              "scMaxConcurrentPosts": 1,
+              "scMaxEachPostBytes": "200000-500000",
+              "scMinPostsIntervalMs": 50,
+              "uplinkChunkSize": 8192,
+              "uplinkDataKey": "X-Trace",
+              "uplinkDataPlacement": "header",
+              "uplinkHTTPMethod": "GET",
+              "xmux": {
+                "cMaxReuseTimes": "200-400",
+                "hKeepAlivePeriod": 30,
+                "hMaxRequestTimes": 0,
+                "hMaxReusableSecs": "1800-3000",
+                "maxConnections": 2
+              },
+              "xPaddingKey": "v",
+              "xPaddingMethod": "tokenish",
+              "xPaddingObfsMode": true,
+              "xPaddingPlacement": "query"
+            },
+            "host": "iop14.iincy.site",
+            "mode": "packet-up",
+            "path": "/api/v2/feed/"
+          }
+        },
+        "tag": "🇷🇺 RU — Только LTE #10 | Все моб. операторы"
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -1022,7 +1372,13 @@
       "balancers": [
         {
           "selector": [
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
+            "🇷🇺 RU — Только LTE #1 | Все моб. операторы",
+            "🇷🇺 RU — Только LTE #2 | Все моб. операторы",
+            "🇷🇺 RU — Только LTE #5 | Все моб. операторы",
+            "🇷🇺 RU — Только LTE #6 | Все моб. операторы",
+            "🇷🇺 RU — Только LTE #7 | Все моб. операторы",
+            "🇷🇺 RU — Только LTE #10 | Все моб. операторы"
           ],
           "strategy": {
             "type": "random"
@@ -1047,9 +1403,8 @@
           }
         },
         {
-          "tag": "service-youtube-ru",
+          "tag": "service-youtube-nl",
           "selector": [
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
             "🇳🇱 NL — South Networks Pro (only Mobile)",
             "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]"
           ],
@@ -1066,7 +1421,7 @@
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
-            "type": "roundRobin"
+            "type": "random"
           }
         },
         {
@@ -1092,7 +1447,13 @@
         {
           "tag": "service-russia-ru",
           "selector": [
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
+            "🇷🇺 RU — Только LTE #1 | Все моб. операторы",
+            "🇷🇺 RU — Только LTE #2 | Все моб. операторы",
+            "🇷🇺 RU — Только LTE #5 | Все моб. операторы",
+            "🇷🇺 RU — Только LTE #6 | Все моб. операторы",
+            "🇷🇺 RU — Только LTE #7 | Все моб. операторы",
+            "🇷🇺 RU — Только LTE #10 | Все моб. операторы"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -1143,10 +1504,9 @@
           }
         },
         {
-          "tag": "service-twitch-nl",
+          "tag": "service-twitch-us",
           "selector": [
-            "🇳🇱 NL — South Networks Pro (only Mobile)",
-            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]"
+            "🇺🇸 US — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -1157,6 +1517,16 @@
           "tag": "service-discord-kz",
           "selector": [
             "🇰🇿 KZ — South Networks Pro (only Mobile)"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-tiktok-jp",
+          "selector": [
+            "🇯🇵 JP — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -1893,6 +2263,28 @@
         {
           "type": "field",
           "domain": [
+            "domain:tiktok.com",
+            "domain:tiktokv.com",
+            "domain:tiktokcdn.com",
+            "domain:tiktokcdn-us.com",
+            "domain:tiktokcdn-eu.com",
+            "domain:tiktokv.us",
+            "domain:tiktokv.eu",
+            "domain:tiktokd.net",
+            "domain:tiktokd.org",
+            "domain:musical.ly",
+            "domain:muscdn.com",
+            "domain:byteoversea.com",
+            "domain:ibyteimg.com",
+            "domain:ibytedtos.com",
+            "domain:byteimg.com",
+            "domain:snssdk.com"
+          ],
+          "balancerTag": "service-tiktok-jp"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:discord.com",
             "domain:discord.gg",
             "domain:discordapp.com",
@@ -1934,7 +2326,7 @@
             "domain:ds0h3roq6wcgc.cloudfront.net",
             "domain:d2nvs31859zcd8.cloudfront.net"
           ],
-          "balancerTag": "service-twitch-nl"
+          "balancerTag": "service-twitch-us"
         },
         {
           "type": "field",
@@ -2124,7 +2516,7 @@
             "domain:yt3.ggpht.com",
             "domain:yt.be"
           ],
-          "balancerTag": "service-youtube-ru"
+          "balancerTag": "service-youtube-nl"
         },
         {
           "type": "field",
