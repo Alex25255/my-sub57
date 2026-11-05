@@ -281,7 +281,7 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
+            "full:ufanet.ru",
             "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
@@ -642,8 +642,7 @@
             "domain:express.ms",
             "domain:vi.ru",
             "domain:fonbet.ru",
-            "domain:fon.bet",
-            "full:ucams.ufanet.ru"
+            "domain:fon.bet"
           ]
         },
         {
@@ -1023,19 +1022,13 @@
       "balancers": [
         {
           "selector": [
-            "🇳🇱 NL — South Networks Pro (only Mobile)",
-            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
-            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
-            "🇺🇸 US — South Networks Pro (only Mobile)",
-            "🇩🇪 DE — South Networks Pro (only Mobile)",
-            "🇯🇵 JP — South Networks Pro (only Mobile)",
-            "🇰🇿 KZ — South Networks Pro (only Mobile)"
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
           ],
           "strategy": {
             "type": "random"
           },
           "tag": "auto-best",
-          "fallbackTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
+          "fallbackTag": "service-fallback-random-loopback"
         },
         {
           "tag": "service-fallback-random-pool",
@@ -1048,7 +1041,7 @@
             "🇯🇵 JP — South Networks Pro (only Mobile)",
             "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
-          "fallbackTag": "🇰🇿 KZ — South Networks Pro (only Mobile)",
+          "fallbackTag": "block",
           "strategy": {
             "type": "random"
           }
@@ -1067,6 +1060,16 @@
         },
         {
           "tag": "service-telegram-kz",
+          "selector": [
+            "🇰🇿 KZ — South Networks Pro (only Mobile)"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-spotify-kz",
           "selector": [
             "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
@@ -1107,7 +1110,7 @@
           }
         },
         {
-          "tag": "service-keenetic-ru",
+          "tag": "service-subscription-ru",
           "selector": [
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
           ],
@@ -1117,9 +1120,42 @@
           }
         },
         {
-          "tag": "service-subscription-ru",
+          "tag": "service-chatgpt-de",
           "selector": [
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+            "🇩🇪 DE — South Networks Pro (only Mobile)"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-supercell-de-nl",
+          "selector": [
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-twitch-nl",
+          "selector": [
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-discord-kz",
+          "selector": [
+            "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -1129,6 +1165,13 @@
       ],
       "domainMatcher": "hybrid",
       "rules": [
+        {
+          "type": "field",
+          "inboundTag": [
+            "service-fallback-random"
+          ],
+          "balancerTag": "service-fallback-random-pool"
+        },
         {
           "type": "field",
           "domain": [
@@ -1842,10 +1885,176 @@
         },
         {
           "type": "field",
-          "inboundTag": [
-            "service-fallback-random"
+          "network": "tcp,udp",
+          "port": "9339",
+          "balancerTag": "service-supercell-de-nl"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:discord.com",
+            "domain:discord.gg",
+            "domain:discordapp.com",
+            "domain:discordapp.net",
+            "domain:discord.media",
+            "domain:discordcdn.com",
+            "domain:dis.gd",
+            "domain:discordstatus.com",
+            "domain:discord.gift",
+            "domain:discord.new",
+            "domain:discord.co",
+            "domain:discord.dev",
+            "domain:discord.store",
+            "domain:discordactivities.com",
+            "domain:discord-activities.com",
+            "domain:discordquests.com",
+            "domain:discordpartygames.com",
+            "domain:discordsays.com",
+            "domain:discordsez.com"
           ],
-          "balancerTag": "service-fallback-random-pool"
+          "balancerTag": "service-discord-kz"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:twitch.tv",
+            "domain:ttvnw.net",
+            "domain:jtvnw.net",
+            "domain:twitchcdn.net",
+            "domain:twitchsvc.net",
+            "domain:ext-twitch.tv",
+            "domain:live-video.net",
+            "domain:ttwstatic.com",
+            "domain:twitch-shadow.net",
+            "domain:twitchcdn-shadow.net",
+            "domain:twitch.a2z.com",
+            "domain:d2e2de1etea730.cloudfront.net",
+            "domain:dqrpb9wgowsf5.cloudfront.net",
+            "domain:ds0h3roq6wcgc.cloudfront.net",
+            "domain:d2nvs31859zcd8.cloudfront.net"
+          ],
+          "balancerTag": "service-twitch-nl"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:chatgpt.com",
+            "domain:openai.com",
+            "domain:oaistatic.com",
+            "domain:oaiusercontent.com",
+            "domain:oaistatsig.com",
+            "domain:openaimerge.com",
+            "domain:chatgpt.livekit.cloud",
+            "full:forwarder.workos.com",
+            "full:frontend-apps-multi-region.workos.com",
+            "full:cdn.workos.com",
+            "full:setup.workos.com",
+            "full:images.workoscdn.com",
+            "full:humb.apple.com",
+            "full:o207216.ingest.sentry.io",
+            "full:o33249.ingest.sentry.io"
+          ],
+          "balancerTag": "service-chatgpt-de"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:brawlstars.com",
+            "domain:brawlstarsgame.com",
+            "domain:hayday.com",
+            "domain:haydaygame.com",
+            "domain:supercell.com",
+            "domain:supercellid.com",
+            "domain:supercellgames.com",
+            "domain:supercellstore.com",
+            "domain:seeurlpcl.com",
+            "domain:supercellcreators.com",
+            "full:supercell.zendesk.com",
+            "full:api.quago.io"
+          ],
+          "balancerTag": "service-supercell-de-nl"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "13.210.25.233/32",
+            "13.212.170.102/32",
+            "13.212.171.212/32",
+            "15.161.130.86/32",
+            "15.254.1.17/32",
+            "162.62.33.45/32",
+            "162.62.33.70/32",
+            "162.62.34.10/32",
+            "18.141.176.65/32",
+            "18.156.137.147/32",
+            "18.231.148.103/32",
+            "3.1.80.68/32",
+            "3.25.190.152/32",
+            "3.82.147.36/32",
+            "34.220.160.16/32",
+            "35.154.64.7/32",
+            "35.72.32.125/32",
+            "52.13.150.128/32",
+            "52.13.42.120/32",
+            "52.50.131.212/32",
+            "54.207.168.84/32",
+            "54.248.64.192/32",
+            "54.162.14.14/32",
+            "54.226.68.190/32",
+            "54.145.229.230/32",
+            "54.221.185.85/32",
+            "44.202.230.228/32",
+            "3.230.8.66/32",
+            "18.213.71.20/32",
+            "34.227.156.134/32",
+            "35.169.231.249/32",
+            "44.208.81.58/32",
+            "52.201.176.96/32",
+            "52.207.19.128/32",
+            "54.146.10.102/32",
+            "65.9.46.74/32",
+            "65.9.46.109/32",
+            "65.9.46.111/32",
+            "65.9.46.114/32",
+            "65.9.62.6/32",
+            "65.9.62.16/32",
+            "65.9.62.47/32",
+            "65.9.62.123/32",
+            "98.95.203.207/32",
+            "216.198.53.11/32",
+            "216.198.54.11/32",
+            "18.239.18.128/32",
+            "18.239.18.110/32",
+            "18.239.18.71/32",
+            "18.239.18.72/32"
+          ],
+          "balancerTag": "service-supercell-de-nl"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:spotify.com",
+            "domain:spotify.net",
+            "domain:spotifycdn.com",
+            "domain:spotifycdn.net",
+            "domain:scdn.co",
+            "domain:pscdn.co",
+            "domain:spoti.fi",
+            "domain:spotify.link",
+            "domain:spotify-everywhere.com",
+            "domain:byspotify.com",
+            "domain:tospotify.com",
+            "domain:spotilocal.com",
+            "full:audio-ak-spotify-com.akamaized.net",
+            "full:audio4-ak-spotify-com.akamaized.net",
+            "full:heads-ak-spotify-com.akamaized.net",
+            "full:heads4-ak-spotify-com.akamaized.net",
+            "full:spotify.com.edgesuite.net",
+            "full:spotify.map.fastly.net",
+            "full:spotify.map.fastlylb.net",
+            "full:video-akpcw-cdn-spotify-com.akamaized.net"
+          ],
+          "balancerTag": "service-spotify-kz"
         },
         {
           "type": "field",
@@ -1931,7 +2140,11 @@
             "domain:alkalimakersuite-pa.clients6.google.com",
             "domain:robinfrontend-pa.googleapis.com",
             "domain:proactivebackend-pa.googleapis.com",
-            "domain:notebooklm-pa.googleapis.com"
+            "domain:notebooklm-pa.googleapis.com",
+            "full:oauth2.googleapis.com",
+            "full:oauthaccountmanager.googleapis.com",
+            "full:notifications-pa.googleapis.com",
+            "full:signaler-pa.googleapis.com"
           ],
           "balancerTag": "service-gemini-de"
         },
@@ -1950,20 +2163,6 @@
             "full:api.facebook.com"
           ],
           "balancerTag": "service-instagram-ru"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:netcraze.cloud"
-          ],
-          "balancerTag": "service-keenetic-ru"
-        },
-        {
-          "type": "field",
-          "ip": [
-            "95.213.181.252/32"
-          ],
-          "balancerTag": "service-keenetic-ru"
         },
         {
           "type": "field",
@@ -1991,25 +2190,6 @@
         },
         {
           "type": "field",
-          "domain": [
-            "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
-            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
-            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$",
-            "domain:ucams.ufanet.ru",
-            "domain:cams.ufanet.ru"
-          ],
-          "network": "tcp,udp",
-          "balancerTag": "service-russia-ru"
-        },
-        {
-          "type": "field",
-          "port": "554,8554",
-          "network": "tcp",
-          "balancerTag": "service-russia-ru"
-        },
-        {
-          "type": "field",
           "inboundTag": [
             "dns"
           ],
@@ -2029,7 +2209,6 @@
             "domain:deepl.com",
             "domain:elgato.com",
             "domain:ttwstatic.com",
-            "domain:spotify.com",
             "domain:grok.com",
             "domain:4pda.to",
             "domain:githubcopilot.com",
@@ -2404,7 +2583,7 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
+            "full:ufanet.ru",
             "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
@@ -2765,8 +2944,7 @@
             "domain:express.ms",
             "domain:vi.ru",
             "domain:fonbet.ru",
-            "domain:fon.bet",
-            "full:ucams.ufanet.ru"
+            "domain:fon.bet"
           ]
         },
         {
@@ -3478,13 +3656,6 @@
         {
           "type": "field",
           "domain": [
-            "full:ucams.ufanet.ru"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -3739,7 +3910,7 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
+            "full:ufanet.ru",
             "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
@@ -4252,23 +4423,6 @@
           "outboundTag": "dns-out"
         },
         {
-          "type": "field",
-          "domain": [
-            "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
-            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
-            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
-          ],
-          "network": "tcp,udp",
-          "outboundTag": "bridge-1"
-        },
-        {
-          "type": "field",
-          "port": "554,8554",
-          "network": "tcp",
-          "outboundTag": "bridge-1"
-        },
-        {
           "balancerTag": "auto-best",
           "network": "tcp,udp",
           "type": "field"
@@ -4564,7 +4718,7 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
+            "full:ufanet.ru",
             "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
@@ -4925,11 +5079,7 @@
             "domain:express.ms",
             "domain:vi.ru",
             "domain:fonbet.ru",
-            "domain:fon.bet",
-            "full:ucams.ufanet.ru",
-            "domain:avucams.com",
-            "domain:ucams.ufanet.ru",
-            "domain:cams.ufanet.ru"
+            "domain:fon.bet"
           ]
         },
         {
@@ -5197,13 +5347,6 @@
         {
           "type": "field",
           "domain": [
-            "full:ucams.ufanet.ru"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -5456,7 +5599,7 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
+            "full:ufanet.ru",
             "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
@@ -5840,21 +5983,9 @@
         {
           "type": "field",
           "domain": [
-            "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
-            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
-            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$",
-            "domain:ufanet.ru",
-            "domain:ucams.ufanet.ru",
-            "domain:cams.ufanet.ru"
+            "full:ufanet.ru"
           ],
           "network": "tcp,udp",
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "port": "554,8554",
-          "network": "tcp",
           "outboundTag": "direct"
         },
         {
@@ -5895,8 +6026,7 @@
             "domain:yandexcloud.net",
             "domain:yandexadservices.com",
             "domain:kinopoisk.ru",
-            "full:ucams.ufanet.ru",
-            "domain:ufanet.ru",
+            "full:ufanet.ru",
             "domain:gosuslugi.ru",
             "domain:government.ru",
             "domain:kremlin.ru",
@@ -6375,7 +6505,10 @@
             "domain:vkpay.com",
             "domain:userapi.ru",
             "domain:cdn-vk.ru",
-            "domain:cdn-vk.net"
+            "domain:cdn-vk.net",
+            "domain:dom.ufanet.ru",
+            "domain:help.ufanet.ru",
+            "domain:my.ufanet.ru"
           ]
         },
         "https://dns.stealthsurflabs.com/dns-query",
@@ -6725,31 +6858,10 @@
         {
           "type": "field",
           "domain": [
-            "full:ucams.ufanet.ru"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
-            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
-            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
-          ],
-          "network": "tcp,udp",
-          "outboundTag": "proxy"
-        },
-        {
-          "type": "field",
-          "port": "554,8554",
-          "network": "tcp",
-          "outboundTag": "proxy"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:ufanet.ru"
+            "full:ufanet.ru",
+            "domain:dom.ufanet.ru",
+            "domain:help.ufanet.ru",
+            "domain:my.ufanet.ru"
           ],
           "outboundTag": "direct"
         },
@@ -7551,7 +7663,7 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
+            "full:ufanet.ru",
             "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
@@ -7912,8 +8024,7 @@
             "domain:express.ms",
             "domain:vi.ru",
             "domain:fonbet.ru",
-            "domain:fon.bet",
-            "full:ucams.ufanet.ru"
+            "domain:fon.bet"
           ]
         },
         {
@@ -8201,30 +8312,6 @@
         {
           "type": "field",
           "domain": [
-            "full:ucams.ufanet.ru"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
-            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
-            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
-          ],
-          "network": "tcp,udp",
-          "outboundTag": "🇩🇪 Обход LTE"
-        },
-        {
-          "type": "field",
-          "port": "554,8554",
-          "network": "tcp",
-          "outboundTag": "🇩🇪 Обход LTE"
-        },
-        {
-          "type": "field",
-          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -8479,7 +8566,7 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
+            "full:ufanet.ru",
             "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
@@ -9206,7 +9293,7 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
+            "full:ufanet.ru",
             "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
@@ -9564,7 +9651,6 @@
             "domain:vi.ru",
             "domain:fonbet.ru",
             "domain:fon.bet",
-            "full:ucams.ufanet.ru",
             "domain:starline.ru",
             "domain:starline.online",
             "domain:starline-online.ru",
@@ -9817,30 +9903,6 @@
             "169.254.0.0/16"
           ],
           "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "full:ucams.ufanet.ru"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
-            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
-            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
-          ],
-          "network": "tcp,udp",
-          "outboundTag": "main"
-        },
-        {
-          "type": "field",
-          "port": "554,8554",
-          "network": "tcp",
-          "outboundTag": "main"
         },
         {
           "type": "field",
@@ -10099,7 +10161,7 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
+            "full:ufanet.ru",
             "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
@@ -10764,7 +10826,7 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
+            "full:ufanet.ru",
             "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
@@ -11125,8 +11187,7 @@
             "domain:express.ms",
             "domain:vi.ru",
             "domain:fonbet.ru",
-            "domain:fon.bet",
-            "full:ucams.ufanet.ru"
+            "domain:fon.bet"
           ]
         },
         {
@@ -11414,30 +11475,6 @@
         {
           "type": "field",
           "domain": [
-            "full:ucams.ufanet.ru"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
-            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
-            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
-          ],
-          "network": "tcp,udp",
-          "outboundTag": "🇳🇱 Обход LTE"
-        },
-        {
-          "type": "field",
-          "port": "554,8554",
-          "network": "tcp",
-          "outboundTag": "🇳🇱 Обход LTE"
-        },
-        {
-          "type": "field",
-          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -11692,7 +11729,7 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
+            "full:ufanet.ru",
             "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
@@ -12356,7 +12393,7 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
+            "full:ufanet.ru",
             "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
@@ -12717,8 +12754,7 @@
             "domain:express.ms",
             "domain:vi.ru",
             "domain:fonbet.ru",
-            "domain:fon.bet",
-            "full:ucams.ufanet.ru"
+            "domain:fon.bet"
           ]
         },
         {
@@ -13006,30 +13042,6 @@
         {
           "type": "field",
           "domain": [
-            "full:ucams.ufanet.ru"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
-            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
-            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
-          ],
-          "network": "tcp,udp",
-          "outboundTag": "🇺🇸 Обход LTE"
-        },
-        {
-          "type": "field",
-          "port": "554,8554",
-          "network": "tcp",
-          "outboundTag": "🇺🇸 Обход LTE"
-        },
-        {
-          "type": "field",
-          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -13284,7 +13296,7 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
+            "full:ufanet.ru",
             "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
@@ -13852,7 +13864,6 @@
             "domain:vi.ru",
             "domain:fonbet.ru",
             "domain:fon.bet",
-            "full:ucams.ufanet.ru",
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -14106,7 +14117,7 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
+            "full:ufanet.ru",
             "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
@@ -14603,30 +14614,6 @@
         {
           "type": "field",
           "domain": [
-            "full:ucams.ufanet.ru"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
-            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
-            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
-          ],
-          "network": "tcp,udp",
-          "outboundTag": "main"
-        },
-        {
-          "type": "field",
-          "port": "554,8554",
-          "network": "tcp",
-          "outboundTag": "main"
-        },
-        {
-          "type": "field",
-          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -14881,7 +14868,7 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
+            "full:ufanet.ru",
             "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
@@ -15546,7 +15533,7 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
+            "full:ufanet.ru",
             "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
@@ -15907,8 +15894,7 @@
             "domain:express.ms",
             "domain:vi.ru",
             "domain:fonbet.ru",
-            "domain:fon.bet",
-            "full:ucams.ufanet.ru"
+            "domain:fon.bet"
           ]
         },
         {
@@ -16193,30 +16179,6 @@
         {
           "type": "field",
           "domain": [
-            "full:ucams.ufanet.ru"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:avucams.com",
-            "regexp:(^|\\.)(stream|streaming|live|hls|flussonic|rtsp|vod|media)[a-z0-9-]*\\.(ucams\\.)?ufanet\\.ru$",
-            "regexp:^([a-z0-9-]+\\.)+cams\\.ufanet\\.ru$",
-            "regexp:(^|\\.)(flussonic|manul)(-[a-z0-9]+)*\\.cams\\.ufanet\\.ru$"
-          ],
-          "network": "tcp,udp",
-          "outboundTag": "🇷🇺 Обход РЕЗЕРВ LTE"
-        },
-        {
-          "type": "field",
-          "port": "554,8554",
-          "network": "tcp",
-          "outboundTag": "🇷🇺 Обход РЕЗЕРВ LTE"
-        },
-        {
-          "type": "field",
-          "domain": [
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -16471,7 +16433,7 @@
             "domain:trudvsem.ru",
             "domain:tutu.ru",
             "domain:uchi.ru",
-            "domain:ufanet.ru",
+            "full:ufanet.ru",
             "domain:unrealengine.com",
             "domain:uralairlines.ru",
             "domain:urent.ru",
