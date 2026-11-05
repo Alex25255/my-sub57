@@ -1028,7 +1028,7 @@
             "type": "random"
           },
           "tag": "auto-best",
-          "fallbackTag": "service-fallback-random-loopback"
+          "fallbackTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
         },
         {
           "tag": "service-fallback-random-pool",
@@ -1102,8 +1102,7 @@
           "tag": "service-instagram-ru",
           "selector": [
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
-            "🇩🇪 DE — South Networks Pro (only Mobile)",
-            "🇺🇸 US — South Networks Pro (only Mobile)"
+            "🇩🇪 DE — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
