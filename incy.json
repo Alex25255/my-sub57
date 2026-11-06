@@ -1424,7 +1424,7 @@
           "selector": [
             "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
-          "fallbackTag": "block",
+          "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
             "type": "random"
           }
