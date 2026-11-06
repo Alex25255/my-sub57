@@ -1424,7 +1424,7 @@
           "selector": [
             "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
-          "fallbackTag": "service-fallback-random-loopback",
+          "fallbackTag": "block",
           "strategy": {
             "type": "random"
           }
@@ -2542,7 +2542,7 @@
             "full:notifications-pa.googleapis.com",
             "full:signaler-pa.googleapis.com"
           ],
-          "outboundTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
+          "balancerTag": "service-gemini-de"
         },
         {
           "type": "field",
