@@ -1420,9 +1420,14 @@
           }
         },
         {
-          "tag": "Россия/Казахстан",
+          "tag": "service-telegram-random",
           "selector": [
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
+            "🇺🇸 US — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇯🇵 JP — South Networks Pro (only Mobile)",
             "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
@@ -1500,9 +1505,7 @@
         {
           "tag": "service-supercell-de-nl",
           "selector": [
-            "🇩🇪 DE — South Networks Pro (only Mobile)",
-            "🇳🇱 NL — South Networks Pro (only Mobile)",
-            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]"
+            "🇺🇸 US — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -2480,7 +2483,7 @@
             "domain:tx.me",
             "domain:usercontent.dev"
           ],
-          "balancerTag": "Россия/Казахстан"
+          "balancerTag": "service-telegram-random"
         },
         {
           "type": "field",
@@ -2504,7 +2507,7 @@
             "109.239.140.0/24",
             "194.221.250.50/32"
           ],
-          "balancerTag": "Россия/Казахстан"
+          "balancerTag": "service-telegram-random"
         },
         {
           "type": "field",
