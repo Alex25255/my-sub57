@@ -1732,6 +1732,21 @@
         {
           "type": "field",
           "domain": [
+            "domain:ivi.ru",
+            "domain:ivi.tv",
+            "domain:ivicdn.tv",
+            "domain:okko.tv",
+            "domain:okko.ru",
+            "domain:okkoapi.tv",
+            "domain:kion.ru",
+            "domain:start.ru",
+            "domain:premier.one"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:kinopoisk.ru",
             "domain:hd-kinopoisk.ru",
             "domain:hd-kinopoisk.com",
@@ -6452,6 +6467,48 @@
             "domain:dodo.ru",
             "domain:express.ms",
             "domain:vi.ru"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:ivi.ru",
+            "domain:ivi.tv",
+            "domain:ivicdn.tv",
+            "domain:okko.tv",
+            "domain:okko.ru",
+            "domain:okkoapi.tv",
+            "domain:kion.ru",
+            "domain:start.ru",
+            "domain:premier.one"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:kinopoisk.ru",
+            "domain:hd-kinopoisk.ru",
+            "domain:hd-kinopoisk.com",
+            "domain:kinopoisk-hd.com",
+            "domain:kinopoisk.sport",
+            "domain:hd.ru",
+            "domain:mykp.ru",
+            "domain:kp.yandex.net",
+            "domain:strm.yandex.net",
+            "domain:strm.yandex.ru",
+            "domain:strm-playlists.kp.yandex.net",
+            "full:strm-ott.akamaized.net",
+            "domain:ott.yandex.ru",
+            "domain:video.yandex.net",
+            "domain:proxy.video.yandex.net",
+            "domain:cdn.yandex.net",
+            "domain:cdn.cloud.yandex.net",
+            "domain:yccdn.cloud.yandex.net",
+            "domain:storage.mds.yandex.net",
+            "domain:mds.yandex.net",
+            "domain:api.plus.kinopoisk.ru"
           ],
           "outboundTag": "direct"
         },
