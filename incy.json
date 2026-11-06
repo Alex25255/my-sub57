@@ -1420,8 +1420,14 @@
           }
         },
         {
-          "tag": "service-telegram-kz",
+          "tag": "service-telegram-random",
           "selector": [
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
+            "🇺🇸 US — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇯🇵 JP — South Networks Pro (only Mobile)",
             "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
@@ -2477,7 +2483,7 @@
             "domain:tx.me",
             "domain:usercontent.dev"
           ],
-          "balancerTag": "service-telegram-kz"
+          "balancerTag": "service-telegram-random"
         },
         {
           "type": "field",
@@ -2501,7 +2507,7 @@
             "109.239.140.0/24",
             "194.221.250.50/32"
           ],
-          "balancerTag": "service-telegram-kz"
+          "balancerTag": "service-telegram-random"
         },
         {
           "type": "field",
