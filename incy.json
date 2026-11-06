@@ -2542,7 +2542,7 @@
             "full:notifications-pa.googleapis.com",
             "full:signaler-pa.googleapis.com"
           ],
-          "balancerTag": "service-gemini-de"
+          "outboundTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
