@@ -17,12 +17,19 @@
         "🇯🇵 JP — South Networks Pro (only Mobile)",
         "🇰🇿 KZ — South Networks Pro (only Mobile)",
         "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
-        "🇷🇺 RU — Только LTE #1 | Все моб. операторы",
-        "🇷🇺 RU — Только LTE #2 | Все моб. операторы",
-        "🇷🇺 RU — Только LTE #5 | Все моб. операторы",
-        "🇷🇺 RU — Только LTE #6 | Все моб. операторы",
-        "🇷🇺 RU — Только LTE #7 | Все моб. операторы",
-        "🇷🇺 RU — Только LTE #10 | Все моб. операторы"
+        "🇷🇺 Белый интернет #1 | Все операторы",
+        "🇷🇺 Белый интернет #2 | Все операторы",
+        "🇷🇺 Белый интернет #3 | Все операторы",
+        "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС",
+        "🇷🇺 Белый интернет #5 | Билайн / Теле2 / МТС",
+        "🇷🇺 Белый интернет #6 | Все операторы",
+        "🇷🇺 Белый интернет #8 | Все операторы",
+        "🇷🇺 Белый интернет #9 | Все операторы",
+        "🇷🇺 Белый интернет #10 | Все операторы",
+        "🇷🇺 Белый интернет #11 | Билайн / Теле2",
+        "🇷🇺 Белый интернет #12 | Все операторы",
+        "🇷🇺 Белый интернет #13 | Все операторы",
+        "🇷🇺 Белый интернет #14 | Все операторы"
       ]
     },
     "dns": {
@@ -1008,350 +1015,442 @@
         "settings": {
           "vnext": [
             {
-              "address": "188.72.103.4",
-              "port": 443,
+              "address": "176.108.242.15",
+              "port": 1505,
               "users": [
                 {
-                  "encryption": "mlkem768x25519plus.native.0rtt.-3mvkmMBqRVC80CgNXHd-Q0CrR0kQyFTdK6_H2AWGCw",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "twuz27.assh.site"
-          },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "path": "/v2/stream/",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "uplinkChunkSize": 16384,
-              "uplinkDataPlacement": "header",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingHeader": "X-Cache",
-              "xPaddingKey": "_dc",
-              "xPaddingMethod": "tokenish",
-              "xPaddingObfsMode": true,
-              "xPaddingPlacement": "queryInHeader"
-            },
-            "host": "twuz27.assh.site",
-            "mode": "packet-up",
-            "path": "/v2/stream/"
-          }
-        },
-        "tag": "🇷🇺 RU — Только LTE #1 | Все моб. операторы"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "188.72.103.4",
-              "port": 443,
-              "users": [
-                {
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
                   "encryption": "none",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                  "flow": ""
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "l3dmat.geodesia.site"
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
           },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "path": "/api/v3/sessions/",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "uplinkChunkSize": 16384,
-              "uplinkDataPlacement": "header",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingHeader": "X-Cache",
-              "xPaddingKey": "_dc",
-              "xPaddingMethod": "tokenish",
-              "xPaddingObfsMode": true,
-              "xPaddingPlacement": "queryInHeader"
-            },
-            "host": "l3dmat.geodesia.site",
-            "mode": "packet-up",
-            "path": "/api/v3/sessions/"
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
           }
         },
-        "tag": "🇷🇺 RU — Только LTE #2 | Все моб. операторы"
+        "tag": "🇷🇺 Белый интернет #1 | Все операторы"
       },
       {
         "protocol": "vless",
         "settings": {
           "vnext": [
             {
-              "address": "188.72.103.4",
-              "port": 443,
+              "address": "46.243.234.95",
+              "port": 1505,
               "users": [
                 {
-                  "encryption": "mlkem768x25519plus.native.0rtt.pMPTQ1Xw0K0F-Bot62sbEtc1W84Ylxp3Lg8QgogWxko",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "href.alinkpy.site"
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
           },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "path": "/v1/notify/",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "uplinkChunkSize": 16384,
-              "uplinkDataPlacement": "header",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingHeader": "X-Cache",
-              "xPaddingKey": "_dc",
-              "xPaddingMethod": "tokenish",
-              "xPaddingObfsMode": true,
-              "xPaddingPlacement": "queryInHeader"
-            },
-            "host": "href.alinkpy.site",
-            "mode": "packet-up",
-            "path": "/v1/notify/"
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
           }
         },
-        "tag": "🇷🇺 RU — Только LTE #5 | Все моб. операторы"
+        "tag": "🇷🇺 Белый интернет #2 | Все операторы"
       },
       {
         "protocol": "vless",
         "settings": {
           "vnext": [
             {
-              "address": "188.72.103.4",
-              "port": 443,
+              "address": "168.113.254.27",
+              "port": 1505,
               "users": [
                 {
-                  "encryption": "mlkem768x25519plus.native.0rtt.Gy5bNe93LLz_DADzoXcKmY6jvyWDGYsESycenoqTlko",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "gbhd.iincy.site"
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
           },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "path": "/api/v3/feed/",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "uplinkChunkSize": 16384,
-              "uplinkDataPlacement": "header",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingHeader": "X-Cache",
-              "xPaddingKey": "_dc",
-              "xPaddingMethod": "tokenish",
-              "xPaddingObfsMode": true,
-              "xPaddingPlacement": "queryInHeader"
-            },
-            "host": "gbhd.iincy.site",
-            "mode": "packet-up",
-            "path": "/api/v3/feed/"
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
           }
         },
-        "tag": "🇷🇺 RU — Только LTE #6 | Все моб. операторы"
+        "tag": "🇷🇺 Белый интернет #3 | Все операторы"
       },
       {
         "protocol": "vless",
         "settings": {
           "vnext": [
             {
-              "address": "188.72.103.4",
-              "port": 443,
+              "address": "87.242.102.131",
+              "port": 1505,
               "users": [
                 {
-                  "encryption": "mlkem768x25519plus.native.0rtt.tXgY8Cwd9ED6tJi_p4Xpv-E9iakyWEtJFelWoNycvE4",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "8aa5b9.maximume.site"
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
           },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "noGRPCHeader": true,
-              "path": "/api/v2/events/",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "uplinkChunkSize": 16384,
-              "uplinkDataPlacement": "header",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              }
-            },
-            "host": "8aa5b9.maximume.site",
-            "mode": "packet-up",
-            "path": "/api/v2/events/"
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
           }
         },
-        "tag": "🇷🇺 RU — Только LTE #7 | Все моб. операторы"
+        "tag": "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС"
       },
       {
         "protocol": "vless",
         "settings": {
           "vnext": [
             {
-              "address": "188.72.103.4",
-              "port": 443,
+              "address": "37.18.14.246",
+              "port": 1505,
               "users": [
                 {
-                  "encryption": "mlkem768x25519plus.native.0rtt.2Vaz61q44JwnLRtrIOu0J0NLMFxPwdg0Sp9k3K0PDHs",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "iop14.iincy.site"
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
           },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "path": "/api/v2/feed/",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "uplinkChunkSize": 8192,
-              "uplinkDataKey": "X-Trace",
-              "uplinkDataPlacement": "header",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingKey": "v",
-              "xPaddingMethod": "tokenish",
-              "xPaddingObfsMode": true,
-              "xPaddingPlacement": "query"
-            },
-            "host": "iop14.iincy.site",
-            "mode": "packet-up",
-            "path": "/api/v2/feed/"
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
           }
         },
-        "tag": "🇷🇺 RU — Только LTE #10 | Все моб. операторы"
+        "tag": "🇷🇺 Белый интернет #5 | Билайн / Теле2 / МТС"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "37.18.14.136",
+              "port": 1505,
+              "users": [
+                {
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
+          },
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
+          }
+        },
+        "tag": "🇷🇺 Белый интернет #6 | Все операторы"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "37.18.15.163",
+              "port": 1505,
+              "users": [
+                {
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
+          },
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
+          }
+        },
+        "tag": "🇷🇺 Белый интернет #8 | Все операторы"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "37.18.14.149",
+              "port": 1505,
+              "users": [
+                {
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
+          },
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
+          }
+        },
+        "tag": "🇷🇺 Белый интернет #9 | Все операторы"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "46.243.232.109",
+              "port": 1505,
+              "users": [
+                {
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
+          },
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
+          }
+        },
+        "tag": "🇷🇺 Белый интернет #10 | Все операторы"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "37.18.14.156",
+              "port": 1505,
+              "users": [
+                {
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
+          },
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
+          }
+        },
+        "tag": "🇷🇺 Белый интернет #11 | Билайн / Теле2"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "176.108.240.49",
+              "port": 1505,
+              "users": [
+                {
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
+          },
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
+          }
+        },
+        "tag": "🇷🇺 Белый интернет #12 | Все операторы"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "217.19.122.144",
+              "port": 1505,
+              "users": [
+                {
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
+          },
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
+          }
+        },
+        "tag": "🇷🇺 Белый интернет #13 | Все операторы"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "81.94.148.198",
+              "port": 1505,
+              "users": [
+                {
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
+          },
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
+          }
+        },
+        "tag": "🇷🇺 Белый интернет #14 | Все операторы"
       },
       {
         "protocol": "freedom",
@@ -1379,12 +1478,19 @@
         {
           "selector": [
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
-            "🇷🇺 RU — Только LTE #1 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #2 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #5 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #6 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #7 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #10 | Все моб. операторы"
+            "🇷🇺 Белый интернет #1 | Все операторы",
+            "🇷🇺 Белый интернет #2 | Все операторы",
+            "🇷🇺 Белый интернет #3 | Все операторы",
+            "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС",
+            "🇷🇺 Белый интернет #5 | Билайн / Теле2 / МТС",
+            "🇷🇺 Белый интернет #6 | Все операторы",
+            "🇷🇺 Белый интернет #8 | Все операторы",
+            "🇷🇺 Белый интернет #9 | Все операторы",
+            "🇷🇺 Белый интернет #10 | Все операторы",
+            "🇷🇺 Белый интернет #11 | Билайн / Теле2",
+            "🇷🇺 Белый интернет #12 | Все операторы",
+            "🇷🇺 Белый интернет #13 | Все операторы",
+            "🇷🇺 Белый интернет #14 | Все операторы"
           ],
           "strategy": {
             "type": "random"
@@ -1459,12 +1565,19 @@
           "tag": "service-russia-ru",
           "selector": [
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
-            "🇷🇺 RU — Только LTE #1 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #2 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #5 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #6 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #7 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #10 | Все моб. операторы"
+            "🇷🇺 Белый интернет #1 | Все операторы",
+            "🇷🇺 Белый интернет #2 | Все операторы",
+            "🇷🇺 Белый интернет #3 | Все операторы",
+            "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС",
+            "🇷🇺 Белый интернет #5 | Билайн / Теле2 / МТС",
+            "🇷🇺 Белый интернет #6 | Все операторы",
+            "🇷🇺 Белый интернет #8 | Все операторы",
+            "🇷🇺 Белый интернет #9 | Все операторы",
+            "🇷🇺 Белый интернет #10 | Все операторы",
+            "🇷🇺 Белый интернет #11 | Билайн / Теле2",
+            "🇷🇺 Белый интернет #12 | Все операторы",
+            "🇷🇺 Белый интернет #13 | Все операторы",
+            "🇷🇺 Белый интернет #14 | Все операторы"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -7751,7 +7864,8 @@
       ],
       "balancers": []
     },
-    "admin_display_name": "Игровой обход"
+    "admin_display_name": "Игровой обход",
+    "burstObservatory": {}
   },
   {
     "inbounds": [
@@ -9319,7 +9433,8 @@
       "domainStrategy": "AsIs",
       "balancers": []
     },
-    "admin_display_name": "🇳🇱 Обход LTE"
+    "admin_display_name": "🇳🇱 Обход LTE",
+    "burstObservatory": {}
   },
   {
     "remarks": "🇩🇪 Обход LTE 2",
@@ -10916,7 +11031,8 @@
     },
     "admin_scoped_direct_domains": [],
     "admin_scoped_dns_enabled": true,
-    "admin_display_name": "🇳🇱 Обход LTE 2"
+    "admin_display_name": "🇳🇱 Обход LTE 2",
+    "burstObservatory": {}
   },
   {
     "inbounds": [
@@ -12484,7 +12600,8 @@
       "domainStrategy": "AsIs",
       "balancers": []
     },
-    "admin_display_name": "🇺🇸 Обход LTE"
+    "admin_display_name": "🇺🇸 Обход LTE",
+    "burstObservatory": {}
   },
   {
     "inbounds": [
@@ -14052,7 +14169,8 @@
       "domainStrategy": "AsIs",
       "balancers": []
     },
-    "admin_display_name": "🇩🇪 Обход LTE"
+    "admin_display_name": "🇩🇪 Обход LTE",
+    "burstObservatory": {}
   },
   {
     "remarks": "🇳🇱 Обход LTE 2",
@@ -15626,7 +15744,8 @@
     },
     "admin_scoped_direct_domains": [],
     "admin_scoped_dns_enabled": true,
-    "admin_display_name": "🇩🇪 Обход LTE 2"
+    "admin_display_name": "🇩🇪 Обход LTE 2",
+    "burstObservatory": {}
   },
   {
     "inbounds": [
@@ -17190,6 +17309,7 @@
       ],
       "domainStrategy": "AsIs",
       "balancers": []
-    }
+    },
+    "burstObservatory": {}
   }
 ]
