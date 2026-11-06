@@ -1483,16 +1483,6 @@
           }
         },
         {
-          "tag": "service-subscription-ru",
-          "selector": [
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
           "tag": "service-chatgpt-de",
           "selector": [
             "🇩🇪 DE — South Networks Pro (only Mobile)"
@@ -2565,14 +2555,6 @@
             "full:api.facebook.com"
           ],
           "balancerTag": "service-instagram-ru"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:workers.dev",
-            "full:raw.githubusercontent.com"
-          ],
-          "balancerTag": "service-subscription-ru"
         },
         {
           "type": "field",
@@ -7766,7 +7748,8 @@
           "port": "443",
           "type": "field"
         }
-      ]
+      ],
+      "balancers": []
     },
     "admin_display_name": "Игровой обход"
   },
@@ -9333,7 +9316,8 @@
           "outboundTag": "🇩🇪 Обход LTE"
         }
       ],
-      "domainStrategy": "AsIs"
+      "domainStrategy": "AsIs",
+      "balancers": []
     },
     "admin_display_name": "🇳🇱 Обход LTE"
   },
@@ -10927,7 +10911,8 @@
           "network": "tcp,udp",
           "outboundTag": "main"
         }
-      ]
+      ],
+      "balancers": []
     },
     "admin_scoped_direct_domains": [],
     "admin_scoped_dns_enabled": true,
@@ -12496,7 +12481,8 @@
           "outboundTag": "🇳🇱 Обход LTE"
         }
       ],
-      "domainStrategy": "AsIs"
+      "domainStrategy": "AsIs",
+      "balancers": []
     },
     "admin_display_name": "🇺🇸 Обход LTE"
   },
@@ -14063,7 +14049,8 @@
           "outboundTag": "🇺🇸 Обход LTE"
         }
       ],
-      "domainStrategy": "AsIs"
+      "domainStrategy": "AsIs",
+      "balancers": []
     },
     "admin_display_name": "🇩🇪 Обход LTE"
   },
@@ -15634,7 +15621,8 @@
           "network": "tcp,udp",
           "outboundTag": "main"
         }
-      ]
+      ],
+      "balancers": []
     },
     "admin_scoped_direct_domains": [],
     "admin_scoped_dns_enabled": true,
@@ -17200,7 +17188,8 @@
           "outboundTag": "🇷🇺 Обход РЕЗЕРВ LTE"
         }
       ],
-      "domainStrategy": "AsIs"
+      "domainStrategy": "AsIs",
+      "balancers": []
     }
   }
 ]
