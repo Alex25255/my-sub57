@@ -7921,8 +7921,7 @@
       ],
       "balancers": []
     },
-    "admin_display_name": "Игровой обход",
-    "burstObservatory": {}
+    "admin_display_name": "Игровой обход"
   },
   {
     "inbounds": [
@@ -9490,8 +9489,7 @@
       "domainStrategy": "AsIs",
       "balancers": []
     },
-    "admin_display_name": "🇳🇱 Обход LTE",
-    "burstObservatory": {}
+    "admin_display_name": "🇳🇱 Обход LTE"
   },
   {
     "remarks": "🇩🇪 Обход LTE 2",
@@ -11088,8 +11086,7 @@
     },
     "admin_scoped_direct_domains": [],
     "admin_scoped_dns_enabled": true,
-    "admin_display_name": "🇳🇱 Обход LTE 2",
-    "burstObservatory": {}
+    "admin_display_name": "🇳🇱 Обход LTE 2"
   },
   {
     "inbounds": [
@@ -12657,8 +12654,7 @@
       "domainStrategy": "AsIs",
       "balancers": []
     },
-    "admin_display_name": "🇺🇸 Обход LTE",
-    "burstObservatory": {}
+    "admin_display_name": "🇺🇸 Обход LTE"
   },
   {
     "inbounds": [
@@ -14226,8 +14222,7 @@
       "domainStrategy": "AsIs",
       "balancers": []
     },
-    "admin_display_name": "🇩🇪 Обход LTE",
-    "burstObservatory": {}
+    "admin_display_name": "🇩🇪 Обход LTE"
   },
   {
     "remarks": "🇳🇱 Обход LTE 2",
@@ -15801,8 +15796,7 @@
     },
     "admin_scoped_direct_domains": [],
     "admin_scoped_dns_enabled": true,
-    "admin_display_name": "🇩🇪 Обход LTE 2",
-    "burstObservatory": {}
+    "admin_display_name": "🇩🇪 Обход LTE 2"
   },
   {
     "inbounds": [
@@ -17366,7 +17360,6 @@
       ],
       "domainStrategy": "AsIs",
       "balancers": []
-    },
-    "burstObservatory": {}
+    }
   }
 ]
