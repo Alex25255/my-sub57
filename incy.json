@@ -1562,29 +1562,6 @@
           }
         },
         {
-          "tag": "service-russia-ru",
-          "selector": [
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
-            "🇷🇺 Белый интернет #1 | Все операторы",
-            "🇷🇺 Белый интернет #2 | Все операторы",
-            "🇷🇺 Белый интернет #3 | Все операторы",
-            "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС",
-            "🇷🇺 Белый интернет #5 | Билайн / Теле2 / МТС",
-            "🇷🇺 Белый интернет #6 | Все операторы",
-            "🇷🇺 Белый интернет #8 | Все операторы",
-            "🇷🇺 Белый интернет #9 | Все операторы",
-            "🇷🇺 Белый интернет #10 | Все операторы",
-            "🇷🇺 Белый интернет #11 | Билайн / Теле2",
-            "🇷🇺 Белый интернет #12 | Все операторы",
-            "🇷🇺 Белый интернет #13 | Все операторы",
-            "🇷🇺 Белый интернет #14 | Все операторы"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
           "tag": "service-instagram-ru",
           "selector": [
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
@@ -2648,6 +2625,16 @@
         {
           "type": "field",
           "domain": [
+            "domain:pornhub.com",
+            "domain:pornhubpremium.com",
+            "domain:phncdn.com",
+            "domain:pornhub.org"
+          ],
+          "balancerTag": "service-youtube-nl"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:labs.google",
             "domain:labs.google.com",
             "domain:aistudio.google.com",
@@ -2691,14 +2678,14 @@
             "domain:xn--p1ai",
             "domain:su"
           ],
-          "balancerTag": "service-russia-ru"
+          "balancerTag": "auto-best"
         },
         {
           "type": "field",
           "ip": [
             "geoip:ru"
           ],
-          "balancerTag": "service-russia-ru"
+          "balancerTag": "auto-best"
         },
         {
           "type": "field",
