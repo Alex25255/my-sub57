@@ -928,7 +928,7 @@
             ]
           },
           "wsSettings": {
-            "path": "/api/v1/gpu-stream/pduucpqa/socket",
+            "path": "/api/v1/gpu-stream/pduucpia/socket",
             "headers": {
               "Host": "renderer-stream-1-871.mirra.now"
             }
