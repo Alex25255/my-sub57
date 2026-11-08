@@ -17,16 +17,42 @@
         "🇯🇵 JP — South Networks Pro (only Mobile)",
         "🇰🇿 KZ — South Networks Pro (only Mobile)",
         "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
-        "🇷🇺 RU — Только LTE #1 | Все моб. операторы",
-        "🇷🇺 RU — Только LTE #2 | Все моб. операторы",
-        "🇷🇺 RU — Только LTE #5 | Все моб. операторы",
-        "🇷🇺 RU — Только LTE #6 | Все моб. операторы",
-        "🇷🇺 RU — Только LTE #7 | Все моб. операторы",
-        "🇷🇺 RU — Только LTE #10 | Все моб. операторы"
+        "🇷🇺 Белый интернет #1 | Все операторы",
+        "🇷🇺 Белый интернет #2 | Все операторы",
+        "🇷🇺 Белый интернет #3 | Все операторы",
+        "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС",
+        "🇷🇺 Белый интернет #5 | Билайн / Теле2 / МТС",
+        "🇷🇺 Белый интернет #6 | Все операторы",
+        "🇷🇺 Белый интернет #8 | Все операторы",
+        "🇷🇺 Белый интернет #9 | Все операторы",
+        "🇷🇺 Белый интернет #10 | Все операторы",
+        "🇷🇺 Белый интернет #11 | Билайн / Теле2",
+        "🇷🇺 Белый интернет #12 | Все операторы",
+        "🇷🇺 Белый интернет #13 | Все операторы",
+        "🇷🇺 Белый интернет #14 | Все операторы"
       ]
     },
     "dns": {
       "servers": [
+        {
+          "address": "https://dns.adguard-dns.com/dns-query",
+          "domains": [
+            "domain:youtube.com",
+            "domain:youtu.be",
+            "domain:googlevideo.com",
+            "domain:ytimg.com",
+            "domain:youtubei.googleapis.com",
+            "domain:youtube-nocookie.com",
+            "domain:youtube.googleapis.com",
+            "domain:youtubeembeddedplayer.googleapis.com",
+            "domain:youtubeeducation.com",
+            "domain:youtubekids.com",
+            "domain:yt3.ggpht.com",
+            "domain:yt.be"
+          ],
+          "skipFallback": true,
+          "queryStrategy": "UseIPv4"
+        },
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
@@ -921,7 +947,7 @@
             ]
           },
           "wsSettings": {
-            "path": "/api/v1/gpu-stream/pduucpqa/socket",
+            "path": "/api/v1/gpu-stream/pduucpia/socket",
             "headers": {
               "Host": "renderer-stream-1-871.mirra.now"
             }
@@ -1008,350 +1034,442 @@
         "settings": {
           "vnext": [
             {
-              "address": "188.72.103.4",
-              "port": 443,
+              "address": "176.108.242.15",
+              "port": 1505,
               "users": [
                 {
-                  "encryption": "mlkem768x25519plus.native.0rtt.-3mvkmMBqRVC80CgNXHd-Q0CrR0kQyFTdK6_H2AWGCw",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "twuz27.assh.site"
-          },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "path": "/v2/stream/",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "uplinkChunkSize": 16384,
-              "uplinkDataPlacement": "header",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingHeader": "X-Cache",
-              "xPaddingKey": "_dc",
-              "xPaddingMethod": "tokenish",
-              "xPaddingObfsMode": true,
-              "xPaddingPlacement": "queryInHeader"
-            },
-            "host": "twuz27.assh.site",
-            "mode": "packet-up",
-            "path": "/v2/stream/"
-          }
-        },
-        "tag": "🇷🇺 RU — Только LTE #1 | Все моб. операторы"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "188.72.103.4",
-              "port": 443,
-              "users": [
-                {
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
                   "encryption": "none",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                  "flow": ""
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "l3dmat.geodesia.site"
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
           },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "path": "/api/v3/sessions/",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "uplinkChunkSize": 16384,
-              "uplinkDataPlacement": "header",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingHeader": "X-Cache",
-              "xPaddingKey": "_dc",
-              "xPaddingMethod": "tokenish",
-              "xPaddingObfsMode": true,
-              "xPaddingPlacement": "queryInHeader"
-            },
-            "host": "l3dmat.geodesia.site",
-            "mode": "packet-up",
-            "path": "/api/v3/sessions/"
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
           }
         },
-        "tag": "🇷🇺 RU — Только LTE #2 | Все моб. операторы"
+        "tag": "🇷🇺 Белый интернет #1 | Все операторы"
       },
       {
         "protocol": "vless",
         "settings": {
           "vnext": [
             {
-              "address": "188.72.103.4",
-              "port": 443,
+              "address": "46.243.234.95",
+              "port": 1505,
               "users": [
                 {
-                  "encryption": "mlkem768x25519plus.native.0rtt.pMPTQ1Xw0K0F-Bot62sbEtc1W84Ylxp3Lg8QgogWxko",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "href.alinkpy.site"
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
           },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "path": "/v1/notify/",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "uplinkChunkSize": 16384,
-              "uplinkDataPlacement": "header",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingHeader": "X-Cache",
-              "xPaddingKey": "_dc",
-              "xPaddingMethod": "tokenish",
-              "xPaddingObfsMode": true,
-              "xPaddingPlacement": "queryInHeader"
-            },
-            "host": "href.alinkpy.site",
-            "mode": "packet-up",
-            "path": "/v1/notify/"
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
           }
         },
-        "tag": "🇷🇺 RU — Только LTE #5 | Все моб. операторы"
+        "tag": "🇷🇺 Белый интернет #2 | Все операторы"
       },
       {
         "protocol": "vless",
         "settings": {
           "vnext": [
             {
-              "address": "188.72.103.4",
-              "port": 443,
+              "address": "168.113.254.27",
+              "port": 1505,
               "users": [
                 {
-                  "encryption": "mlkem768x25519plus.native.0rtt.Gy5bNe93LLz_DADzoXcKmY6jvyWDGYsESycenoqTlko",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "gbhd.iincy.site"
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
           },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "path": "/api/v3/feed/",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "uplinkChunkSize": 16384,
-              "uplinkDataPlacement": "header",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingHeader": "X-Cache",
-              "xPaddingKey": "_dc",
-              "xPaddingMethod": "tokenish",
-              "xPaddingObfsMode": true,
-              "xPaddingPlacement": "queryInHeader"
-            },
-            "host": "gbhd.iincy.site",
-            "mode": "packet-up",
-            "path": "/api/v3/feed/"
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
           }
         },
-        "tag": "🇷🇺 RU — Только LTE #6 | Все моб. операторы"
+        "tag": "🇷🇺 Белый интернет #3 | Все операторы"
       },
       {
         "protocol": "vless",
         "settings": {
           "vnext": [
             {
-              "address": "188.72.103.4",
-              "port": 443,
+              "address": "87.242.102.131",
+              "port": 1505,
               "users": [
                 {
-                  "encryption": "mlkem768x25519plus.native.0rtt.tXgY8Cwd9ED6tJi_p4Xpv-E9iakyWEtJFelWoNycvE4",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "8aa5b9.maximume.site"
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
           },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "noGRPCHeader": true,
-              "path": "/api/v2/events/",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "uplinkChunkSize": 16384,
-              "uplinkDataPlacement": "header",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              }
-            },
-            "host": "8aa5b9.maximume.site",
-            "mode": "packet-up",
-            "path": "/api/v2/events/"
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
           }
         },
-        "tag": "🇷🇺 RU — Только LTE #7 | Все моб. операторы"
+        "tag": "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС"
       },
       {
         "protocol": "vless",
         "settings": {
           "vnext": [
             {
-              "address": "188.72.103.4",
-              "port": 443,
+              "address": "37.18.14.246",
+              "port": 1505,
               "users": [
                 {
-                  "encryption": "mlkem768x25519plus.native.0rtt.2Vaz61q44JwnLRtrIOu0J0NLMFxPwdg0Sp9k3K0PDHs",
-                  "flow": "",
-                  "id": "a9c2a164-0b2c-45c3-bd9e-b540641b4938"
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "xhttp",
-          "security": "tls",
-          "tlsSettings": {
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ],
-            "enableSessionResumption": false,
-            "fingerprint": "chrome",
-            "serverName": "iop14.iincy.site"
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
           },
-          "xhttpSettings": {
-            "extra": {
-              "mode": "packet-up",
-              "path": "/api/v2/feed/",
-              "scMaxConcurrentPosts": 1,
-              "scMaxEachPostBytes": "200000-500000",
-              "scMinPostsIntervalMs": 50,
-              "uplinkChunkSize": 8192,
-              "uplinkDataKey": "X-Trace",
-              "uplinkDataPlacement": "header",
-              "uplinkHTTPMethod": "GET",
-              "xmux": {
-                "cMaxReuseTimes": "200-400",
-                "hKeepAlivePeriod": 30,
-                "hMaxRequestTimes": 0,
-                "hMaxReusableSecs": "1800-3000",
-                "maxConnections": 2
-              },
-              "xPaddingKey": "v",
-              "xPaddingMethod": "tokenish",
-              "xPaddingObfsMode": true,
-              "xPaddingPlacement": "query"
-            },
-            "host": "iop14.iincy.site",
-            "mode": "packet-up",
-            "path": "/api/v2/feed/"
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
           }
         },
-        "tag": "🇷🇺 RU — Только LTE #10 | Все моб. операторы"
+        "tag": "🇷🇺 Белый интернет #5 | Билайн / Теле2 / МТС"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "37.18.14.136",
+              "port": 1505,
+              "users": [
+                {
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
+          },
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
+          }
+        },
+        "tag": "🇷🇺 Белый интернет #6 | Все операторы"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "37.18.15.163",
+              "port": 1505,
+              "users": [
+                {
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
+          },
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
+          }
+        },
+        "tag": "🇷🇺 Белый интернет #8 | Все операторы"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "37.18.14.149",
+              "port": 1505,
+              "users": [
+                {
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
+          },
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
+          }
+        },
+        "tag": "🇷🇺 Белый интернет #9 | Все операторы"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "46.243.232.109",
+              "port": 1505,
+              "users": [
+                {
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
+          },
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
+          }
+        },
+        "tag": "🇷🇺 Белый интернет #10 | Все операторы"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "37.18.14.156",
+              "port": 1505,
+              "users": [
+                {
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
+          },
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
+          }
+        },
+        "tag": "🇷🇺 Белый интернет #11 | Билайн / Теле2"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "176.108.240.49",
+              "port": 1505,
+              "users": [
+                {
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
+          },
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
+          }
+        },
+        "tag": "🇷🇺 Белый интернет #12 | Все операторы"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "217.19.122.144",
+              "port": 1505,
+              "users": [
+                {
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
+          },
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
+          }
+        },
+        "tag": "🇷🇺 Белый интернет #13 | Все операторы"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "81.94.148.198",
+              "port": 1505,
+              "users": [
+                {
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387",
+            "spiderX": "/"
+          },
+          "grpcSettings": {
+            "serviceName": "grpc",
+            "multiMode": false
+          }
+        },
+        "tag": "🇷🇺 Белый интернет #14 | Все операторы"
       },
       {
         "protocol": "freedom",
@@ -1379,12 +1497,19 @@
         {
           "selector": [
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
-            "🇷🇺 RU — Только LTE #1 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #2 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #5 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #6 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #7 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #10 | Все моб. операторы"
+            "🇷🇺 Белый интернет #1 | Все операторы",
+            "🇷🇺 Белый интернет #2 | Все операторы",
+            "🇷🇺 Белый интернет #3 | Все операторы",
+            "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС",
+            "🇷🇺 Белый интернет #5 | Билайн / Теле2 / МТС",
+            "🇷🇺 Белый интернет #6 | Все операторы",
+            "🇷🇺 Белый интернет #8 | Все операторы",
+            "🇷🇺 Белый интернет #9 | Все операторы",
+            "🇷🇺 Белый интернет #10 | Все операторы",
+            "🇷🇺 Белый интернет #11 | Билайн / Теле2",
+            "🇷🇺 Белый интернет #12 | Все операторы",
+            "🇷🇺 Белый интернет #13 | Все операторы",
+            "🇷🇺 Белый интернет #14 | Все операторы"
           ],
           "strategy": {
             "type": "random"
@@ -1456,36 +1581,10 @@
           }
         },
         {
-          "tag": "service-russia-ru",
-          "selector": [
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
-            "🇷🇺 RU — Только LTE #1 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #2 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #5 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #6 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #7 | Все моб. операторы",
-            "🇷🇺 RU — Только LTE #10 | Все моб. операторы"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
           "tag": "service-instagram-ru",
           "selector": [
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
             "🇩🇪 DE — South Networks Pro (only Mobile)"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
-          "tag": "service-subscription-ru",
-          "selector": [
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -1536,6 +1635,22 @@
           "tag": "service-tiktok-jp",
           "selector": [
             "🇯🇵 JP — South Networks Pro (only Mobile)"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
+        },
+        {
+          "tag": "service-youtube-balanced",
+          "selector": [
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
+            "🇺🇸 US — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇯🇵 JP — South Networks Pro (only Mobile)",
+            "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -1623,6 +1738,21 @@
           "type": "field",
           "protocol": [
             "bittorrent"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:ivi.ru",
+            "domain:ivi.tv",
+            "domain:ivicdn.tv",
+            "domain:okko.tv",
+            "domain:okko.ru",
+            "domain:okkoapi.tv",
+            "domain:kion.ru",
+            "domain:start.ru",
+            "domain:premier.one"
           ],
           "outboundTag": "direct"
         },
@@ -2525,6 +2655,16 @@
             "domain:yt3.ggpht.com",
             "domain:yt.be"
           ],
+          "balancerTag": "service-youtube-balanced"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:pornhub.com",
+            "domain:pornhubpremium.com",
+            "domain:phncdn.com",
+            "domain:pornhub.org"
+          ],
           "balancerTag": "service-youtube-nl"
         },
         {
@@ -2569,26 +2709,18 @@
         {
           "type": "field",
           "domain": [
-            "domain:workers.dev",
-            "full:raw.githubusercontent.com"
-          ],
-          "balancerTag": "service-subscription-ru"
-        },
-        {
-          "type": "field",
-          "domain": [
             "domain:ru",
             "domain:xn--p1ai",
             "domain:su"
           ],
-          "balancerTag": "service-russia-ru"
+          "balancerTag": "auto-best"
         },
         {
           "type": "field",
           "ip": [
             "geoip:ru"
           ],
-          "balancerTag": "service-russia-ru"
+          "balancerTag": "auto-best"
         },
         {
           "type": "field",
@@ -2716,6 +2848,25 @@
     },
     "dns": {
       "servers": [
+        {
+          "address": "https://dns.adguard-dns.com/dns-query",
+          "domains": [
+            "domain:youtube.com",
+            "domain:youtu.be",
+            "domain:googlevideo.com",
+            "domain:ytimg.com",
+            "domain:youtubei.googleapis.com",
+            "domain:youtube-nocookie.com",
+            "domain:youtube.googleapis.com",
+            "domain:youtubeembeddedplayer.googleapis.com",
+            "domain:youtubeeducation.com",
+            "domain:youtubekids.com",
+            "domain:yt3.ggpht.com",
+            "domain:yt.be"
+          ],
+          "skipFallback": true,
+          "queryStrategy": "UseIPv4"
+        },
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
@@ -3994,6 +4145,24 @@
         {
           "type": "field",
           "domain": [
+            "domain:youtube.com",
+            "domain:youtu.be",
+            "domain:googlevideo.com",
+            "domain:ytimg.com",
+            "domain:youtubei.googleapis.com",
+            "domain:youtube-nocookie.com",
+            "domain:youtube.googleapis.com",
+            "domain:youtubeembeddedplayer.googleapis.com",
+            "domain:youtubeeducation.com",
+            "domain:youtubekids.com",
+            "domain:yt3.ggpht.com",
+            "domain:yt.be"
+          ],
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:mapi.yota.ru",
             "domain:appmetrica.yandex.net",
             "domain:mc.yandex.ru",
@@ -4852,6 +5021,25 @@
     "dns": {
       "servers": [
         {
+          "address": "https://dns.adguard-dns.com/dns-query",
+          "domains": [
+            "domain:youtube.com",
+            "domain:youtu.be",
+            "domain:googlevideo.com",
+            "domain:ytimg.com",
+            "domain:youtubei.googleapis.com",
+            "domain:youtube-nocookie.com",
+            "domain:youtube.googleapis.com",
+            "domain:youtubeembeddedplayer.googleapis.com",
+            "domain:youtubeeducation.com",
+            "domain:youtubekids.com",
+            "domain:yt3.ggpht.com",
+            "domain:yt.be"
+          ],
+          "skipFallback": true,
+          "queryStrategy": "UseIPv4"
+        },
+        {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
           "skipFallback": true,
@@ -5670,6 +5858,24 @@
         {
           "type": "field",
           "domain": [
+            "domain:youtube.com",
+            "domain:youtu.be",
+            "domain:googlevideo.com",
+            "domain:ytimg.com",
+            "domain:youtubei.googleapis.com",
+            "domain:youtube-nocookie.com",
+            "domain:youtube.googleapis.com",
+            "domain:youtubeembeddedplayer.googleapis.com",
+            "domain:youtubeeducation.com",
+            "domain:youtubekids.com",
+            "domain:yt3.ggpht.com",
+            "domain:yt.be"
+          ],
+          "balancerTag": "auto-best"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:steam-chat.com",
             "domain:steamcdn-a.akamaihd.net",
             "domain:steamcommunity.com",
@@ -6362,6 +6568,48 @@
         },
         {
           "type": "field",
+          "domain": [
+            "domain:ivi.ru",
+            "domain:ivi.tv",
+            "domain:ivicdn.tv",
+            "domain:okko.tv",
+            "domain:okko.ru",
+            "domain:okkoapi.tv",
+            "domain:kion.ru",
+            "domain:start.ru",
+            "domain:premier.one"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:kinopoisk.ru",
+            "domain:hd-kinopoisk.ru",
+            "domain:hd-kinopoisk.com",
+            "domain:kinopoisk-hd.com",
+            "domain:kinopoisk.sport",
+            "domain:hd.ru",
+            "domain:mykp.ru",
+            "domain:kp.yandex.net",
+            "domain:strm.yandex.net",
+            "domain:strm.yandex.ru",
+            "domain:strm-playlists.kp.yandex.net",
+            "full:strm-ott.akamaized.net",
+            "domain:ott.yandex.ru",
+            "domain:video.yandex.net",
+            "domain:proxy.video.yandex.net",
+            "domain:cdn.yandex.net",
+            "domain:cdn.cloud.yandex.net",
+            "domain:yccdn.cloud.yandex.net",
+            "domain:storage.mds.yandex.net",
+            "domain:mds.yandex.net",
+            "domain:api.plus.kinopoisk.ru"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
           "ip": [
             "1.1.1.1",
             "8.8.8.8"
@@ -6405,6 +6653,25 @@
     "dns": {
       "queryStrategy": "UseIPv4",
       "servers": [
+        {
+          "address": "https://dns.adguard-dns.com/dns-query",
+          "domains": [
+            "domain:youtube.com",
+            "domain:youtu.be",
+            "domain:googlevideo.com",
+            "domain:ytimg.com",
+            "domain:youtubei.googleapis.com",
+            "domain:youtube-nocookie.com",
+            "domain:youtube.googleapis.com",
+            "domain:youtubeembeddedplayer.googleapis.com",
+            "domain:youtubeeducation.com",
+            "domain:youtubekids.com",
+            "domain:yt3.ggpht.com",
+            "domain:yt.be"
+          ],
+          "skipFallback": true,
+          "queryStrategy": "UseIPv4"
+        },
         {
           "address": "77.88.8.8",
           "port": 53,
@@ -7766,7 +8033,8 @@
           "port": "443",
           "type": "field"
         }
-      ]
+      ],
+      "balancers": []
     },
     "admin_display_name": "Игровой обход"
   },
@@ -7797,6 +8065,25 @@
     },
     "dns": {
       "servers": [
+        {
+          "address": "https://dns.adguard-dns.com/dns-query",
+          "domains": [
+            "domain:youtube.com",
+            "domain:youtu.be",
+            "domain:googlevideo.com",
+            "domain:ytimg.com",
+            "domain:youtubei.googleapis.com",
+            "domain:youtube-nocookie.com",
+            "domain:youtube.googleapis.com",
+            "domain:youtubeembeddedplayer.googleapis.com",
+            "domain:youtubeeducation.com",
+            "domain:youtubekids.com",
+            "domain:yt3.ggpht.com",
+            "domain:yt.be"
+          ],
+          "skipFallback": true,
+          "queryStrategy": "UseIPv4"
+        },
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
@@ -9333,7 +9620,8 @@
           "outboundTag": "🇩🇪 Обход LTE"
         }
       ],
-      "domainStrategy": "AsIs"
+      "domainStrategy": "AsIs",
+      "balancers": []
     },
     "admin_display_name": "🇳🇱 Обход LTE"
   },
@@ -9426,6 +9714,25 @@
     ],
     "dns": {
       "servers": [
+        {
+          "address": "https://dns.adguard-dns.com/dns-query",
+          "domains": [
+            "domain:youtube.com",
+            "domain:youtu.be",
+            "domain:googlevideo.com",
+            "domain:ytimg.com",
+            "domain:youtubei.googleapis.com",
+            "domain:youtube-nocookie.com",
+            "domain:youtube.googleapis.com",
+            "domain:youtubeembeddedplayer.googleapis.com",
+            "domain:youtubeeducation.com",
+            "domain:youtubekids.com",
+            "domain:yt3.ggpht.com",
+            "domain:yt.be"
+          ],
+          "skipFallback": true,
+          "queryStrategy": "UseIPv4"
+        },
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
@@ -10927,7 +11234,8 @@
           "network": "tcp,udp",
           "outboundTag": "main"
         }
-      ]
+      ],
+      "balancers": []
     },
     "admin_scoped_direct_domains": [],
     "admin_scoped_dns_enabled": true,
@@ -10960,6 +11268,25 @@
     },
     "dns": {
       "servers": [
+        {
+          "address": "https://dns.adguard-dns.com/dns-query",
+          "domains": [
+            "domain:youtube.com",
+            "domain:youtu.be",
+            "domain:googlevideo.com",
+            "domain:ytimg.com",
+            "domain:youtubei.googleapis.com",
+            "domain:youtube-nocookie.com",
+            "domain:youtube.googleapis.com",
+            "domain:youtubeembeddedplayer.googleapis.com",
+            "domain:youtubeeducation.com",
+            "domain:youtubekids.com",
+            "domain:yt3.ggpht.com",
+            "domain:yt.be"
+          ],
+          "skipFallback": true,
+          "queryStrategy": "UseIPv4"
+        },
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
@@ -12496,7 +12823,8 @@
           "outboundTag": "🇳🇱 Обход LTE"
         }
       ],
-      "domainStrategy": "AsIs"
+      "domainStrategy": "AsIs",
+      "balancers": []
     },
     "admin_display_name": "🇺🇸 Обход LTE"
   },
@@ -12527,6 +12855,25 @@
     },
     "dns": {
       "servers": [
+        {
+          "address": "https://dns.adguard-dns.com/dns-query",
+          "domains": [
+            "domain:youtube.com",
+            "domain:youtu.be",
+            "domain:googlevideo.com",
+            "domain:ytimg.com",
+            "domain:youtubei.googleapis.com",
+            "domain:youtube-nocookie.com",
+            "domain:youtube.googleapis.com",
+            "domain:youtubeembeddedplayer.googleapis.com",
+            "domain:youtubeeducation.com",
+            "domain:youtubekids.com",
+            "domain:yt3.ggpht.com",
+            "domain:yt.be"
+          ],
+          "skipFallback": true,
+          "queryStrategy": "UseIPv4"
+        },
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
@@ -14063,7 +14410,8 @@
           "outboundTag": "🇺🇸 Обход LTE"
         }
       ],
-      "domainStrategy": "AsIs"
+      "domainStrategy": "AsIs",
+      "balancers": []
     },
     "admin_display_name": "🇩🇪 Обход LTE"
   },
@@ -14159,6 +14507,25 @@
       "disableFallbackIfMatch": true,
       "tag": "standalone-dns",
       "servers": [
+        {
+          "address": "https://dns.adguard-dns.com/dns-query",
+          "domains": [
+            "domain:youtube.com",
+            "domain:youtu.be",
+            "domain:googlevideo.com",
+            "domain:ytimg.com",
+            "domain:youtubei.googleapis.com",
+            "domain:youtube-nocookie.com",
+            "domain:youtube.googleapis.com",
+            "domain:youtubeembeddedplayer.googleapis.com",
+            "domain:youtubeeducation.com",
+            "domain:youtubekids.com",
+            "domain:yt3.ggpht.com",
+            "domain:yt.be"
+          ],
+          "skipFallback": true,
+          "queryStrategy": "UseIPv4"
+        },
         {
           "address": "77.88.8.8",
           "port": 53,
@@ -15634,7 +16001,8 @@
           "network": "tcp,udp",
           "outboundTag": "main"
         }
-      ]
+      ],
+      "balancers": []
     },
     "admin_scoped_direct_domains": [],
     "admin_scoped_dns_enabled": true,
@@ -15667,6 +16035,25 @@
     },
     "dns": {
       "servers": [
+        {
+          "address": "https://dns.adguard-dns.com/dns-query",
+          "domains": [
+            "domain:youtube.com",
+            "domain:youtu.be",
+            "domain:googlevideo.com",
+            "domain:ytimg.com",
+            "domain:youtubei.googleapis.com",
+            "domain:youtube-nocookie.com",
+            "domain:youtube.googleapis.com",
+            "domain:youtubeembeddedplayer.googleapis.com",
+            "domain:youtubeeducation.com",
+            "domain:youtubekids.com",
+            "domain:yt3.ggpht.com",
+            "domain:yt.be"
+          ],
+          "skipFallback": true,
+          "queryStrategy": "UseIPv4"
+        },
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
@@ -17200,7 +17587,8 @@
           "outboundTag": "🇷🇺 Обход РЕЗЕРВ LTE"
         }
       ],
-      "domainStrategy": "AsIs"
+      "domainStrategy": "AsIs",
+      "balancers": []
     }
   }
 ]
