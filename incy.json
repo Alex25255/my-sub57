@@ -655,7 +655,9 @@
             "domain:express.ms",
             "domain:vi.ru",
             "domain:fonbet.ru",
-            "domain:fon.bet"
+            "domain:fon.bet",
+            "domain:t-bank-app.su",
+            "domain:t-static-wv.ru"
           ]
         },
         {
@@ -1656,6 +1658,15 @@
         {
           "type": "field",
           "domain": [
+            "domain:t-bank-app.su",
+            "full:fingerprint.t-static-wv.ru",
+            "full:ded-pwa-static-pages.t-static-wv.ru"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:mapi.yota.ru",
             "domain:appmetrica.yandex.net",
             "domain:mc.yandex.ru",
@@ -2398,7 +2409,8 @@
             "domain:vi.ru",
             "domain:passport.yandex.fi",
             "domain:eda.yandex",
-            "domain:t-static-wv.ru"
+            "domain:t-static-wv.ru",
+            "full:leonardo.edadeal.io"
           ],
           "outboundTag": "direct"
         },
@@ -5630,7 +5642,9 @@
             "domain:express.ms",
             "domain:vi.ru",
             "domain:fonbet.ru",
-            "domain:fon.bet"
+            "domain:fon.bet",
+            "domain:t-bank-app.su",
+            "domain:t-static-wv.ru"
           ]
         },
         {
@@ -5816,6 +5830,15 @@
       ],
       "domainMatcher": "hybrid",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:t-bank-app.su",
+            "full:fingerprint.t-static-wv.ru",
+            "full:ded-pwa-static-pages.t-static-wv.ru"
+          ],
+          "outboundTag": "direct"
+        },
         {
           "type": "field",
           "domain": [
@@ -6536,7 +6559,8 @@
             "domain:vi.ru",
             "domain:passport.yandex.fi",
             "domain:eda.yandex",
-            "domain:t-static-wv.ru"
+            "domain:t-static-wv.ru",
+            "full:leonardo.edadeal.io"
           ],
           "outboundTag": "direct"
         },
