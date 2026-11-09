@@ -1624,6 +1624,27 @@
       "rules": [
         {
           "type": "field",
+          "domain": [
+            "domain:play.google.com",
+            "domain:android.clients.google.com",
+            "domain:play.googleapis.com",
+            "domain:play-fe.googleapis.com",
+            "domain:play-lh.googleusercontent.com",
+            "domain:gvt1.com",
+            "domain:gvt2.com",
+            "domain:googleusercontent.com",
+            "domain:apps.apple.com",
+            "domain:itunes.apple.com",
+            "domain:mzstatic.com",
+            "domain:cdn-apple.com",
+            "domain:iosapps.itunes.apple.com",
+            "domain:osxapps.itunes.apple.com",
+            "domain:aod.itunes.apple.com"
+          ],
+          "balancerTag": "service-fallback-random-pool"
+        },
+        {
+          "type": "field",
           "inboundTag": [
             "service-fallback-random"
           ],
