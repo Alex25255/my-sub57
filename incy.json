@@ -1635,6 +1635,27 @@
         {
           "type": "field",
           "domain": [
+            "domain:push.apple.com"
+          ],
+          "network": "tcp",
+          "balancerTag": "service-fallback-random-pool"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "17.0.0.0/8",
+            "2620:149:a44::/48",
+            "2403:300:a42::/48",
+            "2403:300:a51::/48",
+            "2a01:b740:a42::/48"
+          ],
+          "port": "5223",
+          "network": "tcp",
+          "balancerTag": "service-fallback-random-pool"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:mapi.yota.ru",
             "domain:appmetrica.yandex.net",
             "domain:mc.yandex.ru",
