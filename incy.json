@@ -4286,7 +4286,7 @@
         "tag": "dns-out"
       }
     ],
-    "remarks": "⚡️Авто обход LTE тест",
+    "remarks": "⚡️Авто обход LTE тест • ОБНОВЛЕНО 09.11.2026",
     "routing": {
       "balancers": [
         {
