@@ -5889,6 +5889,42 @@
         {
           "type": "field",
           "domain": [
+            "full:bag.itunes.apple.com",
+            "full:amp-api-edge.apps.apple.com",
+            "full:fpinit.itunes.apple.com",
+            "full:iosapps.itunes.apple.com",
+            "domain:apps.apple.com",
+            "domain:itunes.apple.com",
+            "domain:mzstatic.com",
+            "domain:cdn-apple.com",
+            "domain:iosapps.itunes.apple.com",
+            "domain:osxapps.itunes.apple.com",
+            "domain:aod.itunes.apple.com",
+            "domain:buy.itunes.apple.com",
+            "domain:su.itunes.apple.com",
+            "domain:ppq.apple.com",
+            "domain:appstoreconnect.apple.com",
+            "domain:appstore.apple.com",
+            "domain:itunes-apple.com",
+            "domain:apple.com.edgekey.net",
+            "full:amp-api-search-edge.apps.apple.com",
+            "full:amp-api.apps.apple.com",
+            "full:sf-api-token-service.itunes.apple.com",
+            "full:pd.itunes.apple.com",
+            "domain:play.google.com",
+            "domain:android.clients.google.com",
+            "domain:play.googleapis.com",
+            "domain:play-fe.googleapis.com",
+            "domain:play-lh.googleusercontent.com",
+            "domain:gvt1.com",
+            "domain:gvt2.com",
+            "domain:googleusercontent.com"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "full:shopping.t-bank-app.ru",
             "full:lifestyle.t-bank-app.ru",
             "full:hotels-growth-feed.t-bank-app.ru",
@@ -17528,4 +17564,3 @@
       "balancers": []
     }
   }
-]
