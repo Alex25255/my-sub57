@@ -1562,7 +1562,8 @@
           "tag": "service-instagram-ru",
           "selector": [
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
-            "🇩🇪 DE — South Networks Pro (only Mobile)"
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇯🇵 JP — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -1625,17 +1626,6 @@
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
           ],
           "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
-          "tag": "service-pornhub-nl-only",
-          "selector": [
-            "🇳🇱 NL — South Networks Pro (only Mobile)",
-            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]"
-          ],
-          "fallbackTag": "block",
           "strategy": {
             "type": "random"
           }
@@ -2861,7 +2851,7 @@
             "domain:phncdn.com",
             "domain:pornhub.org"
           ],
-          "balancerTag": "service-pornhub-nl-only"
+          "balancerTag": "service-youtube-nl"
         },
         {
           "type": "field",
