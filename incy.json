@@ -2363,7 +2363,9 @@
             "domain:sbermarket.ru",
             "domain:dodo.ru",
             "domain:express.ms",
-            "domain:vi.ru"
+            "domain:vi.ru",
+            "domain:passport.yandex.fi",
+            "domain:eda.yandex"
           ],
           "outboundTag": "direct"
         },
@@ -6487,7 +6489,9 @@
             "domain:sbermarket.ru",
             "domain:dodo.ru",
             "domain:express.ms",
-            "domain:vi.ru"
+            "domain:vi.ru",
+            "domain:passport.yandex.fi",
+            "domain:eda.yandex"
           ],
           "outboundTag": "direct"
         },
