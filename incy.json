@@ -1658,6 +1658,22 @@
         {
           "type": "field",
           "domain": [
+            "full:shopping.t-bank-app.ru",
+            "full:lifestyle.t-bank-app.ru",
+            "full:hotels-growth-feed.t-bank-app.ru",
+            "full:ms-loyalty-api.tinkoff.ru"
+          ],
+          "ip": [
+            "178.130.128.40",
+            "178.130.129.253",
+            "178.130.129.169",
+            "178.130.129.193"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:t-bank-app.su",
             "full:fingerprint.t-static-wv.ru",
             "full:ded-pwa-static-pages.t-static-wv.ru"
@@ -5830,6 +5846,22 @@
       ],
       "domainMatcher": "hybrid",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "full:shopping.t-bank-app.ru",
+            "full:lifestyle.t-bank-app.ru",
+            "full:hotels-growth-feed.t-bank-app.ru",
+            "full:ms-loyalty-api.tinkoff.ru"
+          ],
+          "ip": [
+            "178.130.128.40",
+            "178.130.129.253",
+            "178.130.129.169",
+            "178.130.129.193"
+          ],
+          "outboundTag": "direct"
+        },
         {
           "type": "field",
           "domain": [
