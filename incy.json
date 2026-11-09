@@ -1624,6 +1624,19 @@
       "rules": [
         {
           "type": "field",
+          "ip": [
+            "17.253.37.205",
+            "17.253.29.151",
+            "17.253.37.195",
+            "17.253.29.153",
+            "17.253.37.210"
+          ],
+          "port": "443",
+          "network": "tcp",
+          "balancerTag": "service-fallback-random-pool"
+        },
+        {
+          "type": "field",
           "domain": [
             "full:bag.itunes.apple.com",
             "full:amp-api-edge.apps.apple.com",
@@ -1655,7 +1668,10 @@
             "full:sf-api-token-service.itunes.apple.com",
             "full:bag.itunes.apple.com",
             "full:pd.itunes.apple.com",
-            "full:fpinit.itunes.apple.com"
+            "full:fpinit.itunes.apple.com",
+            "full:apptrailers.itunes.apple.com",
+            "full:entitlements.itunes.apple.com",
+            "full:is1-ssl.mzstatic.com"
           ],
           "balancerTag": "service-fallback-random-pool"
         },
@@ -5918,7 +5934,10 @@
             "domain:play-lh.googleusercontent.com",
             "domain:gvt1.com",
             "domain:gvt2.com",
-            "domain:googleusercontent.com"
+            "domain:googleusercontent.com",
+            "full:apptrailers.itunes.apple.com",
+            "full:entitlements.itunes.apple.com",
+            "full:is1-ssl.mzstatic.com"
           ],
           "outboundTag": "direct"
         },
@@ -17564,3 +17583,4 @@
       "balancers": []
     }
   }
+]
