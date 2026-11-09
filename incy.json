@@ -1628,7 +1628,7 @@
             "17.253.37.202/32",
             "17.253.29.141/32"
           ],
-          "balancerTag": "service-fallback-random-pool"
+          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
         },
         {
           "type": "field",
@@ -1652,7 +1652,7 @@
           ],
           "port": "443",
           "network": "tcp",
-          "balancerTag": "service-fallback-random-pool"
+          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
         },
         {
           "type": "field",
@@ -1662,7 +1662,7 @@
             "full:fpinit.itunes.apple.com",
             "full:iosapps.itunes.apple.com"
           ],
-          "balancerTag": "service-fallback-random-pool"
+          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
         },
         {
           "type": "field",
@@ -1699,7 +1699,7 @@
             "full:tr.iadsdk.apple.com",
             "full:gsp57-ssl-background.ls.apple.com"
           ],
-          "balancerTag": "service-fallback-random-pool"
+          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
         },
         {
           "type": "field",
