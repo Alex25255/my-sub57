@@ -35,25 +35,6 @@
     "dns": {
       "servers": [
         {
-          "address": "https://dns.adguard-dns.com/dns-query",
-          "domains": [
-            "domain:youtube.com",
-            "domain:youtu.be",
-            "domain:googlevideo.com",
-            "domain:ytimg.com",
-            "domain:youtubei.googleapis.com",
-            "domain:youtube-nocookie.com",
-            "domain:youtube.googleapis.com",
-            "domain:youtubeembeddedplayer.googleapis.com",
-            "domain:youtubeeducation.com",
-            "domain:youtubekids.com",
-            "domain:yt3.ggpht.com",
-            "domain:yt.be"
-          ],
-          "skipFallback": true,
-          "queryStrategy": "UseIPv4"
-        },
-        {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
           "skipFallback": true,
@@ -244,7 +225,6 @@
             "domain:myspar.ru",
             "domain:nalog.gov.ru",
             "domain:nordwindairlines.ru",
-            "domain:np.community.playstation.net",
             "domain:ntv.ru",
             "domain:observability.x5.ru",
             "domain:ok.ru",
@@ -260,16 +240,12 @@
             "domain:perekrestok.ru",
             "domain:petrovich.ru",
             "domain:planetazdorovo.ru",
-            "domain:playstation.com",
-            "domain:playstation.net",
-            "domain:playstationnetwork.com",
             "domain:pobeda.aero",
             "domain:pochta.ru",
             "domain:premier.one",
             "domain:profi.ru",
             "domain:proxy.mob.maps.yandex.net",
             "domain:psbank.ru",
-            "domain:psnprofiles.com",
             "domain:rabota.ru",
             "domain:rambler.ru",
             "domain:rbc.ru",
@@ -298,7 +274,6 @@
             "domain:smotrim.ru",
             "domain:sochi.ru",
             "domain:sogaz.ru",
-            "domain:sonyentertainmentnetwork.com",
             "domain:sravni.ru",
             "domain:start.ru",
             "domain:static.vseinstrumenti.ru",
@@ -674,7 +649,9 @@
             "domain:express.ms",
             "domain:vi.ru",
             "domain:fonbet.ru",
-            "domain:fon.bet"
+            "domain:fon.bet",
+            "domain:t-bank-app.su",
+            "domain:t-static-wv.ru"
           ]
         },
         {
@@ -1537,7 +1514,8 @@
           "tag": "service-youtube-nl",
           "selector": [
             "🇳🇱 NL — South Networks Pro (only Mobile)",
-            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]"
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -1642,15 +1620,9 @@
           }
         },
         {
-          "tag": "service-youtube-balanced",
+          "tag": "service-stores-ru-pro-foreign-fallback",
           "selector": [
-            "🇳🇱 NL — South Networks Pro (only Mobile)",
-            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
-            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
-            "🇺🇸 US — South Networks Pro (only Mobile)",
-            "🇩🇪 DE — South Networks Pro (only Mobile)",
-            "🇯🇵 JP — South Networks Pro (only Mobile)",
-            "🇰🇿 KZ — South Networks Pro (only Mobile)"
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -1662,10 +1634,197 @@
       "rules": [
         {
           "type": "field",
+          "domain": [
+            "full:photos.googleapis.com",
+            "full:photosdata-pa.googleapis.com",
+            "domain:photos.google.com",
+            "domain:photos.googleusercontent.com"
+          ],
+          "balancerTag": "service-stores-ru-pro-foreign-fallback"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "151.101.131.6/32",
+            "17.253.198.9/32",
+            "17.248.150.5/32",
+            "17.250.81.26/32",
+            "17.250.81.18/32",
+            "17.248.150.9/32",
+            "17.248.150.3/32"
+          ],
+          "balancerTag": "service-stores-ru-pro-foreign-fallback"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "17.253.37.202/32",
+            "17.253.29.141/32"
+          ],
+          "balancerTag": "service-stores-ru-pro-foreign-fallback"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "17.253.37.205",
+            "17.253.29.151",
+            "17.253.37.195",
+            "17.253.29.153",
+            "17.253.37.210",
+            "17.253.39.146",
+            "17.253.39.195",
+            "17.253.39.197",
+            "17.253.39.138",
+            "17.253.39.131",
+            "95.161.252.16",
+            "23.12.156.7",
+            "151.101.3.6",
+            "151.101.67.6",
+            "151.101.131.6",
+            "151.101.195.6"
+          ],
+          "balancerTag": "service-stores-ru-pro-foreign-fallback"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "full:bag.itunes.apple.com",
+            "full:amp-api-edge.apps.apple.com",
+            "full:fpinit.itunes.apple.com",
+            "full:iosapps.itunes.apple.com"
+          ],
+          "balancerTag": "service-stores-ru-pro-foreign-fallback"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:apps.apple.com",
+            "domain:itunes.apple.com",
+            "domain:mzstatic.com",
+            "domain:cdn-apple.com",
+            "domain:iosapps.itunes.apple.com",
+            "domain:osxapps.itunes.apple.com",
+            "domain:aod.itunes.apple.com",
+            "domain:buy.itunes.apple.com",
+            "domain:su.itunes.apple.com",
+            "domain:ppq.apple.com",
+            "domain:appstoreconnect.apple.com",
+            "domain:appstore.apple.com",
+            "domain:itunes-apple.com",
+            "domain:apple.com.edgekey.net",
+            "full:amp-api-edge.apps.apple.com",
+            "full:amp-api-search-edge.apps.apple.com",
+            "full:amp-api.apps.apple.com",
+            "full:sf-api-token-service.itunes.apple.com",
+            "full:bag.itunes.apple.com",
+            "full:pd.itunes.apple.com",
+            "full:fpinit.itunes.apple.com",
+            "full:apptrailers.itunes.apple.com",
+            "full:entitlements.itunes.apple.com",
+            "full:is1-ssl.mzstatic.com",
+            "full:se-edge.itunes.apple.com",
+            "full:musicstatus.itunes.apple.com",
+            "full:xp.apple.com",
+            "full:profile.gc.apple.com",
+            "full:stats.gc.apple.com",
+            "full:tr.iadsdk.apple.com",
+            "full:gsp57-ssl-background.ls.apple.com"
+          ],
+          "balancerTag": "service-stores-ru-pro-foreign-fallback"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:play.google.com",
+            "domain:android.clients.google.com",
+            "domain:play.googleapis.com",
+            "domain:play-fe.googleapis.com",
+            "domain:play-lh.googleusercontent.com",
+            "domain:gvt1.com",
+            "domain:gvt2.com",
+            "domain:googleusercontent.com"
+          ],
+          "balancerTag": "service-stores-ru-pro-foreign-fallback"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:apple.com",
+            "domain:icloud.com",
+            "domain:icloud-content.com",
+            "domain:apple-dns.net",
+            "domain:apple-cloudkit.com",
+            "domain:me.com",
+            "domain:mac.com",
+            "domain:cdn-apple.com",
+            "domain:mzstatic.com",
+            "domain:itunes.com",
+            "domain:push.apple.com"
+          ],
+          "balancerTag": "service-stores-ru-pro-foreign-fallback"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "17.0.0.0/8",
+            "2620:149:a44::/48",
+            "2403:300:a42::/48",
+            "2403:300:a51::/48"
+          ],
+          "balancerTag": "service-stores-ru-pro-foreign-fallback"
+        },
+        {
+          "type": "field",
           "inboundTag": [
             "service-fallback-random"
           ],
           "balancerTag": "service-fallback-random-pool"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:push.apple.com"
+          ],
+          "network": "tcp",
+          "balancerTag": "service-stores-ru-pro-foreign-fallback"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "17.0.0.0/8",
+            "2620:149:a44::/48",
+            "2403:300:a42::/48",
+            "2403:300:a51::/48",
+            "2a01:b740:a42::/48"
+          ],
+          "port": "5223",
+          "network": "tcp",
+          "balancerTag": "service-stores-ru-pro-foreign-fallback"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "full:shopping.t-bank-app.ru",
+            "full:lifestyle.t-bank-app.ru",
+            "full:hotels-growth-feed.t-bank-app.ru",
+            "full:ms-loyalty-api.tinkoff.ru"
+          ],
+          "ip": [
+            "178.130.128.40",
+            "178.130.129.253",
+            "178.130.129.169",
+            "178.130.129.193"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:t-bank-app.su",
+            "full:fingerprint.t-static-wv.ru",
+            "full:ded-pwa-static-pages.t-static-wv.ru"
+          ],
+          "outboundTag": "direct"
         },
         {
           "type": "field",
@@ -1684,6 +1843,34 @@
             "domain:ocsps.ssl.com"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "176.101.88.3",
+            "176.101.88.4",
+            "176.101.88.28",
+            "176.101.88.68",
+            "176.101.88.92",
+            "176.101.88.81",
+            "176.101.88.74",
+            "176.101.88.93",
+            "176.101.88.83"
+          ],
+          "port": "443",
+          "network": "udp",
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "network": "tcp",
+          "port": "443",
+          "outboundTag": "direct",
+          "ip": [
+            "178.130.128.21",
+            "178.130.128.26",
+            "193.17.93.194"
+          ]
         },
         {
           "type": "field",
@@ -1717,12 +1904,6 @@
             "domain:epicgamescdn.com",
             "domain:fcmtoken.googleapis.com",
             "domain:justletswork.com",
-            "domain:np.community.playstation.net",
-            "domain:playstation.com",
-            "domain:playstation.net",
-            "domain:playstationnetwork.com",
-            "domain:psnprofiles.com",
-            "domain:sonyentertainmentnetwork.com",
             "domain:unrealengine.com",
             "domain:showip.net",
             "domain:checkip.amazonaws.com",
@@ -2381,7 +2562,11 @@
             "domain:sbermarket.ru",
             "domain:dodo.ru",
             "domain:express.ms",
-            "domain:vi.ru"
+            "domain:vi.ru",
+            "domain:passport.yandex.fi",
+            "domain:eda.yandex",
+            "domain:t-static-wv.ru",
+            "full:leonardo.edadeal.io"
           ],
           "outboundTag": "direct"
         },
@@ -2655,7 +2840,7 @@
             "domain:yt3.ggpht.com",
             "domain:yt.be"
           ],
-          "balancerTag": "service-youtube-balanced"
+          "balancerTag": "service-youtube-nl"
         },
         {
           "type": "field",
@@ -2848,25 +3033,6 @@
     },
     "dns": {
       "servers": [
-        {
-          "address": "https://dns.adguard-dns.com/dns-query",
-          "domains": [
-            "domain:youtube.com",
-            "domain:youtu.be",
-            "domain:googlevideo.com",
-            "domain:ytimg.com",
-            "domain:youtubei.googleapis.com",
-            "domain:youtube-nocookie.com",
-            "domain:youtube.googleapis.com",
-            "domain:youtubeembeddedplayer.googleapis.com",
-            "domain:youtubeeducation.com",
-            "domain:youtubekids.com",
-            "domain:yt3.ggpht.com",
-            "domain:yt.be"
-          ],
-          "skipFallback": true,
-          "queryStrategy": "UseIPv4"
-        },
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
@@ -4145,24 +4311,6 @@
         {
           "type": "field",
           "domain": [
-            "domain:youtube.com",
-            "domain:youtu.be",
-            "domain:googlevideo.com",
-            "domain:ytimg.com",
-            "domain:youtubei.googleapis.com",
-            "domain:youtube-nocookie.com",
-            "domain:youtube.googleapis.com",
-            "domain:youtubeembeddedplayer.googleapis.com",
-            "domain:youtubeeducation.com",
-            "domain:youtubekids.com",
-            "domain:yt3.ggpht.com",
-            "domain:yt.be"
-          ],
-          "balancerTag": "auto-best"
-        },
-        {
-          "type": "field",
-          "domain": [
             "domain:mapi.yota.ru",
             "domain:appmetrica.yandex.net",
             "domain:mc.yandex.ru",
@@ -5021,25 +5169,6 @@
     "dns": {
       "servers": [
         {
-          "address": "https://dns.adguard-dns.com/dns-query",
-          "domains": [
-            "domain:youtube.com",
-            "domain:youtu.be",
-            "domain:googlevideo.com",
-            "domain:ytimg.com",
-            "domain:youtubei.googleapis.com",
-            "domain:youtube-nocookie.com",
-            "domain:youtube.googleapis.com",
-            "domain:youtubeembeddedplayer.googleapis.com",
-            "domain:youtubeeducation.com",
-            "domain:youtubekids.com",
-            "domain:yt3.ggpht.com",
-            "domain:yt.be"
-          ],
-          "skipFallback": true,
-          "queryStrategy": "UseIPv4"
-        },
-        {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
           "skipFallback": true,
@@ -5669,7 +5798,9 @@
             "domain:express.ms",
             "domain:vi.ru",
             "domain:fonbet.ru",
-            "domain:fon.bet"
+            "domain:fon.bet",
+            "domain:t-bank-app.su",
+            "domain:t-static-wv.ru"
           ]
         },
         {
@@ -5857,21 +5988,219 @@
       "rules": [
         {
           "type": "field",
-          "domain": [
-            "domain:youtube.com",
-            "domain:youtu.be",
-            "domain:googlevideo.com",
-            "domain:ytimg.com",
-            "domain:youtubei.googleapis.com",
-            "domain:youtube-nocookie.com",
-            "domain:youtube.googleapis.com",
-            "domain:youtubeembeddedplayer.googleapis.com",
-            "domain:youtubeeducation.com",
-            "domain:youtubekids.com",
-            "domain:yt3.ggpht.com",
-            "domain:yt.be"
+          "ip": [
+            "151.101.131.6/32",
+            "17.253.198.9/32",
+            "17.248.150.5/32",
+            "17.250.81.26/32",
+            "17.250.81.18/32",
+            "17.248.150.9/32",
+            "17.248.150.3/32"
           ],
-          "balancerTag": "auto-best"
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "17.253.37.202/32",
+            "17.253.29.141/32"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "17.253.37.205",
+            "17.253.29.151",
+            "17.253.37.195",
+            "17.253.29.153",
+            "17.253.37.210",
+            "17.253.39.146",
+            "17.253.39.195",
+            "17.253.39.197",
+            "17.253.39.138",
+            "17.253.39.131",
+            "95.161.252.16",
+            "23.12.156.7",
+            "151.101.3.6",
+            "151.101.67.6",
+            "151.101.131.6",
+            "151.101.195.6"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "full:bag.itunes.apple.com",
+            "full:amp-api-edge.apps.apple.com",
+            "full:fpinit.itunes.apple.com",
+            "full:iosapps.itunes.apple.com"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:apps.apple.com",
+            "domain:itunes.apple.com",
+            "domain:mzstatic.com",
+            "domain:cdn-apple.com",
+            "domain:iosapps.itunes.apple.com",
+            "domain:osxapps.itunes.apple.com",
+            "domain:aod.itunes.apple.com",
+            "domain:buy.itunes.apple.com",
+            "domain:su.itunes.apple.com",
+            "domain:ppq.apple.com",
+            "domain:appstoreconnect.apple.com",
+            "domain:appstore.apple.com",
+            "domain:itunes-apple.com",
+            "domain:apple.com.edgekey.net",
+            "full:amp-api-edge.apps.apple.com",
+            "full:amp-api-search-edge.apps.apple.com",
+            "full:amp-api.apps.apple.com",
+            "full:sf-api-token-service.itunes.apple.com",
+            "full:bag.itunes.apple.com",
+            "full:pd.itunes.apple.com",
+            "full:fpinit.itunes.apple.com",
+            "full:apptrailers.itunes.apple.com",
+            "full:entitlements.itunes.apple.com",
+            "full:is1-ssl.mzstatic.com",
+            "full:se-edge.itunes.apple.com",
+            "full:musicstatus.itunes.apple.com",
+            "full:xp.apple.com",
+            "full:profile.gc.apple.com",
+            "full:stats.gc.apple.com",
+            "full:tr.iadsdk.apple.com",
+            "full:gsp57-ssl-background.ls.apple.com"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:play.google.com",
+            "domain:android.clients.google.com",
+            "domain:play.googleapis.com",
+            "domain:play-fe.googleapis.com",
+            "domain:play-lh.googleusercontent.com",
+            "domain:gvt1.com",
+            "domain:gvt2.com",
+            "domain:googleusercontent.com"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:apple.com",
+            "domain:icloud.com",
+            "domain:icloud-content.com",
+            "domain:apple-dns.net",
+            "domain:apple-cloudkit.com",
+            "domain:me.com",
+            "domain:mac.com",
+            "domain:cdn-apple.com",
+            "domain:mzstatic.com",
+            "domain:itunes.com",
+            "domain:push.apple.com"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "17.0.0.0/8",
+            "2620:149:a44::/48",
+            "2403:300:a42::/48",
+            "2403:300:a51::/48"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:push.apple.com"
+          ],
+          "network": "tcp",
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "17.0.0.0/8",
+            "2620:149:a44::/48",
+            "2403:300:a42::/48",
+            "2403:300:a51::/48",
+            "2a01:b740:a42::/48"
+          ],
+          "port": "5223",
+          "network": "tcp",
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "full:bag.itunes.apple.com",
+            "full:amp-api-edge.apps.apple.com",
+            "full:fpinit.itunes.apple.com",
+            "full:iosapps.itunes.apple.com",
+            "domain:apps.apple.com",
+            "domain:itunes.apple.com",
+            "domain:mzstatic.com",
+            "domain:cdn-apple.com",
+            "domain:iosapps.itunes.apple.com",
+            "domain:osxapps.itunes.apple.com",
+            "domain:aod.itunes.apple.com",
+            "domain:buy.itunes.apple.com",
+            "domain:su.itunes.apple.com",
+            "domain:ppq.apple.com",
+            "domain:appstoreconnect.apple.com",
+            "domain:appstore.apple.com",
+            "domain:itunes-apple.com",
+            "domain:apple.com.edgekey.net",
+            "full:amp-api-search-edge.apps.apple.com",
+            "full:amp-api.apps.apple.com",
+            "full:sf-api-token-service.itunes.apple.com",
+            "full:pd.itunes.apple.com",
+            "domain:play.google.com",
+            "domain:android.clients.google.com",
+            "domain:play.googleapis.com",
+            "domain:play-fe.googleapis.com",
+            "domain:play-lh.googleusercontent.com",
+            "domain:gvt1.com",
+            "domain:gvt2.com",
+            "domain:googleusercontent.com",
+            "full:apptrailers.itunes.apple.com",
+            "full:entitlements.itunes.apple.com",
+            "full:is1-ssl.mzstatic.com"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "full:shopping.t-bank-app.ru",
+            "full:lifestyle.t-bank-app.ru",
+            "full:hotels-growth-feed.t-bank-app.ru",
+            "full:ms-loyalty-api.tinkoff.ru"
+          ],
+          "ip": [
+            "178.130.128.40",
+            "178.130.129.253",
+            "178.130.129.169",
+            "178.130.129.193"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:t-bank-app.su",
+            "full:fingerprint.t-static-wv.ru",
+            "full:ded-pwa-static-pages.t-static-wv.ru"
+          ],
+          "outboundTag": "direct"
         },
         {
           "type": "field",
@@ -5905,6 +6234,34 @@
             "domain:ocsps.ssl.com"
           ],
           "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "176.101.88.3",
+            "176.101.88.4",
+            "176.101.88.28",
+            "176.101.88.68",
+            "176.101.88.92",
+            "176.101.88.81",
+            "176.101.88.74",
+            "176.101.88.93",
+            "176.101.88.83"
+          ],
+          "port": "443",
+          "network": "udp",
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "network": "tcp",
+          "port": "443",
+          "outboundTag": "direct",
+          "ip": [
+            "178.130.128.21",
+            "178.130.128.26",
+            "193.17.93.194"
+          ]
         },
         {
           "type": "field",
@@ -6562,7 +6919,11 @@
             "domain:sbermarket.ru",
             "domain:dodo.ru",
             "domain:express.ms",
-            "domain:vi.ru"
+            "domain:vi.ru",
+            "domain:passport.yandex.fi",
+            "domain:eda.yandex",
+            "domain:t-static-wv.ru",
+            "full:leonardo.edadeal.io"
           ],
           "outboundTag": "direct"
         },
@@ -6653,25 +7014,6 @@
     "dns": {
       "queryStrategy": "UseIPv4",
       "servers": [
-        {
-          "address": "https://dns.adguard-dns.com/dns-query",
-          "domains": [
-            "domain:youtube.com",
-            "domain:youtu.be",
-            "domain:googlevideo.com",
-            "domain:ytimg.com",
-            "domain:youtubei.googleapis.com",
-            "domain:youtube-nocookie.com",
-            "domain:youtube.googleapis.com",
-            "domain:youtubeembeddedplayer.googleapis.com",
-            "domain:youtubeeducation.com",
-            "domain:youtubekids.com",
-            "domain:yt3.ggpht.com",
-            "domain:yt.be"
-          ],
-          "skipFallback": true,
-          "queryStrategy": "UseIPv4"
-        },
         {
           "address": "77.88.8.8",
           "port": 53,
@@ -8065,25 +8407,6 @@
     },
     "dns": {
       "servers": [
-        {
-          "address": "https://dns.adguard-dns.com/dns-query",
-          "domains": [
-            "domain:youtube.com",
-            "domain:youtu.be",
-            "domain:googlevideo.com",
-            "domain:ytimg.com",
-            "domain:youtubei.googleapis.com",
-            "domain:youtube-nocookie.com",
-            "domain:youtube.googleapis.com",
-            "domain:youtubeembeddedplayer.googleapis.com",
-            "domain:youtubeeducation.com",
-            "domain:youtubekids.com",
-            "domain:yt3.ggpht.com",
-            "domain:yt.be"
-          ],
-          "skipFallback": true,
-          "queryStrategy": "UseIPv4"
-        },
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
@@ -9715,25 +10038,6 @@
     "dns": {
       "servers": [
         {
-          "address": "https://dns.adguard-dns.com/dns-query",
-          "domains": [
-            "domain:youtube.com",
-            "domain:youtu.be",
-            "domain:googlevideo.com",
-            "domain:ytimg.com",
-            "domain:youtubei.googleapis.com",
-            "domain:youtube-nocookie.com",
-            "domain:youtube.googleapis.com",
-            "domain:youtubeembeddedplayer.googleapis.com",
-            "domain:youtubeeducation.com",
-            "domain:youtubekids.com",
-            "domain:yt3.ggpht.com",
-            "domain:yt.be"
-          ],
-          "skipFallback": true,
-          "queryStrategy": "UseIPv4"
-        },
-        {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
           "skipFallback": true,
@@ -11268,25 +11572,6 @@
     },
     "dns": {
       "servers": [
-        {
-          "address": "https://dns.adguard-dns.com/dns-query",
-          "domains": [
-            "domain:youtube.com",
-            "domain:youtu.be",
-            "domain:googlevideo.com",
-            "domain:ytimg.com",
-            "domain:youtubei.googleapis.com",
-            "domain:youtube-nocookie.com",
-            "domain:youtube.googleapis.com",
-            "domain:youtubeembeddedplayer.googleapis.com",
-            "domain:youtubeeducation.com",
-            "domain:youtubekids.com",
-            "domain:yt3.ggpht.com",
-            "domain:yt.be"
-          ],
-          "skipFallback": true,
-          "queryStrategy": "UseIPv4"
-        },
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
@@ -12855,25 +13140,6 @@
     },
     "dns": {
       "servers": [
-        {
-          "address": "https://dns.adguard-dns.com/dns-query",
-          "domains": [
-            "domain:youtube.com",
-            "domain:youtu.be",
-            "domain:googlevideo.com",
-            "domain:ytimg.com",
-            "domain:youtubei.googleapis.com",
-            "domain:youtube-nocookie.com",
-            "domain:youtube.googleapis.com",
-            "domain:youtubeembeddedplayer.googleapis.com",
-            "domain:youtubeeducation.com",
-            "domain:youtubekids.com",
-            "domain:yt3.ggpht.com",
-            "domain:yt.be"
-          ],
-          "skipFallback": true,
-          "queryStrategy": "UseIPv4"
-        },
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
@@ -14508,25 +14774,6 @@
       "tag": "standalone-dns",
       "servers": [
         {
-          "address": "https://dns.adguard-dns.com/dns-query",
-          "domains": [
-            "domain:youtube.com",
-            "domain:youtu.be",
-            "domain:googlevideo.com",
-            "domain:ytimg.com",
-            "domain:youtubei.googleapis.com",
-            "domain:youtube-nocookie.com",
-            "domain:youtube.googleapis.com",
-            "domain:youtubeembeddedplayer.googleapis.com",
-            "domain:youtubeeducation.com",
-            "domain:youtubekids.com",
-            "domain:yt3.ggpht.com",
-            "domain:yt.be"
-          ],
-          "skipFallback": true,
-          "queryStrategy": "UseIPv4"
-        },
-        {
           "address": "77.88.8.8",
           "port": 53,
           "tag": "standalone-yandex-direct",
@@ -16035,25 +16282,6 @@
     },
     "dns": {
       "servers": [
-        {
-          "address": "https://dns.adguard-dns.com/dns-query",
-          "domains": [
-            "domain:youtube.com",
-            "domain:youtu.be",
-            "domain:googlevideo.com",
-            "domain:ytimg.com",
-            "domain:youtubei.googleapis.com",
-            "domain:youtube-nocookie.com",
-            "domain:youtube.googleapis.com",
-            "domain:youtubeembeddedplayer.googleapis.com",
-            "domain:youtubeeducation.com",
-            "domain:youtubekids.com",
-            "domain:yt3.ggpht.com",
-            "domain:yt.be"
-          ],
-          "skipFallback": true,
-          "queryStrategy": "UseIPv4"
-        },
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
