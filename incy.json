@@ -1629,7 +1629,18 @@
             "17.253.29.151",
             "17.253.37.195",
             "17.253.29.153",
-            "17.253.37.210"
+            "17.253.37.210",
+            "17.253.39.146",
+            "17.253.39.195",
+            "17.253.39.197",
+            "17.253.39.138",
+            "17.253.39.131",
+            "95.161.252.16",
+            "23.12.156.7",
+            "151.101.3.6",
+            "151.101.67.6",
+            "151.101.131.6",
+            "151.101.195.6"
           ],
           "port": "443",
           "network": "tcp",
@@ -1671,7 +1682,14 @@
             "full:fpinit.itunes.apple.com",
             "full:apptrailers.itunes.apple.com",
             "full:entitlements.itunes.apple.com",
-            "full:is1-ssl.mzstatic.com"
+            "full:is1-ssl.mzstatic.com",
+            "full:se-edge.itunes.apple.com",
+            "full:musicstatus.itunes.apple.com",
+            "full:xp.apple.com",
+            "full:profile.gc.apple.com",
+            "full:stats.gc.apple.com",
+            "full:tr.iadsdk.apple.com",
+            "full:gsp57-ssl-background.ls.apple.com"
           ],
           "balancerTag": "service-fallback-random-pool"
         },
