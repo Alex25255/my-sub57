@@ -1,4 +1,4 @@
-
+[
   {
     "burstObservatory": {
       "pingConfig": {
@@ -1629,6 +1629,17 @@
           "strategy": {
             "type": "random"
           }
+        },
+        {
+          "tag": "service-pornhub-nl-only",
+          "selector": [
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]"
+          ],
+          "fallbackTag": "block",
+          "strategy": {
+            "type": "random"
+          }
         }
       ],
       "domainMatcher": "hybrid",
@@ -2851,7 +2862,7 @@
             "domain:phncdn.com",
             "domain:pornhub.org"
           ],
-          "balancerTag": "service-youtube-nl"
+          "balancerTag": "service-pornhub-nl-only"
         },
         {
           "type": "field",
