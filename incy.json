@@ -1618,30 +1618,10 @@
           "strategy": {
             "type": "random"
           }
-        },
-        {
-          "tag": "service-stores-ru-pro-foreign-fallback",
-          "selector": [
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
         }
       ],
       "domainMatcher": "hybrid",
       "rules": [
-        {
-          "type": "field",
-          "domain": [
-            "full:photos.googleapis.com",
-            "full:photosdata-pa.googleapis.com",
-            "domain:photos.google.com",
-            "domain:photos.googleusercontent.com"
-          ],
-          "balancerTag": "service-stores-ru-pro-foreign-fallback"
-        },
         {
           "type": "field",
           "ip": [
