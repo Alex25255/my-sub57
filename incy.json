@@ -1690,6 +1690,17 @@
         },
         {
           "type": "field",
+          "network": "tcp",
+          "port": "443",
+          "outboundTag": "direct",
+          "ip": [
+            "178.130.128.21",
+            "178.130.128.26",
+            "193.17.93.194"
+          ]
+        },
+        {
+          "type": "field",
           "ip": [
             "77.88.8.8",
             "77.88.8.1"
@@ -2386,7 +2397,8 @@
             "domain:express.ms",
             "domain:vi.ru",
             "domain:passport.yandex.fi",
-            "domain:eda.yandex"
+            "domain:eda.yandex",
+            "domain:t-static-wv.ru"
           ],
           "outboundTag": "direct"
         },
@@ -5856,6 +5868,17 @@
         },
         {
           "type": "field",
+          "network": "tcp",
+          "port": "443",
+          "outboundTag": "direct",
+          "ip": [
+            "178.130.128.21",
+            "178.130.128.26",
+            "193.17.93.194"
+          ]
+        },
+        {
+          "type": "field",
           "domain": [
             "domain:fonbet.ru",
             "domain:fon.bet"
@@ -6512,7 +6535,8 @@
             "domain:express.ms",
             "domain:vi.ru",
             "domain:passport.yandex.fi",
-            "domain:eda.yandex"
+            "domain:eda.yandex",
+            "domain:t-static-wv.ru"
           ],
           "outboundTag": "direct"
         },
