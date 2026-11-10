@@ -1625,6 +1625,22 @@
       "rules": [
         {
           "type": "field",
+          "inboundTag": [
+            "service-fallback-random"
+          ],
+          "balancerTag": "service-fallback-random-pool"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "full:photos.googleapis.com",
+            "full:photosdata-pa.googleapis.com",
+            "domain:photos.google.com"
+          ],
+          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+        },
+        {
+          "type": "field",
           "ip": [
             "151.101.131.6/32",
             "17.253.198.9/32",
@@ -1723,7 +1739,9 @@
             "domain:play-lh.googleusercontent.com",
             "domain:gvt1.com",
             "domain:gvt2.com",
-            "domain:googleusercontent.com"
+            "domain:googleusercontent.com",
+            "full:dl.google.com",
+            "full:dl-ssl.google.com"
           ],
           "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
         },
@@ -1753,13 +1771,6 @@
             "2403:300:a51::/48"
           ],
           "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
-        },
-        {
-          "type": "field",
-          "inboundTag": [
-            "service-fallback-random"
-          ],
-          "balancerTag": "service-fallback-random-pool"
         },
         {
           "type": "field",
