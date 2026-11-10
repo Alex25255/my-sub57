@@ -1620,12 +1620,15 @@
           }
         },
         {
-          "tag": "service-zona-video-eu",
+          "tag": "service-zona-video-7-foreign",
           "selector": [
             "🇳🇱 NL — South Networks Pro (only Mobile)",
             "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
             "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
-            "🇩🇪 DE — South Networks Pro (only Mobile)"
+            "🇺🇸 US — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇯🇵 JP — South Networks Pro (only Mobile)",
+            "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "block",
           "strategy": {
@@ -1808,11 +1811,18 @@
         {
           "type": "field",
           "domain": [
+            "full:w140.zona.plus"
+          ],
+          "balancerTag": "service-fallback-random-pool"
+        },
+        {
+          "type": "field",
+          "domain": [
             "domain:vibio.tv",
             "full:nl105.cdnsqu.com",
             "full:nl215.werkecdn.me"
           ],
-          "balancerTag": "service-zona-video-eu"
+          "balancerTag": "service-zona-video-7-foreign"
         },
         {
           "type": "field",
@@ -1821,7 +1831,7 @@
             "80.77.168.70",
             "80.77.168.49"
           ],
-          "balancerTag": "service-zona-video-eu"
+          "balancerTag": "service-zona-video-7-foreign"
         },
         {
           "type": "field",
