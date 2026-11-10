@@ -1808,7 +1808,9 @@
         {
           "type": "field",
           "domain": [
-            "domain:vibio.tv"
+            "domain:vibio.tv",
+            "full:nl105.cdnsqu.com",
+            "full:nl215.werkecdn.me"
           ],
           "balancerTag": "service-zona-video-eu"
         },
