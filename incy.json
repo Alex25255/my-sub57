@@ -1635,17 +1635,11 @@
       "rules": [
         {
           "type": "field",
-          "inboundTag": [
-            "service-fallback-random"
-          ],
-          "balancerTag": "service-fallback-random-pool"
-        },
-        {
-          "type": "field",
           "domain": [
             "full:photos.googleapis.com",
             "full:photosdata-pa.googleapis.com",
-            "domain:photos.google.com"
+            "domain:photos.google.com",
+            "domain:photos.googleusercontent.com"
           ],
           "balancerTag": "service-stores-ru-only-fallback"
         },
@@ -1749,9 +1743,7 @@
             "domain:play-lh.googleusercontent.com",
             "domain:gvt1.com",
             "domain:gvt2.com",
-            "domain:googleusercontent.com",
-            "full:dl.google.com",
-            "full:dl-ssl.google.com"
+            "domain:googleusercontent.com"
           ],
           "balancerTag": "service-stores-ru-only-fallback"
         },
@@ -1781,6 +1773,13 @@
             "2403:300:a51::/48"
           ],
           "balancerTag": "service-stores-ru-only-fallback"
+        },
+        {
+          "type": "field",
+          "inboundTag": [
+            "service-fallback-random"
+          ],
+          "balancerTag": "service-fallback-random-pool"
         },
         {
           "type": "field",
