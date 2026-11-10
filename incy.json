@@ -1797,6 +1797,20 @@
         {
           "type": "field",
           "domain": [
+            "domain:zona.pub",
+            "domain:zona.im",
+            "domain:zona.plus",
+            "domain:zona.ms",
+            "domain:zon.im",
+            "domain:zona.ru",
+            "domain:zona.movie",
+            "domain:zona.tube"
+          ],
+          "balancerTag": "service-fallback-random-pool"
+        },
+        {
+          "type": "field",
+          "domain": [
             "full:shopping.t-bank-app.ru",
             "full:lifestyle.t-bank-app.ru",
             "full:hotels-growth-feed.t-bank-app.ru",
