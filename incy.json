@@ -1562,7 +1562,8 @@
           "tag": "service-instagram-ru",
           "selector": [
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
-            "🇩🇪 DE — South Networks Pro (only Mobile)"
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇯🇵 JP — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -1618,6 +1619,16 @@
           "strategy": {
             "type": "random"
           }
+        },
+        {
+          "tag": "service-stores-ru-only-fallback",
+          "selector": [
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          ],
+          "fallbackTag": "service-fallback-random-loopback",
+          "strategy": {
+            "type": "random"
+          }
         }
       ],
       "domainMatcher": "hybrid",
@@ -1636,7 +1647,7 @@
             "full:photosdata-pa.googleapis.com",
             "domain:photos.google.com"
           ],
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          "balancerTag": "service-stores-ru-only-fallback"
         },
         {
           "type": "field",
@@ -1649,7 +1660,7 @@
             "17.248.150.9/32",
             "17.248.150.3/32"
           ],
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          "balancerTag": "service-stores-ru-only-fallback"
         },
         {
           "type": "field",
@@ -1657,7 +1668,7 @@
             "17.253.37.202/32",
             "17.253.29.141/32"
           ],
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          "balancerTag": "service-stores-ru-only-fallback"
         },
         {
           "type": "field",
@@ -1679,7 +1690,7 @@
             "151.101.131.6",
             "151.101.195.6"
           ],
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          "balancerTag": "service-stores-ru-only-fallback"
         },
         {
           "type": "field",
@@ -1689,7 +1700,7 @@
             "full:fpinit.itunes.apple.com",
             "full:iosapps.itunes.apple.com"
           ],
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          "balancerTag": "service-stores-ru-only-fallback"
         },
         {
           "type": "field",
@@ -1726,7 +1737,7 @@
             "full:tr.iadsdk.apple.com",
             "full:gsp57-ssl-background.ls.apple.com"
           ],
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          "balancerTag": "service-stores-ru-only-fallback"
         },
         {
           "type": "field",
@@ -1742,7 +1753,7 @@
             "full:dl.google.com",
             "full:dl-ssl.google.com"
           ],
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          "balancerTag": "service-stores-ru-only-fallback"
         },
         {
           "type": "field",
@@ -1759,7 +1770,7 @@
             "domain:itunes.com",
             "domain:push.apple.com"
           ],
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          "balancerTag": "service-stores-ru-only-fallback"
         },
         {
           "type": "field",
@@ -1769,7 +1780,7 @@
             "2403:300:a42::/48",
             "2403:300:a51::/48"
           ],
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          "balancerTag": "service-stores-ru-only-fallback"
         },
         {
           "type": "field",
@@ -1777,7 +1788,7 @@
             "domain:push.apple.com"
           ],
           "network": "tcp",
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          "balancerTag": "service-stores-ru-only-fallback"
         },
         {
           "type": "field",
@@ -1790,7 +1801,7 @@
           ],
           "port": "5223",
           "network": "tcp",
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          "balancerTag": "service-stores-ru-only-fallback"
         },
         {
           "type": "field",
