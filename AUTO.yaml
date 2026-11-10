@@ -1819,11 +1819,10 @@
           "type": "field",
           "domain": [
             "domain:vibio.tv",
-            "full:nl105.cdnsqu.com",
-            "full:nl215.werkecdn.me",
-            "full:nl221.werkecdn.me",
+            "domain:cdnsqu.com",
+            "domain:werkecdn.me",
             "domain:fotpro135alto.com",
-            "full:vid11.sevstar933krop.com"
+            "domain:sevstar933krop.com"
           ],
           "balancerTag": "service-zona-video-7-foreign"
         },
@@ -4320,7 +4319,7 @@
         "tag": "dns-out"
       }
     ],
-    "remarks": "⚡️Авто LTE ТЕСТ • ОБНОВЛЁН 10.11",
+    "remarks": "⚡️Авто обход LTE тест",
     "routing": {
       "balancers": [
         {
