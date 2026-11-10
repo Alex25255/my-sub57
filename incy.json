@@ -1618,6 +1618,22 @@
           "strategy": {
             "type": "random"
           }
+        },
+        {
+          "tag": "service-zona-video-7-foreign",
+          "selector": [
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]",
+            "🇺🇸 US — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇯🇵 JP — South Networks Pro (only Mobile)",
+            "🇰🇿 KZ — South Networks Pro (only Mobile)"
+          ],
+          "fallbackTag": "block",
+          "strategy": {
+            "type": "random"
+          }
         }
       ],
       "domainMatcher": "hybrid",
@@ -1795,16 +1811,30 @@
         {
           "type": "field",
           "domain": [
-            "domain:zona.pub",
-            "domain:zona.im",
-            "domain:zona.plus",
-            "domain:zona.ms",
-            "domain:zon.im",
-            "domain:zona.ru",
-            "domain:zona.movie",
-            "domain:zona.tube"
+            "full:w140.zona.plus"
           ],
           "balancerTag": "service-fallback-random-pool"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:vibio.tv",
+            "full:nl105.cdnsqu.com",
+            "full:nl215.werkecdn.me",
+            "full:nl221.werkecdn.me",
+            "domain:fotpro135alto.com",
+            "full:vid11.sevstar933krop.com"
+          ],
+          "balancerTag": "service-zona-video-7-foreign"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "80.77.168.44",
+            "80.77.168.70",
+            "80.77.168.49"
+          ],
+          "balancerTag": "service-zona-video-7-foreign"
         },
         {
           "type": "field",
