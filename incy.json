@@ -1423,7 +1423,7 @@
         }
       }
     ],
-    "remarks": "⚡️ Авто LTE Lite — iPhone 3 DNS DoH",
+    "remarks": "⚡️Авто обход LTE",
     "routing": {
       "balancers": [
         {
