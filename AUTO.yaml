@@ -15,7 +15,8 @@
         "🇺🇸 US — South Networks Pro (only Mobile)",
         "🇩🇪 DE — South Networks Pro (only Mobile)",
         "🇯🇵 JP — South Networks Pro (only Mobile)",
-        "🇰🇿 KZ — South Networks Pro (only Mobile)"
+        "🇰🇿 KZ — South Networks Pro (only Mobile)",
+        "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
       ]
     },
     "dns": {
@@ -1454,7 +1455,7 @@
         }
       }
     ],
-    "remarks": "⚡️Авто LTE Lite — iPhone",
+    "remarks": "⚡️Авто LTE Lite — iPhone 2",
     "routing": {
       "balancers": [
         {
@@ -17794,49 +17795,4 @@
             "domain:pyaterochka.ru",
             "domain:chizhik.ru",
             "domain:okolo.app",
-            "domain:clubx5.ru",
-            "domain:idx5.ru",
-            "domain:5post.market",
-            "domain:x5.com",
-            "domain:sberbank.com",
-            "domain:sbrf.ru",
-            "domain:t-bank-app.ru",
-            "domain:data-tscbank.ru",
-            "domain:alfabank.com",
-            "domain:vtb.com",
-            "domain:psbinvest.ru",
-            "domain:openbank.ru",
-            "domain:mir-connect.ru",
-            "domain:yookassa.ru",
-            "domain:cloudpayments.ru",
-            "domain:payecom.ru",
-            "domain:platiecom.ru",
-            "domain:ivi.tv",
-            "domain:rutube.sport",
-            "domain:tvgateway.ru",
-            "domain:yotaplay.ru",
-            "domain:russia.tv",
-            "domain:ren.tv",
-            "domain:2gis.tech",
-            "domain:max-messenger.ru",
-            "domain:sbermobile.ru",
-            "domain:mtsmusic.ru",
-            "domain:megamarket.tech",
-            "domain:sbermarket.ru",
-            "domain:dodo.ru",
-            "domain:express.ms",
-            "domain:vi.ru"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "🇷🇺 Обход РЕЗЕРВ LTE"
-        }
-      ],
-      "domainStrategy": "AsIs",
-      "balancers": []
-    }
-  }
-]
+            "domain:clu
