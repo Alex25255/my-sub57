@@ -1455,7 +1455,7 @@
         }
       }
     ],
-    "remarks": "⚡️Авто LTE Lite — iPhone 2",
+    "remarks": "⚡️ Авто LTE Lite — iPhone 3",
     "routing": {
       "balancers": [
         {
@@ -1526,80 +1526,10 @@
           }
         },
         {
-          "tag": "service-spotify-kz",
-          "selector": [
-            "🇰🇿 KZ — South Networks Pro (only Mobile)"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
-          "tag": "service-gemini-de",
-          "selector": [
-            "🇩🇪 DE — South Networks Pro (only Mobile)"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
           "tag": "service-instagram-ru",
           "selector": [
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
             "🇩🇪 DE — South Networks Pro (only Mobile)"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
-          "tag": "service-chatgpt-de",
-          "selector": [
-            "🇩🇪 DE — South Networks Pro (only Mobile)"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
-          "tag": "service-supercell-de-nl",
-          "selector": [
-            "🇺🇸 US — South Networks Pro (only Mobile)"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
-          "tag": "service-twitch-us",
-          "selector": [
-            "🇺🇸 US — South Networks Pro (only Mobile)"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
-          "tag": "service-discord-kz",
-          "selector": [
-            "🇰🇿 KZ — South Networks Pro (only Mobile)"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
-          "tag": "service-tiktok-jp",
-          "selector": [
-            "🇯🇵 JP — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -2603,7 +2533,7 @@
           "type": "field",
           "network": "tcp,udp",
           "port": "9339",
-          "balancerTag": "service-supercell-de-nl"
+          "outboundTag": "🇺🇸 US — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -2625,7 +2555,7 @@
             "domain:byteimg.com",
             "domain:snssdk.com"
           ],
-          "balancerTag": "service-tiktok-jp"
+          "outboundTag": "🇯🇵 JP — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -2650,7 +2580,7 @@
             "domain:discordsays.com",
             "domain:discordsez.com"
           ],
-          "balancerTag": "service-discord-kz"
+          "outboundTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -2671,7 +2601,7 @@
             "domain:ds0h3roq6wcgc.cloudfront.net",
             "domain:d2nvs31859zcd8.cloudfront.net"
           ],
-          "balancerTag": "service-twitch-us"
+          "outboundTag": "🇺🇸 US — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -2692,7 +2622,7 @@
             "full:o207216.ingest.sentry.io",
             "full:o33249.ingest.sentry.io"
           ],
-          "balancerTag": "service-chatgpt-de"
+          "outboundTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -2710,7 +2640,7 @@
             "full:supercell.zendesk.com",
             "full:api.quago.io"
           ],
-          "balancerTag": "service-supercell-de-nl"
+          "outboundTag": "🇺🇸 US — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -2766,7 +2696,7 @@
             "18.239.18.71/32",
             "18.239.18.72/32"
           ],
-          "balancerTag": "service-supercell-de-nl"
+          "outboundTag": "🇺🇸 US — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -2792,7 +2722,7 @@
             "full:spotify.map.fastlylb.net",
             "full:video-akpcw-cdn-spotify-com.akamaized.net"
           ],
-          "balancerTag": "service-spotify-kz"
+          "outboundTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -2894,7 +2824,7 @@
             "full:notifications-pa.googleapis.com",
             "full:signaler-pa.googleapis.com"
           ],
-          "balancerTag": "service-gemini-de"
+          "outboundTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -3030,7 +2960,7 @@
       ],
       "domainStrategy": "IPOnDemand"
     },
-    "admin_display_name": "⚡️Авто LTE Lite — iPhone"
+    "admin_display_name": "⚡️ Авто LTE Lite — iPhone 3"
   },
   {
     "burstObservatory": {
