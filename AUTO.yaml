@@ -23,7 +23,7 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "skipFallback": true,
           "domains": [
             "domain:mirra.now",
@@ -31,7 +31,7 @@
           ]
         },
         {
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -655,7 +655,10 @@
       "queryStrategy": "UseIPv4",
       "tag": "dns",
       "disableFallbackIfMatch": true,
-      "useSystemHosts": false
+      "useSystemHosts": false,
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "inbounds": [
       {
@@ -2986,7 +2989,7 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "skipFallback": true,
           "domains": [
             "domain:mirra.now",
@@ -2994,7 +2997,7 @@
           ]
         },
         {
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -3631,7 +3634,10 @@
       "queryStrategy": "UseIPv4",
       "tag": "dns",
       "disableFallbackIfMatch": true,
-      "useSystemHosts": false
+      "useSystemHosts": false,
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "inbounds": [
       {
@@ -5121,7 +5127,7 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "skipFallback": true,
           "domains": [
             "domain:mirra.now",
@@ -5129,7 +5135,7 @@
           ]
         },
         {
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -5768,7 +5774,10 @@
       "queryStrategy": "UseIPv4",
       "tag": "dns",
       "disableFallbackIfMatch": true,
-      "useSystemHosts": false
+      "useSystemHosts": false,
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "inbounds": [
       {
@@ -6966,8 +6975,7 @@
       "queryStrategy": "UseIPv4",
       "servers": [
         {
-          "address": "77.88.8.8",
-          "port": 53,
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "tag": "standalone-yandex-direct",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -7477,7 +7485,10 @@
         "https://8.8.8.8/dns-query",
         "https://1.1.1.1/dns-query"
       ],
-      "disableFallbackIfMatch": true
+      "disableFallbackIfMatch": true,
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "inbounds": [
       {
@@ -8360,14 +8371,14 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "skipFallback": true,
           "domains": [
             "domain:mirra.systems"
           ]
         },
         {
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -9003,7 +9014,10 @@
       ],
       "queryStrategy": "UseIPv4",
       "tag": "dns",
-      "disableFallbackIfMatch": true
+      "disableFallbackIfMatch": true,
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "outbounds": [
       {
@@ -9990,7 +10004,7 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "skipFallback": true,
           "domains": [
             "domain:mirra.now",
@@ -9998,7 +10012,7 @@
           ]
         },
         {
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -10635,7 +10649,10 @@
       "queryStrategy": "UseIPv4",
       "tag": "standalone-dns",
       "disableFallbackIfMatch": true,
-      "useSystemHosts": false
+      "useSystemHosts": false,
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "routing": {
       "domainStrategy": "AsIs",
@@ -11525,14 +11542,14 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "skipFallback": true,
           "domains": [
             "domain:mirra.systems"
           ]
         },
         {
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -12168,7 +12185,10 @@
       ],
       "queryStrategy": "UseIPv4",
       "tag": "dns",
-      "disableFallbackIfMatch": true
+      "disableFallbackIfMatch": true,
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "outbounds": [
       {
@@ -13093,14 +13113,14 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "skipFallback": true,
           "domains": [
             "domain:mirra.systems"
           ]
         },
         {
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -13736,7 +13756,10 @@
       ],
       "queryStrategy": "UseIPv4",
       "tag": "dns",
-      "disableFallbackIfMatch": true
+      "disableFallbackIfMatch": true,
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "outbounds": [
       {
@@ -14725,8 +14748,7 @@
       "tag": "standalone-dns",
       "servers": [
         {
-          "address": "77.88.8.8",
-          "port": 53,
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "tag": "standalone-yandex-direct",
           "queryStrategy": "UseIPv4",
           "domains": [
@@ -15355,7 +15377,10 @@
           "tag": "standalone-google-vpn",
           "queryStrategy": "UseIPv4"
         }
-      ]
+      ],
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "routing": {
       "domainStrategy": "AsIs",
@@ -16235,14 +16260,14 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "skipFallback": true,
           "domains": [
             "domain:mirra.systems"
           ]
         },
         {
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -16878,7 +16903,10 @@
       ],
       "queryStrategy": "UseIPv4",
       "tag": "dns",
-      "disableFallbackIfMatch": true
+      "disableFallbackIfMatch": true,
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "outbounds": [
       {
