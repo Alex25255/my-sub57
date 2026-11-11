@@ -642,12 +642,12 @@
           ]
         },
         {
-          "address": "https://1.1.1.1/dns-query",
+          "address": "1.1.1.1",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "https://8.8.8.8/dns-query",
+          "address": "8.8.8.8",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -1455,7 +1455,7 @@
         }
       }
     ],
-    "remarks": "⚡️ Авто LTE Lite — iPhone 3",
+    "remarks": "⚡️ Авто LTE Lite — iPhone 3 DNS UDP",
     "routing": {
       "balancers": [
         {
@@ -2960,7 +2960,7 @@
       ],
       "domainStrategy": "IPOnDemand"
     },
-    "admin_display_name": "⚡️ Авто LTE Lite — iPhone 3"
+    "admin_display_name": "⚡️ Авто LTE Lite — iPhone 3 DNS UDP"
   },
   {
     "burstObservatory": {
