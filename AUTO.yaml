@@ -4,8 +4,8 @@
       "pingConfig": {
         "destination": "http://www.gstatic.com/generate_204",
         "httpMethod": "HEAD",
-        "interval": "1m",
-        "sampling": 2,
+        "interval": "3m",
+        "sampling": 1,
         "timeout": "5s"
       },
       "subjectSelector": [
@@ -15,21 +15,7 @@
         "🇺🇸 US — South Networks Pro (only Mobile)",
         "🇩🇪 DE — South Networks Pro (only Mobile)",
         "🇯🇵 JP — South Networks Pro (only Mobile)",
-        "🇰🇿 KZ — South Networks Pro (only Mobile)",
-        "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
-        "🇷🇺 Белый интернет #1 | Все операторы",
-        "🇷🇺 Белый интернет #2 | Все операторы",
-        "🇷🇺 Белый интернет #3 | Все операторы",
-        "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС",
-        "🇷🇺 Белый интернет #5 | Билайн / Теле2 / МТС",
-        "🇷🇺 Белый интернет #6 | Все операторы",
-        "🇷🇺 Белый интернет #8 | Все операторы",
-        "🇷🇺 Белый интернет #9 | Все операторы",
-        "🇷🇺 Белый интернет #10 | Все операторы",
-        "🇷🇺 Белый интернет #11 | Билайн / Теле2",
-        "🇷🇺 Белый интернет #12 | Все операторы",
-        "🇷🇺 Белый интернет #13 | Все операторы",
-        "🇷🇺 Белый интернет #14 | Все операторы"
+        "🇰🇿 KZ — South Networks Pro (only Mobile)"
       ]
     },
     "dns": {
@@ -1468,7 +1454,7 @@
         }
       }
     ],
-    "remarks": "⚡️Авто обход глушилок LTE",
+    "remarks": "⚡️Авто LTE Lite — iPhone",
     "routing": {
       "balancers": [
         {
@@ -3043,7 +3029,7 @@
       ],
       "domainStrategy": "IPOnDemand"
     },
-    "admin_display_name": "⚡️Авто обход  LTE"
+    "admin_display_name": "⚡️Авто LTE Lite — iPhone"
   },
   {
     "burstObservatory": {
