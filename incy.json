@@ -1423,7 +1423,7 @@
         }
       }
     ],
-    "remarks": "⚡️Авто обход LTE",
+    "remarks": "⚡️⚡️Авто обход LTE",
     "routing": {
       "balancers": [
         {
@@ -2667,7 +2667,7 @@
       ],
       "domainStrategy": "IPOnDemand"
     },
-    "admin_display_name": "⚡️ Авто LTE Lite — iPhone 3 DNS DoH"
+    "admin_display_name": "⚡️⚡️Авто обход LTE"
   },
   {
     "burstObservatory": {
