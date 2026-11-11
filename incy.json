@@ -1597,7 +1597,7 @@
             "domain:push.apple.com"
           ],
           "network": "tcp",
-          "balancerTag": "apple-push-ru-13"
+          "balancerTag": "service-fallback-random-pool"
         },
         {
           "type": "field",
@@ -1610,7 +1610,7 @@
           ],
           "port": "5223",
           "network": "tcp",
-          "balancerTag": "apple-push-ru-13"
+          "balancerTag": "service-fallback-random-pool"
         },
         {
           "type": "field",
