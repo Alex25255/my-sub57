@@ -3618,12 +3618,12 @@
           ]
         },
         {
-          "address": "https://1.1.1.1/dns-query",
+          "address": "1.1.1.1",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "https://8.8.8.8/dns-query",
+          "address": "8.8.8.8",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -5755,12 +5755,12 @@
           ]
         },
         {
-          "address": "https://1.1.1.1/dns-query",
+          "address": "1.1.1.1",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "https://8.8.8.8/dns-query",
+          "address": "8.8.8.8",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -8991,12 +8991,12 @@
           ]
         },
         {
-          "address": "https://1.1.1.1/dns-query",
+          "address": "1.1.1.1",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "https://8.8.8.8/dns-query",
+          "address": "8.8.8.8",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -10622,12 +10622,12 @@
           ]
         },
         {
-          "address": "https://1.1.1.1/dns-query",
+          "address": "1.1.1.1",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "https://8.8.8.8/dns-query",
+          "address": "8.8.8.8",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -12156,12 +12156,12 @@
           ]
         },
         {
-          "address": "https://1.1.1.1/dns-query",
+          "address": "1.1.1.1",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "https://8.8.8.8/dns-query",
+          "address": "8.8.8.8",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -13724,12 +13724,12 @@
           ]
         },
         {
-          "address": "https://1.1.1.1/dns-query",
+          "address": "1.1.1.1",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "https://8.8.8.8/dns-query",
+          "address": "8.8.8.8",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -15351,7 +15351,7 @@
           "skipFallback": true
         },
         {
-          "address": "https://8.8.8.8/dns-query",
+          "address": "8.8.8.8",
           "tag": "standalone-google-vpn",
           "queryStrategy": "UseIPv4"
         }
@@ -16866,12 +16866,12 @@
           ]
         },
         {
-          "address": "https://1.1.1.1/dns-query",
+          "address": "1.1.1.1",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "https://8.8.8.8/dns-query",
+          "address": "8.8.8.8",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
