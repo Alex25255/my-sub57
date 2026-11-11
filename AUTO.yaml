@@ -642,12 +642,12 @@
           ]
         },
         {
-          "address": "1.1.1.1",
+          "address": "https://1.1.1.1/dns-query",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "8.8.8.8",
+          "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -1455,7 +1455,7 @@
         }
       }
     ],
-    "remarks": "⚡️ Авто LTE Lite — iPhone 3 DNS UDP",
+    "remarks": "⚡️ Авто LTE Lite — iPhone 3 DNS DoH",
     "routing": {
       "balancers": [
         {
@@ -2960,7 +2960,7 @@
       ],
       "domainStrategy": "IPOnDemand"
     },
-    "admin_display_name": "⚡️ Авто LTE Lite — iPhone 3 DNS UDP"
+    "admin_display_name": "⚡️ Авто LTE Lite — iPhone 3 DNS DoH"
   },
   {
     "burstObservatory": {
@@ -3618,12 +3618,12 @@
           ]
         },
         {
-          "address": "1.1.1.1",
+          "address": "https://1.1.1.1/dns-query",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "8.8.8.8",
+          "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -5755,12 +5755,12 @@
           ]
         },
         {
-          "address": "1.1.1.1",
+          "address": "https://1.1.1.1/dns-query",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "8.8.8.8",
+          "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -8991,12 +8991,12 @@
           ]
         },
         {
-          "address": "1.1.1.1",
+          "address": "https://1.1.1.1/dns-query",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "8.8.8.8",
+          "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -10622,12 +10622,12 @@
           ]
         },
         {
-          "address": "1.1.1.1",
+          "address": "https://1.1.1.1/dns-query",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "8.8.8.8",
+          "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -12156,12 +12156,12 @@
           ]
         },
         {
-          "address": "1.1.1.1",
+          "address": "https://1.1.1.1/dns-query",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "8.8.8.8",
+          "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -13724,12 +13724,12 @@
           ]
         },
         {
-          "address": "1.1.1.1",
+          "address": "https://1.1.1.1/dns-query",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "8.8.8.8",
+          "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -15351,7 +15351,7 @@
           "skipFallback": true
         },
         {
-          "address": "8.8.8.8",
+          "address": "https://8.8.8.8/dns-query",
           "tag": "standalone-google-vpn",
           "queryStrategy": "UseIPv4"
         }
@@ -16866,12 +16866,12 @@
           ]
         },
         {
-          "address": "1.1.1.1",
+          "address": "https://1.1.1.1/dns-query",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "8.8.8.8",
+          "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
