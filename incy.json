@@ -36,7 +36,7 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "skipFallback": true,
           "domains": [
             "domain:mirra.now",
@@ -44,7 +44,7 @@
           ]
         },
         {
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -3069,7 +3069,7 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "skipFallback": true,
           "domains": [
             "domain:mirra.now",
@@ -3077,7 +3077,7 @@
           ]
         },
         {
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -5204,7 +5204,7 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "skipFallback": true,
           "domains": [
             "domain:mirra.now",
@@ -5212,7 +5212,7 @@
           ]
         },
         {
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -7049,7 +7049,7 @@
       "queryStrategy": "UseIPv4",
       "servers": [
         {
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "port": 53,
           "tag": "standalone-yandex-direct",
           "queryStrategy": "UseIPv4",
@@ -8443,14 +8443,14 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "skipFallback": true,
           "domains": [
             "domain:mirra.systems"
           ]
         },
         {
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -10073,7 +10073,7 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "skipFallback": true,
           "domains": [
             "domain:mirra.now",
@@ -10081,7 +10081,7 @@
           ]
         },
         {
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -11608,14 +11608,14 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "skipFallback": true,
           "domains": [
             "domain:mirra.systems"
           ]
         },
         {
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -13176,14 +13176,14 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "skipFallback": true,
           "domains": [
             "domain:mirra.systems"
           ]
         },
         {
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -14808,7 +14808,7 @@
       "tag": "standalone-dns",
       "servers": [
         {
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "port": 53,
           "tag": "standalone-yandex-direct",
           "queryStrategy": "UseIPv4",
@@ -16318,14 +16318,14 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "skipFallback": true,
           "domains": [
             "domain:mirra.systems"
           ]
         },
         {
-          "address": "77.88.8.8",
+          "address": "https://common.dot.dns.yandex.net/dns-query",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
