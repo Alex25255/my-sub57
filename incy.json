@@ -4,8 +4,8 @@
       "pingConfig": {
         "destination": "http://www.gstatic.com/generate_204",
         "httpMethod": "HEAD",
-        "interval": "1m",
-        "sampling": 2,
+        "interval": "5m",
+        "sampling": 1,
         "timeout": "5s"
       },
       "subjectSelector": [
@@ -16,20 +16,7 @@
         "🇩🇪 DE — South Networks Pro (only Mobile)",
         "🇯🇵 JP — South Networks Pro (only Mobile)",
         "🇰🇿 KZ — South Networks Pro (only Mobile)",
-        "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
-        "🇷🇺 Белый интернет #1 | Все операторы",
-        "🇷🇺 Белый интернет #2 | Все операторы",
-        "🇷🇺 Белый интернет #3 | Все операторы",
-        "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС",
-        "🇷🇺 Белый интернет #5 | Билайн / Теле2 / МТС",
-        "🇷🇺 Белый интернет #6 | Все операторы",
-        "🇷🇺 Белый интернет #8 | Все операторы",
-        "🇷🇺 Белый интернет #9 | Все операторы",
-        "🇷🇺 Белый интернет #10 | Все операторы",
-        "🇷🇺 Белый интернет #11 | Билайн / Теле2",
-        "🇷🇺 Белый интернет #12 | Все операторы",
-        "🇷🇺 Белый интернет #13 | Все операторы",
-        "🇷🇺 Белый интернет #14 | Все операторы"
+        "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
       ]
     },
     "dns": {
@@ -77,17 +64,11 @@
             "domain:yoomoney.com",
             "domain:yoomoney.net",
             "domain:tbank.ru",
-            "domain:www.tbank.ru",
             "domain:tinkoff.ru",
-            "domain:www.tinkoff.ru",
-            "domain:api.tbank.ru",
-            "domain:static.tbank.ru",
-            "domain:cdn.tbank.ru",
             "domain:tbankid.ru",
             "domain:1tv.ru",
             "domain:2gis.com",
             "domain:2gis.ru",
-            "domain:5d.5ka.ru",
             "domain:5ka.ru",
             "domain:aeroflot.ru",
             "domain:aif.ru",
@@ -96,7 +77,6 @@
             "domain:alfabank.ru",
             "domain:alfastrah.ru",
             "domain:api.inappstory.ru",
-            "domain:api.x5.ru",
             "domain:apteka.ru",
             "domain:auchan.ru",
             "domain:auth-nsdi.ru",
@@ -117,13 +97,11 @@
             "domain:burgerking.ru",
             "domain:cbr.ru",
             "domain:cdn.inappstory.ru",
-            "domain:cdn.vseinstrumenti.ru",
             "domain:chestnyznak.ru",
             "domain:chibbis.ru",
             "domain:cian.ru",
             "domain:citilink.ru",
             "domain:citydrive.ru",
-            "domain:council.gov.ru",
             "domain:crpt.ru",
             "domain:dash.cloudflare.com",
             "domain:delimobil.ru",
@@ -140,18 +118,14 @@
             "domain:dpd.ru",
             "domain:drive2.ru",
             "domain:drom.ru",
-            "domain:duma.gov.ru",
             "domain:dzen.ru",
             "domain:eapteka.ru",
-            "domain:ecom-cdn.x5media.ru",
             "domain:eldorado.ru",
             "domain:emias.info",
             "domain:epicgames.com",
             "domain:epicgames.dev",
             "domain:epicgamescdn.com",
-            "domain:epp.genproc.gov.ru",
             "domain:ertelecom.ru",
-            "domain:event-stream-api.magnit.ru",
             "domain:fcmtoken.googleapis.com",
             "domain:fivepost.ru",
             "domain:fix-price.com",
@@ -166,12 +140,9 @@
             "domain:gosuslugi.ru",
             "domain:government.ru",
             "domain:grandtrain.ru",
-            "domain:gw-fb5.x5.ru",
-            "domain:gw-fl5.x5.ru",
             "domain:help.ufanet.ru",
             "domain:hh.ru",
             "domain:hoff.ru",
-            "domain:image.mm.ru",
             "domain:ingos.ru",
             "domain:ivi.ru",
             "domain:iz.ru",
@@ -200,7 +171,6 @@
             "domain:mail.ru",
             "domain:matchtv.ru",
             "domain:max.ru",
-            "domain:mchs.gov.ru",
             "domain:megafon.ru",
             "domain:megamarket.ru",
             "domain:metro-cc.ru",
@@ -208,7 +178,6 @@
             "domain:mgnt.ru",
             "domain:mk.ru",
             "domain:mm.ru",
-            "domain:mobile-api.mm.ru",
             "domain:moex.com",
             "domain:mos.ru",
             "domain:mosmetro.ru",
@@ -223,10 +192,8 @@
             "domain:mybook.ru",
             "domain:mycdn.me",
             "domain:myspar.ru",
-            "domain:nalog.gov.ru",
             "domain:nordwindairlines.ru",
             "domain:ntv.ru",
-            "domain:observability.x5.ru",
             "domain:ok.ru",
             "domain:okcdn.ru",
             "domain:okko.ru",
@@ -244,7 +211,6 @@
             "domain:pochta.ru",
             "domain:premier.one",
             "domain:profi.ru",
-            "domain:proxy.mob.maps.yandex.net",
             "domain:psbank.ru",
             "domain:rabota.ru",
             "domain:rambler.ru",
@@ -268,7 +234,6 @@
             "domain:rzd.ru",
             "domain:s7.ru",
             "domain:samokat.ru",
-            "domain:sba.yandex.net",
             "domain:sferum.ru",
             "domain:smotreshka.tv",
             "domain:smotrim.ru",
@@ -276,7 +241,6 @@
             "domain:sogaz.ru",
             "domain:sravni.ru",
             "domain:start.ru",
-            "domain:static.vseinstrumenti.ru",
             "domain:superjob.ru",
             "domain:sutochno.ru",
             "domain:t2.ru",
@@ -302,14 +266,12 @@
             "domain:vseinstrumenty.ru",
             "domain:vsk.ru",
             "domain:vtb.ru",
-            "domain:vybory.gov.ru",
             "domain:wb.ru",
             "domain:whoosh.bike",
             "domain:wifire.ru",
             "domain:wildberries.ru",
             "domain:wink.ru",
             "domain:worldoftanks.ru",
-            "domain:x5m.x5.ru",
             "domain:xn--80ajghhoc2aj1c8b.xn--p1ai",
             "domain:xn--80aqf2ac.xn--p1ai",
             "domain:xn--90acagbhgpca7c8c7f.xn--p1ai",
@@ -325,19 +287,10 @@
             "domain:youla.ru",
             "domain:zarplata.ru",
             "domain:zvuk.com",
-            "domain:pay.yoomoney.ru",
-            "domain:client.yoomoney.ru",
-            "domain:static.yoomoney.ru",
-            "domain:money.yandex.ru",
-            "domain:qr.nspk.ru",
-            "domain:sbp.nspk.ru",
             "domain:mironline.tech",
             "domain:mirconnect.ru",
             "domain:vkuseraudio.ru",
             "domain:vkapps.ru",
-            "domain:api.vk.com",
-            "domain:static.vk.com",
-            "domain:ads.vk.com",
             "domain:onf.ru",
             "domain:open.ru",
             "domain:otpbank.ru",
@@ -555,7 +508,6 @@
             "domain:sberbank.ru",
             "domain:sber.ru",
             "domain:burgerkingrus.ru",
-            "domain:wink.rt.ru",
             "domain:ngenix.net",
             "domain:restream.ru",
             "domain:restream-media.net",
@@ -668,7 +620,10 @@
       "queryStrategy": "UseIPv4",
       "tag": "dns",
       "disableFallbackIfMatch": true,
-      "useSystemHosts": false
+      "useSystemHosts": false,
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "inbounds": [
       {
@@ -1468,7 +1423,7 @@
         }
       }
     ],
-    "remarks": "⚡️Авто обход глушилок LTE",
+    "remarks": "⚡️ Авто LTE Lite — iPhone 3 DNS DoH",
     "routing": {
       "balancers": [
         {
@@ -1539,80 +1494,10 @@
           }
         },
         {
-          "tag": "service-spotify-kz",
-          "selector": [
-            "🇰🇿 KZ — South Networks Pro (only Mobile)"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
-          "tag": "service-gemini-de",
-          "selector": [
-            "🇩🇪 DE — South Networks Pro (only Mobile)"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
           "tag": "service-instagram-ru",
           "selector": [
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
             "🇩🇪 DE — South Networks Pro (only Mobile)"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
-          "tag": "service-chatgpt-de",
-          "selector": [
-            "🇩🇪 DE — South Networks Pro (only Mobile)"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
-          "tag": "service-supercell-de-nl",
-          "selector": [
-            "🇺🇸 US — South Networks Pro (only Mobile)"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
-          "tag": "service-twitch-us",
-          "selector": [
-            "🇺🇸 US — South Networks Pro (only Mobile)"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
-          "tag": "service-discord-kz",
-          "selector": [
-            "🇰🇿 KZ — South Networks Pro (only Mobile)"
-          ],
-          "fallbackTag": "service-fallback-random-loopback",
-          "strategy": {
-            "type": "random"
-          }
-        },
-        {
-          "tag": "service-tiktok-jp",
-          "selector": [
-            "🇯🇵 JP — South Networks Pro (only Mobile)"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
@@ -1663,21 +1548,9 @@
             "17.250.81.26/32",
             "17.250.81.18/32",
             "17.248.150.9/32",
-            "17.248.150.3/32"
-          ],
-          "balancerTag": "service-fallback-random-pool"
-        },
-        {
-          "type": "field",
-          "ip": [
+            "17.248.150.3/32",
             "17.253.37.202/32",
-            "17.253.29.141/32"
-          ],
-          "balancerTag": "service-fallback-random-pool"
-        },
-        {
-          "type": "field",
-          "ip": [
+            "17.253.29.141/32",
             "17.253.37.205",
             "17.253.29.151",
             "17.253.37.195",
@@ -1692,7 +1565,6 @@
             "23.12.156.7",
             "151.101.3.6",
             "151.101.67.6",
-            "151.101.131.6",
             "151.101.195.6"
           ],
           "balancerTag": "service-fallback-random-pool"
@@ -1700,69 +1572,19 @@
         {
           "type": "field",
           "domain": [
-            "full:bag.itunes.apple.com",
-            "full:amp-api-edge.apps.apple.com",
-            "full:fpinit.itunes.apple.com",
-            "full:iosapps.itunes.apple.com"
-          ],
-          "balancerTag": "service-fallback-random-pool"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:apps.apple.com",
-            "domain:itunes.apple.com",
             "domain:mzstatic.com",
             "domain:cdn-apple.com",
-            "domain:iosapps.itunes.apple.com",
-            "domain:osxapps.itunes.apple.com",
-            "domain:aod.itunes.apple.com",
-            "domain:buy.itunes.apple.com",
-            "domain:su.itunes.apple.com",
-            "domain:ppq.apple.com",
-            "domain:appstoreconnect.apple.com",
-            "domain:appstore.apple.com",
             "domain:itunes-apple.com",
             "domain:apple.com.edgekey.net",
-            "full:amp-api-edge.apps.apple.com",
-            "full:amp-api-search-edge.apps.apple.com",
-            "full:amp-api.apps.apple.com",
-            "full:sf-api-token-service.itunes.apple.com",
-            "full:bag.itunes.apple.com",
-            "full:pd.itunes.apple.com",
-            "full:fpinit.itunes.apple.com",
-            "full:apptrailers.itunes.apple.com",
-            "full:entitlements.itunes.apple.com",
-            "full:is1-ssl.mzstatic.com",
-            "full:se-edge.itunes.apple.com",
-            "full:musicstatus.itunes.apple.com",
-            "full:xp.apple.com",
-            "full:profile.gc.apple.com",
-            "full:stats.gc.apple.com",
-            "full:tr.iadsdk.apple.com",
-            "full:gsp57-ssl-background.ls.apple.com"
-          ],
-          "balancerTag": "service-fallback-random-pool"
-        },
-        {
-          "type": "field",
-          "domain": [
             "domain:play.google.com",
             "domain:android.clients.google.com",
             "domain:play.googleapis.com",
             "domain:play-fe.googleapis.com",
-            "domain:play-lh.googleusercontent.com",
             "domain:gvt1.com",
             "domain:gvt2.com",
             "domain:googleusercontent.com",
             "full:dl.google.com",
-            "full:dl-ssl.google.com"
-          ],
-          "balancerTag": "service-fallback-random-pool"
-        },
-        {
-          "type": "field",
-          "domain": [
+            "full:dl-ssl.google.com",
             "domain:apple.com",
             "domain:icloud.com",
             "domain:icloud-content.com",
@@ -1770,10 +1592,7 @@
             "domain:apple-cloudkit.com",
             "domain:me.com",
             "domain:mac.com",
-            "domain:cdn-apple.com",
-            "domain:mzstatic.com",
-            "domain:itunes.com",
-            "domain:push.apple.com"
+            "domain:itunes.com"
           ],
           "balancerTag": "service-fallback-random-pool"
         },
@@ -1856,20 +1675,12 @@
           "domain": [
             "domain:t-bank-app.su",
             "full:fingerprint.t-static-wv.ru",
-            "full:ded-pwa-static-pages.t-static-wv.ru"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
+            "full:ded-pwa-static-pages.t-static-wv.ru",
             "domain:mapi.yota.ru",
             "domain:appmetrica.yandex.net",
             "domain:mc.yandex.ru",
             "domain:proxy.mob.maps.yandex.net",
             "domain:tracker-api.vk-analytics.ru",
-            "domain:ts.tracker-api.vk-analytics.ru",
-            "domain:ip4.tracker-api.vk-analytics.ru",
             "domain:uaas.yandex.ru",
             "domain:webmode.yota.ru",
             "domain:adstat.yandex.ru",
@@ -1910,13 +1721,7 @@
           "type": "field",
           "ip": [
             "77.88.8.8",
-            "77.88.8.1"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "ip": [
+            "77.88.8.1",
             "10.0.0.0/8",
             "172.16.0.0/12",
             "192.168.0.0/16",
@@ -1967,13 +1772,7 @@
             "domain:okkoapi.tv",
             "domain:kion.ru",
             "domain:start.ru",
-            "domain:premier.one"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
+            "domain:premier.one",
             "domain:kinopoisk.ru",
             "domain:hd-kinopoisk.ru",
             "domain:hd-kinopoisk.com",
@@ -1981,47 +1780,15 @@
             "domain:kinopoisk.sport",
             "domain:hd.ru",
             "domain:mykp.ru",
-            "domain:kp.yandex.net",
-            "domain:strm.yandex.net",
-            "domain:strm.yandex.ru",
-            "domain:strm-playlists.kp.yandex.net",
             "full:strm-ott.akamaized.net",
-            "domain:ott.yandex.ru",
-            "domain:video.yandex.net",
-            "domain:proxy.video.yandex.net",
-            "domain:cdn.yandex.net",
-            "domain:cdn.cloud.yandex.net",
-            "domain:yccdn.cloud.yandex.net",
-            "domain:storage.mds.yandex.net",
-            "domain:mds.yandex.net",
-            "domain:api.plus.kinopoisk.ru"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
             "domain:fonbet.ru",
-            "domain:fon.bet"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
+            "domain:fon.bet",
             "domain:wink.ru",
             "domain:burgerking.ru",
             "domain:burgerkingrus.ru",
-            "domain:wink.rt.ru",
             "domain:ngenix.net",
             "domain:restream.ru",
-            "domain:restream-media.net"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
+            "domain:restream-media.net",
             "domain:vk.com",
             "domain:vk.ru",
             "domain:vkontakte.ru",
@@ -2050,17 +1817,11 @@
             "domain:yoomoney.com",
             "domain:yoomoney.net",
             "domain:tbank.ru",
-            "domain:www.tbank.ru",
             "domain:tinkoff.ru",
-            "domain:www.tinkoff.ru",
-            "domain:api.tbank.ru",
-            "domain:static.tbank.ru",
-            "domain:cdn.tbank.ru",
             "domain:tbankid.ru",
             "domain:1tv.ru",
             "domain:2gis.com",
             "domain:2gis.ru",
-            "domain:5d.5ka.ru",
             "domain:5ka.ru",
             "domain:aeroflot.ru",
             "domain:aif.ru",
@@ -2069,7 +1830,6 @@
             "domain:alfabank.ru",
             "domain:alfastrah.ru",
             "domain:api.inappstory.ru",
-            "domain:api.x5.ru",
             "domain:apteka.ru",
             "domain:auchan.ru",
             "domain:auth-nsdi.ru",
@@ -2082,16 +1842,13 @@
             "domain:beeline.ru",
             "domain:belkacar.ru",
             "domain:boxberry.ru",
-            "domain:burgerking.ru",
             "domain:cbr.ru",
             "domain:cdn.inappstory.ru",
-            "domain:cdn.vseinstrumenti.ru",
             "domain:chestnyznak.ru",
             "domain:chibbis.ru",
             "domain:cian.ru",
             "domain:citilink.ru",
             "domain:citydrive.ru",
-            "domain:council.gov.ru",
             "domain:crpt.ru",
             "domain:delimobil.ru",
             "domain:delivery-club.ru",
@@ -2107,15 +1864,11 @@
             "domain:dpd.ru",
             "domain:drive2.ru",
             "domain:drom.ru",
-            "domain:duma.gov.ru",
             "domain:dzen.ru",
             "domain:eapteka.ru",
-            "domain:ecom-cdn.x5media.ru",
             "domain:eldorado.ru",
             "domain:emias.info",
-            "domain:epp.genproc.gov.ru",
             "domain:ertelecom.ru",
-            "domain:event-stream-api.magnit.ru",
             "domain:fivepost.ru",
             "domain:fix-price.com",
             "domain:flysmartavia.com",
@@ -2129,20 +1882,14 @@
             "domain:gosuslugi.ru",
             "domain:government.ru",
             "domain:grandtrain.ru",
-            "domain:gw-fb5.x5.ru",
-            "domain:gw-fl5.x5.ru",
             "domain:help.ufanet.ru",
             "domain:hh.ru",
             "domain:hoff.ru",
-            "domain:image.mm.ru",
             "domain:ingos.ru",
-            "domain:ivi.ru",
             "domain:iz.ru",
             "domain:izbirkom.ru",
             "domain:kari.com",
             "domain:kazanexpress.ru",
-            "domain:kinopoisk.ru",
-            "domain:kion.ru",
             "domain:kommersant.ru",
             "domain:kp.ru",
             "domain:krasnoeibeloe.ru",
@@ -2162,7 +1909,6 @@
             "domain:mail.ru",
             "domain:matchtv.ru",
             "domain:max.ru",
-            "domain:mchs.gov.ru",
             "domain:megafon.ru",
             "domain:megamarket.ru",
             "domain:metro-cc.ru",
@@ -2170,7 +1916,6 @@
             "domain:mgnt.ru",
             "domain:mk.ru",
             "domain:mm.ru",
-            "domain:mobile-api.mm.ru",
             "domain:moex.com",
             "domain:mos.ru",
             "domain:mosmetro.ru",
@@ -2185,14 +1930,10 @@
             "domain:mybook.ru",
             "domain:mycdn.me",
             "domain:myspar.ru",
-            "domain:nalog.gov.ru",
             "domain:nordwindairlines.ru",
             "domain:ntv.ru",
-            "domain:observability.x5.ru",
             "domain:ok.ru",
             "domain:okcdn.ru",
-            "domain:okko.ru",
-            "domain:okko.tv",
             "domain:okmarket.ru",
             "domain:oneme.ru",
             "domain:orgp.spb.ru",
@@ -2204,9 +1945,7 @@
             "domain:planetazdorovo.ru",
             "domain:pobeda.aero",
             "domain:pochta.ru",
-            "domain:premier.one",
             "domain:profi.ru",
-            "domain:proxy.mob.maps.yandex.net",
             "domain:psbank.ru",
             "domain:rabota.ru",
             "domain:rambler.ru",
@@ -2230,15 +1969,12 @@
             "domain:rzd.ru",
             "domain:s7.ru",
             "domain:samokat.ru",
-            "domain:sba.yandex.net",
             "domain:sferum.ru",
             "domain:smotreshka.tv",
             "domain:smotrim.ru",
             "domain:sochi.ru",
             "domain:sogaz.ru",
             "domain:sravni.ru",
-            "domain:start.ru",
-            "domain:static.vseinstrumenti.ru",
             "domain:superjob.ru",
             "domain:sutochno.ru",
             "domain:t2.ru",
@@ -2262,14 +1998,11 @@
             "domain:vseinstrumenty.ru",
             "domain:vsk.ru",
             "domain:vtb.ru",
-            "domain:vybory.gov.ru",
             "domain:wb.ru",
             "domain:whoosh.bike",
             "domain:wifire.ru",
             "domain:wildberries.ru",
-            "domain:wink.ru",
             "domain:worldoftanks.ru",
-            "domain:x5m.x5.ru",
             "domain:xn--80ajghhoc2aj1c8b.xn--p1ai",
             "domain:xn--80aqf2ac.xn--p1ai",
             "domain:xn--90acagbhgpca7c8c7f.xn--p1ai",
@@ -2285,19 +2018,10 @@
             "domain:youla.ru",
             "domain:zarplata.ru",
             "domain:zvuk.com",
-            "domain:pay.yoomoney.ru",
-            "domain:client.yoomoney.ru",
-            "domain:static.yoomoney.ru",
-            "domain:money.yandex.ru",
-            "domain:qr.nspk.ru",
-            "domain:sbp.nspk.ru",
             "domain:mironline.tech",
             "domain:mirconnect.ru",
             "domain:vkuseraudio.ru",
             "domain:vkapps.ru",
-            "domain:api.vk.com",
-            "domain:static.vk.com",
-            "domain:ads.vk.com",
             "domain:onf.ru",
             "domain:open.ru",
             "domain:otpbank.ru",
@@ -2458,7 +2182,6 @@
             "domain:imgsmail.ru",
             "domain:inbox.ru",
             "domain:internet.ru",
-            "domain:ivicdn.tv",
             "domain:kinescopecdn.net",
             "domain:lenta.tech",
             "domain:leroymerlin.ru",
@@ -2495,7 +2218,6 @@
             "domain:ofd.ru",
             "domain:ok.me",
             "domain:okko.sport",
-            "domain:okkoapi.tv",
             "domain:onelya.ru",
             "domain:starline.ru",
             "domain:starline.online",
@@ -2507,7 +2229,6 @@
             "domain:matchpremier.ru",
             "domain:sberbank.ru",
             "domain:sber.ru",
-            "domain:burgerkingrus.ru",
             "domain:bx-cdn.ru",
             "domain:paywb.com",
             "domain:wibes.com",
@@ -2582,7 +2303,6 @@
             "domain:cloudpayments.ru",
             "domain:payecom.ru",
             "domain:platiecom.ru",
-            "domain:ivi.tv",
             "domain:rutube.sport",
             "domain:tvgateway.ru",
             "domain:yotaplay.ru",
@@ -2616,7 +2336,7 @@
           "type": "field",
           "network": "tcp,udp",
           "port": "9339",
-          "balancerTag": "service-supercell-de-nl"
+          "outboundTag": "🇺🇸 US — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -2638,7 +2358,7 @@
             "domain:byteimg.com",
             "domain:snssdk.com"
           ],
-          "balancerTag": "service-tiktok-jp"
+          "outboundTag": "🇯🇵 JP — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -2663,7 +2383,7 @@
             "domain:discordsays.com",
             "domain:discordsez.com"
           ],
-          "balancerTag": "service-discord-kz"
+          "outboundTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -2684,7 +2404,7 @@
             "domain:ds0h3roq6wcgc.cloudfront.net",
             "domain:d2nvs31859zcd8.cloudfront.net"
           ],
-          "balancerTag": "service-twitch-us"
+          "outboundTag": "🇺🇸 US — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -2705,7 +2425,7 @@
             "full:o207216.ingest.sentry.io",
             "full:o33249.ingest.sentry.io"
           ],
-          "balancerTag": "service-chatgpt-de"
+          "outboundTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -2723,7 +2443,7 @@
             "full:supercell.zendesk.com",
             "full:api.quago.io"
           ],
-          "balancerTag": "service-supercell-de-nl"
+          "outboundTag": "🇺🇸 US — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -2779,7 +2499,7 @@
             "18.239.18.71/32",
             "18.239.18.72/32"
           ],
-          "balancerTag": "service-supercell-de-nl"
+          "outboundTag": "🇺🇸 US — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -2805,7 +2525,7 @@
             "full:spotify.map.fastlylb.net",
             "full:video-akpcw-cdn-spotify-com.akamaized.net"
           ],
-          "balancerTag": "service-spotify-kz"
+          "outboundTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -2872,13 +2592,7 @@
             "domain:youtubeeducation.com",
             "domain:youtubekids.com",
             "domain:yt3.ggpht.com",
-            "domain:yt.be"
-          ],
-          "balancerTag": "service-youtube-nl"
-        },
-        {
-          "type": "field",
-          "domain": [
+            "domain:yt.be",
             "domain:pornhub.com",
             "domain:pornhubpremium.com",
             "domain:phncdn.com",
@@ -2898,7 +2612,6 @@
             "domain:notebook.google.com",
             "domain:notebooklm.google.com",
             "domain:generativelanguage.googleapis.com",
-            "domain:alkalimakersuite-pa.clients6.google.com",
             "domain:robinfrontend-pa.googleapis.com",
             "domain:proactivebackend-pa.googleapis.com",
             "domain:notebooklm-pa.googleapis.com",
@@ -2907,7 +2620,7 @@
             "full:notifications-pa.googleapis.com",
             "full:signaler-pa.googleapis.com"
           ],
-          "balancerTag": "service-gemini-de"
+          "outboundTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
         },
         {
           "type": "field",
@@ -2936,13 +2649,6 @@
         },
         {
           "type": "field",
-          "ip": [
-            "geoip:ru"
-          ],
-          "balancerTag": "auto-best"
-        },
-        {
-          "type": "field",
           "inboundTag": [
             "dns"
           ],
@@ -2954,88 +2660,6 @@
           "outboundTag": "dns-out"
         },
         {
-          "type": "field",
-          "domain": [
-            "domain:animelib.org",
-            "domain:anilib.me",
-            "domain:cdnlibs.org",
-            "domain:deepl.com",
-            "domain:elgato.com",
-            "domain:ttwstatic.com",
-            "domain:grok.com",
-            "domain:4pda.to",
-            "domain:githubcopilot.com",
-            "domain:myanimelist.net",
-            "domain:rutor.info",
-            "domain:rutor.is",
-            "domain:bing.com",
-            "domain:mongodb.com",
-            "domain:arc.net",
-            "domain:diabrowser.com",
-            "domain:framer.com",
-            "domain:framerusercontent.com",
-            "domain:manus.im",
-            "domain:sms-activate.io",
-            "domain:qoder.com",
-            "domain:wplace.live",
-            "domain:copilot.microsoft.com",
-            "domain:windsurf.com",
-            "domain:net.ua",
-            "domain:x.ai",
-            "domain:artstation.com",
-            "domain:nvidia.com",
-            "domain:character.ai",
-            "domain:notion.com",
-            "domain:notion.so",
-            "domain:vinted.com",
-            "domain:vinted.pl",
-            "domain:klingai.com",
-            "domain:depop.com",
-            "domain:elevenlabs.io",
-            "domain:claude.ai",
-            "domain:byteoversea.com",
-            "domain:cloudflareinsights.com",
-            "domain:anthropic.com",
-            "domain:habr.com",
-            "domain:claude.com",
-            "domain:openai.com",
-            "domain:chatgpt.com",
-            "domain:chatgpt.site",
-            "domain:ttvnw.net",
-            "domain:siftscience.com",
-            "domain:canva.com",
-            "domain:vestiairecollective.com",
-            "domain:mo.co",
-            "domain:proxywing.com",
-            "domain:adspower.net",
-            "domain:patreon.com",
-            "domain:sentry.io",
-            "domain:deezer.com",
-            "domain:ruads.org",
-            "domain:patreonusercontent.com",
-            "domain:cookielaw.org",
-            "domain:jmp.blue",
-            "domain:dubybot.live",
-            "domain:genspark.ai",
-            "domain:jetbrains.com",
-            "domain:ahrefs.com",
-            "domain:stripe.com",
-            "domain:twitch.tv",
-            "domain:xvideos.com"
-          ],
-          "balancerTag": "auto-best"
-        },
-        {
-          "type": "field",
-          "ip": [
-            "1.1.1.1",
-            "8.8.8.8"
-          ],
-          "port": "443",
-          "network": "tcp",
-          "balancerTag": "auto-best"
-        },
-        {
           "balancerTag": "auto-best",
           "network": "tcp,udp",
           "type": "field"
@@ -3043,7 +2667,7 @@
       ],
       "domainStrategy": "IPOnDemand"
     },
-    "admin_display_name": "⚡️Авто обход  LTE"
+    "admin_display_name": "⚡️ Авто LTE Lite — iPhone 3 DNS DoH"
   },
   {
     "burstObservatory": {
@@ -3714,7 +3338,10 @@
       "queryStrategy": "UseIPv4",
       "tag": "dns",
       "disableFallbackIfMatch": true,
-      "useSystemHosts": false
+      "useSystemHosts": false,
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "inbounds": [
       {
@@ -5851,7 +5478,10 @@
       "queryStrategy": "UseIPv4",
       "tag": "dns",
       "disableFallbackIfMatch": true,
-      "useSystemHosts": false
+      "useSystemHosts": false,
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "inbounds": [
       {
@@ -7050,7 +6680,6 @@
       "servers": [
         {
           "address": "https://common.dot.dns.yandex.net/dns-query",
-          "port": 53,
           "tag": "standalone-yandex-direct",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -7560,7 +7189,10 @@
         "https://8.8.8.8/dns-query",
         "https://1.1.1.1/dns-query"
       ],
-      "disableFallbackIfMatch": true
+      "disableFallbackIfMatch": true,
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "inbounds": [
       {
@@ -9086,7 +8718,10 @@
       ],
       "queryStrategy": "UseIPv4",
       "tag": "dns",
-      "disableFallbackIfMatch": true
+      "disableFallbackIfMatch": true,
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "outbounds": [
       {
@@ -10718,7 +10353,10 @@
       "queryStrategy": "UseIPv4",
       "tag": "standalone-dns",
       "disableFallbackIfMatch": true,
-      "useSystemHosts": false
+      "useSystemHosts": false,
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "routing": {
       "domainStrategy": "AsIs",
@@ -12251,7 +11889,10 @@
       ],
       "queryStrategy": "UseIPv4",
       "tag": "dns",
-      "disableFallbackIfMatch": true
+      "disableFallbackIfMatch": true,
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "outbounds": [
       {
@@ -13819,7 +13460,10 @@
       ],
       "queryStrategy": "UseIPv4",
       "tag": "dns",
-      "disableFallbackIfMatch": true
+      "disableFallbackIfMatch": true,
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "outbounds": [
       {
@@ -14809,7 +14453,6 @@
       "servers": [
         {
           "address": "https://common.dot.dns.yandex.net/dns-query",
-          "port": 53,
           "tag": "standalone-yandex-direct",
           "queryStrategy": "UseIPv4",
           "domains": [
@@ -15438,7 +15081,10 @@
           "tag": "standalone-google-vpn",
           "queryStrategy": "UseIPv4"
         }
-      ]
+      ],
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "routing": {
       "domainStrategy": "AsIs",
@@ -16961,7 +16607,10 @@
       ],
       "queryStrategy": "UseIPv4",
       "tag": "dns",
-      "disableFallbackIfMatch": true
+      "disableFallbackIfMatch": true,
+      "hosts": {
+        "common.dot.dns.yandex.net": "77.88.8.8"
+      }
     },
     "outbounds": [
       {
