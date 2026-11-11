@@ -655,12 +655,12 @@
           ]
         },
         {
-          "address": "1.1.1.1",
+          "address": "https://1.1.1.1/dns-query",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "8.8.8.8",
+          "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -3701,12 +3701,12 @@
           ]
         },
         {
-          "address": "1.1.1.1",
+          "address": "https://1.1.1.1/dns-query",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "8.8.8.8",
+          "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -5838,12 +5838,12 @@
           ]
         },
         {
-          "address": "1.1.1.1",
+          "address": "https://1.1.1.1/dns-query",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "8.8.8.8",
+          "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -7557,8 +7557,8 @@
           ]
         },
         "https://dns.stealthsurflabs.com/dns-query",
-        "8.8.8.8",
-        "1.1.1.1"
+        "https://8.8.8.8/dns-query",
+        "https://1.1.1.1/dns-query"
       ],
       "disableFallbackIfMatch": true
     },
@@ -9074,12 +9074,12 @@
           ]
         },
         {
-          "address": "1.1.1.1",
+          "address": "https://1.1.1.1/dns-query",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "8.8.8.8",
+          "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -10705,12 +10705,12 @@
           ]
         },
         {
-          "address": "1.1.1.1",
+          "address": "https://1.1.1.1/dns-query",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "8.8.8.8",
+          "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -12239,12 +12239,12 @@
           ]
         },
         {
-          "address": "1.1.1.1",
+          "address": "https://1.1.1.1/dns-query",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "8.8.8.8",
+          "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -13807,12 +13807,12 @@
           ]
         },
         {
-          "address": "1.1.1.1",
+          "address": "https://1.1.1.1/dns-query",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "8.8.8.8",
+          "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
@@ -15434,7 +15434,7 @@
           "skipFallback": true
         },
         {
-          "address": "8.8.8.8",
+          "address": "https://8.8.8.8/dns-query",
           "tag": "standalone-google-vpn",
           "queryStrategy": "UseIPv4"
         }
@@ -16949,12 +16949,12 @@
           ]
         },
         {
-          "address": "1.1.1.1",
+          "address": "https://1.1.1.1/dns-query",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
         },
         {
-          "address": "8.8.8.8",
+          "address": "https://8.8.8.8/dns-query",
           "tag": "google_dns",
           "queryStrategy": "UseIPv4"
         }
