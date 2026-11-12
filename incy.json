@@ -10,7 +10,7 @@
       },
       "subjectSelector": [
         "🇳🇱 NL — South Networks Pro (only Mobile)",
-        "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
+        "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]]",
         "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]]",
         "🇺🇸 US — South Networks Pro (only Mobile)",
         "🇩🇪 DE — South Networks Pro (only Mobile)",
@@ -740,7 +740,7 @@
             }
           ]
         },
-        "tag": "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]"
+        "tag": "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]]"
       },
       {
         "protocol": "vmess",
@@ -1414,7 +1414,7 @@
           "tag": "service-fallback-random-pool",
           "selector": [
             "🇳🇱 NL — South Networks Pro (only Mobile)",
-            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
+            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]]",
             "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]]",
             "🇺🇸 US — South Networks Pro (only Mobile)",
             "🇩🇪 DE — South Networks Pro (only Mobile)",
@@ -1442,7 +1442,7 @@
           "tag": "service-telegram-random",
           "selector": [
             "🇳🇱 NL — South Networks Pro (only Mobile)",
-            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
+            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]]",
             "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]]",
             "🇺🇸 US — South Networks Pro (only Mobile)",
             "🇩🇪 DE — South Networks Pro (only Mobile)",
@@ -1469,7 +1469,7 @@
           "tag": "service-zona-video-7-foreign",
           "selector": [
             "🇳🇱 NL — South Networks Pro (only Mobile)",
-            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]",
+            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]]",
             "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]]",
             "🇺🇸 US — South Networks Pro (only Mobile)",
             "🇩🇪 DE — South Networks Pro (only Mobile)",
