@@ -1140,9 +1140,8 @@
               "port": 1505,
               "users": [
                 {
-                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929",
                   "encryption": "none",
-                  "flow": ""
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929"
                 }
               ]
             }
@@ -1155,12 +1154,10 @@
             "serverName": "iv.kommersant.ru",
             "fingerprint": "qq",
             "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
-            "shortId": "a5bd715862513387",
-            "spiderX": "/"
+            "shortId": "a5bd715862513387"
           },
           "grpcSettings": {
-            "serviceName": "grpc",
-            "multiMode": false
+            "serviceName": "grpc"
           }
         },
         "tag": "🇷🇺 Белый интернет #6 | Все операторы"
