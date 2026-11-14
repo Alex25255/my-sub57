@@ -23,7 +23,7 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "https://common.dot.dns.yandex.net/dns-query",
+          "address": "77.88.8.8",
           "skipFallback": true,
           "domains": [
             "domain:mirra.now",
@@ -31,7 +31,7 @@
           ]
         },
         {
-          "address": "https://common.dot.dns.yandex.net/dns-query",
+          "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -620,10 +620,7 @@
       "queryStrategy": "UseIPv4",
       "tag": "dns",
       "disableFallbackIfMatch": true,
-      "useSystemHosts": false,
-      "hosts": {
-        "common.dot.dns.yandex.net": "77.88.8.8"
-      }
+      "useSystemHosts": false
     },
     "inbounds": [
       {
@@ -1441,15 +1438,9 @@
         {
           "tag": "service-telegram-random",
           "selector": [
-            "🇳🇱 NL — South Networks Pro (only Mobile)",
-            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]]",
-            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]]",
-            "🇺🇸 US — South Networks Pro (only Mobile)",
-            "🇩🇪 DE — South Networks Pro (only Mobile)",
-            "🇯🇵 JP — South Networks Pro (only Mobile)",
-            "🇰🇿 KZ — South Networks Pro (only Mobile)"
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
           ],
-          "fallbackTag": "service-fallback-random-loopback",
+          "fallbackTag": "block",
           "strategy": {
             "type": "random"
           }
@@ -1484,6 +1475,57 @@
       ],
       "domainMatcher": "hybrid",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:telegram.org",
+            "domain:telegram.me",
+            "domain:telegram.dog",
+            "domain:t.me",
+            "domain:telegra.ph",
+            "domain:telesco.pe",
+            "domain:tdesktop.com",
+            "domain:telegram-cdn.org",
+            "domain:telegramusercontent.com",
+            "domain:tg.dev",
+            "domain:cdn-telegram.org",
+            "domain:comments.app",
+            "domain:contest.com",
+            "domain:fragment.com",
+            "domain:graph.org",
+            "domain:quiz.directory",
+            "domain:telega.one",
+            "domain:telegram.space",
+            "domain:ton.org",
+            "domain:tx.me",
+            "domain:usercontent.dev"
+          ],
+          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "91.108.56.0/22",
+            "91.108.4.0/22",
+            "91.108.8.0/22",
+            "91.108.16.0/22",
+            "91.108.12.0/22",
+            "149.154.160.0/20",
+            "91.105.192.0/23",
+            "91.108.20.0/22",
+            "185.76.151.0/24",
+            "2001:b28:f23d::/48",
+            "2001:b28:f23f::/48",
+            "2001:67c:4e8::/48",
+            "2001:b28:f23c::/48",
+            "2a0a:f280::/32",
+            "5.28.128.0/17",
+            "95.161.64.0/20",
+            "109.239.140.0/24",
+            "194.221.250.50/32"
+          ],
+          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+        },
         {
           "type": "field",
           "inboundTag": [
@@ -2491,57 +2533,6 @@
         {
           "type": "field",
           "domain": [
-            "domain:telegram.org",
-            "domain:telegram.me",
-            "domain:telegram.dog",
-            "domain:t.me",
-            "domain:telegra.ph",
-            "domain:telesco.pe",
-            "domain:tdesktop.com",
-            "domain:telegram-cdn.org",
-            "domain:telegramusercontent.com",
-            "domain:tg.dev",
-            "domain:cdn-telegram.org",
-            "domain:comments.app",
-            "domain:contest.com",
-            "domain:fragment.com",
-            "domain:graph.org",
-            "domain:quiz.directory",
-            "domain:telega.one",
-            "domain:telegram.space",
-            "domain:ton.org",
-            "domain:tx.me",
-            "domain:usercontent.dev"
-          ],
-          "balancerTag": "service-telegram-random"
-        },
-        {
-          "type": "field",
-          "ip": [
-            "91.108.56.0/22",
-            "91.108.4.0/22",
-            "91.108.8.0/22",
-            "91.108.16.0/22",
-            "91.108.12.0/22",
-            "149.154.160.0/20",
-            "91.105.192.0/23",
-            "91.108.20.0/22",
-            "185.76.151.0/24",
-            "2001:b28:f23d::/48",
-            "2001:b28:f23f::/48",
-            "2001:67c:4e8::/48",
-            "2001:b28:f23c::/48",
-            "2a0a:f280::/32",
-            "5.28.128.0/17",
-            "95.161.64.0/20",
-            "109.239.140.0/24",
-            "194.221.250.50/32"
-          ],
-          "balancerTag": "service-telegram-random"
-        },
-        {
-          "type": "field",
-          "domain": [
             "domain:youtube.com",
             "domain:youtu.be",
             "domain:googlevideo.com",
@@ -2649,7 +2640,7 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "https://1.1.1.1/dns-query",
+          "address": "77.88.8.8",
           "domains": [
             "domain:mirra.now",
             "domain:mirra.systems"
@@ -4492,7 +4483,7 @@
       "queryStrategy": "UseIPv4",
       "servers": [
         {
-          "address": "https://common.dot.dns.yandex.net/dns-query",
+          "address": "77.88.8.8",
           "tag": "standalone-yandex-direct",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -4998,14 +4989,11 @@
             "domain:my.ufanet.ru"
           ]
         },
-        "https://dns.stealthsurflabs.com/dns-query",
-        "https://8.8.8.8/dns-query",
-        "https://1.1.1.1/dns-query"
+        "77.88.8.8",
+        "77.88.8.8",
+        "77.88.8.8"
       ],
-      "disableFallbackIfMatch": true,
-      "hosts": {
-        "common.dot.dns.yandex.net": "77.88.8.8"
-      }
+      "disableFallbackIfMatch": true
     },
     "inbounds": [
       {
@@ -5888,14 +5876,14 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "https://common.dot.dns.yandex.net/dns-query",
+          "address": "77.88.8.8",
           "skipFallback": true,
           "domains": [
             "domain:mirra.systems"
           ]
         },
         {
-          "address": "https://common.dot.dns.yandex.net/dns-query",
+          "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -6531,10 +6519,7 @@
       ],
       "queryStrategy": "UseIPv4",
       "tag": "dns",
-      "disableFallbackIfMatch": true,
-      "hosts": {
-        "common.dot.dns.yandex.net": "77.88.8.8"
-      }
+      "disableFallbackIfMatch": true
     },
     "outbounds": [
       {
@@ -7521,7 +7506,7 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "https://common.dot.dns.yandex.net/dns-query",
+          "address": "77.88.8.8",
           "skipFallback": true,
           "domains": [
             "domain:mirra.now",
@@ -7529,7 +7514,7 @@
           ]
         },
         {
-          "address": "https://common.dot.dns.yandex.net/dns-query",
+          "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -8166,10 +8151,7 @@
       "queryStrategy": "UseIPv4",
       "tag": "standalone-dns",
       "disableFallbackIfMatch": true,
-      "useSystemHosts": false,
-      "hosts": {
-        "common.dot.dns.yandex.net": "77.88.8.8"
-      }
+      "useSystemHosts": false
     },
     "routing": {
       "domainStrategy": "AsIs",
@@ -9059,14 +9041,14 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "https://common.dot.dns.yandex.net/dns-query",
+          "address": "77.88.8.8",
           "skipFallback": true,
           "domains": [
             "domain:mirra.systems"
           ]
         },
         {
-          "address": "https://common.dot.dns.yandex.net/dns-query",
+          "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -9702,10 +9684,7 @@
       ],
       "queryStrategy": "UseIPv4",
       "tag": "dns",
-      "disableFallbackIfMatch": true,
-      "hosts": {
-        "common.dot.dns.yandex.net": "77.88.8.8"
-      }
+      "disableFallbackIfMatch": true
     },
     "outbounds": [
       {
@@ -10630,14 +10609,14 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "https://common.dot.dns.yandex.net/dns-query",
+          "address": "77.88.8.8",
           "skipFallback": true,
           "domains": [
             "domain:mirra.systems"
           ]
         },
         {
-          "address": "https://common.dot.dns.yandex.net/dns-query",
+          "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -11273,10 +11252,7 @@
       ],
       "queryStrategy": "UseIPv4",
       "tag": "dns",
-      "disableFallbackIfMatch": true,
-      "hosts": {
-        "common.dot.dns.yandex.net": "77.88.8.8"
-      }
+      "disableFallbackIfMatch": true
     },
     "outbounds": [
       {
@@ -12265,7 +12241,7 @@
       "tag": "standalone-dns",
       "servers": [
         {
-          "address": "https://common.dot.dns.yandex.net/dns-query",
+          "address": "77.88.8.8",
           "tag": "standalone-yandex-direct",
           "queryStrategy": "UseIPv4",
           "domains": [
@@ -12890,14 +12866,11 @@
           "skipFallback": true
         },
         {
-          "address": "https://8.8.8.8/dns-query",
+          "address": "77.88.8.8",
           "tag": "standalone-google-vpn",
           "queryStrategy": "UseIPv4"
         }
-      ],
-      "hosts": {
-        "common.dot.dns.yandex.net": "77.88.8.8"
-      }
+      ]
     },
     "routing": {
       "domainStrategy": "AsIs",
@@ -13777,14 +13750,14 @@
       "servers": [
         {
           "tag": "proxy_hosts_dns",
-          "address": "https://common.dot.dns.yandex.net/dns-query",
+          "address": "77.88.8.8",
           "skipFallback": true,
           "domains": [
             "domain:mirra.systems"
           ]
         },
         {
-          "address": "https://common.dot.dns.yandex.net/dns-query",
+          "address": "77.88.8.8",
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true,
@@ -14420,10 +14393,7 @@
       ],
       "queryStrategy": "UseIPv4",
       "tag": "dns",
-      "disableFallbackIfMatch": true,
-      "hosts": {
-        "common.dot.dns.yandex.net": "77.88.8.8"
-      }
+      "disableFallbackIfMatch": true
     },
     "outbounds": [
       {
