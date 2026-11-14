@@ -1438,9 +1438,15 @@
         {
           "tag": "service-telegram-random",
           "selector": [
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]]",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]]",
+            "🇺🇸 US — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇯🇵 JP — South Networks Pro (only Mobile)",
+            "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
-          "fallbackTag": "block",
+          "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
             "type": "random"
           }
@@ -1475,57 +1481,6 @@
       ],
       "domainMatcher": "hybrid",
       "rules": [
-        {
-          "type": "field",
-          "domain": [
-            "domain:telegram.org",
-            "domain:telegram.me",
-            "domain:telegram.dog",
-            "domain:t.me",
-            "domain:telegra.ph",
-            "domain:telesco.pe",
-            "domain:tdesktop.com",
-            "domain:telegram-cdn.org",
-            "domain:telegramusercontent.com",
-            "domain:tg.dev",
-            "domain:cdn-telegram.org",
-            "domain:comments.app",
-            "domain:contest.com",
-            "domain:fragment.com",
-            "domain:graph.org",
-            "domain:quiz.directory",
-            "domain:telega.one",
-            "domain:telegram.space",
-            "domain:ton.org",
-            "domain:tx.me",
-            "domain:usercontent.dev"
-          ],
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
-        },
-        {
-          "type": "field",
-          "ip": [
-            "91.108.56.0/22",
-            "91.108.4.0/22",
-            "91.108.8.0/22",
-            "91.108.16.0/22",
-            "91.108.12.0/22",
-            "149.154.160.0/20",
-            "91.105.192.0/23",
-            "91.108.20.0/22",
-            "185.76.151.0/24",
-            "2001:b28:f23d::/48",
-            "2001:b28:f23f::/48",
-            "2001:67c:4e8::/48",
-            "2001:b28:f23c::/48",
-            "2a0a:f280::/32",
-            "5.28.128.0/17",
-            "95.161.64.0/20",
-            "109.239.140.0/24",
-            "194.221.250.50/32"
-          ],
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
-        },
         {
           "type": "field",
           "inboundTag": [
@@ -2529,6 +2484,57 @@
             "full:video-akpcw-cdn-spotify-com.akamaized.net"
           ],
           "outboundTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:telegram.org",
+            "domain:telegram.me",
+            "domain:telegram.dog",
+            "domain:t.me",
+            "domain:telegra.ph",
+            "domain:telesco.pe",
+            "domain:tdesktop.com",
+            "domain:telegram-cdn.org",
+            "domain:telegramusercontent.com",
+            "domain:tg.dev",
+            "domain:cdn-telegram.org",
+            "domain:comments.app",
+            "domain:contest.com",
+            "domain:fragment.com",
+            "domain:graph.org",
+            "domain:quiz.directory",
+            "domain:telega.one",
+            "domain:telegram.space",
+            "domain:ton.org",
+            "domain:tx.me",
+            "domain:usercontent.dev"
+          ],
+          "balancerTag": "service-telegram-random"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "91.108.56.0/22",
+            "91.108.4.0/22",
+            "91.108.8.0/22",
+            "91.108.16.0/22",
+            "91.108.12.0/22",
+            "149.154.160.0/20",
+            "91.105.192.0/23",
+            "91.108.20.0/22",
+            "185.76.151.0/24",
+            "2001:b28:f23d::/48",
+            "2001:b28:f23f::/48",
+            "2001:67c:4e8::/48",
+            "2001:b28:f23c::/48",
+            "2a0a:f280::/32",
+            "5.28.128.0/17",
+            "95.161.64.0/20",
+            "109.239.140.0/24",
+            "194.221.250.50/32"
+          ],
+          "balancerTag": "service-telegram-random"
         },
         {
           "type": "field",
