@@ -3456,11 +3456,11 @@
           "vnext": [
             {
               "address": "72.56.252.86",
-              "port": 19306,
+              "port": 16137,
               "users": [
                 {
                   "encryption": "none",
-                  "id": "d5261f65-310c-44a9-be26-0a27d073fc51",
+                  "id": "0b4bc211-7f82-427b-b9ba-71a9e53b9f87",
                   "flow": "xtls-rprx-vision"
                 }
               ]
@@ -3472,8 +3472,8 @@
           "security": "reality",
           "realitySettings": {
             "fingerprint": "chrome",
-            "publicKey": "g8IYochNlaiVc385y92gMYZdDJrxG8RsYedfOAShN3Y",
-            "shortId": "e6d70857",
+            "publicKey": "kmXvV9q8Vi4uA6_s_8QYYj-AUigaGX02iG4yfDSEYzM",
+            "shortId": "1cc915a4",
             "spiderX": "/"
           },
           "tcpSettings": {}
