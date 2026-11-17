@@ -1385,13 +1385,6 @@
       {
         "protocol": "dns",
         "tag": "dns-out"
-      },
-      {
-        "tag": "service-fallback-random-loopback",
-        "protocol": "loopback",
-        "settings": {
-          "inboundTag": "service-fallback-random"
-        }
       }
     ],
     "remarks": "⚡️⚡️Авто обход LTE",
@@ -1417,8 +1410,7 @@
           "strategy": {
             "type": "leastPing"
           },
-          "tag": "auto-best",
-          "fallbackTag": "service-fallback-random-loopback"
+          "tag": "auto-best"
         },
         {
           "tag": "service-fallback-random-pool",
@@ -1431,7 +1423,6 @@
             "🇯🇵 JP — South Networks Pro (only Mobile)",
             "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
-          "fallbackTag": "block",
           "strategy": {
             "type": "random"
           }
@@ -1443,7 +1434,6 @@
             "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]]",
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
           ],
-          "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
             "type": "random"
           }
@@ -1460,7 +1450,6 @@
             "🇰🇿 KZ — South Networks Pro (only Mobile)",
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
           ],
-          "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
             "type": "leastPing"
           }
@@ -1471,7 +1460,6 @@
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
             "🇩🇪 DE — South Networks Pro (only Mobile)"
           ],
-          "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
             "type": "random"
           }
@@ -1487,7 +1475,6 @@
             "🇯🇵 JP — South Networks Pro (only Mobile)",
             "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
-          "fallbackTag": "block",
           "strategy": {
             "type": "random"
           }
@@ -1511,19 +1498,11 @@
           ],
           "strategy": {
             "type": "leastPing"
-          },
-          "fallbackTag": "block"
+          }
         }
       ],
       "domainMatcher": "hybrid",
       "rules": [
-        {
-          "type": "field",
-          "inboundTag": [
-            "service-fallback-random"
-          ],
-          "balancerTag": "service-fallback-random-pool"
-        },
         {
           "type": "field",
           "domain": [
