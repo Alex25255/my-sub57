@@ -1490,6 +1490,28 @@
           "strategy": {
             "type": "random"
           }
+        },
+        {
+          "tag": "apple-push-white-internet",
+          "selector": [
+            "🇷🇺 Белый интернет #1 | Все операторы",
+            "🇷🇺 Белый интернет #2 | Все операторы",
+            "🇷🇺 Белый интернет #3 | Все операторы",
+            "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС",
+            "🇷🇺 Белый интернет #5 | Билайн / Теле2 / МТС",
+            "🇷🇺 Белый интернет #6 | Все операторы",
+            "🇷🇺 Белый интернет #8 | Все операторы",
+            "🇷🇺 Белый интернет #9 | Все операторы",
+            "🇷🇺 Белый интернет #10 | Все операторы",
+            "🇷🇺 Белый интернет #11 | Билайн / Теле2",
+            "🇷🇺 Белый интернет #12 | Все операторы",
+            "🇷🇺 Белый интернет #13 | Все операторы",
+            "🇷🇺 Белый интернет #14 | Все операторы"
+          ],
+          "strategy": {
+            "type": "leastPing"
+          },
+          "fallbackTag": "block"
         }
       ],
       "domainMatcher": "hybrid",
@@ -1569,21 +1591,11 @@
         },
         {
           "type": "field",
-          "ip": [
-            "17.0.0.0/8",
-            "2620:149:a44::/48",
-            "2403:300:a42::/48",
-            "2403:300:a51::/48"
-          ],
-          "balancerTag": "service-fallback-random-pool"
-        },
-        {
-          "type": "field",
           "domain": [
             "domain:push.apple.com"
           ],
           "network": "tcp",
-          "balancerTag": "service-fallback-random-pool"
+          "balancerTag": "apple-push-white-internet"
         },
         {
           "type": "field",
@@ -1596,6 +1608,16 @@
           ],
           "port": "5223",
           "network": "tcp",
+          "balancerTag": "apple-push-white-internet"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "17.0.0.0/8",
+            "2620:149:a44::/48",
+            "2403:300:a42::/48",
+            "2403:300:a51::/48"
+          ],
           "balancerTag": "service-fallback-random-pool"
         },
         {
