@@ -29,7 +29,8 @@
         "🇷🇺 Белый интернет #11 | Билайн / Теле2",
         "🇷🇺 Белый интернет #12 | Все операторы",
         "🇷🇺 Белый интернет #13 | Все операторы",
-        "🇷🇺 Белый интернет #14 | Все операторы"
+        "🇷🇺 Белый интернет #14 | Все операторы",
+        "💫 Игровой белый интернет"
       ]
     },
     "dns": {
@@ -1375,6 +1376,40 @@
         "tag": "🇷🇺 Белый интернет #14 | Все операторы"
       },
       {
+        "protocol": "hysteria",
+        "settings": {
+          "version": 2,
+          "address": "78.159.246.119",
+          "port": 443
+        },
+        "streamSettings": {
+          "network": "hysteria",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "magic.nodes.stealthsurf.net",
+            "alpn": [
+              "h3"
+            ]
+          },
+          "hysteriaSettings": {
+            "version": 2,
+            "auth": "8b699a3f-45a4-4fac-8acb-f21c30c48f12"
+          },
+          "finalmask": {
+            "quicParams": {
+              "brutalDown": "1000 mbps",
+              "brutalUp": "1000 mbps",
+              "congestion": "brutal",
+              "debug": false,
+              "disablePathMTUDiscovery": true,
+              "keepAlivePeriod": 8,
+              "maxIdleTimeout": 60
+            }
+          }
+        },
+        "tag": "💫 Игровой белый интернет"
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -1448,7 +1483,8 @@
             "🇩🇪 DE — South Networks Pro (only Mobile)",
             "🇯🇵 JP — South Networks Pro (only Mobile)",
             "🇰🇿 KZ — South Networks Pro (only Mobile)",
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
+            "💫 Игровой белый интернет"
           ],
           "strategy": {
             "type": "leastPing"
