@@ -1457,7 +1457,8 @@
             "🇺🇸 US — South Networks Pro (only Mobile)",
             "🇩🇪 DE — South Networks Pro (only Mobile)",
             "🇯🇵 JP — South Networks Pro (only Mobile)",
-            "🇰🇿 KZ — South Networks Pro (only Mobile)"
+            "🇰🇿 KZ — South Networks Pro (only Mobile)",
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
           ],
           "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
