@@ -2695,7 +2695,7 @@
       },
       "subjectSelector": [
         "💫 Премиум-конфиг (ранний доступ)",
-        "🇩🇪 Германия",
+        "🇩🇪 💫 умная локация германия бывш",
         "💫 Премиум-конфиг1"
       ]
     },
@@ -3430,12 +3430,12 @@
         "settings": {
           "vnext": [
             {
-              "address": "217.69.167.61",
-              "port": 15211,
+              "address": "84.252.100.152",
+              "port": 17735,
               "users": [
                 {
                   "encryption": "none",
-                  "id": "7f1fd644-dd3a-4c85-a492-91425eb30f0f",
+                  "id": "ca2521f2-fea5-465d-9a64-5bb56e357889",
                   "flow": "xtls-rprx-vision"
                 }
               ]
@@ -3447,13 +3447,13 @@
           "security": "reality",
           "realitySettings": {
             "fingerprint": "chrome",
-            "publicKey": "uuoZUj6NhuovLs4Jqk4nc7qFh6V7nwsW7A2IzVeOJ1o",
-            "shortId": "c2bea43a",
+            "publicKey": "1pSvtsWZLD_zpd6z4IfmIEFdf9vhTUfU_2GK9oHeTUc",
+            "shortId": "7e663d46",
             "spiderX": "/"
           },
           "tcpSettings": {}
         },
-        "tag": "🇩🇪 Германия"
+        "tag": "🇩🇪 💫 умная локация германия бывш"
       },
       {
         "protocol": "vless",
@@ -3505,7 +3505,7 @@
         {
           "selector": [
             "💫 Премиум-конфиг (ранний доступ)",
-            "🇩🇪 Германия",
+            "🇩🇪 💫 умная локация германия бывш",
             "💫 Премиум-конфиг1"
           ],
           "strategy": {
