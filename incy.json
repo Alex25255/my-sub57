@@ -3400,12 +3400,12 @@
         "settings": {
           "vnext": [
             {
-              "address": "168.113.142.95",
+              "address": "45.153.70.195",
               "port": 43000,
               "users": [
                 {
                   "encryption": "none",
-                  "id": "f679891c-87eb-4dda-a6f0-addd8de0f4bb",
+                  "id": "4e482a6a-e72e-4666-be89-324ce0e1f519",
                   "flow": "xtls-rprx-vision"
                 }
               ]
@@ -3417,8 +3417,8 @@
           "security": "reality",
           "realitySettings": {
             "fingerprint": "chrome",
-            "publicKey": "YUwU9ClgrERJaW5-Unm9QdCGsPVcC4Lei1GQeb01xDg",
-            "shortId": "5f80d6db",
+            "publicKey": "0l-aCfCQ0AWGPMWksMNiyAIceJ0Ao1DwHkB0Ofv6GzY",
+            "shortId": "1a52e26c",
             "spiderX": "/"
           },
           "tcpSettings": {}
