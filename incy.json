@@ -1410,6 +1410,36 @@
         "tag": "💫 Игровой белый интернет"
       },
       {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "78.159.246.119",
+              "port": 43000,
+              "users": [
+                {
+                  "id": "501f8095-e2ba-4612-9f85-82d11fcf81df",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "chrome",
+            "publicKey": "TzaNlx4Tvz3MScMZNZGed8OaCJ31qqouIL56SAsyqFk",
+            "shortId": "53b67e9e",
+            "spiderX": "/"
+          }
+        },
+        "tag": "💫 Игровой белый интернет · VLESS 43000"
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -1440,7 +1470,8 @@
             "🇷🇺 Белый интернет #11 | Билайн / Теле2",
             "🇷🇺 Белый интернет #12 | Все операторы",
             "🇷🇺 Белый интернет #13 | Все операторы",
-            "🇷🇺 Белый интернет #14 | Все операторы"
+            "🇷🇺 Белый интернет #14 | Все операторы",
+            "💫 Игровой белый интернет · VLESS 43000"
           ],
           "strategy": {
             "type": "leastPing"
@@ -1456,7 +1487,8 @@
             "🇺🇸 US — South Networks Pro (only Mobile)",
             "🇩🇪 DE — South Networks Pro (only Mobile)",
             "🇯🇵 JP — South Networks Pro (only Mobile)",
-            "🇰🇿 KZ — South Networks Pro (only Mobile)"
+            "🇰🇿 KZ — South Networks Pro (only Mobile)",
+            "💫 Игровой белый интернет · VLESS 43000"
           ],
           "strategy": {
             "type": "random"
@@ -1467,7 +1499,8 @@
           "selector": [
             "🇳🇱 NL — South Networks Pro (only Mobile)",
             "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]]",
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
+            "💫 Игровой белый интернет · VLESS 43000"
           ],
           "strategy": {
             "type": "random"
@@ -1489,7 +1522,8 @@
             "🇷🇺 Белый интернет #11 | Билайн / Теле2",
             "🇷🇺 Белый интернет #12 | Все операторы",
             "🇷🇺 Белый интернет #13 | Все операторы",
-            "🇷🇺 Белый интернет #14 | Все операторы"
+            "🇷🇺 Белый интернет #14 | Все операторы",
+            "💫 Игровой белый интернет · VLESS 43000"
           ],
           "strategy": {
             "type": "leastPing"
