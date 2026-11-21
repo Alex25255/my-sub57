@@ -1457,8 +1457,9 @@
             "🇷🇺 Белый интернет #14 | Все операторы"
           ],
           "strategy": {
-            "type": "leastPing"
-          }
+            "type": "random"
+          },
+          "fallbackTag": "block"
         },
         {
           "tag": "service-instagram-ru",
