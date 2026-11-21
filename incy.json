@@ -977,7 +977,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "168.113.253.51",
+              "address": "168.113.253.110",
               "port": 1505,
               "users": [
                 {
