@@ -1441,20 +1441,13 @@
         {
           "tag": "service-telegram-random",
           "selector": [
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
-            "🇷🇺 Белый интернет #1 | Все операторы",
-            "🇷🇺 Белый интернет #2 | Все операторы",
-            "🇷🇺 Белый интернет #3 | Все операторы",
-            "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС",
-            "🇷🇺 Белый интернет #5 | Билайн / Теле2 / МТС",
-            "🇷🇺 Белый интернет #6 | Все операторы",
-            "🇷🇺 Белый интернет #8 | Все операторы",
-            "🇷🇺 Белый интернет #9 | Все операторы",
-            "🇷🇺 Белый интернет #10 | Все операторы",
-            "🇷🇺 Белый интернет #11 | Билайн / Теле2",
-            "🇷🇺 Белый интернет #12 | Все операторы",
-            "🇷🇺 Белый интернет #13 | Все операторы",
-            "🇷🇺 Белый интернет #14 | Все операторы"
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]]",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]]",
+            "🇺🇸 US — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇯🇵 JP — South Networks Pro (only Mobile)",
+            "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
           "strategy": {
             "type": "random"
