@@ -1,11 +1,11 @@
-[
+
   {
     "burstObservatory": {
       "pingConfig": {
         "destination": "http://www.gstatic.com/generate_204",
         "httpMethod": "HEAD",
-        "interval": "5m",
-        "sampling": 1,
+        "interval": "1m",
+        "sampling": 2,
         "timeout": "5s"
       },
       "subjectSelector": [
@@ -29,7 +29,14 @@
         "🇷🇺 Белый интернет #11 | Билайн / Теле2",
         "🇷🇺 Белый интернет #12 | Все операторы",
         "🇷🇺 Белый интернет #13 | Все операторы",
-        "🇷🇺 Белый интернет #14 | Все операторы"
+        "🇷🇺 Белый интернет #14 | Все операторы",
+        "🇳🇱 Нидерланды новые",
+        "🇮🇹 Италия новые",
+        "🇲🇩 Молдова новые",
+        "🇩🇪 Германия новые",
+        "🇪🇪 Эстония новые",
+        "🇧🇬 Болгария новые",
+        "🇺🇸 США новые"
       ]
     },
     "dns": {
@@ -1375,6 +1382,40 @@
         "tag": "🇷🇺 Белый интернет #14 | Все операторы"
       },
       {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "45.150.36.114",
+              "port": 2083,
+              "users": [
+                {
+                  "id": "cb32c26d-de89-4d39-852f-697e106af541",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.samsung.com",
+            "fingerprint": "firefox",
+            "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+            "shortId": "a6376fab"
+          },
+          "tcpSettings": {
+            "header": {
+              "type": "none"
+            }
+          }
+        },
+        "tag": "🇳🇱 Нидерланды новые"
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -1385,6 +1426,210 @@
       {
         "protocol": "dns",
         "tag": "dns-out"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "45.150.36.114",
+              "port": 7443,
+              "users": [
+                {
+                  "id": "cb32c26d-de89-4d39-852f-697e106af541",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.samsung.com",
+            "fingerprint": "firefox",
+            "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+            "shortId": "a6376fab"
+          },
+          "tcpSettings": {
+            "header": {
+              "type": "none"
+            }
+          }
+        },
+        "tag": "🇮🇹 Италия новые"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "45.150.36.114",
+              "port": 9443,
+              "users": [
+                {
+                  "id": "cb32c26d-de89-4d39-852f-697e106af541",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.samsung.com",
+            "fingerprint": "firefox",
+            "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+            "shortId": "a6376fab"
+          },
+          "tcpSettings": {
+            "header": {
+              "type": "none"
+            }
+          }
+        },
+        "tag": "🇲🇩 Молдова новые"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "45.150.36.114",
+              "port": 6443,
+              "users": [
+                {
+                  "id": "cb32c26d-de89-4d39-852f-697e106af541",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.samsung.com",
+            "fingerprint": "firefox",
+            "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+            "shortId": "a6376fab"
+          },
+          "tcpSettings": {
+            "header": {
+              "type": "none"
+            }
+          }
+        },
+        "tag": "🇩🇪 Германия новые"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "45.150.36.114",
+              "port": 8443,
+              "users": [
+                {
+                  "id": "cb32c26d-de89-4d39-852f-697e106af541",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.samsung.com",
+            "fingerprint": "firefox",
+            "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+            "shortId": "a6376fab"
+          },
+          "tcpSettings": {
+            "header": {
+              "type": "none"
+            }
+          }
+        },
+        "tag": "🇪🇪 Эстония новые"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "45.150.36.114",
+              "port": 443,
+              "users": [
+                {
+                  "id": "cb32c26d-de89-4d39-852f-697e106af541",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.samsung.com",
+            "fingerprint": "firefox",
+            "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+            "shortId": "a6376fab"
+          },
+          "tcpSettings": {
+            "header": {
+              "type": "none"
+            }
+          }
+        },
+        "tag": "🇧🇬 Болгария новые"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "45.150.36.114",
+              "port": 2053,
+              "users": [
+                {
+                  "id": "cb32c26d-de89-4d39-852f-697e106af541",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.samsung.com",
+            "fingerprint": "firefox",
+            "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+            "shortId": "a6376fab"
+          },
+          "tcpSettings": {
+            "header": {
+              "type": "none"
+            }
+          }
+        },
+        "tag": "🇺🇸 США новые"
       }
     ],
     "remarks": "⚡️⚡️Авто обход LTE",
@@ -1408,9 +1653,10 @@
             "🇷🇺 Белый интернет #14 | Все операторы"
           ],
           "strategy": {
-            "type": "leastPing"
+            "type": "random"
           },
-          "tag": "auto-best"
+          "tag": "auto-best",
+          "fallbackTag": "block"
         },
         {
           "tag": "service-fallback-random-pool",
@@ -1421,22 +1667,32 @@
             "🇺🇸 US — South Networks Pro (only Mobile)",
             "🇩🇪 DE — South Networks Pro (only Mobile)",
             "🇯🇵 JP — South Networks Pro (only Mobile)",
-            "🇰🇿 KZ — South Networks Pro (only Mobile)"
+            "🇰🇿 KZ — South Networks Pro (only Mobile)",
+            "🇳🇱 Нидерланды новые",
+            "🇮🇹 Италия новые",
+            "🇲🇩 Молдова новые",
+            "🇩🇪 Германия новые",
+            "🇪🇪 Эстония новые",
+            "🇧🇬 Болгария новые",
+            "🇺🇸 США новые"
           ],
           "strategy": {
             "type": "random"
-          }
+          },
+          "fallbackTag": "block"
         },
         {
           "tag": "service-youtube-nl",
           "selector": [
             "🇳🇱 NL — South Networks Pro (only Mobile)",
             "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]]",
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
+            "🇳🇱 Нидерланды новые"
           ],
           "strategy": {
             "type": "random"
-          }
+          },
+          "fallbackTag": "block"
         },
         {
           "tag": "service-telegram-random",
@@ -1447,7 +1703,14 @@
             "🇺🇸 US — South Networks Pro (only Mobile)",
             "🇩🇪 DE — South Networks Pro (only Mobile)",
             "🇯🇵 JP — South Networks Pro (only Mobile)",
-            "🇰🇿 KZ — South Networks Pro (only Mobile)"
+            "🇰🇿 KZ — South Networks Pro (only Mobile)",
+            "🇳🇱 Нидерланды новые",
+            "🇮🇹 Италия новые",
+            "🇲🇩 Молдова новые",
+            "🇩🇪 Германия новые",
+            "🇪🇪 Эстония новые",
+            "🇧🇬 Болгария новые",
+            "🇺🇸 США новые"
           ],
           "strategy": {
             "type": "random"
@@ -1463,7 +1726,8 @@
           ],
           "strategy": {
             "type": "random"
-          }
+          },
+          "fallbackTag": "block"
         },
         {
           "tag": "service-zona-video-7-foreign",
@@ -1474,11 +1738,19 @@
             "🇺🇸 US — South Networks Pro (only Mobile)",
             "🇩🇪 DE — South Networks Pro (only Mobile)",
             "🇯🇵 JP — South Networks Pro (only Mobile)",
-            "🇰🇿 KZ — South Networks Pro (only Mobile)"
+            "🇰🇿 KZ — South Networks Pro (only Mobile)",
+            "🇳🇱 Нидерланды новые",
+            "🇮🇹 Италия новые",
+            "🇲🇩 Молдова новые",
+            "🇩🇪 Германия новые",
+            "🇪🇪 Эстония новые",
+            "🇧🇬 Болгария новые",
+            "🇺🇸 США новые"
           ],
           "strategy": {
             "type": "random"
-          }
+          },
+          "fallbackTag": "block"
         },
         {
           "tag": "apple-push-white-internet",
@@ -1500,6 +1772,61 @@
           "strategy": {
             "type": "leastPing"
           }
+        },
+        {
+          "tag": "service-ai-germany",
+          "selector": [
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇩🇪 Германия новые"
+          ],
+          "strategy": {
+            "type": "random"
+          },
+          "fallbackTag": "block"
+        },
+        {
+          "tag": "service-spotify-kz-ee",
+          "selector": [
+            "🇰🇿 KZ — South Networks Pro (only Mobile)",
+            "🇪🇪 Эстония новые"
+          ],
+          "strategy": {
+            "type": "random"
+          },
+          "fallbackTag": "block"
+        },
+        {
+          "tag": "service-tiktok-jp-it",
+          "selector": [
+            "🇯🇵 JP — South Networks Pro (only Mobile)",
+            "🇮🇹 Италия новые"
+          ],
+          "strategy": {
+            "type": "random"
+          },
+          "fallbackTag": "block"
+        },
+        {
+          "tag": "service-twitch-us",
+          "selector": [
+            "🇺🇸 US — South Networks Pro (only Mobile)",
+            "🇺🇸 США новые"
+          ],
+          "strategy": {
+            "type": "random"
+          },
+          "fallbackTag": "block"
+        },
+        {
+          "tag": "service-supercell-us",
+          "selector": [
+            "🇺🇸 US — South Networks Pro (only Mobile)",
+            "🇺🇸 США новые"
+          ],
+          "strategy": {
+            "type": "random"
+          },
+          "fallbackTag": "block"
         }
       ],
       "domainMatcher": "hybrid",
@@ -2310,7 +2637,7 @@
           "type": "field",
           "network": "tcp,udp",
           "port": "9339",
-          "outboundTag": "🇺🇸 US — South Networks Pro (only Mobile)"
+          "balancerTag": "service-supercell-us"
         },
         {
           "type": "field",
@@ -2332,32 +2659,7 @@
             "domain:byteimg.com",
             "domain:snssdk.com"
           ],
-          "outboundTag": "🇯🇵 JP — South Networks Pro (only Mobile)"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:discord.com",
-            "domain:discord.gg",
-            "domain:discordapp.com",
-            "domain:discordapp.net",
-            "domain:discord.media",
-            "domain:discordcdn.com",
-            "domain:dis.gd",
-            "domain:discordstatus.com",
-            "domain:discord.gift",
-            "domain:discord.new",
-            "domain:discord.co",
-            "domain:discord.dev",
-            "domain:discord.store",
-            "domain:discordactivities.com",
-            "domain:discord-activities.com",
-            "domain:discordquests.com",
-            "domain:discordpartygames.com",
-            "domain:discordsays.com",
-            "domain:discordsez.com"
-          ],
-          "outboundTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
+          "balancerTag": "service-tiktok-jp-it"
         },
         {
           "type": "field",
@@ -2378,7 +2680,7 @@
             "domain:ds0h3roq6wcgc.cloudfront.net",
             "domain:d2nvs31859zcd8.cloudfront.net"
           ],
-          "outboundTag": "🇺🇸 US — South Networks Pro (only Mobile)"
+          "balancerTag": "service-twitch-us"
         },
         {
           "type": "field",
@@ -2399,7 +2701,7 @@
             "full:o207216.ingest.sentry.io",
             "full:o33249.ingest.sentry.io"
           ],
-          "outboundTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
+          "balancerTag": "service-ai-germany"
         },
         {
           "type": "field",
@@ -2417,7 +2719,7 @@
             "full:supercell.zendesk.com",
             "full:api.quago.io"
           ],
-          "outboundTag": "🇺🇸 US — South Networks Pro (only Mobile)"
+          "balancerTag": "service-supercell-us"
         },
         {
           "type": "field",
@@ -2473,7 +2775,7 @@
             "18.239.18.71/32",
             "18.239.18.72/32"
           ],
-          "outboundTag": "🇺🇸 US — South Networks Pro (only Mobile)"
+          "balancerTag": "service-supercell-us"
         },
         {
           "type": "field",
@@ -2499,7 +2801,7 @@
             "full:spotify.map.fastlylb.net",
             "full:video-akpcw-cdn-spotify-com.akamaized.net"
           ],
-          "outboundTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
+          "balancerTag": "service-spotify-kz-ee"
         },
         {
           "type": "field",
@@ -2594,7 +2896,7 @@
             "full:notifications-pa.googleapis.com",
             "full:signaler-pa.googleapis.com"
           ],
-          "outboundTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
+          "balancerTag": "service-ai-germany"
         },
         {
           "type": "field",
