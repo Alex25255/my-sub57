@@ -2653,7 +2653,7 @@
         "timeout": "5s"
       },
       "subjectSelector": [
-        "💫 Премиум-конфиг (ранний доступ)",
+        "🇳🇱 Премиум-конфиг (ранний доступ)",
         "🇩🇪 💫 умная локация германия бывш",
         "💫 Премиум-конфиг1"
       ]
@@ -3359,12 +3359,12 @@
         "settings": {
           "vnext": [
             {
-              "address": "45.153.70.195",
+              "address": "103.112.71.6",
               "port": 43000,
               "users": [
                 {
                   "encryption": "none",
-                  "id": "4e482a6a-e72e-4666-be89-324ce0e1f519",
+                  "id": "c71aac46-2b2d-4f16-bb09-a489da21e3d4",
                   "flow": "xtls-rprx-vision"
                 }
               ]
@@ -3376,13 +3376,13 @@
           "security": "reality",
           "realitySettings": {
             "fingerprint": "chrome",
-            "publicKey": "0l-aCfCQ0AWGPMWksMNiyAIceJ0Ao1DwHkB0Ofv6GzY",
-            "shortId": "1a52e26c",
+            "publicKey": "1Pn3QKg6DG9ayHpl0GkjwiqTKFMhFEmSX36aJjklKGo",
+            "shortId": "8e3395cd",
             "spiderX": "/"
           },
           "tcpSettings": {}
         },
-        "tag": "💫 Премиум-конфиг (ранний доступ)"
+        "tag": "🇳🇱 Премиум-конфиг (ранний доступ)"
       },
       {
         "protocol": "vless",
@@ -3463,7 +3463,7 @@
       "balancers": [
         {
           "selector": [
-            "💫 Премиум-конфиг (ранний доступ)",
+            "🇳🇱 Премиум-конфиг (ранний доступ)",
             "🇩🇪 💫 умная локация германия бывш",
             "💫 Премиум-конфиг1"
           ],
