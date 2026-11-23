@@ -4,8 +4,8 @@
       "pingConfig": {
         "destination": "http://www.gstatic.com/generate_204",
         "httpMethod": "HEAD",
-        "interval": "5m",
-        "sampling": 1,
+        "interval": "1m",
+        "sampling": 2,
         "timeout": "5s"
       },
       "subjectSelector": [
@@ -16,7 +16,27 @@
         "🇩🇪 DE — South Networks Pro (only Mobile)",
         "🇯🇵 JP — South Networks Pro (only Mobile)",
         "🇰🇿 KZ — South Networks Pro (only Mobile)",
-        "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+        "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
+        "🇷🇺 Белый интернет #1 | Все операторы",
+        "🇷🇺 Белый интернет #2 | Все операторы",
+        "🇷🇺 Белый интернет #3 | Все операторы",
+        "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС",
+        "🇷🇺 Белый интернет #5 | Билайн / Теле2 / МТС",
+        "🇷🇺 Белый интернет #6 | Все операторы",
+        "🇷🇺 Белый интернет #8 | Все операторы",
+        "🇷🇺 Белый интернет #9 | Все операторы",
+        "🇷🇺 Белый интернет #10 | Все операторы",
+        "🇷🇺 Белый интернет #11 | Билайн / Теле2",
+        "🇷🇺 Белый интернет #12 | Все операторы",
+        "🇷🇺 Белый интернет #13 | Все операторы",
+        "🇷🇺 Белый интернет #14 | Все операторы",
+        "🇳🇱 Нидерланды новые",
+        "🇮🇹 Италия новые",
+        "🇲🇩 Молдова новые",
+        "🇩🇪 Германия новые",
+        "🇪🇪 Эстония новые",
+        "🇧🇬 Болгария новые",
+        "🇺🇸 США новые"
       ]
     },
     "dns": {
@@ -963,8 +983,8 @@
         "settings": {
           "vnext": [
             {
-              "address": "176.108.242.15",
-              "port": 1505,
+              "address": "168.113.253.110",
+              "port": 25565,
               "users": [
                 {
                   "encryption": "none",
@@ -978,10 +998,10 @@
           "network": "grpc",
           "security": "reality",
           "realitySettings": {
-            "serverName": "iv.kommersant.ru",
-            "fingerprint": "qq",
-            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
-            "shortId": "a5bd715862513387"
+            "serverName": "drive2.ru",
+            "fingerprint": "chrome",
+            "publicKey": "mE1oxQTdqBQtG8wyUkrWmBHjb6HtQcUZxhE8sqGd4HM",
+            "shortId": "0123456789abcdef"
           },
           "grpcSettings": {
             "serviceName": "grpc"
@@ -1335,7 +1355,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "78.159.246.210",
+              "address": "78.159.245.100",
               "port": 1505,
               "users": [
                 {
@@ -1362,6 +1382,40 @@
         "tag": "🇷🇺 Белый интернет #14 | Все операторы"
       },
       {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "45.150.36.114",
+              "port": 2083,
+              "users": [
+                {
+                  "id": "cb32c26d-de89-4d39-852f-697e106af541",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.samsung.com",
+            "fingerprint": "firefox",
+            "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+            "shortId": "a6376fab"
+          },
+          "tcpSettings": {
+            "header": {
+              "type": "none"
+            }
+          }
+        },
+        "tag": "🇳🇱 Нидерланды новые"
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -1374,11 +1428,208 @@
         "tag": "dns-out"
       },
       {
-        "tag": "service-fallback-random-loopback",
-        "protocol": "loopback",
+        "protocol": "vless",
         "settings": {
-          "inboundTag": "service-fallback-random"
-        }
+          "vnext": [
+            {
+              "address": "45.150.36.114",
+              "port": 7443,
+              "users": [
+                {
+                  "id": "cb32c26d-de89-4d39-852f-697e106af541",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.samsung.com",
+            "fingerprint": "firefox",
+            "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+            "shortId": "a6376fab"
+          },
+          "tcpSettings": {
+            "header": {
+              "type": "none"
+            }
+          }
+        },
+        "tag": "🇮🇹 Италия новые"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "45.150.36.114",
+              "port": 9443,
+              "users": [
+                {
+                  "id": "cb32c26d-de89-4d39-852f-697e106af541",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.samsung.com",
+            "fingerprint": "firefox",
+            "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+            "shortId": "a6376fab"
+          },
+          "tcpSettings": {
+            "header": {
+              "type": "none"
+            }
+          }
+        },
+        "tag": "🇲🇩 Молдова новые"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "45.150.36.114",
+              "port": 6443,
+              "users": [
+                {
+                  "id": "cb32c26d-de89-4d39-852f-697e106af541",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.samsung.com",
+            "fingerprint": "firefox",
+            "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+            "shortId": "a6376fab"
+          },
+          "tcpSettings": {
+            "header": {
+              "type": "none"
+            }
+          }
+        },
+        "tag": "🇩🇪 Германия новые"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "45.150.36.114",
+              "port": 8443,
+              "users": [
+                {
+                  "id": "cb32c26d-de89-4d39-852f-697e106af541",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.samsung.com",
+            "fingerprint": "firefox",
+            "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+            "shortId": "a6376fab"
+          },
+          "tcpSettings": {
+            "header": {
+              "type": "none"
+            }
+          }
+        },
+        "tag": "🇪🇪 Эстония новые"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "45.150.36.114",
+              "port": 443,
+              "users": [
+                {
+                  "id": "cb32c26d-de89-4d39-852f-697e106af541",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.samsung.com",
+            "fingerprint": "firefox",
+            "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+            "shortId": "a6376fab"
+          },
+          "tcpSettings": {
+            "header": {
+              "type": "none"
+            }
+          }
+        },
+        "tag": "🇧🇬 Болгария новые"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "45.150.36.114",
+              "port": 2053,
+              "users": [
+                {
+                  "id": "cb32c26d-de89-4d39-852f-697e106af541",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.samsung.com",
+            "fingerprint": "firefox",
+            "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+            "shortId": "a6376fab"
+          },
+          "tcpSettings": {
+            "header": {
+              "type": "none"
+            }
+          }
+        },
+        "tag": "🇺🇸 США новые"
       }
     ],
     "remarks": "⚡️⚡️Авто обход LTE",
@@ -1405,7 +1656,7 @@
             "type": "random"
           },
           "tag": "auto-best",
-          "fallbackTag": "service-fallback-random-loopback"
+          "fallbackTag": "block"
         },
         {
           "tag": "service-fallback-random-pool",
@@ -1416,45 +1667,60 @@
             "🇺🇸 US — South Networks Pro (only Mobile)",
             "🇩🇪 DE — South Networks Pro (only Mobile)",
             "🇯🇵 JP — South Networks Pro (only Mobile)",
-            "🇰🇿 KZ — South Networks Pro (only Mobile)"
+            "🇰🇿 KZ — South Networks Pro (only Mobile)",
+            "🇳🇱 Нидерланды новые",
+            "🇮🇹 Италия новые",
+            "🇲🇩 Молдова новые",
+            "🇩🇪 Германия новые",
+            "🇪🇪 Эстония новые",
+            "🇧🇬 Болгария новые",
+            "🇺🇸 США новые"
           ],
-          "fallbackTag": "block",
           "strategy": {
             "type": "random"
-          }
+          },
+          "fallbackTag": "block"
         },
         {
           "tag": "service-youtube-nl",
           "selector": [
             "🇳🇱 NL — South Networks Pro (only Mobile)",
             "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]]",
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
+            "🇳🇱 Нидерланды новые"
           ],
-          "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
             "type": "random"
-          }
+          },
+          "fallbackTag": "block"
         },
         {
           "tag": "service-telegram-random",
           "selector": [
-            "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+            "🇳🇱 Нидерланды новые",
+            "🇮🇹 Италия новые",
+            "🇲🇩 Молдова новые",
+            "🇩🇪 Германия новые",
+            "🇪🇪 Эстония новые",
+            "🇧🇬 Болгария новые",
+            "🇺🇸 США новые"
           ],
-          "fallbackTag": "block",
           "strategy": {
             "type": "random"
-          }
+          },
+          "fallbackTag": "block"
         },
         {
           "tag": "service-instagram-ru",
           "selector": [
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
-            "🇩🇪 DE — South Networks Pro (only Mobile)"
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇰🇿 KZ — South Networks Pro (only Mobile)"
           ],
-          "fallbackTag": "service-fallback-random-loopback",
           "strategy": {
             "type": "random"
-          }
+          },
+          "fallbackTag": "block"
         },
         {
           "tag": "service-zona-video-7-foreign",
@@ -1465,74 +1731,99 @@
             "🇺🇸 US — South Networks Pro (only Mobile)",
             "🇩🇪 DE — South Networks Pro (only Mobile)",
             "🇯🇵 JP — South Networks Pro (only Mobile)",
-            "🇰🇿 KZ — South Networks Pro (only Mobile)"
+            "🇰🇿 KZ — South Networks Pro (only Mobile)",
+            "🇳🇱 Нидерланды новые",
+            "🇮🇹 Италия новые",
+            "🇲🇩 Молдова новые",
+            "🇩🇪 Германия новые",
+            "🇪🇪 Эстония новые",
+            "🇧🇬 Болгария новые",
+            "🇺🇸 США новые"
           ],
-          "fallbackTag": "block",
           "strategy": {
             "type": "random"
+          },
+          "fallbackTag": "block"
+        },
+        {
+          "tag": "apple-push-white-internet",
+          "selector": [
+            "🇷🇺 Белый интернет #1 | Все операторы",
+            "🇷🇺 Белый интернет #2 | Все операторы",
+            "🇷🇺 Белый интернет #3 | Все операторы",
+            "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС",
+            "🇷🇺 Белый интернет #5 | Билайн / Теле2 / МТС",
+            "🇷🇺 Белый интернет #6 | Все операторы",
+            "🇷🇺 Белый интернет #8 | Все операторы",
+            "🇷🇺 Белый интернет #9 | Все операторы",
+            "🇷🇺 Белый интернет #10 | Все операторы",
+            "🇷🇺 Белый интернет #11 | Билайн / Теле2",
+            "🇷🇺 Белый интернет #12 | Все операторы",
+            "🇷🇺 Белый интернет #13 | Все операторы",
+            "🇷🇺 Белый интернет #14 | Все операторы"
+          ],
+          "strategy": {
+            "type": "leastPing"
           }
+        },
+        {
+          "tag": "service-ai-germany",
+          "selector": [
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇩🇪 Германия новые"
+          ],
+          "strategy": {
+            "type": "random"
+          },
+          "fallbackTag": "block"
+        },
+        {
+          "tag": "service-spotify-kz-ee",
+          "selector": [
+            "🇰🇿 KZ — South Networks Pro (only Mobile)",
+            "🇪🇪 Эстония новые"
+          ],
+          "strategy": {
+            "type": "random"
+          },
+          "fallbackTag": "block"
+        },
+        {
+          "tag": "service-tiktok-jp-it",
+          "selector": [
+            "🇯🇵 JP — South Networks Pro (only Mobile)",
+            "🇮🇹 Италия новые"
+          ],
+          "strategy": {
+            "type": "random"
+          },
+          "fallbackTag": "block"
+        },
+        {
+          "tag": "service-twitch-us",
+          "selector": [
+            "🇺🇸 US — South Networks Pro (only Mobile)",
+            "🇺🇸 США новые"
+          ],
+          "strategy": {
+            "type": "random"
+          },
+          "fallbackTag": "block"
+        },
+        {
+          "tag": "service-supercell-us",
+          "selector": [
+            "🇺🇸 US — South Networks Pro (only Mobile)",
+            "🇺🇸 США новые"
+          ],
+          "strategy": {
+            "type": "random"
+          },
+          "fallbackTag": "block"
         }
       ],
       "domainMatcher": "hybrid",
       "rules": [
-        {
-          "type": "field",
-          "domain": [
-            "domain:telegram.org",
-            "domain:telegram.me",
-            "domain:telegram.dog",
-            "domain:t.me",
-            "domain:telegra.ph",
-            "domain:telesco.pe",
-            "domain:tdesktop.com",
-            "domain:telegram-cdn.org",
-            "domain:telegramusercontent.com",
-            "domain:tg.dev",
-            "domain:cdn-telegram.org",
-            "domain:comments.app",
-            "domain:contest.com",
-            "domain:fragment.com",
-            "domain:graph.org",
-            "domain:quiz.directory",
-            "domain:telega.one",
-            "domain:telegram.space",
-            "domain:ton.org",
-            "domain:tx.me",
-            "domain:usercontent.dev"
-          ],
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
-        },
-        {
-          "type": "field",
-          "ip": [
-            "91.108.56.0/22",
-            "91.108.4.0/22",
-            "91.108.8.0/22",
-            "91.108.16.0/22",
-            "91.108.12.0/22",
-            "149.154.160.0/20",
-            "91.105.192.0/23",
-            "91.108.20.0/22",
-            "185.76.151.0/24",
-            "2001:b28:f23d::/48",
-            "2001:b28:f23f::/48",
-            "2001:67c:4e8::/48",
-            "2001:b28:f23c::/48",
-            "2a0a:f280::/32",
-            "5.28.128.0/17",
-            "95.161.64.0/20",
-            "109.239.140.0/24",
-            "194.221.250.50/32"
-          ],
-          "outboundTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
-        },
-        {
-          "type": "field",
-          "inboundTag": [
-            "service-fallback-random"
-          ],
-          "balancerTag": "service-fallback-random-pool"
-        },
         {
           "type": "field",
           "domain": [
@@ -1601,21 +1892,11 @@
         },
         {
           "type": "field",
-          "ip": [
-            "17.0.0.0/8",
-            "2620:149:a44::/48",
-            "2403:300:a42::/48",
-            "2403:300:a51::/48"
-          ],
-          "balancerTag": "service-fallback-random-pool"
-        },
-        {
-          "type": "field",
           "domain": [
             "domain:push.apple.com"
           ],
           "network": "tcp",
-          "balancerTag": "service-fallback-random-pool"
+          "balancerTag": "apple-push-white-internet"
         },
         {
           "type": "field",
@@ -1628,6 +1909,16 @@
           ],
           "port": "5223",
           "network": "tcp",
+          "balancerTag": "apple-push-white-internet"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "17.0.0.0/8",
+            "2620:149:a44::/48",
+            "2403:300:a42::/48",
+            "2403:300:a51::/48"
+          ],
           "balancerTag": "service-fallback-random-pool"
         },
         {
@@ -2339,7 +2630,7 @@
           "type": "field",
           "network": "tcp,udp",
           "port": "9339",
-          "outboundTag": "🇺🇸 US — South Networks Pro (only Mobile)"
+          "balancerTag": "service-supercell-us"
         },
         {
           "type": "field",
@@ -2361,32 +2652,7 @@
             "domain:byteimg.com",
             "domain:snssdk.com"
           ],
-          "outboundTag": "🇯🇵 JP — South Networks Pro (only Mobile)"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:discord.com",
-            "domain:discord.gg",
-            "domain:discordapp.com",
-            "domain:discordapp.net",
-            "domain:discord.media",
-            "domain:discordcdn.com",
-            "domain:dis.gd",
-            "domain:discordstatus.com",
-            "domain:discord.gift",
-            "domain:discord.new",
-            "domain:discord.co",
-            "domain:discord.dev",
-            "domain:discord.store",
-            "domain:discordactivities.com",
-            "domain:discord-activities.com",
-            "domain:discordquests.com",
-            "domain:discordpartygames.com",
-            "domain:discordsays.com",
-            "domain:discordsez.com"
-          ],
-          "outboundTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
+          "balancerTag": "service-tiktok-jp-it"
         },
         {
           "type": "field",
@@ -2407,7 +2673,7 @@
             "domain:ds0h3roq6wcgc.cloudfront.net",
             "domain:d2nvs31859zcd8.cloudfront.net"
           ],
-          "outboundTag": "🇺🇸 US — South Networks Pro (only Mobile)"
+          "balancerTag": "service-twitch-us"
         },
         {
           "type": "field",
@@ -2428,7 +2694,7 @@
             "full:o207216.ingest.sentry.io",
             "full:o33249.ingest.sentry.io"
           ],
-          "outboundTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
+          "balancerTag": "service-ai-germany"
         },
         {
           "type": "field",
@@ -2446,7 +2712,7 @@
             "full:supercell.zendesk.com",
             "full:api.quago.io"
           ],
-          "outboundTag": "🇺🇸 US — South Networks Pro (only Mobile)"
+          "balancerTag": "service-supercell-us"
         },
         {
           "type": "field",
@@ -2502,7 +2768,7 @@
             "18.239.18.71/32",
             "18.239.18.72/32"
           ],
-          "outboundTag": "🇺🇸 US — South Networks Pro (only Mobile)"
+          "balancerTag": "service-supercell-us"
         },
         {
           "type": "field",
@@ -2528,7 +2794,58 @@
             "full:spotify.map.fastlylb.net",
             "full:video-akpcw-cdn-spotify-com.akamaized.net"
           ],
-          "outboundTag": "🇰🇿 KZ — South Networks Pro (only Mobile)"
+          "balancerTag": "service-spotify-kz-ee"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:telegram.org",
+            "domain:telegram.me",
+            "domain:telegram.dog",
+            "domain:t.me",
+            "domain:telegra.ph",
+            "domain:telesco.pe",
+            "domain:tdesktop.com",
+            "domain:telegram-cdn.org",
+            "domain:telegramusercontent.com",
+            "domain:tg.dev",
+            "domain:cdn-telegram.org",
+            "domain:comments.app",
+            "domain:contest.com",
+            "domain:fragment.com",
+            "domain:graph.org",
+            "domain:quiz.directory",
+            "domain:telega.one",
+            "domain:telegram.space",
+            "domain:ton.org",
+            "domain:tx.me",
+            "domain:usercontent.dev"
+          ],
+          "balancerTag": "service-telegram-random"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "91.108.56.0/22",
+            "91.108.4.0/22",
+            "91.108.8.0/22",
+            "91.108.16.0/22",
+            "91.108.12.0/22",
+            "149.154.160.0/20",
+            "91.105.192.0/23",
+            "91.108.20.0/22",
+            "185.76.151.0/24",
+            "2001:b28:f23d::/48",
+            "2001:b28:f23f::/48",
+            "2001:67c:4e8::/48",
+            "2001:b28:f23c::/48",
+            "2a0a:f280::/32",
+            "5.28.128.0/17",
+            "95.161.64.0/20",
+            "109.239.140.0/24",
+            "194.221.250.50/32"
+          ],
+          "balancerTag": "service-telegram-random"
         },
         {
           "type": "field",
@@ -2572,7 +2889,7 @@
             "full:notifications-pa.googleapis.com",
             "full:signaler-pa.googleapis.com"
           ],
-          "outboundTag": "🇩🇪 DE — South Networks Pro (only Mobile)"
+          "balancerTag": "service-ai-germany"
         },
         {
           "type": "field",
@@ -2631,8 +2948,8 @@
         "timeout": "5s"
       },
       "subjectSelector": [
-        "🇵🇱 Премиум-конфиг (ранний доступ)",
-        "🇩🇪 Германия",
+        "🇳🇱 Премиум-конфиг (ранний доступ)",
+        "🇩🇪 💫 умная локация германия бывш",
         "💫 Премиум-конфиг1"
       ]
     },
@@ -3337,12 +3654,12 @@
         "settings": {
           "vnext": [
             {
-              "address": "45.139.84.54",
+              "address": "103.112.71.6",
               "port": 43000,
               "users": [
                 {
                   "encryption": "none",
-                  "id": "b1c87d9a-475a-4137-a70a-aa48ec9dd767",
+                  "id": "c71aac46-2b2d-4f16-bb09-a489da21e3d4",
                   "flow": "xtls-rprx-vision"
                 }
               ]
@@ -3354,25 +3671,25 @@
           "security": "reality",
           "realitySettings": {
             "fingerprint": "chrome",
-            "publicKey": "5qbTokHn-v590JeD9CVKafSnrgoR-5M3wsT7zN9Nki4",
-            "shortId": "b632e4df",
+            "publicKey": "1Pn3QKg6DG9ayHpl0GkjwiqTKFMhFEmSX36aJjklKGo",
+            "shortId": "8e3395cd",
             "spiderX": "/"
           },
           "tcpSettings": {}
         },
-        "tag": "🇵🇱 Премиум-конфиг (ранний доступ)"
+        "tag": "🇳🇱 Премиум-конфиг (ранний доступ)"
       },
       {
         "protocol": "vless",
         "settings": {
           "vnext": [
             {
-              "address": "217.69.167.30",
-              "port": 31896,
+              "address": "45.91.55.219",
+              "port": 17735,
               "users": [
                 {
                   "encryption": "none",
-                  "id": "91402144-4b7b-4667-83f6-a718021d0982",
+                  "id": "ca2521f2-fea5-465d-9a64-5bb56e357889",
                   "flow": "xtls-rprx-vision"
                 }
               ]
@@ -3384,25 +3701,25 @@
           "security": "reality",
           "realitySettings": {
             "fingerprint": "chrome",
-            "publicKey": "zwZOAcJSpQozB_uapDbF0ZbdYd_XOkcsNKG5aDyvylI",
-            "shortId": "d8f55e4a",
+            "publicKey": "1pSvtsWZLD_zpd6z4IfmIEFdf9vhTUfU_2GK9oHeTUc",
+            "shortId": "7e663d46",
             "spiderX": "/"
           },
           "tcpSettings": {}
         },
-        "tag": "🇩🇪 Германия"
+        "tag": "🇩🇪 💫 умная локация германия бывш"
       },
       {
         "protocol": "vless",
         "settings": {
           "vnext": [
             {
-              "address": "168.113.128.230",
-              "port": 62642,
+              "address": "168.113.142.95",
+              "port": 13789,
               "users": [
                 {
                   "encryption": "none",
-                  "id": "818c421a-fdfc-4d2b-8c7c-e350db96c338",
+                  "id": "7df12577-c8b1-4ce7-8aa2-8083c558cbbc",
                   "flow": "xtls-rprx-vision"
                 }
               ]
@@ -3414,8 +3731,8 @@
           "security": "reality",
           "realitySettings": {
             "fingerprint": "chrome",
-            "publicKey": "-jbbL3oNcbeX9DxEzhcsWfZoyRNi9qpLubDl4RefmmI",
-            "shortId": "2e6eeafe",
+            "publicKey": "mLT5EHHRC5VK-X6LFfXLrwaddi-j11XzrmUO9X4UNx0",
+            "shortId": "e9d3bdd4",
             "spiderX": "/"
           },
           "tcpSettings": {}
@@ -3441,8 +3758,8 @@
       "balancers": [
         {
           "selector": [
-            "🇵🇱 Премиум-конфиг (ранний доступ)",
-            "🇩🇪 Германия",
+            "🇳🇱 Премиум-конфиг (ранний доступ)",
+            "🇩🇪 💫 умная локация германия бывш",
             "💫 Премиум-конфиг1"
           ],
           "strategy": {
@@ -4477,1375 +4794,6 @@
     },
     "admin_display_name": "⚡️Авто Wi-Fi",
     "admin_auto_profile": true
-  },
-  {
-    "dns": {
-      "queryStrategy": "UseIPv4",
-      "servers": [
-        {
-          "address": "77.88.8.8",
-          "tag": "standalone-yandex-direct",
-          "queryStrategy": "UseIPv4",
-          "skipFallback": true,
-          "domains": [
-            "domain:fonbet.ru",
-            "domain:fon.bet",
-            "domain:wink.ru",
-            "domain:burgerking.ru",
-            "domain:burgerkingrus.ru",
-            "domain:wink.rt.ru",
-            "domain:ngenix.net",
-            "domain:restream.ru",
-            "domain:restream-media.net",
-            "domain:yandex.net",
-            "domain:yandex.com",
-            "domain:ya.ru",
-            "domain:yastatic.net",
-            "domain:yandexcloud.net",
-            "domain:yandexadservices.com",
-            "domain:kinopoisk.ru",
-            "full:ufanet.ru",
-            "domain:gosuslugi.ru",
-            "domain:government.ru",
-            "domain:kremlin.ru",
-            "domain:duma.gov.ru",
-            "domain:council.gov.ru",
-            "domain:vybory.gov.ru",
-            "domain:nalog.gov.ru",
-            "domain:nalog.ru",
-            "domain:sfr.gov.ru",
-            "domain:pfr.gov.ru",
-            "domain:mvd.ru",
-            "domain:gibdd.ru",
-            "domain:mchs.gov.ru",
-            "domain:genproc.gov.ru",
-            "domain:rosreestr.gov.ru",
-            "domain:fssp.gov.ru",
-            "domain:fssprus.ru",
-            "domain:sudrf.ru",
-            "domain:mos-gorsud.ru",
-            "domain:vsrf.ru",
-            "domain:arbitr.ru",
-            "domain:pravo.gov.ru",
-            "domain:roskazna.gov.ru",
-            "domain:minfin.gov.ru",
-            "domain:minzdrav.gov.ru",
-            "domain:digital.gov.ru",
-            "domain:rkn.gov.ru",
-            "domain:roskachestvo.gov.ru",
-            "domain:edu.gov.ru",
-            "domain:obrnadzor.gov.ru",
-            "domain:bus.gov.ru",
-            "domain:ofd.gov.ru",
-            "domain:crpt.ru",
-            "domain:honestsign.ru",
-            "domain:dvizhenie1.ru",
-            "domain:moskva-putinu.ru",
-            "domain:rsv.ru",
-            "domain:myrosmol.ru",
-            "domain:tvoyhod.online",
-            "domain:dobro.ru",
-            "domain:onf.ru",
-            "domain:znanierussia.ru",
-            "domain:liza-alert.org",
-            "domain:sreda.gov.ru",
-            "domain:gossluzhba.gov.ru",
-            "domain:glonass.ru",
-            "domain:rosatom.ru",
-            "domain:rosseti.ru",
-            "domain:rosagroleasing.ru",
-            "domain:rosneft.ru",
-            "domain:mos.ru",
-            "domain:emias.info",
-            "domain:mosreg.ru",
-            "domain:gov.spb.ru",
-            "domain:gu.spb.ru",
-            "domain:gorzdrav.spb.ru",
-            "domain:parking.spb.ru",
-            "domain:domclick.ru",
-            "domain:vtb.ru",
-            "domain:vtbreg.ru",
-            "domain:vtb-mobile.ru",
-            "domain:tinkoff.ru",
-            "domain:t-bank.ru",
-            "domain:tbank.ru",
-            "domain:tbank-online.com",
-            "domain:cdn-tinkoff.ru",
-            "domain:alfabank.ru",
-            "domain:alfa.ru",
-            "domain:gazprombank.ru",
-            "domain:gpb.ru",
-            "domain:psbank.ru",
-            "domain:mtsbank.ru",
-            "domain:raiffeisen.ru",
-            "domain:sovcombank.ru",
-            "domain:halvacard.ru",
-            "domain:rshb.ru",
-            "domain:pochtabank.ru",
-            "domain:mkb.ru",
-            "domain:otkritie.ru",
-            "domain:ozonbank.ru",
-            "domain:yandex-bank.net",
-            "domain:yandex-bank.ru",
-            "domain:nspk.ru",
-            "domain:mironline.ru",
-            "domain:mirpay.ru",
-            "domain:privetmir.ru",
-            "domain:yoomoney.ru",
-            "domain:qiwi.com",
-            "domain:qiwi.ru",
-            "domain:cbr.ru",
-            "domain:moex.com",
-            "domain:finuslugi.ru",
-            "domain:mts.ru",
-            "domain:mymts.ru",
-            "domain:mts-link.ru",
-            "domain:beeline.ru",
-            "domain:megafon.ru",
-            "domain:t2.ru",
-            "domain:yota.ru",
-            "domain:rt.ru",
-            "domain:ertelecom.ru",
-            "domain:dom.ru",
-            "domain:motiv.ru",
-            "domain:motivtelecom.ru",
-            "domain:t-mobile.ru",
-            "domain:nextmobile.ru",
-            "domain:pochta.ru",
-            "domain:max.ru",
-            "domain:max.online",
-            "domain:max.app",
-            "domain:oneme.ru",
-            "domain:tamtam.chat",
-            "domain:tt.me",
-            "domain:vk.com",
-            "domain:vk.ru",
-            "domain:vk.me",
-            "domain:vk.video",
-            "domain:vkvideo.ru",
-            "domain:vkplay.ru",
-            "domain:userapi.com",
-            "domain:vkuser.net",
-            "domain:vkuseraudio.net",
-            "domain:vkuservideo.net",
-            "domain:vk-portal.net",
-            "domain:ok.ru",
-            "domain:okcdn.ru",
-            "domain:odnoklassniki.ru",
-            "domain:ok.me",
-            "domain:mail.ru",
-            "domain:imgsmail.ru",
-            "domain:rustore.ru",
-            "domain:dzen.ru",
-            "domain:dzeninfra.ru",
-            "domain:rutube.ru",
-            "domain:rutubelist.ru",
-            "domain:yappy.media",
-            "domain:ruwiki.ru",
-            "domain:pikabu.ru",
-            "domain:livejournal.com",
-            "domain:yandex.ru",
-            "domain:yango.com",
-            "domain:edadeal.ru",
-            "domain:mradx.net",
-            "domain:ozon.ru",
-            "domain:ozone.ru",
-            "domain:ozonusercontent.com",
-            "domain:wildberries.ru",
-            "domain:wb.ru",
-            "domain:wbbasket.ru",
-            "domain:aliexpress.ru",
-            "domain:lmcdn.ru",
-            "domain:dns-shop.ru",
-            "domain:mvideo.ru",
-            "domain:eldorado.ru",
-            "domain:citilink.ru",
-            "domain:leroymerlin.ru",
-            "domain:lemanapro.ru",
-            "domain:vseinstrumenti.ru",
-            "domain:avito.ru",
-            "domain:autoteka.ru",
-            "domain:youla.ru",
-            "domain:cian.ru",
-            "domain:hh.ru",
-            "domain:hhcdn.ru",
-            "domain:superjob.ru",
-            "domain:rabota.ru",
-            "domain:hrlink.ru",
-            "domain:magnit.ru",
-            "domain:5ka.ru",
-            "domain:pyaterochka.ru",
-            "domain:perekrestok.ru",
-            "domain:chizhik.club",
-            "domain:chizhik.ru",
-            "domain:vprok.ru",
-            "domain:5post.ru",
-            "domain:av.ru",
-            "domain:azbukavkusa.ru",
-            "domain:dixy.ru",
-            "domain:auchan.ru",
-            "domain:spar.ru",
-            "domain:metro-cc.ru",
-            "domain:petrovich.ru",
-            "domain:detmir.ru",
-            "domain:vkusvill.ru",
-            "domain:food.ru",
-            "domain:samokat.ru",
-            "domain:mnogolososya.ru",
-            "domain:vkusnoitochka.ru",
-            "domain:dodopizza.ru",
-            "domain:dodopizza.io",
-            "domain:lentaonline.ru",
-            "domain:lenta.com",
-            "domain:okmarket.ru",
-            "domain:okeydostavka.ru",
-            "domain:slata.ru",
-            "domain:krasyar.ru",
-            "domain:my-victoria.ru",
-            "domain:delivery-club.ru",
-            "domain:dostavista.ru",
-            "domain:dellin.ru",
-            "domain:businesslines.ru",
-            "domain:topdelivery.ru",
-            "domain:rzd.ru",
-            "domain:rzd-bonus.ru",
-            "domain:grandtrains.ru",
-            "domain:grandtrain.ru",
-            "domain:aeroflot.ru",
-            "domain:s7.ru",
-            "domain:pobeda.aero",
-            "domain:utair.ru",
-            "domain:rossiya-airlines.com",
-            "domain:uralairlines.ru",
-            "domain:ural-airlines.ru",
-            "domain:redwings.aero",
-            "domain:azimuth.aero",
-            "domain:nordwindairlines.ru",
-            "domain:tutu.ru",
-            "domain:travel2moscow.com",
-            "domain:travelrussia.ru",
-            "domain:otello.ru",
-            "domain:taximaxim.ru",
-            "domain:taxi-maxim.ru",
-            "domain:delimobil.ru",
-            "domain:citydrive.ru",
-            "domain:youdrive.ru",
-            "domain:belkacar.ru",
-            "domain:urentbike.ru",
-            "domain:mosgortrans.ru",
-            "domain:mosmetro.ru",
-            "domain:mosmetro.com",
-            "domain:metro.spb.ru",
-            "domain:spbtransport.info",
-            "domain:2gis.ru",
-            "domain:2gis.com",
-            "domain:gismeteo.ru",
-            "domain:uchi.ru",
-            "domain:dnevnik.ru",
-            "domain:foxford.ru",
-            "domain:skyeng.ru",
-            "domain:resh.edu.ru",
-            "domain:1c.ru",
-            "domain:rg.ru",
-            "domain:ria.ru",
-            "domain:tass.ru",
-            "domain:1tv.ru",
-            "domain:vesti.ru",
-            "domain:smotrim.ru",
-            "domain:ntv.ru",
-            "domain:tnt-online.ru",
-            "domain:ctc.ru",
-            "domain:tv3.ru",
-            "domain:friday.ru",
-            "domain:otr-online.ru",
-            "domain:5-tv.ru",
-            "domain:domashniy.ru",
-            "domain:domashny.ru",
-            "domain:muz-tv.ru",
-            "domain:ren.tv",
-            "domain:spastv.ru",
-            "domain:tvc.ru",
-            "domain:mir24.tv",
-            "domain:matchtv.ru",
-            "domain:vmeste-rf.tv",
-            "domain:tvzvezda.ru",
-            "domain:zvezdaweekly.ru",
-            "domain:vgtrk.ru",
-            "domain:vitrina.tv",
-            "domain:360tv.ru",
-            "domain:dumatv.ru",
-            "domain:solovievlive.ru",
-            "domain:sport24.ru",
-            "domain:radioplayer.ru",
-            "domain:kp.ru",
-            "domain:rbc.ru",
-            "domain:lenta.ru",
-            "domain:gazeta.ru",
-            "domain:kommersant.ru",
-            "domain:vedomosti.ru",
-            "domain:mk.ru",
-            "domain:aif.ru",
-            "domain:iz.ru",
-            "domain:izvestia.ru",
-            "domain:rt.com",
-            "domain:pnp.ru",
-            "domain:rambler.ru",
-            "domain:championat.com",
-            "domain:kion.ru",
-            "domain:ticketland.ru",
-            "domain:okko.tv",
-            "domain:ivi.ru",
-            "domain:ivi.tv",
-            "domain:premier.one",
-            "domain:more.tv",
-            "domain:litres.ru",
-            "domain:mybook.ru",
-            "domain:medsi.ru",
-            "domain:mamadeti.ru",
-            "domain:cmd-online.ru",
-            "domain:zdrav.expert",
-            "domain:freestylelibre.ru",
-            "domain:medtrum.com",
-            "domain:yuwell.com",
-            "domain:csat.ru",
-            "domain:evotor.ru",
-            "domain:tensor.ru",
-            "domain:kontur.ru",
-            "domain:trueconf.ru",
-            "domain:elta-r.ru",
-            "domain:khl.ru",
-            "domain:s82079.cdn.ngenix.net",
-            "domain:starline.ru",
-            "domain:starline.online",
-            "domain:starline-online.ru",
-            "domain:starline.bz",
-            "domain:uma.media",
-            "domain:sportbox.ru",
-            "domain:pass.media",
-            "domain:matchpremier.ru",
-            "domain:sberbank.ru",
-            "domain:sber.ru",
-            "domain:bx-cdn.ru",
-            "domain:paywb.com",
-            "domain:wibes.com",
-            "domain:ozonpay.ru",
-            "domain:ozonpvz.ru",
-            "domain:ocdn.me",
-            "domain:o-cdn.com",
-            "domain:o-static.com",
-            "domain:o3t.ru",
-            "domain:o3tech.ru",
-            "domain:ozon-travel.ru",
-            "domain:ozon.travel",
-            "domain:ozon-express.ru",
-            "domain:ozonexpress.ru",
-            "domain:ozonseller.ru",
-            "domain:ozonfinance.ru",
-            "domain:ozonfresh.ru",
-            "domain:ozonmetro.ru",
-            "domain:ozon-dostavka.ru",
-            "domain:ozonpartners.ru",
-            "domain:o3team.ru",
-            "domain:o3.team",
-            "domain:ozon.com",
-            "domain:ozon.by",
-            "domain:ozon.kz",
-            "domain:yndx.net",
-            "domain:yandex.taxi",
-            "domain:yandex.pro",
-            "domain:rutaxi.ru",
-            "domain:vezet.ru",
-            "domain:yandex.kz",
-            "domain:yandex.by",
-            "domain:yandexcom.net",
-            "domain:yads.tech",
-            "domain:admetrica.ru",
-            "domain:webvisor.org",
-            "domain:yandex-team.ru",
-            "domain:vkontakte.com",
-            "domain:vkgo.app",
-            "domain:vklive.app",
-            "domain:vkpay.app",
-            "domain:vkpay.io",
-            "domain:vk.team",
-            "domain:avito.tech",
-            "domain:domofond.ru",
-            "domain:avito-services.com",
-            "domain:x5.ru",
-            "domain:x5club.ru",
-            "domain:x5paket.ru",
-            "domain:x5media.ru",
-            "domain:perekrestok.com",
-            "domain:okolo.app",
-            "domain:clubx5.ru",
-            "domain:idx5.ru",
-            "domain:5post.market",
-            "domain:x5.com",
-            "domain:sberbank.com",
-            "domain:sbrf.ru",
-            "domain:t-bank-app.ru",
-            "domain:data-tscbank.ru",
-            "domain:alfabank.com",
-            "domain:vtb.com",
-            "domain:psbinvest.ru",
-            "domain:openbank.ru",
-            "domain:mir-connect.ru",
-            "domain:yookassa.ru",
-            "domain:cloudpayments.ru",
-            "domain:payecom.ru",
-            "domain:platiecom.ru",
-            "domain:rutube.sport",
-            "domain:tvgateway.ru",
-            "domain:yotaplay.ru",
-            "domain:russia.tv",
-            "domain:2gis.tech",
-            "domain:max-messenger.ru",
-            "domain:sbermobile.ru",
-            "domain:mtsmusic.ru",
-            "domain:megamarket.tech",
-            "domain:sbermarket.ru",
-            "domain:dodo.ru",
-            "domain:express.ms",
-            "domain:vi.ru",
-            "domain:appsmail.ru",
-            "domain:attachmail.ru",
-            "domain:cdnmail.ru",
-            "domain:mrgcdn.ru",
-            "domain:smailru.net",
-            "domain:vmailru.net",
-            "domain:bizmrg.com",
-            "domain:mcs.st",
-            "domain:bk.ru",
-            "domain:list.ru",
-            "domain:inbox.ru",
-            "domain:internet.ru",
-            "domain:xmail.ru",
-            "domain:mycdn.me",
-            "domain:apiok.ru",
-            "domain:api.inappstory.ru",
-            "domain:cdn.inappstory.ru",
-            "domain:wb-basket.ru",
-            "domain:wbcontent.net",
-            "domain:wbstatic.net",
-            "domain:wbstatic.ru",
-            "domain:wb-bank.ru",
-            "domain:wb-cloud.ru",
-            "domain:wbpay.ru",
-            "domain:rwb.ru",
-            "domain:geobasket.ru",
-            "domain:wibes.ru",
-            "domain:ozon.app",
-            "domain:ozon.tech",
-            "domain:ozon-tech.ru",
-            "domain:ozoncard.ru",
-            "domain:o3.ru",
-            "domain:x5id.ru",
-            "domain:x5static.net",
-            "domain:api.x5.ru",
-            "domain:ecom-cdn.x5media.ru",
-            "domain:kinescopecdn.net",
-            "domain:ivicdn.tv",
-            "domain:okkoapi.tv",
-            "domain:okko.ru",
-            "domain:okko.sport",
-            "domain:playfamily.ru",
-            "domain:start.ru",
-            "domain:smotreshka.tv",
-            "domain:zvuk.com",
-            "domain:rtbcdn.ru",
-            "domain:t-static.ru",
-            "domain:tcsbank.ru",
-            "domain:tbankid.ru",
-            "domain:my-tbank.ru",
-            "domain:mir-pay.ru",
-            "domain:mironline.tech",
-            "domain:mirconnect.ru",
-            "domain:mirpayonline.ru",
-            "domain:static-storage.net",
-            "domain:yccdn.ru",
-            "domain:clstorage.net",
-            "domain:yandex.cloud",
-            "domain:yandex.st",
-            "domain:vk-cdn.me",
-            "domain:vk-cdn.net",
-            "domain:vk-apps.com",
-            "domain:vk-apps.ru",
-            "domain:vkcdnservice.com",
-            "domain:vkmessenger.app",
-            "domain:vkmessenger.com",
-            "domain:vkuserlive.com",
-            "domain:vkuservideo.com",
-            "domain:vkuservideo.ru",
-            "domain:vkuseraudio.com",
-            "domain:vkuserphoto.ru",
-            "domain:vkusercdn.ru",
-            "domain:vkpay.ru",
-            "domain:vkpay.com",
-            "domain:userapi.ru",
-            "domain:cdn-vk.ru",
-            "domain:cdn-vk.net",
-            "domain:dom.ufanet.ru",
-            "domain:help.ufanet.ru",
-            "domain:my.ufanet.ru"
-          ]
-        },
-        "77.88.8.8",
-        "77.88.8.8",
-        "77.88.8.8"
-      ],
-      "disableFallbackIfMatch": true
-    },
-    "inbounds": [
-      {
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ],
-          "enabled": true,
-          "metadataOnly": false,
-          "routeOnly": true
-        },
-        "tag": "socks-in"
-      },
-      {
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http",
-        "tag": "http-in"
-      }
-    ],
-    "log": {
-      "loglevel": "warning"
-    },
-    "outbounds": [
-      {
-        "protocol": "shadowsocks",
-        "settings": {
-          "servers": [
-            {
-              "address": "78.159.246.119",
-              "method": "2022-blake3-aes-128-gcm",
-              "password": "A8aKBymEIA4J/1192pEekg==:9h0W/6vuWst+/Y10CSMXjg==",
-              "port": 11326
-            }
-          ]
-        },
-        "tag": "proxy",
-        "admin_display_name": "Игровой обход",
-        "remark": "Игровой обход",
-        "remarks": "Игровой обход"
-      },
-      {
-        "protocol": "freedom",
-        "settings": {
-          "domainStrategy": "UseIPv4"
-        },
-        "streamSettings": {
-          "sockopt": {
-            "tcpNoDelay": true
-          }
-        },
-        "tag": "direct"
-      },
-      {
-        "protocol": "blackhole",
-        "settings": {
-          "response": {
-            "type": "http"
-          }
-        },
-        "tag": "block"
-      },
-      {
-        "protocol": "dns",
-        "settings": {},
-        "tag": "dns-out"
-      }
-    ],
-    "remarks": "🔋Обход LTE",
-    "routing": {
-      "domainMatcher": "hybrid",
-      "domainStrategy": "AsIs",
-      "rules": [
-        {
-          "type": "field",
-          "domain": [
-            "domain:labs.google",
-            "domain:labs.google.com",
-            "domain:aistudio.google.com",
-            "domain:gemini.google.com",
-            "domain:clients6.google.com",
-            "domain:notebooklm.google",
-            "domain:notebook.google.com",
-            "domain:notebooklm.google.com",
-            "domain:generativelanguage.googleapis.com",
-            "domain:alkalimakersuite-pa.clients6.google.com",
-            "domain:robinfrontend-pa.googleapis.com",
-            "domain:proactivebackend-pa.googleapis.com",
-            "domain:notebooklm-pa.googleapis.com",
-            "domain:animelib.org",
-            "domain:anilib.me",
-            "domain:cdnlibs.org",
-            "domain:deepl.com",
-            "domain:elgato.com",
-            "domain:ttwstatic.com",
-            "domain:spotify.com",
-            "domain:grok.com",
-            "domain:4pda.to",
-            "domain:githubcopilot.com",
-            "domain:myanimelist.net",
-            "domain:rutor.info",
-            "domain:rutor.is",
-            "domain:bing.com",
-            "domain:mongodb.com",
-            "domain:arc.net",
-            "domain:diabrowser.com",
-            "domain:framer.com",
-            "domain:framerusercontent.com",
-            "domain:manus.im",
-            "domain:sms-activate.io",
-            "domain:qoder.com",
-            "domain:wplace.live",
-            "domain:copilot.microsoft.com",
-            "domain:windsurf.com",
-            "domain:net.ua",
-            "domain:x.ai",
-            "domain:artstation.com",
-            "domain:nvidia.com",
-            "domain:character.ai",
-            "domain:notion.com",
-            "domain:notion.so",
-            "domain:vinted.com",
-            "domain:vinted.pl",
-            "domain:klingai.com",
-            "domain:depop.com",
-            "domain:elevenlabs.io",
-            "domain:claude.ai",
-            "domain:byteoversea.com",
-            "domain:cloudflareinsights.com",
-            "domain:anthropic.com",
-            "domain:habr.com",
-            "domain:claude.com",
-            "domain:openai.com",
-            "domain:chatgpt.com",
-            "domain:chatgpt.site",
-            "domain:ttvnw.net",
-            "domain:siftscience.com",
-            "domain:canva.com",
-            "domain:vestiairecollective.com",
-            "domain:mo.co",
-            "domain:proxywing.com",
-            "domain:adspower.net",
-            "domain:patreon.com",
-            "domain:sentry.io",
-            "domain:deezer.com",
-            "domain:ruads.org",
-            "domain:patreonusercontent.com",
-            "domain:cookielaw.org",
-            "domain:jmp.blue",
-            "domain:dubybot.live",
-            "domain:genspark.ai",
-            "domain:jetbrains.com",
-            "domain:ahrefs.com",
-            "domain:stripe.com",
-            "domain:twitch.tv",
-            "domain:xvideos.com",
-            "domain:youtube.com",
-            "domain:youtu.be",
-            "domain:googlevideo.com",
-            "domain:ytimg.com",
-            "domain:youtubei.googleapis.com",
-            "domain:youtube-nocookie.com"
-          ],
-          "outboundTag": "proxy"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:telegram.org",
-            "domain:telegram.me",
-            "domain:telegram.dog",
-            "domain:t.me",
-            "domain:telegra.ph",
-            "domain:telesco.pe",
-            "domain:tdesktop.com",
-            "domain:telegram-cdn.org",
-            "domain:telegramusercontent.com",
-            "domain:tg.dev"
-          ],
-          "outboundTag": "proxy"
-        },
-        {
-          "type": "field",
-          "ip": [
-            "91.108.56.0/22",
-            "91.108.4.0/22",
-            "91.108.8.0/22",
-            "91.108.16.0/22",
-            "91.108.12.0/22",
-            "149.154.160.0/20",
-            "91.105.192.0/23",
-            "91.108.20.0/22",
-            "185.76.151.0/24",
-            "2001:b28:f23d::/48",
-            "2001:b28:f23f::/48",
-            "2001:67c:4e8::/48",
-            "2001:b28:f23c::/48",
-            "2a0a:f280::/32",
-            "5.28.128.0/17",
-            "95.161.64.0/20",
-            "109.239.140.0/24"
-          ],
-          "outboundTag": "proxy"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:mapi.yota.ru",
-            "domain:appmetrica.yandex.net",
-            "domain:mc.yandex.ru",
-            "domain:proxy.mob.maps.yandex.net",
-            "domain:tracker-api.vk-analytics.ru",
-            "domain:ts.tracker-api.vk-analytics.ru",
-            "domain:ip4.tracker-api.vk-analytics.ru",
-            "domain:uaas.yandex.ru",
-            "domain:webmode.yota.ru",
-            "domain:adstat.yandex.ru",
-            "domain:i.megafon.ru",
-            "domain:ocsps.ssl.com"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:fonbet.ru",
-            "domain:fon.bet"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:wink.ru",
-            "domain:burgerking.ru",
-            "domain:burgerkingrus.ru",
-            "domain:wink.rt.ru",
-            "domain:ngenix.net",
-            "domain:restream.ru",
-            "domain:restream-media.net"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "inboundTag": [
-            "standalone-yandex-direct"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "ip": [
-            "77.88.8.8",
-            "77.88.8.1"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "inboundTag": [
-            "dns-inbound"
-          ],
-          "outboundTag": "dns-out",
-          "type": "field"
-        },
-        {
-          "domain": [
-            "domain:yandex.net"
-          ],
-          "outboundTag": "direct",
-          "type": "field"
-        },
-        {
-          "domain": [
-            "domain:yandex.com"
-          ],
-          "outboundTag": "direct",
-          "type": "field"
-        },
-        {
-          "domain": [
-            "domain:ya.ru"
-          ],
-          "outboundTag": "direct",
-          "type": "field"
-        },
-        {
-          "domain": [
-            "domain:yastatic.net"
-          ],
-          "outboundTag": "direct",
-          "type": "field"
-        },
-        {
-          "domain": [
-            "domain:yandexcloud.net"
-          ],
-          "outboundTag": "direct",
-          "type": "field"
-        },
-        {
-          "domain": [
-            "domain:yandexadservices.com"
-          ],
-          "outboundTag": "direct",
-          "type": "field"
-        },
-        {
-          "domain": [
-            "domain:kinopoisk.ru"
-          ],
-          "outboundTag": "direct",
-          "type": "field"
-        },
-        {
-          "outboundTag": "direct",
-          "protocol": [
-            "bittorrent"
-          ],
-          "type": "field"
-        },
-        {
-          "type": "field",
-          "ip": [
-            "10.0.0.0/8",
-            "172.16.0.0/12",
-            "192.168.0.0/16",
-            "169.254.0.0/16"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "full:ufanet.ru",
-            "domain:dom.ufanet.ru",
-            "domain:help.ufanet.ru",
-            "domain:my.ufanet.ru"
-          ],
-          "outboundTag": "direct"
-        },
-        {
-          "domain": [
-            "domain:gosuslugi.ru",
-            "domain:government.ru",
-            "domain:kremlin.ru",
-            "domain:duma.gov.ru",
-            "domain:council.gov.ru",
-            "domain:vybory.gov.ru",
-            "domain:nalog.gov.ru",
-            "domain:nalog.ru",
-            "domain:sfr.gov.ru",
-            "domain:pfr.gov.ru",
-            "domain:mvd.ru",
-            "domain:gibdd.ru",
-            "domain:mchs.gov.ru",
-            "domain:genproc.gov.ru",
-            "domain:rosreestr.gov.ru",
-            "domain:fssp.gov.ru",
-            "domain:fssprus.ru",
-            "domain:sudrf.ru",
-            "domain:mos-gorsud.ru",
-            "domain:vsrf.ru",
-            "domain:arbitr.ru",
-            "domain:pravo.gov.ru",
-            "domain:roskazna.gov.ru",
-            "domain:minfin.gov.ru",
-            "domain:minzdrav.gov.ru",
-            "domain:digital.gov.ru",
-            "domain:rkn.gov.ru",
-            "domain:roskachestvo.gov.ru",
-            "domain:edu.gov.ru",
-            "domain:obrnadzor.gov.ru",
-            "domain:bus.gov.ru",
-            "domain:ofd.gov.ru",
-            "domain:crpt.ru",
-            "domain:honestsign.ru",
-            "domain:dvizhenie1.ru",
-            "domain:moskva-putinu.ru",
-            "domain:rsv.ru",
-            "domain:myrosmol.ru",
-            "domain:tvoyhod.online",
-            "domain:dobro.ru",
-            "domain:onf.ru",
-            "domain:znanierussia.ru",
-            "domain:liza-alert.org",
-            "domain:sreda.gov.ru",
-            "domain:gossluzhba.gov.ru",
-            "domain:glonass.ru",
-            "domain:rosatom.ru",
-            "domain:rosseti.ru",
-            "domain:rosagroleasing.ru",
-            "domain:rosneft.ru",
-            "domain:mos.ru",
-            "domain:emias.info",
-            "domain:mosreg.ru",
-            "domain:gov.spb.ru",
-            "domain:gu.spb.ru",
-            "domain:gorzdrav.spb.ru",
-            "domain:parking.spb.ru",
-            "domain:domclick.ru",
-            "domain:vtb.ru",
-            "domain:vtbreg.ru",
-            "domain:vtb-mobile.ru",
-            "domain:tinkoff.ru",
-            "domain:t-bank.ru",
-            "domain:tbank.ru",
-            "domain:tbank-online.com",
-            "domain:cdn-tinkoff.ru",
-            "domain:alfabank.ru",
-            "domain:alfa.ru",
-            "domain:gazprombank.ru",
-            "domain:gpb.ru",
-            "domain:psbank.ru",
-            "domain:mtsbank.ru",
-            "domain:raiffeisen.ru",
-            "domain:sovcombank.ru",
-            "domain:halvacard.ru",
-            "domain:rshb.ru",
-            "domain:pochtabank.ru",
-            "domain:mkb.ru",
-            "domain:otkritie.ru",
-            "domain:ozonbank.ru",
-            "domain:yandex-bank.net",
-            "domain:yandex-bank.ru",
-            "domain:nspk.ru",
-            "domain:mironline.ru",
-            "domain:mirpay.ru",
-            "domain:privetmir.ru",
-            "domain:yoomoney.ru",
-            "domain:qiwi.com",
-            "domain:qiwi.ru",
-            "domain:cbr.ru",
-            "domain:moex.com",
-            "domain:finuslugi.ru",
-            "domain:mts.ru",
-            "domain:mymts.ru",
-            "domain:mts-link.ru",
-            "domain:beeline.ru",
-            "domain:megafon.ru",
-            "domain:t2.ru",
-            "domain:yota.ru",
-            "domain:rt.ru",
-            "domain:ertelecom.ru",
-            "domain:dom.ru",
-            "domain:motiv.ru",
-            "domain:motivtelecom.ru",
-            "domain:t-mobile.ru",
-            "domain:nextmobile.ru",
-            "domain:pochta.ru",
-            "domain:max.ru",
-            "domain:max.online",
-            "domain:max.app",
-            "domain:oneme.ru",
-            "domain:tamtam.chat",
-            "domain:tt.me",
-            "domain:vk.com",
-            "domain:vk.ru",
-            "domain:vk.me",
-            "domain:vk.video",
-            "domain:vkvideo.ru",
-            "domain:vkplay.ru",
-            "domain:userapi.com",
-            "domain:vkuser.net",
-            "domain:vkuseraudio.net",
-            "domain:vkuservideo.net",
-            "domain:vk-portal.net",
-            "domain:ok.ru",
-            "domain:okcdn.ru",
-            "domain:odnoklassniki.ru",
-            "domain:ok.me",
-            "domain:mail.ru",
-            "domain:imgsmail.ru",
-            "domain:rustore.ru",
-            "domain:dzen.ru",
-            "domain:dzeninfra.ru",
-            "domain:rutube.ru",
-            "domain:rutubelist.ru",
-            "domain:yappy.media",
-            "domain:ruwiki.ru",
-            "domain:pikabu.ru",
-            "domain:livejournal.com",
-            "domain:yandex.ru",
-            "domain:yandex.net",
-            "domain:yandex.com",
-            "domain:ya.ru",
-            "domain:yango.com",
-            "domain:edadeal.ru",
-            "domain:kinopoisk.ru",
-            "domain:yastatic.net",
-            "domain:mradx.net",
-            "domain:ozon.ru",
-            "domain:ozone.ru",
-            "domain:ozonusercontent.com",
-            "domain:wildberries.ru",
-            "domain:wb.ru",
-            "domain:wbbasket.ru",
-            "domain:aliexpress.ru",
-            "domain:lmcdn.ru",
-            "domain:dns-shop.ru",
-            "domain:mvideo.ru",
-            "domain:eldorado.ru",
-            "domain:citilink.ru",
-            "domain:leroymerlin.ru",
-            "domain:lemanapro.ru",
-            "domain:vseinstrumenti.ru",
-            "domain:avito.ru",
-            "domain:autoteka.ru",
-            "domain:youla.ru",
-            "domain:cian.ru",
-            "domain:hh.ru",
-            "domain:hhcdn.ru",
-            "domain:superjob.ru",
-            "domain:rabota.ru",
-            "domain:hrlink.ru",
-            "domain:magnit.ru",
-            "domain:5ka.ru",
-            "domain:pyaterochka.ru",
-            "domain:perekrestok.ru",
-            "domain:chizhik.club",
-            "domain:chizhik.ru",
-            "domain:vprok.ru",
-            "domain:5post.ru",
-            "domain:av.ru",
-            "domain:azbukavkusa.ru",
-            "domain:dixy.ru",
-            "domain:auchan.ru",
-            "domain:spar.ru",
-            "domain:metro-cc.ru",
-            "domain:petrovich.ru",
-            "domain:detmir.ru",
-            "domain:vkusvill.ru",
-            "domain:food.ru",
-            "domain:samokat.ru",
-            "domain:mnogolososya.ru",
-            "domain:vkusnoitochka.ru",
-            "domain:burgerkingrus.ru",
-            "domain:dodopizza.ru",
-            "domain:dodopizza.io",
-            "domain:lentaonline.ru",
-            "domain:lenta.com",
-            "domain:okmarket.ru",
-            "domain:okeydostavka.ru",
-            "domain:slata.ru",
-            "domain:krasyar.ru",
-            "domain:my-victoria.ru",
-            "domain:delivery-club.ru",
-            "domain:dostavista.ru",
-            "domain:dellin.ru",
-            "domain:businesslines.ru",
-            "domain:topdelivery.ru",
-            "domain:rzd.ru",
-            "domain:rzd-bonus.ru",
-            "domain:grandtrains.ru",
-            "domain:grandtrain.ru",
-            "domain:aeroflot.ru",
-            "domain:s7.ru",
-            "domain:pobeda.aero",
-            "domain:utair.ru",
-            "domain:rossiya-airlines.com",
-            "domain:uralairlines.ru",
-            "domain:ural-airlines.ru",
-            "domain:redwings.aero",
-            "domain:azimuth.aero",
-            "domain:nordwindairlines.ru",
-            "domain:tutu.ru",
-            "domain:travel2moscow.com",
-            "domain:travelrussia.ru",
-            "domain:otello.ru",
-            "domain:taximaxim.ru",
-            "domain:taxi-maxim.ru",
-            "domain:delimobil.ru",
-            "domain:citydrive.ru",
-            "domain:youdrive.ru",
-            "domain:belkacar.ru",
-            "domain:urentbike.ru",
-            "domain:mosgortrans.ru",
-            "domain:mosmetro.ru",
-            "domain:mosmetro.com",
-            "domain:metro.spb.ru",
-            "domain:spbtransport.info",
-            "domain:2gis.ru",
-            "domain:2gis.com",
-            "domain:gismeteo.ru",
-            "domain:uchi.ru",
-            "domain:dnevnik.ru",
-            "domain:foxford.ru",
-            "domain:skyeng.ru",
-            "domain:resh.edu.ru",
-            "domain:1c.ru",
-            "domain:rg.ru",
-            "domain:ria.ru",
-            "domain:tass.ru",
-            "domain:1tv.ru",
-            "domain:vesti.ru",
-            "domain:smotrim.ru",
-            "domain:ntv.ru",
-            "domain:tnt-online.ru",
-            "domain:ctc.ru",
-            "domain:tv3.ru",
-            "domain:friday.ru",
-            "domain:otr-online.ru",
-            "domain:5-tv.ru",
-            "domain:domashniy.ru",
-            "domain:domashny.ru",
-            "domain:muz-tv.ru",
-            "domain:ren.tv",
-            "domain:spastv.ru",
-            "domain:tvc.ru",
-            "domain:mir24.tv",
-            "domain:matchtv.ru",
-            "domain:vmeste-rf.tv",
-            "domain:tvzvezda.ru",
-            "domain:zvezdaweekly.ru",
-            "domain:vgtrk.ru",
-            "domain:vitrina.tv",
-            "domain:360tv.ru",
-            "domain:dumatv.ru",
-            "domain:solovievlive.ru",
-            "domain:sport24.ru",
-            "domain:radioplayer.ru",
-            "domain:kp.ru",
-            "domain:rbc.ru",
-            "domain:lenta.ru",
-            "domain:gazeta.ru",
-            "domain:kommersant.ru",
-            "domain:vedomosti.ru",
-            "domain:mk.ru",
-            "domain:aif.ru",
-            "domain:iz.ru",
-            "domain:izvestia.ru",
-            "domain:rt.com",
-            "domain:pnp.ru",
-            "domain:rambler.ru",
-            "domain:championat.com",
-            "domain:kion.ru",
-            "domain:ticketland.ru",
-            "domain:okko.tv",
-            "domain:ivi.ru",
-            "domain:ivi.tv",
-            "domain:premier.one",
-            "domain:more.tv",
-            "domain:wink.ru",
-            "domain:litres.ru",
-            "domain:mybook.ru",
-            "domain:medsi.ru",
-            "domain:mamadeti.ru",
-            "domain:cmd-online.ru",
-            "domain:zdrav.expert",
-            "domain:freestylelibre.ru",
-            "domain:medtrum.com",
-            "domain:yuwell.com",
-            "domain:csat.ru",
-            "domain:evotor.ru",
-            "domain:tensor.ru",
-            "domain:kontur.ru",
-            "domain:trueconf.ru",
-            "domain:elta-r.ru",
-            "domain:khl.ru",
-            "domain:s82079.cdn.ngenix.net",
-            "domain:starline.ru",
-            "domain:starline.online",
-            "domain:starline-online.ru",
-            "domain:starline.bz",
-            "domain:uma.media",
-            "domain:sportbox.ru",
-            "domain:pass.media",
-            "domain:matchpremier.ru",
-            "domain:sberbank.ru",
-            "domain:sber.ru",
-            "domain:burgerking.ru",
-            "domain:bx-cdn.ru",
-            "domain:paywb.com",
-            "domain:wibes.com",
-            "domain:ozonpay.ru",
-            "domain:ozonpvz.ru",
-            "domain:ocdn.me",
-            "domain:o-cdn.com",
-            "domain:o-static.com",
-            "domain:o3t.ru",
-            "domain:o3tech.ru",
-            "domain:ozon-travel.ru",
-            "domain:ozon.travel",
-            "domain:ozon-express.ru",
-            "domain:ozonexpress.ru",
-            "domain:ozonseller.ru",
-            "domain:ozonfinance.ru",
-            "domain:ozonfresh.ru",
-            "domain:ozonmetro.ru",
-            "domain:ozon-dostavka.ru",
-            "domain:ozonpartners.ru",
-            "domain:o3team.ru",
-            "domain:o3.team",
-            "domain:ozon.com",
-            "domain:ozon.by",
-            "domain:ozon.kz",
-            "domain:yndx.net",
-            "domain:yandex.taxi",
-            "domain:yandex.pro",
-            "domain:rutaxi.ru",
-            "domain:vezet.ru",
-            "domain:yandex.kz",
-            "domain:yandex.by",
-            "domain:yandexcom.net",
-            "domain:yads.tech",
-            "domain:admetrica.ru",
-            "domain:webvisor.org",
-            "domain:yandex-team.ru",
-            "domain:vkontakte.com",
-            "domain:vkgo.app",
-            "domain:vklive.app",
-            "domain:vkpay.app",
-            "domain:vkpay.io",
-            "domain:vk.team",
-            "domain:avito.tech",
-            "domain:domofond.ru",
-            "domain:avito-services.com",
-            "domain:x5.ru",
-            "domain:x5club.ru",
-            "domain:x5paket.ru",
-            "domain:x5media.ru",
-            "domain:perekrestok.com",
-            "domain:okolo.app",
-            "domain:clubx5.ru",
-            "domain:idx5.ru",
-            "domain:5post.market",
-            "domain:x5.com",
-            "domain:sberbank.com",
-            "domain:sbrf.ru",
-            "domain:t-bank-app.ru",
-            "domain:data-tscbank.ru",
-            "domain:alfabank.com",
-            "domain:vtb.com",
-            "domain:psbinvest.ru",
-            "domain:openbank.ru",
-            "domain:mir-connect.ru",
-            "domain:yookassa.ru",
-            "domain:cloudpayments.ru",
-            "domain:payecom.ru",
-            "domain:platiecom.ru",
-            "domain:rutube.sport",
-            "domain:tvgateway.ru",
-            "domain:yotaplay.ru",
-            "domain:russia.tv",
-            "domain:2gis.tech",
-            "domain:max-messenger.ru",
-            "domain:sbermobile.ru",
-            "domain:mtsmusic.ru",
-            "domain:megamarket.tech",
-            "domain:sbermarket.ru",
-            "domain:dodo.ru",
-            "domain:express.ms",
-            "domain:vi.ru",
-            "domain:appsmail.ru",
-            "domain:attachmail.ru",
-            "domain:cdnmail.ru",
-            "domain:mrgcdn.ru",
-            "domain:smailru.net",
-            "domain:vmailru.net",
-            "domain:bizmrg.com",
-            "domain:mcs.st",
-            "domain:bk.ru",
-            "domain:list.ru",
-            "domain:inbox.ru",
-            "domain:internet.ru",
-            "domain:xmail.ru",
-            "domain:mycdn.me",
-            "domain:apiok.ru",
-            "domain:api.inappstory.ru",
-            "domain:cdn.inappstory.ru",
-            "domain:wb-basket.ru",
-            "domain:wbcontent.net",
-            "domain:wbstatic.net",
-            "domain:wbstatic.ru",
-            "domain:wb-bank.ru",
-            "domain:wb-cloud.ru",
-            "domain:wbpay.ru",
-            "domain:rwb.ru",
-            "domain:geobasket.ru",
-            "domain:wibes.ru",
-            "domain:ozon.app",
-            "domain:ozon.tech",
-            "domain:ozon-tech.ru",
-            "domain:ozoncard.ru",
-            "domain:o3.ru",
-            "domain:x5id.ru",
-            "domain:x5static.net",
-            "domain:api.x5.ru",
-            "domain:ecom-cdn.x5media.ru",
-            "domain:kinescopecdn.net",
-            "domain:ivicdn.tv",
-            "domain:okkoapi.tv",
-            "domain:okko.ru",
-            "domain:okko.sport",
-            "domain:playfamily.ru",
-            "domain:start.ru",
-            "domain:smotreshka.tv",
-            "domain:zvuk.com",
-            "domain:rtbcdn.ru",
-            "domain:t-static.ru",
-            "domain:tcsbank.ru",
-            "domain:tbankid.ru",
-            "domain:my-tbank.ru",
-            "domain:mir-pay.ru",
-            "domain:mironline.tech",
-            "domain:mirconnect.ru",
-            "domain:mirpayonline.ru",
-            "domain:static-storage.net",
-            "domain:yccdn.ru",
-            "domain:clstorage.net",
-            "domain:yandex.cloud",
-            "domain:yandex.st",
-            "domain:vk-cdn.me",
-            "domain:vk-cdn.net",
-            "domain:vk-apps.com",
-            "domain:vk-apps.ru",
-            "domain:vkcdnservice.com",
-            "domain:vkmessenger.app",
-            "domain:vkmessenger.com",
-            "domain:vkuserlive.com",
-            "domain:vkuservideo.com",
-            "domain:vkuservideo.ru",
-            "domain:vkuseraudio.com",
-            "domain:vkuserphoto.ru",
-            "domain:vkusercdn.ru",
-            "domain:vkpay.ru",
-            "domain:vkpay.com",
-            "domain:userapi.ru",
-            "domain:cdn-vk.ru",
-            "domain:cdn-vk.net"
-          ],
-          "outboundTag": "direct",
-          "type": "field"
-        },
-        {
-          "network": "udp",
-          "outboundTag": "block",
-          "port": "443",
-          "type": "field"
-        }
-      ],
-      "balancers": []
-    },
-    "admin_display_name": "Игровой обход"
   },
   {
     "inbounds": [
