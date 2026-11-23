@@ -4810,6 +4810,16 @@
           "outboundTag": "💫 Премиум-конфиг1"
         },
         {
+          "type": "field",
+          "ip": [
+            "173.194.129.66/32",
+            "173.194.5.232/32",
+            "142.251.38.110/32"
+          ],
+          "port": "443",
+          "outboundTag": "💫 Премиум-конфиг1"
+        },
+        {
           "balancerTag": "auto-best",
           "network": "tcp,udp",
           "type": "field"
