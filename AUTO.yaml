@@ -1,4 +1,4 @@
-[
+
   {
     "burstObservatory": {
       "pingConfig": {
@@ -19,14 +19,14 @@
         "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
         "🇷🇺 Белый интернет #1 | Все операторы",
         "🇷🇺 Белый интернет #2 | Все операторы",
-        "🇷🇺 Белый интернет #3 | Все операторы",
+        "🇷🇺 Белый интернет #3 | Билайн / Теле2 / МТС",
         "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС",
-        "🇷🇺 Белый интернет #5 | Билайн / Теле2 / МТС",
+        "🇷🇺 Белый интернет #5 | Все операторы",
         "🇷🇺 Белый интернет #6 | Все операторы",
-        "🇷🇺 Белый интернет #8 | Все операторы",
+        "🇷🇺 Белый интернет #8 | Билайн / Теле2",
         "🇷🇺 Белый интернет #9 | Все операторы",
         "🇷🇺 Белый интернет #10 | Все операторы",
-        "🇷🇺 Белый интернет #11 | Билайн / Теле2",
+        "🇷🇺 Белый интернет #11 | Все операторы",
         "🇷🇺 Белый интернет #12 | Все операторы",
         "🇷🇺 Белый интернет #13 | Все операторы",
         "🇷🇺 Белый интернет #14 | Все операторы",
@@ -1014,7 +1014,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "46.243.234.95",
+              "address": "168.113.254.27",
               "port": 1505,
               "users": [
                 {
@@ -1045,37 +1045,6 @@
         "settings": {
           "vnext": [
             {
-              "address": "168.113.254.27",
-              "port": 1505,
-              "users": [
-                {
-                  "encryption": "none",
-                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "grpc",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "iv.kommersant.ru",
-            "fingerprint": "qq",
-            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
-            "shortId": "a5bd715862513387"
-          },
-          "grpcSettings": {
-            "serviceName": "grpc"
-          }
-        },
-        "tag": "🇷🇺 Белый интернет #3 | Все операторы"
-      },
-      {
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
               "address": "87.242.102.131",
               "port": 1505,
               "users": [
@@ -1100,7 +1069,7 @@
             "serviceName": "grpc"
           }
         },
-        "tag": "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС"
+        "tag": "🇷🇺 Белый интернет #3 | Билайн / Теле2 / МТС"
       },
       {
         "protocol": "vless",
@@ -1131,7 +1100,38 @@
             "serviceName": "grpc"
           }
         },
-        "tag": "🇷🇺 Белый интернет #5 | Билайн / Теле2 / МТС"
+        "tag": "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "37.18.14.136",
+              "port": 1505,
+              "users": [
+                {
+                  "encryption": "none",
+                  "id": "dea8e42d-8f7a-4210-bda6-d3883336d929"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "iv.kommersant.ru",
+            "fingerprint": "qq",
+            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
+            "shortId": "a5bd715862513387"
+          },
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        },
+        "tag": "🇷🇺 Белый интернет #5 | Все операторы"
       },
       {
         "protocol": "vless",
@@ -1169,7 +1169,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "37.18.15.163",
+              "address": "37.18.14.156",
               "port": 1505,
               "users": [
                 {
@@ -1193,7 +1193,7 @@
             "serviceName": "grpc"
           }
         },
-        "tag": "🇷🇺 Белый интернет #8 | Все операторы"
+        "tag": "🇷🇺 Белый интернет #8 | Билайн / Теле2"
       },
       {
         "protocol": "vless",
@@ -1231,7 +1231,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "46.243.232.109",
+              "address": "217.19.122.144",
               "port": 1505,
               "users": [
                 {
@@ -1262,8 +1262,8 @@
         "settings": {
           "vnext": [
             {
-              "address": "37.18.14.156",
-              "port": 1505,
+              "address": "176.109.111.124",
+              "port": 25565,
               "users": [
                 {
                   "encryption": "none",
@@ -1277,16 +1277,16 @@
           "network": "grpc",
           "security": "reality",
           "realitySettings": {
-            "serverName": "iv.kommersant.ru",
-            "fingerprint": "qq",
-            "publicKey": "5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw",
-            "shortId": "a5bd715862513387"
+            "serverName": "drive2.ru",
+            "fingerprint": "chrome",
+            "publicKey": "mE1oxQTdqBQtG8wyUkrWmBHjb6HtQcUZxhE8sqGd4HM",
+            "shortId": "0123456789abcdef"
           },
           "grpcSettings": {
             "serviceName": "grpc"
           }
         },
-        "tag": "🇷🇺 Белый интернет #11 | Билайн / Теле2"
+        "tag": "🇷🇺 Белый интернет #11 | Все операторы"
       },
       {
         "protocol": "vless",
@@ -1640,14 +1640,14 @@
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
             "🇷🇺 Белый интернет #1 | Все операторы",
             "🇷🇺 Белый интернет #2 | Все операторы",
-            "🇷🇺 Белый интернет #3 | Все операторы",
+            "🇷🇺 Белый интернет #3 | Билайн / Теле2 / МТС",
             "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС",
-            "🇷🇺 Белый интернет #5 | Билайн / Теле2 / МТС",
+            "🇷🇺 Белый интернет #5 | Все операторы",
             "🇷🇺 Белый интернет #6 | Все операторы",
-            "🇷🇺 Белый интернет #8 | Все операторы",
+            "🇷🇺 Белый интернет #8 | Билайн / Теле2",
             "🇷🇺 Белый интернет #9 | Все операторы",
             "🇷🇺 Белый интернет #10 | Все операторы",
-            "🇷🇺 Белый интернет #11 | Билайн / Теле2",
+            "🇷🇺 Белый интернет #11 | Все операторы",
             "🇷🇺 Белый интернет #12 | Все операторы",
             "🇷🇺 Белый интернет #13 | Все операторы",
             "🇷🇺 Белый интернет #14 | Все операторы"
@@ -1757,14 +1757,14 @@
           "selector": [
             "🇷🇺 Белый интернет #1 | Все операторы",
             "🇷🇺 Белый интернет #2 | Все операторы",
-            "🇷🇺 Белый интернет #3 | Все операторы",
+            "🇷🇺 Белый интернет #3 | Билайн / Теле2 / МТС",
             "🇷🇺 Белый интернет #4 | Билайн / Теле2 / МТС",
-            "🇷🇺 Белый интернет #5 | Билайн / Теле2 / МТС",
+            "🇷🇺 Белый интернет #5 | Все операторы",
             "🇷🇺 Белый интернет #6 | Все операторы",
-            "🇷🇺 Белый интернет #8 | Все операторы",
+            "🇷🇺 Белый интернет #8 | Билайн / Теле2",
             "🇷🇺 Белый интернет #9 | Все операторы",
             "🇷🇺 Белый интернет #10 | Все операторы",
-            "🇷🇺 Белый интернет #11 | Билайн / Теле2",
+            "🇷🇺 Белый интернет #11 | Все операторы",
             "🇷🇺 Белый интернет #12 | Все операторы",
             "🇷🇺 Белый интернет #13 | Все операторы",
             "🇷🇺 Белый интернет #14 | Все операторы"
@@ -3748,6 +3748,112 @@
         "server_domains": []
       },
       {
+        "protocol": "vmess",
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "renderer-stream-1-871.mirra.now",
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
+          },
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
+            "headers": {
+              "Host": "renderer-stream-1-871.mirra.now"
+            }
+          }
+        },
+        "settings": {
+          "vnext": [
+            {
+              "address": "renderer-stream-1-871.mirra.now",
+              "port": 443,
+              "users": [
+                {
+                  "id": "89432e7b-13bc-464b-bc6b-d52c34f15b03",
+                  "alterId": 0,
+                  "security": "auto"
+                }
+              ]
+            }
+          ]
+        },
+        "tag": "🇳🇱 NL — South Networks Pro (only Mobile)"
+      },
+      {
+        "protocol": "vmess",
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "renderer-stream-1-871.mirra.now",
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
+          },
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
+            "headers": {
+              "Host": "renderer-stream-1-871.mirra.now"
+            }
+          }
+        },
+        "settings": {
+          "vnext": [
+            {
+              "address": "renderer-stream-1-871.mirra.now",
+              "port": 443,
+              "users": [
+                {
+                  "id": "2ff61516-31a0-4b00-98fc-813e35ced3ce",
+                  "alterId": 0,
+                  "security": "auto"
+                }
+              ]
+            }
+          ]
+        },
+        "tag": "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]]"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "45.150.36.114",
+              "port": 2083,
+              "users": [
+                {
+                  "id": "cb32c26d-de89-4d39-852f-697e106af541",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.samsung.com",
+            "fingerprint": "firefox",
+            "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+            "shortId": "a6376fab"
+          },
+          "tcpSettings": {
+            "header": {
+              "type": "none"
+            }
+          }
+        },
+        "tag": "🇳🇱 Нидерланды новые"
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -3774,10 +3880,41 @@
           },
           "tag": "auto-best",
           "fallbackTag": "block"
+        },
+        {
+          "tag": "service-youtube-test-4servers",
+          "selector": [
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]]",
+            "🇳🇱 Нидерланды новые",
+            "🇳🇱 Премиум-конфиг (ранний доступ)"
+          ],
+          "strategy": {
+            "type": "random"
+          },
+          "fallbackTag": "block"
         }
       ],
       "domainMatcher": "hybrid",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:youtube.com",
+            "domain:youtu.be",
+            "domain:googlevideo.com",
+            "domain:ytimg.com",
+            "domain:youtubei.googleapis.com",
+            "domain:youtube-nocookie.com",
+            "domain:youtube.googleapis.com",
+            "domain:youtubeembeddedplayer.googleapis.com",
+            "domain:youtubeeducation.com",
+            "domain:youtubekids.com",
+            "domain:yt3.ggpht.com",
+            "domain:yt.be"
+          ],
+          "balancerTag": "service-youtube-test-4servers"
+        },
         {
           "type": "field",
           "ip": [
