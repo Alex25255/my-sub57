@@ -3748,6 +3748,112 @@
         "server_domains": []
       },
       {
+        "protocol": "vmess",
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "renderer-stream-1-871.mirra.now",
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
+          },
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
+            "headers": {
+              "Host": "renderer-stream-1-871.mirra.now"
+            }
+          }
+        },
+        "settings": {
+          "vnext": [
+            {
+              "address": "renderer-stream-1-871.mirra.now",
+              "port": 443,
+              "users": [
+                {
+                  "id": "89432e7b-13bc-464b-bc6b-d52c34f15b03",
+                  "alterId": 0,
+                  "security": "auto"
+                }
+              ]
+            }
+          ]
+        },
+        "tag": "🇳🇱 NL — South Networks Pro (only Mobile)"
+      },
+      {
+        "protocol": "vmess",
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "renderer-stream-1-871.mirra.now",
+            "fingerprint": "firefox",
+            "alpn": [
+              "h2"
+            ]
+          },
+          "wsSettings": {
+            "path": "/api/v1/gpu-stream/pt2ucnshbajq/socket",
+            "headers": {
+              "Host": "renderer-stream-1-871.mirra.now"
+            }
+          }
+        },
+        "settings": {
+          "vnext": [
+            {
+              "address": "renderer-stream-1-871.mirra.now",
+              "port": 443,
+              "users": [
+                {
+                  "id": "2ff61516-31a0-4b00-98fc-813e35ced3ce",
+                  "alterId": 0,
+                  "security": "auto"
+                }
+              ]
+            }
+          ]
+        },
+        "tag": "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]]"
+      },
+      {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "45.150.36.114",
+              "port": 2083,
+              "users": [
+                {
+                  "id": "cb32c26d-de89-4d39-852f-697e106af541",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.samsung.com",
+            "fingerprint": "firefox",
+            "publicKey": "KJL2fedQ-dmULsZ5n27LonqnLjbLtJWqd00uvSyCZFQ",
+            "shortId": "a6376fab"
+          },
+          "tcpSettings": {
+            "header": {
+              "type": "none"
+            }
+          }
+        },
+        "tag": "🇳🇱 Нидерланды новые"
+      },
+      {
         "protocol": "freedom",
         "tag": "direct"
       },
@@ -3774,10 +3880,41 @@
           },
           "tag": "auto-best",
           "fallbackTag": "block"
+        },
+        {
+          "tag": "service-youtube-test-4servers",
+          "selector": [
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]]",
+            "🇳🇱 Нидерланды новые",
+            "🇳🇱 Премиум-конфиг (ранний доступ)"
+          ],
+          "strategy": {
+            "type": "random"
+          },
+          "fallbackTag": "block"
         }
       ],
       "domainMatcher": "hybrid",
       "rules": [
+        {
+          "type": "field",
+          "domain": [
+            "domain:youtube.com",
+            "domain:youtu.be",
+            "domain:googlevideo.com",
+            "domain:ytimg.com",
+            "domain:youtubei.googleapis.com",
+            "domain:youtube-nocookie.com",
+            "domain:youtube.googleapis.com",
+            "domain:youtubeembeddedplayer.googleapis.com",
+            "domain:youtubeeducation.com",
+            "domain:youtubekids.com",
+            "domain:yt3.ggpht.com",
+            "domain:yt.be"
+          ],
+          "balancerTag": "service-youtube-test-4servers"
+        },
         {
           "type": "field",
           "ip": [
@@ -4790,34 +4927,6 @@
           ],
           "network": "tcp,udp",
           "outboundTag": "direct"
-        },
-        {
-          "type": "field",
-          "domain": [
-            "domain:youtube.com",
-            "domain:youtu.be",
-            "domain:googlevideo.com",
-            "domain:ytimg.com",
-            "domain:youtubei.googleapis.com",
-            "domain:youtube-nocookie.com",
-            "domain:youtube.googleapis.com",
-            "domain:youtubeembeddedplayer.googleapis.com",
-            "domain:youtubeeducation.com",
-            "domain:youtubekids.com",
-            "domain:yt3.ggpht.com",
-            "domain:yt.be"
-          ],
-          "outboundTag": "💫 Премиум-конфиг1"
-        },
-        {
-          "type": "field",
-          "ip": [
-            "173.194.129.66/32",
-            "173.194.5.232/32",
-            "142.251.38.110/32"
-          ],
-          "port": "443",
-          "outboundTag": "💫 Премиум-конфиг1"
         },
         {
           "balancerTag": "auto-best",
