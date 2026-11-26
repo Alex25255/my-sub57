@@ -51,16 +51,6 @@
           "tag": "yandex_dns",
           "queryStrategy": "UseIPv4",
           "skipFallback": true
-        },
-        {
-          "address": "https://1.1.1.1/dns-query",
-          "tag": "cloudflare_dns",
-          "queryStrategy": "UseIPv4"
-        },
-        {
-          "address": "https://8.8.8.8/dns-query",
-          "tag": "google_dns",
-          "queryStrategy": "UseIPv4"
         }
       ],
       "queryStrategy": "UseIPv4",
