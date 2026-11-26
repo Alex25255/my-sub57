@@ -40,13 +40,7 @@
       ]
     },
     "dns": {
-      "servers": [
-        {
-          "address": "https://1.1.1.1/dns-query",
-          "tag": "cloudflare_dns",
-          "queryStrategy": "UseIPv4"
-        }
-      ],
+      "servers": [],
       "queryStrategy": "UseIPv4",
       "tag": "dns",
       "disableFallbackIfMatch": true,
