@@ -656,6 +656,35 @@
           ]
         },
         {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "telegram_google_dns",
+          "queryStrategy": "UseIPv4",
+          "skipFallback": true,
+          "domains": [
+            "domain:telegram.org",
+            "domain:telegram.me",
+            "domain:telegram.dog",
+            "domain:t.me",
+            "domain:telegra.ph",
+            "domain:telesco.pe",
+            "domain:tdesktop.com",
+            "domain:telegram-cdn.org",
+            "domain:telegramusercontent.com",
+            "domain:tg.dev",
+            "domain:cdn-telegram.org",
+            "domain:comments.app",
+            "domain:contest.com",
+            "domain:fragment.com",
+            "domain:graph.org",
+            "domain:quiz.directory",
+            "domain:telega.one",
+            "domain:telegram.space",
+            "domain:ton.org",
+            "domain:tx.me",
+            "domain:usercontent.dev"
+          ]
+        },
+        {
           "address": "https://1.1.1.1/dns-query",
           "tag": "cloudflare_dns",
           "queryStrategy": "UseIPv4"
