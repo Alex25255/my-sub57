@@ -623,18 +623,34 @@
             "domain:fonbet.ru",
             "domain:fon.bet",
             "domain:t-bank-app.su",
-            "domain:t-static-wv.ru"
+            "domain:t-static-wv.ru",
+            "domain:adstat.yandex.ru",
+            "domain:appmetrica.yandex.net",
+            "domain:eda.yandex",
+            "domain:hd-kinopoisk.com",
+            "domain:hd-kinopoisk.ru",
+            "domain:hd.ru",
+            "domain:i.megafon.ru",
+            "domain:kinopoisk-hd.com",
+            "domain:kinopoisk.sport",
+            "domain:mapi.yota.ru",
+            "domain:mc.yandex.ru",
+            "domain:mykp.ru",
+            "domain:ocsps.ssl.com",
+            "domain:passport.yandex.fi",
+            "domain:proxy.mob.maps.yandex.net",
+            "domain:tracker-api.vk-analytics.ru",
+            "domain:uaas.yandex.ru",
+            "domain:webmode.yota.ru",
+            "full:ded-pwa-static-pages.t-static-wv.ru",
+            "full:fingerprint.t-static-wv.ru",
+            "full:hotels-growth-feed.t-bank-app.ru",
+            "full:leonardo.edadeal.io",
+            "full:lifestyle.t-bank-app.ru",
+            "full:ms-loyalty-api.tinkoff.ru",
+            "full:shopping.t-bank-app.ru",
+            "full:strm-ott.akamaized.net"
           ]
-        },
-        {
-          "address": "https://1.1.1.1/dns-query",
-          "tag": "cloudflare_dns",
-          "queryStrategy": "UseIPv4"
-        },
-        {
-          "address": "https://8.8.8.8/dns-query",
-          "tag": "google_dns",
-          "queryStrategy": "UseIPv4"
         }
       ],
       "queryStrategy": "UseIPv4",
