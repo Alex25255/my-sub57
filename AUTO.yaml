@@ -3,10 +3,10 @@
     "burstObservatory": {
       "pingConfig": {
         "destination": "http://www.gstatic.com/generate_204",
-        "httpMethod": "HEAD",
-        "interval": "1m",
-        "sampling": 2,
-        "timeout": "5s"
+        "httpMethod": "GET",
+        "interval": "5m",
+        "sampling": 1,
+        "timeout": "10s"
       },
       "subjectSelector": [
         "🇳🇱 NL — South Networks Pro (only Mobile)",
@@ -41,35 +41,6 @@
     },
     "dns": {
       "servers": [
-        {
-          "address": "https://1.1.1.1/dns-query",
-          "tag": "telegram_dns",
-          "queryStrategy": "UseIPv4",
-          "skipFallback": true,
-          "domains": [
-            "domain:telegram.org",
-            "domain:telegram.me",
-            "domain:telegram.dog",
-            "domain:t.me",
-            "domain:telegra.ph",
-            "domain:telesco.pe",
-            "domain:tdesktop.com",
-            "domain:telegram-cdn.org",
-            "domain:telegramusercontent.com",
-            "domain:tg.dev",
-            "domain:cdn-telegram.org",
-            "domain:comments.app",
-            "domain:contest.com",
-            "domain:fragment.com",
-            "domain:graph.org",
-            "domain:quiz.directory",
-            "domain:telega.one",
-            "domain:telegram.space",
-            "domain:ton.org",
-            "domain:tx.me",
-            "domain:usercontent.dev"
-          ]
-        },
         {
           "tag": "proxy_hosts_dns",
           "address": "77.88.8.8",
@@ -653,35 +624,6 @@
             "domain:fon.bet",
             "domain:t-bank-app.su",
             "domain:t-static-wv.ru"
-          ]
-        },
-        {
-          "address": "https://8.8.8.8/dns-query",
-          "tag": "telegram_google_dns",
-          "queryStrategy": "UseIPv4",
-          "skipFallback": true,
-          "domains": [
-            "domain:telegram.org",
-            "domain:telegram.me",
-            "domain:telegram.dog",
-            "domain:t.me",
-            "domain:telegra.ph",
-            "domain:telesco.pe",
-            "domain:tdesktop.com",
-            "domain:telegram-cdn.org",
-            "domain:telegramusercontent.com",
-            "domain:tg.dev",
-            "domain:cdn-telegram.org",
-            "domain:comments.app",
-            "domain:contest.com",
-            "domain:fragment.com",
-            "domain:graph.org",
-            "domain:quiz.directory",
-            "domain:telega.one",
-            "domain:telegram.space",
-            "domain:ton.org",
-            "domain:tx.me",
-            "domain:usercontent.dev"
           ]
         },
         {
@@ -1773,7 +1715,7 @@
           "strategy": {
             "type": "random"
           },
-          "fallbackTag": "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY"
+          "fallbackTag": "block"
         },
         {
           "tag": "service-instagram-ru",
