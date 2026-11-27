@@ -1653,7 +1653,7 @@
             "🇷🇺 Белый интернет #14 | Все операторы"
           ],
           "strategy": {
-            "type": "random"
+            "type": "leastPing"
           },
           "tag": "auto-best",
           "fallbackTag": "block"
