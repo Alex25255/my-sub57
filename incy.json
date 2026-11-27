@@ -1801,8 +1801,7 @@
           "strategy": {
             "type": "random"
           },
-          "tag": "telegram-all-south-new",
-          "fallbackTag": "block"
+          "tag": "telegram-all-south-new"
         }
       ],
       "domainMatcher": "hybrid",
