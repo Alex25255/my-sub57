@@ -1,4 +1,4 @@
-[
+
   {
     "burstObservatory": {
       "pingConfig": {
@@ -1782,13 +1782,26 @@
         },
         {
           "selector": [
+            "🇳🇱 NL — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]]",
+            "🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile) · [слот 🇺🇸 US — South Networks Pro (only Mobile)]]",
+            "🇺🇸 US — South Networks Pro (only Mobile)",
+            "🇩🇪 DE — South Networks Pro (only Mobile)",
+            "🇯🇵 JP — South Networks Pro (only Mobile)",
+            "🇰🇿 KZ — South Networks Pro (only Mobile)",
             "🇷🇺 RU — South Networks Pro (only Mobile) · RU ONLY",
-            "🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇩🇪 DE — South Networks Pro (only Mobile) · [слот 🇳🇱 NL — South Networks Pro (only Mobile)]]"
+            "🇳🇱 Нидерланды новые",
+            "🇮🇹 Италия новые",
+            "🇲🇩 Молдова новые",
+            "🇩🇪 Германия новые",
+            "🇪🇪 Эстония новые",
+            "🇧🇬 Болгария новые",
+            "🇺🇸 США новые"
           ],
           "strategy": {
             "type": "random"
           },
-          "tag": "telegram-ru-de",
+          "tag": "telegram-all-south-new",
           "fallbackTag": "block"
         }
       ],
@@ -1820,7 +1833,7 @@
             "domain:usercontent.dev"
           ],
           "network": "tcp,udp",
-          "balancerTag": "telegram-ru-de"
+          "balancerTag": "telegram-all-south-new"
         },
         {
           "type": "field",
@@ -1841,10 +1854,11 @@
             "2a0a:f280::/32",
             "5.28.128.0/17",
             "95.161.64.0/20",
-            "109.239.140.0/24"
+            "109.239.140.0/24",
+            "194.221.250.50/32"
           ],
           "network": "tcp,udp",
-          "balancerTag": "telegram-ru-de"
+          "balancerTag": "telegram-all-south-new"
         },
         {
           "type": "field",
